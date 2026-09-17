@@ -1,0 +1,62 @@
+{
+  "authority": "teks",
+  "note": "STAAR items are joined at grade grain so claim n is large enough for the witness bar. TEKS student-expectation codes, when recovered from an answer key, are stored on officialTag and are not a separate claim.",
+  "claims": [
+    {
+      "authority": "teks",
+      "code": "g3",
+      "text": "STAAR Grade 3 Mathematics.",
+      "operationalization": "Use the quantities and relations in the stem; select the published key. Bind numbers to the situation and execute the indicated computation or comparison.",
+      "operations": ["bind", "execute"],
+      "sourceUrl": "https://tea.texas.gov/student-assessment/testing/staar/staar-released-test-questions"
+    },
+    {
+      "authority": "teks",
+      "code": "g4",
+      "text": "STAAR Grade 4 Mathematics.",
+      "operationalization": "Use the quantities and relations in the stem; select the published key. Bind numbers to the situation and execute the indicated computation or comparison.",
+      "operations": ["bind", "execute"],
+      "sourceUrl": "https://tea.texas.gov/student-assessment/testing/staar/staar-released-test-questions"
+    },
+    {
+      "authority": "teks",
+      "code": "g5",
+      "text": "STAAR Grade 5 Mathematics.",
+      "operationalization": "Use the quantities and relations in the stem; select the published key. Bind numbers to the situation and execute the indicated computation or comparison.",
+      "operations": ["bind", "execute"],
+      "sourceUrl": "https://tea.texas.gov/student-assessment/testing/staar/staar-released-test-questions"
+    },
+    {
+      "authority": "teks",
+      "code": "g6",
+      "text": "STAAR Grade 6 Mathematics.",
+      "operationalization": "Use the quantities and relations in the stem; select the published key. Bind numbers to the situation and execute the indicated computation or comparison.",
+      "operations": ["bind", "execute"],
+      "sourceUrl": "https://tea.texas.gov/student-assessment/testing/staar/staar-released-test-questions"
+    },
+    {
+      "authority": "teks",
+      "code": "g7",
+      "text": "STAAR Grade 7 Mathematics.",
+      "operationalization": "Use the quantities and relations in the stem; select the published key. Bind numbers to the situation and execute the indicated computation or comparison.",
+      "operations": ["bind", "execute"],
+      "sourceUrl": "https://tea.texas.gov/student-assessment/testing/staar/staar-released-test-questions"
+    },
+    {
+      "authority": "teks",
+      "code": "g8",
+      "text": "STAAR Grade 8 Mathematics.",
+      "operationalization": "Use the quantities and relations in the stem; select the published key. Bind numbers to the situation and execute the indicated computation or comparison.",
+      "operations": ["bind", "execute"],
+      "sourceUrl": "https://tea.texas.gov/student-assessment/testing/staar/staar-released-test-questions"
+    },
+    {
+      "authority": "teks",
+      "code": "alg1",
+      "text": "STAAR Algebra I.",
+      "operationalization": "Use the quantities, functions, and relations in the stem; select the published key. Bind symbols to the situation and execute the indicated algebraic procedure.",
+      "operations": ["bind", "execute"],
+      "sourceUrl": "https://tea.texas.gov/student-assessment/testing/staar/staar-released-test-questions"
+    }
+  ]
+}

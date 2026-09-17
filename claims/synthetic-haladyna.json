@@ -1,0 +1,62 @@
+{
+  "authority": "synthetic",
+  "note": "Method-control claims for planted Haladyna/Downing/Rodriguez item-writing flaws. Not an operational assessment tag.",
+  "claims": [
+    {
+      "authority": "synthetic",
+      "code": "flaw-longest",
+      "text": "Planted flaw: the keyed option is uniquely longest.",
+      "operationalization": "A cue program that picks the uniquely longest option should recover the key on held-out planted items.",
+      "operations": ["bind", "distinguish", "execute"],
+      "sourceUrl": "https://doi.org/10.1177/0146621602026002002"
+    },
+    {
+      "authority": "synthetic",
+      "code": "flaw-stem-repeat",
+      "text": "Planted flaw: the keyed option uniquely repeats a distinctive stem token.",
+      "operationalization": "A stem-option overlap program should recover the key on held-out planted items.",
+      "operations": ["bind", "distinguish", "execute"],
+      "sourceUrl": "https://doi.org/10.1177/0146621602026002002"
+    },
+    {
+      "authority": "synthetic",
+      "code": "flaw-absolute",
+      "text": "Planted flaw: every distractor uses an absolute term; the key does not.",
+      "operationalization": "A program that avoids absolute terms should recover the key on held-out planted items.",
+      "operations": ["bind", "distinguish", "execute"],
+      "sourceUrl": "https://doi.org/10.1177/0146621602026002002"
+    },
+    {
+      "authority": "synthetic",
+      "code": "flaw-position",
+      "text": "Planted flaw: the key is always option C.",
+      "operationalization": "A position-C program should recover the key on held-out planted items.",
+      "operations": ["bind", "distinguish", "execute"],
+      "sourceUrl": "https://doi.org/10.1177/0146621602026002002"
+    },
+    {
+      "authority": "synthetic",
+      "code": "flaw-grammar",
+      "text": "Planted flaw: the stem ends in the article a and only the key begins with a consonant.",
+      "operationalization": "A grammatical-agreement program should recover the key on held-out planted items.",
+      "operations": ["bind", "distinguish", "execute"],
+      "sourceUrl": "https://doi.org/10.1177/0146621602026002002"
+    },
+    {
+      "authority": "synthetic",
+      "code": "flaw-implausible",
+      "text": "Planted flaw: distractors are non-words; the key is an English word.",
+      "operationalization": "A specificity / English-word program should recover the key on held-out planted items.",
+      "operations": ["bind", "distinguish", "execute"],
+      "sourceUrl": "https://doi.org/10.1177/0146621602026002002"
+    },
+    {
+      "authority": "synthetic",
+      "code": "clean",
+      "text": "Matched clean items with no planted unique cue.",
+      "operationalization": "No cue program should clear the witness bar on the held-out clean set.",
+      "operations": ["bind", "distinguish", "execute"],
+      "sourceUrl": "https://doi.org/10.1177/0146621602026002002"
+    }
+  ]
+}

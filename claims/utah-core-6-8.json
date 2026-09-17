@@ -1,0 +1,87 @@
+{
+  "authority": "utah-core",
+  "sourceUrl": "https://schools.utah.gov/curr/mathematics/_mathematics_/_core/_utah_core_standards_tab_/CoreStandardsMiddleSchool.pdf",
+  "coreGuidesBase": "https://www.schools.utah.gov/curr/mathematics/_mathematics_/_core/_math_core_guides_tab_/",
+  "claims": [
+    {
+      "authority": "utah-core",
+      "code": "7.RP.2.a",
+      "text": "Decide whether two quantities are in a proportional relationship, e.g., by testing for equivalent ratios in a table or graphing on a coordinate plane and observing whether the graph is a straight line through the origin.",
+      "operationalization": "USBE Core Guide, Concepts and Skills to Master: Determine if two quantities are in a proportional relationship by testing equivalent ratios. Determine if two quantities are in a proportional relationship by graphing and checking for straight line through (0, 0).",
+      "operations": ["distinguish", "execute"],
+      "sourceUrl": "https://www.schools.utah.gov/curr/mathematics/_mathematics_/_core/_math_core_guides_tab_/CoreGuidesGrade7RatiosProportional.pdf"
+    },
+    {
+      "authority": "utah-core",
+      "code": "7.RP.2.b",
+      "text": "Identify the constant of proportionality (unit rate) in tables, graphs, equations, diagrams, and verbal descriptions of proportional relationships.",
+      "operationalization": "USBE Core Guide, Concepts and Skills to Master: Find the constant of proportionality from tables, graphs, equations, diagram, or verbal descriptions.",
+      "operations": ["bind", "retrieve"],
+      "sourceUrl": "https://www.schools.utah.gov/curr/mathematics/_mathematics_/_core/_math_core_guides_tab_/CoreGuidesGrade7RatiosProportional.pdf"
+    },
+    {
+      "authority": "utah-core",
+      "code": "7.RP.2.c",
+      "text": "Represent proportional relationships by equations. For example, if total cost t is proportional to the number n of items purchased at a constant price p, the relationship between the total cost and the number of items can be expressed as t = pn.",
+      "operationalization": "USBE Core Guide, Concepts and Skills to Master: Write an equation for a proportional relationship in the form y = kx.",
+      "operations": ["bind", "execute"],
+      "sourceUrl": "https://www.schools.utah.gov/curr/mathematics/_mathematics_/_core/_math_core_guides_tab_/CoreGuidesGrade7RatiosProportional.pdf"
+    },
+    {
+      "authority": "utah-core",
+      "code": "7.RP.2.d",
+      "text": "Explain what a point (x, y) on the graph of a proportional relationship means in terms of the situation, with special attention to the points (0, 0) and (1, r) where r is the unit rate.",
+      "operationalization": "USBE Core Guide, Concepts and Skills to Master: Explain the meaning of a point (x, y) in terms of the situation, especially (0, 0) and (1, r) where r is the unit rate.",
+      "operations": ["explain", "bind"],
+      "sourceUrl": "https://www.schools.utah.gov/curr/mathematics/_mathematics_/_core/_math_core_guides_tab_/CoreGuidesGrade7RatiosProportional.pdf"
+    },
+    {
+      "authority": "utah-core",
+      "code": "7.RP.3",
+      "text": "Use proportional relationships to solve multi-step ratio and percent problems. Examples: simple interest, tax, markups and markdowns, gratuities and commissions, fees, percent increase and decrease, percent error.",
+      "operationalization": "USBE Core Guide, Concepts and Skills to Master: Use proportional reasoning to solve multistep ratio and multistep percent problems. Write proportions from various contexts. Examples: simple interest, tax, markups and markdowns, gratuities and commissions, fees, percent increase and decrease, percent error.",
+      "operations": ["bind", "execute"],
+      "sourceUrl": "https://www.schools.utah.gov/curr/mathematics/_mathematics_/_core/_math_core_guides_tab_/CoreGuidesGrade7RatiosProportional.pdf"
+    },
+    {
+      "authority": "utah-core",
+      "code": "7.EE.2",
+      "text": "Understand that rewriting an expression in different forms in a problem context can shed light on the problem, and how the quantities in it are related. For example, a + 0.05a = 1.05a means that “increase by 5%” is the same as “multiply by 1.05.”",
+      "operationalization": "USBE Core Guide, Concepts and Skills to Master: Recognize that different forms of an expression can highlight different aspects of the problem. Recognize and explain the meaning of a given expression and its component parts in terms of a context.",
+      "operations": ["bind", "distinguish", "explain"],
+      "sourceUrl": "https://schools.utah.gov/curr/mathematics/_mathematics_/_core/_math_core_guides_tab_/CoreGuidesGrade7ExpressionsEquations.pdf"
+    },
+    {
+      "authority": "utah-core",
+      "code": "7.SP.1",
+      "text": "Understand that statistics can be used to gain information about a population by examining a sample of the population, and that generalizations about a population from a sample are valid only if the sample is representative of that population. Understand that random sampling is more likely to produce representative samples and support valid inferences.",
+      "operationalization": "USBE Core Guide, Concepts and Skills to Master: Understand that representative samples can be used to make valid inferences about a population. Collect a random sample. Understand that a random sample increases the likelihood of obtaining a representative sample of a population.",
+      "operations": ["distinguish"],
+      "sourceUrl": "https://schools.utah.gov/curr/mathematics/_mathematics_/_core/_math_core_guides_tab_/CoreGuidesGrade7StatisticsProbability.pdf"
+    },
+    {
+      "authority": "utah-core",
+      "code": "6.RP.2",
+      "text": "Understand the concept of a unit rate a/b associated with a ratio a:b with b ≠ 0, and use rate language in the context of a ratio relationship. The following are examples of rate language: \"This recipe has a ratio of four cups of flour to two cups of sugar, so the rate is two cups of flour for each cup of sugar.\" \"We paid $75 for 15 hamburgers, which is a rate of $5 per hamburger.\" (In sixth grade, unit rates are limited to non-complex fractions.)",
+      "operationalization": "USBE Core Guide, Concepts and Skills to Master: Understand that a rate is a special ratio that compares two quantities with different units of measure. Understand that unit rates are the ratio of two measurements in which the second term is one (e.g., x miles per one hour). Understand that when using a/b to represent a rate, b cannot be 0 (because division by 0 is undefined). Understand rate language (per, each, or the @ symbol) and correctly use ratio notation and models to represent relationships between quantities.",
+      "operations": ["bind", "retrieve"],
+      "sourceUrl": "https://www.schools.utah.gov/curr/mathematics/_mathematics_/_core/_math_core_guides_tab_/CoreGuidesGrade6RatiosProportionalRelationships.pdf"
+    },
+    {
+      "authority": "utah-core",
+      "code": "6.NS.1.c",
+      "text": "Explain the meaning of quotients in fraction division problems. For example, create a story context for (2/3) ÷ (3/4) and use a visual fraction model to show the quotient. From Standard 6.NS.1: Interpret and compute quotients of fractions. a. Compute quotients of fractions by fractions, for example, by applying strategies such as visual fraction models, equations, and the relationship between multiplication and division, to represent problems. b. Solve real-world problems involving division of fractions by fractions.",
+      "operationalization": "Quoted from Utah Core Standards Middle School, Standard 6.NS.1.c (the Core Guide PDF for Grade 6 Number System was not at the expected filename on 2026-09-16). The named operation in the standard text is explain: create a story context and show the quotient with a visual fraction model, not merely compute.",
+      "operations": ["explain"],
+      "sourceUrl": "https://schools.utah.gov/curr/mathematics/_mathematics_/_core/_utah_core_standards_tab_/CoreStandardsMiddleSchool.pdf"
+    },
+    {
+      "authority": "utah-core",
+      "code": "6.SP.1",
+      "text": "Recognize a statistical question as one that anticipates variability in the data related to the question and accounts for it in the answers. For example, “How old am I?\" is not a statistical question, but \"How old are the students in my school?\" is a statistical question because one anticipates variability in students’ ages.",
+      "operationalization": "USBE Core Guide, Concepts and Skills to Master: Recognize that responses to statistical questions have variations that can be used to draw conclusions. Identify the difference between a statistical and non-statistical question.",
+      "operations": ["distinguish"],
+      "sourceUrl": "https://www.schools.utah.gov/curr/mathematics/_mathematics_/_core/_math_core_guides_tab_/CoreGuidesGrade6StatisticsProbability.pdf"
+    }
+  ]
+}

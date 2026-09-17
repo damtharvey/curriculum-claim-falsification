@@ -1,0 +1,30 @@
+{
+  "authority": "nyregents",
+  "note": "Regents Part I multiple-choice items are joined at course grain. No constructed-response Part II/III items.",
+  "claims": [
+    {
+      "authority": "nyregents",
+      "code": "algebra-i",
+      "text": "NY Regents Examination in Algebra I, Part I.",
+      "operationalization": "Select the published key for a four-option item. Bind algebraic symbols to the situation and execute the indicated procedure.",
+      "operations": ["bind", "execute"],
+      "sourceUrl": "https://www.nysedregents.org/algebraone/"
+    },
+    {
+      "authority": "nyregents",
+      "code": "geometry",
+      "text": "NY Regents Examination in Geometry, Part I.",
+      "operationalization": "Select the published key for a four-option item. Bind geometric relations in the stem and execute the indicated procedure.",
+      "operations": ["bind", "execute"],
+      "sourceUrl": "https://www.nysedregents.org/geometryre/"
+    },
+    {
+      "authority": "nyregents",
+      "code": "algebra-ii",
+      "text": "NY Regents Examination in Algebra II, Part I.",
+      "operationalization": "Select the published key for a four-option item. Bind algebraic symbols to the situation and execute the indicated procedure.",
+      "operations": ["bind", "execute"],
+      "sourceUrl": "https://www.nysedregents.org/algebratwo/"
+    }
+  ]
+}

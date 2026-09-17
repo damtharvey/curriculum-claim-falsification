@@ -1,0 +1,126 @@
+{
+  "witnessDefinition": "A witness is a program that is admitted under the a priori or held-out fitted rules, that never receives the published key, that lacks at least one operation the item's tag names as necessary, and that nevertheless scores as correct under the published scoring rule. A witness refutes the claim that a pass on that item requires the tagged operation. Failure of searched programs does not certify the tag.",
+  "admission": "A priori rules have no fitted parameters and are scored on every applicable item. Fitted programs, if any, are trained on items disjoint from those scored.",
+  "rules": [
+    {
+      "id": "longest-option",
+      "channel": "item-cues",
+      "lacks": ["retrieve", "execute", "bind", "distinguish", "explain", "transfer"],
+      "description": "Among selected-response choices, pick the option whose character length is strictly greatest. Ties: first in A-D order. Uses only option strings, never the stem or the key.",
+      "citation": "Millman, J., Bishop, C. H., & Ebel, R. (1965). An analysis of test-wiseness. Educational and Psychological Measurement, 25(3), 707–726. See also Haladyna, T. M., Downing, S. M., & Rodriguez, M. C. (2002). A review of multiple-choice item-writing guidelines for classroom assessment. Applied Measurement in Education, 15(3), 309–334 (similar-length options).",
+      "appliesTo": ["selected"]
+    },
+    {
+      "id": "stem-option-overlap",
+      "channel": "partial-input",
+      "lacks": ["bind", "distinguish", "explain"],
+      "description": "Tokenize stem and each option on non-letters. Score each option by count of stem tokens of length >= 4 that appear in the option. Pick the unique maximum. Ties: first in A-D order. No model.",
+      "citation": "Gururangan, S., Swayamdipta, S., Levy, O., Schwartz, R., Bowman, S. R., & Smith, N. A. (2018). Annotation artifacts in natural language inference data. NAACL. Poliak, A., Naradowsky, J., Haldar, A., Rudinger, R., & Van Durme, B. (2018). Hypothesis only baselines in natural language inference. *SEM. Clang associations: Haladyna, Downing, & Rodriguez (2002).",
+      "appliesTo": ["selected"]
+    },
+    {
+      "id": "option-repeating-stem-numbers",
+      "channel": "partial-input",
+      "lacks": ["bind", "distinguish", "explain"],
+      "description": "Extract numeric tokens from the stem. Pick the option that repeats the largest number of those tokens (as substrings). If none repeat, abstain. Ties: first in A-D order. No model.",
+      "citation": "Gururangan et al. (2018) annotation artifacts; Poliak et al. (2018) hypothesis-only baselines. Number-copying as a partial-input cue rather than binding quantities to a situation.",
+      "appliesTo": ["selected"]
+    },
+    {
+      "id": "avoid-absolute-terms",
+      "channel": "item-cues",
+      "lacks": ["retrieve", "execute", "bind", "distinguish", "explain", "transfer"],
+      "description": "If exactly one option lacks the tokens always, never, all, none, only, every, impossible, or certainly, pick that option. Otherwise abstain. Uses only option strings.",
+      "citation": "Millman, Bishop, & Ebel (1965), test-wiseness principle of avoiding absolute terms. Haladyna, Downing, & Rodriguez (2002), guideline against absolute wording in distractors.",
+      "appliesTo": ["selected"]
+    },
+    {
+      "id": "middle-value-option",
+      "channel": "item-cues",
+      "lacks": ["retrieve", "execute", "bind", "distinguish", "explain", "transfer"],
+      "description": "Parse a leading signed number from each option. If at least three options parse, pick the option whose value is the median. Ties at the median: first in A-D order.",
+      "citation": "Millman, Bishop, & Ebel (1965), test-wiseness (central tendency among numeric options). Haladyna, Downing, & Rodriguez (2002), item-writing guideline on ordered numeric options.",
+      "appliesTo": ["selected"]
+    },
+    {
+      "id": "invert-and-multiply",
+      "channel": "unbound-exec",
+      "lacks": ["bind", "explain"],
+      "description": "From the stem, take the first two fractions a/b and c/d in reading order and return (a/b)*(d/c), i.e. invert the second and multiply, without checking whether the situation is division, a rate, or a remaining part. Match the numeric result to a choice or emit it for numeric items.",
+      "citation": "Standard invert-and-multiply algorithm for fraction division (CCSS 6.NS.1 / Utah 6.NS.1.a states the procedure). Unbound execution channel: the catalog applies the procedure to the first two fractions without binding symbols to the situation.",
+      "appliesTo": ["selected", "numeric", "griddable"]
+    },
+    {
+      "id": "coefficient-adjacent-to-x",
+      "channel": "unbound-exec",
+      "lacks": ["bind", "explain"],
+      "description": "Find the first pattern of a signed number immediately adjacent to x or X (optional * or ·) in the stem or in the choices-as-stem. Emit that coefficient. Does not solve the equation or bind x to a quantity.",
+      "citation": "Unbound execution of the surface syntax of algebraic literals. The claim verbs for bind standards (Utah 7.RP.2.c Core Guide: write y = kx) require mapping the coefficient to a situation; this program copies the numeral next to x.",
+      "appliesTo": ["selected", "numeric", "griddable"]
+    },
+    {
+      "id": "percent-of",
+      "channel": "unbound-exec",
+      "lacks": ["bind", "explain"],
+      "description": "If the stem contains a percent token p% and another number n, emit (p/100)*n using the first percent and the first non-percent number. No check of part vs whole vs remaining.",
+      "citation": "Utah Core 6.RP.3.c: '30% of a quantity means 30/100 times the quantity.' Unbound execution applies that formula to the first percent and the first other number without binding part and whole.",
+      "appliesTo": ["selected", "numeric", "griddable"]
+    },
+    {
+      "id": "percent-change",
+      "channel": "unbound-exec",
+      "lacks": ["bind", "explain"],
+      "description": "If the stem contains increase/markup/tax/tip/interest and a percent p with a number n, emit n*(1+p/100). If decrease/markdown/discount, emit n*(1-p/100). First matching polarity word wins. No multi-step binding of before/after.",
+      "citation": "Utah Core 7.RP.3 examples: markups and markdowns, percent increase and decrease. Unbound execution of the one-step percent-change formula without binding before/after quantities.",
+      "appliesTo": ["selected", "numeric", "griddable"]
+    },
+    {
+      "id": "unit-rate",
+      "channel": "unbound-exec",
+      "lacks": ["bind", "explain"],
+      "description": "Take the first two positive numbers a, b in the stem and emit a/b. Also emit b/a as a second candidate; for selected response, pick the first candidate that matches a choice, else a/b. No check of which quantity is the unit.",
+      "citation": "Utah Core 6.RP.2: unit rate a/b associated with ratio a:b. Unbound execution divides the first two numbers without binding which quantity is 1.",
+      "appliesTo": ["selected", "numeric", "griddable"]
+    },
+    {
+      "id": "y-equals-kx",
+      "channel": "unbound-exec",
+      "lacks": ["bind", "explain"],
+      "description": "If at least two numbers x,y appear, set k = y/x from the first pair that has x ≠ 0. If a later number x2 appears, emit k*x2. If the question looks like 'constant of proportionality' or 'unit rate' without a third number, emit k. No check that (0,0) is on the graph or that ratios are equivalent.",
+      "citation": "Utah Core Guide 7.RP.2: write y = kx and find the constant of proportionality. Unbound execution takes k as the quotient of the first two numbers.",
+      "appliesTo": ["selected", "numeric", "griddable"]
+    },
+    {
+      "id": "area-lw",
+      "channel": "unbound-exec",
+      "lacks": ["bind", "explain"],
+      "description": "If the stem mentions area, rectangle, or square and has two numbers a,b, emit a*b (or a*a if only one number and square). No binding of which sides are length and width, no subtraction of unshaded regions.",
+      "citation": "Unbound execution of the rectangle-area formula A = lw from the first two numbers. Catalog companion to percent-of and y = kx in the CHAT plan formula list.",
+      "appliesTo": ["selected", "numeric", "griddable"]
+    },
+    {
+      "id": "volume-lwh",
+      "channel": "unbound-exec",
+      "lacks": ["bind", "explain"],
+      "description": "If the stem mentions volume or cubic and has three numbers a,b,c, emit a*b*c. No unit conversion and no distinguishing of prism vs other solids.",
+      "citation": "Unbound execution of V = lwh from the first three numbers. Catalog companion in the CHAT plan formula list.",
+      "appliesTo": ["selected", "numeric", "griddable"]
+    },
+    {
+      "id": "mean-of-listed-numbers",
+      "channel": "unbound-exec",
+      "lacks": ["bind", "explain"],
+      "description": "If the stem mentions mean or average, emit the arithmetic mean of all numbers extracted from the stem, excluding percents. No trimming, no distinguishing mean from median.",
+      "citation": "Unbound execution of the arithmetic-mean formula on every numeral in the stem. Lacks bind (which numbers are data) and distinguish (mean vs median vs mode).",
+      "appliesTo": ["selected", "numeric", "griddable"]
+    },
+    {
+      "id": "position-c",
+      "channel": "item-cues",
+      "lacks": ["retrieve", "execute", "bind", "distinguish", "explain", "transfer"],
+      "description": "Pick option C if it exists, else the middle-position option. Classic test-wiseness position preference. No content.",
+      "citation": "Millman, Bishop, & Ebel (1965), test-wiseness (position preferences among options). Haladyna, Downing, & Rodriguez (2002) on balancing keys across positions.",
+      "appliesTo": ["selected"]
+    }
+  ]
+}

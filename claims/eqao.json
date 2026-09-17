@@ -1,0 +1,30 @@
+{
+  "authority": "eqao",
+  "note": "EQAO items joined at grade grain when a published scoring key is present. Items without keys are not ingested.",
+  "claims": [
+    {
+      "authority": "eqao",
+      "code": "g3",
+      "text": "EQAO Grade 3 mathematics.",
+      "operationalization": "Use the quantities in the stem; select or compute the published key. Bind and execute.",
+      "operations": ["bind", "execute"],
+      "sourceUrl": "https://www.eqao.com/"
+    },
+    {
+      "authority": "eqao",
+      "code": "g6",
+      "text": "EQAO Grade 6 mathematics.",
+      "operationalization": "Use the quantities in the stem; select or compute the published key. Bind and execute.",
+      "operations": ["bind", "execute"],
+      "sourceUrl": "https://www.eqao.com/"
+    },
+    {
+      "authority": "eqao",
+      "code": "g9",
+      "text": "EQAO Grade 9 mathematics.",
+      "operationalization": "Use the quantities in the stem; select or compute the published key. Bind and execute.",
+      "operations": ["bind", "execute"],
+      "sourceUrl": "https://www.eqao.com/"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "authority": "timss",
+  "sourceUrl": "https://timssandpirls.bc.edu/timss2011/downloads/T11_FW_Chap1.pdf",
+  "framework": "TIMSS 2011 Mathematics Framework (Mullis, Martin, Foy, Arora). Cognitive domains at grades 4 and 8: knowing, applying, reasoning. TIMSS items keep these tags. No TIMSS item is assigned a CCSS code by this project.",
+  "claims": [
+    {
+      "authority": "timss",
+      "code": "knowing",
+      "text": "The first domain, knowing, covers the facts, concepts, and procedures students need to know.",
+      "operationalization": "TIMSS 2011 Mathematics Framework, Knowing: Recall definitions, terminology, number properties, geometric properties, and notation. Recognize mathematical objects and equivalent entities. Compute: carry out algorithmic procedures for +, −, ×, ÷, or a combination of these with whole numbers, fractions, decimals and integers; approximate numbers to estimate computations; carry out routine algebraic procedures. Retrieve information from graphs, tables, or other sources; read simple scales. Measure using instruments and choose units. Classify/Order: classify objects, shapes, numbers, and expressions according to common properties; make correct decisions about class membership; order numbers and objects by attributes.",
+      "operations": ["retrieve", "execute"],
+      "sourceUrl": "https://timssandpirls.bc.edu/timss2011/downloads/TIMSS2011_Frameworks-Chapter1.pdf"
+    },
+    {
+      "authority": "timss",
+      "code": "applying",
+      "text": "The second domain, applying, focuses on the ability of students to apply knowledge and conceptual understanding to solve problems or answer questions.",
+      "operationalization": "TIMSS 2011 Mathematics Framework, Applying: Select an efficient/appropriate operation, method, or strategy for solving problems where there is a known procedure, algorithm, or method of solution. Represent: display mathematical information and data in diagrams, tables, charts, or graphs, and generate equivalent representations. Model: generate an appropriate model, such as an equation, geometric figure, or diagram for solving a routine problem. Implement a set of mathematical instructions. Solve Routine Problems: solve standard problems similar to those encountered in class, in familiar contexts or purely mathematical. Problem settings are more routine than those aligned with reasoning, rooted in the implemented curriculum.",
+      "operations": ["execute", "bind"],
+      "sourceUrl": "https://timssandpirls.bc.edu/timss2011/downloads/TIMSS2011_Frameworks-Chapter1.pdf"
+    },
+    {
+      "authority": "timss",
+      "code": "reasoning",
+      "text": "The third domain, reasoning, goes beyond the solution of routine problems to encompass unfamiliar situations, complex contexts, and multi-step problems.",
+      "operationalization": "TIMSS 2011 Mathematics Framework, Reasoning: Analyze: determine, describe, or use relationships between variables or objects in mathematical situations, and make valid inferences from given information. Generalize/Specialize: extend the domain to which a result is applicable. Integrate/Synthesize: make connections between different elements of knowledge and related representations; combine facts, concepts, and procedures. Justify: provide a justification by reference to known mathematical results or properties. Solve Non-routine Problems: solve problems set in mathematical or real-life contexts where students are unlikely to have encountered closely similar items, and apply mathematical facts, concepts, and procedures in unfamiliar or complex contexts. Both types involve transfer of knowledge and skills to new situations.",
+      "operations": ["distinguish", "explain", "transfer"],
+      "sourceUrl": "https://timssandpirls.bc.edu/timss2011/downloads/TIMSS2011_Frameworks-Chapter1.pdf"
+    }
+  ]
+}

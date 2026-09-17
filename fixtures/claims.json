@@ -1,0 +1,25 @@
+{
+  "claims": [
+    {
+      "authority": "timss",
+      "code": "knowing",
+      "text": "fixture knowing",
+      "operationalization": "fixture retrieve and execute",
+      "operations": ["retrieve", "execute"]
+    },
+    {
+      "authority": "timss",
+      "code": "applying",
+      "text": "fixture applying",
+      "operationalization": "fixture execute and bind",
+      "operations": ["execute", "bind"]
+    },
+    {
+      "authority": "utah-core",
+      "code": "7.RP.3",
+      "text": "fixture 7.RP.3",
+      "operationalization": "fixture bind",
+      "operations": ["bind", "execute"]
+    }
+  ]
+}

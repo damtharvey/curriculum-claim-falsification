@@ -1,0 +1,55 @@
+{
+  "authority": "pisa",
+  "sourceUrl": "https://www.oecd.org/pisa/",
+  "note": "PISA items keep formulate / employ / interpret. Seeded so later PISA ingestion joins without a contract change.",
+  "claims": [
+    {
+      "authority": "pisa",
+      "code": "formulate",
+      "text": "Formulating situations mathematically.",
+      "operationalization": "PISA mathematics process: identifying the mathematics in a situation and providing mathematical structure, representations, and specifications. Mapped here as bind (symbols to a situation) plus distinguish (what to mathematise).",
+      "operations": ["bind", "distinguish"],
+      "sourceUrl": "https://www.oecd.org/pisa/test/"
+    },
+    {
+      "authority": "pisa",
+      "code": "employ",
+      "text": "Employing mathematical concepts, facts, procedures, and reasoning.",
+      "operationalization": "PISA mathematics process: applying mathematical procedures to obtain mathematical results. Mapped here as execute, with bind only if the process requires mapping back to quantities; the tag itself names employing procedures.",
+      "operations": ["execute"],
+      "sourceUrl": "https://www.oecd.org/pisa/test/"
+    },
+    {
+      "authority": "pisa",
+      "code": "interpret",
+      "text": "Interpreting, applying, and evaluating mathematical outcomes.",
+      "operationalization": "PISA mathematics process: reflecting on mathematical solutions, results, or conclusions and interpreting them in the context of the problem. Mapped here as explain and bind.",
+      "operations": ["explain", "bind"],
+      "sourceUrl": "https://www.oecd.org/pisa/test/"
+    },
+    {
+      "authority": "pisa",
+      "code": "reproduction",
+      "text": "PISA 2003 reproduction competency class.",
+      "operationalization": "PISA 2003: reproduce practiced knowledge and perform routine procedures. Mapped here as execute.",
+      "operations": ["execute"],
+      "sourceUrl": "https://www.oecd.org/pisa/test/"
+    },
+    {
+      "authority": "pisa",
+      "code": "connections",
+      "text": "PISA 2003 connections competency class.",
+      "operationalization": "PISA 2003: connect ideas to solve problems that are not purely routine. Mapped here as bind and execute.",
+      "operations": ["bind", "execute"],
+      "sourceUrl": "https://www.oecd.org/pisa/test/"
+    },
+    {
+      "authority": "pisa",
+      "code": "reflection",
+      "text": "PISA 2003 reflection competency class.",
+      "operationalization": "PISA 2003: plan, reflect, and use mathematics in original situations. Mapped here as explain and distinguish.",
+      "operations": ["explain", "distinguish"],
+      "sourceUrl": "https://www.oecd.org/pisa/test/"
+    }
+  ]
+}

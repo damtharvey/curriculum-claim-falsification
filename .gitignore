@@ -1,0 +1,35 @@
+# Environments and installs
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.Python
+node_modules/
+dist/
+
+# Secrets
+.env
+.env.*
+!.env.example
+*.pem
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+*.swp
+*~
+.idea/
+.vscode/
+
+# LaTeX auxiliaries (keep built paper PDFs)
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.blg
+paper/*.toc
+paper/*.fls
+paper/*.fdb_latexmk
+paper/*.synctex.gz

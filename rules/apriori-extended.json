@@ -1,0 +1,37 @@
+{
+  "note": "Addendum-only catalog. Do not merge into the frozen 15-rule census. Scored by scripts/run_e2_apriori_cues_extended.py.",
+  "rules": [
+    {
+      "id": "most-qualified-hedged-option",
+      "channel": "item-cues",
+      "lacks": ["retrieve", "execute", "bind", "distinguish", "explain", "transfer"],
+      "description": "Among selected-response choices, count hedge/qualifier tokens (sometimes, often, usually, generally, typically, perhaps, possibly, probably, may, might, some, many, few, most, approximately, ...). Pick the unique maximum with count > 0. Abstain on ties or zero. Option strings only.",
+      "citation": "Millman, Bishop, and Ebel (1965), specific determiners. Haladyna, Downing, and Rodriguez (2002), similar-specificity / avoid absolute wording.",
+      "appliesTo": ["selected"]
+    },
+    {
+      "id": "convergence-option",
+      "channel": "item-cues",
+      "lacks": ["retrieve", "execute", "bind", "distinguish", "explain", "transfer"],
+      "description": "Tokenize each option. For numeric options also include the parsed number and digit string. Score an option by how many of its elements appear in other options. Pick the unique positive maximum. Abstain on ties.",
+      "citation": "Millman, Bishop, and Ebel (1965), convergence strategy.",
+      "appliesTo": ["selected"]
+    },
+    {
+      "id": "grammatical-fit-option",
+      "channel": "item-cues",
+      "lacks": ["retrieve", "execute", "bind", "distinguish", "explain", "transfer"],
+      "description": "If the stem ends in a or an (optional blank), pick the unique option whose first letter is a grammatical fit and at least one option is not. Otherwise abstain.",
+      "citation": "Millman, Bishop, and Ebel (1965), grammatical cue. Haladyna, Downing, and Rodriguez (2002), stem-option grammatical consistency.",
+      "appliesTo": ["selected"]
+    },
+    {
+      "id": "mean-of-other-options",
+      "channel": "item-cues",
+      "lacks": ["retrieve", "execute", "bind", "distinguish", "explain", "transfer"],
+      "description": "Parse a leading signed number from each option. If at least three parse, pick the unique option closest to the mean of the remaining values. Abstain on ties.",
+      "citation": "Millman, Bishop, and Ebel (1965), central tendency among numeric options. Haladyna, Downing, and Rodriguez (2002), ordered numeric options.",
+      "appliesTo": ["selected"]
+    }
+  ]
+}
