@@ -3,17 +3,17 @@
   "pass_kind": "writing_correction",
   "skill": ".agents/skills/ml-paper-writing/references/first-reader-review.md",
   "overall_recommendation": 4,
-  "reviewed_at": "2026-09-17T06:05Z",
-  "paper_head_reviewed_after_science_commit": "8d28f39",
+  "reviewed_at": "2026-09-17T06:45Z",
+  "paper_head_reviewed_after_science_commit": "b6ea3d3",
   "first_reader_check": {
     "pass": true,
     "qualified_reviewer_can_follow_the_abstract": true,
     "about": "Whether a published tag on a released mathematics item (a standard code, or a TIMSS cognitive domain) is required to match the key, tested by programs that lack the tagged operation, with no student data.",
-    "shown": "Item-writing rules yield no family-wise discovery; one rule beats chance on one cell (EQAO grade 6) and awaits replication. Claims are made only on items whose PDF text layer matches the printed page, and two rows that cleared on the text layer (Algebra II masked-stem, geometry lower-central) fail on those items. Language models of two families recover New York Regents Algebra I keys with the given quantities withheld, on items tagged for recognizing or interpreting a form; on those items a pass does not require the given quantities. TIMSS knowing, applying, and reasoning cells stay null at about 50 to 80 public items each.",
-    "what_is_new": "A one-sided program witness on tagged public mathematics, hashed before scoring and Holm-corrected inside three families, whose claims survive a mechanical check of the text layer against the printed page; and the finding that the withheld-quantity language-model result sits on recognition-tagged items and not on execution-tagged ones.",
-    "why_a_big_deal": "Accountability and research read a tagged pass as evidence of the tagged competency. Where a program without the operation, or without the given quantities, matches the key, that reading is of the wrong quantity. Half of the released text layer is not what students saw, so any census of released items that does not check the print is measuring a proxy.",
-    "abstract_word_count": 233,
-    "abstract_says": ["Algebra I only", "claims made on items whose text matches the printed page", "two rows dropped when the text layer was checked", "recognition-tagged items carry the language-model row"],
+    "shown": "Item-writing rules yield no family-wise discovery; one rule beats chance on one cell (EQAO grade 6) and awaits replication. Claims are made only on items whose PDF text layer matches the printed page, and two rows that cleared on the text layer (Algebra II masked-stem, geometry lower-central) fail there. Language models of two families recover New York Regents Algebra I keys with the given quantities withheld, on items tagged for recognizing or interpreting a form; the recovery survives a change of the option values with the form kept, so it is read from the form of the options; on those items a pass does not require the given quantities. TIMSS knowing, applying, and reasoning cells stay null at about 50 to 80 public items each.",
+    "what_is_new": "A one-sided program witness on tagged public mathematics, hashed before scoring and Holm-corrected inside three families, whose claims survive a mechanical check of the text layer against the printed page; the finding that the withheld-quantity language-model result sits on recognition-tagged items and not on execution-tagged ones; and a pre-registered option-numeral isomorph control showing that the result is not item memorization alone.",
+    "why_a_big_deal": "Accountability and research read a tagged pass as evidence of the tagged competency. Where a program without the operation, or without the given quantities, matches the key, that reading is of the wrong quantity. Half of the released text layer is not what students saw, so any census of released items that does not check the print is measuring a proxy. Released Regents forms are widely mirrored, so a model result on them needs a control that changes the values; this one has it.",
+    "abstract_word_count": 237,
+    "abstract_says": ["Algebra I only", "claims made on items whose text matches the printed page", "two rows dropped when the text layer was checked", "recognition-tagged items carry the language-model row", "the recovery survives a change of the option values (one clause; detail in Table tab:isomorph)"],
     "unreadability": {
       "stacked_if_thens": {"present": false},
       "named_hypothesis_packing": {"present": false},
@@ -23,9 +23,9 @@
       "process_metadiscourse": {"present": false},
       "abstract_not_claim": {"present": false},
       "negative_contribution_bullets": {"present": false},
-      "repeated_disclaimer": {"present": false, "note": "the print-fidelity sentence appears once in the abstract and once in contribution bullet 2; the duplicate in the scope paragraph was removed"}
+      "repeated_disclaimer": {"present": false, "note": "the print-fidelity sentence appears once in the abstract and once in contribution bullet 2; the isomorph control appears as one clause in the abstract and one sentence in contribution bullet 4"}
     },
-    "intro_and_captions": "Scope paragraph glosses cell and masked-stem. Contribution bullet 4 names which rows survived the print check, that Algebra II is not claimed, and that the language-model row is carried by recognition-tagged items. Captions of tab:witnesses, tab:faithful, and tab:verbclass gloss lower-central and masked-stem and state which rows are claimed."
+    "intro_and_captions": "Contribution bullet 4 now says the recovery survives a change of every option value with the option form kept, on both models scored, so memorized items are not the whole effect; the honest qualifier (a numeral-specific component on Qwen 7B recognition-tagged items; Qwen 14B not scored) stays in the results paragraph, Table tab:isomorph, and Limitations. The tab:isomorph caption glosses masked-stem (given quantities withheld from the stem), the isomorph (same digit count, sign, and decimal places), why a rate that holds is read from form, what Original means relative to Tables tab:faithful and tab:verbclass, the paired difference population, the bar, and why Qwen 14B is absent. Captions of tab:witnesses, tab:faithful, and tab:verbclass are unchanged from the previous pass."
   },
   "reviewer_independence": {
     "authored_the_science_edit": true,
