@@ -1433,7 +1433,7 @@ def main() -> None:
             "cuda": torch.version.cuda,
             "dtype": "bfloat16",
             "attnImplementation": "sdpa",
-            "env": "repo-root .venv (temp/chat-assessment/.venv had no torch)",
+            "env": "repository .venv",
         },
         "modelLoadSeconds": load_seconds,
         "preregistration": (

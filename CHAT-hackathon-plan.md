@@ -4,9 +4,9 @@ Minds & Machines, 15–17 September 2026. Presentations Thursday 17 September, 1
 
 Snapshot: Wednesday 2026-09-16 about 17:55 MDT. Working tree: this repository. Research spec `curriculum_claim_falsification_proposal.md`. Status `STATUS.md`.
 
-Nothing is frozen. Continuous integration through Thursday morning. Harvey owns all build, science, and paper. Alejandra Moctezuma (Utah Valley University) owns mentor outreach. Coy is out. No arXiv or OSF deposit. Mentor comments that arrive later do not change the talk.
+Nothing is frozen. Continuous integration through Thursday morning. Author A owns all build, science, and paper. Author B owns mentor outreach. A third collaborator is out. No arXiv or OSF deposit. Mentor comments that arrive later do not change the talk.
 
-Paper: `acmart` `sigplan,screen,nonacm,review`, author-year, 11 pages. Authors Harvey Dam (University of Utah) and Alejandra Moctezuma (Utah Valley University). Navy `\wip` marks unfinished work. Built PDF is `paper/main.pdf`; mentor copy is `paper/mentor-packet/paper.pdf`.
+Paper: `acmart` `sigplan,screen,nonacm,review,anonymous`, author-year, 11 pages. Anonymous review. Navy `\wip` marks unfinished work. Built PDF is `paper/main.pdf`; mentor copy is `paper/mentor-packet/paper.pdf`.
 
 ## 1. The claim
 
@@ -23,16 +23,16 @@ We never say students did not learn the skill.
 
 ## 2. Who does what
 
-Two people. Coy is out.
+Two people. A third collaborator is out.
 
 | Person | Owns | Does not own |
 |---|---|---|
-| Harvey | Claims, runner, ingestion, census, paper, slides, demo, license calls, registration text | Recruiting reviewers |
-| Alejandra | Mentor outreach and review intake | Code, data, paper prose, slides unless Harvey asks |
+| Author A | Claims, runner, ingestion, census, paper, slides, demo, license calls, registration text | Recruiting reviewers |
+| Author B | Mentor outreach and review intake | Code, data, paper prose, slides unless Author A asks |
 
-Harvey runs agents against the whole tree. Nothing waits on Coy.
+Author A runs agents against the whole tree. Nothing waits on a third collaborator.
 
-### Alejandra: mentors
+### Author B: mentors
 
 Send from `paper/mentor-packet/`:
 
@@ -41,9 +41,9 @@ Send from `paper/mentor-packet/`:
 
 Do not attach `paper.md` (stale dump), `witnesses.json`, choices-only rates, searched rows with n below 30, or the human rater key.
 
-Record one row per mentor in `paper/mentor-log.md`: name, when contacted, whether they agreed, comments received, Harvey's response.
+Record one row per mentor in `paper/mentor-log.md`: name, when contacted, whether they agreed, comments received, Author A's response.
 
-She decides who on the list to try first. Harvey decides what the packet claims. Comments tonight help the paper if they arrive; they do not change Thursday's talk.
+Mentor outreach decides who on the list to try first. Author A decides what the packet claims. Comments tonight help the paper if they arrive; they do not change Thursday's talk.
 
 ## 3. Where the work is (continuous integration)
 
@@ -97,7 +97,7 @@ The PDF is not frozen. Thursday talk 15:00–17:00. Mentor comments do not chang
 
 1. Finish the human 40-item masked-stem sheet (`rater-packet.txt`), send it, score when replies land. Do not cut n.
 2. Optional slides from the current PDF. Backup: the PDF on a laptop.
-3. Rebuild `paper/main.pdf` and copy to `paper/mentor-packet/paper.pdf` if science changes. Alejandra's attachment is always that copy.
+3. Rebuild `paper/main.pdf` and copy to `paper/mentor-packet/paper.pdf` if science changes. Author B's attachment is always that copy.
 4. **No deposit.** Mentors are reading a draft. No arXiv. No OSF.
 
 Parked, not scheduled: STAAR grade 5 2015/2020/2023 forms; backsolving (equation images); NYSED OCR; TIMSS 2015+ with IEA permission; dirty-option strip-and-rescore; a scorer larger than 14B; replication of the two catalog witnesses on new administrations.
@@ -106,12 +106,12 @@ Parked, not scheduled: STAAR grade 5 2015/2020/2023 forms; backsolving (equation
 
 | Task | Who | When |
 |---|---|---|
-| Mentor email: `cover.md` body, `paper.pdf` only | Alejandra | Wednesday; comments do not change the talk |
-| Collect comments | Alejandra | If they arrive; later comments still useful for the paper |
-| Human 40-item sheet (`rater-packet.txt` only) | Harvey (send); raters work alone | In flight as of 17:45; scores not in |
-| What the paper and slides may claim | Harvey | Continuous through Thursday morning |
-| License: EQAO item text is public released questions; TIMSS public-release for any TIMSS example | Harvey | Wednesday |
-| Optional slides from the current PDF | Harvey | Wednesday evening |
+| Mentor email: `cover.md` body, `paper.pdf` only | Author B | Wednesday; comments do not change the talk |
+| Collect comments | Author B | If they arrive; later comments still useful for the paper |
+| Human 40-item sheet (`rater-packet.txt` only) | Author A (send); raters work alone | In flight as of 17:45; scores not in |
+| What the paper and slides may claim | Author A | Continuous through Thursday morning |
+| License: EQAO item text is public released questions; TIMSS public-release for any TIMSS example | Author A | Wednesday |
+| Optional slides from the current PDF | Author A | Wednesday evening |
 | Thursday |  | The talk 15:00–17:00. No work block. |
 
 ## 7. Judging
@@ -130,12 +130,12 @@ Parked, not scheduled: STAAR grade 5 2015/2020/2023 forms; backsolving (equation
 
 | When | Milestone | Who |
 |---|---|---|
-| Wed through ~17:55 MDT | Paper at 11 pages with catalog, failed STAAR replication, and LM (Qwen + Phi-4) in the PDF | Harvey |
-| Wed evening | Human 40-item packet in flight; mentors may still be contacted | Harvey, Alejandra |
-| Wed evening–Thu morning | Rebuilds if science changes; optional slides from the current PDF | Harvey |
-| Thu 15:00–17:00 | Present. Mentor comments do not change this talk. | Harvey, Alejandra |
+| Wed through ~17:55 MDT | Paper at 11 pages with catalog, failed STAAR replication, and LM (Qwen + Phi-4) in the PDF | Author A |
+| Wed evening | Human 40-item packet in flight; mentors may still be contacted | Author A, Author B |
+| Wed evening–Thu morning | Rebuilds if science changes; optional slides from the current PDF | Author A |
+| Thu 15:00–17:00 | Present. Mentor comments do not change this talk. | Author A, Author B |
 
-Alejandra pings Harvey if a mentor replies. Replies can enter a later rebuild of the paper. They do not change the talk.
+Author B pings Author A if a mentor replies. Replies can enter a later rebuild of the paper. They do not change the talk.
 
 ## 9. Risks
 
@@ -146,7 +146,7 @@ Alejandra pings Harvey if a mentor replies. Replies can enter a later rebuild of
 - **Human n cut.** The registered bar needs the 40-item sheet. A prefix is not a new draw.
 - **Thin searched n.** n=11 to 20 with 1847 programs searched needs the random p95, not a headline.
 - **Mentors unavailable.** Present anyway. Their comments are for the paper, not a gate on the demo, and they do not change the talk.
-- **Reuse terms.** Show TIMSS 2011 public-release text. Aggregate the rest until Harvey clears the license note.
+- **Reuse terms.** Show TIMSS 2011 public-release text. Aggregate the rest until Author A clears the license note.
 - **Reviewers ask why TIMSS is 2011.** Last cycle whose texts, keys, scoring guides, tags, and percent correct are public without a permission process. Newer cycles are a later revision.
 - **Multiplicity.** 105 catalog tests; the two claimed catalog rows fail Holm. The paper reports that and keeps them as per-cell witnesses. Do not hide it on a slide.
 - **Overclaiming.** Every surface says "passing does not require X." None says "students do not learn X."

@@ -4,21 +4,23 @@
 from __future__ import annotations
 
 import json
+import os
 import sys
 from pathlib import Path
 from typing import Any
 
 from score_choices_only import extract_json_object
 
+_cursor_project = Path(os.environ["CURSOR_PROJECT"])
 TRANSCRIPT_ROOTS = [
-    Path(
-        "/home/harvey/.cursor/projects/home-harvey-repos-whats-new/"
-        "agent-transcripts/48539ff1-3f2f-48f8-8a8d-b74ef6443552/subagents"
-    ),
-    Path(
-        "/home/harvey/.cursor/projects/home-harvey-repos-whats-new/"
-        "agent-transcripts/50743b63-59bd-4474-b278-7abe638d7381/subagents"
-    ),
+    _cursor_project
+    / "agent-transcripts"
+    / "48539ff1-3f2f-48f8-8a8d-b74ef6443552"
+    / "subagents",
+    _cursor_project
+    / "agent-transcripts"
+    / "50743b63-59bd-4474-b278-7abe638d7381"
+    / "subagents",
 ]
 ROOT = Path(__file__).resolve().parents[1]
 PRED_DIR = ROOT / "exports" / "choices-only" / "predictions"
