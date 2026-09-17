@@ -55,6 +55,9 @@ exports/replication-staar/fetch-log*.md
 # Rendered PDF page PNGs (recreate with scripts/render_pdf_pages.py)
 exports/vision/
 
+# Human packet: send the tracked .txt, not the PDF
+exports/human-masked-stem/rater-packet.pdf
+
 # Hugging Face snapshots if copied into this tree
 .cache/
 huggingface/
