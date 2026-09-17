@@ -8,7 +8,7 @@ BIBTEX := bibtex
 
 all: main.pdf
 
-main.pdf: main.tex abstract.tex intro.tex related.tex method.tex results.tex limitations.tex references.bib
+main.pdf: main.tex abstract.tex intro.tex related.tex method.tex results.tex limitations.tex appendix.tex references.bib
 	$(LATEX) main
 	$(BIBTEX) main
 	$(LATEX) main
