@@ -1,0 +1,369 @@
+{
+  "status": "complete",
+  "label": "exploratory",
+  "writtenAt": "2026-09-16T21:23:14.188534+00:00",
+  "population": "masked_token_count_ge_1",
+  "promptModes": {
+    "chance": "mean 1/k",
+    "modal_letter": "constant letter = cell modal key on this population",
+    "options_only": "choices-only",
+    "masked_stem_plus_options": "masked-stem",
+    "with_stem": "full stem, letter argmax, no chain of thought"
+  },
+  "scoring": "Next-token log-softmax over option letters after the chat template; greedy argmax of bare letter vs space-prefixed letter.",
+  "models": {
+    "qwen2.5-7b-instruct": {
+      "modelId": "Qwen/Qwen2.5-7B-Instruct",
+      "modelRevision": "a09a35458c702b33eeacc393d103063234e8bc28",
+      "cells": {
+        "nyregents::algebra-i": {
+          "cell": "nyregents::algebra-i",
+          "n": 358,
+          "modalLetter": "B",
+          "modalCount": 97,
+          "modalFrequency": 0.2709497206703911,
+          "rungs": [
+            {
+              "name": "chance",
+              "available": true,
+              "n": 358,
+              "passRate": 0.25,
+              "ci95": null,
+              "chance": 0.25,
+              "meanOneOverK": 0.25,
+              "note": "Mean of 1/k on these items. Not a sample proportion; no bootstrap CI."
+            },
+            {
+              "name": "modal_letter",
+              "available": true,
+              "n": 358,
+              "note": "Always pick population modal key letter B (97/358).",
+              "passRate": 0.2709497206703911,
+              "ci95": [
+                0.22625698324022347,
+                0.31843575418994413
+              ],
+              "chance": 0.25,
+              "meanOneOverK": 0.25,
+              "ciExcludesChance": false,
+              "witnessBarEligible": false,
+              "lowerCiAboveChance": false
+            },
+            {
+              "name": "options_only",
+              "available": true,
+              "n": 358,
+              "note": "Option list only; letter log-probability argmax.",
+              "passRate": 0.3128491620111732,
+              "ci95": [
+                0.2681564245810056,
+                0.36033519553072624
+              ],
+              "chance": 0.25,
+              "meanOneOverK": 0.25,
+              "ciExcludesChance": true,
+              "witnessBarEligible": true,
+              "lowerCiAboveChance": true
+            },
+            {
+              "name": "masked_stem_plus_options",
+              "available": true,
+              "n": 358,
+              "note": "Quantities in the stem replaced by [N]; options shown; letter argmax.",
+              "passRate": 0.388268156424581,
+              "ci95": [
+                0.3407821229050279,
+                0.43854748603351956
+              ],
+              "chance": 0.25,
+              "meanOneOverK": 0.25,
+              "ciExcludesChance": true,
+              "witnessBarEligible": true,
+              "lowerCiAboveChance": true
+            },
+            {
+              "name": "with_stem",
+              "available": true,
+              "n": 358,
+              "note": "Full original stem plus options; letter argmax; no chain of thought.",
+              "passRate": 0.5083798882681564,
+              "ci95": [
+                0.46089385474860334,
+                0.5586592178770949
+              ],
+              "chance": 0.25,
+              "meanOneOverK": 0.25,
+              "ciExcludesChance": true,
+              "witnessBarEligible": true,
+              "lowerCiAboveChance": true
+            }
+          ],
+          "withStemComplete": true,
+          "optionsOnlyComplete": true
+        },
+        "nyregents::algebra-ii": {
+          "cell": "nyregents::algebra-ii",
+          "n": 248,
+          "modalLetter": "C",
+          "modalCount": 69,
+          "modalFrequency": 0.2782258064516129,
+          "rungs": [
+            {
+              "name": "chance",
+              "available": true,
+              "n": 248,
+              "passRate": 0.25,
+              "ci95": null,
+              "chance": 0.25,
+              "meanOneOverK": 0.25,
+              "note": "Mean of 1/k on these items. Not a sample proportion; no bootstrap CI."
+            },
+            {
+              "name": "modal_letter",
+              "available": true,
+              "n": 248,
+              "note": "Always pick population modal key letter C (69/248).",
+              "passRate": 0.2782258064516129,
+              "ci95": [
+                0.2217741935483871,
+                0.33064516129032256
+              ],
+              "chance": 0.25,
+              "meanOneOverK": 0.25,
+              "ciExcludesChance": false,
+              "witnessBarEligible": false,
+              "lowerCiAboveChance": false
+            },
+            {
+              "name": "options_only",
+              "available": true,
+              "n": 248,
+              "note": "Option list only; letter log-probability argmax.",
+              "passRate": 0.27419354838709675,
+              "ci95": [
+                0.21774193548387097,
+                0.3346774193548387
+              ],
+              "chance": 0.25,
+              "meanOneOverK": 0.25,
+              "ciExcludesChance": false,
+              "witnessBarEligible": false,
+              "lowerCiAboveChance": false
+            },
+            {
+              "name": "masked_stem_plus_options",
+              "available": true,
+              "n": 248,
+              "note": "Quantities in the stem replaced by [N]; options shown; letter argmax.",
+              "passRate": 0.36693548387096775,
+              "ci95": [
+                0.3064516129032258,
+                0.42338709677419356
+              ],
+              "chance": 0.25,
+              "meanOneOverK": 0.25,
+              "ciExcludesChance": true,
+              "witnessBarEligible": true,
+              "lowerCiAboveChance": true
+            },
+            {
+              "name": "with_stem",
+              "available": true,
+              "n": 248,
+              "note": "Full original stem plus options; letter argmax; no chain of thought.",
+              "passRate": 0.4032258064516129,
+              "ci95": [
+                0.3387096774193548,
+                0.4637096774193548
+              ],
+              "chance": 0.25,
+              "meanOneOverK": 0.25,
+              "ciExcludesChance": true,
+              "witnessBarEligible": true,
+              "lowerCiAboveChance": true
+            }
+          ],
+          "withStemComplete": true,
+          "optionsOnlyComplete": true
+        }
+      }
+    },
+    "qwen2.5-14b-instruct": {
+      "modelId": "Qwen/Qwen2.5-14B-Instruct",
+      "modelRevision": "cf98f3b3bbb457ad9e2bb7baf9a0125b6b88caa8",
+      "cells": {
+        "nyregents::algebra-i": {
+          "cell": "nyregents::algebra-i",
+          "n": 358,
+          "modalLetter": "B",
+          "modalCount": 97,
+          "modalFrequency": 0.2709497206703911,
+          "rungs": [
+            {
+              "name": "chance",
+              "available": true,
+              "n": 358,
+              "passRate": 0.25,
+              "ci95": null,
+              "chance": 0.25,
+              "meanOneOverK": 0.25,
+              "note": "Mean of 1/k on these items. Not a sample proportion; no bootstrap CI."
+            },
+            {
+              "name": "modal_letter",
+              "available": true,
+              "n": 358,
+              "note": "Always pick population modal key letter B (97/358).",
+              "passRate": 0.2709497206703911,
+              "ci95": [
+                0.22625698324022347,
+                0.31843575418994413
+              ],
+              "chance": 0.25,
+              "meanOneOverK": 0.25,
+              "ciExcludesChance": false,
+              "witnessBarEligible": false,
+              "lowerCiAboveChance": false
+            },
+            {
+              "name": "options_only",
+              "available": true,
+              "n": 358,
+              "note": "Option list only; letter log-probability argmax.",
+              "passRate": 0.3324022346368715,
+              "ci95": [
+                0.2849162011173184,
+                0.37988826815642457
+              ],
+              "chance": 0.25,
+              "meanOneOverK": 0.25,
+              "ciExcludesChance": true,
+              "witnessBarEligible": true,
+              "lowerCiAboveChance": true
+            },
+            {
+              "name": "masked_stem_plus_options",
+              "available": true,
+              "n": 358,
+              "note": "Quantities in the stem replaced by [N]; options shown; letter argmax.",
+              "passRate": 0.41620111731843573,
+              "ci95": [
+                0.36312849162011174,
+                0.4692737430167598
+              ],
+              "chance": 0.25,
+              "meanOneOverK": 0.25,
+              "ciExcludesChance": true,
+              "witnessBarEligible": true,
+              "lowerCiAboveChance": true
+            },
+            {
+              "name": "with_stem",
+              "available": true,
+              "n": 358,
+              "note": "Full original stem plus options; letter argmax; no chain of thought.",
+              "passRate": 0.5754189944134078,
+              "ci95": [
+                0.5251396648044693,
+                0.6256983240223464
+              ],
+              "chance": 0.25,
+              "meanOneOverK": 0.25,
+              "ciExcludesChance": true,
+              "witnessBarEligible": true,
+              "lowerCiAboveChance": true
+            }
+          ],
+          "withStemComplete": true,
+          "optionsOnlyComplete": true
+        },
+        "nyregents::algebra-ii": {
+          "cell": "nyregents::algebra-ii",
+          "n": 248,
+          "modalLetter": "C",
+          "modalCount": 69,
+          "modalFrequency": 0.2782258064516129,
+          "rungs": [
+            {
+              "name": "chance",
+              "available": true,
+              "n": 248,
+              "passRate": 0.25,
+              "ci95": null,
+              "chance": 0.25,
+              "meanOneOverK": 0.25,
+              "note": "Mean of 1/k on these items. Not a sample proportion; no bootstrap CI."
+            },
+            {
+              "name": "modal_letter",
+              "available": true,
+              "n": 248,
+              "note": "Always pick population modal key letter C (69/248).",
+              "passRate": 0.2782258064516129,
+              "ci95": [
+                0.2217741935483871,
+                0.33064516129032256
+              ],
+              "chance": 0.25,
+              "meanOneOverK": 0.25,
+              "ciExcludesChance": false,
+              "witnessBarEligible": false,
+              "lowerCiAboveChance": false
+            },
+            {
+              "name": "options_only",
+              "available": true,
+              "n": 248,
+              "note": "Option list only; letter log-probability argmax.",
+              "passRate": 0.2862903225806452,
+              "ci95": [
+                0.23387096774193547,
+                0.34274193548387094
+              ],
+              "chance": 0.25,
+              "meanOneOverK": 0.25,
+              "ciExcludesChance": false,
+              "witnessBarEligible": false,
+              "lowerCiAboveChance": false
+            },
+            {
+              "name": "masked_stem_plus_options",
+              "available": true,
+              "n": 248,
+              "note": "Quantities in the stem replaced by [N]; options shown; letter argmax.",
+              "passRate": 0.3588709677419355,
+              "ci95": [
+                0.29838709677419356,
+                0.4153225806451613
+              ],
+              "chance": 0.25,
+              "meanOneOverK": 0.25,
+              "ciExcludesChance": true,
+              "witnessBarEligible": true,
+              "lowerCiAboveChance": true
+            },
+            {
+              "name": "with_stem",
+              "available": true,
+              "n": 248,
+              "note": "Full original stem plus options; letter argmax; no chain of thought.",
+              "passRate": 0.43951612903225806,
+              "ci95": [
+                0.3790322580645161,
+                0.5
+              ],
+              "chance": 0.25,
+              "meanOneOverK": 0.25,
+              "ciExcludesChance": true,
+              "witnessBarEligible": true,
+              "lowerCiAboveChance": true
+            }
+          ],
+          "withStemComplete": true,
+          "optionsOnlyComplete": true
+        }
+      }
+    }
+  },
+  "missing": null
+}

@@ -1,0 +1,1608 @@
+{
+  "label": "exploratory",
+  "question": "On the clean choices-only 7B run, do cells that beat chance also beat the per-cell modal-letter baseline, and does accuracy fall on more recent exams?",
+  "inputs": {
+    "localSummary": "exports/addendum-gpu/choices-only-local-lm.json",
+    "localItems": "exports/addendum-gpu/choices-only-local-lm-items.jsonl",
+    "cleanKeepList": "exports/addendum/choices-only-clean-item-ids.json",
+    "cleanFilter": "exports/addendum/choices-only-clean-filter.json",
+    "composerItems": "exports/choices-only/scored.jsonl",
+    "items": "data/items.jsonl",
+    "modelId": "Qwen/Qwen2.5-7B-Instruct",
+    "modelRevision": "a09a35458c702b33eeacc393d103063234e8bc28"
+  },
+  "sanity": {
+    "cleanKeepListN": 1496,
+    "siblingFilterNKept": 1496,
+    "summaryNCleanKeepList": 1496,
+    "nScored": 1487,
+    "summaryNScored": 1487,
+    "recomputedPassRate": 0.3012777404169469,
+    "summaryPassRate": 0.3012777404169469,
+    "recomputedChance": 0.2503922887245012,
+    "summaryChance": 0.2503922887245012,
+    "recomputedCi95": [
+      0.27706792199058505,
+      0.3261600537995965
+    ],
+    "summaryCi95": [
+      0.27706792199058505,
+      0.3261600537995965
+    ],
+    "keepListMatchesSummary": true,
+    "nScoredMatchesSummary": true,
+    "passRateMatchesExactly": true,
+    "chanceMatchesExactly": true,
+    "ciMatchesExactly": true,
+    "allExact": true
+  },
+  "yearParse": {
+    "rule": "Prefer item.year when it is a 19xx/20xx string. Else take a year bounded by start/hyphen/underscore in the id. Else a 19xx/20xx in corpus or a leftover 19xx/20xx in the id. nyregents ...-unknown-unk-... ids are unparsed.",
+    "nLocalScored": 1487,
+    "nLocalParseable": 1471,
+    "nLocalUnparsed": 16,
+    "unparsedIds": [
+      "nyregents-algebra-i-unknown-unk-q1",
+      "nyregents-algebra-i-unknown-unk-q2",
+      "nyregents-algebra-i-unknown-unk-q3",
+      "nyregents-algebra-i-unknown-unk-q4",
+      "nyregents-algebra-i-unknown-unk-q5",
+      "nyregents-algebra-i-unknown-unk-q6",
+      "nyregents-algebra-i-unknown-unk-q8",
+      "nyregents-algebra-i-unknown-unk-q9",
+      "nyregents-algebra-i-unknown-unk-q10",
+      "nyregents-algebra-i-unknown-unk-q13",
+      "nyregents-algebra-i-unknown-unk-q14",
+      "nyregents-algebra-i-unknown-unk-q18",
+      "nyregents-algebra-i-unknown-unk-q21",
+      "nyregents-algebra-i-unknown-unk-q22",
+      "nyregents-algebra-i-unknown-unk-q23",
+      "nyregents-algebra-i-unknown-unk-q24"
+    ],
+    "buckets": [
+      "before_2015",
+      "2015_to_2019",
+      "2020_and_later"
+    ],
+    "note": "Regents exams before 2015 are widely posted. EQAO 2023 is in 2020_and_later. Unparsed rows are excluded from recency-rate comparisons but counted separately."
+  },
+  "perCellPositionBaseline": {
+    "nCellsNge10": 17,
+    "tieBreak": "Among letters tied for the highest key count, take the earliest letter in A-E order.",
+    "cells": [
+      {
+        "cell": "acara::y7-numeracy",
+        "n": 16,
+        "modalLetter": "D",
+        "modalCount": 6,
+        "modalFrequency": 0.375,
+        "keyCounts": {
+          "D": 6,
+          "C": 4,
+          "B": 3,
+          "A": 3
+        },
+        "modelPassRate": 0.3125,
+        "modelCi95": [
+          0.125,
+          0.5625
+        ],
+        "chance": 0.25,
+        "lowerCiAboveChance": false,
+        "lowerCiAboveModalFrequency": false,
+        "rateAboveModalFrequency": false,
+        "beatsPosition": false,
+        "flagLowerCiAboveChanceNotModal": false
+      },
+      {
+        "cell": "eqao::g3",
+        "n": 41,
+        "modalLetter": "C",
+        "modalCount": 13,
+        "modalFrequency": 0.3170731707317073,
+        "keyCounts": {
+          "C": 13,
+          "D": 12,
+          "A": 7,
+          "B": 9
+        },
+        "modelPassRate": 0.2682926829268293,
+        "modelCi95": [
+          0.14634146341463414,
+          0.4146341463414634
+        ],
+        "chance": 0.2520325203252033,
+        "lowerCiAboveChance": false,
+        "lowerCiAboveModalFrequency": false,
+        "rateAboveModalFrequency": false,
+        "beatsPosition": false,
+        "flagLowerCiAboveChanceNotModal": false
+      },
+      {
+        "cell": "eqao::g6",
+        "n": 50,
+        "modalLetter": "B",
+        "modalCount": 20,
+        "modalFrequency": 0.4,
+        "keyCounts": {
+          "C": 12,
+          "B": 20,
+          "D": 10,
+          "A": 8
+        },
+        "modelPassRate": 0.32,
+        "modelCi95": [
+          0.2,
+          0.46
+        ],
+        "chance": 0.254,
+        "lowerCiAboveChance": false,
+        "lowerCiAboveModalFrequency": false,
+        "rateAboveModalFrequency": false,
+        "beatsPosition": false,
+        "flagLowerCiAboveChanceNotModal": false
+      },
+      {
+        "cell": "eqao::g9",
+        "n": 44,
+        "modalLetter": "C",
+        "modalCount": 13,
+        "modalFrequency": 0.29545454545454547,
+        "keyCounts": {
+          "A": 8,
+          "B": 11,
+          "C": 13,
+          "D": 12
+        },
+        "modelPassRate": 0.2727272727272727,
+        "modelCi95": [
+          0.1590909090909091,
+          0.4090909090909091
+        ],
+        "chance": 0.2556818181818182,
+        "lowerCiAboveChance": false,
+        "lowerCiAboveModalFrequency": false,
+        "rateAboveModalFrequency": false,
+        "beatsPosition": false,
+        "flagLowerCiAboveChanceNotModal": false
+      },
+      {
+        "cell": "nyregents::algebra-i",
+        "n": 408,
+        "modalLetter": "B",
+        "modalCount": 111,
+        "modalFrequency": 0.27205882352941174,
+        "keyCounts": {
+          "C": 109,
+          "A": 93,
+          "B": 111,
+          "D": 95
+        },
+        "modelPassRate": 0.3088235294117647,
+        "modelCi95": [
+          0.2647058823529412,
+          0.3553921568627451
+        ],
+        "chance": 0.25,
+        "lowerCiAboveChance": true,
+        "lowerCiAboveModalFrequency": false,
+        "rateAboveModalFrequency": true,
+        "beatsPosition": false,
+        "flagLowerCiAboveChanceNotModal": true
+      },
+      {
+        "cell": "nyregents::algebra-ii",
+        "n": 280,
+        "modalLetter": "C",
+        "modalCount": 77,
+        "modalFrequency": 0.275,
+        "keyCounts": {
+          "B": 71,
+          "C": 77,
+          "A": 60,
+          "D": 72
+        },
+        "modelPassRate": 0.2714285714285714,
+        "modelCi95": [
+          0.22142857142857142,
+          0.325
+        ],
+        "chance": 0.25,
+        "lowerCiAboveChance": false,
+        "lowerCiAboveModalFrequency": false,
+        "rateAboveModalFrequency": false,
+        "beatsPosition": false,
+        "flagLowerCiAboveChanceNotModal": false
+      },
+      {
+        "cell": "nyregents::geometry",
+        "n": 231,
+        "modalLetter": "B",
+        "modalCount": 63,
+        "modalFrequency": 0.2727272727272727,
+        "keyCounts": {
+          "A": 52,
+          "B": 63,
+          "C": 63,
+          "D": 53
+        },
+        "modelPassRate": 0.2727272727272727,
+        "modelCi95": [
+          0.21645021645021645,
+          0.329004329004329
+        ],
+        "chance": 0.25,
+        "lowerCiAboveChance": false,
+        "lowerCiAboveModalFrequency": false,
+        "rateAboveModalFrequency": false,
+        "beatsPosition": false,
+        "flagLowerCiAboveChanceNotModal": false
+      },
+      {
+        "cell": "teks::alg1",
+        "n": 54,
+        "modalLetter": "B",
+        "modalCount": 18,
+        "modalFrequency": 0.3333333333333333,
+        "keyCounts": {
+          "D": 16,
+          "A": 13,
+          "B": 18,
+          "C": 7
+        },
+        "modelPassRate": 0.2777777777777778,
+        "modelCi95": [
+          0.16666666666666666,
+          0.4074074074074074
+        ],
+        "chance": 0.25,
+        "lowerCiAboveChance": false,
+        "lowerCiAboveModalFrequency": false,
+        "rateAboveModalFrequency": false,
+        "beatsPosition": false,
+        "flagLowerCiAboveChanceNotModal": false
+      },
+      {
+        "cell": "teks::g3",
+        "n": 27,
+        "modalLetter": "B",
+        "modalCount": 8,
+        "modalFrequency": 0.2962962962962963,
+        "keyCounts": {
+          "C": 6,
+          "A": 6,
+          "B": 8,
+          "D": 7
+        },
+        "modelPassRate": 0.4444444444444444,
+        "modelCi95": [
+          0.25925925925925924,
+          0.6296296296296297
+        ],
+        "chance": 0.25,
+        "lowerCiAboveChance": true,
+        "lowerCiAboveModalFrequency": false,
+        "rateAboveModalFrequency": true,
+        "beatsPosition": false,
+        "flagLowerCiAboveChanceNotModal": true
+      },
+      {
+        "cell": "teks::g4",
+        "n": 27,
+        "modalLetter": "A",
+        "modalCount": 9,
+        "modalFrequency": 0.3333333333333333,
+        "keyCounts": {
+          "A": 9,
+          "B": 6,
+          "C": 8,
+          "D": 4
+        },
+        "modelPassRate": 0.37037037037037035,
+        "modelCi95": [
+          0.18518518518518517,
+          0.5555555555555556
+        ],
+        "chance": 0.25,
+        "lowerCiAboveChance": false,
+        "lowerCiAboveModalFrequency": false,
+        "rateAboveModalFrequency": true,
+        "beatsPosition": false,
+        "flagLowerCiAboveChanceNotModal": false
+      },
+      {
+        "cell": "teks::g5",
+        "n": 44,
+        "modalLetter": "D",
+        "modalCount": 12,
+        "modalFrequency": 0.2727272727272727,
+        "keyCounts": {
+          "C": 11,
+          "A": 10,
+          "B": 11,
+          "D": 12
+        },
+        "modelPassRate": 0.3409090909090909,
+        "modelCi95": [
+          0.20454545454545456,
+          0.5
+        ],
+        "chance": 0.25,
+        "lowerCiAboveChance": false,
+        "lowerCiAboveModalFrequency": false,
+        "rateAboveModalFrequency": true,
+        "beatsPosition": false,
+        "flagLowerCiAboveChanceNotModal": false
+      },
+      {
+        "cell": "teks::g6",
+        "n": 49,
+        "modalLetter": "A",
+        "modalCount": 17,
+        "modalFrequency": 0.3469387755102041,
+        "keyCounts": {
+          "A": 17,
+          "B": 10,
+          "C": 13,
+          "D": 9
+        },
+        "modelPassRate": 0.2857142857142857,
+        "modelCi95": [
+          0.16326530612244897,
+          0.40816326530612246
+        ],
+        "chance": 0.25,
+        "lowerCiAboveChance": false,
+        "lowerCiAboveModalFrequency": false,
+        "rateAboveModalFrequency": false,
+        "beatsPosition": false,
+        "flagLowerCiAboveChanceNotModal": false
+      },
+      {
+        "cell": "teks::g7",
+        "n": 18,
+        "modalLetter": "B",
+        "modalCount": 6,
+        "modalFrequency": 0.3333333333333333,
+        "keyCounts": {
+          "A": 4,
+          "B": 6,
+          "D": 5,
+          "C": 3
+        },
+        "modelPassRate": 0.5,
+        "modelCi95": [
+          0.2777777777777778,
+          0.7222222222222222
+        ],
+        "chance": 0.25,
+        "lowerCiAboveChance": true,
+        "lowerCiAboveModalFrequency": false,
+        "rateAboveModalFrequency": true,
+        "beatsPosition": false,
+        "flagLowerCiAboveChanceNotModal": true
+      },
+      {
+        "cell": "teks::g8",
+        "n": 27,
+        "modalLetter": "B",
+        "modalCount": 9,
+        "modalFrequency": 0.3333333333333333,
+        "keyCounts": {
+          "B": 9,
+          "C": 5,
+          "A": 6,
+          "D": 7
+        },
+        "modelPassRate": 0.4074074074074074,
+        "modelCi95": [
+          0.2222222222222222,
+          0.5925925925925926
+        ],
+        "chance": 0.25,
+        "lowerCiAboveChance": false,
+        "lowerCiAboveModalFrequency": false,
+        "rateAboveModalFrequency": true,
+        "beatsPosition": false,
+        "flagLowerCiAboveChanceNotModal": false
+      },
+      {
+        "cell": "timss::applying",
+        "n": 28,
+        "modalLetter": "B",
+        "modalCount": 11,
+        "modalFrequency": 0.39285714285714285,
+        "keyCounts": {
+          "C": 8,
+          "B": 11,
+          "D": 5,
+          "A": 4
+        },
+        "modelPassRate": 0.25,
+        "modelCi95": [
+          0.10714285714285714,
+          0.42857142857142855
+        ],
+        "chance": 0.24821428571428572,
+        "lowerCiAboveChance": false,
+        "lowerCiAboveModalFrequency": false,
+        "rateAboveModalFrequency": false,
+        "beatsPosition": false,
+        "flagLowerCiAboveChanceNotModal": false
+      },
+      {
+        "cell": "timss::knowing",
+        "n": 35,
+        "modalLetter": "A",
+        "modalCount": 12,
+        "modalFrequency": 0.34285714285714286,
+        "keyCounts": {
+          "A": 12,
+          "B": 10,
+          "C": 7,
+          "E": 2,
+          "D": 4
+        },
+        "modelPassRate": 0.4,
+        "modelCi95": [
+          0.22857142857142856,
+          0.5714285714285714
+        ],
+        "chance": 0.2442857142857143,
+        "lowerCiAboveChance": false,
+        "lowerCiAboveModalFrequency": false,
+        "rateAboveModalFrequency": true,
+        "beatsPosition": false,
+        "flagLowerCiAboveChanceNotModal": false
+      },
+      {
+        "cell": "timss::reasoning",
+        "n": 58,
+        "modalLetter": "A",
+        "modalCount": 16,
+        "modalFrequency": 0.27586206896551724,
+        "keyCounts": {
+          "D": 15,
+          "C": 12,
+          "A": 16,
+          "B": 15
+        },
+        "modelPassRate": 0.25862068965517243,
+        "modelCi95": [
+          0.15517241379310345,
+          0.3793103448275862
+        ],
+        "chance": 0.25775862068965516,
+        "lowerCiAboveChance": false,
+        "lowerCiAboveModalFrequency": false,
+        "rateAboveModalFrequency": false,
+        "beatsPosition": false,
+        "flagLowerCiAboveChanceNotModal": false
+      }
+    ],
+    "flaggedLowerCiAboveChanceNotModal": [
+      {
+        "cell": "nyregents::algebra-i",
+        "n": 408,
+        "modelPassRate": 0.3088235294117647,
+        "modelCi95": [
+          0.2647058823529412,
+          0.3553921568627451
+        ],
+        "chance": 0.25,
+        "modalLetter": "B",
+        "modalFrequency": 0.27205882352941174
+      },
+      {
+        "cell": "teks::g3",
+        "n": 27,
+        "modelPassRate": 0.4444444444444444,
+        "modelCi95": [
+          0.25925925925925924,
+          0.6296296296296297
+        ],
+        "chance": 0.25,
+        "modalLetter": "B",
+        "modalFrequency": 0.2962962962962963
+      },
+      {
+        "cell": "teks::g7",
+        "n": 18,
+        "modelPassRate": 0.5,
+        "modelCi95": [
+          0.2777777777777778,
+          0.7222222222222222
+        ],
+        "chance": 0.25,
+        "modalLetter": "B",
+        "modalFrequency": 0.3333333333333333
+      }
+    ],
+    "highlightedCells": {
+      "nyregents::algebra-i": {
+        "cell": "nyregents::algebra-i",
+        "n": 408,
+        "modalLetter": "B",
+        "modalCount": 111,
+        "modalFrequency": 0.27205882352941174,
+        "keyCounts": {
+          "C": 109,
+          "A": 93,
+          "B": 111,
+          "D": 95
+        },
+        "modelPassRate": 0.3088235294117647,
+        "modelCi95": [
+          0.2647058823529412,
+          0.3553921568627451
+        ],
+        "chance": 0.25,
+        "lowerCiAboveChance": true,
+        "lowerCiAboveModalFrequency": false,
+        "rateAboveModalFrequency": true,
+        "beatsPosition": false,
+        "flagLowerCiAboveChanceNotModal": true,
+        "verdict": "does_not_beat_position"
+      },
+      "teks::g3": {
+        "cell": "teks::g3",
+        "n": 27,
+        "modalLetter": "B",
+        "modalCount": 8,
+        "modalFrequency": 0.2962962962962963,
+        "keyCounts": {
+          "C": 6,
+          "A": 6,
+          "B": 8,
+          "D": 7
+        },
+        "modelPassRate": 0.4444444444444444,
+        "modelCi95": [
+          0.25925925925925924,
+          0.6296296296296297
+        ],
+        "chance": 0.25,
+        "lowerCiAboveChance": true,
+        "lowerCiAboveModalFrequency": false,
+        "rateAboveModalFrequency": true,
+        "beatsPosition": false,
+        "flagLowerCiAboveChanceNotModal": true,
+        "verdict": "does_not_beat_position"
+      },
+      "teks::g7": {
+        "cell": "teks::g7",
+        "n": 18,
+        "modalLetter": "B",
+        "modalCount": 6,
+        "modalFrequency": 0.3333333333333333,
+        "keyCounts": {
+          "A": 4,
+          "B": 6,
+          "D": 5,
+          "C": 3
+        },
+        "modelPassRate": 0.5,
+        "modelCi95": [
+          0.2777777777777778,
+          0.7222222222222222
+        ],
+        "chance": 0.25,
+        "lowerCiAboveChance": true,
+        "lowerCiAboveModalFrequency": false,
+        "rateAboveModalFrequency": true,
+        "beatsPosition": false,
+        "flagLowerCiAboveChanceNotModal": true,
+        "verdict": "does_not_beat_position"
+      }
+    }
+  },
+  "decomposition": {
+    "modalDefinedOn": "cell (scored clean set; all cell sizes, including n < 10)",
+    "pooled": {
+      "nItems": 1487,
+      "nCorrect": 448,
+      "nCorrectOnModalKey": 122,
+      "shareOfCorrectOnModalKey": 0.27232142857142855,
+      "nNonModalKey": 1026,
+      "nonModalKey": {
+        "n": 1026,
+        "passRate": 0.31773879142300193,
+        "ci95": [
+          0.2875243664717349,
+          0.3469785575048733
+        ],
+        "chance": 0.2502761533463288,
+        "ciExcludesChance": true
+      },
+      "nonModalRateVsChance": {
+        "passRate": 0.31773879142300193,
+        "chance": 0.2502761533463288,
+        "aboveChance": true,
+        "lowerCiAboveChance": true
+      }
+    },
+    "pooledCellsNge10": {
+      "nItems": 1437,
+      "nCorrect": 431,
+      "nCorrectOnModalKey": 110,
+      "shareOfCorrectOnModalKey": 0.2552204176334107,
+      "nNonModalKey": 1016,
+      "nonModalKey": {
+        "n": 1016,
+        "passRate": 0.3159448818897638,
+        "ci95": [
+          0.2903543307086614,
+          0.3454724409448819
+        ],
+        "chance": 0.2503772965879265,
+        "ciExcludesChance": true
+      },
+      "nonModalRateVsChance": {
+        "passRate": 0.3159448818897638,
+        "chance": 0.2503772965879265,
+        "aboveChance": true,
+        "lowerCiAboveChance": true
+      }
+    },
+    "perSource": {
+      "eqao": {
+        "nItems": 135,
+        "nCorrect": 39,
+        "nCorrectOnModalKey": 8,
+        "shareOfCorrectOnModalKey": 0.20512820512820512,
+        "nNonModalKey": 89,
+        "nonModalKey": {
+          "n": 89,
+          "passRate": 0.34831460674157305,
+          "ci95": [
+            0.25842696629213485,
+            0.449438202247191
+          ],
+          "chance": 0.253183520599251,
+          "ciExcludesChance": true
+        },
+        "nonModalRateVsChance": {
+          "passRate": 0.34831460674157305,
+          "chance": 0.253183520599251,
+          "aboveChance": true,
+          "lowerCiAboveChance": true
+        }
+      },
+      "mcas": {
+        "nItems": 8,
+        "nCorrect": 3,
+        "nCorrectOnModalKey": 2,
+        "shareOfCorrectOnModalKey": 0.6666666666666666,
+        "nNonModalKey": 1,
+        "nonModalKey": {
+          "n": 1,
+          "passRate": 1.0,
+          "ci95": [
+            1.0,
+            1.0
+          ],
+          "chance": 0.25,
+          "ciExcludesChance": false
+        },
+        "nonModalRateVsChance": {
+          "passRate": 1.0,
+          "chance": 0.25,
+          "aboveChance": true,
+          "lowerCiAboveChance": false
+        }
+      },
+      "naplan": {
+        "nItems": 16,
+        "nCorrect": 5,
+        "nCorrectOnModalKey": 2,
+        "shareOfCorrectOnModalKey": 0.4,
+        "nNonModalKey": 10,
+        "nonModalKey": {
+          "n": 10,
+          "passRate": 0.3,
+          "ci95": [
+            0.0,
+            0.6
+          ],
+          "chance": 0.25,
+          "ciExcludesChance": false
+        },
+        "nonModalRateVsChance": {
+          "passRate": 0.3,
+          "chance": 0.25,
+          "aboveChance": true,
+          "lowerCiAboveChance": false
+        }
+      },
+      "nyregents": {
+        "nItems": 919,
+        "nCorrect": 265,
+        "nCorrectOnModalKey": 60,
+        "shareOfCorrectOnModalKey": 0.22641509433962265,
+        "nNonModalKey": 668,
+        "nonModalKey": {
+          "n": 668,
+          "passRate": 0.3068862275449102,
+          "ci95": [
+            0.2754491017964072,
+            0.34281437125748504
+          ],
+          "chance": 0.25,
+          "ciExcludesChance": true
+        },
+        "nonModalRateVsChance": {
+          "passRate": 0.3068862275449102,
+          "chance": 0.25,
+          "aboveChance": true,
+          "lowerCiAboveChance": true
+        }
+      },
+      "nysed": {
+        "nItems": 22,
+        "nCorrect": 8,
+        "nCorrectOnModalKey": 8,
+        "shareOfCorrectOnModalKey": 1.0,
+        "nNonModalKey": 0,
+        "nonModalKey": {
+          "n": 0,
+          "passRate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "nonModalRateVsChance": {
+          "passRate": 0.0,
+          "chance": null,
+          "aboveChance": null,
+          "lowerCiAboveChance": false
+        }
+      },
+      "pisa": {
+        "nItems": 20,
+        "nCorrect": 6,
+        "nCorrectOnModalKey": 2,
+        "shareOfCorrectOnModalKey": 0.3333333333333333,
+        "nNonModalKey": 9,
+        "nonModalKey": {
+          "n": 9,
+          "passRate": 0.4444444444444444,
+          "ci95": [
+            0.1111111111111111,
+            0.7777777777777778
+          ],
+          "chance": 0.23888888888888887,
+          "ciExcludesChance": false
+        },
+        "nonModalRateVsChance": {
+          "passRate": 0.4444444444444444,
+          "chance": 0.23888888888888887,
+          "aboveChance": true,
+          "lowerCiAboveChance": false
+        }
+      },
+      "staar": {
+        "nItems": 246,
+        "nCorrect": 86,
+        "nCorrectOnModalKey": 29,
+        "shareOfCorrectOnModalKey": 0.3372093023255814,
+        "nNonModalKey": 167,
+        "nonModalKey": {
+          "n": 167,
+          "passRate": 0.3413173652694611,
+          "ci95": [
+            0.2694610778443114,
+            0.41317365269461076
+          ],
+          "chance": 0.25,
+          "ciExcludesChance": true
+        },
+        "nonModalRateVsChance": {
+          "passRate": 0.3413173652694611,
+          "chance": 0.25,
+          "aboveChance": true,
+          "lowerCiAboveChance": true
+        }
+      },
+      "timss1995": {
+        "nItems": 78,
+        "nCorrect": 21,
+        "nCorrectOnModalKey": 6,
+        "shareOfCorrectOnModalKey": 0.2857142857142857,
+        "nNonModalKey": 53,
+        "nonModalKey": {
+          "n": 53,
+          "passRate": 0.2830188679245283,
+          "ci95": [
+            0.1509433962264151,
+            0.39622641509433965
+          ],
+          "chance": 0.25,
+          "ciExcludesChance": false
+        },
+        "nonModalRateVsChance": {
+          "passRate": 0.2830188679245283,
+          "chance": 0.25,
+          "aboveChance": true,
+          "lowerCiAboveChance": false
+        }
+      },
+      "timss1999": {
+        "nItems": 25,
+        "nCorrect": 9,
+        "nCorrectOnModalKey": 2,
+        "shareOfCorrectOnModalKey": 0.2222222222222222,
+        "nNonModalKey": 18,
+        "nonModalKey": {
+          "n": 18,
+          "passRate": 0.3888888888888889,
+          "ci95": [
+            0.16666666666666666,
+            0.6111111111111112
+          ],
+          "chance": 0.24166666666666664,
+          "ciExcludesChance": false
+        },
+        "nonModalRateVsChance": {
+          "passRate": 0.3888888888888889,
+          "chance": 0.24166666666666664,
+          "aboveChance": true,
+          "lowerCiAboveChance": false
+        }
+      },
+      "timss2003": {
+        "nItems": 2,
+        "nCorrect": 0,
+        "nCorrectOnModalKey": 0,
+        "shareOfCorrectOnModalKey": null,
+        "nNonModalKey": 1,
+        "nonModalKey": {
+          "n": 1,
+          "passRate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "chance": 0.25,
+          "ciExcludesChance": false
+        },
+        "nonModalRateVsChance": {
+          "passRate": 0.0,
+          "chance": 0.25,
+          "aboveChance": false,
+          "lowerCiAboveChance": false
+        }
+      },
+      "timss2011": {
+        "nItems": 16,
+        "nCorrect": 6,
+        "nCorrectOnModalKey": 3,
+        "shareOfCorrectOnModalKey": 0.5,
+        "nNonModalKey": 10,
+        "nonModalKey": {
+          "n": 10,
+          "passRate": 0.3,
+          "ci95": [
+            0.0,
+            0.6
+          ],
+          "chance": 0.275,
+          "ciExcludesChance": false
+        },
+        "nonModalRateVsChance": {
+          "passRate": 0.3,
+          "chance": 0.275,
+          "aboveChance": true,
+          "lowerCiAboveChance": false
+        }
+      }
+    },
+    "note": "shareOfCorrectOnModalKey is among items the model got right. nonModalKey.passRate is accuracy on items whose key is not that cell's modal letter, the options-content signal net of always guessing the cell's most common key."
+  },
+  "memorization": {
+    "local": {
+      "bySource": {
+        "eqao": {
+          "n": 135,
+          "passRate": 0.28888888888888886,
+          "ci95": [
+            0.2074074074074074,
+            0.362962962962963
+          ],
+          "chance": 0.25395061728395063,
+          "ciExcludesChance": false
+        },
+        "mcas": {
+          "n": 8,
+          "passRate": 0.375,
+          "ci95": [
+            0.0,
+            0.75
+          ],
+          "chance": 0.25,
+          "ciExcludesChance": false
+        },
+        "naplan": {
+          "n": 16,
+          "passRate": 0.3125,
+          "ci95": [
+            0.125,
+            0.5625
+          ],
+          "chance": 0.25,
+          "ciExcludesChance": false
+        },
+        "nyregents": {
+          "n": 919,
+          "passRate": 0.2883569096844396,
+          "ci95": [
+            0.2600652883569097,
+            0.31664853101196955
+          ],
+          "chance": 0.25,
+          "ciExcludesChance": true
+        },
+        "nysed": {
+          "n": 22,
+          "passRate": 0.36363636363636365,
+          "ci95": [
+            0.18181818181818182,
+            0.5454545454545454
+          ],
+          "chance": 0.25,
+          "ciExcludesChance": false
+        },
+        "pisa": {
+          "n": 20,
+          "passRate": 0.3,
+          "ci95": [
+            0.1,
+            0.5
+          ],
+          "chance": 0.2425,
+          "ciExcludesChance": false
+        },
+        "staar": {
+          "n": 246,
+          "passRate": 0.34959349593495936,
+          "ci95": [
+            0.2926829268292683,
+            0.4146341463414634
+          ],
+          "chance": 0.25,
+          "ciExcludesChance": true
+        },
+        "timss1995": {
+          "n": 78,
+          "passRate": 0.2692307692307692,
+          "ci95": [
+            0.16666666666666666,
+            0.3717948717948718
+          ],
+          "chance": 0.25,
+          "ciExcludesChance": false
+        },
+        "timss1999": {
+          "n": 25,
+          "passRate": 0.36,
+          "ci95": [
+            0.16,
+            0.56
+          ],
+          "chance": 0.23800000000000002,
+          "ciExcludesChance": false
+        },
+        "timss2003": {
+          "n": 2,
+          "passRate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "chance": 0.25,
+          "ciExcludesChance": false
+        },
+        "timss2011": {
+          "n": 16,
+          "passRate": 0.375,
+          "ci95": [
+            0.125,
+            0.625
+          ],
+          "chance": 0.28125,
+          "ciExcludesChance": false
+        }
+      },
+      "byYearBucket": {
+        "2015_to_2019": {
+          "n": 579,
+          "passRate": 0.31088082901554404,
+          "ci95": [
+            0.2694300518134715,
+            0.35060449050086356
+          ],
+          "chance": 0.25,
+          "ciExcludesChance": true
+        },
+        "2020_and_later": {
+          "n": 714,
+          "passRate": 0.29551820728291317,
+          "ci95": [
+            0.2605042016806723,
+            0.3277310924369748
+          ],
+          "chance": 0.2507469654528478,
+          "ciExcludesChance": true
+        },
+        "before_2015": {
+          "n": 178,
+          "passRate": 0.30337078651685395,
+          "ci95": [
+            0.23595505617977527,
+            0.37640449438202245
+          ],
+          "chance": 0.2502808988764045,
+          "ciExcludesChance": false
+        },
+        "unparsed": {
+          "n": 16,
+          "passRate": 0.1875,
+          "ci95": [
+            0.0,
+            0.375
+          ],
+          "chance": 0.25,
+          "ciExcludesChance": false
+        }
+      },
+      "bySourceThenYearBucket": {
+        "eqao": {
+          "2020_and_later": {
+            "n": 135,
+            "passRate": 0.28888888888888886,
+            "ci95": [
+              0.2074074074074074,
+              0.362962962962963
+            ],
+            "chance": 0.25395061728395063,
+            "ciExcludesChance": false
+          }
+        },
+        "mcas": {
+          "2015_to_2019": {
+            "n": 8,
+            "passRate": 0.375,
+            "ci95": [
+              0.0,
+              0.75
+            ],
+            "chance": 0.25,
+            "ciExcludesChance": false
+          }
+        },
+        "naplan": {
+          "2015_to_2019": {
+            "n": 16,
+            "passRate": 0.3125,
+            "ci95": [
+              0.125,
+              0.5625
+            ],
+            "chance": 0.25,
+            "ciExcludesChance": false
+          }
+        },
+        "nyregents": {
+          "2015_to_2019": {
+            "n": 442,
+            "passRate": 0.2986425339366516,
+            "ci95": [
+              0.25339366515837103,
+              0.3416289592760181
+            ],
+            "chance": 0.25,
+            "ciExcludesChance": true
+          },
+          "2020_and_later": {
+            "n": 424,
+            "passRate": 0.2783018867924528,
+            "ci95": [
+              0.23820754716981132,
+              0.32075471698113206
+            ],
+            "chance": 0.25,
+            "ciExcludesChance": false
+          },
+          "before_2015": {
+            "n": 37,
+            "passRate": 0.32432432432432434,
+            "ci95": [
+              0.1891891891891892,
+              0.4864864864864865
+            ],
+            "chance": 0.25,
+            "ciExcludesChance": false
+          },
+          "unparsed": {
+            "n": 16,
+            "passRate": 0.1875,
+            "ci95": [
+              0.0,
+              0.375
+            ],
+            "chance": 0.25,
+            "ciExcludesChance": false
+          }
+        },
+        "nysed": {
+          "2015_to_2019": {
+            "n": 21,
+            "passRate": 0.3333333333333333,
+            "ci95": [
+              0.14285714285714285,
+              0.5238095238095238
+            ],
+            "chance": 0.25,
+            "ciExcludesChance": false
+          },
+          "2020_and_later": {
+            "n": 1,
+            "passRate": 1.0,
+            "ci95": [
+              1.0,
+              1.0
+            ],
+            "chance": 0.25,
+            "ciExcludesChance": false
+          }
+        },
+        "pisa": {
+          "before_2015": {
+            "n": 20,
+            "passRate": 0.3,
+            "ci95": [
+              0.1,
+              0.5
+            ],
+            "chance": 0.2425,
+            "ciExcludesChance": false
+          }
+        },
+        "staar": {
+          "2015_to_2019": {
+            "n": 92,
+            "passRate": 0.358695652173913,
+            "ci95": [
+              0.2608695652173913,
+              0.45652173913043476
+            ],
+            "chance": 0.25,
+            "ciExcludesChance": true
+          },
+          "2020_and_later": {
+            "n": 154,
+            "passRate": 0.34415584415584416,
+            "ci95": [
+              0.2662337662337662,
+              0.42207792207792205
+            ],
+            "chance": 0.25,
+            "ciExcludesChance": true
+          }
+        },
+        "timss1995": {
+          "before_2015": {
+            "n": 78,
+            "passRate": 0.2692307692307692,
+            "ci95": [
+              0.16666666666666666,
+              0.3717948717948718
+            ],
+            "chance": 0.25,
+            "ciExcludesChance": false
+          }
+        },
+        "timss1999": {
+          "before_2015": {
+            "n": 25,
+            "passRate": 0.36,
+            "ci95": [
+              0.16,
+              0.56
+            ],
+            "chance": 0.23800000000000002,
+            "ciExcludesChance": false
+          }
+        },
+        "timss2003": {
+          "before_2015": {
+            "n": 2,
+            "passRate": 0.0,
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "chance": 0.25,
+            "ciExcludesChance": false
+          }
+        },
+        "timss2011": {
+          "before_2015": {
+            "n": 16,
+            "passRate": 0.375,
+            "ci95": [
+              0.125,
+              0.625
+            ],
+            "chance": 0.28125,
+            "ciExcludesChance": false
+          }
+        }
+      },
+      "fallsWithRecency": {
+        "bucketOrder": [
+          "before_2015",
+          "2015_to_2019",
+          "2020_and_later"
+        ],
+        "ratesInOrder": [
+          0.30337078651685395,
+          0.31088082901554404,
+          0.29551820728291317
+        ],
+        "strictlyFalling": false,
+        "weaklyMonotoneNonincreasing": false,
+        "newestMinusOldest": -0.007852579233940782,
+        "newestBelowOldest": true,
+        "fallsWithRecency": false
+      }
+    },
+    "composer": {
+      "model": "composer-2.5-fast",
+      "nRowsOnDisk": 2242,
+      "bySource": {
+        "eqao": {
+          "n": 149,
+          "passRate": 0.348993288590604,
+          "ci95": [
+            0.2751677852348993,
+            0.42953020134228187
+          ],
+          "chance": 0.2532438478747204,
+          "ciExcludesChance": true
+        },
+        "mcas": {
+          "n": 8,
+          "passRate": 0.25,
+          "ci95": [
+            0.0,
+            0.625
+          ],
+          "chance": 0.25,
+          "ciExcludesChance": false
+        },
+        "naplan": {
+          "n": 16,
+          "passRate": 0.1875,
+          "ci95": [
+            0.0,
+            0.375
+          ],
+          "chance": 0.25,
+          "ciExcludesChance": false
+        },
+        "nyregents": {
+          "n": 1447,
+          "passRate": 0.3289564616447823,
+          "ci95": [
+            0.3061506565307533,
+            0.35176226675881134
+          ],
+          "chance": 0.25,
+          "ciExcludesChance": true
+        },
+        "nysed": {
+          "n": 27,
+          "passRate": 0.25925925925925924,
+          "ci95": [
+            0.1111111111111111,
+            0.4074074074074074
+          ],
+          "chance": 0.25,
+          "ciExcludesChance": false
+        },
+        "pisa": {
+          "n": 22,
+          "passRate": 0.4090909090909091,
+          "ci95": [
+            0.22727272727272727,
+            0.5909090909090909
+          ],
+          "chance": 0.2545454545454545,
+          "ciExcludesChance": false
+        },
+        "staar": {
+          "n": 386,
+          "passRate": 0.3626943005181347,
+          "ci95": [
+            0.3160621761658031,
+            0.41450777202072536
+          ],
+          "chance": 0.25,
+          "ciExcludesChance": true
+        },
+        "timss1995": {
+          "n": 79,
+          "passRate": 0.43037974683544306,
+          "ci95": [
+            0.3291139240506329,
+            0.5443037974683544
+          ],
+          "chance": 0.25,
+          "ciExcludesChance": true
+        },
+        "timss1999": {
+          "n": 25,
+          "passRate": 0.36,
+          "ci95": [
+            0.2,
+            0.56
+          ],
+          "chance": 0.23800000000000002,
+          "ciExcludesChance": false
+        },
+        "timss2003": {
+          "n": 2,
+          "passRate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "chance": 0.25,
+          "ciExcludesChance": false
+        },
+        "timss2011": {
+          "n": 81,
+          "passRate": 0.37037037037037035,
+          "ci95": [
+            0.25925925925925924,
+            0.4691358024691358
+          ],
+          "chance": 0.2767489711934156,
+          "ciExcludesChance": false
+        }
+      },
+      "byYearBucket": {
+        "2015_to_2019": {
+          "n": 827,
+          "passRate": 0.32889963724304716,
+          "ci95": [
+            0.2962515114873035,
+            0.3603385731559855
+          ],
+          "chance": 0.25,
+          "ciExcludesChance": true
+        },
+        "2020_and_later": {
+          "n": 1131,
+          "passRate": 0.3395225464190981,
+          "ci95": [
+            0.3121131741821397,
+            0.367816091954023
+          ],
+          "chance": 0.2504273504273504,
+          "ciExcludesChance": true
+        },
+        "before_2015": {
+          "n": 265,
+          "passRate": 0.36981132075471695,
+          "ci95": [
+            0.3132075471698113,
+            0.43018867924528303
+          ],
+          "chance": 0.25742138364779876,
+          "ciExcludesChance": true
+        },
+        "unparsed": {
+          "n": 19,
+          "passRate": 0.42105263157894735,
+          "ci95": [
+            0.21052631578947367,
+            0.631578947368421
+          ],
+          "chance": 0.25,
+          "ciExcludesChance": false
+        }
+      },
+      "fallsWithRecency": {
+        "bucketOrder": [
+          "before_2015",
+          "2015_to_2019",
+          "2020_and_later"
+        ],
+        "ratesInOrder": [
+          0.36981132075471695,
+          0.32889963724304716,
+          0.3395225464190981
+        ],
+        "strictlyFalling": false,
+        "weaklyMonotoneNonincreasing": false,
+        "newestMinusOldest": -0.03028877433561883,
+        "newestBelowOldest": true,
+        "fallsWithRecency": false
+      }
+    },
+    "overlapSameItems": {
+      "nOverlap": 1484,
+      "local": {
+        "n": 1484,
+        "passRate": 0.3018867924528302,
+        "ci95": [
+          0.2776280323450135,
+          0.32681940700808626
+        ],
+        "chance": 0.2503930817610063,
+        "ciExcludesChance": true
+      },
+      "composer": {
+        "n": 1484,
+        "passRate": 0.3611859838274933,
+        "ci95": [
+          0.33827493261455527,
+          0.3834231805929919
+        ],
+        "chance": 0.2503930817610063,
+        "ciExcludesChance": true
+      },
+      "composerMinusLocal": 0.05929919137466311,
+      "byYearBucketLocal": {
+        "before_2015": {
+          "n": 178,
+          "passRate": 0.30337078651685395,
+          "ci95": [
+            0.24157303370786518,
+            0.3707865168539326
+          ],
+          "chance": 0.2502808988764045,
+          "ciExcludesChance": false
+        },
+        "2015_to_2019": {
+          "n": 578,
+          "passRate": 0.31141868512110726,
+          "ci95": [
+            0.27162629757785467,
+            0.35121107266435986
+          ],
+          "chance": 0.25,
+          "ciExcludesChance": true
+        },
+        "2020_and_later": {
+          "n": 712,
+          "passRate": 0.29634831460674155,
+          "ci95": [
+            0.26264044943820225,
+            0.3300561797752809
+          ],
+          "chance": 0.250749063670412,
+          "ciExcludesChance": true
+        },
+        "unparsed": {
+          "n": 16,
+          "passRate": 0.1875,
+          "ci95": [
+            0.0,
+            0.375
+          ],
+          "chance": 0.25,
+          "ciExcludesChance": false
+        }
+      },
+      "byYearBucketComposer": {
+        "before_2015": {
+          "n": 178,
+          "passRate": 0.4157303370786517,
+          "ci95": [
+            0.34269662921348315,
+            0.4887640449438202
+          ],
+          "chance": 0.2502808988764045,
+          "ciExcludesChance": true
+        },
+        "2015_to_2019": {
+          "n": 578,
+          "passRate": 0.3356401384083045,
+          "ci95": [
+            0.2975778546712803,
+            0.3754325259515571
+          ],
+          "chance": 0.25,
+          "ciExcludesChance": true
+        },
+        "2020_and_later": {
+          "n": 712,
+          "passRate": 0.3651685393258427,
+          "ci95": [
+            0.32865168539325845,
+            0.398876404494382
+          ],
+          "chance": 0.250749063670412,
+          "ciExcludesChance": true
+        },
+        "unparsed": {
+          "n": 16,
+          "passRate": 0.5,
+          "ci95": [
+            0.25,
+            0.75
+          ],
+          "chance": 0.25,
+          "ciExcludesChance": false
+        }
+      },
+      "gapComposerMinusLocal": {
+        "before_2015": {
+          "n": 178,
+          "composerMinusLocal": 0.11235955056179775,
+          "composerPassRate": 0.4157303370786517,
+          "localPassRate": 0.30337078651685395,
+          "chance": 0.2502808988764045
+        },
+        "2015_to_2019": {
+          "n": 578,
+          "composerMinusLocal": 0.024221453287197214,
+          "composerPassRate": 0.3356401384083045,
+          "localPassRate": 0.31141868512110726,
+          "chance": 0.25
+        },
+        "2020_and_later": {
+          "n": 712,
+          "composerMinusLocal": 0.06882022471910115,
+          "composerPassRate": 0.3651685393258427,
+          "localPassRate": 0.29634831460674155,
+          "chance": 0.250749063670412
+        },
+        "unparsed": {
+          "n": 16,
+          "composerMinusLocal": 0.3125,
+          "composerPassRate": 0.5,
+          "localPassRate": 0.1875,
+          "chance": 0.25
+        }
+      },
+      "localFallsWithRecency": {
+        "bucketOrder": [
+          "before_2015",
+          "2015_to_2019",
+          "2020_and_later"
+        ],
+        "ratesInOrder": [
+          0.30337078651685395,
+          0.31141868512110726,
+          0.29634831460674155
+        ],
+        "strictlyFalling": false,
+        "weaklyMonotoneNonincreasing": false,
+        "newestMinusOldest": -0.0070224719101124045,
+        "newestBelowOldest": true,
+        "fallsWithRecency": false
+      },
+      "composerFallsWithRecency": {
+        "bucketOrder": [
+          "before_2015",
+          "2015_to_2019",
+          "2020_and_later"
+        ],
+        "ratesInOrder": [
+          0.4157303370786517,
+          0.3356401384083045,
+          0.3651685393258427
+        ],
+        "strictlyFalling": false,
+        "weaklyMonotoneNonincreasing": false,
+        "newestMinusOldest": -0.050561797752809,
+        "newestBelowOldest": true,
+        "fallsWithRecency": false
+      }
+    }
+  }
+}

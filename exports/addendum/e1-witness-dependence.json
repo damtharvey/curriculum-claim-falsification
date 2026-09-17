@@ -1,0 +1,1095 @@
+{
+  "experiment": "E1",
+  "question": "Are the two claimed middle-value witnesses stable under cluster resampling by exam administration, across administrations, and under alternative numeric-option central-tendency definitions? Algebra II is reported only.",
+  "method": {
+    "rule": "lower-central index floor((k-1)/2) on parsed leading numbers, k>=3",
+    "itemBootstrap": "mulberry32 seed 11, 1000 replicates, matching runner/src/stats.ts",
+    "clusterBootstrap": "resample administrations with replacement, 2000 replicates, mulberry32 seed 20260916; rate is pooled over items in sampled administrations",
+    "administration": "NY Regents: year-session from item id; EQAO: released-question year",
+    "signTest": "one-sided binomial on administrations with rate != chance",
+    "sensitivity": "five definitions on the same k>=3 numeric-option items: lower-central (pre-registered), upper-central, nearest-to-arithmetic-mean, smallest, largest"
+  },
+  "cells": [
+    {
+      "authority": "nyregents",
+      "claim": "geometry",
+      "claimedWitness": true,
+      "nItemsInCell": 408,
+      "nSelected": 408,
+      "middleValueLowerCentral": {
+        "n": 279,
+        "nCorrect": 90,
+        "passRate": 0.3225806451612903,
+        "chanceRate": 0.25,
+        "itemBootstrapCi95": [
+          0.26523297491039427,
+          0.37992831541218636
+        ],
+        "clusterBootstrapCi95": [
+          0.26545454545454544,
+          0.3741721854304636
+        ],
+        "nAdministrations": 27,
+        "clearsItemBar": true,
+        "clearsClusterBar": true
+      },
+      "perAdministration": {
+        "nAdministrations": 27,
+        "nAdministrationsExceedingChance": 19,
+        "signTest": {
+          "nPlus": 19,
+          "nMinus": 7,
+          "nZero": 1,
+          "nSigned": 26,
+          "null": "P(administration rate > chance) = 0.5, zeros dropped",
+          "oneSidedPGreater": 0.014479637145996177
+        },
+        "administrations": [
+          {
+            "administration": "nyregents:2014-jun",
+            "n": 9,
+            "nCorrect": 5,
+            "passRate": 0.5555555555555556,
+            "exceedsChance": true,
+            "itemBootstrapCi95": null,
+            "nAtLeast10": false,
+            "clearsPerAdminBar": false
+          },
+          {
+            "administration": "nyregents:2014-aug",
+            "n": 6,
+            "nCorrect": 2,
+            "passRate": 0.3333333333333333,
+            "exceedsChance": true,
+            "itemBootstrapCi95": null,
+            "nAtLeast10": false,
+            "clearsPerAdminBar": false
+          },
+          {
+            "administration": "nyregents:2015-jan",
+            "n": 4,
+            "nCorrect": 1,
+            "passRate": 0.25,
+            "exceedsChance": false,
+            "itemBootstrapCi95": null,
+            "nAtLeast10": false,
+            "clearsPerAdminBar": false
+          },
+          {
+            "administration": "nyregents:2015-jun",
+            "n": 6,
+            "nCorrect": 2,
+            "passRate": 0.3333333333333333,
+            "exceedsChance": true,
+            "itemBootstrapCi95": null,
+            "nAtLeast10": false,
+            "clearsPerAdminBar": false
+          },
+          {
+            "administration": "nyregents:2015-aug",
+            "n": 9,
+            "nCorrect": 5,
+            "passRate": 0.5555555555555556,
+            "exceedsChance": true,
+            "itemBootstrapCi95": null,
+            "nAtLeast10": false,
+            "clearsPerAdminBar": false
+          },
+          {
+            "administration": "nyregents:2015-unk",
+            "n": 9,
+            "nCorrect": 3,
+            "passRate": 0.3333333333333333,
+            "exceedsChance": true,
+            "itemBootstrapCi95": null,
+            "nAtLeast10": false,
+            "clearsPerAdminBar": false
+          },
+          {
+            "administration": "nyregents:2016-jan",
+            "n": 8,
+            "nCorrect": 1,
+            "passRate": 0.125,
+            "exceedsChance": false,
+            "itemBootstrapCi95": null,
+            "nAtLeast10": false,
+            "clearsPerAdminBar": false
+          },
+          {
+            "administration": "nyregents:2016-unk",
+            "n": 14,
+            "nCorrect": 4,
+            "passRate": 0.2857142857142857,
+            "exceedsChance": true,
+            "itemBootstrapCi95": [
+              0.07142857142857142,
+              0.5
+            ],
+            "nAtLeast10": true,
+            "clearsPerAdminBar": false
+          },
+          {
+            "administration": "nyregents:2017-unk",
+            "n": 14,
+            "nCorrect": 5,
+            "passRate": 0.35714285714285715,
+            "exceedsChance": true,
+            "itemBootstrapCi95": [
+              0.14285714285714285,
+              0.5714285714285714
+            ],
+            "nAtLeast10": true,
+            "clearsPerAdminBar": false
+          },
+          {
+            "administration": "nyregents:2018-jan",
+            "n": 7,
+            "nCorrect": 2,
+            "passRate": 0.2857142857142857,
+            "exceedsChance": true,
+            "itemBootstrapCi95": null,
+            "nAtLeast10": false,
+            "clearsPerAdminBar": false
+          },
+          {
+            "administration": "nyregents:2018-jun",
+            "n": 10,
+            "nCorrect": 1,
+            "passRate": 0.1,
+            "exceedsChance": false,
+            "itemBootstrapCi95": [
+              0.0,
+              0.3
+            ],
+            "nAtLeast10": true,
+            "clearsPerAdminBar": false
+          },
+          {
+            "administration": "nyregents:2018-aug",
+            "n": 11,
+            "nCorrect": 6,
+            "passRate": 0.5454545454545454,
+            "exceedsChance": true,
+            "itemBootstrapCi95": [
+              0.2727272727272727,
+              0.8181818181818182
+            ],
+            "nAtLeast10": true,
+            "clearsPerAdminBar": true
+          },
+          {
+            "administration": "nyregents:2019-jan",
+            "n": 9,
+            "nCorrect": 4,
+            "passRate": 0.4444444444444444,
+            "exceedsChance": true,
+            "itemBootstrapCi95": null,
+            "nAtLeast10": false,
+            "clearsPerAdminBar": false
+          },
+          {
+            "administration": "nyregents:2019-jun",
+            "n": 12,
+            "nCorrect": 4,
+            "passRate": 0.3333333333333333,
+            "exceedsChance": true,
+            "itemBootstrapCi95": [
+              0.08333333333333333,
+              0.6666666666666666
+            ],
+            "nAtLeast10": true,
+            "clearsPerAdminBar": false
+          },
+          {
+            "administration": "nyregents:2019-aug",
+            "n": 11,
+            "nCorrect": 5,
+            "passRate": 0.45454545454545453,
+            "exceedsChance": true,
+            "itemBootstrapCi95": [
+              0.18181818181818182,
+              0.7272727272727273
+            ],
+            "nAtLeast10": true,
+            "clearsPerAdminBar": false
+          },
+          {
+            "administration": "nyregents:2020-jan",
+            "n": 13,
+            "nCorrect": 1,
+            "passRate": 0.07692307692307693,
+            "exceedsChance": false,
+            "itemBootstrapCi95": [
+              0.0,
+              0.23076923076923078
+            ],
+            "nAtLeast10": true,
+            "clearsPerAdminBar": false
+          },
+          {
+            "administration": "nyregents:2022-aug",
+            "n": 5,
+            "nCorrect": 1,
+            "passRate": 0.2,
+            "exceedsChance": false,
+            "itemBootstrapCi95": null,
+            "nAtLeast10": false,
+            "clearsPerAdminBar": false
+          },
+          {
+            "administration": "nyregents:2023-jan",
+            "n": 12,
+            "nCorrect": 4,
+            "passRate": 0.3333333333333333,
+            "exceedsChance": true,
+            "itemBootstrapCi95": [
+              0.08333333333333333,
+              0.6666666666666666
+            ],
+            "nAtLeast10": true,
+            "clearsPerAdminBar": false
+          },
+          {
+            "administration": "nyregents:2023-jun",
+            "n": 9,
+            "nCorrect": 3,
+            "passRate": 0.3333333333333333,
+            "exceedsChance": true,
+            "itemBootstrapCi95": null,
+            "nAtLeast10": false,
+            "clearsPerAdminBar": false
+          },
+          {
+            "administration": "nyregents:2024-jan",
+            "n": 9,
+            "nCorrect": 5,
+            "passRate": 0.5555555555555556,
+            "exceedsChance": true,
+            "itemBootstrapCi95": null,
+            "nAtLeast10": false,
+            "clearsPerAdminBar": false
+          },
+          {
+            "administration": "nyregents:2024-jun",
+            "n": 13,
+            "nCorrect": 5,
+            "passRate": 0.38461538461538464,
+            "exceedsChance": true,
+            "itemBootstrapCi95": [
+              0.15384615384615385,
+              0.6923076923076923
+            ],
+            "nAtLeast10": true,
+            "clearsPerAdminBar": false
+          },
+          {
+            "administration": "nyregents:2025-jan",
+            "n": 11,
+            "nCorrect": 2,
+            "passRate": 0.18181818181818182,
+            "exceedsChance": false,
+            "itemBootstrapCi95": [
+              0.0,
+              0.45454545454545453
+            ],
+            "nAtLeast10": true,
+            "clearsPerAdminBar": false
+          },
+          {
+            "administration": "nyregents:2025-jun",
+            "n": 15,
+            "nCorrect": 5,
+            "passRate": 0.3333333333333333,
+            "exceedsChance": true,
+            "itemBootstrapCi95": [
+              0.13333333333333333,
+              0.6
+            ],
+            "nAtLeast10": true,
+            "clearsPerAdminBar": false
+          },
+          {
+            "administration": "nyregents:2025-aug",
+            "n": 14,
+            "nCorrect": 5,
+            "passRate": 0.35714285714285715,
+            "exceedsChance": true,
+            "itemBootstrapCi95": [
+              0.14285714285714285,
+              0.6428571428571429
+            ],
+            "nAtLeast10": true,
+            "clearsPerAdminBar": false
+          },
+          {
+            "administration": "nyregents:2026-jan",
+            "n": 13,
+            "nCorrect": 2,
+            "passRate": 0.15384615384615385,
+            "exceedsChance": false,
+            "itemBootstrapCi95": [
+              0.0,
+              0.38461538461538464
+            ],
+            "nAtLeast10": true,
+            "clearsPerAdminBar": false
+          },
+          {
+            "administration": "nyregents:2026-jun",
+            "n": 14,
+            "nCorrect": 6,
+            "passRate": 0.42857142857142855,
+            "exceedsChance": true,
+            "itemBootstrapCi95": [
+              0.21428571428571427,
+              0.7142857142857143
+            ],
+            "nAtLeast10": true,
+            "clearsPerAdminBar": false
+          },
+          {
+            "administration": "nyregents:2026-aug",
+            "n": 12,
+            "nCorrect": 1,
+            "passRate": 0.08333333333333333,
+            "exceedsChance": false,
+            "itemBootstrapCi95": [
+              0.0,
+              0.25
+            ],
+            "nAtLeast10": true,
+            "clearsPerAdminBar": false
+          }
+        ],
+        "nAdministrationsNAtLeast10": 15,
+        "nAdministrationsClearingItemBar": 1,
+        "note": "exceedsChance is rate > chance. clearsPerAdminBar is n>=10 and item-bootstrap lower CI > 0.25. Single administrations are underpowered; the claim is the pooled cell."
+      },
+      "ruleDefinitionSensitivity": {
+        "lower-central": {
+          "n": 279,
+          "nCorrect": 90,
+          "passRate": 0.3225806451612903,
+          "chanceRate": 0.25,
+          "itemBootstrapCi95": [
+            0.26523297491039427,
+            0.37992831541218636
+          ],
+          "clusterBootstrapCi95": [
+            0.26545454545454544,
+            0.3741721854304636
+          ],
+          "nAdministrations": 27,
+          "clearsItemBar": true,
+          "clearsClusterBar": true,
+          "preRegistered": true
+        },
+        "upper-central": {
+          "n": 279,
+          "nCorrect": 92,
+          "passRate": 0.32974910394265233,
+          "chanceRate": 0.25,
+          "itemBootstrapCi95": [
+            0.2724014336917563,
+            0.3870967741935484
+          ],
+          "clusterBootstrapCi95": [
+            0.2891156462585034,
+            0.36981132075471695
+          ],
+          "nAdministrations": 27,
+          "clearsItemBar": true,
+          "clearsClusterBar": true,
+          "preRegistered": false
+        },
+        "nearest-to-arithmetic-mean": {
+          "n": 279,
+          "nCorrect": 87,
+          "passRate": 0.3118279569892473,
+          "chanceRate": 0.25,
+          "itemBootstrapCi95": [
+            0.25806451612903225,
+            0.3655913978494624
+          ],
+          "clusterBootstrapCi95": [
+            0.2690909090909091,
+            0.3568627450980392
+          ],
+          "nAdministrations": 27,
+          "clearsItemBar": true,
+          "clearsClusterBar": true,
+          "preRegistered": false
+        },
+        "smallest": {
+          "n": 279,
+          "nCorrect": 61,
+          "passRate": 0.21863799283154123,
+          "chanceRate": 0.25,
+          "itemBootstrapCi95": [
+            0.16845878136200718,
+            0.26523297491039427
+          ],
+          "clusterBootstrapCi95": [
+            0.17472118959107807,
+            0.2668918918918919
+          ],
+          "nAdministrations": 27,
+          "clearsItemBar": false,
+          "clearsClusterBar": false,
+          "preRegistered": false
+        },
+        "largest": {
+          "n": 279,
+          "nCorrect": 61,
+          "passRate": 0.21863799283154123,
+          "chanceRate": 0.25,
+          "itemBootstrapCi95": [
+            0.17204301075268819,
+            0.26523297491039427
+          ],
+          "clusterBootstrapCi95": [
+            0.16666666666666666,
+            0.2765957446808511
+          ],
+          "nAdministrations": 27,
+          "clearsItemBar": false,
+          "clearsClusterBar": false,
+          "preRegistered": false
+        }
+      },
+      "cite": "exports/addendum/e1-witness-dependence.json cells[authority=nyregents claim=geometry]"
+    },
+    {
+      "authority": "eqao",
+      "claim": "g6",
+      "claimedWitness": true,
+      "nItemsInCell": 53,
+      "nSelected": 53,
+      "middleValueLowerCentral": {
+        "n": 40,
+        "nCorrect": 20,
+        "passRate": 0.5,
+        "chanceRate": 0.25375000000000003,
+        "itemBootstrapCi95": [
+          0.35,
+          0.65
+        ],
+        "clusterBootstrapCi95": [
+          0.4166666666666667,
+          0.5882352941176471
+        ],
+        "nAdministrations": 3,
+        "clearsItemBar": true,
+        "clearsClusterBar": true
+      },
+      "perAdministration": {
+        "nAdministrations": 3,
+        "nAdministrationsExceedingChance": 3,
+        "signTest": {
+          "nPlus": 3,
+          "nMinus": 0,
+          "nZero": 0,
+          "nSigned": 3,
+          "null": "P(administration rate > chance) = 0.5, zeros dropped",
+          "oneSidedPGreater": 0.12500000000000003
+        },
+        "administrations": [
+          {
+            "administration": "eqao:2023",
+            "n": 17,
+            "nCorrect": 10,
+            "passRate": 0.5882352941176471,
+            "exceedsChance": true,
+            "itemBootstrapCi95": [
+              0.35294117647058826,
+              0.8235294117647058
+            ],
+            "nAtLeast10": true,
+            "clearsPerAdminBar": true
+          },
+          {
+            "administration": "eqao:2024",
+            "n": 12,
+            "nCorrect": 5,
+            "passRate": 0.4166666666666667,
+            "exceedsChance": true,
+            "itemBootstrapCi95": [
+              0.16666666666666666,
+              0.6666666666666666
+            ],
+            "nAtLeast10": true,
+            "clearsPerAdminBar": false
+          },
+          {
+            "administration": "eqao:2025",
+            "n": 11,
+            "nCorrect": 5,
+            "passRate": 0.45454545454545453,
+            "exceedsChance": true,
+            "itemBootstrapCi95": [
+              0.18181818181818182,
+              0.7272727272727273
+            ],
+            "nAtLeast10": true,
+            "clearsPerAdminBar": false
+          }
+        ],
+        "nAdministrationsNAtLeast10": 3,
+        "nAdministrationsClearingItemBar": 1,
+        "note": "exceedsChance is rate > chance. clearsPerAdminBar is n>=10 and item-bootstrap lower CI > 0.25. Single administrations are underpowered; the claim is the pooled cell."
+      },
+      "ruleDefinitionSensitivity": {
+        "lower-central": {
+          "n": 40,
+          "nCorrect": 20,
+          "passRate": 0.5,
+          "chanceRate": 0.25375000000000003,
+          "itemBootstrapCi95": [
+            0.35,
+            0.65
+          ],
+          "clusterBootstrapCi95": [
+            0.4166666666666667,
+            0.5882352941176471
+          ],
+          "nAdministrations": 3,
+          "clearsItemBar": true,
+          "clearsClusterBar": true,
+          "preRegistered": true
+        },
+        "upper-central": {
+          "n": 40,
+          "nCorrect": 10,
+          "passRate": 0.25,
+          "chanceRate": 0.25375000000000003,
+          "itemBootstrapCi95": [
+            0.125,
+            0.4
+          ],
+          "clusterBootstrapCi95": [
+            0.11764705882352941,
+            0.5
+          ],
+          "nAdministrations": 3,
+          "clearsItemBar": false,
+          "clearsClusterBar": false,
+          "preRegistered": false
+        },
+        "nearest-to-arithmetic-mean": {
+          "n": 40,
+          "nCorrect": 15,
+          "passRate": 0.375,
+          "chanceRate": 0.25375000000000003,
+          "itemBootstrapCi95": [
+            0.225,
+            0.525
+          ],
+          "clusterBootstrapCi95": [
+            0.18181818181818182,
+            0.5294117647058824
+          ],
+          "nAdministrations": 3,
+          "clearsItemBar": false,
+          "clearsClusterBar": false,
+          "preRegistered": false
+        },
+        "smallest": {
+          "n": 40,
+          "nCorrect": 8,
+          "passRate": 0.2,
+          "chanceRate": 0.25375000000000003,
+          "itemBootstrapCi95": [
+            0.075,
+            0.325
+          ],
+          "clusterBootstrapCi95": [
+            0.08333333333333333,
+            0.2727272727272727
+          ],
+          "nAdministrations": 3,
+          "clearsItemBar": false,
+          "clearsClusterBar": false,
+          "preRegistered": false
+        },
+        "largest": {
+          "n": 40,
+          "nCorrect": 8,
+          "passRate": 0.2,
+          "chanceRate": 0.25375000000000003,
+          "itemBootstrapCi95": [
+            0.075,
+            0.35
+          ],
+          "clusterBootstrapCi95": [
+            0.09090909090909091,
+            0.25
+          ],
+          "nAdministrations": 3,
+          "clearsItemBar": false,
+          "clearsClusterBar": false,
+          "preRegistered": false
+        }
+      },
+      "cite": "exports/addendum/e1-witness-dependence.json cells[authority=eqao claim=g6]"
+    },
+    {
+      "authority": "nyregents",
+      "claim": "algebra-ii",
+      "claimedWitness": false,
+      "nItemsInCell": 442,
+      "nSelected": 442,
+      "middleValueLowerCentral": {
+        "n": 372,
+        "nCorrect": 111,
+        "passRate": 0.29838709677419356,
+        "chanceRate": 0.25,
+        "itemBootstrapCi95": [
+          0.25268817204301075,
+          0.34408602150537637
+        ],
+        "clusterBootstrapCi95": [
+          0.2552083333333333,
+          0.3407202216066482
+        ],
+        "nAdministrations": 25,
+        "clearsItemBar": true,
+        "clearsClusterBar": true
+      },
+      "perAdministration": {
+        "nAdministrations": 25,
+        "nAdministrationsExceedingChance": 17,
+        "signTest": {
+          "nPlus": 17,
+          "nMinus": 6,
+          "nZero": 2,
+          "nSigned": 23,
+          "null": "P(administration rate > chance) = 0.5, zeros dropped",
+          "oneSidedPGreater": 0.01734483242034912
+        },
+        "administrations": [
+          {
+            "administration": "nyregents:2016-jun",
+            "n": 12,
+            "nCorrect": 5,
+            "passRate": 0.4166666666666667,
+            "exceedsChance": true,
+            "itemBootstrapCi95": [
+              0.16666666666666666,
+              0.75
+            ],
+            "nAtLeast10": true,
+            "clearsPerAdminBar": false
+          },
+          {
+            "administration": "nyregents:2016-aug",
+            "n": 12,
+            "nCorrect": 5,
+            "passRate": 0.4166666666666667,
+            "exceedsChance": true,
+            "itemBootstrapCi95": [
+              0.16666666666666666,
+              0.75
+            ],
+            "nAtLeast10": true,
+            "clearsPerAdminBar": false
+          },
+          {
+            "administration": "nyregents:2017-jan",
+            "n": 14,
+            "nCorrect": 3,
+            "passRate": 0.21428571428571427,
+            "exceedsChance": false,
+            "itemBootstrapCi95": [
+              0.0,
+              0.42857142857142855
+            ],
+            "nAtLeast10": true,
+            "clearsPerAdminBar": false
+          },
+          {
+            "administration": "nyregents:2017-jun",
+            "n": 11,
+            "nCorrect": 3,
+            "passRate": 0.2727272727272727,
+            "exceedsChance": true,
+            "itemBootstrapCi95": [
+              0.0,
+              0.5454545454545454
+            ],
+            "nAtLeast10": true,
+            "clearsPerAdminBar": false
+          },
+          {
+            "administration": "nyregents:2017-aug",
+            "n": 12,
+            "nCorrect": 6,
+            "passRate": 0.5,
+            "exceedsChance": true,
+            "itemBootstrapCi95": [
+              0.25,
+              0.75
+            ],
+            "nAtLeast10": true,
+            "clearsPerAdminBar": false
+          },
+          {
+            "administration": "nyregents:2018-jan",
+            "n": 17,
+            "nCorrect": 2,
+            "passRate": 0.11764705882352941,
+            "exceedsChance": false,
+            "itemBootstrapCi95": [
+              0.0,
+              0.29411764705882354
+            ],
+            "nAtLeast10": true,
+            "clearsPerAdminBar": false
+          },
+          {
+            "administration": "nyregents:2018-jun",
+            "n": 15,
+            "nCorrect": 5,
+            "passRate": 0.3333333333333333,
+            "exceedsChance": true,
+            "itemBootstrapCi95": [
+              0.13333333333333333,
+              0.6
+            ],
+            "nAtLeast10": true,
+            "clearsPerAdminBar": false
+          },
+          {
+            "administration": "nyregents:2018-aug",
+            "n": 17,
+            "nCorrect": 1,
+            "passRate": 0.058823529411764705,
+            "exceedsChance": false,
+            "itemBootstrapCi95": [
+              0.0,
+              0.17647058823529413
+            ],
+            "nAtLeast10": true,
+            "clearsPerAdminBar": false
+          },
+          {
+            "administration": "nyregents:2019-jan",
+            "n": 11,
+            "nCorrect": 3,
+            "passRate": 0.2727272727272727,
+            "exceedsChance": true,
+            "itemBootstrapCi95": [
+              0.09090909090909091,
+              0.5454545454545454
+            ],
+            "nAtLeast10": true,
+            "clearsPerAdminBar": false
+          },
+          {
+            "administration": "nyregents:2019-jun",
+            "n": 16,
+            "nCorrect": 6,
+            "passRate": 0.375,
+            "exceedsChance": true,
+            "itemBootstrapCi95": [
+              0.125,
+              0.625
+            ],
+            "nAtLeast10": true,
+            "clearsPerAdminBar": false
+          },
+          {
+            "administration": "nyregents:2019-aug",
+            "n": 16,
+            "nCorrect": 3,
+            "passRate": 0.1875,
+            "exceedsChance": false,
+            "itemBootstrapCi95": [
+              0.0,
+              0.375
+            ],
+            "nAtLeast10": true,
+            "clearsPerAdminBar": false
+          },
+          {
+            "administration": "nyregents:2020-jan",
+            "n": 15,
+            "nCorrect": 2,
+            "passRate": 0.13333333333333333,
+            "exceedsChance": false,
+            "itemBootstrapCi95": [
+              0.0,
+              0.3333333333333333
+            ],
+            "nAtLeast10": true,
+            "clearsPerAdminBar": false
+          },
+          {
+            "administration": "nyregents:2022-aug",
+            "n": 15,
+            "nCorrect": 5,
+            "passRate": 0.3333333333333333,
+            "exceedsChance": true,
+            "itemBootstrapCi95": [
+              0.13333333333333333,
+              0.5333333333333333
+            ],
+            "nAtLeast10": true,
+            "clearsPerAdminBar": false
+          },
+          {
+            "administration": "nyregents:2023-jan",
+            "n": 16,
+            "nCorrect": 4,
+            "passRate": 0.25,
+            "exceedsChance": false,
+            "itemBootstrapCi95": [
+              0.0625,
+              0.4375
+            ],
+            "nAtLeast10": true,
+            "clearsPerAdminBar": false
+          },
+          {
+            "administration": "nyregents:2023-jun",
+            "n": 16,
+            "nCorrect": 5,
+            "passRate": 0.3125,
+            "exceedsChance": true,
+            "itemBootstrapCi95": [
+              0.125,
+              0.5625
+            ],
+            "nAtLeast10": true,
+            "clearsPerAdminBar": false
+          },
+          {
+            "administration": "nyregents:2023-aug",
+            "n": 18,
+            "nCorrect": 7,
+            "passRate": 0.3888888888888889,
+            "exceedsChance": true,
+            "itemBootstrapCi95": [
+              0.16666666666666666,
+              0.6111111111111112
+            ],
+            "nAtLeast10": true,
+            "clearsPerAdminBar": false
+          },
+          {
+            "administration": "nyregents:2024-jan",
+            "n": 14,
+            "nCorrect": 5,
+            "passRate": 0.35714285714285715,
+            "exceedsChance": true,
+            "itemBootstrapCi95": [
+              0.14285714285714285,
+              0.5714285714285714
+            ],
+            "nAtLeast10": true,
+            "clearsPerAdminBar": false
+          },
+          {
+            "administration": "nyregents:2024-jun",
+            "n": 18,
+            "nCorrect": 5,
+            "passRate": 0.2777777777777778,
+            "exceedsChance": true,
+            "itemBootstrapCi95": [
+              0.1111111111111111,
+              0.5
+            ],
+            "nAtLeast10": true,
+            "clearsPerAdminBar": false
+          },
+          {
+            "administration": "nyregents:2024-aug",
+            "n": 15,
+            "nCorrect": 4,
+            "passRate": 0.26666666666666666,
+            "exceedsChance": true,
+            "itemBootstrapCi95": [
+              0.06666666666666667,
+              0.4666666666666667
+            ],
+            "nAtLeast10": true,
+            "clearsPerAdminBar": false
+          },
+          {
+            "administration": "nyregents:2025-jan",
+            "n": 14,
+            "nCorrect": 7,
+            "passRate": 0.5,
+            "exceedsChance": true,
+            "itemBootstrapCi95": [
+              0.21428571428571427,
+              0.7142857142857143
+            ],
+            "nAtLeast10": true,
+            "clearsPerAdminBar": false
+          },
+          {
+            "administration": "nyregents:2025-jun",
+            "n": 13,
+            "nCorrect": 3,
+            "passRate": 0.23076923076923078,
+            "exceedsChance": false,
+            "itemBootstrapCi95": [
+              0.0,
+              0.46153846153846156
+            ],
+            "nAtLeast10": true,
+            "clearsPerAdminBar": false
+          },
+          {
+            "administration": "nyregents:2025-aug",
+            "n": 17,
+            "nCorrect": 7,
+            "passRate": 0.4117647058823529,
+            "exceedsChance": true,
+            "itemBootstrapCi95": [
+              0.17647058823529413,
+              0.6470588235294118
+            ],
+            "nAtLeast10": true,
+            "clearsPerAdminBar": false
+          },
+          {
+            "administration": "nyregents:2026-jan",
+            "n": 12,
+            "nCorrect": 3,
+            "passRate": 0.25,
+            "exceedsChance": false,
+            "itemBootstrapCi95": [
+              0.0,
+              0.5
+            ],
+            "nAtLeast10": true,
+            "clearsPerAdminBar": false
+          },
+          {
+            "administration": "nyregents:2026-jun",
+            "n": 18,
+            "nCorrect": 5,
+            "passRate": 0.2777777777777778,
+            "exceedsChance": true,
+            "itemBootstrapCi95": [
+              0.1111111111111111,
+              0.5
+            ],
+            "nAtLeast10": true,
+            "clearsPerAdminBar": false
+          },
+          {
+            "administration": "nyregents:2026-aug",
+            "n": 18,
+            "nCorrect": 7,
+            "passRate": 0.3888888888888889,
+            "exceedsChance": true,
+            "itemBootstrapCi95": [
+              0.16666666666666666,
+              0.6111111111111112
+            ],
+            "nAtLeast10": true,
+            "clearsPerAdminBar": false
+          }
+        ],
+        "nAdministrationsNAtLeast10": 25,
+        "nAdministrationsClearingItemBar": 0,
+        "note": "exceedsChance is rate > chance. clearsPerAdminBar is n>=10 and item-bootstrap lower CI > 0.25. Single administrations are underpowered; the claim is the pooled cell."
+      },
+      "ruleDefinitionSensitivity": {
+        "lower-central": {
+          "n": 372,
+          "nCorrect": 111,
+          "passRate": 0.29838709677419356,
+          "chanceRate": 0.25,
+          "itemBootstrapCi95": [
+            0.25268817204301075,
+            0.34408602150537637
+          ],
+          "clusterBootstrapCi95": [
+            0.2552083333333333,
+            0.3407202216066482
+          ],
+          "nAdministrations": 25,
+          "clearsItemBar": true,
+          "clearsClusterBar": true,
+          "preRegistered": true
+        },
+        "upper-central": {
+          "n": 372,
+          "nCorrect": 99,
+          "passRate": 0.2661290322580645,
+          "chanceRate": 0.25,
+          "itemBootstrapCi95": [
+            0.22311827956989247,
+            0.30913978494623656
+          ],
+          "clusterBootstrapCi95": [
+            0.22615803814713897,
+            0.30727762803234504
+          ],
+          "nAdministrations": 25,
+          "clearsItemBar": false,
+          "clearsClusterBar": false,
+          "preRegistered": false
+        },
+        "nearest-to-arithmetic-mean": {
+          "n": 372,
+          "nCorrect": 104,
+          "passRate": 0.27956989247311825,
+          "chanceRate": 0.25,
+          "itemBootstrapCi95": [
+            0.23655913978494625,
+            0.32526881720430106
+          ],
+          "clusterBootstrapCi95": [
+            0.23661971830985915,
+            0.31496062992125984
+          ],
+          "nAdministrations": 25,
+          "clearsItemBar": false,
+          "clearsClusterBar": false,
+          "preRegistered": false
+        },
+        "smallest": {
+          "n": 372,
+          "nCorrect": 94,
+          "passRate": 0.25268817204301075,
+          "chanceRate": 0.25,
+          "itemBootstrapCi95": [
+            0.20698924731182797,
+            0.2956989247311828
+          ],
+          "clusterBootstrapCi95": [
+            0.21066666666666667,
+            0.29838709677419356
+          ],
+          "nAdministrations": 25,
+          "clearsItemBar": false,
+          "clearsClusterBar": false,
+          "preRegistered": false
+        },
+        "largest": {
+          "n": 372,
+          "nCorrect": 92,
+          "passRate": 0.24731182795698925,
+          "chanceRate": 0.25,
+          "itemBootstrapCi95": [
+            0.20430107526881722,
+            0.2903225806451613
+          ],
+          "clusterBootstrapCi95": [
+            0.2011173184357542,
+            0.29428571428571426
+          ],
+          "nAdministrations": 25,
+          "clearsItemBar": false,
+          "clearsClusterBar": false,
+          "preRegistered": false
+        }
+      },
+      "cite": "exports/addendum/e1-witness-dependence.json cells[authority=nyregents claim=algebra-ii]"
+    }
+  ]
+}

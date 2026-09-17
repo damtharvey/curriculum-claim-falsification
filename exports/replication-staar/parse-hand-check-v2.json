@@ -1,0 +1,626 @@
+{
+  "seed": 202609162,
+  "version1Seed": 20260916,
+  "nRequested": 20,
+  "counts": {
+    "nSampled": 20,
+    "nAgree": 14,
+    "nDisagree": 4,
+    "nUncertain": 2,
+    "nDisagreeStem": 1,
+    "nDisagreeOptions": 4,
+    "nDisagreeKey": 0
+  },
+  "stopScoring": false,
+  "stopRule": "Stop scoring only if 3 or more items disagree on the key / item-number alignment. Option leakage is recorded, not a stop.",
+  "items": [
+    {
+      "id": "staar-2014-5-q41",
+      "formId": "staar-2014-5-english",
+      "question": 41,
+      "stemPreview": "Oliver can go to 1 restaurant for either lunch or dinner. His choice of restaurants is listed below. \u2022 Chinese \u2022 Italian \u2022 Mexican \u2022 Barbecue Which list shows all the possible outc",
+      "choices": {
+        "A": "Chinese, lunch Chinese, dinner Italian, Chinese Italian, dinner Mexican, lunch Mexican, barbecue Barbecue, lunch Barbecue, dinner",
+        "B": "Chinese, lunch Italian, lunch Mexican, dinner Barbecue, dinner",
+        "C": "Chinese, lunch Chinese, dinner Italian, lunch Italian, dinner Mexican, lunch Mexican, dinner Barbecue, lunch Barbecue, dinner",
+        "D": "Chinese, lunch Chinese, dinner Italian, lunch Italian, dinner"
+      },
+      "key": "C",
+      "stemTokenHits": 8,
+      "nStemTokensChecked": 8,
+      "keyTextInWindow": true,
+      "optionLettersPresent": true,
+      "autoJudgment": "agree",
+      "judgment": "agree",
+      "windowPreview": " 41 Oliver can go to 1 restaurant for either lunch or dinner. His choice of restaurants is listed below. \u2022 Chinese \u2022 Italian \u2022 Mexican \u2022 Barbecue Which list shows all the possible outcomes of 1 restaurant and 1 meal? A Chinese, lunch Chinese, dinner Italian, Chinese Italian, dinn",
+      "repair": {
+        "lastOptionRepaired": true,
+        "stackedFractionRejoined": false,
+        "pdfPage": 37,
+        "trailingPageTokenStripped": false
+      },
+      "stemJudgment": "agree",
+      "optionsJudgment": "agree",
+      "keyJudgment": "agree",
+      "notes": "PDF lists A/B/C/D restaurant-meal outcomes. Repaired D is the four-line truncated list and stops before page 38. Key C."
+    },
+    {
+      "id": "staar-2014-alg1-q53",
+      "formId": "staar-2014-alg1-english",
+      "question": 53,
+      "stemPreview": "The cost of staying at a hotel can be found using the function y = 129x + 9.95, where x is the number of days a guest stays at the hotel and y is the cost in dollars. The cost incl",
+      "choices": {
+        "A": "The cost is $9.95 less per day.",
+        "B": "The cost is $9.95 less.",
+        "C": "The cost is $9.95 more per day.",
+        "D": "The cost is $9.95 more."
+      },
+      "key": "B",
+      "stemTokenHits": 8,
+      "nStemTokensChecked": 8,
+      "keyTextInWindow": true,
+      "optionLettersPresent": true,
+      "autoJudgment": "agree",
+      "judgment": "agree",
+      "windowPreview": " 53 The cost of staying at a hotel can be found using the function y = 129x + 9.95, where x is the number of days a guest stays at the hotel and y is the cost in dollars. The cost includes a flat fee for Internet access. If the fee for Internet access is not included, which state",
+      "repair": {
+        "lastOptionRepaired": false,
+        "stackedFractionRejoined": false,
+        "pdfPage": 39,
+        "trailingPageTokenStripped": false
+      },
+      "stemJudgment": "agree",
+      "optionsJudgment": "agree",
+      "keyJudgment": "agree",
+      "notes": "Hotel cost y=129x+9.95; A-D match the PDF. Key B."
+    },
+    {
+      "id": "staar-2014-alg1-q52",
+      "formId": "staar-2014-alg1-english",
+      "question": 52,
+      "stemPreview": "A tennis player broke the old record for the most matches won in a tournament by at least 2 matches. Which inequality can be used to find all possible values of t, the number of ma",
+      "choices": {
+        "A": "t \u2264r \u22122",
+        "B": "t \u22652r r",
+        "C": "t \u2264 2",
+        "D": "t \u2265r + 2"
+      },
+      "key": "D",
+      "stemTokenHits": 8,
+      "nStemTokensChecked": 8,
+      "keyTextInWindow": true,
+      "optionLettersPresent": true,
+      "autoJudgment": "agree",
+      "judgment": "disagree",
+      "windowPreview": " 52 A tennis player broke the old record for the most matches won in a tournament by at least 2 matches. Which inequality can be used to find all possible values of t, the number of matches the player won, in terms of r, the old record? F t \u2264r \u22122 G t \u22652r r H t \u2264 2 J t \u2265r + 2 53 T",
+      "repair": {
+        "lastOptionRepaired": false,
+        "stackedFractionRejoined": false,
+        "pdfPage": 39,
+        "trailingPageTokenStripped": false
+      },
+      "stemJudgment": "agree",
+      "optionsJudgment": "disagree",
+      "keyJudgment": "agree",
+      "notes": "Stacked inequality: PDF G is t\u22652r with r on the next line, H is t\u2264 with 2 below. Parsed B is 't \u22652r r' and C is 't \u2264 2'. Not a last-option leak; fraction rejoin does not apply. Key D matches J."
+    },
+    {
+      "id": "staar-2014-alg1-q24",
+      "formId": "staar-2014-alg1-english",
+      "question": 24,
+      "stemPreview": "What are the solutions to the equation x2 \u22124x = \u22121? \u22124 \u00b1 20",
+      "choices": {
+        "A": "x = 2 12",
+        "B": "x = 2 \u22124 \u00b1 12",
+        "C": "x = 2 20",
+        "D": "x = 2"
+      },
+      "key": "B",
+      "stemTokenHits": 3,
+      "nStemTokensChecked": 3,
+      "keyTextInWindow": true,
+      "optionLettersPresent": true,
+      "autoJudgment": "agree",
+      "judgment": "disagree",
+      "windowPreview": " 24 What are the solutions to the equation x2 \u22124x = \u22121? \u22124 \u00b1 20 F x = 2 4 \u00b1 12 G x = 2 \u22124 \u00b1 12 H x = 2 4 \u00b1 20 J x = 2 25 Which inequality is equivalent to \u22123x + 2y > 5y + 9? A y > x + 3 B y > \u2212x \u22123 C y < x \u22123 D y < \u2212x \u22123 ---PAGE 22--- Page 22 26 The approximate distance in miles ",
+      "repair": {
+        "lastOptionRepaired": false,
+        "stackedFractionRejoined": false,
+        "pdfPage": 21,
+        "trailingPageTokenStripped": false
+      },
+      "stemJudgment": "agree",
+      "optionsJudgment": "disagree",
+      "keyJudgment": "agree",
+      "notes": "Stacked quadratic formula. Stem leftover '\u22124 \u00b1 20'; options parsed as 'x = 2 12' etc. Key B maps to G. Not covered by the version-2 fraction rule."
+    },
+    {
+      "id": "staar-2016-7-q51",
+      "formId": "staar-2016-7-english",
+      "question": 51,
+      "stemPreview": "The number of pets per household for Mrs. Anderson\u2019s class and Mrs. Murphy\u2019s class are shown in the dot plots. Mrs. Anderson\u2019s Class 0 1 2 3 4 5 6 7 8 Number of Pets per Household ",
+      "choices": {
+        "A": "I only",
+        "B": "I and III",
+        "C": "II and III",
+        "D": "III only"
+      },
+      "key": "D",
+      "stemTokenHits": 8,
+      "nStemTokensChecked": 8,
+      "keyTextInWindow": true,
+      "optionLettersPresent": true,
+      "autoJudgment": "agree",
+      "judgment": "agree",
+      "windowPreview": " 51 The number of pets per household for Mrs. Anderson\u2019s class and Mrs. Murphy\u2019s class are shown in the dot plots. Mrs. Anderson\u2019s Class 0 1 2 3 4 5 6 7 8 Number of Pets per Household Mrs. Murphy\u2019s Class 0 1 2 3 4 5 6 7 8 Number of Pets per Household Here are three statements abo",
+      "repair": {
+        "lastOptionRepaired": true,
+        "stackedFractionRejoined": false,
+        "pdfPage": 37,
+        "trailingPageTokenStripped": false
+      },
+      "stemJudgment": "agree",
+      "optionsJudgment": "agree",
+      "keyJudgment": "agree",
+      "notes": "I/II/III statements. Repaired D is 'III only' and stops at Mathematics Page 37. Key D."
+    },
+    {
+      "id": "staar-2014-alg1-q25",
+      "formId": "staar-2014-alg1-english",
+      "question": 25,
+      "stemPreview": "Which inequality is equivalent to \u22123x + 2y > 5y + 9?",
+      "choices": {
+        "A": "y > x + 3",
+        "B": "y > \u2212x \u22123",
+        "C": "y < x \u22123",
+        "D": "y < \u2212x \u22123"
+      },
+      "key": "D",
+      "stemTokenHits": 3,
+      "nStemTokensChecked": 3,
+      "keyTextInWindow": true,
+      "optionLettersPresent": true,
+      "autoJudgment": "agree",
+      "judgment": "agree",
+      "windowPreview": " 25 Which inequality is equivalent to \u22123x + 2y > 5y + 9? A y > x + 3 B y > \u2212x \u22123 C y < x \u22123 D y < \u2212x \u22123 ---PAGE 22--- Page 22 26 The approximate distance in miles between Los Angeles and a commercial jet flying from Boston to Los Angeles can be found using the function m = \u2212475t ",
+      "repair": {
+        "lastOptionRepaired": false,
+        "stackedFractionRejoined": false,
+        "pdfPage": 21,
+        "trailingPageTokenStripped": false
+      },
+      "stemJudgment": "agree",
+      "optionsJudgment": "agree",
+      "keyJudgment": "agree",
+      "notes": "Inequality options A-D match the PDF exactly. Key D."
+    },
+    {
+      "id": "staar-2014-3-q25",
+      "formId": "staar-2014-3-english",
+      "question": 25,
+      "stemPreview": "The picture below shows the number of wagons at a toy store. Art The wagons will be arranged in 2 equal rows. How many wagons will be in each row?",
+      "choices": {
+        "A": "6, because 24 \u00f7 = 4 6",
+        "B": "2, because 24 \u00f7 = 12 2",
+        "C": "12, because 24 \u00f7 = 2 12",
+        "D": "8, because 24 \u00f7 = 3 8"
+      },
+      "key": "C",
+      "stemTokenHits": 8,
+      "nStemTokensChecked": 8,
+      "keyTextInWindow": true,
+      "optionLettersPresent": true,
+      "autoJudgment": "agree",
+      "judgment": "disagree",
+      "windowPreview": " 25 The picture below shows the number of wagons at a toy store. Art The wagons will be arranged in 2 equal rows. How many wagons will be in each row? A 6, because 24 \u00f7 = 4 6 B 2, because 24 \u00f7 = 12 2 C 12, because 24 \u00f7 = 2 12 D 8, because 24 \u00f7 = 3 8 ---PAGE 27--- 26 The pattern o",
+      "repair": {
+        "lastOptionRepaired": false,
+        "stackedFractionRejoined": false,
+        "pdfPage": 26,
+        "trailingPageTokenStripped": false
+      },
+      "stemJudgment": "agree",
+      "optionsJudgment": "disagree",
+      "keyJudgment": "agree",
+      "notes": "Stacked division: PDF A is 6 because 24\u00f74=6, parsed as '24 \u00f7 = 4 6'. Key C. Not a page-number leak."
+    },
+    {
+      "id": "staar-2016-5-q2",
+      "formId": "staar-2016-5-english",
+      "question": 2,
+      "stemPreview": "Mr. M\u00e1rquez had 123 eggs in a refrigerator in his restaurant. He put 32 more cartons of eggs in the refrigerator. Each carton contained 18 eggs. Which of these is the best estimate",
+      "choices": {
+        "A": "600",
+        "B": "400",
+        "C": "700",
+        "D": "900"
+      },
+      "key": "C",
+      "stemTokenHits": 8,
+      "nStemTokensChecked": 8,
+      "keyTextInWindow": true,
+      "optionLettersPresent": true,
+      "autoJudgment": "agree",
+      "judgment": "agree",
+      "windowPreview": " 2 Mr. M\u00e1rquez had 123 eggs in a refrigerator in his restaurant. He put 32 more cartons of eggs in the refrigerator. Each carton contained 18 eggs. Which of these is the best estimate of the number of eggs Mr. M\u00e1rquez now has in his refrigerator? F 600 G 400 H 700 J 900 Mathemati",
+      "repair": {
+        "lastOptionRepaired": false,
+        "stackedFractionRejoined": false,
+        "pdfPage": 8,
+        "trailingPageTokenStripped": false
+      },
+      "stemJudgment": "agree",
+      "optionsJudgment": "agree",
+      "keyJudgment": "agree",
+      "notes": "Egg estimate; FGHJ 600/400/700/900 match. Key C."
+    },
+    {
+      "id": "staar-2014-5-q29",
+      "formId": "staar-2014-5-english",
+      "question": 29,
+      "stemPreview": "An airplane flight lasted 5 hours 22 minutes. Which pair of clocks could show the time the flight started and the time it finished? 05EM01502AZ12027_1 514A O p ti on",
+      "choices": {
+        "A": "r t O p ti on",
+        "B": "r t O p ti on",
+        "C": "r t O p ti on",
+        "D": "r t"
+      },
+      "key": "B",
+      "stemTokenHits": 8,
+      "nStemTokensChecked": 8,
+      "keyTextInWindow": true,
+      "optionLettersPresent": true,
+      "autoJudgment": "agree",
+      "judgment": "uncertain",
+      "windowPreview": " 29 An airplane flight lasted 5 hours 22 minutes. Which pair of clocks could show the time the flight started and the time it finished? 05EM01502AZ12027_1 514A O p ti on A A r t O p ti on B A r t O p ti on C A r t O p ti on D A r t 30 Jackson sold towels at the beach. If he sold ",
+      "repair": {
+        "lastOptionRepaired": false,
+        "stackedFractionRejoined": false,
+        "pdfPage": 30,
+        "trailingPageTokenStripped": false
+      },
+      "stemJudgment": "agree",
+      "optionsJudgment": "uncertain",
+      "keyJudgment": "agree",
+      "notes": "Clock figures. Text layer is 'Option Art' on every choice; cannot confirm the drawn times without OCR."
+    },
+    {
+      "id": "staar-2014-alg1-q44",
+      "formId": "staar-2014-alg1-english",
+      "question": 44,
+      "stemPreview": "The volume of two identical cubes is related to the edge length of the cubes. Art Which function represents the combined volume of these cubes?",
+      "choices": {
+        "A": "y = 2x3",
+        "B": "y = x3",
+        "C": "y = 8x3",
+        "D": "y = 2x2"
+      },
+      "key": "A",
+      "stemTokenHits": 8,
+      "nStemTokensChecked": 8,
+      "keyTextInWindow": true,
+      "optionLettersPresent": true,
+      "autoJudgment": "agree",
+      "judgment": "agree",
+      "windowPreview": " 44 The volume of two identical cubes is related to the edge length of the cubes. Art Which function represents the combined volume of these cubes? F y = 2x3 G y = x3 H y = 8x3 J y = 2x2 ---PAGE 34--- Page 34 2 3 1 45 The slope and y-intercept of the line represented by y = x + a",
+      "repair": {
+        "lastOptionRepaired": true,
+        "stackedFractionRejoined": false,
+        "pdfPage": 33,
+        "trailingPageTokenStripped": false
+      },
+      "stemJudgment": "agree",
+      "optionsJudgment": "agree",
+      "keyJudgment": "agree",
+      "notes": "Combined cube volume; FGHJ y=2x3 / x3 / 8x3 / 2x2. Repaired J stops before page 34. Key A."
+    },
+    {
+      "id": "staar-2016-4-q44",
+      "formId": "staar-2016-4-english",
+      "question": 44,
+      "stemPreview": "Sergio completed of a project. Julius completed of an identical project. Each student shaded a model to represent the fraction of the project he completed. Which student completed ",
+      "choices": {
+        "A": "Sergio completed more, because >",
+        "B": "Julius completed more, because >",
+        "C": "Sergio completed more, because >",
+        "D": "Julius completed more, because >"
+      },
+      "key": "A",
+      "stemTokenHits": 8,
+      "nStemTokensChecked": 8,
+      "keyTextInWindow": true,
+      "optionLettersPresent": true,
+      "autoJudgment": "agree",
+      "judgment": "disagree",
+      "windowPreview": " 44 Sergio completed of a project. Julius completed of an identical project. Each student shaded a model to represent the fraction of the project he completed. Which student completed more of his project? F Sergio completed more, because > G Julius completed more, because > H Ser",
+      "repair": {
+        "lastOptionRepaired": false,
+        "stackedFractionRejoined": false,
+        "pdfPage": 33,
+        "trailingPageTokenStripped": false
+      },
+      "stemJudgment": "disagree",
+      "optionsJudgment": "disagree",
+      "keyJudgment": "agree",
+      "notes": "Stacked fractions omitted from stem ('completed of a project') and from every option ('because >'). Key A. Fraction rejoin does not fire (options are not two integers)."
+    },
+    {
+      "id": "staar-2016-4-q45",
+      "formId": "staar-2016-4-english",
+      "question": 45,
+      "stemPreview": "Mr. Conrad makes chess pieces. A chess club ordered a set of chess pieces for each of its members. \u2022 Each set has 32 chess pieces. \u2022 There are 27 members of the chess club. \u2022 Mr. C",
+      "choices": {
+        "A": "864",
+        "B": "192",
+        "C": "354",
+        "D": "144"
+      },
+      "key": "D",
+      "stemTokenHits": 8,
+      "nStemTokensChecked": 8,
+      "keyTextInWindow": true,
+      "optionLettersPresent": true,
+      "autoJudgment": "agree",
+      "judgment": "agree",
+      "windowPreview": " 45 Mr. Conrad makes chess pieces. A chess club ordered a set of chess pieces for each of its members. \u2022 Each set has 32 chess pieces. \u2022 There are 27 members of the chess club. \u2022 Mr. Conrad put these chess pieces in 6 boxes with the same number of pieces in each box. How many che",
+      "repair": {
+        "lastOptionRepaired": false,
+        "stackedFractionRejoined": false,
+        "pdfPage": 34,
+        "trailingPageTokenStripped": false
+      },
+      "stemJudgment": "agree",
+      "optionsJudgment": "agree",
+      "keyJudgment": "agree",
+      "notes": "Chess pieces 32\u00d727 into 6 boxes; A-D 864/192/354/144. Key D."
+    },
+    {
+      "id": "staar-2014-5-q32",
+      "formId": "staar-2014-5-english",
+      "question": 32,
+      "stemPreview": "The coordinates (0, 1) represent Mary\u2019s location on a dance floor. A r t Hailey is located 3 units north and 2 units east of Mary. Which ordered pair represents Hailey\u2019s location?",
+      "choices": {
+        "A": "(2, 4)",
+        "B": "(3, 3)",
+        "C": "(4, 2)",
+        "D": "(0, 6)"
+      },
+      "key": "A",
+      "stemTokenHits": 8,
+      "nStemTokensChecked": 8,
+      "keyTextInWindow": true,
+      "optionLettersPresent": true,
+      "autoJudgment": "agree",
+      "judgment": "agree",
+      "windowPreview": " 32 The coordinates (0, 1) represent Mary\u2019s location on a dance floor. A r t Hailey is located 3 units north and 2 units east of Mary. Which ordered pair represents Hailey\u2019s location? F (2, 4) G (3, 3) H (4, 2) J (0, 6) 33 The side length of a square is 20 millimeters. Which stat",
+      "repair": {
+        "lastOptionRepaired": false,
+        "stackedFractionRejoined": false,
+        "pdfPage": 32,
+        "trailingPageTokenStripped": false
+      },
+      "stemJudgment": "agree",
+      "optionsJudgment": "agree",
+      "keyJudgment": "agree",
+      "notes": "Hailey 3 north 2 east of (0,1); FGHJ (2,4)/(3,3)/(4,2)/(0,6). Key A."
+    },
+    {
+      "id": "staar-2016-6-q50",
+      "formId": "staar-2016-6-english",
+      "question": 50,
+      "stemPreview": "A student needs to collect at least 10 flowers for a science project. The student has already collected 3 flowers. The inequality shown can be used to find n, the number of flowers",
+      "choices": {
+        "A": "n \u2264 13",
+        "B": "n \u2265 13",
+        "C": "n \u2264 7",
+        "D": "n \u2265 7"
+      },
+      "key": "D",
+      "stemTokenHits": 8,
+      "nStemTokensChecked": 8,
+      "keyTextInWindow": true,
+      "optionLettersPresent": true,
+      "autoJudgment": "agree",
+      "judgment": "agree",
+      "windowPreview": " 50 A student needs to collect at least 10 flowers for a science project. The student has already collected 3 flowers. The inequality shown can be used to find n, the number of flowers the student still needs. n + 3 \u2265 10 Which inequality represents the solution set for this situa",
+      "repair": {
+        "lastOptionRepaired": true,
+        "stackedFractionRejoined": false,
+        "pdfPage": 38,
+        "trailingPageTokenStripped": false
+      },
+      "stemJudgment": "agree",
+      "optionsJudgment": "agree",
+      "keyJudgment": "agree",
+      "notes": "n+3\u226510; repaired J is n\u22657 and stops at Mathematics Page 38. Key D."
+    },
+    {
+      "id": "staar-2016-6-q3",
+      "formId": "staar-2016-6-english",
+      "question": 3,
+      "stemPreview": "Hector surveyed all the sixth graders at his school about their favorite after-school activity. The table shows the results that were used to make a bar graph. Favorite Activities ",
+      "choices": {
+        "A": "Reading Sports Video games Music 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%",
+        "B": "Video games Reading Sports Music 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%",
+        "C": "Reading Sports Video games Music 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%",
+        "D": "Reading Sports Video games Music 0% 10% 20% 30% 40% 50% 60% 70% 80% 90% 100%"
+      },
+      "key": "C",
+      "stemTokenHits": 8,
+      "nStemTokensChecked": 8,
+      "keyTextInWindow": true,
+      "optionLettersPresent": true,
+      "autoJudgment": "agree",
+      "judgment": "uncertain",
+      "windowPreview": " 3 Hector surveyed all the sixth graders at his school about their favorite after-school activity. The table shows the results that were used to make a bar graph. Favorite Activities Activity Number of Students Reading 44 Sports 55 Video games 55 Music 66 Which percentage bar gra",
+      "repair": {
+        "lastOptionRepaired": false,
+        "stackedFractionRejoined": false,
+        "pdfPage": 9,
+        "trailingPageTokenStripped": false
+      },
+      "stemJudgment": "agree",
+      "optionsJudgment": "uncertain",
+      "keyJudgment": "agree",
+      "notes": "Percentage bar graphs. A, C, and D dump the same category order; bar heights are figures. Cannot confirm the key from the text layer."
+    },
+    {
+      "id": "staar-2016-7-q3",
+      "formId": "staar-2016-7-english",
+      "question": 3,
+      "stemPreview": "Bailey will roll a number cube and flip a coin for a probability experiment. The faces of the number cube are labeled 1 through 6. The coin can land on heads or tails. If Bailey ro",
+      "choices": {
+        "A": "5, Heads 5, Tails 6, Heads 6, Tails",
+        "B": "5, Heads 6, Tails",
+        "C": "1, Heads 1, Tails 2, Heads 2, Tails 3, Heads 3, Tails 4, Heads 4, Tails 5, Heads 5, Tails 6, Heads 6, Tails",
+        "D": "4, Heads 4, Tails 5, Heads 5, Tails 6, Heads 6, Tails"
+      },
+      "key": "A",
+      "stemTokenHits": 8,
+      "nStemTokensChecked": 8,
+      "keyTextInWindow": true,
+      "optionLettersPresent": true,
+      "autoJudgment": "agree",
+      "judgment": "agree",
+      "windowPreview": " 3 Bailey will roll a number cube and flip a coin for a probability experiment. The faces of the number cube are labeled 1 through 6. The coin can land on heads or tails. If Bailey rolls the number cube once and flips the coin once, which list contains only the outcomes in which ",
+      "repair": {
+        "lastOptionRepaired": true,
+        "stackedFractionRejoined": false,
+        "pdfPage": 9,
+        "trailingPageTokenStripped": false
+      },
+      "stemJudgment": "agree",
+      "optionsJudgment": "agree",
+      "keyJudgment": "agree",
+      "notes": "Version-1 last-option leak case. Repaired D is the 4/5/6 heads-tails list and stops at Mathematics Page 9. Key A."
+    },
+    {
+      "id": "staar-2016-4-q16",
+      "formId": "staar-2016-4-english",
+      "question": 16,
+      "stemPreview": "Which statement about the number 726,483.19 is true?",
+      "choices": {
+        "A": "The digit 9 has a value of (9 \u00d7 100).",
+        "B": "The digit 4 has a value of (4 \u00d7 100).",
+        "C": "The digit 8 has a value of (8 \u00d7 0.1).",
+        "D": "The digit 2 has a value of (2 \u00d7 10)."
+      },
+      "key": "B",
+      "stemTokenHits": 2,
+      "nStemTokensChecked": 5,
+      "keyTextInWindow": true,
+      "optionLettersPresent": true,
+      "autoJudgment": "agree",
+      "judgment": "agree",
+      "windowPreview": " 16 6 The fraction can be represented by this expression. Which fraction belongs in the to complete the expression? F G H J 7 A basketball team plays 82 games each year. How many games will the team play in 25 years? A 1,050 B 2,040 C 2,090 D 2,050 Mathematics Page 12 ---PAGE 13-",
+      "repair": {
+        "lastOptionRepaired": false,
+        "stackedFractionRejoined": false,
+        "pdfPage": 12,
+        "trailingPageTokenStripped": false
+      },
+      "stemJudgment": "agree",
+      "optionsJudgment": "agree",
+      "keyJudgment": "agree",
+      "notes": "PDF item 16 is 726,483.19 digit-place statements FGHJ; parsed A-D match. Auto window helper landed on leftover '16' from item 6; human used the true item-16 span. Key B."
+    },
+    {
+      "id": "staar-2016-5-q7",
+      "formId": "staar-2016-5-english",
+      "question": 7,
+      "stemPreview": "The lengths of two insects are given below. \u2022 Ladybug: 10 millimeters \u2022 Walking stick: 30 centimeters What is the difference in length of these two insects in millimeters?",
+      "choices": {
+        "A": "70 mm",
+        "B": "20 mm",
+        "C": "290 mm",
+        "D": "2,990 mm"
+      },
+      "key": "C",
+      "stemTokenHits": 8,
+      "nStemTokensChecked": 8,
+      "keyTextInWindow": true,
+      "optionLettersPresent": true,
+      "autoJudgment": "agree",
+      "judgment": "agree",
+      "windowPreview": " 7 The lengths of two insects are given below. \u2022 Ladybug: 10 millimeters \u2022 Walking stick: 30 centimeters What is the difference in length of these two insects in millimeters? A 70 mm B 20 mm C 290 mm D 2,990 mm Mathematics Page 11 ---PAGE 12--- Race Times Swimmer One Two Three Fo",
+      "repair": {
+        "lastOptionRepaired": true,
+        "stackedFractionRejoined": false,
+        "pdfPage": 11,
+        "trailingPageTokenStripped": false
+      },
+      "stemJudgment": "agree",
+      "optionsJudgment": "agree",
+      "keyJudgment": "agree",
+      "notes": "10 mm vs 30 cm; repaired D is 2,990 mm and stops before page 12. Key C."
+    },
+    {
+      "id": "staar-2016-6-q29",
+      "formId": "staar-2016-6-english",
+      "question": 29,
+      "stemPreview": "The table shows the average annual salary for four jobs. Average Annual Salaries Based on this information, how much more will an elevator technician make than a librarian over 10 ",
+      "choices": {
+        "A": "$174,930",
+        "B": "$126,307",
+        "C": "$17,493",
+        "D": "$1,263,070"
+      },
+      "key": "A",
+      "stemTokenHits": 8,
+      "nStemTokensChecked": 8,
+      "keyTextInWindow": true,
+      "optionLettersPresent": true,
+      "autoJudgment": "agree",
+      "judgment": "agree",
+      "windowPreview": " 29 The table shows the average annual salary for four jobs. Average Annual Salaries Based on this information, how much more will an elevator technician make than a librarian over 10 years? A $174,930 B $126,307 C $17,493 D $1,263,070 Mathematics Page 25 ---PAGE 26--- 31 Which e",
+      "repair": {
+        "lastOptionRepaired": false,
+        "stackedFractionRejoined": false,
+        "pdfPage": 25,
+        "trailingPageTokenStripped": false
+      },
+      "stemJudgment": "agree",
+      "optionsJudgment": "agree",
+      "keyJudgment": "agree",
+      "notes": "Salary difference over 10 years; A-D dollar amounts match the PDF. Table values are a figure. Key A."
+    },
+    {
+      "id": "staar-2014-alg1-q10",
+      "formId": "staar-2014-alg1-english",
+      "question": 10,
+      "stemPreview": "The mapping below represents all of the points on the graph of function f. Ar t What is the domain of f ?",
+      "choices": {
+        "A": "{\u22124, \u22121, 0, 2, 7}",
+        "B": "{\u22125, \u22124, \u22121, 0, 1, 2, 4, 7}",
+        "C": "{\u22125, 0, 1, 2, 4}",
+        "D": "{5}"
+      },
+      "key": "A",
+      "stemTokenHits": 8,
+      "nStemTokensChecked": 8,
+      "keyTextInWindow": true,
+      "optionLettersPresent": true,
+      "autoJudgment": "agree",
+      "judgment": "agree",
+      "windowPreview": " 10 The mapping below represents all of the points on the graph of function f. Ar t What is the domain of f ? F {\u22124, \u22121, 0, 2, 7} G {\u22125, \u22124, \u22121, 0, 1, 2, 4, 7} H {\u22125, 0, 1, 2, 4} J {5} 11 What is the value of x in the solution to the system of equations below? 15x \u221212y = 13 30x +",
+      "repair": {
+        "lastOptionRepaired": false,
+        "stackedFractionRejoined": false,
+        "pdfPage": 14,
+        "trailingPageTokenStripped": false
+      },
+      "stemJudgment": "agree",
+      "optionsJudgment": "agree",
+      "keyJudgment": "agree",
+      "notes": "Domain of mapping f; FGHJ sets match. Key A."
+    }
+  ],
+  "humanReview": {
+    "reviewedAt": "2026-09-16T22:00:39Z",
+    "method": "PDF text layer vs parsed stem/options/key. Different seed from version 1 (202609162 vs 20260916).",
+    "nAgree": 14,
+    "nDisagree": 4,
+    "nUncertain": 2,
+    "nDisagreeKey": 0
+  }
+}

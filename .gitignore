@@ -10,7 +10,7 @@ __pycache__/
 node_modules/
 dist/
 
-# Secrets
+# Secrets. Do not commit Hugging Face tokens.
 .env
 .env.*
 !.env.example
@@ -24,9 +24,40 @@ Thumbs.db
 .idea/
 .vscode/
 
-# Local data and generated artifacts (can exceed GitHub's 100 MB limit)
-data/
-exports/
+# Raw PDFs, HTML scrape cache, extracted PDF text (redownload / re-extract)
+data/raw/
+
+# Cue-control datasets (Hugging Face download, large)
+data/real-controls*.jsonl
+data/synthetic-controls.jsonl
+data/nysed-*-incomplete.jsonl
+
+# Giant trial logs and runner matrix (recreate from data/items.jsonl)
+exports/trials.jsonl
+exports/trials-census.jsonl
+exports/trials-n2405.jsonl
+exports/trial-marks.jsonl
+exports/matrix.json
+
+# Per-item GPU logs (recreate on CUDA; keep summary JSON)
+exports/addendum-gpu/*-items.jsonl
+
+# Choices-only Bedrock batch scratch (keep scored.jsonl)
+exports/choices-only/batches/
+exports/choices-only/predictions/
+exports/choices-only/pending-*.json
+
+# STAAR replication parse dumps and fetch logs (rebuild from PDFs)
+exports/replication-staar/items.jsonl
+exports/replication-staar/items-*.jsonl
+exports/replication-staar/fetch-log*.md
+
+# Rendered PDF page PNGs (recreate with scripts/render_pdf_pages.py)
+exports/vision/
+
+# Hugging Face snapshots if copied into this tree
+.cache/
+huggingface/
 
 # LaTeX auxiliaries (keep built paper PDFs)
 paper/*.aux

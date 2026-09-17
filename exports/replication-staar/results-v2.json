@@ -1,0 +1,349 @@
+{
+  "writtenAt": "2026-09-16T21:48:24Z",
+  "version": 2,
+  "preregistration": {
+    "path": "exports/replication-staar/preregistration.md",
+    "sha256File": "exports/replication-staar/preregistration-v2.sha256",
+    "sha256": "e25e1d42ed13145733b3a8952eaed2a6132d50d649defb071c969f82723b9f71",
+    "utc": "2026-09-16T21:44:16Z",
+    "powerMinimumN": 46,
+    "bootstrap": {
+      "method": "random.Random.randrange",
+      "nBoot": 1000,
+      "seed": 11
+    },
+    "handCheckSeed": 202609162
+  },
+  "repair": {
+    "nItems": 228,
+    "nLastOptionRepaired": 42,
+    "nStackedFractionRejoined": 3,
+    "rule": "Last option reconstructed from the PDF text layer, stopping at the first footer line or next item; trailing token equal to the item PDF page number stripped when it is not the sole token. Stacked fractions rejoined to num/den."
+  },
+  "parse": {
+    "nItems": 228,
+    "nSelected": 205,
+    "nFourNumeric": 169,
+    "handCheck": {
+      "seed": 202609162,
+      "counts": {
+        "nSampled": 20,
+        "nAgree": 14,
+        "nDisagree": 4,
+        "nUncertain": 2,
+        "nDisagreeStem": 1,
+        "nDisagreeOptions": 4,
+        "nDisagreeKey": 0
+      },
+      "stopScoring": false,
+      "stopRule": "Stop scoring only if 3 or more items disagree on the key / item-number alignment. Option leakage is recorded, not a stop.",
+      "humanReview": {
+        "reviewedAt": "2026-09-16T22:00:39Z",
+        "method": "PDF text layer vs parsed stem/options/key. Different seed from version 1 (202609162 vs 20260916).",
+        "nAgree": 14,
+        "nDisagree": 4,
+        "nUncertain": 2,
+        "nDisagreeKey": 0
+      }
+    }
+  },
+  "nGrade5Selected": 78,
+  "primary": {
+    "rule": "s3-closure-filtered",
+    "cell": "teks/g5",
+    "nFired": 44,
+    "nHits": 17,
+    "rate": 0.38636363636363635,
+    "chance": 0.25,
+    "ci95": [
+      0.25,
+      0.5454545454545454
+    ],
+    "clearsBar": false,
+    "underpowered": false,
+    "tieBreakDecomposition": {
+      "nDecidedByDepth": 16,
+      "nHitsDecidedByDepth": 4,
+      "rateAmongDepthDecided": 0.25,
+      "nDecidedByTieBreak": 28,
+      "nHitsDecidedByTieBreak": 13,
+      "rateAmongTieBreakDecided": 0.4642857142857143
+    },
+    "closureDensity": {
+      "meanOptionsInClosurePerFiredItem": 2.977272727272727,
+      "nFiredUniqueDepth1": 10,
+      "nFiredUniqueDepth1IsKey": 3,
+      "uniqueDepth1IsKeyRateAmongThoseItems": 0.3
+    },
+    "perAdministration": [
+      {
+        "administration": "staar:2013",
+        "n": 12,
+        "nCorrect": 3,
+        "rate": 0.25
+      },
+      {
+        "administration": "staar:2014",
+        "n": 16,
+        "nCorrect": 5,
+        "rate": 0.3125
+      },
+      {
+        "administration": "staar:2016",
+        "n": 16,
+        "nCorrect": 9,
+        "rate": 0.5625
+      }
+    ],
+    "predictionMetLowerCiAbove025": false,
+    "powerFloorReached": false,
+    "powerMinimumN": 46
+  },
+  "s3UnfilteredGrade5": {
+    "rule": "s3-closure-unfiltered",
+    "cell": "teks/g5",
+    "nFired": 47,
+    "nHits": 18,
+    "rate": 0.3829787234042553,
+    "chance": 0.25,
+    "ci95": [
+      0.2553191489361702,
+      0.5106382978723404
+    ],
+    "clearsBar": true,
+    "underpowered": false,
+    "tieBreakDecomposition": {
+      "nDecidedByDepth": 16,
+      "nHitsDecidedByDepth": 4,
+      "rateAmongDepthDecided": 0.25,
+      "nDecidedByTieBreak": 31,
+      "nHitsDecidedByTieBreak": 14,
+      "rateAmongTieBreakDecided": 0.45161290322580644
+    },
+    "closureDensity": {
+      "meanOptionsInClosurePerFiredItem": 3.0,
+      "nFiredUniqueDepth1": 10,
+      "nFiredUniqueDepth1IsKey": 3,
+      "uniqueDepth1IsKeyRateAmongThoseItems": 0.3
+    },
+    "perAdministration": [
+      {
+        "administration": "staar:2013",
+        "n": 15,
+        "nCorrect": 4,
+        "rate": 0.26666666666666666
+      },
+      {
+        "administration": "staar:2014",
+        "n": 17,
+        "nCorrect": 6,
+        "rate": 0.35294117647058826
+      },
+      {
+        "administration": "staar:2016",
+        "n": 15,
+        "nCorrect": 8,
+        "rate": 0.5333333333333333
+      }
+    ],
+    "predictionMetLowerCiAbove025": true,
+    "powerFloorReached": true,
+    "powerMinimumN": 46
+  },
+  "secondary": [
+    {
+      "rule": "unit-rate",
+      "cell": "teks/g5",
+      "nFired": 11,
+      "nHits": 4,
+      "rate": 0.36363636363636365,
+      "chance": 0.25,
+      "ci95": [
+        0.09090909090909091,
+        0.6363636363636364
+      ],
+      "clearsBar": false,
+      "underpowered": false
+    },
+    {
+      "rule": "option-repeating-stem-numbers",
+      "cell": "teks/alg1",
+      "nFired": 11,
+      "nHits": 1,
+      "rate": 0.09090909090909091,
+      "chance": 0.25,
+      "ci95": [
+        0.0,
+        0.2727272727272727
+      ],
+      "clearsBar": false,
+      "underpowered": false
+    },
+    {
+      "rule": "lower-central-negative-control",
+      "cell": "teks/g5",
+      "nFired": 69,
+      "nHits": 22,
+      "rate": 0.3188405797101449,
+      "chance": 0.25,
+      "ci95": [
+        0.21739130434782608,
+        0.43478260869565216
+      ],
+      "clearsBar": false,
+      "underpowered": false
+    },
+    {
+      "rule": "lower-central-negative-control",
+      "cell": "teks/g3",
+      "nFired": 16,
+      "nHits": 4,
+      "rate": 0.25,
+      "chance": 0.25,
+      "ci95": [
+        0.0625,
+        0.4375
+      ],
+      "clearsBar": false,
+      "underpowered": false
+    },
+    {
+      "rule": "lower-central-negative-control",
+      "cell": "teks/g4",
+      "nFired": 17,
+      "nHits": 10,
+      "rate": 0.5882352941176471,
+      "chance": 0.25,
+      "ci95": [
+        0.35294117647058826,
+        0.8235294117647058
+      ],
+      "clearsBar": true,
+      "underpowered": false
+    },
+    {
+      "rule": "lower-central-negative-control",
+      "cell": "teks/g6",
+      "nFired": 28,
+      "nHits": 10,
+      "rate": 0.35714285714285715,
+      "chance": 0.25,
+      "ci95": [
+        0.17857142857142858,
+        0.5357142857142857
+      ],
+      "clearsBar": false,
+      "underpowered": false
+    },
+    {
+      "rule": "lower-central-negative-control",
+      "cell": "teks/g7",
+      "nFired": 22,
+      "nHits": 7,
+      "rate": 0.3181818181818182,
+      "chance": 0.25,
+      "ci95": [
+        0.13636363636363635,
+        0.5
+      ],
+      "clearsBar": false,
+      "underpowered": false
+    },
+    {
+      "rule": "lower-central-negative-control",
+      "cell": "teks/g8",
+      "nFired": 3,
+      "nHits": 1,
+      "rate": 0.3333333333333333,
+      "chance": 0.25,
+      "ci95": [
+        0.0,
+        1.0
+      ],
+      "clearsBar": false,
+      "underpowered": true
+    },
+    {
+      "rule": "lower-central-negative-control",
+      "cell": "teks/alg1",
+      "nFired": 22,
+      "nHits": 3,
+      "rate": 0.13636363636363635,
+      "chance": 0.25,
+      "ci95": [
+        0.0,
+        0.2727272727272727
+      ],
+      "clearsBar": false,
+      "underpowered": false
+    }
+  ],
+  "pooledDiscoveryAndReplication": {
+    "label": "pooledDiscoveryAndReplication",
+    "filter": "unfiltered",
+    "nDiscoveryFired": 40,
+    "nDiscoveryHits": 21,
+    "nReplicationFired": 47,
+    "nReplicationHits": 18,
+    "nFired": 87,
+    "nHits": 39,
+    "rate": 0.4482758620689655,
+    "chance": 0.25,
+    "ci95": [
+      0.3448275862068966,
+      0.5517241379310345
+    ],
+    "clearsBar": true,
+    "note": "Descriptive. Not the replication verdict."
+  },
+  "primaryItemIds": [
+    "staar-2013-5-q10",
+    "staar-2013-5-q14",
+    "staar-2013-5-q15",
+    "staar-2013-5-q21",
+    "staar-2013-5-q22",
+    "staar-2013-5-q27",
+    "staar-2013-5-q30",
+    "staar-2013-5-q31",
+    "staar-2013-5-q35",
+    "staar-2013-5-q43",
+    "staar-2013-5-q47",
+    "staar-2013-5-q48",
+    "staar-2014-5-q14",
+    "staar-2014-5-q15",
+    "staar-2014-5-q19",
+    "staar-2014-5-q22",
+    "staar-2014-5-q24",
+    "staar-2014-5-q26",
+    "staar-2014-5-q30",
+    "staar-2014-5-q31",
+    "staar-2014-5-q32",
+    "staar-2014-5-q33",
+    "staar-2014-5-q35",
+    "staar-2014-5-q38",
+    "staar-2014-5-q40",
+    "staar-2014-5-q43",
+    "staar-2014-5-q45",
+    "staar-2014-5-q50",
+    "staar-2016-5-q2",
+    "staar-2016-5-q4",
+    "staar-2016-5-q7",
+    "staar-2016-5-q15",
+    "staar-2016-5-q17",
+    "staar-2016-5-q18",
+    "staar-2016-5-q20",
+    "staar-2016-5-q23",
+    "staar-2016-5-q30",
+    "staar-2016-5-q33",
+    "staar-2016-5-q34",
+    "staar-2016-5-q35",
+    "staar-2016-5-q36",
+    "staar-2016-5-q39",
+    "staar-2016-5-q41",
+    "staar-2016-5-q44"
+  ],
+  "version1PredictionMetLowerCiAbove025": true,
+  "version1PowerFloorReached": false,
+  "repairedPredictionMetLowerCiAbove025": false,
+  "repairedPowerFloorReached": false
+}

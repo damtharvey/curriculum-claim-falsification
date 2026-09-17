@@ -1,0 +1,244 @@
+{
+  "status": "complete",
+  "label": "exploratory",
+  "writtenAt": "2026-09-16T21:25:09.706103+00:00",
+  "modelId": "Qwen/Qwen2.5-14B-Instruct",
+  "cell": "nyregents::algebra-i",
+  "population": "masked_token_count_ge_1",
+  "n": 358,
+  "overall": {
+    "n": 358,
+    "passRate": 0.41620111731843573,
+    "ci95": [
+      0.36312849162011174,
+      0.4692737430167598
+    ],
+    "chance": 0.25,
+    "meanOneOverK": 0.25,
+    "ciExcludesChance": true,
+    "witnessBarEligible": true,
+    "lowerCiAboveChance": true
+  },
+  "modalLetterOnPopulation": {
+    "letter": "B",
+    "count": 97,
+    "frequency": 0.2709497206703911
+  },
+  "hubRule": "scripts/strategy_channels.py apply_s1 / hub_from_edges: numeric options with at least 3 parsed values; hub is max out-degree under TRANSFORM_NAMES; ties broken by lower_central_key.",
+  "longestRule": "Unique maximum character length among option strings; ties count as no unique longest.",
+  "lowerCentralRule": "lower_central_key on parse_option_number pairs; undefined when no option parses as numeric.",
+  "splits": {
+    "keyIsLowerCentralNumeric": {
+      "whenTrue": {
+        "n": 82,
+        "passRate": 0.34146341463414637,
+        "ci95": [
+          0.23170731707317074,
+          0.45121951219512196
+        ],
+        "chance": 0.25,
+        "meanOneOverK": 0.25,
+        "ciExcludesChance": false,
+        "witnessBarEligible": false,
+        "lowerCiAboveChance": false
+      },
+      "whenFalse": {
+        "n": 276,
+        "passRate": 0.4384057971014493,
+        "ci95": [
+          0.37681159420289856,
+          0.4963768115942029
+        ],
+        "chance": 0.25,
+        "meanOneOverK": 0.25,
+        "ciExcludesChance": true,
+        "witnessBarEligible": true,
+        "lowerCiAboveChance": true
+      },
+      "nTrue": 82,
+      "nFalse": 276
+    },
+    "keyIsModalLetter": {
+      "whenTrue": {
+        "n": 97,
+        "passRate": 0.4536082474226804,
+        "ci95": [
+          0.35051546391752575,
+          0.5567010309278351
+        ],
+        "chance": 0.25,
+        "meanOneOverK": 0.25,
+        "ciExcludesChance": true,
+        "witnessBarEligible": true,
+        "lowerCiAboveChance": true
+      },
+      "whenFalse": {
+        "n": 261,
+        "passRate": 0.40229885057471265,
+        "ci95": [
+          0.34099616858237547,
+          0.46360153256704983
+        ],
+        "chance": 0.25,
+        "meanOneOverK": 0.25,
+        "ciExcludesChance": true,
+        "witnessBarEligible": true,
+        "lowerCiAboveChance": true
+      },
+      "nTrue": 97,
+      "nFalse": 261
+    },
+    "keyIsS1Hub": {
+      "whenTrue": {
+        "n": 46,
+        "passRate": 0.3695652173913043,
+        "ci95": [
+          0.2391304347826087,
+          0.5
+        ],
+        "chance": 0.25,
+        "meanOneOverK": 0.25,
+        "ciExcludesChance": false,
+        "witnessBarEligible": false,
+        "lowerCiAboveChance": false
+      },
+      "whenFalse": {
+        "n": 312,
+        "passRate": 0.4230769230769231,
+        "ci95": [
+          0.3685897435897436,
+          0.4775641025641026
+        ],
+        "chance": 0.25,
+        "meanOneOverK": 0.25,
+        "ciExcludesChance": true,
+        "witnessBarEligible": true,
+        "lowerCiAboveChance": true
+      },
+      "nTrue": 46,
+      "nFalse": 312
+    },
+    "keyIsUniqueLongest": {
+      "whenTrue": {
+        "n": 42,
+        "passRate": 0.3333333333333333,
+        "ci95": [
+          0.19047619047619047,
+          0.47619047619047616
+        ],
+        "chance": 0.25,
+        "meanOneOverK": 0.25,
+        "ciExcludesChance": false,
+        "witnessBarEligible": false,
+        "lowerCiAboveChance": false
+      },
+      "whenFalse": {
+        "n": 316,
+        "passRate": 0.4272151898734177,
+        "ci95": [
+          0.37341772151898733,
+          0.4810126582278481
+        ],
+        "chance": 0.25,
+        "meanOneOverK": 0.25,
+        "ciExcludesChance": true,
+        "witnessBarEligible": true,
+        "lowerCiAboveChance": true
+      },
+      "nTrue": 42,
+      "nFalse": 316
+    }
+  },
+  "cueDefinedCounts": {
+    "lowerCentralDefined": 297,
+    "s1HubFired": 175,
+    "uniqueLongestDefined": 172
+  },
+  "residual": {
+    "definition": "Items where none of lower-central numeric, population modal letter, S1 hub, or unique-longest option points at the key.",
+    "n": 163,
+    "stats": {
+      "n": 163,
+      "passRate": 0.44171779141104295,
+      "ci95": [
+        0.36809815950920244,
+        0.5214723926380368
+      ],
+      "chance": 0.25,
+      "meanOneOverK": 0.25,
+      "ciExcludesChance": true,
+      "witnessBarEligible": true,
+      "lowerCiAboveChance": true
+    },
+    "clearsChance": true,
+    "verdict": "flexible reader uses cues outside the catalog"
+  },
+  "perOptionType": {
+    "algebraic_expression": {
+      "n": 65,
+      "passRate": 0.46153846153846156,
+      "ci95": [
+        0.35384615384615387,
+        0.5846153846153846
+      ],
+      "chance": 0.25,
+      "meanOneOverK": 0.25,
+      "ciExcludesChance": true,
+      "witnessBarEligible": true,
+      "lowerCiAboveChance": true
+    },
+    "mixed": {
+      "n": 26,
+      "passRate": 0.38461538461538464,
+      "ci95": [
+        0.19230769230769232,
+        0.5769230769230769
+      ],
+      "chance": 0.25,
+      "meanOneOverK": 0.25,
+      "ciExcludesChance": false,
+      "witnessBarEligible": false,
+      "lowerCiAboveChance": false
+    },
+    "numeric": {
+      "n": 71,
+      "passRate": 0.30985915492957744,
+      "ci95": [
+        0.2112676056338028,
+        0.4225352112676056
+      ],
+      "chance": 0.25,
+      "meanOneOverK": 0.25,
+      "ciExcludesChance": false,
+      "witnessBarEligible": false,
+      "lowerCiAboveChance": false
+    },
+    "ordered_pair": {
+      "n": 8,
+      "passRate": 0.25,
+      "ci95": [
+        0.0,
+        0.625
+      ],
+      "chance": 0.25,
+      "meanOneOverK": 0.25,
+      "ciExcludesChance": false,
+      "witnessBarEligible": false,
+      "lowerCiAboveChance": false
+    },
+    "text": {
+      "n": 188,
+      "passRate": 0.4521276595744681,
+      "ci95": [
+        0.3776595744680851,
+        0.5212765957446809
+      ],
+      "chance": 0.25,
+      "meanOneOverK": 0.25,
+      "ciExcludesChance": true,
+      "witnessBarEligible": true,
+      "lowerCiAboveChance": true
+    }
+  },
+  "optionTypeRule": "Item-level: all options share a type, else majority if it is at least half, else mixed. Types: numeric, algebraic_expression, ordered_pair, text."
+}

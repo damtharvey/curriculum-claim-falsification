@@ -1,0 +1,472 @@
+{
+  "writtenAt": "2026-09-16T22:00:38Z",
+  "version": "extended",
+  "preregistration": {
+    "path": "exports/replication-staar/preregistration.md",
+    "sha256File": "exports/replication-staar/preregistration-extended.sha256",
+    "sha256": "81ea35c330e803740506d41cbd09451d275004628a87a74f2e81173fc0ef7a10",
+    "utc": "2026-09-16T21:59:54Z",
+    "powerMinimumN": 46,
+    "bootstrap": {
+      "method": "random.Random.randrange",
+      "nBoot": 1000,
+      "seed": 11
+    }
+  },
+  "formsParsed": [
+    {
+      "formId": "staar-2017-5-english",
+      "year": "2017",
+      "grade": "5",
+      "testPdf": "data/raw/staar/STAAR_G5-2017-Test-Math-f.pdf",
+      "keyPdf": "data/raw/staar/2017_STAAR_Gr5Math_Key_Paper_tagged.pdf",
+      "nKeysRecovered": 36,
+      "nItemsParsed": 24,
+      "nSelected": 21,
+      "nSelectedKeyInChoices": 21,
+      "nFourParseableNumericOptions": 16,
+      "nParseFailures": 12,
+      "stopped": false,
+      "stopReason": null,
+      "parser": "parse_keys_from_pdf y-gap 4, same as version 1"
+    },
+    {
+      "formId": "staar-2018-5-english",
+      "year": "2018",
+      "grade": "5",
+      "testPdf": "data/raw/staar/2018_STAAR_Gr5_Math_Test.PDF",
+      "keyPdf": "data/raw/staar/2018_STAAR_Gr5_Math_Key_Paper_tagged.pdf",
+      "nKeysRecovered": 36,
+      "nItemsParsed": 21,
+      "nSelected": 20,
+      "nSelectedKeyInChoices": 20,
+      "nFourParseableNumericOptions": 13,
+      "nParseFailures": 15,
+      "stopped": false,
+      "stopReason": null,
+      "parser": "parse_keys_from_pdf y-gap 4, same as version 1"
+    }
+  ],
+  "nVersion1RepairedItems": 228,
+  "nNewItems": 45,
+  "nGrade5SelectedVersion1": 78,
+  "nGrade5SelectedNew": 41,
+  "nGrade5SelectedCombined": 119,
+  "version1RepairedFiltered": {
+    "rule": "s3-closure-filtered",
+    "cell": "teks/g5",
+    "nFired": 44,
+    "nHits": 17,
+    "rate": 0.38636363636363635,
+    "chance": 0.25,
+    "ci95": [
+      0.25,
+      0.5454545454545454
+    ],
+    "clearsBar": false,
+    "underpowered": false,
+    "tieBreakDecomposition": {
+      "nDecidedByDepth": 16,
+      "nHitsDecidedByDepth": 4,
+      "rateAmongDepthDecided": 0.25,
+      "nDecidedByTieBreak": 28,
+      "nHitsDecidedByTieBreak": 13,
+      "rateAmongTieBreakDecided": 0.4642857142857143
+    },
+    "closureDensity": {
+      "meanOptionsInClosurePerFiredItem": 2.977272727272727,
+      "nFiredUniqueDepth1": 10,
+      "nFiredUniqueDepth1IsKey": 3,
+      "uniqueDepth1IsKeyRateAmongThoseItems": 0.3
+    },
+    "perAdministration": [
+      {
+        "administration": "staar:2013",
+        "n": 12,
+        "nCorrect": 3,
+        "rate": 0.25
+      },
+      {
+        "administration": "staar:2014",
+        "n": 16,
+        "nCorrect": 5,
+        "rate": 0.3125
+      },
+      {
+        "administration": "staar:2016",
+        "n": 16,
+        "nCorrect": 9,
+        "rate": 0.5625
+      }
+    ],
+    "predictionMetLowerCiAbove025": false,
+    "powerFloorReached": false,
+    "powerMinimumN": 46
+  },
+  "newFormsAloneFiltered": {
+    "rule": "s3-closure-filtered",
+    "cell": "teks/g5",
+    "nFired": 20,
+    "nHits": 4,
+    "rate": 0.2,
+    "chance": 0.25,
+    "ci95": [
+      0.05,
+      0.4
+    ],
+    "clearsBar": false,
+    "underpowered": false,
+    "tieBreakDecomposition": {
+      "nDecidedByDepth": 6,
+      "nHitsDecidedByDepth": 2,
+      "rateAmongDepthDecided": 0.3333333333333333,
+      "nDecidedByTieBreak": 14,
+      "nHitsDecidedByTieBreak": 2,
+      "rateAmongTieBreakDecided": 0.14285714285714285
+    },
+    "closureDensity": {
+      "meanOptionsInClosurePerFiredItem": 3.1,
+      "nFiredUniqueDepth1": 5,
+      "nFiredUniqueDepth1IsKey": 2,
+      "uniqueDepth1IsKeyRateAmongThoseItems": 0.4
+    },
+    "perAdministration": [
+      {
+        "administration": "staar:2017",
+        "n": 11,
+        "nCorrect": 1,
+        "rate": 0.09090909090909091
+      },
+      {
+        "administration": "staar:2018",
+        "n": 9,
+        "nCorrect": 3,
+        "rate": 0.3333333333333333
+      }
+    ],
+    "predictionMetLowerCiAbove025": false,
+    "powerFloorReached": false,
+    "powerMinimumN": 46
+  },
+  "combinedFiltered": {
+    "rule": "s3-closure-filtered",
+    "cell": "teks/g5",
+    "nFired": 64,
+    "nHits": 21,
+    "rate": 0.328125,
+    "chance": 0.25,
+    "ci95": [
+      0.21875,
+      0.4375
+    ],
+    "clearsBar": false,
+    "underpowered": false,
+    "tieBreakDecomposition": {
+      "nDecidedByDepth": 22,
+      "nHitsDecidedByDepth": 6,
+      "rateAmongDepthDecided": 0.2727272727272727,
+      "nDecidedByTieBreak": 42,
+      "nHitsDecidedByTieBreak": 15,
+      "rateAmongTieBreakDecided": 0.35714285714285715
+    },
+    "closureDensity": {
+      "meanOptionsInClosurePerFiredItem": 3.015625,
+      "nFiredUniqueDepth1": 15,
+      "nFiredUniqueDepth1IsKey": 5,
+      "uniqueDepth1IsKeyRateAmongThoseItems": 0.3333333333333333
+    },
+    "perAdministration": [
+      {
+        "administration": "staar:2013",
+        "n": 12,
+        "nCorrect": 3,
+        "rate": 0.25
+      },
+      {
+        "administration": "staar:2014",
+        "n": 16,
+        "nCorrect": 5,
+        "rate": 0.3125
+      },
+      {
+        "administration": "staar:2016",
+        "n": 16,
+        "nCorrect": 9,
+        "rate": 0.5625
+      },
+      {
+        "administration": "staar:2017",
+        "n": 11,
+        "nCorrect": 1,
+        "rate": 0.09090909090909091
+      },
+      {
+        "administration": "staar:2018",
+        "n": 9,
+        "nCorrect": 3,
+        "rate": 0.3333333333333333
+      }
+    ],
+    "predictionMetLowerCiAbove025": false,
+    "powerFloorReached": true,
+    "powerMinimumN": 46
+  },
+  "version1RepairedUnfiltered": {
+    "rule": "s3-closure-unfiltered",
+    "cell": "teks/g5",
+    "nFired": 47,
+    "nHits": 18,
+    "rate": 0.3829787234042553,
+    "chance": 0.25,
+    "ci95": [
+      0.2553191489361702,
+      0.5106382978723404
+    ],
+    "clearsBar": true,
+    "underpowered": false,
+    "tieBreakDecomposition": {
+      "nDecidedByDepth": 16,
+      "nHitsDecidedByDepth": 4,
+      "rateAmongDepthDecided": 0.25,
+      "nDecidedByTieBreak": 31,
+      "nHitsDecidedByTieBreak": 14,
+      "rateAmongTieBreakDecided": 0.45161290322580644
+    },
+    "closureDensity": {
+      "meanOptionsInClosurePerFiredItem": 3.0,
+      "nFiredUniqueDepth1": 10,
+      "nFiredUniqueDepth1IsKey": 3,
+      "uniqueDepth1IsKeyRateAmongThoseItems": 0.3
+    },
+    "perAdministration": [
+      {
+        "administration": "staar:2013",
+        "n": 15,
+        "nCorrect": 4,
+        "rate": 0.26666666666666666
+      },
+      {
+        "administration": "staar:2014",
+        "n": 17,
+        "nCorrect": 6,
+        "rate": 0.35294117647058826
+      },
+      {
+        "administration": "staar:2016",
+        "n": 15,
+        "nCorrect": 8,
+        "rate": 0.5333333333333333
+      }
+    ],
+    "predictionMetLowerCiAbove025": true,
+    "powerFloorReached": true,
+    "powerMinimumN": 46
+  },
+  "newFormsAloneUnfiltered": {
+    "rule": "s3-closure-unfiltered",
+    "cell": "teks/g5",
+    "nFired": 22,
+    "nHits": 4,
+    "rate": 0.18181818181818182,
+    "chance": 0.25,
+    "ci95": [
+      0.045454545454545456,
+      0.36363636363636365
+    ],
+    "clearsBar": false,
+    "underpowered": false,
+    "tieBreakDecomposition": {
+      "nDecidedByDepth": 8,
+      "nHitsDecidedByDepth": 2,
+      "rateAmongDepthDecided": 0.25,
+      "nDecidedByTieBreak": 14,
+      "nHitsDecidedByTieBreak": 2,
+      "rateAmongTieBreakDecided": 0.14285714285714285
+    },
+    "closureDensity": {
+      "meanOptionsInClosurePerFiredItem": 3.0454545454545454,
+      "nFiredUniqueDepth1": 5,
+      "nFiredUniqueDepth1IsKey": 2,
+      "uniqueDepth1IsKeyRateAmongThoseItems": 0.4
+    },
+    "perAdministration": [
+      {
+        "administration": "staar:2017",
+        "n": 12,
+        "nCorrect": 1,
+        "rate": 0.08333333333333333
+      },
+      {
+        "administration": "staar:2018",
+        "n": 10,
+        "nCorrect": 3,
+        "rate": 0.3
+      }
+    ],
+    "predictionMetLowerCiAbove025": false,
+    "powerFloorReached": false,
+    "powerMinimumN": 46
+  },
+  "combinedUnfiltered": {
+    "rule": "s3-closure-unfiltered",
+    "cell": "teks/g5",
+    "nFired": 69,
+    "nHits": 22,
+    "rate": 0.3188405797101449,
+    "chance": 0.25,
+    "ci95": [
+      0.21739130434782608,
+      0.43478260869565216
+    ],
+    "clearsBar": false,
+    "underpowered": false,
+    "tieBreakDecomposition": {
+      "nDecidedByDepth": 24,
+      "nHitsDecidedByDepth": 6,
+      "rateAmongDepthDecided": 0.25,
+      "nDecidedByTieBreak": 45,
+      "nHitsDecidedByTieBreak": 16,
+      "rateAmongTieBreakDecided": 0.35555555555555557
+    },
+    "closureDensity": {
+      "meanOptionsInClosurePerFiredItem": 3.0144927536231885,
+      "nFiredUniqueDepth1": 15,
+      "nFiredUniqueDepth1IsKey": 5,
+      "uniqueDepth1IsKeyRateAmongThoseItems": 0.3333333333333333
+    },
+    "perAdministration": [
+      {
+        "administration": "staar:2013",
+        "n": 15,
+        "nCorrect": 4,
+        "rate": 0.26666666666666666
+      },
+      {
+        "administration": "staar:2014",
+        "n": 17,
+        "nCorrect": 6,
+        "rate": 0.35294117647058826
+      },
+      {
+        "administration": "staar:2016",
+        "n": 15,
+        "nCorrect": 8,
+        "rate": 0.5333333333333333
+      },
+      {
+        "administration": "staar:2017",
+        "n": 12,
+        "nCorrect": 1,
+        "rate": 0.08333333333333333
+      },
+      {
+        "administration": "staar:2018",
+        "n": 10,
+        "nCorrect": 3,
+        "rate": 0.3
+      }
+    ],
+    "predictionMetLowerCiAbove025": false,
+    "powerFloorReached": true,
+    "powerMinimumN": 46
+  },
+  "combinedNReaches46": true,
+  "primaryItemIdsCombined": [
+    "staar-2013-5-q10",
+    "staar-2013-5-q14",
+    "staar-2013-5-q15",
+    "staar-2013-5-q21",
+    "staar-2013-5-q22",
+    "staar-2013-5-q27",
+    "staar-2013-5-q30",
+    "staar-2013-5-q31",
+    "staar-2013-5-q35",
+    "staar-2013-5-q43",
+    "staar-2013-5-q47",
+    "staar-2013-5-q48",
+    "staar-2014-5-q14",
+    "staar-2014-5-q15",
+    "staar-2014-5-q19",
+    "staar-2014-5-q22",
+    "staar-2014-5-q24",
+    "staar-2014-5-q26",
+    "staar-2014-5-q30",
+    "staar-2014-5-q31",
+    "staar-2014-5-q32",
+    "staar-2014-5-q33",
+    "staar-2014-5-q35",
+    "staar-2014-5-q38",
+    "staar-2014-5-q40",
+    "staar-2014-5-q43",
+    "staar-2014-5-q45",
+    "staar-2014-5-q50",
+    "staar-2016-5-q2",
+    "staar-2016-5-q4",
+    "staar-2016-5-q7",
+    "staar-2016-5-q15",
+    "staar-2016-5-q17",
+    "staar-2016-5-q18",
+    "staar-2016-5-q20",
+    "staar-2016-5-q23",
+    "staar-2016-5-q30",
+    "staar-2016-5-q33",
+    "staar-2016-5-q34",
+    "staar-2016-5-q35",
+    "staar-2016-5-q36",
+    "staar-2016-5-q39",
+    "staar-2016-5-q41",
+    "staar-2016-5-q44",
+    "staar-2017-5-q3",
+    "staar-2017-5-q12",
+    "staar-2017-5-q14",
+    "staar-2017-5-q16",
+    "staar-2017-5-q17",
+    "staar-2017-5-q18",
+    "staar-2017-5-q19",
+    "staar-2017-5-q26",
+    "staar-2017-5-q32",
+    "staar-2017-5-q33",
+    "staar-2017-5-q35",
+    "staar-2018-5-q2",
+    "staar-2018-5-q7",
+    "staar-2018-5-q10",
+    "staar-2018-5-q13",
+    "staar-2018-5-q18",
+    "staar-2018-5-q20",
+    "staar-2018-5-q31",
+    "staar-2018-5-q34",
+    "staar-2018-5-q35"
+  ],
+  "primaryItemIdsNew": [
+    "staar-2017-5-q3",
+    "staar-2017-5-q12",
+    "staar-2017-5-q14",
+    "staar-2017-5-q16",
+    "staar-2017-5-q17",
+    "staar-2017-5-q18",
+    "staar-2017-5-q19",
+    "staar-2017-5-q26",
+    "staar-2017-5-q32",
+    "staar-2017-5-q33",
+    "staar-2017-5-q35",
+    "staar-2018-5-q2",
+    "staar-2018-5-q7",
+    "staar-2018-5-q10",
+    "staar-2018-5-q13",
+    "staar-2018-5-q18",
+    "staar-2018-5-q20",
+    "staar-2018-5-q31",
+    "staar-2018-5-q34",
+    "staar-2018-5-q35"
+  ],
+  "notFound": [
+    "2015 English g5 math key (test PDF on disk; TEA 2020-12-30 table has no 2015 math form)",
+    "2020 English g5 math test and key (not on TEA released-test table; COVID year)",
+    "2023 English g5 operational test PDF (key on disk; TEA no longer releases the paper test form)"
+  ],
+  "cut": [
+    "Census English 2019/2021/2022",
+    "Spanish, samplers, practice, redesign, rationales, online keys",
+    "Scanned PDFs (no OCR)"
+  ]
+}

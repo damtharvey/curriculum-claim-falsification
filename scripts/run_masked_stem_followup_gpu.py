@@ -100,6 +100,7 @@ def main() -> None:
                 "8",
                 "--device-map",
                 "to",
+                "--allow-download",
             ],
         ),
         (
@@ -131,6 +132,7 @@ def main() -> None:
                 "8",
                 "--device-map",
                 "to",
+                "--allow-download",
             ],
         ),
         (
@@ -156,6 +158,7 @@ def main() -> None:
                 "8",
                 "--device-map",
                 "to",
+                "--allow-download",
             ],
         ),
         (
@@ -181,6 +184,7 @@ def main() -> None:
                 "1",
                 "--device-map",
                 "cuda",
+                "--allow-download",
             ],
         ),
     ]

@@ -1,0 +1,798 @@
+{
+  "selectionRule": "selected-response sorted by id; first 15 constraint-keyword stems for S2; first 15 remaining with extract_equations non-empty for S4",
+  "s2": [
+    {
+      "id": "eqao-2023-g3-q16",
+      "authority": "eqao",
+      "claim": "g3",
+      "stem": "This pictograph shows information about recycled items. Key Each represents 4 items. Recycled Items Type Number of items recycled Paper Plastic Glass How many paper items have been recycled?",
+      "choices": {
+        "A": "5",
+        "B": "14",
+        "C": "20",
+        "D": "24"
+      },
+      "key": "C",
+      "nConstraints": 1,
+      "survivors": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "keySurvives": true,
+      "answer": "B",
+      "correct": false,
+      "judgment": "key_survives_correctly",
+      "notes": "how-many nonnegative-integer: all four options are nonnegative integers, so nothing is eliminated. Key C survives. Constraint parse matches the stem."
+    },
+    {
+      "id": "eqao-2023-g3-q17",
+      "authority": "eqao",
+      "claim": "g3",
+      "stem": "This table shows the number of markers three students have. Student Numbers of markers Tanisha 6 Blake 2 Mateo 4 What is the mean number of markers?",
+      "choices": {
+        "A": "2 markers",
+        "B": "4 markers",
+        "C": "6 markers",
+        "D": "12 markers 12"
+      },
+      "key": "B",
+      "nConstraints": 2,
+      "survivors": [
+        "A",
+        "B",
+        "C"
+      ],
+      "keySurvives": true,
+      "answer": "B",
+      "correct": true,
+      "judgment": "key_survives_and_eliminates_correctly",
+      "notes": "how-many plus mean with stem data 6,2,4. Intersection requires a nonnegative integer in [2,6]. D=12 is correctly dropped. Key B=4 survives."
+    },
+    {
+      "id": "eqao-2023-g3-q18",
+      "authority": "eqao",
+      "claim": "g3",
+      "stem": "This bar graph shows the number of sunny days in four different months. Number of Sunny Days How many more sunny days are there in total in July and August than in October?",
+      "choices": {
+        "A": "18 days",
+        "B": "26 days",
+        "C": "28 days",
+        "D": "46 days Number of days 0 4 8 12 16 20 24 Month September October July August 13"
+      },
+      "key": "C",
+      "nConstraints": 1,
+      "survivors": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "keySurvives": true,
+      "answer": "B",
+      "correct": false,
+      "judgment": "key_survives_correctly",
+      "notes": "how-many: all options are nonnegative integers. No elimination. Key C survives."
+    },
+    {
+      "id": "eqao-2023-g3-q23",
+      "authority": "eqao",
+      "claim": "g3",
+      "stem": "How many faces, edges and vertices does a trapezoid-based prism have?",
+      "choices": {
+        "A": "5 faces, 9 edges and 6 vertices",
+        "B": "6 faces, 10 edges and 6 vertices",
+        "C": "6 faces, 12 edges and 8 vertices",
+        "D": "7 faces, 12 edges and 7 vertices end start 15"
+      },
+      "key": "C",
+      "nConstraints": 1,
+      "survivors": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "keySurvives": true,
+      "answer": "B",
+      "correct": false,
+      "judgment": "key_survives_correctly_but_weak",
+      "notes": "how-many fires; structured options parse as leading integers 5,6,6,7 and all survive. Key C survives. The constraint cannot read faces/edges/vertices triples."
+    },
+    {
+      "id": "eqao-2023-g3-q25",
+      "authority": "eqao",
+      "claim": "g3",
+      "stem": "Riley starts to cover the front of this book with square tiles. All the tiles are the same size. How many more tiles are needed to cover the front of this book, with no gaps or overlaps?",
+      "choices": {
+        "A": "12 tiles",
+        "B": "16 tiles",
+        "C": "18 tiles",
+        "D": "30 tiles 12 3 9 6 4 8 10 2 5 7 11 1 16"
+      },
+      "key": "C",
+      "nConstraints": 1,
+      "survivors": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "keySurvives": true,
+      "answer": "B",
+      "correct": false,
+      "judgment": "key_survives_correctly",
+      "notes": "how-many: all tile counts are nonnegative integers. Key C survives."
+    },
+    {
+      "id": "eqao-2023-g3-q26",
+      "authority": "eqao",
+      "claim": "g3",
+      "stem": "What is the perimeter of this shape?",
+      "choices": {
+        "A": "75 cm",
+        "B": "80 cm",
+        "C": "85 cm",
+        "D": "90 cm 15 cm 15 cm 20 cm 25 cm 17"
+      },
+      "key": "D",
+      "nConstraints": 1,
+      "survivors": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "keySurvives": true,
+      "answer": "B",
+      "correct": false,
+      "judgment": "key_survives_correctly",
+      "notes": "perimeter/length: all options positive. Key D survives."
+    },
+    {
+      "id": "eqao-2023-g3-q5",
+      "authority": "eqao",
+      "claim": "g3",
+      "stem": "Kai has 138 blocks, and Luka has 184 blocks. How many blocks do they have in total?",
+      "choices": {
+        "A": "46 blocks",
+        "B": "222 blocks",
+        "C": "312 blocks",
+        "D": "322 blocks"
+      },
+      "key": "D",
+      "nConstraints": 1,
+      "survivors": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "keySurvives": true,
+      "answer": "B",
+      "correct": false,
+      "judgment": "key_survives_correctly",
+      "notes": "how-many: all block counts nonnegative integers, including the difference distractor 46. Key D survives."
+    },
+    {
+      "id": "eqao-2023-g6-q13",
+      "authority": "eqao",
+      "claim": "g6",
+      "stem": "Code is written to calculate the area, A, of a trapezoid. Part of the code is missing. start input a input b input h calculate blank display A end What is the missing part of the code?",
+      "choices": {
+        "A": "Formula: A equals b multiplied by h",
+        "B": "Formula: A equals lowercase a multiplied by b multiplied by h",
+        "C": "Formula: A equals bracket lowercase a plus b end bracket multiplied by h",
+        "D": "Formula: A equals bracket lowercase a plus b end bracket multiplied by h divided by 2"
+      },
+      "key": "D",
+      "nConstraints": 1,
+      "survivors": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "keySurvives": true,
+      "answer": "A",
+      "correct": false,
+      "judgment": "key_survives_correctly_but_weak",
+      "notes": "area keyword on a formula-choice item. Options are text, so they survive. Key D survives. Constraint does not touch formula strings."
+    },
+    {
+      "id": "eqao-2023-g6-q16",
+      "authority": "eqao",
+      "claim": "g6",
+      "stem": "This graph shows the number of goals scored over three months by Team A and Team B. How many more goals did Team A score than Team B in October and November?",
+      "choices": {
+        "A": "5 goals",
+        "B": "10 goals",
+        "C": "15 goals",
+        "D": "20 goals 15"
+      },
+      "key": "B",
+      "nConstraints": 1,
+      "survivors": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "keySurvives": true,
+      "answer": "B",
+      "correct": true,
+      "judgment": "key_survives_correctly",
+      "notes": "how-many: all goal counts nonnegative integers. Key B survives."
+    },
+    {
+      "id": "eqao-2023-g6-q18",
+      "authority": "eqao",
+      "claim": "g6",
+      "stem": "A tile is selected without looking. What is the probability of choosing a tile with an X?",
+      "choices": {
+        "A": "two ei ghths",
+        "B": "six ei ghths",
+        "C": "eight halves",
+        "D": "eight sixths"
+      },
+      "key": "A",
+      "nConstraints": 1,
+      "survivors": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "keySurvives": true,
+      "answer": "A",
+      "correct": true,
+      "judgment": "key_survives_correctly_but_weak",
+      "notes": "probability keyword; options are spelled fractions and do not parse as numbers, so nothing is eliminated. Key A survives."
+    },
+    {
+      "id": "eqao-2023-g6-q19",
+      "authority": "eqao",
+      "claim": "g6",
+      "stem": "This spinner is divided into 5 equal sections. The arrow on the spinner is spun. What is the probability that the arrow lands on an even number on this spinner?",
+      "choices": {
+        "A": "one fi fth",
+        "B": "two fi fths",
+        "C": "three fifths",
+        "D": "four f ifths X X 1 5 2 4 3 17"
+      },
+      "key": "B",
+      "nConstraints": 1,
+      "survivors": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "keySurvives": true,
+      "answer": "A",
+      "correct": false,
+      "judgment": "key_survives_correctly_but_weak",
+      "notes": "probability keyword on spelled-fraction options; all survive. Key B survives."
+    },
+    {
+      "id": "eqao-2023-g6-q20",
+      "authority": "eqao",
+      "claim": "g6",
+      "stem": "A teacher has containers of different coloured paint. \u2022 0.11 are blue. \u2022 two e ighths are red. \u2022 4% are yellow. \u2022 one f ifth are purple. \u2022 The rest are green. The teacher picks a container of paint randomly. What is the probability that the teacher picks a container of green paint?",
+      "choices": {
+        "A": "18%",
+        "B": "40%",
+        "C": "55%",
+        "D": "60%"
+      },
+      "key": "B",
+      "nConstraints": 2,
+      "survivors": [],
+      "keySurvives": false,
+      "answer": null,
+      "correct": false,
+      "judgment": "constraint_wrong_key_killed",
+      "notes": "probability and percent both fire; intersection is [0,1]. Options are 18,40,55,60 percent points, so every option including key B=40 is eliminated. The specified rule is wrong for percent-valued probability options."
+    },
+    {
+      "id": "eqao-2023-g6-q24",
+      "authority": "eqao",
+      "claim": "g6",
+      "stem": "What is the sum of the interior angles of a rectangle?",
+      "choices": {
+        "A": "90\u00b0",
+        "B": "180\u00b0",
+        "C": "270\u00b0",
+        "D": "360\u00b0"
+      },
+      "key": "D",
+      "nConstraints": 1,
+      "survivors": [
+        "A"
+      ],
+      "keySurvives": false,
+      "answer": "A",
+      "correct": false,
+      "judgment": "constraint_wrong_key_killed",
+      "notes": "interior plus angle maps to (0,180). That is the interior-angle-of-a-triangle rule applied to the sum of angles of a rectangle. A=90 survives; key D=360 is killed. Constraint rule is wrong on this item."
+    },
+    {
+      "id": "eqao-2023-g6-q25",
+      "authority": "eqao",
+      "claim": "g6",
+      "stem": "What is the area of this trapezoid?",
+      "choices": {
+        "A": "15 centimetres squared",
+        "B": "30 centimetres squared",
+        "C": "45 centimetres squared",
+        "D": "60 centimetres squared"
+      },
+      "key": "B",
+      "nConstraints": 1,
+      "survivors": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "keySurvives": true,
+      "answer": "B",
+      "correct": true,
+      "judgment": "key_survives_correctly",
+      "notes": "area: all positive. Key B survives."
+    },
+    {
+      "id": "eqao-2023-g6-q26",
+      "authority": "eqao",
+      "claim": "g6",
+      "stem": "A group of 6 students share 3 L of water equally. How many millilitres of water does each student receive?",
+      "choices": {
+        "A": "50 mL",
+        "B": "500 mL",
+        "C": "2000 mL",
+        "D": "3000 mL 3 cm 9 cm 5 cm 20"
+      },
+      "key": "B",
+      "nConstraints": 1,
+      "survivors": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "keySurvives": true,
+      "answer": "B",
+      "correct": true,
+      "judgment": "key_survives_correctly",
+      "notes": "how-many: all millilitre counts nonnegative integers. Key B survives."
+    }
+  ],
+  "s4": [
+    {
+      "id": "eqao-2024-g3-q5",
+      "authority": "eqao",
+      "claim": "g3",
+      "stem": "Which fraction represents the area of the circle that should be red in the answer? + + = on e-quarter",
+      "choices": {
+        "A": "on e-third",
+        "B": "th ree-thirds",
+        "C": "th ree-quarters",
+        "D": "8"
+      },
+      "key": "D",
+      "equations": [
+        {
+          "left": "+ +",
+          "rel": "=",
+          "right": "on e-quarter",
+          "variable": "e"
+        }
+      ],
+      "fired": false,
+      "answer": null,
+      "hits": [],
+      "keyNumeric": 8.0,
+      "judgment": "not_an_equation",
+      "notes": "Layout fragment '+ + = on e-quarter' is not a single-variable problem equation. Parser should not fire. Abstain is correct."
+    },
+    {
+      "id": "eqao-2024-g9-q10",
+      "authority": "eqao",
+      "claim": "g9",
+      "stem": "This pseudocode will be used to determine the hypotenuse of a right triangle if the user inputs the lengths of the other two sides. A line is missing in the pseudocode. sideA = 0 sideB = 0 output \"Enter the value of side a.\" store user input as sideA output \"Enter the value of side b.\" store user input as sideB output \"The length of the hypotenuse is\", hypotenuse,\".\" Hint: Remember the side-length relationship for right triangles is a2 + b2 = c2. Select the correct line of code to complete this pseudocode.",
+      "choices": {
+        "A": "hypotenuse = \u221a(sideA \u2013 sideB)",
+        "B": "hypotenuse = \u221a(sideA + sideB)",
+        "C": "hypotenuse = \u221a(sideA * sideA \u2013 sideB * sideB)",
+        "D": "hypotenuse = \u221a(sideA * sideA + sideB * sideB) 11"
+      },
+      "key": "D",
+      "equations": [
+        {
+          "left": "Remember",
+          "rel": "=",
+          "right": "c2. Select",
+          "variable": "c"
+        }
+      ],
+      "fired": false,
+      "answer": null,
+      "hits": [],
+      "keyNumeric": 11.0,
+      "judgment": "wrong_span_not_backsolve",
+      "notes": "Item asks for a line of code. Parser reduced a2+b2=c2 to Remember=c2. Not a numeric backsolve. Abstain correct; parse is wrong."
+    },
+    {
+      "id": "eqao-2025-g9-q20",
+      "authority": "eqao",
+      "claim": "g9",
+      "stem": "In some cities, people refer to distances when walking in terms of blocks. I n a certain city, the length of one block is one eighth of a mile. In a certain city, the length of one block is one eighth of a mile. of a mile. Hint: 1 mile = 1609.3 m Which option is closest to the distance a person walks, in metres, if the person walks 5 blocks?",
+      "choices": {
+        "A": "201 m",
+        "B": "625 m",
+        "C": "1006 m",
+        "D": "2575 m 220\u00b0 y w z x 19"
+      },
+      "key": "C",
+      "equations": [
+        {
+          "left": "1 mile",
+          "rel": "=",
+          "right": "1609.3 m",
+          "variable": "m"
+        }
+      ],
+      "fired": false,
+      "answer": null,
+      "hits": [],
+      "keyNumeric": 1006.0,
+      "judgment": "unit_letter_as_variable",
+      "notes": "Parsed 1 mile = 1609.3 m with variable m. That is a unit conversion given, not an unknown. Options are distances, not values of m as a variable. Abstain correct; parse is wrong."
+    },
+    {
+      "id": "eqao-2025-g9-q7",
+      "authority": "eqao",
+      "claim": "g9",
+      "stem": "Mia calculates the pay she earns, P, in dollars, to make n birdhouses, according to this equation. P = 24.50n + 15 What is Mia\u2019s pay for making 8 birdhouses?",
+      "choices": {
+        "A": "$39.50",
+        "B": "$181.00",
+        "C": "$196.00",
+        "D": "$211.00"
+      },
+      "key": "D",
+      "equations": [
+        {
+          "left": "according",
+          "rel": "=",
+          "right": "24.50n + 15",
+          "variable": "n"
+        }
+      ],
+      "fired": false,
+      "answer": null,
+      "hits": [],
+      "keyNumeric": 211.0,
+      "judgment": "two_variable_evaluate_not_backsolve",
+      "notes": "True equation is P=24.50n+15. Parser kept 'according' on the left. The item plugs n=8 rather than substituting options as n. Abstain is the right S4 behaviour; parse is wrong."
+    },
+    {
+      "id": "nyregents-algebra-i-2018-jun-q12",
+      "authority": "nyregents",
+      "claim": "algebra-i",
+      "stem": "The quadratic equation x2 - 6x = 12 is rewritten in the form (x + p)2 = q, where q is a constant. What is the value of p?",
+      "choices": {
+        "A": "-12",
+        "C": "-3",
+        "B": "-9",
+        "D": "9 Algebra I \u2013 June \u201918"
+      },
+      "key": "C",
+      "equations": [
+        {
+          "left": "x2 - 6x",
+          "rel": "=",
+          "right": "12",
+          "variable": "x"
+        }
+      ],
+      "fired": false,
+      "answer": null,
+      "hits": [],
+      "keyNumeric": -3.0,
+      "judgment": "equation_ok_wrong_unknown",
+      "notes": "Parsed x^2-6x=12 correctly as an equation in x. Options are values of p in (x+p)^2=q, not of x. Zero hits, abstain correct. Parse of the displayed quadratic is accurate."
+    },
+    {
+      "id": "nyregents-algebra-i-2018-jun-q21",
+      "authority": "nyregents",
+      "claim": "algebra-i",
+      "stem": "At an ice cream shop, the profit, P(c), is modeled by the function computations. P(c) = 0.87c, where c represents the number of ice cream cones sold. An appropriate domain for this function is",
+      "choices": {
+        "A": "an integer < 0",
+        "C": "a rational number < 0",
+        "B": "an integer > 0",
+        "D": "a rational number > 0"
+      },
+      "key": "B",
+      "equations": [
+        {
+          "left": "ice cream shop",
+          "rel": "=",
+          "right": "0.87c, where c represents",
+          "variable": "c"
+        }
+      ],
+      "fired": false,
+      "answer": null,
+      "hits": [],
+      "keyNumeric": 0.0,
+      "judgment": "not_backsolve",
+      "notes": "Domain-of-a-function item. Parser glued P(c)=0.87c to surrounding words. Options are not numeric candidates. Abstain correct."
+    },
+    {
+      "id": "nyregents-algebra-i-2018-jun-q22",
+      "authority": "nyregents",
+      "claim": "algebra-i",
+      "stem": "How many real-number solutions does 4x2 + 2x + 5 = 0 have?",
+      "choices": {
+        "A": "one",
+        "C": "zero",
+        "B": "two",
+        "D": "infinitely many"
+      },
+      "key": "C",
+      "equations": [
+        {
+          "left": "How many real-number solutions does 4x2 + 2x + 5",
+          "rel": "=",
+          "right": "0 have",
+          "variable": "x"
+        }
+      ],
+      "fired": false,
+      "answer": null,
+      "hits": [],
+      "keyNumeric": null,
+      "judgment": "not_backsolve",
+      "notes": "Asks how many real solutions 4x^2+2x+5=0 has. Options are one/two/zero, not x. Abstain correct. Left side kept leading prose."
+    },
+    {
+      "id": "nyregents-algebra-i-2018-jun-q23",
+      "authority": "nyregents",
+      "claim": "algebra-i",
+      "stem": "Students were asked to write a formula for the length of a rectangle by using the formula for its perimeter, p = 2 + 2w. Three of their responses are shown below. 1 I. = 2 p - w II. = 1 (p - 2w) 2 p \u0012 2w III. = 2 Which responses are correct?",
+      "choices": {
+        "A": "I and II, only",
+        "C": "I and III, only",
+        "B": "II and III, only",
+        "D": "I, II, and III"
+      },
+      "key": "D",
+      "equations": [
+        {
+          "left": "2w III",
+          "rel": "=",
+          "right": "2",
+          "variable": "w"
+        }
+      ],
+      "fired": false,
+      "answer": null,
+      "hits": [],
+      "keyNumeric": null,
+      "judgment": "garbage_parse",
+      "notes": "Formula-identification item. Parser took 2w III = 2. Abstain correct; parse is wrong."
+    },
+    {
+      "id": "nyregents-algebra-i-2018-jun-q24",
+      "authority": "nyregents",
+      "claim": "algebra-i",
+      "stem": "If a = n(a 1) and a1 = 1, what is the value of a5? n n \u00ad",
+      "choices": {
+        "A": "5",
+        "C": "120",
+        "B": "20",
+        "D": "720 Algebra I \u2013 June \u201918 [OVER]"
+      },
+      "key": "C",
+      "equations": [
+        {
+          "left": "If",
+          "rel": "=",
+          "right": "n(",
+          "variable": "n"
+        }
+      ],
+      "fired": false,
+      "answer": null,
+      "hits": [],
+      "keyNumeric": 120.0,
+      "judgment": "ocr_garbage",
+      "notes": "Recurrence is OCR-broken. Parser took If = n(. Abstain correct."
+    },
+    {
+      "id": "nyregents-algebra-i-2020-jan-q3",
+      "authority": "nyregents",
+      "claim": "algebra-i",
+      "stem": "Given 7x \u0003 2 \u2265 58, which number is not in the solution set?",
+      "choices": {
+        "A": "6",
+        "C": "10",
+        "B": "8",
+        "D": "12 every"
+      },
+      "key": "A",
+      "equations": [
+        {
+          "left": "7x \u0003 2",
+          "rel": "\u2265",
+          "right": "58",
+          "variable": "x"
+        }
+      ],
+      "fired": false,
+      "answer": null,
+      "hits": [],
+      "keyNumeric": 6.0,
+      "judgment": "true_backsolve_parse_failed",
+      "notes": "This is a genuine backsolve item: 7x-2>=58 with numeric options 6,8,10,12, key 6 is the value that does not satisfy. OCR U+0003 replaced the minus, so sympy could not parse. Parser failed on the one hand-check item that S4 should have fired on."
+    },
+    {
+      "id": "nyregents-algebra-i-2022-aug-q2",
+      "authority": "nyregents",
+      "claim": "algebra-i",
+      "stem": "If x \u2260 0, then the common ratio of the sequence x, 2x2, 4x3, 8x4, 16x5, ... is",
+      "choices": {
+        "A": "b V ah c 2 \u0002 \u0003",
+        "C": "b V ah c 2 \u0002 \u0003",
+        "B": "b V ah c 2 \u0002 \u0004",
+        "D": "b V ah c 2 \u0002 \u0004 Algebra I \u2013 Aug. \u201922 [OVER]"
+      },
+      "key": "A",
+      "equations": [
+        {
+          "left": "If x",
+          "rel": "\u2260",
+          "right": "0",
+          "variable": "x"
+        }
+      ],
+      "fired": false,
+      "answer": null,
+      "hits": [],
+      "keyNumeric": 2.0,
+      "judgment": "domain_clause",
+      "notes": "Matched x\u22600, a domain restriction, not the asked common ratio. Abstain correct."
+    },
+    {
+      "id": "nyregents-algebra-i-unknown-unk-q13",
+      "authority": "nyregents",
+      "claim": "algebra-i",
+      "stem": "If the parent function of f(x) is p(x) \u0002 x2, then the graph of the function f(x) \u0002 (x \u0004 k)2 \u0003 5, where k > 0, would be a shift of",
+      "choices": {
+        "A": "k units to the left and a move of 5 units up",
+        "B": "k units to the left and a move of 5 units down",
+        "C": "k units to the right and a move of 5 units up",
+        "D": "k units to the right and a move of 5 units down"
+      },
+      "key": "C",
+      "equations": [
+        {
+          "left": "where k",
+          "rel": ">",
+          "right": "0",
+          "variable": "k"
+        }
+      ],
+      "fired": false,
+      "answer": null,
+      "hits": [],
+      "keyNumeric": 5.0,
+      "judgment": "domain_clause",
+      "notes": "Matched k>0. Translation item, not backsolve. Abstain correct."
+    },
+    {
+      "id": "nyregents-algebra-ii-2018-jan-q17",
+      "authority": "nyregents",
+      "claim": "algebra-ii",
+      "stem": "The function below models the average price of gas in a small town since January 1st. G(t) \u0002 \u00030.0049t4 \u0004 0.0923t3 \u0003 0.56t2 \u0004 1.166t \u0004 3.23, where 0 \u2264t \u226410. If G(t) is the average price of gas in dollars and t represents the number of months since January 1st, the absolute maximum G(t) reaches over the given domain is about",
+      "choices": {
+        "A": "$1.60",
+        "C": "$4.01",
+        "B": "$3.92",
+        "D": "$7.73"
+      },
+      "key": "C",
+      "equations": [
+        {
+          "left": "where 0",
+          "rel": "\u2264",
+          "right": "t",
+          "variable": "t"
+        }
+      ],
+      "fired": false,
+      "answer": null,
+      "hits": [],
+      "keyNumeric": 4.01,
+      "judgment": "domain_clause",
+      "notes": "Matched 0\u2264t. Asks for a maximum of G(t), not a substituted t. Abstain correct."
+    },
+    {
+      "id": "nyregents-algebra-ii-2019-jan-q8",
+      "authority": "nyregents",
+      "claim": "algebra-ii",
+      "stem": "An estimate of the number of milligrams of a medication in the bloodstream t hours after 400 mg has been taken can be modeled by the function below. I(t) \u0003 0.5t4 \u0004 3.45t3 \u0005 96.65t2 \u0004 347.7t, where 0 \u2264 t \u2264 6 Over what time interval does the amount of medication in the bloodstream strictly increase?",
+      "choices": {
+        "A": "0 to 2 hours",
+        "C": "y \u0002 \u0004 1__ (x \u0003 3)2 \u0003 5",
+        "B": "y \u0002 1__ (x \u0004 3)2 \u0003 5",
+        "D": "y \u0002 \u0004 1__ (x \u0004 3)2 \u0003 5 f(x) 1 x 5 3 6 2 3 3 2 computations. Algebra II \u2013 Jan. \u201919 computations."
+      },
+      "key": "A",
+      "equations": [
+        {
+          "left": "where 0",
+          "rel": "\u2264",
+          "right": "t",
+          "variable": "t"
+        }
+      ],
+      "fired": false,
+      "answer": null,
+      "hits": [],
+      "keyNumeric": 0.0,
+      "judgment": "domain_clause",
+      "notes": "Matched 0\u2264t. Interval item, not backsolve. Abstain correct."
+    },
+    {
+      "id": "nyregents-algebra-ii-2023-jan-q19",
+      "authority": "nyregents",
+      "claim": "algebra-ii",
+      "stem": "Betty conducted a survey of her class to see if they like pizza. She gathered 200 responses and 65% of the voters said they did like pizza. Betty then ran a simulation of 400 more surveys, each with 200 responses, assuming that 65% of the voters would like pizza. The output of the simulation is shown below. Samples = 400 Mean = 0.654 SD = 0.035 0.55 0 10 20 30 40 50 0.60 0.65 Proportion Frequency 0.70 0.75 Considering the middle 95% of the data, what is the margin of error for the simulation?",
+      "choices": {
+        "A": "0.01",
+        "C": "0.05",
+        "B": "0.02",
+        "D": "0.07"
+      },
+      "key": "D",
+      "equations": [
+        {
+          "left": "e voters would like pizza",
+          "rel": "=",
+          "right": "400 Mean",
+          "variable": "e"
+        }
+      ],
+      "fired": false,
+      "answer": null,
+      "hits": [],
+      "keyNumeric": 0.07,
+      "judgment": "garbage_parse",
+      "notes": "Matched Mean = 400 from a histogram caption. Not an equation to backsolve. Abstain correct."
+    }
+  ],
+  "s2Summary": {
+    "n": 15,
+    "keySurvives": 13,
+    "constraintWrongKeyKilled": 2,
+    "idsWrong": [
+      "eqao-2023-g6-q20",
+      "eqao-2023-g6-q24"
+    ],
+    "note": "13/15 keys survive. Two specified intersections (probability with percent-valued options; interior-angle (0,180) on a rectangle angle-sum) kill the key."
+  },
+  "s4Summary": {
+    "n": 15,
+    "nFired": 0,
+    "nTrueBacksolveItems": 1,
+    "nTrueBacksolveParsed": 0,
+    "trueBacksolveId": "nyregents-algebra-i-2020-jan-q3",
+    "nAccurateEquationSpan": 1,
+    "accurateId": "nyregents-algebra-i-2018-jun-q12",
+    "note": "Equation-parse accuracy is poor on this id-sorted sample because most stems are not backsolve items and Regents OCR breaks operators. The one genuine numeric-options inequality failed to parse."
+  }
+}

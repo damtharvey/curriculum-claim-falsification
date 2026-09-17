@@ -1,0 +1,71 @@
+{
+  "filter_source": "exports/addendum/choices-only-clean-filter.json",
+  "used_verbatim": true,
+  "kept_ids_source": "exports/addendum/choices-only-clean-item-ids.json",
+  "rules": {
+    "lengthGreaterThan": 120,
+    "countryOrJurisdictionFragment": "(?i)\\b(singapore|singapor|lithuania|lithuani|slovenia|sweden|norway|ukraine|turkey|israel|qatar|armenia|georgia|thailand|malaysia|kazakhstan|romania|croatia|poland|denmark|finland|portugal|serbia|malta|oman|ghana|bahrain|bahra|syria|tunisia|tunis|morocco|azerbaijan|azerbaija|belgium|netherlands|netherla|australia|austria|ireland|spain|slovak|chinese|taipei|hong\\s*kong|hong\\s*ko|new\\s*zeal|united\\s*a|united\\s*ar|russian\\s*f|england-?|internat|palestinian|palestin|northern\\s*ireland|czech\\s*r|iran,?\\s*is)\\b",
+    "examFooter": "(?i)(computations\\.|\\[over\\]|page\\s+\\d+|geometry\\s+[\u2013\u2014-]\\s+(jan|june|aug|august)\\.?|algebra(?:\\s*ii)?\\s+[\u2013\u2014-])",
+    "staarItemCode": "\\b\\d{5}_\\d\\b",
+    "nextItemBleed": "(?i)\\b(which (ordered pair|statement|number)|there are a total of)\\b",
+    "regentsCourseFooter": "(?i)(geometry|algebra i{0,2}|algebra 2)\\s+[\u2013\u2014'\u2032-]\\s+(jan|june|aug)"
+  },
+  "nSelected": 2245,
+  "nKeptBySiblingFilter": 1496,
+  "nDroppedBySiblingFilter": 749,
+  "reasonCounts": {
+    "country-or-jurisdiction-fragment": 147,
+    "timss-percent-correct-suffix": 2,
+    "length>120": 204,
+    "item-code-or-staar-id": 83,
+    "next-item-bleed": 14,
+    "exam-footer": 515
+  },
+  "byCorpus": {
+    "eqao": {
+      "n": 149,
+      "kept": 142
+    },
+    "mcas": {
+      "n": 8,
+      "kept": 8
+    },
+    "naplan": {
+      "n": 16,
+      "kept": 16
+    },
+    "nyregents": {
+      "n": 1448,
+      "kept": 919
+    },
+    "nysed": {
+      "n": 27,
+      "kept": 22
+    },
+    "pisa": {
+      "n": 22,
+      "kept": 21
+    },
+    "staar": {
+      "n": 388,
+      "kept": 246
+    },
+    "timss1995": {
+      "n": 79,
+      "kept": 78
+    },
+    "timss1999": {
+      "n": 25,
+      "kept": 25
+    },
+    "timss2003": {
+      "n": 2,
+      "kept": 2
+    },
+    "timss2011": {
+      "n": 81,
+      "kept": 17
+    }
+  },
+  "note": "Sibling E3 mechanical filter existed on disk. Rules and keep list used verbatim. Items that cannot be scored as a single letter versus key are skipped at score time, not by changing the filter."
+}

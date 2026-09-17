@@ -1,0 +1,169 @@
+{
+  "evalRule": "runner/src/run_real_controls.ts loadSplitCapped train 1500 / eval 400",
+  "datasets": [
+    {
+      "name": "openbookqa",
+      "nHold": 400,
+      "path": "$REPO_ROOT/data/real-controls-openbookqa.jsonl",
+      "channels": {
+        "s1-hub": {
+          "nScored": 3,
+          "nCorrect": 0,
+          "passRate": 0.0,
+          "chanceRate": 0.25,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "binomialPGreater": 1.0,
+          "clearsBar": false,
+          "inFamily": false,
+          "nSelected": 400,
+          "coverage": 0.0075
+        },
+        "s2-elimination": {
+          "nScored": 400,
+          "nCorrect": 104,
+          "passRate": 0.26,
+          "chanceRate": 0.25,
+          "ci95": [
+            0.2175,
+            0.3025
+          ],
+          "binomialPGreater": 0.34012643336165904,
+          "clearsBar": false,
+          "inFamily": true,
+          "nSelected": 400,
+          "coverage": 1.0
+        },
+        "s3-closure": {
+          "nScored": 0,
+          "nCorrect": 0,
+          "passRate": 0.0,
+          "chanceRate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "binomialPGreater": 1.0,
+          "clearsBar": false,
+          "inFamily": false,
+          "nSelected": 400,
+          "coverage": 0.0
+        },
+        "s4-backsolve": {
+          "nScored": 0,
+          "nCorrect": 0,
+          "passRate": 0.0,
+          "chanceRate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "binomialPGreater": 1.0,
+          "clearsBar": false,
+          "inFamily": false,
+          "nSelected": 400,
+          "coverage": 0.0
+        },
+        "s5-portfolio": {
+          "nScored": 400,
+          "nCorrect": 107,
+          "passRate": 0.2675,
+          "chanceRate": 0.25,
+          "ci95": [
+            0.225,
+            0.31
+          ],
+          "binomialPGreater": 0.22520576898251046,
+          "clearsBar": false,
+          "inFamily": true,
+          "nSelected": 400,
+          "coverage": 1.0
+        }
+      }
+    },
+    {
+      "name": "swag",
+      "nHold": 400,
+      "path": "$REPO_ROOT/data/real-controls-swag.jsonl",
+      "channels": {
+        "s1-hub": {
+          "nScored": 0,
+          "nCorrect": 0,
+          "passRate": 0.0,
+          "chanceRate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "binomialPGreater": 1.0,
+          "clearsBar": false,
+          "inFamily": false,
+          "nSelected": 400,
+          "coverage": 0.0
+        },
+        "s2-elimination": {
+          "nScored": 400,
+          "nCorrect": 99,
+          "passRate": 0.2475,
+          "chanceRate": 0.25,
+          "ci95": [
+            0.205,
+            0.2875
+          ],
+          "binomialPGreater": 0.5650581459797327,
+          "clearsBar": false,
+          "inFamily": true,
+          "nSelected": 400,
+          "coverage": 1.0
+        },
+        "s3-closure": {
+          "nScored": 0,
+          "nCorrect": 0,
+          "passRate": 0.0,
+          "chanceRate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "binomialPGreater": 1.0,
+          "clearsBar": false,
+          "inFamily": false,
+          "nSelected": 400,
+          "coverage": 0.0
+        },
+        "s4-backsolve": {
+          "nScored": 0,
+          "nCorrect": 0,
+          "passRate": 0.0,
+          "chanceRate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "binomialPGreater": 1.0,
+          "clearsBar": false,
+          "inFamily": false,
+          "nSelected": 400,
+          "coverage": 0.0
+        },
+        "s5-portfolio": {
+          "nScored": 400,
+          "nCorrect": 96,
+          "passRate": 0.24,
+          "chanceRate": 0.25,
+          "ci95": [
+            0.1975,
+            0.28
+          ],
+          "binomialPGreater": 0.6958422583869784,
+          "clearsBar": false,
+          "inFamily": true,
+          "nSelected": 400,
+          "coverage": 1.0
+        }
+      }
+    }
+  ]
+}

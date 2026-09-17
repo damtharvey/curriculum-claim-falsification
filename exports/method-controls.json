@@ -1,0 +1,331 @@
+{
+  "generatedAt": "2026-09-16T18:50:00.486Z",
+  "nItems": 1200,
+  "nTrain": 600,
+  "nHoldout": 600,
+  "nPerFlawType": 100,
+  "nCleanMatched": 600,
+  "realPublicFlawSet": "None obtained. Clever Hans (arXiv 2410.11672) reports n-gram predictability on existing LLM benchmarks but does not ship a labeled Haladyna-flaw item file. BenchMarker writing-flaw labels need an LLM judge. Costello et al. 2018 labels were not a public download. No real cue-flaw set was invented.",
+  "programSpace": {
+    "programSpaceSize": 1847,
+    "enumerated": 1562,
+    "greedyEvaluated": 21,
+    "evoEvaluated": 144,
+    "randomEvaluated": 120,
+    "selectedForHeldOut": 14,
+    "complexityCap": 3,
+    "featureLibrary": [
+      "longest",
+      "positionC",
+      "overlap",
+      "numRepeat",
+      "noAbsolute",
+      "numericMin",
+      "numericMed",
+      "numericMax",
+      "specificity",
+      "grammarAgree",
+      "distinctive"
+    ]
+  },
+  "witnessBar": {
+    "minN": 10,
+    "rule": "held-out pass rate at or above the 95th percentile of random programs of matched complexity AND lower 95% bootstrap CI excludes chance AND n >= 10"
+  },
+  "randomP95": {
+    "1": 0.28,
+    "2": 0.2866666666666667,
+    "3": 0.2866666666666667
+  },
+  "recallPlantedFlawTypes": 1,
+  "plantedTypeHits": 6,
+  "plantedTypeN": 6,
+  "planted": [
+    {
+      "claim": "flaw-longest",
+      "plantedProgram": "search/atom:longest",
+      "nScored": 50,
+      "passRate": 1,
+      "chanceRate": 0.25,
+      "ci95": [
+        1,
+        1
+      ],
+      "randomP95": 1,
+      "witnessEligible": true
+    },
+    {
+      "claim": "flaw-stem-repeat",
+      "plantedProgram": "search/atom:overlap",
+      "nScored": 50,
+      "passRate": 1,
+      "chanceRate": 0.25,
+      "ci95": [
+        1,
+        1
+      ],
+      "randomP95": 1,
+      "witnessEligible": true
+    },
+    {
+      "claim": "flaw-absolute",
+      "plantedProgram": "search/atom:noAbsolute",
+      "nScored": 50,
+      "passRate": 1,
+      "chanceRate": 0.25,
+      "ci95": [
+        1,
+        1
+      ],
+      "randomP95": 1,
+      "witnessEligible": true
+    },
+    {
+      "claim": "flaw-position",
+      "plantedProgram": "search/atom:positionC",
+      "nScored": 50,
+      "passRate": 1,
+      "chanceRate": 0.25,
+      "ci95": [
+        1,
+        1
+      ],
+      "randomP95": 0,
+      "witnessEligible": true
+    },
+    {
+      "claim": "flaw-grammar",
+      "plantedProgram": "search/atom:grammarAgree",
+      "nScored": 50,
+      "passRate": 1,
+      "chanceRate": 0.25,
+      "ci95": [
+        1,
+        1
+      ],
+      "randomP95": 0.32,
+      "witnessEligible": true
+    },
+    {
+      "claim": "flaw-implausible",
+      "plantedProgram": "search/atom:specificity",
+      "nScored": 50,
+      "passRate": 1,
+      "chanceRate": 0.25,
+      "ci95": [
+        1,
+        1
+      ],
+      "randomP95": 0.18,
+      "witnessEligible": true
+    }
+  ],
+  "falsePositiveOnClean": false,
+  "nCleanProgramsEligible": 0,
+  "searcherFoundAnyFlawType": 1,
+  "note": "Synthetic only. A null on real items is not certified by these controls; controls ask whether the searcher can detect planted unique cues.",
+  "realPublicCueSets": [
+    {
+      "name": "openbookqa",
+      "nItems": 1900,
+      "nTrain": 1500,
+      "nEval": 400,
+      "published": {
+        "number": 0.496,
+        "chance": 0.25,
+        "pointer": "Mihaylov et al. EMNLP 2018 Table 2, Plausible Answer Detector test 49.6% (ignores the question)",
+        "note": "choices-only / question-ignored detector"
+      },
+      "bestHeldOut": {
+        "programId": "search/atom:longest",
+        "n": 329,
+        "passRate": 0.44984802431610943,
+        "ci95": [
+          0.3951367781155015,
+          0.5075987841945289
+        ],
+        "chance": 0.25,
+        "randomP95": 0.265,
+        "witnessEligible": true
+      },
+      "nWitnessEligiblePrograms": 1,
+      "recoveredMinusPublished": -0.04615197568389057,
+      "arctNotCue": null,
+      "programSpace": {
+        "programSpaceSize": 1847,
+        "enumerated": 1562,
+        "greedyEvaluated": 21,
+        "evoEvaluated": 144,
+        "randomEvaluated": 120,
+        "selectedForHeldOut": 14,
+        "complexityCap": 3,
+        "featureLibrary": [
+          "longest",
+          "positionC",
+          "overlap",
+          "numRepeat",
+          "noAbsolute",
+          "numericMin",
+          "numericMed",
+          "numericMax",
+          "specificity",
+          "grammarAgree",
+          "distinctive"
+        ]
+      }
+    },
+    {
+      "name": "swag",
+      "nItems": 1900,
+      "nTrain": 1500,
+      "nEval": 400,
+      "published": {
+        "number": 0.436,
+        "chance": 0.25,
+        "pointer": "Zellers et al. EMNLP 2018 Table 3, LSTM+ELMo ending-only 43.6%. BERT-Large ending-only 74.8% is Zellers et al. ACL 2019 (HellaSwag) Figure 4 on SWAG.",
+        "note": "endings-only"
+      },
+      "bestHeldOut": {
+        "programId": "search/w:longest-1,overlap+1,noAbsolute-1",
+        "n": 62,
+        "passRate": 0.5645161290322581,
+        "ci95": [
+          0.43548387096774194,
+          0.6935483870967742
+        ],
+        "chance": 0.25,
+        "randomP95": 0.37,
+        "witnessEligible": true
+      },
+      "nWitnessEligiblePrograms": 13,
+      "recoveredMinusPublished": 0.12851612903225812,
+      "arctNotCue": null,
+      "programSpace": {
+        "programSpaceSize": 1856,
+        "enumerated": 1562,
+        "greedyEvaluated": 30,
+        "evoEvaluated": 144,
+        "randomEvaluated": 120,
+        "selectedForHeldOut": 14,
+        "complexityCap": 3,
+        "featureLibrary": [
+          "longest",
+          "positionC",
+          "overlap",
+          "numRepeat",
+          "noAbsolute",
+          "numericMin",
+          "numericMed",
+          "numericMax",
+          "specificity",
+          "grammarAgree",
+          "distinctive"
+        ]
+      }
+    },
+    {
+      "name": "arct",
+      "status": "too-small",
+      "nItems": 0,
+      "path": "$REPO_ROOT/data/real-controls-arct.jsonl"
+    },
+    {
+      "name": "race",
+      "nItems": 1900,
+      "nTrain": 1500,
+      "nEval": 400,
+      "published": {
+        "number": 0.25,
+        "chance": 0.25,
+        "pointer": "Lai et al. 2017 chance is 25%. Si et al. arXiv 1910.12391 train BERT without passage (P-Remove) well above chance; exact cell filled after scoring.",
+        "note": "options-only; published P-Remove is question+options, not options alone"
+      },
+      "bestHeldOut": {
+        "programId": "search/atom:numericMed",
+        "n": 8,
+        "passRate": 0.375,
+        "ci95": [
+          0.125,
+          0.75
+        ],
+        "chance": 0.25,
+        "randomP95": 0.27,
+        "witnessEligible": false
+      },
+      "nWitnessEligiblePrograms": 1,
+      "recoveredMinusPublished": 0.125,
+      "arctNotCue": null,
+      "programSpace": {
+        "programSpaceSize": 1847,
+        "enumerated": 1562,
+        "greedyEvaluated": 21,
+        "evoEvaluated": 144,
+        "randomEvaluated": 120,
+        "selectedForHeldOut": 14,
+        "complexityCap": 3,
+        "featureLibrary": [
+          "longest",
+          "positionC",
+          "overlap",
+          "numRepeat",
+          "noAbsolute",
+          "numericMin",
+          "numericMed",
+          "numericMax",
+          "specificity",
+          "grammarAgree",
+          "distinctive"
+        ]
+      }
+    },
+    {
+      "name": "commonsenseqa",
+      "nItems": 1900,
+      "nTrain": 1500,
+      "nEval": 400,
+      "published": {
+        "number": 0.2,
+        "chance": 0.2,
+        "pointer": "Talmor et al. NAACL 2019 chance 20% for five options. No official choices-only number; recovered rate is reported against chance.",
+        "note": "choices-only vs chance; no official published choices-only accuracy"
+      },
+      "bestHeldOut": {
+        "programId": "search/w:longest-1,positionC+1,distinctive-1",
+        "n": 22,
+        "passRate": 0.22727272727272727,
+        "ci95": [
+          0.045454545454545456,
+          0.4090909090909091
+        ],
+        "chance": 0.2,
+        "randomP95": 0.21,
+        "witnessEligible": false
+      },
+      "nWitnessEligiblePrograms": 0,
+      "recoveredMinusPublished": 0.027272727272727254,
+      "arctNotCue": null,
+      "programSpace": {
+        "programSpaceSize": 1856,
+        "enumerated": 1562,
+        "greedyEvaluated": 30,
+        "evoEvaluated": 144,
+        "randomEvaluated": 120,
+        "selectedForHeldOut": 14,
+        "complexityCap": 3,
+        "featureLibrary": [
+          "longest",
+          "positionC",
+          "overlap",
+          "numRepeat",
+          "noAbsolute",
+          "numericMin",
+          "numericMed",
+          "numericMax",
+          "specificity",
+          "grammarAgree",
+          "distinctive"
+        ]
+      }
+    }
+  ]
+}

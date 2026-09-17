@@ -1,0 +1,830 @@
+{
+  "status": "complete",
+  "label": "exploratory",
+  "writtenAt": "2026-09-16T21:22:00.977990+00:00",
+  "population": "masked_token_count_ge_1",
+  "modelId": "mistralai/Mistral-7B-Instruct-v0.3",
+  "modelRevision": "c170c708c41dac9275d15a8fff4eca08d52bab71",
+  "snapshotPath": "$HOME/.cache/huggingface/hub/models--mistralai--Mistral-7B-Instruct-v0.3/snapshots/c170c708c41dac9275d15a8fff4eca08d52bab71",
+  "sourceSummary": "exports/addendum-gpu/masked-stem-mistral-7b.json",
+  "sourceItems": "exports/addendum-gpu/masked-stem-mistral-7b-items.jsonl",
+  "optionsOnlyItems": "exports/addendum-gpu/options-only-mistral-7b-items.jsonl",
+  "n": 1215,
+  "overall": {
+    "n": 1215,
+    "passRate": 0.2773662551440329,
+    "ci95": [
+      0.24938271604938272,
+      0.3037037037037037
+    ],
+    "chance": 0.2505349794238683,
+    "meanOneOverK": 0.2505349794238683,
+    "ciExcludesChance": false,
+    "witnessBarEligible": false,
+    "lowerCiAboveChance": false
+  },
+  "vsChance": {
+    "chance": 0.2505349794238683,
+    "lowerCiAboveChance": false
+  },
+  "vsAlwaysB": {
+    "statedBaseline": 0.275,
+    "passRate": 0.2773662551440329,
+    "ci95": [
+      0.24938271604938272,
+      0.3037037037037037
+    ],
+    "lowerCiAboveStatedAlwaysB": false,
+    "recomputedAlwaysB": {
+      "letter": "B",
+      "rate": 0.27901234567901234,
+      "n": 1215,
+      "counts": {
+        "A": 275,
+        "B": 339,
+        "C": 324,
+        "D": 276,
+        "E": 1
+      },
+      "note": "Always pick the most common key letter among items in this population."
+    },
+    "lowerCiAboveRecomputedAlwaysB": false
+  },
+  "vsOptionsOnly": {
+    "nOverlap": 1215,
+    "nMissingFromOptionsOnly": 0,
+    "maskedCorrectOptionsWrong": 174,
+    "optionsCorrectMaskedWrong": 140,
+    "bothCorrect": 163,
+    "bothWrong": 738,
+    "shareMaskedOnly": 0.14320987654320988,
+    "shareOptionsOnly": 0.11522633744855967,
+    "mcnemarN01": 174,
+    "mcnemarN10": 140,
+    "mcnemarChiSquareNoContinuity": 3.6815286624203822,
+    "note": "n01 = masked-stem correct and options-only incorrect; n10 = options-only correct and masked-stem incorrect."
+  },
+  "namedCells": {
+    "nyregents::algebra-i": {
+      "n": 358,
+      "passRate": 0.3016759776536313,
+      "ci95": [
+        0.2569832402234637,
+        0.34916201117318435
+      ],
+      "chance": 0.25,
+      "modalLetterOnPopulation": "B",
+      "modalFrequencyOnPopulation": 0.2709497206703911,
+      "lowerCiAboveChance": true,
+      "lowerCiAboveModalOnPopulation": false,
+      "clearsBoth": false,
+      "lowerCi": 0.2569832402234637,
+      "vsOptionsOnly": {
+        "nOverlap": 358,
+        "nMissingFromOptionsOnly": 0,
+        "maskedCorrectOptionsWrong": 51,
+        "optionsCorrectMaskedWrong": 27,
+        "bothCorrect": 57,
+        "bothWrong": 223,
+        "shareMaskedOnly": 0.1424581005586592,
+        "shareOptionsOnly": 0.07541899441340782,
+        "mcnemarN01": 51,
+        "mcnemarN10": 27,
+        "mcnemarChiSquareNoContinuity": 7.384615384615385,
+        "note": "n01 = masked-stem correct and options-only incorrect; n10 = options-only correct and masked-stem incorrect."
+      }
+    },
+    "nyregents::algebra-ii": {
+      "n": 248,
+      "passRate": 0.2620967741935484,
+      "ci95": [
+        0.20967741935483872,
+        0.3185483870967742
+      ],
+      "chance": 0.25,
+      "modalLetterOnPopulation": "C",
+      "modalFrequencyOnPopulation": 0.2782258064516129,
+      "lowerCiAboveChance": false,
+      "lowerCiAboveModalOnPopulation": false,
+      "clearsBoth": false,
+      "lowerCi": 0.20967741935483872,
+      "vsOptionsOnly": {
+        "nOverlap": 248,
+        "nMissingFromOptionsOnly": 0,
+        "maskedCorrectOptionsWrong": 32,
+        "optionsCorrectMaskedWrong": 23,
+        "bothCorrect": 33,
+        "bothWrong": 160,
+        "shareMaskedOnly": 0.12903225806451613,
+        "shareOptionsOnly": 0.09274193548387097,
+        "mcnemarN01": 32,
+        "mcnemarN10": 23,
+        "mcnemarChiSquareNoContinuity": 1.4727272727272727,
+        "note": "n01 = masked-stem correct and options-only incorrect; n10 = options-only correct and masked-stem incorrect."
+      }
+    },
+    "nyregents::geometry": {
+      "n": 166,
+      "passRate": 0.29518072289156627,
+      "ci95": [
+        0.2289156626506024,
+        0.37349397590361444
+      ],
+      "chance": 0.25,
+      "modalLetterOnPopulation": "B",
+      "modalFrequencyOnPopulation": 0.2891566265060241,
+      "lowerCiAboveChance": false,
+      "lowerCiAboveModalOnPopulation": false,
+      "clearsBoth": false,
+      "lowerCi": 0.2289156626506024,
+      "vsOptionsOnly": {
+        "nOverlap": 166,
+        "nMissingFromOptionsOnly": 0,
+        "maskedCorrectOptionsWrong": 26,
+        "optionsCorrectMaskedWrong": 25,
+        "bothCorrect": 23,
+        "bothWrong": 92,
+        "shareMaskedOnly": 0.1566265060240964,
+        "shareOptionsOnly": 0.15060240963855423,
+        "mcnemarN01": 26,
+        "mcnemarN10": 25,
+        "mcnemarChiSquareNoContinuity": 0.0196078431372549,
+        "note": "n01 = masked-stem correct and options-only incorrect; n10 = options-only correct and masked-stem incorrect."
+      }
+    },
+    "eqao::g6": {
+      "n": 40,
+      "passRate": 0.15,
+      "ci95": [
+        0.05,
+        0.275
+      ],
+      "chance": 0.255,
+      "modalLetterOnPopulation": "B",
+      "modalFrequencyOnPopulation": 0.475,
+      "lowerCiAboveChance": false,
+      "lowerCiAboveModalOnPopulation": false,
+      "clearsBoth": false,
+      "lowerCi": 0.05,
+      "vsOptionsOnly": {
+        "nOverlap": 40,
+        "nMissingFromOptionsOnly": 0,
+        "maskedCorrectOptionsWrong": 4,
+        "optionsCorrectMaskedWrong": 5,
+        "bothCorrect": 2,
+        "bothWrong": 29,
+        "shareMaskedOnly": 0.1,
+        "shareOptionsOnly": 0.125,
+        "mcnemarN01": 4,
+        "mcnemarN10": 5,
+        "mcnemarChiSquareNoContinuity": 0.1111111111111111,
+        "note": "n01 = masked-stem correct and options-only incorrect; n10 = options-only correct and masked-stem incorrect."
+      }
+    },
+    "timss::knowing": {
+      "n": 22,
+      "passRate": 0.36363636363636365,
+      "ci95": [
+        0.13636363636363635,
+        0.5454545454545454
+      ],
+      "chance": 0.24772727272727274,
+      "modalLetterOnPopulation": "A",
+      "modalFrequencyOnPopulation": 0.4090909090909091,
+      "lowerCiAboveChance": false,
+      "lowerCiAboveModalOnPopulation": false,
+      "clearsBoth": false,
+      "lowerCi": 0.13636363636363635,
+      "vsOptionsOnly": {
+        "nOverlap": 22,
+        "nMissingFromOptionsOnly": 0,
+        "maskedCorrectOptionsWrong": 2,
+        "optionsCorrectMaskedWrong": 4,
+        "bothCorrect": 6,
+        "bothWrong": 10,
+        "shareMaskedOnly": 0.09090909090909091,
+        "shareOptionsOnly": 0.18181818181818182,
+        "mcnemarN01": 2,
+        "mcnemarN10": 4,
+        "mcnemarChiSquareNoContinuity": 0.6666666666666666,
+        "note": "n01 = masked-stem correct and options-only incorrect; n10 = options-only correct and masked-stem incorrect."
+      }
+    }
+  },
+  "perCell": {
+    "acara::y7-numeracy": {
+      "n": 15,
+      "passRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "chance": 0.25,
+      "meanOneOverK": 0.25,
+      "ciExcludesChance": false,
+      "witnessBarEligible": false,
+      "lowerCiAboveChance": false,
+      "modalLetterOnPopulation": "D",
+      "modalCountOnPopulation": 6,
+      "modalFrequencyOnPopulation": 0.4,
+      "modalLetterFull1487": "D",
+      "modalFrequencyFull1487": 0.375,
+      "lowerCiAboveModalOnPopulation": false,
+      "lowerCiAboveModalFull1487": false,
+      "clearsWitnessBarOnPopulation": false,
+      "clearsWitnessBarVsFull1487Modal": false,
+      "nonModalKey": {
+        "n": 9,
+        "passRate": 0.0,
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "chance": 0.25,
+        "meanOneOverK": 0.25,
+        "ciExcludesChance": false,
+        "witnessBarEligible": false,
+        "lowerCiAboveChance": false
+      }
+    },
+    "eqao::g3": {
+      "n": 34,
+      "passRate": 0.23529411764705882,
+      "ci95": [
+        0.11764705882352941,
+        0.38235294117647056
+      ],
+      "chance": 0.25245098039215685,
+      "meanOneOverK": 0.25245098039215685,
+      "ciExcludesChance": false,
+      "witnessBarEligible": false,
+      "lowerCiAboveChance": false,
+      "modalLetterOnPopulation": "D",
+      "modalCountOnPopulation": 11,
+      "modalFrequencyOnPopulation": 0.3235294117647059,
+      "modalLetterFull1487": "C",
+      "modalFrequencyFull1487": 0.3170731707317073,
+      "lowerCiAboveModalOnPopulation": false,
+      "lowerCiAboveModalFull1487": false,
+      "clearsWitnessBarOnPopulation": false,
+      "clearsWitnessBarVsFull1487Modal": false,
+      "nonModalKey": {
+        "n": 23,
+        "passRate": 0.2608695652173913,
+        "ci95": [
+          0.08695652173913043,
+          0.43478260869565216
+        ],
+        "chance": 0.25362318840579706,
+        "meanOneOverK": 0.25362318840579706,
+        "ciExcludesChance": false,
+        "witnessBarEligible": false,
+        "lowerCiAboveChance": false
+      }
+    },
+    "eqao::g6": {
+      "n": 40,
+      "passRate": 0.15,
+      "ci95": [
+        0.05,
+        0.275
+      ],
+      "chance": 0.255,
+      "meanOneOverK": 0.255,
+      "ciExcludesChance": false,
+      "witnessBarEligible": false,
+      "lowerCiAboveChance": false,
+      "modalLetterOnPopulation": "B",
+      "modalCountOnPopulation": 19,
+      "modalFrequencyOnPopulation": 0.475,
+      "modalLetterFull1487": "B",
+      "modalFrequencyFull1487": 0.4,
+      "lowerCiAboveModalOnPopulation": false,
+      "lowerCiAboveModalFull1487": false,
+      "clearsWitnessBarOnPopulation": false,
+      "clearsWitnessBarVsFull1487Modal": false,
+      "nonModalKey": {
+        "n": 21,
+        "passRate": 0.09523809523809523,
+        "ci95": [
+          0.0,
+          0.23809523809523808
+        ],
+        "chance": 0.25555555555555554,
+        "meanOneOverK": 0.25555555555555554,
+        "ciExcludesChance": false,
+        "witnessBarEligible": false,
+        "lowerCiAboveChance": false
+      }
+    },
+    "eqao::g9": {
+      "n": 35,
+      "passRate": 0.3142857142857143,
+      "ci95": [
+        0.17142857142857143,
+        0.4857142857142857
+      ],
+      "chance": 0.25476190476190474,
+      "meanOneOverK": 0.25476190476190474,
+      "ciExcludesChance": false,
+      "witnessBarEligible": false,
+      "lowerCiAboveChance": false,
+      "modalLetterOnPopulation": "C",
+      "modalCountOnPopulation": 12,
+      "modalFrequencyOnPopulation": 0.34285714285714286,
+      "modalLetterFull1487": "C",
+      "modalFrequencyFull1487": 0.29545454545454547,
+      "lowerCiAboveModalOnPopulation": false,
+      "lowerCiAboveModalFull1487": false,
+      "clearsWitnessBarOnPopulation": false,
+      "clearsWitnessBarVsFull1487Modal": false,
+      "nonModalKey": {
+        "n": 23,
+        "passRate": 0.30434782608695654,
+        "ci95": [
+          0.13043478260869565,
+          0.4782608695652174
+        ],
+        "chance": 0.25362318840579706,
+        "meanOneOverK": 0.25362318840579706,
+        "ciExcludesChance": false,
+        "witnessBarEligible": false,
+        "lowerCiAboveChance": false
+      }
+    },
+    "nyregents::algebra-i": {
+      "n": 358,
+      "passRate": 0.3016759776536313,
+      "ci95": [
+        0.2569832402234637,
+        0.34916201117318435
+      ],
+      "chance": 0.25,
+      "meanOneOverK": 0.25,
+      "ciExcludesChance": true,
+      "witnessBarEligible": true,
+      "lowerCiAboveChance": true,
+      "modalLetterOnPopulation": "B",
+      "modalCountOnPopulation": 97,
+      "modalFrequencyOnPopulation": 0.2709497206703911,
+      "modalLetterFull1487": "B",
+      "modalFrequencyFull1487": 0.27205882352941174,
+      "lowerCiAboveModalOnPopulation": false,
+      "lowerCiAboveModalFull1487": false,
+      "clearsWitnessBarOnPopulation": false,
+      "clearsWitnessBarVsFull1487Modal": false,
+      "nonModalKey": {
+        "n": 261,
+        "passRate": 0.31800766283524906,
+        "ci95": [
+          0.2681992337164751,
+          0.37547892720306514
+        ],
+        "chance": 0.25,
+        "meanOneOverK": 0.25,
+        "ciExcludesChance": true,
+        "witnessBarEligible": true,
+        "lowerCiAboveChance": true
+      }
+    },
+    "nyregents::algebra-ii": {
+      "n": 248,
+      "passRate": 0.2620967741935484,
+      "ci95": [
+        0.20967741935483872,
+        0.3185483870967742
+      ],
+      "chance": 0.25,
+      "meanOneOverK": 0.25,
+      "ciExcludesChance": false,
+      "witnessBarEligible": false,
+      "lowerCiAboveChance": false,
+      "modalLetterOnPopulation": "C",
+      "modalCountOnPopulation": 69,
+      "modalFrequencyOnPopulation": 0.2782258064516129,
+      "modalLetterFull1487": "C",
+      "modalFrequencyFull1487": 0.275,
+      "lowerCiAboveModalOnPopulation": false,
+      "lowerCiAboveModalFull1487": false,
+      "clearsWitnessBarOnPopulation": false,
+      "clearsWitnessBarVsFull1487Modal": false,
+      "nonModalKey": {
+        "n": 179,
+        "passRate": 0.26256983240223464,
+        "ci95": [
+          0.2011173184357542,
+          0.3240223463687151
+        ],
+        "chance": 0.25,
+        "meanOneOverK": 0.25,
+        "ciExcludesChance": false,
+        "witnessBarEligible": false,
+        "lowerCiAboveChance": false
+      }
+    },
+    "nyregents::geometry": {
+      "n": 166,
+      "passRate": 0.29518072289156627,
+      "ci95": [
+        0.2289156626506024,
+        0.37349397590361444
+      ],
+      "chance": 0.25,
+      "meanOneOverK": 0.25,
+      "ciExcludesChance": false,
+      "witnessBarEligible": false,
+      "lowerCiAboveChance": false,
+      "modalLetterOnPopulation": "B",
+      "modalCountOnPopulation": 48,
+      "modalFrequencyOnPopulation": 0.2891566265060241,
+      "modalLetterFull1487": "B",
+      "modalFrequencyFull1487": 0.2727272727272727,
+      "lowerCiAboveModalOnPopulation": false,
+      "lowerCiAboveModalFull1487": false,
+      "clearsWitnessBarOnPopulation": false,
+      "clearsWitnessBarVsFull1487Modal": false,
+      "nonModalKey": {
+        "n": 118,
+        "passRate": 0.2627118644067797,
+        "ci95": [
+          0.1864406779661017,
+          0.3389830508474576
+        ],
+        "chance": 0.25,
+        "meanOneOverK": 0.25,
+        "ciExcludesChance": false,
+        "witnessBarEligible": false,
+        "lowerCiAboveChance": false
+      }
+    },
+    "teks::alg1": {
+      "n": 43,
+      "passRate": 0.32558139534883723,
+      "ci95": [
+        0.18604651162790697,
+        0.46511627906976744
+      ],
+      "chance": 0.25,
+      "meanOneOverK": 0.25,
+      "ciExcludesChance": false,
+      "witnessBarEligible": false,
+      "lowerCiAboveChance": false,
+      "modalLetterOnPopulation": "B",
+      "modalCountOnPopulation": 15,
+      "modalFrequencyOnPopulation": 0.3488372093023256,
+      "modalLetterFull1487": "B",
+      "modalFrequencyFull1487": 0.3333333333333333,
+      "lowerCiAboveModalOnPopulation": false,
+      "lowerCiAboveModalFull1487": false,
+      "clearsWitnessBarOnPopulation": false,
+      "clearsWitnessBarVsFull1487Modal": false,
+      "nonModalKey": {
+        "n": 28,
+        "passRate": 0.32142857142857145,
+        "ci95": [
+          0.14285714285714285,
+          0.5
+        ],
+        "chance": 0.25,
+        "meanOneOverK": 0.25,
+        "ciExcludesChance": false,
+        "witnessBarEligible": false,
+        "lowerCiAboveChance": false
+      }
+    },
+    "teks::g3": {
+      "n": 19,
+      "passRate": 0.2631578947368421,
+      "ci95": [
+        0.10526315789473684,
+        0.47368421052631576
+      ],
+      "chance": 0.25,
+      "meanOneOverK": 0.25,
+      "ciExcludesChance": false,
+      "witnessBarEligible": false,
+      "lowerCiAboveChance": false,
+      "modalLetterOnPopulation": "C",
+      "modalCountOnPopulation": 6,
+      "modalFrequencyOnPopulation": 0.3157894736842105,
+      "modalLetterFull1487": "B",
+      "modalFrequencyFull1487": 0.2962962962962963,
+      "lowerCiAboveModalOnPopulation": false,
+      "lowerCiAboveModalFull1487": false,
+      "clearsWitnessBarOnPopulation": false,
+      "clearsWitnessBarVsFull1487Modal": false,
+      "nonModalKey": {
+        "n": 13,
+        "passRate": 0.23076923076923078,
+        "ci95": [
+          0.0,
+          0.46153846153846156
+        ],
+        "chance": 0.25,
+        "meanOneOverK": 0.25,
+        "ciExcludesChance": false,
+        "witnessBarEligible": false,
+        "lowerCiAboveChance": false
+      }
+    },
+    "teks::g4": {
+      "n": 22,
+      "passRate": 0.5454545454545454,
+      "ci95": [
+        0.3181818181818182,
+        0.7727272727272727
+      ],
+      "chance": 0.25,
+      "meanOneOverK": 0.25,
+      "ciExcludesChance": true,
+      "witnessBarEligible": true,
+      "lowerCiAboveChance": true,
+      "modalLetterOnPopulation": "C",
+      "modalCountOnPopulation": 7,
+      "modalFrequencyOnPopulation": 0.3181818181818182,
+      "modalLetterFull1487": "A",
+      "modalFrequencyFull1487": 0.3333333333333333,
+      "lowerCiAboveModalOnPopulation": false,
+      "lowerCiAboveModalFull1487": false,
+      "clearsWitnessBarOnPopulation": false,
+      "clearsWitnessBarVsFull1487Modal": false,
+      "nonModalKey": {
+        "n": 15,
+        "passRate": 0.4,
+        "ci95": [
+          0.2,
+          0.6
+        ],
+        "chance": 0.25,
+        "meanOneOverK": 0.25,
+        "ciExcludesChance": false,
+        "witnessBarEligible": false,
+        "lowerCiAboveChance": false
+      }
+    },
+    "teks::g5": {
+      "n": 38,
+      "passRate": 0.18421052631578946,
+      "ci95": [
+        0.07894736842105263,
+        0.3157894736842105
+      ],
+      "chance": 0.25,
+      "meanOneOverK": 0.25,
+      "ciExcludesChance": false,
+      "witnessBarEligible": false,
+      "lowerCiAboveChance": false,
+      "modalLetterOnPopulation": "B",
+      "modalCountOnPopulation": 10,
+      "modalFrequencyOnPopulation": 0.2631578947368421,
+      "modalLetterFull1487": "D",
+      "modalFrequencyFull1487": 0.2727272727272727,
+      "lowerCiAboveModalOnPopulation": false,
+      "lowerCiAboveModalFull1487": false,
+      "clearsWitnessBarOnPopulation": false,
+      "clearsWitnessBarVsFull1487Modal": false,
+      "nonModalKey": {
+        "n": 28,
+        "passRate": 0.21428571428571427,
+        "ci95": [
+          0.07142857142857142,
+          0.35714285714285715
+        ],
+        "chance": 0.25,
+        "meanOneOverK": 0.25,
+        "ciExcludesChance": false,
+        "witnessBarEligible": false,
+        "lowerCiAboveChance": false
+      }
+    },
+    "teks::g6": {
+      "n": 44,
+      "passRate": 0.25,
+      "ci95": [
+        0.13636363636363635,
+        0.38636363636363635
+      ],
+      "chance": 0.25,
+      "meanOneOverK": 0.25,
+      "ciExcludesChance": false,
+      "witnessBarEligible": false,
+      "lowerCiAboveChance": false,
+      "modalLetterOnPopulation": "A",
+      "modalCountOnPopulation": 15,
+      "modalFrequencyOnPopulation": 0.3409090909090909,
+      "modalLetterFull1487": "A",
+      "modalFrequencyFull1487": 0.3469387755102041,
+      "lowerCiAboveModalOnPopulation": false,
+      "lowerCiAboveModalFull1487": false,
+      "clearsWitnessBarOnPopulation": false,
+      "clearsWitnessBarVsFull1487Modal": false,
+      "nonModalKey": {
+        "n": 29,
+        "passRate": 0.2413793103448276,
+        "ci95": [
+          0.10344827586206896,
+          0.41379310344827586
+        ],
+        "chance": 0.25,
+        "meanOneOverK": 0.25,
+        "ciExcludesChance": false,
+        "witnessBarEligible": false,
+        "lowerCiAboveChance": false
+      }
+    },
+    "teks::g7": {
+      "n": 16,
+      "passRate": 0.3125,
+      "ci95": [
+        0.125,
+        0.5
+      ],
+      "chance": 0.25,
+      "meanOneOverK": 0.25,
+      "ciExcludesChance": false,
+      "witnessBarEligible": false,
+      "lowerCiAboveChance": false,
+      "modalLetterOnPopulation": "D",
+      "modalCountOnPopulation": 5,
+      "modalFrequencyOnPopulation": 0.3125,
+      "modalLetterFull1487": "B",
+      "modalFrequencyFull1487": 0.3333333333333333,
+      "lowerCiAboveModalOnPopulation": false,
+      "lowerCiAboveModalFull1487": false,
+      "clearsWitnessBarOnPopulation": false,
+      "clearsWitnessBarVsFull1487Modal": false,
+      "nonModalKey": {
+        "n": 11,
+        "passRate": 0.45454545454545453,
+        "ci95": [
+          0.18181818181818182,
+          0.7272727272727273
+        ],
+        "chance": 0.25,
+        "meanOneOverK": 0.25,
+        "ciExcludesChance": false,
+        "witnessBarEligible": false,
+        "lowerCiAboveChance": false
+      }
+    },
+    "teks::g8": {
+      "n": 18,
+      "passRate": 0.3888888888888889,
+      "ci95": [
+        0.16666666666666666,
+        0.6111111111111112
+      ],
+      "chance": 0.25,
+      "meanOneOverK": 0.25,
+      "ciExcludesChance": false,
+      "witnessBarEligible": false,
+      "lowerCiAboveChance": false,
+      "modalLetterOnPopulation": "B",
+      "modalCountOnPopulation": 7,
+      "modalFrequencyOnPopulation": 0.3888888888888889,
+      "modalLetterFull1487": "B",
+      "modalFrequencyFull1487": 0.3333333333333333,
+      "lowerCiAboveModalOnPopulation": false,
+      "lowerCiAboveModalFull1487": false,
+      "clearsWitnessBarOnPopulation": false,
+      "clearsWitnessBarVsFull1487Modal": false,
+      "nonModalKey": {
+        "n": 11,
+        "passRate": 0.36363636363636365,
+        "ci95": [
+          0.09090909090909091,
+          0.6363636363636364
+        ],
+        "chance": 0.25,
+        "meanOneOverK": 0.25,
+        "ciExcludesChance": false,
+        "witnessBarEligible": false,
+        "lowerCiAboveChance": false
+      }
+    },
+    "timss::applying": {
+      "n": 24,
+      "passRate": 0.16666666666666666,
+      "ci95": [
+        0.041666666666666664,
+        0.3333333333333333
+      ],
+      "chance": 0.24791666666666667,
+      "meanOneOverK": 0.24791666666666667,
+      "ciExcludesChance": false,
+      "witnessBarEligible": false,
+      "lowerCiAboveChance": false,
+      "modalLetterOnPopulation": "B",
+      "modalCountOnPopulation": 8,
+      "modalFrequencyOnPopulation": 0.3333333333333333,
+      "modalLetterFull1487": "B",
+      "modalFrequencyFull1487": 0.39285714285714285,
+      "lowerCiAboveModalOnPopulation": false,
+      "lowerCiAboveModalFull1487": false,
+      "clearsWitnessBarOnPopulation": false,
+      "clearsWitnessBarVsFull1487Modal": false,
+      "nonModalKey": {
+        "n": 16,
+        "passRate": 0.1875,
+        "ci95": [
+          0.0,
+          0.375
+        ],
+        "chance": 0.25,
+        "meanOneOverK": 0.25,
+        "ciExcludesChance": false,
+        "witnessBarEligible": false,
+        "lowerCiAboveChance": false
+      }
+    },
+    "timss::knowing": {
+      "n": 22,
+      "passRate": 0.36363636363636365,
+      "ci95": [
+        0.13636363636363635,
+        0.5454545454545454
+      ],
+      "chance": 0.24772727272727274,
+      "meanOneOverK": 0.24772727272727274,
+      "ciExcludesChance": false,
+      "witnessBarEligible": false,
+      "lowerCiAboveChance": false,
+      "modalLetterOnPopulation": "A",
+      "modalCountOnPopulation": 9,
+      "modalFrequencyOnPopulation": 0.4090909090909091,
+      "modalLetterFull1487": "A",
+      "modalFrequencyFull1487": 0.34285714285714286,
+      "lowerCiAboveModalOnPopulation": false,
+      "lowerCiAboveModalFull1487": false,
+      "clearsWitnessBarOnPopulation": false,
+      "clearsWitnessBarVsFull1487Modal": false,
+      "nonModalKey": {
+        "n": 13,
+        "passRate": 0.3076923076923077,
+        "ci95": [
+          0.07692307692307693,
+          0.5384615384615384
+        ],
+        "chance": 0.25,
+        "meanOneOverK": 0.25,
+        "ciExcludesChance": false,
+        "witnessBarEligible": false,
+        "lowerCiAboveChance": false
+      }
+    },
+    "timss::reasoning": {
+      "n": 42,
+      "passRate": 0.23809523809523808,
+      "ci95": [
+        0.11904761904761904,
+        0.38095238095238093
+      ],
+      "chance": 0.2607142857142857,
+      "meanOneOverK": 0.2607142857142857,
+      "ciExcludesChance": false,
+      "witnessBarEligible": false,
+      "lowerCiAboveChance": false,
+      "modalLetterOnPopulation": "A",
+      "modalCountOnPopulation": 12,
+      "modalFrequencyOnPopulation": 0.2857142857142857,
+      "modalLetterFull1487": "A",
+      "modalFrequencyFull1487": 0.27586206896551724,
+      "lowerCiAboveModalOnPopulation": false,
+      "lowerCiAboveModalFull1487": false,
+      "clearsWitnessBarOnPopulation": false,
+      "clearsWitnessBarVsFull1487Modal": false,
+      "nonModalKey": {
+        "n": 30,
+        "passRate": 0.26666666666666666,
+        "ci95": [
+          0.13333333333333333,
+          0.43333333333333335
+        ],
+        "chance": 0.25833333333333336,
+        "meanOneOverK": 0.25833333333333336,
+        "ciExcludesChance": false,
+        "witnessBarEligible": false,
+        "lowerCiAboveChance": false
+      }
+    }
+  },
+  "algebraIClearsBothOnNonQwen": false,
+  "algebraIIClearsBothOnNonQwen": false,
+  "pooledIncrement": {
+    "mcnemarN01": 174,
+    "mcnemarN10": 140,
+    "maskedMinusOptionsShare": 0.14320987654320988,
+    "bothCorrect": 163,
+    "bothWrong": 738
+  },
+  "namedReportCells": [
+    "nyregents::algebra-i",
+    "nyregents::algebra-ii",
+    "nyregents::geometry",
+    "eqao::g6",
+    "timss::knowing",
+    "timss::applying",
+    "timss::reasoning"
+  ],
+  "wallTimeSecondsFromScorer": 56.695032358169556
+}

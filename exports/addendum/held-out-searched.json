@@ -1,0 +1,541 @@
+{
+  "experiment": "E4",
+  "question": "Do the thin searched programs (n=11 to 20) or fitted n-grams survive a temporal administration split?",
+  "split": "sort administrations by year then session; first half train, second half test",
+  "bar": "n>=10, lower 95% CI > chance, and for searched rules also passRate >= random-program p95 on the same late set",
+  "anyClearsHeldOutBar": true,
+  "frozenSearchedClearsHeldOutBar": false,
+  "fittedNgramsClearsHeldOutBar": false,
+  "writerNote": "The four frozen searched programs all fail the late-administration bar (late n=6 to 10; CIs include chance). Fitted n-grams fail on every temporal slice. The one true flag is a new search/w:longest+1,positionC+1,numRepeat-1 refit on STAAR 2019 (train scored n=8) tested on STAAR 2021-2022 (n=14, rate 0.643, CI [0.357, 0.857], late random p95 0.395). Do not claim it: train scored n is below 10, one training form, and 1562 programs were searched. Frozen searched rows stay unclaimed.",
+  "searched": [
+    {
+      "frozenProgramId": "search/w:positionC-1,numericMed+1,distinctive-1/timss-to-state",
+      "authority": "teks",
+      "claim": "g6",
+      "frozenN": 11,
+      "frozenRate": 0.6363636363636364,
+      "frozenRandomP95": 0.369,
+      "nItemsCellSelected": 65,
+      "earlyAdministrations": [
+        "staar:2019"
+      ],
+      "lateAdministrations": [
+        "staar:2021",
+        "staar:2022"
+      ],
+      "nEarlyItems": 27,
+      "nLateItems": 38,
+      "frozenProgramOnLate": {
+        "nScored": 9,
+        "nCorrect": 5,
+        "passRate": 0.5555555555555556,
+        "chanceRate": 0.25,
+        "ci95": [
+          0.2222222222222222,
+          0.8888888888888888
+        ],
+        "beatsChance": false
+      },
+      "randomP95OnLate": 0.39473684210526316,
+      "randomP95Meta": {
+        "nRandomWithNAtLeast8": 120,
+        "percentileMethod": "ceil(0.95 * n) - 1, matching runner/src/programs/search.ts percentile"
+      },
+      "frozenProgramClearsHeldOutBar": false,
+      "refitBestOnEarly": {
+        "programId": "search/w:longest+1,positionC+1,numRepeat-1",
+        "trainRate": 0.5,
+        "trainN": 8,
+        "late": {
+          "nScored": 14,
+          "nCorrect": 9,
+          "passRate": 0.6428571428571429,
+          "chanceRate": 0.25,
+          "ci95": [
+            0.35714285714285715,
+            0.8571428571428571
+          ],
+          "beatsChance": true
+        },
+        "clearsHeldOutBar": true
+      }
+    },
+    {
+      "frozenProgramId": "search/w:overlap+1,numericMin-1,specificity-1/timss-to-state",
+      "authority": "nyregents",
+      "claim": "algebra-i",
+      "frozenN": 13,
+      "frozenRate": 0.5384615384615384,
+      "frozenRandomP95": 0.268,
+      "nItemsCellSelected": 598,
+      "earlyAdministrations": [
+        "nyregents:unknown",
+        "nyregents:2014-jun",
+        "nyregents:2014-aug",
+        "nyregents:2015-jan",
+        "nyregents:2015-jun",
+        "nyregents:2015-aug",
+        "nyregents:2016-jan",
+        "nyregents:2016-jun",
+        "nyregents:2016-aug",
+        "nyregents:2017-jan",
+        "nyregents:2017-jun",
+        "nyregents:2017-aug",
+        "nyregents:2018-jan",
+        "nyregents:2018-jun",
+        "nyregents:2018-aug",
+        "nyregents:2019-jan"
+      ],
+      "lateAdministrations": [
+        "nyregents:2019-jun",
+        "nyregents:2019-aug",
+        "nyregents:2020-jan",
+        "nyregents:2022-jun",
+        "nyregents:2022-aug",
+        "nyregents:2023-jan",
+        "nyregents:2023-jun",
+        "nyregents:2023-aug",
+        "nyregents:2024-jan",
+        "nyregents:2024-jun",
+        "nyregents:2024-aug",
+        "nyregents:2025-jan",
+        "nyregents:2025-jun",
+        "nyregents:2025-aug",
+        "nyregents:2026-jan",
+        "nyregents:2026-jun",
+        "nyregents:2026-aug"
+      ],
+      "nEarlyItems": 282,
+      "nLateItems": 316,
+      "frozenProgramOnLate": {
+        "nScored": 6,
+        "nCorrect": 3,
+        "passRate": 0.5,
+        "chanceRate": 0.25,
+        "ci95": [
+          0.16666666666666666,
+          0.8333333333333334
+        ],
+        "beatsChance": false
+      },
+      "randomP95OnLate": 0.30063291139240506,
+      "randomP95Meta": {
+        "nRandomWithNAtLeast8": 120,
+        "percentileMethod": "ceil(0.95 * n) - 1, matching runner/src/programs/search.ts percentile"
+      },
+      "frozenProgramClearsHeldOutBar": false,
+      "refitBestOnEarly": {
+        "programId": "search/w:longest-1,overlap+1",
+        "trainRate": 0.6363636363636364,
+        "trainN": 11,
+        "late": {
+          "nScored": 6,
+          "nCorrect": 2,
+          "passRate": 0.3333333333333333,
+          "chanceRate": 0.25,
+          "ci95": [
+            0.0,
+            0.6666666666666666
+          ],
+          "beatsChance": false
+        },
+        "clearsHeldOutBar": false
+      }
+    },
+    {
+      "frozenProgramId": "search/w:longest-1,overlap+1,numericMax-1/timss-to-state",
+      "authority": "nyregents",
+      "claim": "algebra-i",
+      "frozenN": 19,
+      "frozenRate": 0.47368421052631576,
+      "frozenRandomP95": 0.268,
+      "nItemsCellSelected": 598,
+      "earlyAdministrations": [
+        "nyregents:unknown",
+        "nyregents:2014-jun",
+        "nyregents:2014-aug",
+        "nyregents:2015-jan",
+        "nyregents:2015-jun",
+        "nyregents:2015-aug",
+        "nyregents:2016-jan",
+        "nyregents:2016-jun",
+        "nyregents:2016-aug",
+        "nyregents:2017-jan",
+        "nyregents:2017-jun",
+        "nyregents:2017-aug",
+        "nyregents:2018-jan",
+        "nyregents:2018-jun",
+        "nyregents:2018-aug",
+        "nyregents:2019-jan"
+      ],
+      "lateAdministrations": [
+        "nyregents:2019-jun",
+        "nyregents:2019-aug",
+        "nyregents:2020-jan",
+        "nyregents:2022-jun",
+        "nyregents:2022-aug",
+        "nyregents:2023-jan",
+        "nyregents:2023-jun",
+        "nyregents:2023-aug",
+        "nyregents:2024-jan",
+        "nyregents:2024-jun",
+        "nyregents:2024-aug",
+        "nyregents:2025-jan",
+        "nyregents:2025-jun",
+        "nyregents:2025-aug",
+        "nyregents:2026-jan",
+        "nyregents:2026-jun",
+        "nyregents:2026-aug"
+      ],
+      "nEarlyItems": 282,
+      "nLateItems": 316,
+      "frozenProgramOnLate": {
+        "nScored": 7,
+        "nCorrect": 2,
+        "passRate": 0.2857142857142857,
+        "chanceRate": 0.25,
+        "ci95": [
+          0.0,
+          0.5714285714285714
+        ],
+        "beatsChance": false
+      },
+      "randomP95OnLate": 0.30063291139240506,
+      "randomP95Meta": {
+        "nRandomWithNAtLeast8": 120,
+        "percentileMethod": "ceil(0.95 * n) - 1, matching runner/src/programs/search.ts percentile"
+      },
+      "frozenProgramClearsHeldOutBar": false,
+      "refitBestOnEarly": {
+        "programId": "search/w:longest-1,overlap+1",
+        "trainRate": 0.6363636363636364,
+        "trainN": 11,
+        "late": {
+          "nScored": 6,
+          "nCorrect": 2,
+          "passRate": 0.3333333333333333,
+          "chanceRate": 0.25,
+          "ci95": [
+            0.0,
+            0.6666666666666666
+          ],
+          "beatsChance": false
+        },
+        "clearsHeldOutBar": false
+      }
+    },
+    {
+      "frozenProgramId": "search/w:overlap+1,numericMin-1,distinctive-1/timss-to-state",
+      "authority": "nyregents",
+      "claim": "geometry",
+      "frozenN": 20,
+      "frozenRate": 0.5,
+      "frozenRandomP95": 0.292,
+      "nItemsCellSelected": 408,
+      "earlyAdministrations": [
+        "nyregents:2014-jun",
+        "nyregents:2014-aug",
+        "nyregents:2015-jan",
+        "nyregents:2015-jun",
+        "nyregents:2015-aug",
+        "nyregents:2015-unk",
+        "nyregents:2016-jan",
+        "nyregents:2016-unk",
+        "nyregents:2017-unk",
+        "nyregents:2018-jan",
+        "nyregents:2018-jun",
+        "nyregents:2018-aug",
+        "nyregents:2019-jan"
+      ],
+      "lateAdministrations": [
+        "nyregents:2019-jun",
+        "nyregents:2019-aug",
+        "nyregents:2020-jan",
+        "nyregents:2022-aug",
+        "nyregents:2023-jan",
+        "nyregents:2023-jun",
+        "nyregents:2024-jan",
+        "nyregents:2024-jun",
+        "nyregents:2025-jan",
+        "nyregents:2025-jun",
+        "nyregents:2025-aug",
+        "nyregents:2026-jan",
+        "nyregents:2026-jun",
+        "nyregents:2026-aug"
+      ],
+      "nEarlyItems": 184,
+      "nLateItems": 224,
+      "frozenProgramOnLate": {
+        "nScored": 10,
+        "nCorrect": 5,
+        "passRate": 0.5,
+        "chanceRate": 0.25,
+        "ci95": [
+          0.2,
+          0.8
+        ],
+        "beatsChance": false
+      },
+      "randomP95OnLate": 0.29017857142857145,
+      "randomP95Meta": {
+        "nRandomWithNAtLeast8": 120,
+        "percentileMethod": "ceil(0.95 * n) - 1, matching runner/src/programs/search.ts percentile"
+      },
+      "frozenProgramClearsHeldOutBar": false,
+      "refitBestOnEarly": {
+        "programId": "search/w:numRepeat-1,noAbsolute+1",
+        "trainRate": 0.6153846153846154,
+        "trainN": 13,
+        "late": {
+          "nScored": 23,
+          "nCorrect": 6,
+          "passRate": 0.2608695652173913,
+          "chanceRate": 0.25,
+          "ci95": [
+            0.08695652173913043,
+            0.43478260869565216
+          ],
+          "beatsChance": false
+        },
+        "clearsHeldOutBar": false
+      }
+    }
+  ],
+  "fittedNgrams": [
+    {
+      "slice": "state-pooled",
+      "earlyAdministrations": [
+        "eqao:2023",
+        "eqao:2024",
+        "eqao:2025",
+        "mcas:2019",
+        "nyregents:unknown",
+        "nyregents:2014-jun",
+        "nyregents:2014-aug",
+        "nyregents:2015-jan",
+        "nyregents:2015-jun",
+        "nyregents:2015-aug",
+        "nyregents:2015-unk",
+        "nyregents:2016-jan",
+        "nyregents:2016-jun",
+        "nyregents:2016-aug",
+        "nyregents:2016-unk",
+        "nyregents:2017-jan",
+        "nyregents:2017-jun",
+        "nyregents:2017-aug",
+        "nyregents:2017-unk",
+        "nyregents:2018-jan",
+        "nyregents:2018-jun",
+        "nyregents:2018-aug",
+        "nyregents:2019-jan"
+      ],
+      "lateAdministrations": [
+        "nyregents:2019-jun",
+        "nyregents:2019-aug",
+        "nyregents:2020-jan",
+        "nyregents:2022-jun",
+        "nyregents:2022-aug",
+        "nyregents:2023-jan",
+        "nyregents:2023-jun",
+        "nyregents:2023-aug",
+        "nyregents:2024-jan",
+        "nyregents:2024-jun",
+        "nyregents:2024-aug",
+        "nyregents:2025-jan",
+        "nyregents:2025-jun",
+        "nyregents:2025-aug",
+        "nyregents:2026-jan",
+        "nyregents:2026-jun",
+        "nyregents:2026-aug",
+        "nysed:2017",
+        "nysed:2019",
+        "nysed:2022",
+        "staar:2019",
+        "staar:2021",
+        "staar:2022"
+      ],
+      "nTrain": 777,
+      "late": {
+        "nScored": 1243,
+        "nCorrect": 319,
+        "passRate": 0.25663716814159293,
+        "chanceRate": 0.25,
+        "ci95": [
+          0.2325020112630732,
+          0.2807723250201126
+        ],
+        "beatsChance": false
+      },
+      "clearsHeldOutBar": false
+    },
+    {
+      "slice": "nyregents-geometry",
+      "earlyAdministrations": [
+        "nyregents:2014-jun",
+        "nyregents:2014-aug",
+        "nyregents:2015-jan",
+        "nyregents:2015-jun",
+        "nyregents:2015-aug",
+        "nyregents:2015-unk",
+        "nyregents:2016-jan",
+        "nyregents:2016-unk",
+        "nyregents:2017-unk",
+        "nyregents:2018-jan",
+        "nyregents:2018-jun",
+        "nyregents:2018-aug",
+        "nyregents:2019-jan"
+      ],
+      "lateAdministrations": [
+        "nyregents:2019-jun",
+        "nyregents:2019-aug",
+        "nyregents:2020-jan",
+        "nyregents:2022-aug",
+        "nyregents:2023-jan",
+        "nyregents:2023-jun",
+        "nyregents:2024-jan",
+        "nyregents:2024-jun",
+        "nyregents:2025-jan",
+        "nyregents:2025-jun",
+        "nyregents:2025-aug",
+        "nyregents:2026-jan",
+        "nyregents:2026-jun",
+        "nyregents:2026-aug"
+      ],
+      "nTrain": 184,
+      "late": {
+        "nScored": 224,
+        "nCorrect": 58,
+        "passRate": 0.25892857142857145,
+        "chanceRate": 0.25,
+        "ci95": [
+          0.20535714285714285,
+          0.3169642857142857
+        ],
+        "beatsChance": false
+      },
+      "clearsHeldOutBar": false
+    },
+    {
+      "slice": "nyregents-algebra-i",
+      "earlyAdministrations": [
+        "nyregents:unknown",
+        "nyregents:2014-jun",
+        "nyregents:2014-aug",
+        "nyregents:2015-jan",
+        "nyregents:2015-jun",
+        "nyregents:2015-aug",
+        "nyregents:2016-jan",
+        "nyregents:2016-jun",
+        "nyregents:2016-aug",
+        "nyregents:2017-jan",
+        "nyregents:2017-jun",
+        "nyregents:2017-aug",
+        "nyregents:2018-jan",
+        "nyregents:2018-jun",
+        "nyregents:2018-aug",
+        "nyregents:2019-jan"
+      ],
+      "lateAdministrations": [
+        "nyregents:2019-jun",
+        "nyregents:2019-aug",
+        "nyregents:2020-jan",
+        "nyregents:2022-jun",
+        "nyregents:2022-aug",
+        "nyregents:2023-jan",
+        "nyregents:2023-jun",
+        "nyregents:2023-aug",
+        "nyregents:2024-jan",
+        "nyregents:2024-jun",
+        "nyregents:2024-aug",
+        "nyregents:2025-jan",
+        "nyregents:2025-jun",
+        "nyregents:2025-aug",
+        "nyregents:2026-jan",
+        "nyregents:2026-jun",
+        "nyregents:2026-aug"
+      ],
+      "nTrain": 282,
+      "late": {
+        "nScored": 316,
+        "nCorrect": 81,
+        "passRate": 0.2563291139240506,
+        "chanceRate": 0.25,
+        "ci95": [
+          0.2088607594936709,
+          0.3069620253164557
+        ],
+        "beatsChance": false
+      },
+      "clearsHeldOutBar": false
+    },
+    {
+      "slice": "nyregents-algebra-ii",
+      "earlyAdministrations": [
+        "nyregents:2016-jun",
+        "nyregents:2016-aug",
+        "nyregents:2017-jan",
+        "nyregents:2017-jun",
+        "nyregents:2017-aug",
+        "nyregents:2018-jan",
+        "nyregents:2018-jun",
+        "nyregents:2018-aug",
+        "nyregents:2019-jan",
+        "nyregents:2019-jun",
+        "nyregents:2019-aug",
+        "nyregents:2020-jan"
+      ],
+      "lateAdministrations": [
+        "nyregents:2022-aug",
+        "nyregents:2023-jan",
+        "nyregents:2023-jun",
+        "nyregents:2023-aug",
+        "nyregents:2024-jan",
+        "nyregents:2024-jun",
+        "nyregents:2024-aug",
+        "nyregents:2025-jan",
+        "nyregents:2025-jun",
+        "nyregents:2025-aug",
+        "nyregents:2026-jan",
+        "nyregents:2026-jun",
+        "nyregents:2026-aug"
+      ],
+      "nTrain": 214,
+      "late": {
+        "nScored": 228,
+        "nCorrect": 50,
+        "passRate": 0.21929824561403508,
+        "chanceRate": 0.25,
+        "ci95": [
+          0.16666666666666666,
+          0.2807017543859649
+        ],
+        "beatsChance": false
+      },
+      "clearsHeldOutBar": false
+    },
+    {
+      "slice": "teks-g6",
+      "earlyAdministrations": [
+        "staar:2019"
+      ],
+      "lateAdministrations": [
+        "staar:2021",
+        "staar:2022"
+      ],
+      "nTrain": 27,
+      "late": {
+        "nScored": 38,
+        "nCorrect": 10,
+        "passRate": 0.2631578947368421,
+        "chanceRate": 0.25,
+        "ci95": [
+          0.13157894736842105,
+          0.42105263157894735
+        ],
+        "beatsChance": false
+      },
+      "clearsHeldOutBar": false
+    }
+  ],
+  "cite": "exports/addendum/held-out-searched.json"
+}

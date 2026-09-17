@@ -1,0 +1,570 @@
+{
+  "writtenAt": "2026-09-16T21:34:28Z",
+  "preregistration": {
+    "path": "exports/replication-staar/preregistration.md",
+    "sha256": "55bd9dedd293fd9292893adc018f91fb4e6ce0ab58a86e4c7a7676cbb04d7e46",
+    "utc": "2026-09-16T21:20:11Z",
+    "powerMinimumN": 46,
+    "bootstrap": {
+      "method": "random.Random.randrange",
+      "nBoot": 1000,
+      "seed": 11
+    }
+  },
+  "parserChanges": {
+    "summary": "Added parse_keys_from_pdf (word-row clustering, y-gap 4) in parse_staar_bulk.py. Unchanged KEY_FLAT concatenates process TEKS into the answer on 2013-2016 keys, and get_text drops some 2016 item numbers. parse_items skips ruler/numeric-only item starts, drops ---PAGE lines, and cuts stem/choice text at page markers. Last-choice leakage remains when extract_lettered_choices continues after a skipped Mathematics/Page footer; not retuned after seeing rates.",
+    "functionsAdded": [
+      "parse_keys_from_pdf"
+    ],
+    "functionsUnchanged": [
+      "parse_keys",
+      "KEY_FLAT"
+    ],
+    "parseItemsChanges": "looks_like_item_start rejects ruler/numeric-only lines; ---PAGE lines are not appended; choice/stem text is cut at page markers. extract_lettered_choices still appends post-footer lines to the last option."
+  },
+  "inventoryCounts": {
+    "nPdfs": 256,
+    "nPdfsByRole": {
+      "key": 90,
+      "test": 55,
+      "excluded": 111
+    },
+    "nTextExtractable": 244,
+    "nScannedOrImageOnly": 10,
+    "nUnreadable": 2,
+    "nLikelyTruncated": 8,
+    "nCandidateForms": 10,
+    "nCandidateFormsByGrade": {
+      "5": 3,
+      "3": 1,
+      "4": 1,
+      "6": 2,
+      "7": 1,
+      "8": 1,
+      "alg1": 1
+    },
+    "nCandidateGrade5": 3
+  },
+  "parse": {
+    "nItems": 228,
+    "nSelected": 205,
+    "nFourNumeric": 170,
+    "formReports": [
+      {
+        "formId": "staar-2013-5-english",
+        "year": "2013",
+        "grade": "5",
+        "testPdf": "data/raw/staar/2013-staar-5-math-test.pdf",
+        "keyPdf": "data/raw/staar/2013-staar-5-math-key.pdf",
+        "nKeysRecovered": 50,
+        "nItemsParsed": 28,
+        "nWithKey": 28,
+        "nSelected": 25,
+        "nSelectedKeyInChoices": 25,
+        "nFourParseableNumericOptions": 22,
+        "nParseFailures": 22,
+        "stopped": false,
+        "stopReason": null
+      },
+      {
+        "formId": "staar-2014-5-english",
+        "year": "2014",
+        "grade": "5",
+        "testPdf": "data/raw/staar/2014-staar-5-math-test.pdf",
+        "keyPdf": "data/raw/staar/2014-staar-5-math-key.pdf",
+        "nKeysRecovered": 50,
+        "nItemsParsed": 30,
+        "nWithKey": 30,
+        "nSelected": 27,
+        "nSelectedKeyInChoices": 27,
+        "nFourParseableNumericOptions": 21,
+        "nParseFailures": 20,
+        "stopped": false,
+        "stopReason": null
+      },
+      {
+        "formId": "staar-2016-5-english",
+        "year": "2016",
+        "grade": "5",
+        "testPdf": "data/raw/staar/2016-staar-5-math-test.pdf",
+        "keyPdf": "data/raw/staar/2016-staar-5-math-key.pdf",
+        "nKeysRecovered": 50,
+        "nItemsParsed": 29,
+        "nWithKey": 29,
+        "nSelected": 26,
+        "nSelectedKeyInChoices": 26,
+        "nFourParseableNumericOptions": 23,
+        "nParseFailures": 21,
+        "stopped": false,
+        "stopReason": null
+      },
+      {
+        "formId": "staar-2014-3-english",
+        "year": "2014",
+        "grade": "3",
+        "testPdf": "data/raw/staar/2014-staar-3-math-test.pdf",
+        "keyPdf": "data/raw/staar/2014-staar-3-math-key.pdf",
+        "nKeysRecovered": 46,
+        "nItemsParsed": 21,
+        "nWithKey": 21,
+        "nSelected": 18,
+        "nSelectedKeyInChoices": 18,
+        "nFourParseableNumericOptions": 16,
+        "nParseFailures": 25,
+        "stopped": false,
+        "stopReason": null
+      },
+      {
+        "formId": "staar-2016-4-english",
+        "year": "2016",
+        "grade": "4",
+        "testPdf": "data/raw/staar/2016-staar-4-math-test.pdf",
+        "keyPdf": "data/raw/staar/2016-staar-4-math-key.pdf",
+        "nKeysRecovered": 48,
+        "nItemsParsed": 24,
+        "nWithKey": 24,
+        "nSelected": 21,
+        "nSelectedKeyInChoices": 21,
+        "nFourParseableNumericOptions": 17,
+        "nParseFailures": 24,
+        "stopped": false,
+        "stopReason": null
+      },
+      {
+        "formId": "staar-2014-6-english",
+        "year": "2014",
+        "grade": "6",
+        "testPdf": "data/raw/staar/2014-staar-6-math-test.pdf",
+        "keyPdf": "data/raw/staar/2014-staar-6-math-key.pdf",
+        "nKeysRecovered": 52,
+        "nItemsParsed": 1,
+        "nWithKey": 1,
+        "nSelected": 1,
+        "nSelectedKeyInChoices": 1,
+        "nFourParseableNumericOptions": 1,
+        "nParseFailures": 51,
+        "stopped": false,
+        "stopReason": null
+      },
+      {
+        "formId": "staar-2016-6-english",
+        "year": "2016",
+        "grade": "6",
+        "testPdf": "data/raw/staar/2016-staar-6-math-test.pdf",
+        "keyPdf": "data/raw/staar/2016-staar-6-math-key.pdf",
+        "nKeysRecovered": 52,
+        "nItemsParsed": 31,
+        "nWithKey": 31,
+        "nSelected": 29,
+        "nSelectedKeyInChoices": 29,
+        "nFourParseableNumericOptions": 27,
+        "nParseFailures": 21,
+        "stopped": false,
+        "stopReason": null
+      },
+      {
+        "formId": "staar-2016-7-english",
+        "year": "2016",
+        "grade": "7",
+        "testPdf": "data/raw/staar/2016-staar-7-math-test.pdf",
+        "keyPdf": "data/raw/staar/2016-staar-7-math-key.pdf",
+        "nKeysRecovered": 54,
+        "nItemsParsed": 28,
+        "nWithKey": 28,
+        "nSelected": 25,
+        "nSelectedKeyInChoices": 25,
+        "nFourParseableNumericOptions": 22,
+        "nParseFailures": 26,
+        "stopped": false,
+        "stopReason": null
+      },
+      {
+        "formId": "staar-2013-8-english",
+        "year": "2013",
+        "grade": "8",
+        "testPdf": "data/raw/staar/2013-staar-8-math-test.pdf",
+        "keyPdf": "data/raw/staar/2013-staar-8-math-key.pdf",
+        "nKeysRecovered": 56,
+        "nItemsParsed": 3,
+        "nWithKey": 3,
+        "nSelected": 3,
+        "nSelectedKeyInChoices": 3,
+        "nFourParseableNumericOptions": 3,
+        "nParseFailures": 53,
+        "stopped": false,
+        "stopReason": null
+      },
+      {
+        "formId": "staar-2014-alg1-english",
+        "year": "2014",
+        "grade": "alg1",
+        "testPdf": "data/raw/staar/2014-staar-algebra-i-test.pdf",
+        "keyPdf": "data/raw/staar/2014-staar-algebra-i-key.pdf",
+        "nKeysRecovered": 54,
+        "nItemsParsed": 33,
+        "nWithKey": 33,
+        "nSelected": 30,
+        "nSelectedKeyInChoices": 30,
+        "nFourParseableNumericOptions": 18,
+        "nParseFailures": 21,
+        "stopped": false,
+        "stopReason": null
+      }
+    ],
+    "handCheck": {
+      "seed": 20260916,
+      "counts": {
+        "nSampled": 20,
+        "nAgree": 12,
+        "nDisagree": 6,
+        "nUncertain": 2,
+        "nDisagreeStem": 0,
+        "nDisagreeOptions": 6,
+        "nDisagreeKey": 0
+      },
+      "stopScoring": false,
+      "stopRule": "Stop scoring only if 3 or more items disagree on the key / item-number alignment. Option leakage is recorded, not a stop.",
+      "humanReview": {
+        "reviewedAt": "2026-09-16T21:34:28Z",
+        "method": "Read test PDF text layer at the true item start (not the first numeral hit) and the key PDF via parse_keys_from_pdf. No OCR.",
+        "nAgree": 12,
+        "nDisagree": 6,
+        "nUncertain": 2,
+        "nDisagreeKey": 0,
+        "nDisagreeOptions": 6,
+        "nDisagreeStem": 0,
+        "stopScoring": false,
+        "optionDefects": [
+          "Five last-choice leaks of the next page or next item (2016-7-q28, 2016-4-q30, 2016-7-q3, 2016-4-q43, 2016-6-q35).",
+          "One stacked-fraction option pairing (2013-5-q35).",
+          "Two figure-only option sets left uncertain (2014-5-q29 clocks, 2014-5-q36 grids)."
+        ]
+      }
+    }
+  },
+  "nGrade5Selected": 78,
+  "primary": {
+    "rule": "s3-closure-filtered",
+    "cell": "teks/g5",
+    "nFired": 44,
+    "nHits": 18,
+    "rate": 0.4090909090909091,
+    "chance": 0.25,
+    "ci95": [
+      0.2727272727272727,
+      0.5454545454545454
+    ],
+    "clearsBar": true,
+    "underpowered": false,
+    "tieBreakDecomposition": {
+      "nDecidedByDepth": 15,
+      "nHitsDecidedByDepth": 4,
+      "rateAmongDepthDecided": 0.26666666666666666,
+      "nDecidedByTieBreak": 29,
+      "nHitsDecidedByTieBreak": 14,
+      "rateAmongTieBreakDecided": 0.4827586206896552
+    },
+    "closureDensity": {
+      "meanOptionsInClosurePerFiredItem": 3.0,
+      "nFiredUniqueDepth1": 10,
+      "nFiredUniqueDepth1IsKey": 3,
+      "uniqueDepth1IsKeyRateAmongThoseItems": 0.3
+    },
+    "perAdministration": [
+      {
+        "administration": "staar:2013",
+        "n": 12,
+        "nCorrect": 3,
+        "rate": 0.25
+      },
+      {
+        "administration": "staar:2014",
+        "n": 16,
+        "nCorrect": 6,
+        "rate": 0.375
+      },
+      {
+        "administration": "staar:2016",
+        "n": 16,
+        "nCorrect": 9,
+        "rate": 0.5625
+      }
+    ],
+    "underpoweredVsPowerMinimumN": true,
+    "powerMinimumN": 46
+  },
+  "s3UnfilteredGrade5": {
+    "rule": "s3-closure-unfiltered",
+    "cell": "teks/g5",
+    "nFired": 47,
+    "nHits": 19,
+    "rate": 0.40425531914893614,
+    "chance": 0.25,
+    "ci95": [
+      0.2765957446808511,
+      0.5531914893617021
+    ],
+    "clearsBar": true,
+    "underpowered": false,
+    "tieBreakDecomposition": {
+      "nDecidedByDepth": 15,
+      "nHitsDecidedByDepth": 4,
+      "rateAmongDepthDecided": 0.26666666666666666,
+      "nDecidedByTieBreak": 32,
+      "nHitsDecidedByTieBreak": 15,
+      "rateAmongTieBreakDecided": 0.46875
+    },
+    "closureDensity": {
+      "meanOptionsInClosurePerFiredItem": 3.0638297872340425,
+      "nFiredUniqueDepth1": 10,
+      "nFiredUniqueDepth1IsKey": 3,
+      "uniqueDepth1IsKeyRateAmongThoseItems": 0.3
+    },
+    "perAdministration": [
+      {
+        "administration": "staar:2013",
+        "n": 15,
+        "nCorrect": 4,
+        "rate": 0.26666666666666666
+      },
+      {
+        "administration": "staar:2014",
+        "n": 17,
+        "nCorrect": 7,
+        "rate": 0.4117647058823529
+      },
+      {
+        "administration": "staar:2016",
+        "n": 15,
+        "nCorrect": 8,
+        "rate": 0.5333333333333333
+      }
+    ],
+    "underpoweredVsPowerMinimumN": false,
+    "powerMinimumN": 46
+  },
+  "verdict": "underpowered",
+  "paperMaySay": {
+    "replicated": "Filtered S3 grade 5 n>=46 and lower CI > 0.25; one-sided wording only.",
+    "did_not_replicate": "n>=46 and lower CI not above 0.25; do not claim replication of g5 closure.",
+    "underpowered": "n_fired below 46; do not treat this run as a replication of g5 closure.",
+    "applied": "underpowered",
+    "appliedText": "Underpowered: filtered S3 grade 5 fired n=44, below the registered minimum of 46. The paper may not treat this run as a replication of the g5 closure result. Pooled discovery+replication is descriptive only. unit-rate and stem-repeat did not clear. Do not advertise g4 lower-central as a new witness."
+  },
+  "pooledDiscoveryAndReplication": {
+    "label": "pooledDiscoveryAndReplication",
+    "filter": "unfiltered",
+    "nDiscoveryFired": 40,
+    "nDiscoveryHits": 21,
+    "nReplicationFired": 47,
+    "nReplicationHits": 19,
+    "nFired": 87,
+    "nHits": 40,
+    "rate": 0.45977011494252873,
+    "chance": 0.25,
+    "ci95": [
+      0.3563218390804598,
+      0.5632183908045977
+    ],
+    "clearsBar": true,
+    "note": "Descriptive. Not the replication verdict. Discovery side is recomputed unfiltered S3 on frozen census g5."
+  },
+  "discoveryRecomputedUnfiltered": {
+    "nFired": 40,
+    "nHits": 21,
+    "rate": 0.525,
+    "ci95": [
+      0.375,
+      0.675
+    ],
+    "frozenRegistered": {
+      "nFired": 40,
+      "nHits": 21,
+      "rate": 0.525
+    }
+  },
+  "secondary": [
+    {
+      "rule": "unit-rate",
+      "cell": "teks/g5",
+      "nFired": 10,
+      "nHits": 4,
+      "rate": 0.4,
+      "chance": 0.25,
+      "ci95": [
+        0.1,
+        0.7
+      ],
+      "clearsBar": false,
+      "underpowered": false
+    },
+    {
+      "rule": "option-repeating-stem-numbers",
+      "cell": "teks/alg1",
+      "nFired": 11,
+      "nHits": 1,
+      "rate": 0.09090909090909091,
+      "chance": 0.25,
+      "ci95": [
+        0.0,
+        0.2727272727272727
+      ],
+      "clearsBar": false,
+      "underpowered": false
+    },
+    {
+      "rule": "lower-central-negative-control",
+      "cell": "teks/g5",
+      "nFired": 69,
+      "nHits": 22,
+      "rate": 0.3188405797101449,
+      "chance": 0.25,
+      "ci95": [
+        0.21739130434782608,
+        0.43478260869565216
+      ],
+      "clearsBar": false,
+      "underpowered": false
+    },
+    {
+      "rule": "lower-central-negative-control",
+      "cell": "teks/g3",
+      "nFired": 16,
+      "nHits": 4,
+      "rate": 0.25,
+      "chance": 0.25,
+      "ci95": [
+        0.0625,
+        0.4375
+      ],
+      "clearsBar": false,
+      "underpowered": false
+    },
+    {
+      "rule": "lower-central-negative-control",
+      "cell": "teks/g4",
+      "nFired": 17,
+      "nHits": 10,
+      "rate": 0.5882352941176471,
+      "chance": 0.25,
+      "ci95": [
+        0.35294117647058826,
+        0.8235294117647058
+      ],
+      "clearsBar": true,
+      "underpowered": false
+    },
+    {
+      "rule": "lower-central-negative-control",
+      "cell": "teks/g6",
+      "nFired": 28,
+      "nHits": 10,
+      "rate": 0.35714285714285715,
+      "chance": 0.25,
+      "ci95": [
+        0.17857142857142858,
+        0.5357142857142857
+      ],
+      "clearsBar": false,
+      "underpowered": false
+    },
+    {
+      "rule": "lower-central-negative-control",
+      "cell": "teks/g7",
+      "nFired": 22,
+      "nHits": 8,
+      "rate": 0.36363636363636365,
+      "chance": 0.25,
+      "ci95": [
+        0.18181818181818182,
+        0.5454545454545454
+      ],
+      "clearsBar": false,
+      "underpowered": false
+    },
+    {
+      "rule": "lower-central-negative-control",
+      "cell": "teks/g8",
+      "nFired": 3,
+      "nHits": 1,
+      "rate": 0.3333333333333333,
+      "chance": 0.25,
+      "ci95": [
+        0.0,
+        1.0
+      ],
+      "clearsBar": false,
+      "underpowered": true
+    },
+    {
+      "rule": "lower-central-negative-control",
+      "cell": "teks/alg1",
+      "nFired": 23,
+      "nHits": 3,
+      "rate": 0.13043478260869565,
+      "chance": 0.25,
+      "ci95": [
+        0.0,
+        0.2608695652173913
+      ],
+      "clearsBar": false,
+      "underpowered": false
+    }
+  ],
+  "cut": [
+    "Census English 2019/2021/2022 not re-parsed.",
+    "Spanish forms excluded.",
+    "2015 tests have no key PDF.",
+    "2023-2026 keys have no matching test PDF.",
+    "2017/2018/2020 missing on disk.",
+    "2014-6 and 2013-8 tests are mostly image items; text-layer parse yield is near zero and is not OCR'd.",
+    "No CPU OCR. No neural model this run."
+  ],
+  "primaryItemIds": [
+    "staar-2013-5-q10",
+    "staar-2013-5-q14",
+    "staar-2013-5-q15",
+    "staar-2013-5-q21",
+    "staar-2013-5-q22",
+    "staar-2013-5-q27",
+    "staar-2013-5-q30",
+    "staar-2013-5-q31",
+    "staar-2013-5-q35",
+    "staar-2013-5-q43",
+    "staar-2013-5-q47",
+    "staar-2013-5-q48",
+    "staar-2014-5-q14",
+    "staar-2014-5-q15",
+    "staar-2014-5-q19",
+    "staar-2014-5-q22",
+    "staar-2014-5-q24",
+    "staar-2014-5-q26",
+    "staar-2014-5-q30",
+    "staar-2014-5-q31",
+    "staar-2014-5-q32",
+    "staar-2014-5-q33",
+    "staar-2014-5-q35",
+    "staar-2014-5-q38",
+    "staar-2014-5-q40",
+    "staar-2014-5-q43",
+    "staar-2014-5-q45",
+    "staar-2014-5-q50",
+    "staar-2016-5-q2",
+    "staar-2016-5-q4",
+    "staar-2016-5-q7",
+    "staar-2016-5-q15",
+    "staar-2016-5-q17",
+    "staar-2016-5-q18",
+    "staar-2016-5-q20",
+    "staar-2016-5-q23",
+    "staar-2016-5-q30",
+    "staar-2016-5-q33",
+    "staar-2016-5-q34",
+    "staar-2016-5-q35",
+    "staar-2016-5-q36",
+    "staar-2016-5-q39",
+    "staar-2016-5-q41",
+    "staar-2016-5-q44"
+  ],
+  "negativeControlNote": "lower-central on teks/g4 cleared the witness bar (10/17=0.588, CI [0.353, 0.824]). That is a negative-control failure on one STAAR grade cell. Other STAAR grades stayed at chance. g8 n=3 is under the n>=10 floor."
+}

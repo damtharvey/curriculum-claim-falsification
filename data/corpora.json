@@ -1,0 +1,147 @@
+{
+  "corpora": [
+    {
+      "id": "timss2011",
+      "name": "TIMSS 2011 public-release mathematics items",
+      "grades": ["4", "8"],
+      "tags": "content domain, cognitive domain (knowing/applying/reasoning), key, scoring guide, percent correct",
+      "sourceUrl": "https://nces.ed.gov/timss/pdf/TIMSS2011_G8_Math.pdf",
+      "also": "https://nces.ed.gov/timss/released-questions.asp",
+      "format": "PDF",
+      "licenseNote": "IEA public-release items for non-commercial educational and research use. Acknowledgement required. Not TIMSS 2015+ restricted-use.",
+      "role": "target",
+      "ingestionStatus": "ingested",
+      "ingestedCounts": {
+        "completeKeyed": 129,
+        "selected": 81,
+        "numeric": 48,
+        "incompleteFigures": 3
+      }
+    },
+    {
+      "id": "nysed",
+      "name": "NYSED annotated released questions, grades 6-8 mathematics",
+      "grades": ["6", "7", "8"],
+      "tags": "CCSS code, key, rationale",
+      "sourceUrl": "https://www.nysed.gov/state-assessment/past-grades-3-8-tests",
+      "format": "PDF",
+      "licenseNote": "New York State Education Department released test questions. Reuse terms vary by year; item text shown only after a license decision.",
+      "role": "target",
+      "ingestionStatus": "ingested",
+      "sourceUrlAlt": "https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g7.pdf",
+      "ingestedCounts": {"completeKeyed": 20, "figureDependentParked2019": 54, "figureDependentParked2018": 75},
+      "blocker": "nysed.gov TLS/404 still. 2019 G6–G8 recovered from nysedregents.org. 2018 G6–G8 PDFs have keys in the map but empty text-layer stems (form-feed pages). Graphic items not invented. 2017/2023 paths 404."
+    },
+    {
+      "id": "staar",
+      "name": "STAAR released tests, grades 6-8 mathematics",
+      "grades": ["6", "7", "8"],
+      "tags": "TEKS, key",
+      "sourceUrl": "https://tea.texas.gov/student-assessment/testing/staar/staar-released-test-questions",
+      "format": "PDF",
+      "licenseNote": "Texas Education Agency released tests. Public. TEKS tags, not CCSS.",
+      "role": "target",
+      "ingestionStatus": "ingested",
+      "ingestedCounts": {"completeKeyed": 12, "grade7": 11, "grade8": 1},
+      "note": "May 2022 G7+G8 released forms + statewide item-analysis keys. Only items with recoverable published choices transcribed. Sampler has no key."
+    },
+    {
+      "id": "mcas",
+      "name": "MCAS released items, grades 6-8 mathematics",
+      "grades": ["6", "7", "8"],
+      "tags": "Massachusetts standard, key, rubric",
+      "sourceUrl": "https://www.doe.mass.edu/mcas/release.html",
+      "format": "PDF",
+      "licenseNote": "Massachusetts DESE released items. Public.",
+      "role": "target",
+      "ingestionStatus": "ingested",
+      "ingestedCounts": {"completeKeyed": 10, "selected": 8, "numeric": 2},
+      "note": "2019 G7 PDF via web.archive.org of doe.mass.edu/mcas/2019/release/gr7-math.pdf. 2023 path 404."
+    },
+    {
+      "id": "eqao",
+      "name": "EQAO released assessments, Ontario grades 6 and 9",
+      "grades": ["6", "9"],
+      "tags": "Ontario expectation, key, scoring",
+      "sourceUrl": "https://www.eqao.com/",
+      "format": "PDF",
+      "licenseNote": "EQAO released assessments. Public. Ontario tags, not CCSS.",
+      "role": "target",
+      "ingestionStatus": "blocked",
+      "blocker": "2016 Grade 6 released-question booklet downloaded. Section 1 items are in the PDF; no scoring key is in that file. Section 2 is descriptions only. Keys not invented."
+    },
+    {
+      "id": "naplan",
+      "name": "NAPLAN past papers 2012-2016, years 7 and 9",
+      "grades": ["7", "9"],
+      "tags": "Australian Curriculum code, key",
+      "sourceUrl": "https://www.nap.edu.au/naplan/the-tests",
+      "format": "PDF",
+      "licenseNote": "ACARA NAPLAN 2012-2016 past papers are public. Later years may differ.",
+      "role": "target",
+      "ingestionStatus": "ingested",
+      "sourceUrlAlt": "https://www.acara.edu.au/assessment/naplan/naplan-2012-2016-test-papers",
+      "ingestedCounts": {"completeKeyed": 21, "year2015Calc": 16, "year2016Calc": 5, "numeric": 5, "selected": 16},
+      "note": "2015-2016 Year 7 calculator papers and answer keys from acaraweb blob. Only text-complete items transcribed. Figure-only items parked, not invented. 2012-2014 papers available, not yet transcribed."
+    },
+    {
+      "id": "pisa",
+      "name": "PISA released mathematics items",
+      "grades": ["15"],
+      "tags": "content category, process (formulate/employ/interpret), key, coding guide",
+      "sourceUrl": "https://www.oecd.org/content/dam/oecd/en/about/programmes/edu/pisa/pisa-test/PISA%202012%20items%20for%20release_ENGLISH.pdf",
+      "also": "https://www.oecd.org/pisa/test/",
+      "format": "PDF/HTML",
+      "licenseNote": "OECD PISA released items. Public with acknowledgement.",
+      "role": "target",
+      "ingestionStatus": "ingested",
+      "ingestedCounts": {"completeKeyed": 16, "selected": 10, "numeric": 6}
+    },
+    {
+      "id": "illustrative-mathematics",
+      "name": "Illustrative Mathematics / Open Up Resources end-of-unit assessments, grades 6-8",
+      "grades": ["6", "7", "8"],
+      "tags": "CCSS, key, rubric",
+      "sourceUrl": "https://openupresources.org/",
+      "format": "HTML/PDF",
+      "licenseNote": "CC BY 4.0. Unit assessments via free account.",
+      "role": "target",
+      "ingestionStatus": "queued"
+    },
+    {
+      "id": "eureka",
+      "name": "Eureka Math / EngageNY end-of-module assessments, grades 6-8",
+      "grades": ["6", "7", "8"],
+      "tags": "CCSS, key, rubric",
+      "sourceUrl": "https://www.engageny.org/resource/grade-7-mathematics",
+      "format": "PDF",
+      "licenseNote": "CC BY-NC-SA. Practice problems are retrieval-pool only, never targets.",
+      "role": "target",
+      "ingestionStatus": "blocked",
+      "blocker": "G7 M1 EOM student PDF downloaded (CC BY-NC-SA). Scoring keys are in the Teacher Edition / Affirm, not that file. engageny.org 301s to nysed.gov. No keys invented. Instruction-only skipped."
+    },
+    {
+      "id": "siyavula",
+      "name": "Siyavula and Sasol Inzalo Senior Phase assessments",
+      "grades": ["7", "8", "9"],
+      "tags": "CAPS topic",
+      "sourceUrl": "https://www.siyavula.com/",
+      "format": "PDF/HTML",
+      "licenseNote": "CC BY-NC-SA.",
+      "role": "target",
+      "ingestionStatus": "queued"
+    }
+  ],
+  "excluded": [
+    {
+      "id": "timss2015plus",
+      "reason": "IEA restricted-use; permission process. Version 2 only. Not requested this round.",
+      "sourceUrl": "https://www.iea.nl/data-tools/permission-requests"
+    },
+    {
+      "id": "rise-operational",
+      "reason": "Utah RISE operational items are secure. Blueprint is public; items are not. Do not scrape paywalled RISE-prep.",
+      "sourceUrl": "https://utahrise.org/content/contentresources/en/Math-Public-Facing-Blueprint_.pdf"
+    }
+  ]
+}

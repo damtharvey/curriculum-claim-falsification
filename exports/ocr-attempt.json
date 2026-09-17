@@ -1,0 +1,18 @@
+{
+  "checkedAt": "2026-09-16T18:00:00Z",
+  "tesseract": false,
+  "ocrmypdf": false,
+  "pdfplumber": false,
+  "pdftotext": true,
+  "pdftoppm": true,
+  "note": "tesseract and ocrmypdf are not installed. No heavy vision model was installed. NYSED 2018 PDFs have keys in the map and empty text-layer stems (form-feed pages). TIMSS leftovers M042032, M042150, M042179 are diagrams (fraction graphics, symmetry shapes, chance buttons), not tables; attempted=false, left figure-dependent. No content invented.",
+  "nysed2018": {
+    "recoveredStems": 0,
+    "parked": 75,
+    "reason": "no local OCR"
+  },
+  "timssFigureItems": {
+    "tableRecoveredThisRound": 0,
+    "diagramParked": ["timss2011-8-M042032", "timss2011-8-M042150", "timss2011-8-M042179"]
+  }
+}

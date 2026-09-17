@@ -1,0 +1,70 @@
+{
+  "writtenAt": "2026-09-16T21:56:51Z",
+  "kept": [
+    {
+      "label": "2017-test",
+      "url": "https://tea.texas.gov/sites/default/files/STAAR_G5-2017-Test-Math-f.pdf",
+      "outcome": "exists",
+      "dest": "$REPO_ROOT/data/raw/staar/STAAR_G5-2017-Test-Math-f.pdf",
+      "name": "STAAR_G5-2017-Test-Math-f.pdf",
+      "bytes": 474127,
+      "startsWithPdfHeader": true,
+      "pageCount": 32,
+      "alnumChars": 8451,
+      "textExtractable": true,
+      "scanned": false
+    },
+    {
+      "label": "2017-key",
+      "url": "https://tea.texas.gov/sites/default/files/2017_STAAR_Gr5Math_Key_Paper_tagged.pdf",
+      "outcome": "exists",
+      "dest": "$REPO_ROOT/data/raw/staar/2017_STAAR_Gr5Math_Key_Paper_tagged.pdf",
+      "name": "2017_STAAR_Gr5Math_Key_Paper_tagged.pdf",
+      "bytes": 33331,
+      "startsWithPdfHeader": true,
+      "pageCount": 1,
+      "alnumChars": 772,
+      "textExtractable": true,
+      "scanned": false
+    },
+    {
+      "label": "2018-test",
+      "url": "https://tea.texas.gov/sites/default/files/2018_STAAR_Gr5_Math_Test.PDF",
+      "outcome": "exists",
+      "dest": "$REPO_ROOT/data/raw/staar/2018_STAAR_Gr5_Math_Test.PDF",
+      "name": "2018_STAAR_Gr5_Math_Test.PDF",
+      "bytes": 1212298,
+      "startsWithPdfHeader": true,
+      "pageCount": 32,
+      "alnumChars": 8488,
+      "textExtractable": true,
+      "scanned": false
+    },
+    {
+      "label": "2018-key",
+      "url": "https://tea.texas.gov/sites/default/files/2018_STAAR_Gr5_Math_Key_Paper_tagged.pdf",
+      "outcome": "exists",
+      "dest": "$REPO_ROOT/data/raw/staar/2018_STAAR_Gr5_Math_Key_Paper_tagged.pdf",
+      "name": "2018_STAAR_Gr5_Math_Key_Paper_tagged.pdf",
+      "bytes": 32148,
+      "startsWithPdfHeader": true,
+      "pageCount": 1,
+      "alnumChars": 781,
+      "textExtractable": true,
+      "scanned": false
+    },
+    {
+      "label": "2023-key",
+      "url": "https://tea.texas.gov/data-reports/staar/released-test-questions/2023-staar-math-grade-5-answer-key.pdf",
+      "outcome": "exists",
+      "dest": "$REPO_ROOT/data/raw/staar/2023-staar-math-grade-5-answer-key.pdf",
+      "name": "2023-staar-math-grade-5-answer-key.pdf",
+      "bytes": 378821,
+      "startsWithPdfHeader": true,
+      "pageCount": 6,
+      "alnumChars": 3742,
+      "textExtractable": true,
+      "scanned": false
+    }
+  ]
+}

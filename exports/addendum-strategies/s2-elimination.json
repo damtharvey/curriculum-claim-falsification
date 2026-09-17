@@ -1,0 +1,1419 @@
+{
+  "channel": "s2-elimination",
+  "version": 1,
+  "question": "Do shallow stem-keyword constraints eliminate options so that lower-central among survivors beats effective chance?",
+  "citation": "Millman, Bishop, and Ebel 1965 elimination strategies.",
+  "nFamilyTests": 17,
+  "nClearsPerCellBar": 2,
+  "nHolmRejectFamily": 0,
+  "clears": [
+    {
+      "authority": "eqao",
+      "claim": "g6",
+      "nScored": 51,
+      "nCorrect": 21,
+      "passRate": 0.4117647058823529,
+      "chanceRate": 0.2676470588235294,
+      "ci95": [
+        0.27450980392156865,
+        0.5294117647058824
+      ],
+      "binomialPGreater": 0.017968147136395368,
+      "clearsBar": true,
+      "inFamily": true,
+      "programId": "s2-elimination",
+      "channel": "s2-elimination",
+      "nSelected": 53,
+      "coverage": 0.9622641509433962,
+      "meanRemainingOptions": 3.7735849056603774,
+      "shareExactlyOneSurvivor": 0.018867924528301886,
+      "keySurvivalRate": 0.9056603773584906,
+      "shareKeywordMatched": 0.39622641509433965,
+      "shareEliminated": 0.018867924528301886,
+      "keywordMatchedSubset": {
+        "nScored": 19,
+        "nCorrect": 7,
+        "passRate": 0.3684210526315789,
+        "chanceRate": 0.2894736842105263,
+        "ci95": [
+          0.15789473684210525,
+          0.5789473684210527
+        ],
+        "binomialPGreater": 0.29765523363888663,
+        "clearsBar": false,
+        "inFamily": true
+      },
+      "holmReject05Family": false,
+      "bonferroniReject05Family": false
+    },
+    {
+      "authority": "nyregents",
+      "claim": "geometry",
+      "nScored": 404,
+      "nCorrect": 124,
+      "passRate": 0.3069306930693069,
+      "chanceRate": 0.25412541254125415,
+      "ci95": [
+        0.2623762376237624,
+        0.35148514851485146
+      ],
+      "binomialPGreater": 0.009601202987915882,
+      "clearsBar": true,
+      "inFamily": true,
+      "programId": "s2-elimination",
+      "channel": "s2-elimination",
+      "nSelected": 408,
+      "coverage": 0.9901960784313726,
+      "meanRemainingOptions": 3.924019607843137,
+      "shareExactlyOneSurvivor": 0.0,
+      "keySurvivalRate": 0.9852941176470589,
+      "shareKeywordMatched": 0.4068627450980392,
+      "shareEliminated": 0.024509803921568627,
+      "keywordMatchedSubset": {
+        "nScored": 162,
+        "nCorrect": 57,
+        "passRate": 0.35185185185185186,
+        "chanceRate": 0.2602880658436214,
+        "ci95": [
+          0.2777777777777778,
+          0.42592592592592593
+        ],
+        "binomialPGreater": 0.00621440204108206,
+        "clearsBar": true,
+        "inFamily": true
+      },
+      "holmReject05Family": false,
+      "bonferroniReject05Family": false
+    }
+  ],
+  "familyRows": [
+    {
+      "authority": "acara",
+      "claim": "y7-numeracy",
+      "nScored": 16,
+      "nCorrect": 5,
+      "passRate": 0.3125,
+      "chanceRate": 0.2552083333333333,
+      "ci95": [
+        0.125,
+        0.5625
+      ],
+      "binomialPGreater": 0.388638652762111,
+      "clearsBar": false,
+      "inFamily": true,
+      "programId": "s2-elimination",
+      "channel": "s2-elimination",
+      "nSelected": 16,
+      "coverage": 1.0,
+      "meanRemainingOptions": 3.9375,
+      "shareExactlyOneSurvivor": 0.0,
+      "keySurvivalRate": 1.0,
+      "shareKeywordMatched": 0.375,
+      "shareEliminated": 0.0625,
+      "keywordMatchedSubset": {
+        "nScored": 6,
+        "nCorrect": 3,
+        "passRate": 0.5,
+        "chanceRate": 0.2638888888888889,
+        "ci95": [
+          0.16666666666666666,
+          0.8333333333333334
+        ],
+        "binomialPGreater": 0.1920011930828854,
+        "clearsBar": false,
+        "inFamily": false
+      },
+      "holmReject05Family": false,
+      "bonferroniReject05Family": false
+    },
+    {
+      "authority": "eqao",
+      "claim": "g3",
+      "nScored": 44,
+      "nCorrect": 10,
+      "passRate": 0.22727272727272727,
+      "chanceRate": 0.2537878787878788,
+      "ci95": [
+        0.11363636363636363,
+        0.36363636363636365
+      ],
+      "binomialPGreater": 0.7112697517149121,
+      "clearsBar": false,
+      "inFamily": true,
+      "programId": "s2-elimination",
+      "channel": "s2-elimination",
+      "nSelected": 44,
+      "coverage": 1.0,
+      "meanRemainingOptions": 3.9545454545454546,
+      "shareExactlyOneSurvivor": 0.0,
+      "keySurvivalRate": 0.9545454545454546,
+      "shareKeywordMatched": 0.36363636363636365,
+      "shareEliminated": 0.022727272727272728,
+      "keywordMatchedSubset": {
+        "nScored": 16,
+        "nCorrect": 4,
+        "passRate": 0.25,
+        "chanceRate": 0.2552083333333333,
+        "ci95": [
+          0.0625,
+          0.5
+        ],
+        "binomialPGreater": 0.6135795890079767,
+        "clearsBar": false,
+        "inFamily": true
+      },
+      "holmReject05Family": false,
+      "bonferroniReject05Family": false
+    },
+    {
+      "authority": "eqao",
+      "claim": "g6",
+      "nScored": 51,
+      "nCorrect": 21,
+      "passRate": 0.4117647058823529,
+      "chanceRate": 0.2676470588235294,
+      "ci95": [
+        0.27450980392156865,
+        0.5294117647058824
+      ],
+      "binomialPGreater": 0.017968147136395368,
+      "clearsBar": true,
+      "inFamily": true,
+      "programId": "s2-elimination",
+      "channel": "s2-elimination",
+      "nSelected": 53,
+      "coverage": 0.9622641509433962,
+      "meanRemainingOptions": 3.7735849056603774,
+      "shareExactlyOneSurvivor": 0.018867924528301886,
+      "keySurvivalRate": 0.9056603773584906,
+      "shareKeywordMatched": 0.39622641509433965,
+      "shareEliminated": 0.018867924528301886,
+      "keywordMatchedSubset": {
+        "nScored": 19,
+        "nCorrect": 7,
+        "passRate": 0.3684210526315789,
+        "chanceRate": 0.2894736842105263,
+        "ci95": [
+          0.15789473684210525,
+          0.5789473684210527
+        ],
+        "binomialPGreater": 0.29765523363888663,
+        "clearsBar": false,
+        "inFamily": true
+      },
+      "holmReject05Family": false,
+      "bonferroniReject05Family": false
+    },
+    {
+      "authority": "eqao",
+      "claim": "g9",
+      "nScored": 51,
+      "nCorrect": 11,
+      "passRate": 0.21568627450980393,
+      "chanceRate": 0.25653594771241833,
+      "ci95": [
+        0.09803921568627451,
+        0.3333333333333333
+      ],
+      "binomialPGreater": 0.7938263545512706,
+      "clearsBar": false,
+      "inFamily": true,
+      "programId": "s2-elimination",
+      "channel": "s2-elimination",
+      "nSelected": 52,
+      "coverage": 0.9807692307692307,
+      "meanRemainingOptions": 3.8461538461538463,
+      "shareExactlyOneSurvivor": 0.0,
+      "keySurvivalRate": 0.8846153846153846,
+      "shareKeywordMatched": 0.4230769230769231,
+      "shareEliminated": 0.019230769230769232,
+      "keywordMatchedSubset": {
+        "nScored": 21,
+        "nCorrect": 7,
+        "passRate": 0.3333333333333333,
+        "chanceRate": 0.25396825396825395,
+        "ci95": [
+          0.14285714285714285,
+          0.5714285714285714
+        ],
+        "binomialPGreater": 0.27056638788503773,
+        "clearsBar": false,
+        "inFamily": true
+      },
+      "holmReject05Family": false,
+      "bonferroniReject05Family": false
+    },
+    {
+      "authority": "nyregents",
+      "claim": "algebra-i",
+      "nScored": 583,
+      "nCorrect": 151,
+      "passRate": 0.25900514579759865,
+      "chanceRate": 0.2567181246426529,
+      "ci95": [
+        0.22298456260720412,
+        0.2967409948542024
+      ],
+      "binomialPGreater": 0.4654779773130886,
+      "clearsBar": false,
+      "inFamily": true,
+      "programId": "s2-elimination",
+      "channel": "s2-elimination",
+      "nSelected": 598,
+      "coverage": 0.9749163879598662,
+      "meanRemainingOptions": 3.8612040133779266,
+      "shareExactlyOneSurvivor": 0.005016722408026756,
+      "keySurvivalRate": 0.9665551839464883,
+      "shareKeywordMatched": 0.20735785953177258,
+      "shareEliminated": 0.01839464882943144,
+      "keywordMatchedSubset": {
+        "nScored": 109,
+        "nCorrect": 30,
+        "passRate": 0.27522935779816515,
+        "chanceRate": 0.28593272171253825,
+        "ci95": [
+          0.1926605504587156,
+          0.3577981651376147
+        ],
+        "binomialPGreater": 0.6329487844543215,
+        "clearsBar": false,
+        "inFamily": true
+      },
+      "holmReject05Family": false,
+      "bonferroniReject05Family": false
+    },
+    {
+      "authority": "nyregents",
+      "claim": "algebra-ii",
+      "nScored": 413,
+      "nCorrect": 119,
+      "passRate": 0.288135593220339,
+      "chanceRate": 0.25585149313962874,
+      "ci95": [
+        0.2469733656174334,
+        0.32929782082324455
+      ],
+      "binomialPGreater": 0.07521915979312423,
+      "clearsBar": false,
+      "inFamily": true,
+      "programId": "s2-elimination",
+      "channel": "s2-elimination",
+      "nSelected": 442,
+      "coverage": 0.9343891402714932,
+      "meanRemainingOptions": 3.6968325791855206,
+      "shareExactlyOneSurvivor": 0.0022624434389140274,
+      "keySurvivalRate": 0.9298642533936652,
+      "shareKeywordMatched": 0.26244343891402716,
+      "shareEliminated": 0.024886877828054297,
+      "keywordMatchedSubset": {
+        "nScored": 87,
+        "nCorrect": 24,
+        "passRate": 0.27586206896551724,
+        "chanceRate": 0.2777777777777778,
+        "ci95": [
+          0.1839080459770115,
+          0.367816091954023
+        ],
+        "binomialPGreater": 0.5564513553363901,
+        "clearsBar": false,
+        "inFamily": true
+      },
+      "holmReject05Family": false,
+      "bonferroniReject05Family": false
+    },
+    {
+      "authority": "nyregents",
+      "claim": "geometry",
+      "nScored": 404,
+      "nCorrect": 124,
+      "passRate": 0.3069306930693069,
+      "chanceRate": 0.25412541254125415,
+      "ci95": [
+        0.2623762376237624,
+        0.35148514851485146
+      ],
+      "binomialPGreater": 0.009601202987915882,
+      "clearsBar": true,
+      "inFamily": true,
+      "programId": "s2-elimination",
+      "channel": "s2-elimination",
+      "nSelected": 408,
+      "coverage": 0.9901960784313726,
+      "meanRemainingOptions": 3.924019607843137,
+      "shareExactlyOneSurvivor": 0.0,
+      "keySurvivalRate": 0.9852941176470589,
+      "shareKeywordMatched": 0.4068627450980392,
+      "shareEliminated": 0.024509803921568627,
+      "keywordMatchedSubset": {
+        "nScored": 162,
+        "nCorrect": 57,
+        "passRate": 0.35185185185185186,
+        "chanceRate": 0.2602880658436214,
+        "ci95": [
+          0.2777777777777778,
+          0.42592592592592593
+        ],
+        "binomialPGreater": 0.00621440204108206,
+        "clearsBar": true,
+        "inFamily": true
+      },
+      "holmReject05Family": false,
+      "bonferroniReject05Family": false
+    },
+    {
+      "authority": "teks",
+      "claim": "alg1",
+      "nScored": 66,
+      "nCorrect": 9,
+      "passRate": 0.13636363636363635,
+      "chanceRate": 0.2689393939393939,
+      "ci95": [
+        0.06060606060606061,
+        0.22727272727272727
+      ],
+      "binomialPGreater": 0.9969170763504706,
+      "clearsBar": false,
+      "inFamily": true,
+      "programId": "s2-elimination",
+      "channel": "s2-elimination",
+      "nSelected": 67,
+      "coverage": 0.9850746268656716,
+      "meanRemainingOptions": 3.8358208955223883,
+      "shareExactlyOneSurvivor": 0.014925373134328358,
+      "keySurvivalRate": 0.9402985074626866,
+      "shareKeywordMatched": 0.16417910447761194,
+      "shareEliminated": 0.04477611940298507,
+      "keywordMatchedSubset": {
+        "nScored": 10,
+        "nCorrect": 1,
+        "passRate": 0.1,
+        "chanceRate": 0.375,
+        "ci95": [
+          0.0,
+          0.3
+        ],
+        "binomialPGreater": 0.9909050529822717,
+        "clearsBar": false,
+        "inFamily": true
+      },
+      "holmReject05Family": false,
+      "bonferroniReject05Family": false
+    },
+    {
+      "authority": "teks",
+      "claim": "g3",
+      "nScored": 45,
+      "nCorrect": 11,
+      "passRate": 0.24444444444444444,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.13333333333333333,
+        0.37777777777777777
+      ],
+      "binomialPGreater": 0.5910942187927467,
+      "clearsBar": false,
+      "inFamily": true,
+      "programId": "s2-elimination",
+      "channel": "s2-elimination",
+      "nSelected": 45,
+      "coverage": 1.0,
+      "meanRemainingOptions": 4.0,
+      "shareExactlyOneSurvivor": 0.0,
+      "keySurvivalRate": 1.0,
+      "shareKeywordMatched": 0.4888888888888889,
+      "shareEliminated": 0.0,
+      "keywordMatchedSubset": {
+        "nScored": 22,
+        "nCorrect": 5,
+        "passRate": 0.22727272727272727,
+        "chanceRate": 0.25,
+        "ci95": [
+          0.045454545454545456,
+          0.45454545454545453
+        ],
+        "binomialPGreater": 0.6765143599235985,
+        "clearsBar": false,
+        "inFamily": true
+      },
+      "holmReject05Family": false,
+      "bonferroniReject05Family": false
+    },
+    {
+      "authority": "teks",
+      "claim": "g4",
+      "nScored": 46,
+      "nCorrect": 13,
+      "passRate": 0.2826086956521739,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.13043478260869565,
+        0.41304347826086957
+      ],
+      "binomialPGreater": 0.3574864912328358,
+      "clearsBar": false,
+      "inFamily": true,
+      "programId": "s2-elimination",
+      "channel": "s2-elimination",
+      "nSelected": 48,
+      "coverage": 0.9583333333333334,
+      "meanRemainingOptions": 3.8333333333333335,
+      "shareExactlyOneSurvivor": 0.0,
+      "keySurvivalRate": 0.9583333333333334,
+      "shareKeywordMatched": 0.4166666666666667,
+      "shareEliminated": 0.0,
+      "keywordMatchedSubset": {
+        "nScored": 18,
+        "nCorrect": 7,
+        "passRate": 0.3888888888888889,
+        "chanceRate": 0.25,
+        "ci95": [
+          0.16666666666666666,
+          0.6111111111111112
+        ],
+        "binomialPGreater": 0.13898478297051023,
+        "clearsBar": false,
+        "inFamily": true
+      },
+      "holmReject05Family": false,
+      "bonferroniReject05Family": false
+    },
+    {
+      "authority": "teks",
+      "claim": "g5",
+      "nScored": 59,
+      "nCorrect": 22,
+      "passRate": 0.3728813559322034,
+      "chanceRate": 0.2796610169491525,
+      "ci95": [
+        0.2542372881355932,
+        0.4915254237288136
+      ],
+      "binomialPGreater": 0.07618500583233649,
+      "clearsBar": false,
+      "inFamily": true,
+      "programId": "s2-elimination",
+      "channel": "s2-elimination",
+      "nSelected": 60,
+      "coverage": 0.9833333333333333,
+      "meanRemainingOptions": 3.8,
+      "shareExactlyOneSurvivor": 0.03333333333333333,
+      "keySurvivalRate": 0.95,
+      "shareKeywordMatched": 0.45,
+      "shareEliminated": 0.05,
+      "keywordMatchedSubset": {
+        "nScored": 26,
+        "nCorrect": 7,
+        "passRate": 0.2692307692307692,
+        "chanceRate": 0.3173076923076923,
+        "ci95": [
+          0.11538461538461539,
+          0.46153846153846156
+        ],
+        "binomialPGreater": 0.7654776792990805,
+        "clearsBar": false,
+        "inFamily": true
+      },
+      "holmReject05Family": false,
+      "bonferroniReject05Family": false
+    },
+    {
+      "authority": "teks",
+      "claim": "g6",
+      "nScored": 63,
+      "nCorrect": 20,
+      "passRate": 0.31746031746031744,
+      "chanceRate": 0.26851851851851855,
+      "ci95": [
+        0.20634920634920634,
+        0.42857142857142855
+      ],
+      "binomialPGreater": 0.22834651627266622,
+      "clearsBar": false,
+      "inFamily": true,
+      "programId": "s2-elimination",
+      "channel": "s2-elimination",
+      "nSelected": 65,
+      "coverage": 0.9692307692307692,
+      "meanRemainingOptions": 3.769230769230769,
+      "shareExactlyOneSurvivor": 0.015384615384615385,
+      "keySurvivalRate": 0.9538461538461539,
+      "shareKeywordMatched": 0.5384615384615384,
+      "shareEliminated": 0.06153846153846154,
+      "keywordMatchedSubset": {
+        "nScored": 33,
+        "nCorrect": 8,
+        "passRate": 0.24242424242424243,
+        "chanceRate": 0.28535353535353536,
+        "ci95": [
+          0.12121212121212122,
+          0.3939393939393939
+        ],
+        "binomialPGreater": 0.7657876780311332,
+        "clearsBar": false,
+        "inFamily": true
+      },
+      "holmReject05Family": false,
+      "bonferroniReject05Family": false
+    },
+    {
+      "authority": "teks",
+      "claim": "g7",
+      "nScored": 44,
+      "nCorrect": 14,
+      "passRate": 0.3181818181818182,
+      "chanceRate": 0.2859848484848485,
+      "ci95": [
+        0.18181818181818182,
+        0.45454545454545453
+      ],
+      "binomialPGreater": 0.3718327582062363,
+      "clearsBar": false,
+      "inFamily": true,
+      "programId": "s2-elimination",
+      "channel": "s2-elimination",
+      "nSelected": 46,
+      "coverage": 0.9565217391304348,
+      "meanRemainingOptions": 3.608695652173913,
+      "shareExactlyOneSurvivor": 0.021739130434782608,
+      "keySurvivalRate": 0.9130434782608695,
+      "shareKeywordMatched": 0.5869565217391305,
+      "shareEliminated": 0.10869565217391304,
+      "keywordMatchedSubset": {
+        "nScored": 25,
+        "nCorrect": 4,
+        "passRate": 0.16,
+        "chanceRate": 0.3133333333333333,
+        "ci95": [
+          0.04,
+          0.32
+        ],
+        "binomialPGreater": 0.9756715978713936,
+        "clearsBar": false,
+        "inFamily": true
+      },
+      "holmReject05Family": false,
+      "bonferroniReject05Family": false
+    },
+    {
+      "authority": "teks",
+      "claim": "g8",
+      "nScored": 55,
+      "nCorrect": 14,
+      "passRate": 0.2545454545454545,
+      "chanceRate": 0.2984848484848485,
+      "ci95": [
+        0.14545454545454545,
+        0.36363636363636365
+      ],
+      "binomialPGreater": 0.8034526986418462,
+      "clearsBar": false,
+      "inFamily": true,
+      "programId": "s2-elimination",
+      "channel": "s2-elimination",
+      "nSelected": 57,
+      "coverage": 0.9649122807017544,
+      "meanRemainingOptions": 3.5789473684210527,
+      "shareExactlyOneSurvivor": 0.03508771929824561,
+      "keySurvivalRate": 0.8771929824561403,
+      "shareKeywordMatched": 0.3684210526315789,
+      "shareEliminated": 0.14035087719298245,
+      "keywordMatchedSubset": {
+        "nScored": 19,
+        "nCorrect": 7,
+        "passRate": 0.3684210526315789,
+        "chanceRate": 0.39035087719298245,
+        "ci95": [
+          0.15789473684210525,
+          0.5789473684210527
+        ],
+        "binomialPGreater": 0.6608762003015997,
+        "clearsBar": false,
+        "inFamily": true
+      },
+      "holmReject05Family": false,
+      "bonferroniReject05Family": false
+    },
+    {
+      "authority": "timss",
+      "claim": "applying",
+      "nScored": 52,
+      "nCorrect": 14,
+      "passRate": 0.2692307692307692,
+      "chanceRate": 0.25384615384615383,
+      "ci95": [
+        0.15384615384615385,
+        0.40384615384615385
+      ],
+      "binomialPGreater": 0.45161982563228636,
+      "clearsBar": false,
+      "inFamily": true,
+      "programId": "s2-elimination",
+      "channel": "s2-elimination",
+      "nSelected": 54,
+      "coverage": 0.9629629629629629,
+      "meanRemainingOptions": 3.8333333333333335,
+      "shareExactlyOneSurvivor": 0.0,
+      "keySurvivalRate": 0.9444444444444444,
+      "shareKeywordMatched": 0.3888888888888889,
+      "shareEliminated": 0.018518518518518517,
+      "keywordMatchedSubset": {
+        "nScored": 19,
+        "nCorrect": 5,
+        "passRate": 0.2631578947368421,
+        "chanceRate": 0.2631578947368421,
+        "ci95": [
+          0.05263157894736842,
+          0.47368421052631576
+        ],
+        "binomialPGreater": 0.5867668370718108,
+        "clearsBar": false,
+        "inFamily": true
+      },
+      "holmReject05Family": false,
+      "bonferroniReject05Family": false
+    },
+    {
+      "authority": "timss",
+      "claim": "knowing",
+      "nScored": 65,
+      "nCorrect": 21,
+      "passRate": 0.3230769230769231,
+      "chanceRate": 0.2712820512820513,
+      "ci95": [
+        0.2153846153846154,
+        0.4461538461538462
+      ],
+      "binomialPGreater": 0.2097373504980075,
+      "clearsBar": false,
+      "inFamily": true,
+      "programId": "s2-elimination",
+      "channel": "s2-elimination",
+      "nSelected": 65,
+      "coverage": 1.0,
+      "meanRemainingOptions": 3.8615384615384616,
+      "shareExactlyOneSurvivor": 0.0,
+      "keySurvivalRate": 0.9384615384615385,
+      "shareKeywordMatched": 0.12307692307692308,
+      "shareEliminated": 0.0,
+      "keywordMatchedSubset": {
+        "nScored": 8,
+        "nCorrect": 2,
+        "passRate": 0.25,
+        "chanceRate": 0.28125,
+        "ci95": [
+          0.0,
+          0.625
+        ],
+        "binomialPGreater": 0.7058162830717247,
+        "clearsBar": false,
+        "inFamily": false
+      },
+      "holmReject05Family": false,
+      "bonferroniReject05Family": false
+    },
+    {
+      "authority": "timss",
+      "claim": "reasoning",
+      "nScored": 66,
+      "nCorrect": 25,
+      "passRate": 0.3787878787878788,
+      "chanceRate": 0.26313131313131316,
+      "ci95": [
+        0.25757575757575757,
+        0.5
+      ],
+      "binomialPGreater": 0.02608338956792891,
+      "clearsBar": false,
+      "inFamily": true,
+      "programId": "s2-elimination",
+      "channel": "s2-elimination",
+      "nSelected": 68,
+      "coverage": 0.9705882352941176,
+      "meanRemainingOptions": 3.7794117647058822,
+      "shareExactlyOneSurvivor": 0.0,
+      "keySurvivalRate": 0.9411764705882353,
+      "shareKeywordMatched": 0.4852941176470588,
+      "shareEliminated": 0.029411764705882353,
+      "keywordMatchedSubset": {
+        "nScored": 31,
+        "nCorrect": 10,
+        "passRate": 0.3225806451612903,
+        "chanceRate": 0.2672043010752688,
+        "ci95": [
+          0.16129032258064516,
+          0.4838709677419355
+        ],
+        "binomialPGreater": 0.30260133872906947,
+        "clearsBar": false,
+        "inFamily": true
+      },
+      "holmReject05Family": false,
+      "bonferroniReject05Family": false
+    }
+  ],
+  "allRows": [
+    {
+      "authority": "acara",
+      "claim": "y7-numeracy",
+      "nScored": 16,
+      "nCorrect": 5,
+      "passRate": 0.3125,
+      "chanceRate": 0.2552083333333333,
+      "ci95": [
+        0.125,
+        0.5625
+      ],
+      "binomialPGreater": 0.388638652762111,
+      "clearsBar": false,
+      "inFamily": true,
+      "programId": "s2-elimination",
+      "channel": "s2-elimination",
+      "nSelected": 16,
+      "coverage": 1.0,
+      "meanRemainingOptions": 3.9375,
+      "shareExactlyOneSurvivor": 0.0,
+      "keySurvivalRate": 1.0,
+      "shareKeywordMatched": 0.375,
+      "shareEliminated": 0.0625,
+      "keywordMatchedSubset": {
+        "nScored": 6,
+        "nCorrect": 3,
+        "passRate": 0.5,
+        "chanceRate": 0.2638888888888889,
+        "ci95": [
+          0.16666666666666666,
+          0.8333333333333334
+        ],
+        "binomialPGreater": 0.1920011930828854,
+        "clearsBar": false,
+        "inFamily": false
+      },
+      "holmReject05Family": false,
+      "bonferroniReject05Family": false
+    },
+    {
+      "authority": "eqao",
+      "claim": "g3",
+      "nScored": 44,
+      "nCorrect": 10,
+      "passRate": 0.22727272727272727,
+      "chanceRate": 0.2537878787878788,
+      "ci95": [
+        0.11363636363636363,
+        0.36363636363636365
+      ],
+      "binomialPGreater": 0.7112697517149121,
+      "clearsBar": false,
+      "inFamily": true,
+      "programId": "s2-elimination",
+      "channel": "s2-elimination",
+      "nSelected": 44,
+      "coverage": 1.0,
+      "meanRemainingOptions": 3.9545454545454546,
+      "shareExactlyOneSurvivor": 0.0,
+      "keySurvivalRate": 0.9545454545454546,
+      "shareKeywordMatched": 0.36363636363636365,
+      "shareEliminated": 0.022727272727272728,
+      "keywordMatchedSubset": {
+        "nScored": 16,
+        "nCorrect": 4,
+        "passRate": 0.25,
+        "chanceRate": 0.2552083333333333,
+        "ci95": [
+          0.0625,
+          0.5
+        ],
+        "binomialPGreater": 0.6135795890079767,
+        "clearsBar": false,
+        "inFamily": true
+      },
+      "holmReject05Family": false,
+      "bonferroniReject05Family": false
+    },
+    {
+      "authority": "eqao",
+      "claim": "g6",
+      "nScored": 51,
+      "nCorrect": 21,
+      "passRate": 0.4117647058823529,
+      "chanceRate": 0.2676470588235294,
+      "ci95": [
+        0.27450980392156865,
+        0.5294117647058824
+      ],
+      "binomialPGreater": 0.017968147136395368,
+      "clearsBar": true,
+      "inFamily": true,
+      "programId": "s2-elimination",
+      "channel": "s2-elimination",
+      "nSelected": 53,
+      "coverage": 0.9622641509433962,
+      "meanRemainingOptions": 3.7735849056603774,
+      "shareExactlyOneSurvivor": 0.018867924528301886,
+      "keySurvivalRate": 0.9056603773584906,
+      "shareKeywordMatched": 0.39622641509433965,
+      "shareEliminated": 0.018867924528301886,
+      "keywordMatchedSubset": {
+        "nScored": 19,
+        "nCorrect": 7,
+        "passRate": 0.3684210526315789,
+        "chanceRate": 0.2894736842105263,
+        "ci95": [
+          0.15789473684210525,
+          0.5789473684210527
+        ],
+        "binomialPGreater": 0.29765523363888663,
+        "clearsBar": false,
+        "inFamily": true
+      },
+      "holmReject05Family": false,
+      "bonferroniReject05Family": false
+    },
+    {
+      "authority": "eqao",
+      "claim": "g9",
+      "nScored": 51,
+      "nCorrect": 11,
+      "passRate": 0.21568627450980393,
+      "chanceRate": 0.25653594771241833,
+      "ci95": [
+        0.09803921568627451,
+        0.3333333333333333
+      ],
+      "binomialPGreater": 0.7938263545512706,
+      "clearsBar": false,
+      "inFamily": true,
+      "programId": "s2-elimination",
+      "channel": "s2-elimination",
+      "nSelected": 52,
+      "coverage": 0.9807692307692307,
+      "meanRemainingOptions": 3.8461538461538463,
+      "shareExactlyOneSurvivor": 0.0,
+      "keySurvivalRate": 0.8846153846153846,
+      "shareKeywordMatched": 0.4230769230769231,
+      "shareEliminated": 0.019230769230769232,
+      "keywordMatchedSubset": {
+        "nScored": 21,
+        "nCorrect": 7,
+        "passRate": 0.3333333333333333,
+        "chanceRate": 0.25396825396825395,
+        "ci95": [
+          0.14285714285714285,
+          0.5714285714285714
+        ],
+        "binomialPGreater": 0.27056638788503773,
+        "clearsBar": false,
+        "inFamily": true
+      },
+      "holmReject05Family": false,
+      "bonferroniReject05Family": false
+    },
+    {
+      "authority": "nyregents",
+      "claim": "algebra-i",
+      "nScored": 583,
+      "nCorrect": 151,
+      "passRate": 0.25900514579759865,
+      "chanceRate": 0.2567181246426529,
+      "ci95": [
+        0.22298456260720412,
+        0.2967409948542024
+      ],
+      "binomialPGreater": 0.4654779773130886,
+      "clearsBar": false,
+      "inFamily": true,
+      "programId": "s2-elimination",
+      "channel": "s2-elimination",
+      "nSelected": 598,
+      "coverage": 0.9749163879598662,
+      "meanRemainingOptions": 3.8612040133779266,
+      "shareExactlyOneSurvivor": 0.005016722408026756,
+      "keySurvivalRate": 0.9665551839464883,
+      "shareKeywordMatched": 0.20735785953177258,
+      "shareEliminated": 0.01839464882943144,
+      "keywordMatchedSubset": {
+        "nScored": 109,
+        "nCorrect": 30,
+        "passRate": 0.27522935779816515,
+        "chanceRate": 0.28593272171253825,
+        "ci95": [
+          0.1926605504587156,
+          0.3577981651376147
+        ],
+        "binomialPGreater": 0.6329487844543215,
+        "clearsBar": false,
+        "inFamily": true
+      },
+      "holmReject05Family": false,
+      "bonferroniReject05Family": false
+    },
+    {
+      "authority": "nyregents",
+      "claim": "algebra-ii",
+      "nScored": 413,
+      "nCorrect": 119,
+      "passRate": 0.288135593220339,
+      "chanceRate": 0.25585149313962874,
+      "ci95": [
+        0.2469733656174334,
+        0.32929782082324455
+      ],
+      "binomialPGreater": 0.07521915979312423,
+      "clearsBar": false,
+      "inFamily": true,
+      "programId": "s2-elimination",
+      "channel": "s2-elimination",
+      "nSelected": 442,
+      "coverage": 0.9343891402714932,
+      "meanRemainingOptions": 3.6968325791855206,
+      "shareExactlyOneSurvivor": 0.0022624434389140274,
+      "keySurvivalRate": 0.9298642533936652,
+      "shareKeywordMatched": 0.26244343891402716,
+      "shareEliminated": 0.024886877828054297,
+      "keywordMatchedSubset": {
+        "nScored": 87,
+        "nCorrect": 24,
+        "passRate": 0.27586206896551724,
+        "chanceRate": 0.2777777777777778,
+        "ci95": [
+          0.1839080459770115,
+          0.367816091954023
+        ],
+        "binomialPGreater": 0.5564513553363901,
+        "clearsBar": false,
+        "inFamily": true
+      },
+      "holmReject05Family": false,
+      "bonferroniReject05Family": false
+    },
+    {
+      "authority": "nyregents",
+      "claim": "geometry",
+      "nScored": 404,
+      "nCorrect": 124,
+      "passRate": 0.3069306930693069,
+      "chanceRate": 0.25412541254125415,
+      "ci95": [
+        0.2623762376237624,
+        0.35148514851485146
+      ],
+      "binomialPGreater": 0.009601202987915882,
+      "clearsBar": true,
+      "inFamily": true,
+      "programId": "s2-elimination",
+      "channel": "s2-elimination",
+      "nSelected": 408,
+      "coverage": 0.9901960784313726,
+      "meanRemainingOptions": 3.924019607843137,
+      "shareExactlyOneSurvivor": 0.0,
+      "keySurvivalRate": 0.9852941176470589,
+      "shareKeywordMatched": 0.4068627450980392,
+      "shareEliminated": 0.024509803921568627,
+      "keywordMatchedSubset": {
+        "nScored": 162,
+        "nCorrect": 57,
+        "passRate": 0.35185185185185186,
+        "chanceRate": 0.2602880658436214,
+        "ci95": [
+          0.2777777777777778,
+          0.42592592592592593
+        ],
+        "binomialPGreater": 0.00621440204108206,
+        "clearsBar": true,
+        "inFamily": true
+      },
+      "holmReject05Family": false,
+      "bonferroniReject05Family": false
+    },
+    {
+      "authority": "teks",
+      "claim": "alg1",
+      "nScored": 66,
+      "nCorrect": 9,
+      "passRate": 0.13636363636363635,
+      "chanceRate": 0.2689393939393939,
+      "ci95": [
+        0.06060606060606061,
+        0.22727272727272727
+      ],
+      "binomialPGreater": 0.9969170763504706,
+      "clearsBar": false,
+      "inFamily": true,
+      "programId": "s2-elimination",
+      "channel": "s2-elimination",
+      "nSelected": 67,
+      "coverage": 0.9850746268656716,
+      "meanRemainingOptions": 3.8358208955223883,
+      "shareExactlyOneSurvivor": 0.014925373134328358,
+      "keySurvivalRate": 0.9402985074626866,
+      "shareKeywordMatched": 0.16417910447761194,
+      "shareEliminated": 0.04477611940298507,
+      "keywordMatchedSubset": {
+        "nScored": 10,
+        "nCorrect": 1,
+        "passRate": 0.1,
+        "chanceRate": 0.375,
+        "ci95": [
+          0.0,
+          0.3
+        ],
+        "binomialPGreater": 0.9909050529822717,
+        "clearsBar": false,
+        "inFamily": true
+      },
+      "holmReject05Family": false,
+      "bonferroniReject05Family": false
+    },
+    {
+      "authority": "teks",
+      "claim": "g3",
+      "nScored": 45,
+      "nCorrect": 11,
+      "passRate": 0.24444444444444444,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.13333333333333333,
+        0.37777777777777777
+      ],
+      "binomialPGreater": 0.5910942187927467,
+      "clearsBar": false,
+      "inFamily": true,
+      "programId": "s2-elimination",
+      "channel": "s2-elimination",
+      "nSelected": 45,
+      "coverage": 1.0,
+      "meanRemainingOptions": 4.0,
+      "shareExactlyOneSurvivor": 0.0,
+      "keySurvivalRate": 1.0,
+      "shareKeywordMatched": 0.4888888888888889,
+      "shareEliminated": 0.0,
+      "keywordMatchedSubset": {
+        "nScored": 22,
+        "nCorrect": 5,
+        "passRate": 0.22727272727272727,
+        "chanceRate": 0.25,
+        "ci95": [
+          0.045454545454545456,
+          0.45454545454545453
+        ],
+        "binomialPGreater": 0.6765143599235985,
+        "clearsBar": false,
+        "inFamily": true
+      },
+      "holmReject05Family": false,
+      "bonferroniReject05Family": false
+    },
+    {
+      "authority": "teks",
+      "claim": "g4",
+      "nScored": 46,
+      "nCorrect": 13,
+      "passRate": 0.2826086956521739,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.13043478260869565,
+        0.41304347826086957
+      ],
+      "binomialPGreater": 0.3574864912328358,
+      "clearsBar": false,
+      "inFamily": true,
+      "programId": "s2-elimination",
+      "channel": "s2-elimination",
+      "nSelected": 48,
+      "coverage": 0.9583333333333334,
+      "meanRemainingOptions": 3.8333333333333335,
+      "shareExactlyOneSurvivor": 0.0,
+      "keySurvivalRate": 0.9583333333333334,
+      "shareKeywordMatched": 0.4166666666666667,
+      "shareEliminated": 0.0,
+      "keywordMatchedSubset": {
+        "nScored": 18,
+        "nCorrect": 7,
+        "passRate": 0.3888888888888889,
+        "chanceRate": 0.25,
+        "ci95": [
+          0.16666666666666666,
+          0.6111111111111112
+        ],
+        "binomialPGreater": 0.13898478297051023,
+        "clearsBar": false,
+        "inFamily": true
+      },
+      "holmReject05Family": false,
+      "bonferroniReject05Family": false
+    },
+    {
+      "authority": "teks",
+      "claim": "g5",
+      "nScored": 59,
+      "nCorrect": 22,
+      "passRate": 0.3728813559322034,
+      "chanceRate": 0.2796610169491525,
+      "ci95": [
+        0.2542372881355932,
+        0.4915254237288136
+      ],
+      "binomialPGreater": 0.07618500583233649,
+      "clearsBar": false,
+      "inFamily": true,
+      "programId": "s2-elimination",
+      "channel": "s2-elimination",
+      "nSelected": 60,
+      "coverage": 0.9833333333333333,
+      "meanRemainingOptions": 3.8,
+      "shareExactlyOneSurvivor": 0.03333333333333333,
+      "keySurvivalRate": 0.95,
+      "shareKeywordMatched": 0.45,
+      "shareEliminated": 0.05,
+      "keywordMatchedSubset": {
+        "nScored": 26,
+        "nCorrect": 7,
+        "passRate": 0.2692307692307692,
+        "chanceRate": 0.3173076923076923,
+        "ci95": [
+          0.11538461538461539,
+          0.46153846153846156
+        ],
+        "binomialPGreater": 0.7654776792990805,
+        "clearsBar": false,
+        "inFamily": true
+      },
+      "holmReject05Family": false,
+      "bonferroniReject05Family": false
+    },
+    {
+      "authority": "teks",
+      "claim": "g6",
+      "nScored": 63,
+      "nCorrect": 20,
+      "passRate": 0.31746031746031744,
+      "chanceRate": 0.26851851851851855,
+      "ci95": [
+        0.20634920634920634,
+        0.42857142857142855
+      ],
+      "binomialPGreater": 0.22834651627266622,
+      "clearsBar": false,
+      "inFamily": true,
+      "programId": "s2-elimination",
+      "channel": "s2-elimination",
+      "nSelected": 65,
+      "coverage": 0.9692307692307692,
+      "meanRemainingOptions": 3.769230769230769,
+      "shareExactlyOneSurvivor": 0.015384615384615385,
+      "keySurvivalRate": 0.9538461538461539,
+      "shareKeywordMatched": 0.5384615384615384,
+      "shareEliminated": 0.06153846153846154,
+      "keywordMatchedSubset": {
+        "nScored": 33,
+        "nCorrect": 8,
+        "passRate": 0.24242424242424243,
+        "chanceRate": 0.28535353535353536,
+        "ci95": [
+          0.12121212121212122,
+          0.3939393939393939
+        ],
+        "binomialPGreater": 0.7657876780311332,
+        "clearsBar": false,
+        "inFamily": true
+      },
+      "holmReject05Family": false,
+      "bonferroniReject05Family": false
+    },
+    {
+      "authority": "teks",
+      "claim": "g7",
+      "nScored": 44,
+      "nCorrect": 14,
+      "passRate": 0.3181818181818182,
+      "chanceRate": 0.2859848484848485,
+      "ci95": [
+        0.18181818181818182,
+        0.45454545454545453
+      ],
+      "binomialPGreater": 0.3718327582062363,
+      "clearsBar": false,
+      "inFamily": true,
+      "programId": "s2-elimination",
+      "channel": "s2-elimination",
+      "nSelected": 46,
+      "coverage": 0.9565217391304348,
+      "meanRemainingOptions": 3.608695652173913,
+      "shareExactlyOneSurvivor": 0.021739130434782608,
+      "keySurvivalRate": 0.9130434782608695,
+      "shareKeywordMatched": 0.5869565217391305,
+      "shareEliminated": 0.10869565217391304,
+      "keywordMatchedSubset": {
+        "nScored": 25,
+        "nCorrect": 4,
+        "passRate": 0.16,
+        "chanceRate": 0.3133333333333333,
+        "ci95": [
+          0.04,
+          0.32
+        ],
+        "binomialPGreater": 0.9756715978713936,
+        "clearsBar": false,
+        "inFamily": true
+      },
+      "holmReject05Family": false,
+      "bonferroniReject05Family": false
+    },
+    {
+      "authority": "teks",
+      "claim": "g8",
+      "nScored": 55,
+      "nCorrect": 14,
+      "passRate": 0.2545454545454545,
+      "chanceRate": 0.2984848484848485,
+      "ci95": [
+        0.14545454545454545,
+        0.36363636363636365
+      ],
+      "binomialPGreater": 0.8034526986418462,
+      "clearsBar": false,
+      "inFamily": true,
+      "programId": "s2-elimination",
+      "channel": "s2-elimination",
+      "nSelected": 57,
+      "coverage": 0.9649122807017544,
+      "meanRemainingOptions": 3.5789473684210527,
+      "shareExactlyOneSurvivor": 0.03508771929824561,
+      "keySurvivalRate": 0.8771929824561403,
+      "shareKeywordMatched": 0.3684210526315789,
+      "shareEliminated": 0.14035087719298245,
+      "keywordMatchedSubset": {
+        "nScored": 19,
+        "nCorrect": 7,
+        "passRate": 0.3684210526315789,
+        "chanceRate": 0.39035087719298245,
+        "ci95": [
+          0.15789473684210525,
+          0.5789473684210527
+        ],
+        "binomialPGreater": 0.6608762003015997,
+        "clearsBar": false,
+        "inFamily": true
+      },
+      "holmReject05Family": false,
+      "bonferroniReject05Family": false
+    },
+    {
+      "authority": "timss",
+      "claim": "applying",
+      "nScored": 52,
+      "nCorrect": 14,
+      "passRate": 0.2692307692307692,
+      "chanceRate": 0.25384615384615383,
+      "ci95": [
+        0.15384615384615385,
+        0.40384615384615385
+      ],
+      "binomialPGreater": 0.45161982563228636,
+      "clearsBar": false,
+      "inFamily": true,
+      "programId": "s2-elimination",
+      "channel": "s2-elimination",
+      "nSelected": 54,
+      "coverage": 0.9629629629629629,
+      "meanRemainingOptions": 3.8333333333333335,
+      "shareExactlyOneSurvivor": 0.0,
+      "keySurvivalRate": 0.9444444444444444,
+      "shareKeywordMatched": 0.3888888888888889,
+      "shareEliminated": 0.018518518518518517,
+      "keywordMatchedSubset": {
+        "nScored": 19,
+        "nCorrect": 5,
+        "passRate": 0.2631578947368421,
+        "chanceRate": 0.2631578947368421,
+        "ci95": [
+          0.05263157894736842,
+          0.47368421052631576
+        ],
+        "binomialPGreater": 0.5867668370718108,
+        "clearsBar": false,
+        "inFamily": true
+      },
+      "holmReject05Family": false,
+      "bonferroniReject05Family": false
+    },
+    {
+      "authority": "timss",
+      "claim": "knowing",
+      "nScored": 65,
+      "nCorrect": 21,
+      "passRate": 0.3230769230769231,
+      "chanceRate": 0.2712820512820513,
+      "ci95": [
+        0.2153846153846154,
+        0.4461538461538462
+      ],
+      "binomialPGreater": 0.2097373504980075,
+      "clearsBar": false,
+      "inFamily": true,
+      "programId": "s2-elimination",
+      "channel": "s2-elimination",
+      "nSelected": 65,
+      "coverage": 1.0,
+      "meanRemainingOptions": 3.8615384615384616,
+      "shareExactlyOneSurvivor": 0.0,
+      "keySurvivalRate": 0.9384615384615385,
+      "shareKeywordMatched": 0.12307692307692308,
+      "shareEliminated": 0.0,
+      "keywordMatchedSubset": {
+        "nScored": 8,
+        "nCorrect": 2,
+        "passRate": 0.25,
+        "chanceRate": 0.28125,
+        "ci95": [
+          0.0,
+          0.625
+        ],
+        "binomialPGreater": 0.7058162830717247,
+        "clearsBar": false,
+        "inFamily": false
+      },
+      "holmReject05Family": false,
+      "bonferroniReject05Family": false
+    },
+    {
+      "authority": "timss",
+      "claim": "reasoning",
+      "nScored": 66,
+      "nCorrect": 25,
+      "passRate": 0.3787878787878788,
+      "chanceRate": 0.26313131313131316,
+      "ci95": [
+        0.25757575757575757,
+        0.5
+      ],
+      "binomialPGreater": 0.02608338956792891,
+      "clearsBar": false,
+      "inFamily": true,
+      "programId": "s2-elimination",
+      "channel": "s2-elimination",
+      "nSelected": 68,
+      "coverage": 0.9705882352941176,
+      "meanRemainingOptions": 3.7794117647058822,
+      "shareExactlyOneSurvivor": 0.0,
+      "keySurvivalRate": 0.9411764705882353,
+      "shareKeywordMatched": 0.4852941176470588,
+      "shareEliminated": 0.029411764705882353,
+      "keywordMatchedSubset": {
+        "nScored": 31,
+        "nCorrect": 10,
+        "passRate": 0.3225806451612903,
+        "chanceRate": 0.2672043010752688,
+        "ci95": [
+          0.16129032258064516,
+          0.4838709677419355
+        ],
+        "binomialPGreater": 0.30260133872906947,
+        "clearsBar": false,
+        "inFamily": true
+      },
+      "holmReject05Family": false,
+      "bonferroniReject05Family": false
+    }
+  ]
+}
