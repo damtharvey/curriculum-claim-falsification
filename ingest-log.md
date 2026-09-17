@@ -1,0 +1,3273 @@
+# Ingest log
+
+Every attempted URL and outcome. No deposits. Items not invented.
+
+Started 2026-09-16. Previous CUDA/easyocr install killed: no NVIDIA driver, OCR skipped. Light venv: pdfplumber, pymupdf, huggingface_hub, datasets, pandas.
+
+# download_public_pdfs.py corpus=staar
+
+## STAAR
+- ok https://tea.texas.gov/data-reports/staar/staar-released-test-questions -> tea-staar.html (496370 bytes)
+- FAIL https://tea.texas.gov/student-assessment/testing/staar/staar-released-test-questions :: curl: (22) The requested URL returned error: 404
+
+# download_public_pdfs.py corpus=regents
+
+## NY Regents
+- ok https://www.nysedregents.org/algebraone/ -> regents-alg1.html (76969 bytes)
+- ok https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/testing/staar/staar-released-test-questions -> aw_tea-staar-old.html (298021 bytes)
+
+# download_public_pdfs.py corpus=naplan
+
+## NAPLAN
+- ok https://www.nysedregents.org/algebraone/826/algone-82026-exam.pdf -> algone-82026-exam.pdf (184592 bytes)
+- ok https://www.nysedregents.org/algebraone/826/algone-82026-examlt.pdf -> algone-82026-examlt.pdf (277554 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2021-staar-alg-1-rationales-tagged.pdf -> 2021-staar-alg-1-rationales-tagged.pdf (820746 bytes)
+- ok https://www.nysedregents.org/algebraone/826/algone-82026-sk.pdf -> algone-82026-sk.pdf (142333 bytes)
+- ok https://www.nysedregents.org/algebraone/826/algone-82026-sk.xlsx -> algone-82026-sk.xlsx (12896 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2021-staar-algebra-i-test-tagged.pdf -> 2021-staar-algebra-i-test-tagged.pdf (1548077 bytes)
+- ok https://www.nysedregents.org/algebraone/826/algone-82026-rg.pdf -> algone-82026-rg.pdf (186710 bytes)
+
+# download_public_pdfs.py corpus=timss
+
+## TIMSS
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2021-staar-gr3-mathematics-test-tagged.pdf -> 2021-staar-gr3-mathematics-test-tagged.pdf (1743601 bytes)
+- ok https://www.nysedregents.org/algebraone/826/algone-82026-mrs.pdf -> algone-82026-mrs.pdf (1330091 bytes)
+- ok https://www.acara.edu.au/assessment/naplan/naplan-2012-2016-test-papers -> naplan-2012-2016.html (79719 bytes)
+- ok https://nces.ed.gov/timss/released-questions.asp -> timss-nces.html (19145 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2021-staar-gr4-mathematics-test.pdf -> 2021-staar-gr4-mathematics-test.pdf (571616 bytes)
+- ok https://www.nysedregents.org/algebraone/826/algone-82026-cc.pdf -> algone-82026-cc.pdf (116914 bytes)
+
+# download_public_pdfs.py corpus=nysed
+
+## NYSED 3-8
+- FAIL https://www.nysed.gov/state-assessment/past-grades-3-8-tests :: curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/
+- ok https://www.nysedregents.org/algebraone/826/algone-82026-cc.xlsx -> algone-82026-cc.xlsx (13947 bytes)
+- ok https://timss.bc.edu/timss1995i/Items.html -> timss-1995.html (9938 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2021-staar-gr5-mathematics-test-tagged.pdf -> 2021-staar-gr5-mathematics-test-tagged.pdf (284156 bytes)
+- ok https://www.acara.edu.au/assessment/naplan/naplan-2008-2011-test-papers -> naplan-2008-2011.html (59726 bytes)
+- ok https://www.nysedregents.org/algebraone/626/algone-62026-exam.pdf -> algone-62026-exam.pdf (412281 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2021-staar-gr6-mathematics-test-tagged.pdf -> 2021-staar-gr6-mathematics-test-tagged.pdf (625969 bytes)
+
+# download_public_pdfs.py corpus=pisa
+
+## PISA
+- ok https://web.archive.org/web/2020/https://www.nysed.gov/state-assessment/past-grades-3-8-tests -> aw_nysed-38.html (57783 bytes)
+- FAIL https://www.oecd.org/pisa/test/ :: curl: (22) The requested URL returned error: 403
+- FAIL https://www.nysedregents.org/elementary/ :: curl: (22) The requested URL returned error: 404
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2021-staar-gr7-mathmematics-test-tagged.pdf -> 2021-staar-gr7-mathmematics-test-tagged.pdf (404271 bytes)
+- ok https://www.nysedregents.org/algebraone/626/algone-62026-examlt.pdf -> algone-62026-examlt.pdf (630147 bytes)
+- FAIL https://web.archive.org/web/2020/https://www.nysedregents.org/elementary/ :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/algebraone/626/algone-62026-sk.pdf -> algone-62026-sk.pdf (136482 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2021-staar-gr8-mathematics-test-tagged.pdf -> 2021-staar-gr8-mathematics-test-tagged.pdf (708897 bytes)
+- ok https://web.archive.org/web/2020/https://www.oecd.org/pisa/test/ -> aw_pisa-oecd.html (38456 bytes)
+- ok https://www.nysedregents.org/algebraone/626/algone-62026-sk.xlsx -> algone-62026-sk.xlsx (12839 bytes)
+- FAIL https://www.oecd.org/pisa/test/ :: curl: (22) The requested URL returned error: 403
+- ok https://web.archive.org/web/2020/https://www.oecd.org/pisa/test/ -> test.bin (38456 bytes)
+- ok https://www.nysedregents.org/ei/math/2015/english/2015-released-items-math-g3.pdf -> 2015-released-items-math-g3.pdf (1869279 bytes)
+- exists https://www.nysedregents.org/elementary/math/2015/2015-released-items-math-g3.pdf -> 2015-released-items-math-g3.pdf (1869279 bytes)
+- exists https://www.nysed.gov/sites/default/files/programs/state-assessment/2015-released-items-math-g3.pdf -> 2015-released-items-math-g3.pdf (1869279 bytes)
+- ok https://www.nysedregents.org/algebraone/626/algone-62026-rg.pdf -> algone-62026-rg.pdf (226082 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2021-staar-spanish-gr3-mathematics-test.pdf -> 2021-staar-spanish-gr3-mathematics-test.pdf (1530927 bytes)
+- FAIL https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-3-2015.pdf :: curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/
+- ok https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/e5-naplan-2016-final-test-numeracy-year-3.pdf?sfvrsn=2 -> e5-naplan-2016-final-test-numeracy-year-3.pdf (2478671 bytes)
+- FAIL https://web.archive.org/web/2020/https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-3-2015.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.oecd.org/content/dam/oecd/en/about/programmes/edu/pisa/pisa-test/PISA%202012%20items%20for%20release_ENGLISH.pdf -> PISA_202012_20items_20for_20release_ENGLISH.pdf (1323395 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2021-staar-spanish-gr4-mathematics-test.pdf -> 2021-staar-spanish-gr4-mathematics-test.pdf (689351 bytes)
+- FAIL https://www.oecd.org/pisa/38709418.pdf :: curl: (22) The requested URL returned error: 403
+- ok https://www.nysedregents.org/algebraone/626/algone-62026-mrs.pdf -> algone-62026-mrs.pdf (1891531 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2021-staar-spanish-gr5-mathematics-test.pdf -> 2021-staar-spanish-gr5-mathematics-test.pdf (571351 bytes)
+- ok https://www.nysedregents.org/ei/math/2015/english/2015-released-items-math-g4.pdf -> 2015-released-items-math-g4.pdf (1600178 bytes)
+- exists https://www.nysedregents.org/elementary/math/2015/2015-released-items-math-g4.pdf -> 2015-released-items-math-g4.pdf (1600178 bytes)
+- exists https://www.nysed.gov/sites/default/files/programs/state-assessment/2015-released-items-math-g4.pdf -> 2015-released-items-math-g4.pdf (1600178 bytes)
+- ok https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2016-yr-3-paper-test-answers.pdf?sfvrsn=2 -> naplan-2016-yr-3-paper-test-answers.pdf (150926 bytes)
+- FAIL https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-4-2015.pdf :: curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/
+- ok https://www.nysedregents.org/algebraone/626/algone-62026-cc.pdf -> algone-62026-cc.pdf (113963 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2021-staar-spanish-grade-3-math-rationales.pdf -> 2021-staar-spanish-grade-3-math-rationales.pdf (800281 bytes)
+- FAIL https://web.archive.org/web/2020/https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-4-2015.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/algebraone/626/algone-62026-cc.xlsx -> algone-62026-cc.xlsx (15376 bytes)
+- ok https://web.archive.org/web/2020/https://www.oecd.org/pisa/38709418.pdf -> 38709418.pdf (1380146 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2021-staar-spanish-grade-4-math-rationales.pdf -> 2021-staar-spanish-grade-4-math-rationales.pdf (914603 bytes)
+- ok https://www.nysedregents.org/algebraone/126/algone-12026-exam.pdf -> algone-12026-exam.pdf (530354 bytes)
+- FAIL https://www.oecd.org/pisa/39744146.pdf :: curl: (22) The requested URL returned error: 403
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2021-staar-spanish-grade-5-math-rationales.pdf -> 2021-staar-spanish-grade-5-math-rationales.pdf (908260 bytes)
+- ok https://www.nysedregents.org/algebraone/126/algone-12026-exam-lt.pdf -> algone-12026-exam-lt.pdf (650518 bytes)
+- ok https://www.nysedregents.org/ei/math/2015/english/2015-released-items-math-g5.pdf -> 2015-released-items-math-g5.pdf (1543909 bytes)
+- exists https://www.nysedregents.org/elementary/math/2015/2015-released-items-math-g5.pdf -> 2015-released-items-math-g5.pdf (1543909 bytes)
+- exists https://www.nysed.gov/sites/default/files/programs/state-assessment/2015-released-items-math-g5.pdf -> 2015-released-items-math-g5.pdf (1543909 bytes)
+- FAIL https://web.archive.org/web/2020/https://www.oecd.org/pisa/39744146.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-5-2015.pdf :: curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/
+- ok https://www.nysedregents.org/algebraone/126/algone-12026-sk.pdf -> algone-12026-sk.pdf (130863 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2022-staar-may-algebra-i-rationales.pdf -> 2022-staar-may-algebra-i-rationales.pdf (547751 bytes)
+- ok https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/e5-naplan-2016-final-test-numeracy-year-5.pdf?sfvrsn=2 -> e5-naplan-2016-final-test-numeracy-year-5.pdf (2288863 bytes)
+- ok https://www.nysedregents.org/algebraone/126/algone-12026-sk.xlsx -> algone-12026-sk.xlsx (12867 bytes)
+- FAIL https://web.archive.org/web/2020/https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-5-2015.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2022-staar-may-algebra-i-releasedtest.pdf -> 2022-staar-may-algebra-i-releasedtest.pdf (586921 bytes)
+- ok https://www.nysedregents.org/algebraone/126/algone-12026-rg.pdf -> algone-12026-rg.pdf (241939 bytes)
+- FAIL https://www.oecd.org/content/dam/oecd/en/publications/reports/2009/07/take-the-test_g1ghc6d2/9789264050815-en.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2022-staar-may-algebra-i-studentexpectations.xlsx -> 2022-staar-may-algebra-i-studentexpectations.xlsx (13270 bytes)
+- FAIL https://web.archive.org/web/2020/https://www.oecd.org/content/dam/oecd/en/publications/reports/2009/07/take-the-test_g1ghc6d2/9789264050815-en.pdf :: curl: (22) The requested URL returned error: 404
+- controls openbookqa n=5957
+- ok https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2016-yr-5-paper-test-answers.pdf -> naplan-2016-yr-5-paper-test-answers.pdf (148997 bytes)
+- ok https://www.nysedregents.org/ei/math/2015/english/2015-released-items-math-g6.pdf -> 2015-released-items-math-g6.pdf (1715197 bytes)
+- exists https://www.nysedregents.org/elementary/math/2015/2015-released-items-math-g6.pdf -> 2015-released-items-math-g6.pdf (1715197 bytes)
+- exists https://www.nysed.gov/sites/default/files/programs/state-assessment/2015-released-items-math-g6.pdf -> 2015-released-items-math-g6.pdf (1715197 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2022-staar-may-grade-3-math-rationales.pdf -> 2022-staar-may-grade-3-math-rationales.pdf (420131 bytes)
+- FAIL https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-6-2015.pdf :: curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/
+- FAIL https://web.archive.org/web/2020/https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-6-2015.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2022-staar-may-grade-3-math-releasedtest.pdf -> 2022-staar-may-grade-3-math-releasedtest.pdf (1300679 bytes)
+- ok https://www.nysedregents.org/algebraone/126/algone-12026-mrs.pdf -> algone-12026-mrs.pdf (1932198 bytes)
+- FAIL https://www.oecd.org/pisa/pisaproducts/Take%20the%20test%20e%20book.pdf :: curl: (22) The requested URL returned error: 403
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2022-staar-may-grade-4-math-rationales.pdf -> 2022-staar-may-grade-4-math-rationales.pdf (328076 bytes)
+- ok https://www.nysedregents.org/ei/math/2015/english/2015-released-items-math-g7.pdf -> 2015-released-items-math-g7.pdf (1540076 bytes)
+- exists https://www.nysedregents.org/elementary/math/2015/2015-released-items-math-g7.pdf -> 2015-released-items-math-g7.pdf (1540076 bytes)
+- exists https://www.nysed.gov/sites/default/files/programs/state-assessment/2015-released-items-math-g7.pdf -> 2015-released-items-math-g7.pdf (1540076 bytes)
+- FAIL https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-7-2015.pdf :: curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/
+- ok https://www.nysedregents.org/algebraone/126/algone-12026-cc.pdf -> algone-12026-cc.pdf (111149 bytes)
+- FAIL https://web.archive.org/web/2020/https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-7-2015.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/algebraone/126/algone-12026-cc.xlsx -> algone-12026-cc.xlsx (13878 bytes)
+- ok https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/e5-naplan-2016-final-test-numeracy-year-7-(calc).pdf?sfvrsn=2 -> e5-naplan-2016-final-test-numeracy-year-7-_calc_.pdf (1244451 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2022-staar-may-grade-4-math-releasedtest.pdf -> 2022-staar-may-grade-4-math-releasedtest.pdf (587329 bytes)
+- ok https://www.nysedregents.org/algebraone/825/algone-82025-exam.pdf -> algone-82025-exam.pdf (486738 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2022-staar-may-grade-5-math-rationales.pdf -> 2022-staar-may-grade-5-math-rationales.pdf (354557 bytes)
+- ok https://www.nysedregents.org/ei/math/2015/english/2015-released-items-math-g8.pdf -> 2015-released-items-math-g8.pdf (1882881 bytes)
+- exists https://www.nysedregents.org/elementary/math/2015/2015-released-items-math-g8.pdf -> 2015-released-items-math-g8.pdf (1882881 bytes)
+- exists https://www.nysed.gov/sites/default/files/programs/state-assessment/2015-released-items-math-g8.pdf -> 2015-released-items-math-g8.pdf (1882881 bytes)
+- FAIL https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-8-2015.pdf :: curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/
+- ok https://www.nysedregents.org/algebraone/825/algone-82025-examlt.pdf -> algone-82025-examlt.pdf (536685 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2022-staar-may-grade-5-math-releasedtest.pdf -> 2022-staar-may-grade-5-math-releasedtest.pdf (583287 bytes)
+- FAIL https://web.archive.org/web/2020/https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-8-2015.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/algebraone/825/algone-82025-sk.pdf -> algone-82025-sk.pdf (129188 bytes)
+- ok https://www.nysedregents.org/algebraone/825/algone-82025-sk.xlsx -> algone-82025-sk.xlsx (12894 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2022-staar-may-grade-6-math-rationales.pdf -> 2022-staar-may-grade-6-math-rationales.pdf (496216 bytes)
+- ok https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/e6-naplan-2016-final-test-numeracy-year-7-(non-calc).pdf?sfvrsn=2 -> e6-naplan-2016-final-test-numeracy-year-7-_non-calc_.pdf (1253646 bytes)
+- ok https://www.nysedregents.org/algebraone/825/algone-82025-rg.pdf -> algone-82025-rg.pdf (236072 bytes)
+- ok https://www.nysedregents.org/ei/math/2016/english/2016-released-items-math-g3.pdf -> 2016-released-items-math-g3.pdf (1651668 bytes)
+- exists https://www.nysedregents.org/elementary/math/2016/2016-released-items-math-g3.pdf -> 2016-released-items-math-g3.pdf (1651668 bytes)
+- exists https://www.nysed.gov/sites/default/files/programs/state-assessment/2016-released-items-math-g3.pdf -> 2016-released-items-math-g3.pdf (1651668 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2022-staar-may-grade-7-math-rationales.pdf -> 2022-staar-may-grade-7-math-rationales.pdf (569725 bytes)
+- FAIL https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-3-2016.pdf :: curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/
+- FAIL https://web.archive.org/web/2020/https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-3-2016.pdf :: curl: (22) The requested URL returned error: 404
+- controls commonsenseqa n=10962
+- ok https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2016-yr-7-paper-test-answers.pdf?sfvrsn=2 -> naplan-2016-yr-7-paper-test-answers.pdf (153033 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2022-staar-may-grade-7-math-releasedtest.pdf -> 2022-staar-may-grade-7-math-releasedtest.pdf (626520 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2022-staar-may-grade-7-math-studentexpectations.xlsx -> 2022-staar-may-grade-7-math-studentexpectations.xlsx (12766 bytes)
+- FAIL controls swag :: Invalid HF URI 'hf://datasets/swag@dc48148372b3853a9c7bae7bb06c161b46d8364a/.huggingface.yaml'. Repository id must be 'namespace/name', got 'swag'.
+- ok https://www.nysedregents.org/ei/math/2016/english/2016-released-items-math-g4.pdf -> 2016-released-items-math-g4.pdf (1591865 bytes)
+- exists https://www.nysedregents.org/elementary/math/2016/2016-released-items-math-g4.pdf -> 2016-released-items-math-g4.pdf (1591865 bytes)
+- exists https://www.nysed.gov/sites/default/files/programs/state-assessment/2016-released-items-math-g4.pdf -> 2016-released-items-math-g4.pdf (1591865 bytes)
+- FAIL https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-4-2016.pdf :: curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/
+- ok https://web.archive.org/web/2020/https://www.oecd.org/pisa/pisaproducts/Take%20the%20test%20e%20book.pdf -> Take_20the_20test_20e_20book.pdf (5995896 bytes)
+- FAIL https://web.archive.org/web/2020/https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-4-2016.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/algebraone/825/algone-82025-mrs.pdf -> algone-82025-mrs.pdf (1983489 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2022-staar-may-grade-8-math-rationales.pdf -> 2022-staar-may-grade-8-math-rationales.pdf (495614 bytes)
+- ok https://www.nysedregents.org/algebraone/825/algone-82025-cc.pdf -> algone-82025-cc.pdf (109638 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2022-staar-may-grade-8-math-releasedtest.pdf -> 2022-staar-may-grade-8-math-releasedtest.pdf (823021 bytes)
+- ok https://www.nysedregents.org/algebraone/825/algone-82025-cc.xlsx -> algone-82025-cc.xlsx (21362 bytes)
+- FAIL https://www.oecd.org/pisa/pisaproducts/pisa2003/PISA_2003_Released_Math_Items.pdf :: curl: (22) The requested URL returned error: 403
+- ok https://www.nysedregents.org/ei/math/2016/english/2016-released-items-math-g5.pdf -> 2016-released-items-math-g5.pdf (1657797 bytes)
+- exists https://www.nysedregents.org/elementary/math/2016/2016-released-items-math-g5.pdf -> 2016-released-items-math-g5.pdf (1657797 bytes)
+- exists https://www.nysed.gov/sites/default/files/programs/state-assessment/2016-released-items-math-g5.pdf -> 2016-released-items-math-g5.pdf (1657797 bytes)
+- FAIL https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-5-2016.pdf :: curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/
+- ok https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/30-naplan-2016-final-test-numeracy-year-9-calc.pdf?sfvrsn=2 -> 30-naplan-2016-final-test-numeracy-year-9-calc.pdf (1558289 bytes)
+- FAIL https://web.archive.org/web/2020/https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-5-2016.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2022-staar-may-spanish-grade-3-math-rationales.pdf -> 2022-staar-may-spanish-grade-3-math-rationales.pdf (399524 bytes)
+- ok https://www.nysedregents.org/algebraone/625/algone-62025-exam.pdf -> algone-62025-exam.pdf (457903 bytes)
+- FAIL https://web.archive.org/web/2020/https://www.oecd.org/pisa/pisaproducts/pisa2003/PISA_2003_Released_Math_Items.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2022-staar-may-spanish-grade-3-math-releasedtest.pdf -> 2022-staar-may-spanish-grade-3-math-releasedtest.pdf (507048 bytes)
+- ok https://www.nysedregents.org/algebraone/625/algone-62025-examlt.pdf -> algone-62025-examlt.pdf (494869 bytes)
+- ok https://www.nysedregents.org/ei/math/2016/english/2016-released-items-math-g6.pdf -> 2016-released-items-math-g6.pdf (1992590 bytes)
+- exists https://www.nysedregents.org/elementary/math/2016/2016-released-items-math-g6.pdf -> 2016-released-items-math-g6.pdf (1992590 bytes)
+- exists https://www.nysed.gov/sites/default/files/programs/state-assessment/2016-released-items-math-g6.pdf -> 2016-released-items-math-g6.pdf (1992590 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2022-staar-may-spanish-grade-3-math-studentexpectations.xlsx -> 2022-staar-may-spanish-grade-3-math-studentexpectations.xlsx (12940 bytes)
+- FAIL https://www.oecd.org/pisa/test/PISA2012_released_MAT_items.pdf :: curl: (22) The requested URL returned error: 403
+- FAIL https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-6-2016.pdf :: curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/
+- ok https://www.nysedregents.org/algebraone/625/algone-62025-sk.pdf -> algone-62025-sk.pdf (130404 bytes)
+- ok https://www.nysedregents.org/algebraone/625/algone-62025-sk.xlsx -> algone-62025-sk.xlsx (12923 bytes)
+- FAIL https://web.archive.org/web/2020/https://www.oecd.org/pisa/test/PISA2012_released_MAT_items.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2022-staar-may-spanish-grade-4-math-answerkey.pdf -> 2022-staar-may-spanish-grade-4-math-answerkey.pdf (116266 bytes)
+- FAIL https://web.archive.org/web/2020/https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-6-2016.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/algebraone/625/algone-62025-rg.pdf -> algone-62025-rg.pdf (240873 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2022-staar-may-spanish-grade-4-math-rationales.pdf -> 2022-staar-may-spanish-grade-4-math-rationales.pdf (425773 bytes)
+- ok https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/31-naplan-2016-final-test-numeracy-year-9-non-calc.pdf?sfvrsn=2 -> 31-naplan-2016-final-test-numeracy-year-9-non-calc.pdf (1768238 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2022-staar-may-spanish-grade-4-math-releasedtest.pdf -> 2022-staar-may-spanish-grade-4-math-releasedtest.pdf (478898 bytes)
+- ok https://www.nysedregents.org/algebraone/625/algone-62025-mrs.pdf -> algone-62025-mrs.pdf (1103355 bytes)
+- ok https://www.nysedregents.org/ei/math/2016/english/2016-released-items-math-g7.pdf -> 2016-released-items-math-g7.pdf (1880692 bytes)
+- exists https://www.nysedregents.org/elementary/math/2016/2016-released-items-math-g7.pdf -> 2016-released-items-math-g7.pdf (1880692 bytes)
+- exists https://www.nysed.gov/sites/default/files/programs/state-assessment/2016-released-items-math-g7.pdf -> 2016-released-items-math-g7.pdf (1880692 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2022-staar-may-spanish-grade-4-math-studentexpectations.xlsx -> 2022-staar-may-spanish-grade-4-math-studentexpectations.xlsx (13063 bytes)
+- FAIL https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-7-2016.pdf :: curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/
+- ok https://www.nysedregents.org/algebraone/625/algone-62025-cc.pdf -> algone-62025-cc.pdf (109790 bytes)
+- FAIL https://web.archive.org/web/2020/https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-7-2016.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2016-yr-9-paper-test-answers.pdf?sfvrsn=2 -> naplan-2016-yr-9-paper-test-answers.pdf (153821 bytes)
+- ok https://www.nysedregents.org/algebraone/625/algone-62025-cc.xlsx -> algone-62025-cc.xlsx (15386 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2022-staar-may-spanish-grade-5-math-rationales.pdf -> 2022-staar-may-spanish-grade-5-math-rationales.pdf (341276 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2022-staar-may-spanish-grade-5-math-studentexpectations.xlsx -> 2022-staar-may-spanish-grade-5-math-studentexpectations.xlsx (13131 bytes)
+- ok https://www.nysedregents.org/algebraone/125/algone-12025-exam.pdf -> algone-12025-exam.pdf (614863 bytes)
+- ok https://www.nysedregents.org/ei/math/2016/english/2016-released-items-math-g8.pdf -> 2016-released-items-math-g8.pdf (2198381 bytes)
+- exists https://www.nysedregents.org/elementary/math/2016/2016-released-items-math-g8.pdf -> 2016-released-items-math-g8.pdf (2198381 bytes)
+- exists https://www.nysed.gov/sites/default/files/programs/state-assessment/2016-released-items-math-g8.pdf -> 2016-released-items-math-g8.pdf (2198381 bytes)
+- FAIL https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-8-2016.pdf :: curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2022-staar-may-spanish-grade-5-math-testbooklet.pdf -> 2022-staar-may-spanish-grade-5-math-testbooklet.pdf (516630 bytes)
+- FAIL https://web.archive.org/web/2020/https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-8-2016.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/algebraone/125/algone-12025-exam-lt.pdf -> algone-12025-exam-lt.pdf (633311 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2022-staar-mkay-grade-6-math-releasedtest.pdf -> 2022-staar-mkay-grade-6-math-releasedtest.pdf (557961 bytes)
+- ok https://www.nysedregents.org/algebraone/125/algone-12025-sk.pdf -> algone-12025-sk.pdf (130170 bytes)
+- ok https://www.nysedregents.org/algebraone/125/algone-12025-sk.xlsx -> algone-12025-sk.xlsx (12926 bytes)
+- ok https://www.nysedregents.org/ei/math/2017/english/2017-released-items-math-g3.pdf -> 2017-released-items-math-g3.pdf (1539271 bytes)
+- exists https://www.nysedregents.org/elementary/math/2017/2017-released-items-math-g3.pdf -> 2017-released-items-math-g3.pdf (1539271 bytes)
+- exists https://www.nysed.gov/sites/default/files/programs/state-assessment/2017-released-items-math-g3.pdf -> 2017-released-items-math-g3.pdf (1539271 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2023-staar-3-math-answer-key.pdf -> 2023-staar-3-math-answer-key.pdf (587796 bytes)
+- FAIL https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-3-2017.pdf :: curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/
+- ok https://www.nysedregents.org/algebraone/125/algone-12025-rg.pdf -> algone-12025-rg.pdf (232180 bytes)
+- ok https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2015-final-test---numeracy-year-3.pdf?sfvrsn=2 -> naplan-2015-final-test---numeracy-year-3.pdf (3040293 bytes)
+- FAIL https://web.archive.org/web/2020/https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-3-2017.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2023-staar-4-math-answer-key.pdf -> 2023-staar-4-math-answer-key.pdf (540791 bytes)
+- controls race n=97687
+- ok https://www.nysedregents.org/algebraone/125/algone-12025-mrs.pdf -> algone-12025-mrs.pdf (1139359 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2023-staar-algebra-1-answer-key.pdf -> 2023-staar-algebra-1-answer-key.pdf (367523 bytes)
+- FAIL https://raw.githubusercontent.com/UKPLab/acl2018-argument-reasoning-comprehension-task/master/data/train-w-swap.csv :: HTTP Error 404: Not Found
+- ok https://www.nysedregents.org/ei/math/2017/english/2017-released-items-math-g4.pdf -> 2017-released-items-math-g4.pdf (1632770 bytes)
+- exists https://www.nysedregents.org/elementary/math/2017/2017-released-items-math-g4.pdf -> 2017-released-items-math-g4.pdf (1632770 bytes)
+- exists https://www.nysed.gov/sites/default/files/programs/state-assessment/2017-released-items-math-g4.pdf -> 2017-released-items-math-g4.pdf (1632770 bytes)
+- ok https://www.nysedregents.org/algebraone/125/algone-12025-cc.pdf -> algone-12025-cc.pdf (110104 bytes)
+- ok https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2015-yr-3-paper-test-answers.pdf -> naplan-2015-yr-3-paper-test-answers.pdf (135999 bytes)
+- FAIL https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-4-2017.pdf :: curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/
+- FAIL https://raw.githubusercontent.com/UKPLab/acl2018-argument-reasoning-comprehension-task/master/data/dev-w-swap.csv :: HTTP Error 404: Not Found
+- FAIL https://raw.githubusercontent.com/UKPLab/acl2018-argument-reasoning-comprehension-task/master/data/test-w-swap.csv :: HTTP Error 404: Not Found
+- ok https://www.nysedregents.org/algebraone/125/algone-12025-cc.xlsx -> algone-12025-cc.xlsx (14999 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2023-staar-algebra-i-rationale.pdf -> 2023-staar-algebra-i-rationale.pdf (516871 bytes)
+- FAIL https://raw.githubusercontent.com/IBM/sct-dataset/master/dataset/train.csv :: HTTP Error 404: Not Found
+- FAIL https://raw.githubusercontent.com/IBM/sct-dataset/master/dataset/dev.csv :: HTTP Error 404: Not Found
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2023-staar-algebra-i-student-expectations.xlsx -> 2023-staar-algebra-i-student-expectations.xlsx (22484 bytes)
+- ok https://www.nysedregents.org/algebraone/824/algone82024-exam.pdf -> algone82024-exam.pdf (354188 bytes)
+- FAIL https://raw.githubusercontent.com/IBM/sct-dataset/master/dataset/test.csv :: HTTP Error 404: Not Found
+- controls arct n=0
+- ok https://nces.ed.gov/surveys/pisa/pdf/items_math2012.pdf -> items_math2012.pdf (1178934 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2023-staar-grade-3-math-student-expectations.xlsx -> 2023-staar-grade-3-math-student-expectations.xlsx (19833 bytes)
+- ok https://www.nysedregents.org/algebraone/824/algone82024-examlt.pdf -> algone82024-examlt.pdf (562217 bytes)
+- FAIL https://web.archive.org/web/2020/https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-4-2017.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2023-staar-grade-4-math-student-expectations.xlsx -> 2023-staar-grade-4-math-student-expectations.xlsx (21790 bytes)
+- ok https://www.nysedregents.org/algebraone/824/algone82024-sk.pdf -> algone82024-sk.pdf (129396 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2023-staar-grade-5-math-student-expectations.xlsx -> 2023-staar-grade-5-math-student-expectations.xlsx (20245 bytes)
+- ok https://www.nysedregents.org/algebraone/824/algone82024-sk.xlsx -> algone82024-sk.xlsx (12921 bytes)
+- ok https://nces.ed.gov/timss/pdf/TIMSS2011_G4_Math.pdf -> TIMSS2011_G4_Math.pdf (6963956 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2023-staar-grade-6-math-student-expectations.xlsx -> 2023-staar-grade-6-math-student-expectations.xlsx (20363 bytes)
+- ok https://www.nysedregents.org/ei/math/2017/english/2017-released-items-math-g5.pdf -> 2017-released-items-math-g5.pdf (1631210 bytes)
+- exists https://www.nysedregents.org/elementary/math/2017/2017-released-items-math-g5.pdf -> 2017-released-items-math-g5.pdf (1631210 bytes)
+- exists https://www.nysed.gov/sites/default/files/programs/state-assessment/2017-released-items-math-g5.pdf -> 2017-released-items-math-g5.pdf (1631210 bytes)
+- ok https://www.nysedregents.org/algebraone/824/algone82024-rg.pdf -> algone82024-rg.pdf (214869 bytes)
+- ok https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2015-final-test-numeracy-year-5.pdf?sfvrsn=2 -> naplan-2015-final-test-numeracy-year-5.pdf (2959195 bytes)
+- FAIL https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-5-2017.pdf :: curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2023-staar-grade-7-math-student-expectations.xlsx -> 2023-staar-grade-7-math-student-expectations.xlsx (20264 bytes)
+- FAIL https://web.archive.org/web/2020/https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-5-2017.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2023-staar-grade-8-math-student-expectations.xlsx -> 2023-staar-grade-8-math-student-expectations.xlsx (20053 bytes)
+- ok https://www.nysedregents.org/algebraone/824/algone82024-mrs.pdf -> algone82024-mrs.pdf (1098008 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2023-staar-math-grade-3-rationale.pdf -> 2023-staar-math-grade-3-rationale.pdf (311412 bytes)
+- ok https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2015-yr-5-paper-test-answers.pdf?sfvrsn=2 -> naplan-2015-yr-5-paper-test-answers.pdf (149374 bytes)
+- ok https://www.nysedregents.org/algebraone/824/algone82024-cc.pdf -> algone82024-cc.pdf (109481 bytes)
+- ok https://www.nysedregents.org/ei/math/2017/english/2017-released-items-math-g6.pdf -> 2017-released-items-math-g6.pdf (1858104 bytes)
+- exists https://www.nysedregents.org/elementary/math/2017/2017-released-items-math-g6.pdf -> 2017-released-items-math-g6.pdf (1858104 bytes)
+- exists https://www.nysed.gov/sites/default/files/programs/state-assessment/2017-released-items-math-g6.pdf -> 2017-released-items-math-g6.pdf (1858104 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2023-staar-math-grade-4-rationale.pdf -> 2023-staar-math-grade-4-rationale.pdf (302463 bytes)
+- ok https://www.nysedregents.org/algebraone/824/algone82024-cc.xlsx -> algone82024-cc.xlsx (13253 bytes)
+- FAIL https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-6-2017.pdf :: curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/
+- ok https://www.nysedregents.org/algebraone/624/algone62024-exam.pdf -> algone62024-exam.pdf (403994 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2023-staar-math-grade-5-answer-key.pdf -> 2023-staar-math-grade-5-answer-key.pdf (378821 bytes)
+- ok https://nces.ed.gov/surveys/pisa/pdf/items2_math.pdf -> items2_math.pdf (1095431 bytes)
+done pisa
+- FAIL https://web.archive.org/web/2020/https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-6-2017.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://www.nysedregents.org/ei/math/2017/english/2017-released-items-math-g7.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/algebraone/624/algone62024-exam-lt.pdf -> algone62024-exam-lt.pdf (580161 bytes)
+- ok https://www.nysedregents.org/algebraone/624/algone62024-sk.pdf -> algone62024-sk.pdf (130217 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2023-staar-math-grade-5-rationale.pdf -> 2023-staar-math-grade-5-rationale.pdf (688230 bytes)
+- FAIL https://web.archive.org/web/2020/https://www.nysedregents.org/ei/math/2017/english/2017-released-items-math-g7.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/algebraone/624/algone62024-sk.xlsx -> algone62024-sk.xlsx (12931 bytes)
+- ok https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2015-final-test-numeracy-(calculator)-year-7.pdf?sfvrsn=2 -> naplan-2015-final-test-numeracy-_calculator_-year-7.pdf (1807669 bytes)
+- FAIL https://www.nysedregents.org/elementary/math/2017/2017-released-items-math-g7.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2023-staar-math-grade-6-answer-key.pdf -> 2023-staar-math-grade-6-answer-key.pdf (447843 bytes)
+- ok https://www.nysedregents.org/algebraone/624/algone62024-rg.pdf -> algone62024-rg.pdf (260223 bytes)
+- FAIL https://web.archive.org/web/2020/https://www.nysedregents.org/elementary/math/2017/2017-released-items-math-g7.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://www.nysed.gov/sites/default/files/programs/state-assessment/2017-released-items-math-g7.pdf :: curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2023-staar-math-grade-6-rationale-0.pdf -> 2023-staar-math-grade-6-rationale-0.pdf (995720 bytes)
+- ok https://www.nysedregents.org/algebraone/624/algone62024-mrs.pdf -> algone62024-mrs.pdf (1130096 bytes)
+- FAIL https://web.archive.org/web/2020/https://www.nysed.gov/sites/default/files/programs/state-assessment/2017-released-items-math-g7.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-7-2017.pdf :: curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/
+- ok https://www.nysedregents.org/algebraone/624/algone62024-cc.pdf -> algone62024-cc.pdf (109484 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2023-staar-math-grade-7-answer-key.pdf -> 2023-staar-math-grade-7-answer-key.pdf (552617 bytes)
+- ok https://www.nysedregents.org/algebraone/624/algone62024-cc.xlsx -> algone62024-cc.xlsx (13467 bytes)
+- FAIL https://web.archive.org/web/2020/https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-7-2017.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://www.nysedregents.org/ei/math/2017/english/2017-released-items-math-g8.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://www.nysedregents.org/ei/math/2017/english/2017-released-items-math-g8.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 20 ms: Could not connect to server
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2023-staar-math-grade-7-rationale.pdf -> 2023-staar-math-grade-7-rationale.pdf (449562 bytes)
+- ok https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2015-final-test-numeracy-(no-calculator)-year-7.pdf?sfvrsn=2 -> naplan-2015-final-test-numeracy-_no-calculator_-year-7.pdf (2278144 bytes)
+- FAIL https://www.nysedregents.org/elementary/math/2017/2017-released-items-math-g8.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/algebraone/124/algone12024-exam.pdf -> algone12024-exam.pdf (472668 bytes)
+- FAIL https://web.archive.org/web/2020/https://www.nysedregents.org/elementary/math/2017/2017-released-items-math-g8.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- FAIL https://www.nysed.gov/sites/default/files/programs/state-assessment/2017-released-items-math-g8.pdf :: curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/
+- FAIL https://web.archive.org/web/2020/https://www.nysed.gov/sites/default/files/programs/state-assessment/2017-released-items-math-g8.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2023-staar-math-grade-8-answer-key.pdf -> 2023-staar-math-grade-8-answer-key.pdf (461606 bytes)
+- FAIL https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-8-2017.pdf :: curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/
+- FAIL https://web.archive.org/web/2020/https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-8-2017.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 20 ms: Could not connect to server
+- ok https://www.nysedregents.org/algebraone/124/algone12024-exam-lt.pdf -> algone12024-exam-lt.pdf (598603 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2023-staar-math-grade-8-rationale.pdf -> 2023-staar-math-grade-8-rationale.pdf (408672 bytes)
+- ok https://www.nysedregents.org/algebraone/124/algone12024-sk.pdf -> algone12024-sk.pdf (130247 bytes)
+- ok https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2015-yr-7-paper-test-answers.pdf?sfvrsn=2 -> naplan-2015-yr-7-paper-test-answers.pdf (156707 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2023-staar-spanish-grade-3-math-student-expectations.xlsx -> 2023-staar-spanish-grade-3-math-student-expectations.xlsx (20120 bytes)
+- ok https://www.nysedregents.org/ei/math/2018/english/2018-released-items-math-g3.pdf -> 2018-released-items-math-g3.pdf (2682234 bytes)
+- exists https://www.nysedregents.org/elementary/math/2018/2018-released-items-math-g3.pdf -> 2018-released-items-math-g3.pdf (2682234 bytes)
+- exists https://www.nysed.gov/sites/default/files/programs/state-assessment/2018-released-items-math-g3.pdf -> 2018-released-items-math-g3.pdf (2682234 bytes)
+- ok https://www.nysedregents.org/algebraone/124/algone12024-sk.xlsx -> algone12024-sk.xlsx (12992 bytes)
+- FAIL https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-3-2018.pdf :: curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/
+- ok https://nces.ed.gov/timss/pdf/TIMSS2011_G8_Math.pdf -> TIMSS2011_G8_Math.pdf (3993023 bytes)
+- FAIL https://web.archive.org/web/2020/https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-3-2018.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2023-staar-spanish-grade-4-math-student-expectations.xlsx -> 2023-staar-spanish-grade-4-math-student-expectations.xlsx (20059 bytes)
+- ok https://www.nysedregents.org/algebraone/124/algone12024-rg.pdf -> algone12024-rg.pdf (207464 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2023-staar-spanish-grade-5-math-student-expectations.xlsx -> 2023-staar-spanish-grade-5-math-student-expectations.xlsx (20682 bytes)
+- ok https://nces.ed.gov/timss/xls/TIMSS_Grade4_Math_Released_Item_Statistics.xlsx -> TIMSS_Grade4_Math_Released_Item_Statistics.xlsx (110707 bytes)
+- ok https://www.nysedregents.org/algebraone/124/algone12024-mrs.pdf -> algone12024-mrs.pdf (1114333 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2023-staar-spanish-math-grade-3-answer-key.pdf -> 2023-staar-spanish-math-grade-3-answer-key.pdf (548002 bytes)
+- ok https://www.nysedregents.org/algebraone/124/algone12024-cc.pdf -> algone12024-cc.pdf (110825 bytes)
+- ok https://www.nysedregents.org/algebraone/124/algone12024-cc.xlsx -> algone12024-cc.xlsx (13219 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2023-staar-spanish-math-grade-3-rationale.pdf -> 2023-staar-spanish-math-grade-3-rationale.pdf (436167 bytes)
+- ok https://www.nysedregents.org/ei/math/2018/english/2018-released-items-math-g4.pdf -> 2018-released-items-math-g4.pdf (2708748 bytes)
+- exists https://www.nysedregents.org/elementary/math/2018/2018-released-items-math-g4.pdf -> 2018-released-items-math-g4.pdf (2708748 bytes)
+- exists https://www.nysed.gov/sites/default/files/programs/state-assessment/2018-released-items-math-g4.pdf -> 2018-released-items-math-g4.pdf (2708748 bytes)
+- ok https://nces.ed.gov/timss/xls/TIMSS_Grade8_Math_Released_Item_Statistics.xlsx -> TIMSS_Grade8_Math_Released_Item_Statistics.xlsx (208503 bytes)
+- FAIL https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-4-2018.pdf :: curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/
+- FAIL https://web.archive.org/web/2020/https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-4-2018.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 20 ms: Could not connect to server
+- ok https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2015-final-test-numeracy-year-9-(calculator).pdf?sfvrsn=2 -> naplan-2015-final-test-numeracy-year-9-_calculator_.pdf (1877284 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2023-staar-spanish-math-grade-4-answer-key.pdf -> 2023-staar-spanish-math-grade-4-answer-key.pdf (455093 bytes)
+- ok https://www.nysedregents.org/algebraone/823/algone82023-exam.pdf -> algone82023-exam.pdf (404859 bytes)
+- ok https://nces.ed.gov/timss/xls/TIMSS_Grade4_Sci_Released_Item_Statistics.xlsx -> TIMSS_Grade4_Sci_Released_Item_Statistics.xlsx (155771 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2023-staar-spanish-math-grade-4-rationale.pdf -> 2023-staar-spanish-math-grade-4-rationale.pdf (325287 bytes)
+- ok https://www.nysedregents.org/algebraone/823/algone82023-examlt.pdf -> algone82023-examlt.pdf (560533 bytes)
+- ok https://www.nysedregents.org/algebraone/823/algone82023-sk.pdf -> algone82023-sk.pdf (131430 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2023-staar-spanish-math-grade-5-answer-key.pdf -> 2023-staar-spanish-math-grade-5-answer-key.pdf (1031691 bytes)
+- ok https://nces.ed.gov/timss/xls/TIMSS_Grade8_Sci_Released_Item_Statistics.xlsx -> TIMSS_Grade8_Sci_Released_Item_Statistics.xlsx (205673 bytes)
+- ok https://www.nysedregents.org/algebraone/823/algone82023-sk.xlsx -> algone82023-sk.xlsx (13417 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2023-staar-spanish-math-grade-5-rationale.pdf -> 2023-staar-spanish-math-grade-5-rationale.pdf (356580 bytes)
+- ok https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2015-final-test-numeracy-year-9-(no-calculator).pdf?sfvrsn=2 -> naplan-2015-final-test-numeracy-year-9-_no-calculator_.pdf (1886924 bytes)
+- ok https://www.nysedregents.org/algebraone/823/algone82023-rg.pdf -> algone82023-rg.pdf (223398 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2024-staar-3-math-answer-key.pdf -> 2024-staar-3-math-answer-key.pdf (301703 bytes)
+- ok https://www.nysedregents.org/algebraone/823/algone82023-mrs.pdf -> algone82023-mrs.pdf (1367997 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2024-staar-3-math-rationale.pdf -> 2024-staar-3-math-rationale.pdf (609724 bytes)
+- ok https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2015-yr-9-paper-test-answers.pdf?sfvrsn=2 -> naplan-2015-yr-9-paper-test-answers.pdf (159091 bytes)
+- ok https://www.nysedregents.org/ei/math/2018/english/2018-released-items-math-g5.pdf -> 2018-released-items-math-g5.pdf (2857049 bytes)
+- exists https://www.nysedregents.org/elementary/math/2018/2018-released-items-math-g5.pdf -> 2018-released-items-math-g5.pdf (2857049 bytes)
+- exists https://www.nysed.gov/sites/default/files/programs/state-assessment/2018-released-items-math-g5.pdf -> 2018-released-items-math-g5.pdf (2857049 bytes)
+- ok https://www.nysedregents.org/algebraone/823/algone82023-cc.pdf -> algone82023-cc.pdf (110450 bytes)
+- FAIL https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-5-2018.pdf :: curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/
+- FAIL https://web.archive.org/web/2020/https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-5-2018.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 20 ms: Could not connect to server
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2024-staar-3-math-spanish-answer-key.pdf -> 2024-staar-3-math-spanish-answer-key.pdf (436022 bytes)
+- ok https://www.nysedregents.org/algebraone/823/algone82023-cc.xlsx -> algone82023-cc.xlsx (13560 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2024-staar-3-math-spanish-rationale.pdf -> 2024-staar-3-math-spanish-rationale.pdf (325878 bytes)
+- ok https://www.nysedregents.org/algebraone/623/algone62023-exam.pdf -> algone62023-exam.pdf (476694 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2024-staar-3-math-spanish-student-expectations.xlsx -> 2024-staar-3-math-spanish-student-expectations.xlsx (21358 bytes)
+- ok https://www.nysedregents.org/algebraone/623/algone62023-exam-lt.pdf -> algone62023-exam-lt.pdf (632359 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2024-staar-3-math-student-expectations.xlsx -> 2024-staar-3-math-student-expectations.xlsx (21120 bytes)
+- ok https://www.nysedregents.org/algebraone/623/algone62023-sk.pdf -> algone62023-sk.pdf (131781 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2024-staar-4-math-answer-key.pdf -> 2024-staar-4-math-answer-key.pdf (523508 bytes)
+- ok https://www.nysedregents.org/algebraone/623/algone62023-sk.xlsx -> algone62023-sk.xlsx (13417 bytes)
+- ok https://www.nysedregents.org/algebraone/623/algone62023-rg.pdf -> algone62023-rg.pdf (189114 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2024-staar-4-math-rationale.pdf -> 2024-staar-4-math-rationale.pdf (361685 bytes)
+- ok https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2014-final-test---numeracy-year-3.pdf?sfvrsn=2 -> naplan-2014-final-test---numeracy-year-3.pdf (4701205 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2024-staar-4-math-spanish-answer-key.pdf -> 2024-staar-4-math-spanish-answer-key.pdf (651213 bytes)
+- ok https://www.nysedregents.org/algebraone/623/algone62023-mrs.pdf -> algone62023-mrs.pdf (1464734 bytes)
+- ok https://www.nysedregents.org/algebraone/623/algone62023-cc.pdf -> algone62023-cc.pdf (110745 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2024-staar-4-math-spanish-rationale.pdf -> 2024-staar-4-math-spanish-rationale.pdf (369419 bytes)
+- ok https://www.nysedregents.org/ei/math/2018/english/2018-released-items-math-g6.pdf -> 2018-released-items-math-g6.pdf (2888859 bytes)
+- exists https://www.nysedregents.org/elementary/math/2018/2018-released-items-math-g6.pdf -> 2018-released-items-math-g6.pdf (2888859 bytes)
+- exists https://www.nysed.gov/sites/default/files/programs/state-assessment/2018-released-items-math-g6.pdf -> 2018-released-items-math-g6.pdf (2888859 bytes)
+- ok https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2014-yr-3-paper-test-answers.pdf?sfvrsn=2 -> naplan-2014-yr-3-paper-test-answers.pdf (150833 bytes)
+- ok https://www.nysedregents.org/algebraone/623/algone62023-cc.xlsx -> algone62023-cc.xlsx (13581 bytes)
+- FAIL https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-6-2018.pdf :: curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/
+- FAIL https://web.archive.org/web/2020/https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-6-2018.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2024-staar-4-math-spanish-student-expectations.xlsx -> 2024-staar-4-math-spanish-student-expectations.xlsx (21386 bytes)
+- ok https://www.nysedregents.org/algebraone/123/algone12023-exam.pdf -> algone12023-exam.pdf (125197 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2024-staar-4-math-student-expectations.xlsx -> 2024-staar-4-math-student-expectations.xlsx (21190 bytes)
+- ok https://www.nysedregents.org/algebraone/123/algone12023-exam-lt.pdf -> algone12023-exam-lt.pdf (211544 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2024-staar-5-math-answer-key.pdf -> 2024-staar-5-math-answer-key.pdf (328921 bytes)
+- ok https://www.nysedregents.org/algebraone/123/algone12023-sk.pdf -> algone12023-sk.pdf (131845 bytes)
+- ok https://www.nysedregents.org/algebraone/123/algone12023-sk.xlsx -> algone12023-sk.xlsx (13399 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2024-staar-5-math-rationale.pdf -> 2024-staar-5-math-rationale.pdf (353885 bytes)
+- ok https://www.nysedregents.org/algebraone/123/algone12023-rg.pdf -> algone12023-rg.pdf (156433 bytes)
+- ok https://www.nysedregents.org/ei/math/2018/english/2018-released-items-math-g7.pdf -> 2018-released-items-math-g7.pdf (2986649 bytes)
+- exists https://www.nysedregents.org/elementary/math/2018/2018-released-items-math-g7.pdf -> 2018-released-items-math-g7.pdf (2986649 bytes)
+- exists https://www.nysed.gov/sites/default/files/programs/state-assessment/2018-released-items-math-g7.pdf -> 2018-released-items-math-g7.pdf (2986649 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2024-staar-5-math-spanish-answer-key.pdf -> 2024-staar-5-math-spanish-answer-key.pdf (464411 bytes)
+- FAIL https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-7-2018.pdf :: curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/
+- FAIL https://web.archive.org/web/2020/https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-7-2018.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 26 ms: Could not connect to server
+- ok https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2014-final-test-numeracy-year-5.pdf?sfvrsn=2 -> naplan-2014-final-test-numeracy-year-5.pdf (3474798 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2024-staar-5-math-spanish-rationale.pdf -> 2024-staar-5-math-spanish-rationale.pdf (344524 bytes)
+- ok https://nces.ed.gov/timss/pdf/TIMSS2003_G4_Math.pdf -> TIMSS2003_G4_Math.pdf (2423630 bytes)
+- ok https://www.nysedregents.org/algebraone/123/algone12023-mrs.pdf -> algone12023-mrs.pdf (1724202 bytes)
+- ok https://www.nysedregents.org/ei/math/2018/english/2018-released-items-math-g8.pdf -> 2018-released-items-math-g8.pdf (1873225 bytes)
+- exists https://www.nysedregents.org/elementary/math/2018/2018-released-items-math-g8.pdf -> 2018-released-items-math-g8.pdf (1873225 bytes)
+- exists https://www.nysed.gov/sites/default/files/programs/state-assessment/2018-released-items-math-g8.pdf -> 2018-released-items-math-g8.pdf (1873225 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2024-staar-5-math-spanish-student-expectations.xlsx -> 2024-staar-5-math-spanish-student-expectations.xlsx (21299 bytes)
+- FAIL https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-8-2018.pdf :: curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/
+- FAIL https://web.archive.org/web/2020/https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-8-2018.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- ok https://www.nysedregents.org/algebraone/123/algone12023-cc.pdf -> algone12023-cc.pdf (110732 bytes)
+- ok https://www.nysedregents.org/algebraone/123/algone12023-cc.xlsx -> algone12023-cc.xlsx (13553 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2024-staar-5-math-student-expectations.xlsx -> 2024-staar-5-math-student-expectations.xlsx (21265 bytes)
+- ok https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2014-yr-5-paper-test-answers.pdf?sfvrsn=2 -> naplan-2014-yr-5-paper-test-answers.pdf (151841 bytes)
+- ok https://www.nysedregents.org/algebraone/822/algone82022-exam.pdf -> algone82022-exam.pdf (89864 bytes)
+- ok https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g3.pdf -> 2019-released-items-math-g3.pdf (1121136 bytes)
+- exists https://www.nysedregents.org/elementary/math/2019/2019-released-items-math-g3.pdf -> 2019-released-items-math-g3.pdf (1121136 bytes)
+- exists https://www.nysed.gov/sites/default/files/programs/state-assessment/2019-released-items-math-g3.pdf -> 2019-released-items-math-g3.pdf (1121136 bytes)
+- FAIL https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-3-2019.pdf :: curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/
+- FAIL https://web.archive.org/web/2020/https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-3-2019.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2024-staar-6-math-answer-key.pdf -> 2024-staar-6-math-answer-key.pdf (845546 bytes)
+- ok https://www.nysedregents.org/algebraone/822/algone82022-examlt.pdf -> algone82022-examlt.pdf (123438 bytes)
+- ok https://www.nysedregents.org/algebraone/822/algone82022-sk.pdf -> algone82022-sk.pdf (131422 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2024-staar-6-math-rationale.pdf -> 2024-staar-6-math-rationale.pdf (377263 bytes)
+- ok https://www.nysedregents.org/algebraone/822/algone82022-sk.xlsx -> algone82022-sk.xlsx (13394 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2024-staar-6-math-student-expectations.xlsx -> 2024-staar-6-math-student-expectations.xlsx (21569 bytes)
+- ok https://www.nysedregents.org/algebraone/822/algone82022-rg.pdf -> algone82022-rg.pdf (76928 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2024-staar-7-math-answer-key.pdf -> 2024-staar-7-math-answer-key.pdf (435982 bytes)
+- ok https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g4.pdf -> 2019-released-items-math-g4.pdf (1185926 bytes)
+- exists https://www.nysedregents.org/elementary/math/2019/2019-released-items-math-g4.pdf -> 2019-released-items-math-g4.pdf (1185926 bytes)
+- exists https://www.nysed.gov/sites/default/files/programs/state-assessment/2019-released-items-math-g4.pdf -> 2019-released-items-math-g4.pdf (1185926 bytes)
+- FAIL https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-4-2019.pdf :: curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/
+- FAIL https://web.archive.org/web/2020/https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-4-2019.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 22 ms: Could not connect to server
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2024-staar-7-math-rationale.pdf -> 2024-staar-7-math-rationale.pdf (479617 bytes)
+- ok https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2014-final-test-numeracy-year-7-(calculator).pdf?sfvrsn=2 -> naplan-2014-final-test-numeracy-year-7-_calculator_.pdf (2814548 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2024-staar-7-math-student-expectations.xlsx -> 2024-staar-7-math-student-expectations.xlsx (21677 bytes)
+- ok https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g5.pdf -> 2019-released-items-math-g5.pdf (1167085 bytes)
+- exists https://www.nysedregents.org/elementary/math/2019/2019-released-items-math-g5.pdf -> 2019-released-items-math-g5.pdf (1167085 bytes)
+- exists https://www.nysed.gov/sites/default/files/programs/state-assessment/2019-released-items-math-g5.pdf -> 2019-released-items-math-g5.pdf (1167085 bytes)
+- FAIL https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-5-2019.pdf :: curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/
+- FAIL https://web.archive.org/web/2020/https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-5-2019.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2024-staar-8-math-answer-key.pdf -> 2024-staar-8-math-answer-key.pdf (438256 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2024-staar-8-math-rationale.pdf -> 2024-staar-8-math-rationale.pdf (471731 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2024-staar-8-math-student-expectations.xlsx -> 2024-staar-8-math-student-expectations.xlsx (21501 bytes)
+- ok https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g6.pdf -> 2019-released-items-math-g6.pdf (1259907 bytes)
+- exists https://www.nysedregents.org/elementary/math/2019/2019-released-items-math-g6.pdf -> 2019-released-items-math-g6.pdf (1259907 bytes)
+- exists https://www.nysed.gov/sites/default/files/programs/state-assessment/2019-released-items-math-g6.pdf -> 2019-released-items-math-g6.pdf (1259907 bytes)
+- FAIL https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-6-2019.pdf :: curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/
+- FAIL https://web.archive.org/web/2020/https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-6-2019.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- ok https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2014-final-test-numeracy-year-7-(no-calculator).pdf?sfvrsn=2 -> naplan-2014-final-test-numeracy-year-7-_no-calculator_.pdf (2407666 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2024-staar-algebra-i-answer-key.pdf -> 2024-staar-algebra-i-answer-key.pdf (396628 bytes)
+- ok https://www.nysedregents.org/algebraone/822/algone82022-mrs.pdf -> algone82022-mrs.pdf (1238091 bytes)
+- ok https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g7.pdf -> 2019-released-items-math-g7.pdf (1349134 bytes)
+- exists https://www.nysedregents.org/elementary/math/2019/2019-released-items-math-g7.pdf -> 2019-released-items-math-g7.pdf (1349134 bytes)
+- exists https://www.nysed.gov/sites/default/files/programs/state-assessment/2019-released-items-math-g7.pdf -> 2019-released-items-math-g7.pdf (1349134 bytes)
+- ok https://www.nysedregents.org/algebraone/822/algone82022-cc.pdf -> algone82022-cc.pdf (25623 bytes)
+- FAIL https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-7-2019.pdf :: curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/
+- FAIL https://web.archive.org/web/2020/https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-7-2019.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2024-staar-algebra-i-rationale.pdf -> 2024-staar-algebra-i-rationale.pdf (519004 bytes)
+- ok https://www.nysedregents.org/algebraone/822/algone82022-cc.xlsx -> algone82022-cc.xlsx (13190 bytes)
+- ok https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2014-yr-7-paper-test-answers.pdf?sfvrsn=2 -> naplan-2014-yr-7-paper-test-answers.pdf (159464 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2024-staar-algebra-i-student-expectations.xlsx -> 2024-staar-algebra-i-student-expectations.xlsx (22697 bytes)
+- ok https://www.nysedregents.org/algebraone/622/algone62022-exam.pdf -> algone62022-exam.pdf (88155 bytes)
+- ok https://www.nysedregents.org/ei/math/2019/english/2019-released-items-math-g8.pdf -> 2019-released-items-math-g8.pdf (1383365 bytes)
+- exists https://www.nysedregents.org/elementary/math/2019/2019-released-items-math-g8.pdf -> 2019-released-items-math-g8.pdf (1383365 bytes)
+- exists https://www.nysed.gov/sites/default/files/programs/state-assessment/2019-released-items-math-g8.pdf -> 2019-released-items-math-g8.pdf (1383365 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2025-staar-3-math-student-expectations.xlsx -> 2025-staar-3-math-student-expectations.xlsx (20212 bytes)
+- FAIL https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-8-2019.pdf :: curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/
+- FAIL https://web.archive.org/web/2020/https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-8-2019.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- ok https://www.nysedregents.org/algebraone/622/algone62022-examlt.pdf -> algone62022-examlt.pdf (129538 bytes)
+- FAIL https://www.nysedregents.org/ei/math/2020/english/2020-released-items-math-g3.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2025-staar-4-math-student-expectations.xlsx -> 2025-staar-4-math-student-expectations.xlsx (23739 bytes)
+- FAIL https://web.archive.org/web/2020/https://www.nysedregents.org/ei/math/2020/english/2020-released-items-math-g3.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- ok https://www.nysedregents.org/algebraone/622/algone62022-sk.pdf -> algone62022-sk.pdf (132014 bytes)
+- FAIL https://www.nysedregents.org/elementary/math/2020/2020-released-items-math-g3.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://www.nysedregents.org/elementary/math/2020/2020-released-items-math-g3.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- ok https://www.nysedregents.org/algebraone/622/algone62022-sk.xlsx -> algone62022-sk.xlsx (13395 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2025-staar-5-math-student-expectations.xlsx -> 2025-staar-5-math-student-expectations.xlsx (25274 bytes)
+- FAIL https://www.nysed.gov/sites/default/files/programs/state-assessment/2020-released-items-math-g3.pdf :: curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/
+- FAIL https://web.archive.org/web/2020/https://www.nysed.gov/sites/default/files/programs/state-assessment/2020-released-items-math-g3.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 26 ms: Could not connect to server
+- FAIL https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-3-2020.pdf :: curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/
+- FAIL https://web.archive.org/web/2020/https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-3-2020.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- ok https://www.nysedregents.org/algebraone/622/algone62022-rg.pdf -> algone62022-rg.pdf (78628 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2025-staar-6-math-student-expectations.xlsx -> 2025-staar-6-math-student-expectations.xlsx (22463 bytes)
+- FAIL https://www.nysedregents.org/ei/math/2020/english/2020-released-items-math-g4.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://www.nysedregents.org/ei/math/2020/english/2020-released-items-math-g4.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2025-staar-7-math-student-expectations.xlsx -> 2025-staar-7-math-student-expectations.xlsx (21740 bytes)
+- FAIL https://www.nysedregents.org/elementary/math/2020/2020-released-items-math-g4.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://www.nysedregents.org/elementary/math/2020/2020-released-items-math-g4.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- ok https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2014-final-test-numeracy-year-9-(calculator).pdf?sfvrsn=2 -> naplan-2014-final-test-numeracy-year-9-_calculator_.pdf (1664951 bytes)
+- FAIL https://www.nysed.gov/sites/default/files/programs/state-assessment/2020-released-items-math-g4.pdf :: curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/
+- FAIL https://web.archive.org/web/2020/https://www.nysed.gov/sites/default/files/programs/state-assessment/2020-released-items-math-g4.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 20 ms: Could not connect to server
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2025-staar-8-math-student-expectations.xlsx -> 2025-staar-8-math-student-expectations.xlsx (20667 bytes)
+- FAIL https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-4-2020.pdf :: curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/
+- FAIL https://web.archive.org/web/2020/https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-4-2020.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- FAIL https://www.nysedregents.org/ei/math/2020/english/2020-released-items-math-g5.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://www.nysedregents.org/ei/math/2020/english/2020-released-items-math-g5.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- FAIL https://www.nysedregents.org/elementary/math/2020/2020-released-items-math-g5.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2025-staar-algebra-1-answer-key.pdf -> 2025-staar-algebra-1-answer-key.pdf (585033 bytes)
+- FAIL https://web.archive.org/web/2020/https://www.nysedregents.org/elementary/math/2020/2020-released-items-math-g5.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- FAIL https://www.nysed.gov/sites/default/files/programs/state-assessment/2020-released-items-math-g5.pdf :: curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/
+- FAIL https://web.archive.org/web/2020/https://www.nysed.gov/sites/default/files/programs/state-assessment/2020-released-items-math-g5.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 20 ms: Could not connect to server
+- ok https://www.nysedregents.org/algebraone/622/algone62022-mrs.pdf -> algone62022-mrs.pdf (1062683 bytes)
+- FAIL https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-5-2020.pdf :: curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/
+- FAIL https://web.archive.org/web/2020/https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-5-2020.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2025-staar-algebra-1-rationale.pdf -> 2025-staar-algebra-1-rationale.pdf (599106 bytes)
+- ok https://www.nysedregents.org/algebraone/622/algone62022-cc.pdf -> algone62022-cc.pdf (82164 bytes)
+- FAIL https://www.nysedregents.org/ei/math/2020/english/2020-released-items-math-g6.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://www.nysedregents.org/ei/math/2020/english/2020-released-items-math-g6.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- ok https://www.nysedregents.org/algebraone/622/algone62022-cc.xlsx -> algone62022-cc.xlsx (13543 bytes)
+- FAIL https://www.nysedregents.org/elementary/math/2020/2020-released-items-math-g6.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://www.nysedregents.org/elementary/math/2020/2020-released-items-math-g6.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2025-staar-algebra-1-student-expectations.xlsx -> 2025-staar-algebra-1-student-expectations.xlsx (22468 bytes)
+- FAIL https://www.nysed.gov/sites/default/files/programs/state-assessment/2020-released-items-math-g6.pdf :: curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/
+- FAIL https://web.archive.org/web/2020/https://www.nysed.gov/sites/default/files/programs/state-assessment/2020-released-items-math-g6.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 22 ms: Could not connect to server
+- ok https://www.nysedregents.org/algebraone/621/algone-v202-exam.pdf -> algone-v202-exam.pdf (87337 bytes)
+- FAIL https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-6-2020.pdf :: curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/
+- ok https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2014-final-test-numeracy-year-9-(no-calculator).pdf?sfvrsn=2 -> naplan-2014-final-test-numeracy-year-9-_no-calculator_.pdf (1533640 bytes)
+- FAIL https://web.archive.org/web/2020/https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-6-2020.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2025-staar-math-3-answer-key.pdf -> 2025-staar-math-3-answer-key.pdf (473048 bytes)
+- FAIL https://www.nysedregents.org/ei/math/2020/english/2020-released-items-math-g7.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://www.nysedregents.org/ei/math/2020/english/2020-released-items-math-g7.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- ok https://www.nysedregents.org/algebraone/621/algone-v202-examlt.pdf -> algone-v202-examlt.pdf (122367 bytes)
+- FAIL https://www.nysedregents.org/elementary/math/2020/2020-released-items-math-g7.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://www.nysedregents.org/elementary/math/2020/2020-released-items-math-g7.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- FAIL https://www.nysed.gov/sites/default/files/programs/state-assessment/2020-released-items-math-g7.pdf :: curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/
+- FAIL https://web.archive.org/web/2020/https://www.nysed.gov/sites/default/files/programs/state-assessment/2020-released-items-math-g7.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- ok https://www.nysedregents.org/algebraone/621/algone-v202-sk.pdf -> algone-v202-sk.pdf (22078 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2025-staar-math-3-rationale.pdf -> 2025-staar-math-3-rationale.pdf (361492 bytes)
+- FAIL https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-7-2020.pdf :: curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/
+- FAIL https://web.archive.org/web/2020/https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-7-2020.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- ok https://www.nysedregents.org/algebraone/621/algone-v202-sk.xlsx -> algone-v202-sk.xlsx (13399 bytes)
+- FAIL https://www.nysedregents.org/ei/math/2020/english/2020-released-items-math-g8.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://www.nysedregents.org/ei/math/2020/english/2020-released-items-math-g8.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 20 ms: Could not connect to server
+- ok https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2014-yr-9-paper-test-answers.pdf?sfvrsn=2 -> naplan-2014-yr-9-paper-test-answers.pdf (160056 bytes)
+- FAIL https://www.nysedregents.org/elementary/math/2020/2020-released-items-math-g8.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/algebraone/621/algone-v202-rg.pdf -> algone-v202-rg.pdf (74708 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2025-staar-math-4-answer-key.pdf -> 2025-staar-math-4-answer-key.pdf (530559 bytes)
+- FAIL https://web.archive.org/web/2020/https://www.nysedregents.org/elementary/math/2020/2020-released-items-math-g8.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 22 ms: Could not connect to server
+- FAIL https://www.nysed.gov/sites/default/files/programs/state-assessment/2020-released-items-math-g8.pdf :: curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/
+- FAIL https://web.archive.org/web/2020/https://www.nysed.gov/sites/default/files/programs/state-assessment/2020-released-items-math-g8.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- FAIL https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-8-2020.pdf :: curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/
+- FAIL https://web.archive.org/web/2020/https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-8-2020.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2025-staar-math-4-rationale.pdf -> 2025-staar-math-4-rationale.pdf (438771 bytes)
+- ok https://www.nysedregents.org/algebraone/621/algone-v202-mrs.pdf -> algone-v202-mrs.pdf (1119149 bytes)
+- ok https://www.nysedregents.org/algebraone/621/algone-v202-cc.pdf -> algone-v202-cc.pdf (23037 bytes)
+- ok https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g3.pdf -> 2021-released-items-math-g3.pdf (826035 bytes)
+- exists https://www.nysedregents.org/elementary/math/2021/2021-released-items-math-g3.pdf -> 2021-released-items-math-g3.pdf (826035 bytes)
+- exists https://www.nysed.gov/sites/default/files/programs/state-assessment/2021-released-items-math-g3.pdf -> 2021-released-items-math-g3.pdf (826035 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2025-staar-math-5-answer-key.pdf -> 2025-staar-math-5-answer-key.pdf (548112 bytes)
+- ok https://nces.ed.gov/timss/pdf/TIMSS2003_G8_Math.pdf -> TIMSS2003_G8_Math.pdf (3467847 bytes)
+- FAIL https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-3-2021.pdf :: curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/
+- FAIL https://web.archive.org/web/2020/https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-3-2021.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 20 ms: Could not connect to server
+- ok https://www.nysedregents.org/algebraone/621/algone-v202-cc.xlsx -> algone-v202-cc.xlsx (13809 bytes)
+- ok https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2013-final-test-numeracy-year-3-(with-redacted-image).pdf?sfvrsn=2 -> naplan-2013-final-test-numeracy-year-3-_with-redacted-image_.pdf (1226457 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2025-staar-math-5-rationale.pdf -> 2025-staar-math-5-rationale.pdf (458223 bytes)
+- ok https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g4.pdf -> 2021-released-items-math-g4.pdf (663965 bytes)
+- exists https://www.nysedregents.org/elementary/math/2021/2021-released-items-math-g4.pdf -> 2021-released-items-math-g4.pdf (663965 bytes)
+- exists https://www.nysed.gov/sites/default/files/programs/state-assessment/2021-released-items-math-g4.pdf -> 2021-released-items-math-g4.pdf (663965 bytes)
+- ok https://www.nysedregents.org/algebraone/120/algone12020-exam.pdf -> algone12020-exam.pdf (93897 bytes)
+- FAIL https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-4-2021.pdf :: curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/
+- FAIL https://web.archive.org/web/2020/https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-4-2021.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 20 ms: Could not connect to server
+- ok https://www.nysedregents.org/algebraone/120/algone12020-examlt.pdf -> algone12020-examlt.pdf (136062 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2025-staar-math-6-answer-key.pdf -> 2025-staar-math-6-answer-key.pdf (488488 bytes)
+- ok https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g5.pdf -> 2021-released-items-math-g5.pdf (686555 bytes)
+- exists https://www.nysedregents.org/elementary/math/2021/2021-released-items-math-g5.pdf -> 2021-released-items-math-g5.pdf (686555 bytes)
+- exists https://www.nysed.gov/sites/default/files/programs/state-assessment/2021-released-items-math-g5.pdf -> 2021-released-items-math-g5.pdf (686555 bytes)
+- ok https://www.nysedregents.org/algebraone/120/algone12020-sk.pdf -> algone12020-sk.pdf (22362 bytes)
+- ok https://nces.ed.gov/timss/pdf/TIMSS1999_G8_Math.pdf -> TIMSS1999_G8_Math.pdf (910588 bytes)
+- FAIL https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-5-2021.pdf :: curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/
+- FAIL https://web.archive.org/web/2020/https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-5-2021.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- ok https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2013-yr-3-paper-test-answers.pdf?sfvrsn=2 -> naplan-2013-yr-3-paper-test-answers.pdf (148569 bytes)
+- ok https://www.nysedregents.org/algebraone/120/algone12020-sk.xlsx -> algone12020-sk.xlsx (13384 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2025-staar-math-6-rationale.pdf -> 2025-staar-math-6-rationale.pdf (536029 bytes)
+- ok https://www.nysedregents.org/algebraone/120/algone12020-rg.pdf -> algone12020-rg.pdf (79360 bytes)
+- ok https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g6.pdf -> 2021-released-items-math-g6.pdf (907506 bytes)
+- exists https://www.nysedregents.org/elementary/math/2021/2021-released-items-math-g6.pdf -> 2021-released-items-math-g6.pdf (907506 bytes)
+- exists https://www.nysed.gov/sites/default/files/programs/state-assessment/2021-released-items-math-g6.pdf -> 2021-released-items-math-g6.pdf (907506 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2025-staar-math-7-answer-key.pdf -> 2025-staar-math-7-answer-key.pdf (361899 bytes)
+- FAIL https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-6-2021.pdf :: curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/
+- FAIL https://web.archive.org/web/2020/https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-6-2021.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- ok https://www.nysedregents.org/algebraone/120/algone12020-mrs.pdf -> algone12020-mrs.pdf (1229650 bytes)
+- ok https://www.nysedregents.org/algebraone/120/algone12020-cc.pdf -> algone12020-cc.pdf (145673 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2025-staar-math-7-rationale.pdf -> 2025-staar-math-7-rationale.pdf (993667 bytes)
+- ok https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g7.pdf -> 2021-released-items-math-g7.pdf (760453 bytes)
+- exists https://www.nysedregents.org/elementary/math/2021/2021-released-items-math-g7.pdf -> 2021-released-items-math-g7.pdf (760453 bytes)
+- exists https://www.nysed.gov/sites/default/files/programs/state-assessment/2021-released-items-math-g7.pdf -> 2021-released-items-math-g7.pdf (760453 bytes)
+- ok https://www.nysedregents.org/algebraone/120/algone12020-cc.xlsx -> algone12020-cc.xlsx (13469 bytes)
+- FAIL https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-7-2021.pdf :: curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/
+- FAIL https://web.archive.org/web/2020/https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-7-2021.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2025-staar-math-8-answer-key.pdf -> 2025-staar-math-8-answer-key.pdf (364503 bytes)
+- ok https://www.nysedregents.org/algebraone/819/algone82019-exam.pdf -> algone82019-exam.pdf (87916 bytes)
+- ok https://www.nysedregents.org/ei/math/2021/english/2021-released-items-math-g8.pdf -> 2021-released-items-math-g8.pdf (770627 bytes)
+- exists https://www.nysedregents.org/elementary/math/2021/2021-released-items-math-g8.pdf -> 2021-released-items-math-g8.pdf (770627 bytes)
+- exists https://www.nysed.gov/sites/default/files/programs/state-assessment/2021-released-items-math-g8.pdf -> 2021-released-items-math-g8.pdf (770627 bytes)
+- ok https://www.nysedregents.org/algebraone/819/algone82019-examlt.pdf -> algone82019-examlt.pdf (138254 bytes)
+- FAIL https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-8-2021.pdf :: curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2025-staar-math-8-rationale.pdf -> 2025-staar-math-8-rationale.pdf (1136073 bytes)
+- ok https://nces.ed.gov/timss/pdf/TIMSS1995_G4_Math.pdf -> TIMSS1995_G4_Math.pdf (907137 bytes)
+- ok https://www.nysedregents.org/algebraone/819/algone82019-sk.pdf -> algone82019-sk.pdf (22173 bytes)
+- FAIL https://web.archive.org/web/2020/https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-8-2021.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2025-staar-spanish-3-math-student-expectations.xlsx -> 2025-staar-spanish-3-math-student-expectations.xlsx (20208 bytes)
+- ok https://www.nysedregents.org/algebraone/819/algone82019-sk.xlsx -> algone82019-sk.xlsx (13371 bytes)
+- ok https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2013-final-test-numeracy-year-5-(redacted-image-of-face-page-8).pdf?sfvrsn=2 -> naplan-2013-final-test-numeracy-year-5-_redacted-image-of-face-page-8_.pdf (5077745 bytes)
+- ok https://nces.ed.gov/timss/released-questions.asp -> released-questions.asp.bin (19145 bytes)
+- exists https://nces.ed.gov/timss/pdf/TIMSS2011_G8_Math.pdf -> TIMSS2011_G8_Math.pdf (3993023 bytes)
+- exists https://nces.ed.gov/timss/pdf/TIMSS2011_G4_Math.pdf -> TIMSS2011_G4_Math.pdf (6963956 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2025-staar-spanish-4-math-student-expectations.xlsx -> 2025-staar-spanish-4-math-student-expectations.xlsx (23508 bytes)
+- ok https://www.nysedregents.org/algebraone/819/algone82019-rg.pdf -> algone82019-rg.pdf (78744 bytes)
+- ok https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g3.pdf -> 2022-released-items-math-g3.pdf (1218562 bytes)
+- exists https://www.nysedregents.org/elementary/math/2022/2022-released-items-math-g3.pdf -> 2022-released-items-math-g3.pdf (1218562 bytes)
+- exists https://www.nysed.gov/sites/default/files/programs/state-assessment/2022-released-items-math-g3.pdf -> 2022-released-items-math-g3.pdf (1218562 bytes)
+- FAIL https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-3-2022.pdf :: curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/
+- FAIL https://nces.ed.gov/timss/pdf/TIMSS2007_G8_Math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-3-2022.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- FAIL https://web.archive.org/web/2020/https://nces.ed.gov/timss/pdf/TIMSS2007_G8_Math.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 30 ms: Could not connect to server
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2025-staar-spanish-math-3-answer-key.pdf -> 2025-staar-spanish-math-3-answer-key.pdf (458782 bytes)
+- FAIL https://nces.ed.gov/timss/pdf/TIMSS2007_G4_Math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://nces.ed.gov/timss/pdf/TIMSS2007_G4_Math.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- exists https://nces.ed.gov/timss/pdf/TIMSS2003_G8_Math.pdf -> TIMSS2003_G8_Math.pdf (3467847 bytes)
+- exists https://nces.ed.gov/timss/pdf/TIMSS2003_G4_Math.pdf -> TIMSS2003_G4_Math.pdf (2423630 bytes)
+- exists https://nces.ed.gov/timss/pdf/TIMSS1999_G8_Math.pdf -> TIMSS1999_G8_Math.pdf (910588 bytes)
+- exists https://nces.ed.gov/timss/pdf/TIMSS1995_G4_Math.pdf -> TIMSS1995_G4_Math.pdf (907137 bytes)
+- ok https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2013-yr-5-paper-test-answers.pdf?sfvrsn=2 -> naplan-2013-yr-5-paper-test-answers.pdf (153303 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2025-staar-spanish-math-3-rationale.pdf -> 2025-staar-spanish-math-3-rationale.pdf (430971 bytes)
+- FAIL https://nces.ed.gov/timss/pdf/TIMSS1995_G8_Math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://nces.ed.gov/timss/pdf/TIMSS1995_G8_Math.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- ok https://www.nysedregents.org/algebraone/819/algone82019-mrsw.pdf -> algone82019-mrsw.pdf (1089537 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2025-staar-spanish-math-4-answer-key.pdf -> 2025-staar-spanish-math-4-answer-key.pdf (628631 bytes)
+- ok https://www.nysedregents.org/algebraone/819/algone82019-cc.pdf -> algone82019-cc.pdf (22843 bytes)
+- ok https://timss.bc.edu/timss1995i/timsspdf/bmitems.pdf -> bmitems.pdf (1378529 bytes)
+- ok https://www.nysedregents.org/algebraone/819/algone82019-cc.xlsx -> algone82019-cc.xlsx (13909 bytes)
+- ok https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g4.pdf -> 2022-released-items-math-g4.pdf (1388132 bytes)
+- exists https://www.nysedregents.org/elementary/math/2022/2022-released-items-math-g4.pdf -> 2022-released-items-math-g4.pdf (1388132 bytes)
+- exists https://www.nysed.gov/sites/default/files/programs/state-assessment/2022-released-items-math-g4.pdf -> 2022-released-items-math-g4.pdf (1388132 bytes)
+- FAIL https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-4-2022.pdf :: curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2025-staar-spanish-math-4-rationale.pdf -> 2025-staar-spanish-math-4-rationale.pdf (462600 bytes)
+- FAIL https://web.archive.org/web/2020/https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-4-2022.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- ok https://www.nysedregents.org/algebraone/619/algone62019-exam.pdf -> algone62019-exam.pdf (89364 bytes)
+- ok https://timss.bc.edu/timss1995i/timsspdf/amitems.pdf -> amitems.pdf (989324 bytes)
+- exists https://nces.ed.gov/timss/xls/TIMSS_Grade4_Math_Released_Item_Statistics.xlsx -> TIMSS_Grade4_Math_Released_Item_Statistics.xlsx (110707 bytes)
+- exists https://nces.ed.gov/timss/xls/TIMSS_Grade8_Math_Released_Item_Statistics.xlsx -> TIMSS_Grade8_Math_Released_Item_Statistics.xlsx (208503 bytes)
+- ok https://timss.bc.edu/timss1995i/Items.html -> Items.html (9938 bytes)
+- ok https://timss.bc.edu/TIMSS2003i/released.html -> released.html (24275 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2025-staar-spanish-math-5-answer-key.pdf -> 2025-staar-spanish-math-5-answer-key.pdf (696617 bytes)
+- ok https://www.nysedregents.org/algebraone/619/algone62019-examlt.pdf -> algone62019-examlt.pdf (121432 bytes)
+- ok https://timss.bc.edu/TIMSS2007/items.html -> items.html (11531 bytes)
+done timss
+- ok https://www.nysedregents.org/algebraone/619/algone62019-sk.pdf -> algone62019-sk.pdf (22187 bytes)
+- ok https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2013-final-test-numeracy-year-7-(calculator).pdf?sfvrsn=2 -> naplan-2013-final-test-numeracy-year-7-_calculator_.pdf (3052777 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2025-staar-spanish-math-5-rationale.pdf -> 2025-staar-spanish-math-5-rationale.pdf (468929 bytes)
+- ok https://www.nysedregents.org/algebraone/619/algone62019-sk.xlsx -> algone62019-sk.xlsx (13373 bytes)
+- ok https://www.nysedregents.org/algebraone/619/algone62019-rg.pdf -> algone62019-rg.pdf (89333 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2026-staar-3-math-answer-key.pdf -> 2026-staar-3-math-answer-key.pdf (632331 bytes)
+- ok https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g5.pdf -> 2022-released-items-math-g5.pdf (1419529 bytes)
+- exists https://www.nysedregents.org/elementary/math/2022/2022-released-items-math-g5.pdf -> 2022-released-items-math-g5.pdf (1419529 bytes)
+- exists https://www.nysed.gov/sites/default/files/programs/state-assessment/2022-released-items-math-g5.pdf -> 2022-released-items-math-g5.pdf (1419529 bytes)
+- FAIL https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-5-2022.pdf :: curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2026-staar-3-math-rationales.pdf -> 2026-staar-3-math-rationales.pdf (413599 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2026-staar-3-math-student-expectations.xlsx -> 2026-staar-3-math-student-expectations.xlsx (22585 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2026-staar-4-math-answer-key.pdf -> 2026-staar-4-math-answer-key.pdf (631650 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2026-staar-4-math-rationales.pdf -> 2026-staar-4-math-rationales.pdf (349671 bytes)
+- FAIL https://web.archive.org/web/2020/https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-5-2022.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2026-staar-4-math-student-expectations.xlsx -> 2026-staar-4-math-student-expectations.xlsx (23282 bytes)
+- ok https://www.nysedregents.org/algebraone/619/algone62019-mrs.pdf -> algone62019-mrs.pdf (1001029 bytes)
+- ok https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2013-final-test-numeracy-year-7-(no-calculator).pdf?sfvrsn=2 -> naplan-2013-final-test-numeracy-year-7-_no-calculator_.pdf (3675643 bytes)
+- ok https://www.nysedregents.org/algebraone/619/algone62019-cc.pdf -> algone62019-cc.pdf (145700 bytes)
+- ok https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g6.pdf -> 2022-released-items-math-g6.pdf (892465 bytes)
+- exists https://www.nysedregents.org/elementary/math/2022/2022-released-items-math-g6.pdf -> 2022-released-items-math-g6.pdf (892465 bytes)
+- exists https://www.nysed.gov/sites/default/files/programs/state-assessment/2022-released-items-math-g6.pdf -> 2022-released-items-math-g6.pdf (892465 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2026-staar-5-math-answer-key.pdf -> 2026-staar-5-math-answer-key.pdf (646667 bytes)
+- ok https://www.nysedregents.org/algebraone/619/algone62019-cc.xlsx -> algone62019-cc.xlsx (13403 bytes)
+- FAIL https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-6-2022.pdf :: curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/
+- FAIL https://web.archive.org/web/2020/https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-6-2022.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/algebraone/619/in-algone62019-zh.pdf -> in-algone62019-zh.pdf (60561 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2026-staar-5-math-rationales.pdf -> 2026-staar-5-math-rationales.pdf (405218 bytes)
+- ok https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2013-yr-7-paper-test-answers.pdf?sfvrsn=2 -> naplan-2013-yr-7-paper-test-answers.pdf (156371 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2026-staar-5-math-student-expectations.xlsx -> 2026-staar-5-math-student-expectations.xlsx (22629 bytes)
+- ok https://www.nysedregents.org/algebraone/119/algone12019-exam.pdf -> algone12019-exam.pdf (839777 bytes)
+- ok https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g7.pdf -> 2022-released-items-math-g7.pdf (1494851 bytes)
+- exists https://www.nysedregents.org/elementary/math/2022/2022-released-items-math-g7.pdf -> 2022-released-items-math-g7.pdf (1494851 bytes)
+- exists https://www.nysed.gov/sites/default/files/programs/state-assessment/2022-released-items-math-g7.pdf -> 2022-released-items-math-g7.pdf (1494851 bytes)
+- FAIL https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-7-2022.pdf :: curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2026-staar-6-math-answer-key.pdf -> 2026-staar-6-math-answer-key.pdf (643889 bytes)
+- ok https://www.nysedregents.org/algebraone/119/algone12019-examlt.pdf -> algone12019-examlt.pdf (159154 bytes)
+- FAIL https://web.archive.org/web/2020/https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-7-2022.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/algebraone/119/algone12019-rg.pdf -> algone12019-rg.pdf (135788 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2026-staar-6-math-rationales.pdf -> 2026-staar-6-math-rationales.pdf (381692 bytes)
+- ok https://www.nysedregents.org/algebraone/119/algone12019-sk.xlsx -> algone12019-sk.xlsx (13382 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2026-staar-6-math-student-expectations.xlsx -> 2026-staar-6-math-student-expectations.xlsx (23374 bytes)
+- ok https://www.nysedregents.org/ei/math/2022/english/2022-released-items-math-g8.pdf -> 2022-released-items-math-g8.pdf (1414953 bytes)
+- exists https://www.nysedregents.org/elementary/math/2022/2022-released-items-math-g8.pdf -> 2022-released-items-math-g8.pdf (1414953 bytes)
+- exists https://www.nysed.gov/sites/default/files/programs/state-assessment/2022-released-items-math-g8.pdf -> 2022-released-items-math-g8.pdf (1414953 bytes)
+- FAIL https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-8-2022.pdf :: curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2026-staar-7-math-answer-key.pdf -> 2026-staar-7-math-answer-key.pdf (429384 bytes)
+- ok https://www.nysedregents.org/algebraone/119/algone12019-mrsw.pdf -> algone12019-mrsw.pdf (1456416 bytes)
+- FAIL https://web.archive.org/web/2020/https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-8-2022.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/algebraone/119/algone12019-cc.pdf -> algone12019-cc.pdf (22926 bytes)
+- ok https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2013-final-test-numeracy-year-9-(calculator).pdf?sfvrsn=2 -> naplan-2013-final-test-numeracy-year-9-_calculator_.pdf (2454510 bytes)
+- FAIL https://www.nysedregents.org/ei/math/2023/english/2023-released-items-math-g3.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2026-staar-7-math-rationales.pdf -> 2026-staar-7-math-rationales.pdf (500554 bytes)
+- ok https://www.nysedregents.org/algebraone/119/algone12019-cc.xlsx -> algone12019-cc.xlsx (13763 bytes)
+- FAIL https://web.archive.org/web/2020/https://www.nysedregents.org/ei/math/2023/english/2023-released-items-math-g3.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2026-staar-7-math-student-expectations.xlsx -> 2026-staar-7-math-student-expectations.xlsx (23119 bytes)
+- FAIL https://www.nysedregents.org/elementary/math/2023/2023-released-items-math-g3.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/algebraone/818/algone82018-examp.pdf -> algone82018-examp.pdf (116897 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2026-staar-8-math-answer-key.pdf -> 2026-staar-8-math-answer-key.pdf (472684 bytes)
+- ok https://www.nysedregents.org/algebraone/818/algone82018-ltexam.pdf -> algone82018-ltexam.pdf (799438 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2026-staar-8-math-rationales.pdf -> 2026-staar-8-math-rationales.pdf (520273 bytes)
+- ok https://www.nysedregents.org/algebraone/818/algone82018-rg.pdf -> algone82018-rg.pdf (107204 bytes)
+- FAIL https://web.archive.org/web/2020/https://www.nysedregents.org/elementary/math/2023/2023-released-items-math-g3.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://www.nysed.gov/sites/default/files/programs/state-assessment/2023-released-items-math-g3.pdf :: curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/
+- ok https://www.nysedregents.org/algebraone/818/algone82018-sk.xlsx -> algone82018-sk.xlsx (13266 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2026-staar-8-math-student-expectations.xlsx -> 2026-staar-8-math-student-expectations.xlsx (22938 bytes)
+- FAIL https://web.archive.org/web/2020/https://www.nysed.gov/sites/default/files/programs/state-assessment/2023-released-items-math-g3.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-3-2023.pdf :: curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2026-staar-algebra-1-answer-key.pdf -> 2026-staar-algebra-1-answer-key.pdf (491964 bytes)
+- ok https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2013-final-test-numeracy-year-9-non-calc.pdf?sfvrsn=2 -> naplan-2013-final-test-numeracy-year-9-non-calc.pdf (2761205 bytes)
+- FAIL https://web.archive.org/web/2020/https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-3-2023.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://www.nysedregents.org/ei/math/2023/english/2023-released-items-math-g4.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2026-staar-algebra-1-rationales-updated.pdf -> 2026-staar-algebra-1-rationales-updated.pdf (611918 bytes)
+- FAIL https://web.archive.org/web/2020/https://www.nysedregents.org/ei/math/2023/english/2023-released-items-math-g4.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/algebraone/818/algone82018-mrsw.pdf -> algone82018-mrsw.pdf (1896300 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2026-staar-algebra-i-student-expectations.xlsx -> 2026-staar-algebra-i-student-expectations.xlsx (23417 bytes)
+- FAIL https://www.nysedregents.org/elementary/math/2023/2023-released-items-math-g4.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://www.nysedregents.org/elementary/math/2023/2023-released-items-math-g4.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- FAIL https://www.nysed.gov/sites/default/files/programs/state-assessment/2023-released-items-math-g4.pdf :: curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/
+- ok https://www.nysedregents.org/algebraone/818/algone82018-cc.pdf -> algone82018-cc.pdf (28058 bytes)
+- ok https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2013-yr-9-paper-test-answers.pdf?sfvrsn=2 -> naplan-2013-yr-9-paper-test-answers.pdf (159998 bytes)
+- FAIL https://web.archive.org/web/2020/https://www.nysed.gov/sites/default/files/programs/state-assessment/2023-released-items-math-g4.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/algebraone/818/algone82018-cc.xlsx -> algone82018-cc.xlsx (13774 bytes)
+- FAIL https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-4-2023.pdf :: curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2026-staar-spanish-3-math-answer-key.pdf -> 2026-staar-spanish-3-math-answer-key.pdf (594993 bytes)
+- FAIL https://web.archive.org/web/2020/https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-4-2023.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- FAIL https://www.nysedregents.org/ei/math/2023/english/2023-released-items-math-g5.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/algebraone/618/algone62018-exama.pdf -> algone62018-exama.pdf (143959 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2026-staar-spanish-3-math-rationales.pdf -> 2026-staar-spanish-3-math-rationales.pdf (358000 bytes)
+- FAIL https://web.archive.org/web/2020/https://www.nysedregents.org/ei/math/2023/english/2023-released-items-math-g5.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://www.nysedregents.org/elementary/math/2023/2023-released-items-math-g5.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2026-staar-spanish-3-math-student-expectations.xlsx -> 2026-staar-spanish-3-math-student-expectations.xlsx (23131 bytes)
+- ok https://www.nysedregents.org/algebraone/618/algone62018-lt.pdf -> algone62018-lt.pdf (702614 bytes)
+- FAIL https://web.archive.org/web/2020/https://www.nysedregents.org/elementary/math/2023/2023-released-items-math-g5.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://www.nysed.gov/sites/default/files/programs/state-assessment/2023-released-items-math-g5.pdf :: curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/
+- ok https://www.nysedregents.org/algebraone/618/algone62018-rg.pdf -> algone62018-rg.pdf (111860 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2026-staar-spanish-4-math-answer-key.pdf -> 2026-staar-spanish-4-math-answer-key.pdf (633688 bytes)
+- ok https://www.nysedregents.org/algebraone/618/algone62018-sk.xlsx -> algone62018-sk.xlsx (13137 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2026-staar-spanish-4-math-rationales.pdf -> 2026-staar-spanish-4-math-rationales.pdf (385055 bytes)
+- FAIL https://web.archive.org/web/2020/https://www.nysed.gov/sites/default/files/programs/state-assessment/2023-released-items-math-g5.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-5-2023.pdf :: curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/
+- ok https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2012-final-test---numeracy-year-3-(redacted-image-of-face-page-14).pdf?sfvrsn=2 -> naplan-2012-final-test---numeracy-year-3-_redacted-image-of-face-page-14_.pdf (2995569 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2026-staar-spanish-4-math-student-expectations.xlsx -> 2026-staar-spanish-4-math-student-expectations.xlsx (27248 bytes)
+- ok https://www.nysedregents.org/algebraone/618/algone62018-mrsw.pdf -> algone62018-mrsw.pdf (1873863 bytes)
+- FAIL https://web.archive.org/web/2020/https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-5-2023.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://www.nysedregents.org/ei/math/2023/english/2023-released-items-math-g6.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/algebraone/618/algone62018-cc.pdf -> algone62018-cc.pdf (22909 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2026-staar-spanish-5-math-answer-key.pdf -> 2026-staar-spanish-5-math-answer-key.pdf (1079168 bytes)
+- ok https://www.nysedregents.org/algebraone/618/algone62018-cc.xlsx -> algone62018-cc.xlsx (13425 bytes)
+- FAIL https://web.archive.org/web/2020/https://www.nysedregents.org/ei/math/2023/english/2023-released-items-math-g6.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2012-yr-3-paper-test-answers.pdf?sfvrsn=2 -> naplan-2012-yr-3-paper-test-answers.pdf (146003 bytes)
+- ok https://www.nysedregents.org/algebraone/618/algone62018-in.pdf -> algone62018-in.pdf (80006 bytes)
+- FAIL https://www.nysedregents.org/elementary/math/2023/2023-released-items-math-g6.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2026-staar-spanish-5-math-rationales.pdf -> 2026-staar-spanish-5-math-rationales.pdf (438805 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/2026-staar-spanish-5-math-student-expectations.xlsx -> 2026-staar-spanish-5-math-student-expectations.xlsx (22829 bytes)
+- ok https://www.nysedregents.org/algebraone/118/algone12018-exam.pdf -> algone12018-exam.pdf (597419 bytes)
+- FAIL https://web.archive.org/web/2020/https://www.nysedregents.org/elementary/math/2023/2023-released-items-math-g6.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://www.nysed.gov/sites/default/files/programs/state-assessment/2023-released-items-math-g6.pdf :: curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/may-2022-staar-algebra-i-answerkey-final-2.pdf -> may-2022-staar-algebra-i-answerkey-final-2.pdf (76712 bytes)
+- ok https://www.nysedregents.org/algebraone/118/algone12018-rgrevp.pdf -> algone12018-rgrevp.pdf (125965 bytes)
+- ok https://www.nysedregents.org/algebraone/118/algone12018-sk.xlsx -> algone12018-sk.xlsx (13149 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/may-2022-staar-math-3-answerkey-final-2.pdf -> may-2022-staar-math-3-answerkey-final-2.pdf (92161 bytes)
+- FAIL https://web.archive.org/web/2020/https://www.nysed.gov/sites/default/files/programs/state-assessment/2023-released-items-math-g6.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/may-2022-staar-math-4-answerkey-final-2.pdf -> may-2022-staar-math-4-answerkey-final-2.pdf (100053 bytes)
+- FAIL https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-6-2023.pdf :: curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/
+- ok https://www.nysedregents.org/algebraone/118/algone12018-mrsw.pdf -> algone12018-mrsw.pdf (1890435 bytes)
+- FAIL https://web.archive.org/web/2020/https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-6-2023.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/may-2022-staar-math-5-answerkey-final-2.pdf -> may-2022-staar-math-5-answerkey-final-2.pdf (85173 bytes)
+- FAIL https://www.nysedregents.org/ei/math/2023/english/2023-released-items-math-g7.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/algebraone/118/algone12018-cc.pdf -> algone12018-cc.pdf (164649 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/may-2022-staar-math-6-answerkey-final-2.pdf -> may-2022-staar-math-6-answerkey-final-2.pdf (70373 bytes)
+- FAIL https://web.archive.org/web/2020/https://www.nysedregents.org/ei/math/2023/english/2023-released-items-math-g7.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/algebraone/118/algone12018-cc.xlsx -> algone12018-cc.xlsx (13348 bytes)
+- ok https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2012-final-test-numeracy-year-5.pdf?sfvrsn=2 -> naplan-2012-final-test-numeracy-year-5.pdf (2970258 bytes)
+- FAIL https://www.nysedregents.org/elementary/math/2023/2023-released-items-math-g7.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/algebraone/118/in-algone12018zh.pdf -> in-algone12018zh.pdf (106698 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/may-2022-staar-math-7-answerkey-final-2.pdf -> may-2022-staar-math-7-answerkey-final-2.pdf (68934 bytes)
+- FAIL https://web.archive.org/web/2020/https://www.nysedregents.org/elementary/math/2023/2023-released-items-math-g7.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://www.nysed.gov/sites/default/files/programs/state-assessment/2023-released-items-math-g7.pdf :: curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/
+- ok https://www.nysedregents.org/algebraone/118/in-algone12018.pdf -> in-algone12018.pdf (66074 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/may-2022-staar-math-8-answerkey-final-2.pdf -> may-2022-staar-math-8-answerkey-final-2.pdf (70686 bytes)
+- ok https://www.nysedregents.org/algebraone/817/algone82017-exam.pdf -> algone82017-exam.pdf (170985 bytes)
+- ok https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2012-yr-5-paper-test-answers.pdf?sfvrsn=2 -> naplan-2012-yr-5-paper-test-answers.pdf (146247 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/may-2022-staar-spanish-math-3-answerkey-final-2.pdf -> may-2022-staar-spanish-math-3-answerkey-final-2.pdf (115956 bytes)
+- ok https://www.nysedregents.org/algebraone/817/algone82017-rg.pdf -> algone82017-rg.pdf (80492 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/may-2022-staar-spanish-math-5-answerkey-final-2.pdf -> may-2022-staar-spanish-math-5-answerkey-final-2.pdf (116860 bytes)
+- ok https://www.nysedregents.org/algebraone/817/algone82017-sk.xlsx -> algone82017-sk.xlsx (13107 bytes)
+- FAIL https://web.archive.org/web/2020/https://www.nysed.gov/sites/default/files/programs/state-assessment/2023-released-items-math-g7.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/staar-2021-grade-3-math-rationales.pdf -> staar-2021-grade-3-math-rationales.pdf (294317 bytes)
+- FAIL https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-7-2023.pdf :: curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/staar-2021-grade-4-math-rationales.pdf -> staar-2021-grade-4-math-rationales.pdf (349121 bytes)
+- FAIL https://web.archive.org/web/2020/https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-7-2023.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://www.nysedregents.org/ei/math/2023/english/2023-released-items-math-g8.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://www.nysedregents.org/ei/math/2023/english/2023-released-items-math-g8.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 20 ms: Could not connect to server
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/staar-2021-grade-5-math-rationales.pdf -> staar-2021-grade-5-math-rationales.pdf (708499 bytes)
+- FAIL https://www.nysedregents.org/elementary/math/2023/2023-released-items-math-g8.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://www.nysedregents.org/elementary/math/2023/2023-released-items-math-g8.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- FAIL https://www.nysed.gov/sites/default/files/programs/state-assessment/2023-released-items-math-g8.pdf :: curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/
+- ok https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2012-final-test-numeracy-year-7-(calculator-allowed).pdf?sfvrsn=2 -> naplan-2012-final-test-numeracy-year-7-_calculator-allowed_.pdf (3327647 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/staar-2021-grade-6-math-rationales.pdf -> staar-2021-grade-6-math-rationales.pdf (351373 bytes)
+- ok https://www.nysedregents.org/algebraone/817/algone82017-mrsw.pdf -> algone82017-mrsw.pdf (2659507 bytes)
+- FAIL https://web.archive.org/web/2020/https://www.nysed.gov/sites/default/files/programs/state-assessment/2023-released-items-math-g8.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/algebraone/817/algone82017-ccw.pdf -> algone82017-ccw.pdf (80345 bytes)
+- FAIL https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-8-2023.pdf :: curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/
+- FAIL https://web.archive.org/web/2020/https://www.nysed.gov/sites/default/files/programs/state-assessment/math-grade-8-2023.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/staar-2021-grade-7-math-rationales.pdf -> staar-2021-grade-7-math-rationales.pdf (523045 bytes)
+- FAIL https://www.nysed.gov/state-assessment/past-grades-3-8-tests :: curl: (60) SSL certificate OpenSSL verify result: unable to get local issuer certificate (20)
+More details here: https:/
+- ok https://www.nysedregents.org/algebraone/817/algone82017-cc.xlsx -> algone82017-cc.xlsx (13376 bytes)
+- FAIL https://web.archive.org/web/2020/https://www.nysed.gov/state-assessment/past-grades-3-8-tests :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- FAIL https://www.nysedregents.org/elementary/ :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://www.nysedregents.org/elementary/ :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+done nysed
+- ok https://www.nysedregents.org/algebraone/617/algone62017-examp.pdf -> algone62017-examp.pdf (119548 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/staar-2021-grade-8-math-rationales-fixed.pdf -> staar-2021-grade-8-math-rationales-fixed.pdf (541104 bytes)
+- ok https://www.nysedregents.org/algebraone/617/algone62017-rg.pdf -> algone62017-rg.pdf (80008 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/staar-2021-key-eoc-alg1-math-tagged.pdf -> staar-2021-key-eoc-alg1-math-tagged.pdf (138615 bytes)
+- ok https://www.nysedregents.org/algebraone/617/algone62017-sk.xlsx -> algone62017-sk.xlsx (13156 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/staar-2021-key-g3-math.pdf -> staar-2021-key-g3-math.pdf (82199 bytes)
+- ok https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2012-final-test-numeracy-year-7-(no-calculator).pdf?sfvrsn=2 -> naplan-2012-final-test-numeracy-year-7-_no-calculator_.pdf (2713613 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/staar-2021-key-g4-math.pdf -> staar-2021-key-g4-math.pdf (79629 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/staar-2021-key-g5-math.pdf -> staar-2021-key-g5-math.pdf (89217 bytes)
+- ok https://www.nysedregents.org/algebraone/617/algone62017-mrs.pdf -> algone62017-mrs.pdf (2710424 bytes)
+- ok https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2012-yr-7-paper-test-answers.pdf?sfvrsn=2 -> naplan-2012-yr-7-paper-test-answers.pdf (152753 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/staar-2021-key-g6-math.pdf -> staar-2021-key-g6-math.pdf (87895 bytes)
+- ok https://www.nysedregents.org/algebraone/617/algone62017-ccr.pdf -> algone62017-ccr.pdf (145898 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/staar-2021-key-g7-math.pdf -> staar-2021-key-g7-math.pdf (73781 bytes)
+- ok https://www.nysedregents.org/algebraone/617/algone62017-ccr.xlsx -> algone62017-ccr.xlsx (14164 bytes)
+- ok https://www.nysedregents.org/algebraone/117/algone12017-exam.pdf -> algone12017-exam.pdf (215197 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/staar-2021-key-g8-math.pdf -> staar-2021-key-g8-math.pdf (78090 bytes)
+- ok https://www.nysedregents.org/algebraone/117/algone12017-rg.pdf -> algone12017-rg.pdf (83972 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/staar-2021-key-s3-math.pdf -> staar-2021-key-s3-math.pdf (129200 bytes)
+- ok https://www.nysedregents.org/algebraone/117/algone12017-sk.xlsx -> algone12017-sk.xlsx (13075 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/staar-2021-key-s4-math.pdf -> staar-2021-key-s4-math.pdf (125610 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/staar-2021-key-s5-math.pdf -> staar-2021-key-s5-math.pdf (124021 bytes)
+- ok https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2012-final-test-numeracy-year-9-(calculator).pdf?sfvrsn=2 -> naplan-2012-final-test-numeracy-year-9-_calculator_.pdf (2795950 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/staar-expectation-tested-2021-may-algebra-i.csv -> staar-expectation-tested-2021-may-algebra-i.csv (2638 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/staar-expectation-tested-2021-spanish-may-grade-3-math.csv -> staar-expectation-tested-2021-spanish-may-grade-3-math.csv (1986 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/staar-expectation-tested-2021-spanish-may-grade-4-math.csv -> staar-expectation-tested-2021-spanish-may-grade-4-math.csv (2104 bytes)
+- ok https://www.nysedregents.org/algebraone/117/algone12017-mrs.pdf -> algone12017-mrs.pdf (2627413 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/staar-expectation-tested-2021-spanish-may-grade-5-math.csv -> staar-expectation-tested-2021-spanish-may-grade-5-math.csv (2228 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/staar-expectations-tested-2021-may-grade-3-math.csv -> staar-expectations-tested-2021-may-grade-3-math.csv (1989 bytes)
+- ok https://www.nysedregents.org/algebraone/117/algone12017-cc.pdf -> algone12017-cc.pdf (115306 bytes)
+- ok https://www.nysedregents.org/algebraone/117/algone12017-cc.xlsx -> algone12017-cc.xlsx (14188 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/staar-expectations-tested-2021-may-grade-4-math.csv -> staar-expectations-tested-2021-may-grade-4-math.csv (2073 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/staar-expectations-tested-2021-may-grade-5-math.csv -> staar-expectations-tested-2021-may-grade-5-math.csv (2231 bytes)
+- ok https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2012-final-test-numeracy-year-9-(no-calculator).pdf?sfvrsn=2 -> naplan-2012-final-test-numeracy-year-9-_no-calculator_.pdf (2418601 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/staar-expectations-tested-2021-may-grade-6-math.csv -> staar-expectations-tested-2021-may-grade-6-math.csv (2361 bytes)
+- ok https://www.nysedregents.org/algebraone/816/algone82016-exam.pdf -> algone82016-exam.pdf (391741 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/staar-expectations-tested-2021-may-grade-7-math.csv -> staar-expectations-tested-2021-may-grade-7-math.csv (2475 bytes)
+- ok https://www.nysedregents.org/algebraone/816/algone82016-rg.pdf -> algone82016-rg.pdf (137141 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/staar-expectations-tested-2021-may-grade-8-math.csv -> staar-expectations-tested-2021-may-grade-8-math.csv (2589 bytes)
+- ok https://www.nysedregents.org/algebraone/816/algone82016-sk.xlsx -> algone82016-sk.xlsx (13076 bytes)
+- ok https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2012-yr-9-paper-test-answers.pdf?sfvrsn=2 -> naplan-2012-yr-9-paper-test-answers.pdf (153630 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/staar-expectations-tested-2022-may-grade-3-math.xlsx -> staar-expectations-tested-2022-may-grade-3-math.xlsx (12920 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/staar-expectations-tested-2022-may-grade-5-math.xlsx -> staar-expectations-tested-2022-may-grade-5-math.xlsx (13321 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/staar-expectations-tested-2022-may-grade-6-math.xlsx -> staar-expectations-tested-2022-may-grade-6-math.xlsx (12709 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/staar-expectations-tested-2022-may-grade-8-math.xlsx -> staar-expectations-tested-2022-may-grade-8-math.xlsx (12768 bytes)
+- ok https://www.nysedregents.org/algebraone/816/algone82016-mrs.pdf -> algone82016-mrs.pdf (2120600 bytes)
+- ok https://tea.texas.gov/data-reports/staar/released-test-questions/student-expectations-tested-2022-may-staar-grade-4-math-v2.xlsx -> student-expectations-tested-2022-may-staar-grade-4-math-v2.xlsx (13035 bytes)
+- ok https://www.nysedregents.org/algebraone/816/algone82016-cc.pdf -> algone82016-cc.pdf (22952 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2019-staar-3-math-exptested.csv -> 2019-staar-3-math-exptested.csv (1568 bytes)
+- ok https://www.nysedregents.org/algebraone/816/algone82016-cc.xlsx -> algone82016-cc.xlsx (16015 bytes)
+- ok https://www.nysedregents.org/algebraone/616/algone62016-exam.pdf -> algone62016-exam.pdf (92808 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2019-staar-3-math-key.pdf -> 2019-staar-3-math-key.pdf (81806 bytes)
+- ok https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/nap-2016-numeracy-year-5-bw.pdf?sfvrsn=2 -> nap-2016-numeracy-year-5-bw.pdf (2168826 bytes)
+- ok https://www.nysedregents.org/algebraone/616/algone62016-rg.pdf -> algone62016-rg.pdf (89673 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2019-staar-3-math-rationales.pdf -> 2019-staar-3-math-rationales.pdf (224629 bytes)
+- ok https://www.nysedregents.org/algebraone/616/algone62016-sk.xlsx -> algone62016-sk.xlsx (13119 bytes)
+- ok https://www.acara.edu.au/_resources/201105_NAPLAN_2011_Final_Test_Numeracy_Year_3.pdf -> 201105_NAPLAN_2011_Final_Test_Numeracy_Year_3.pdf (4532915 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2019-staar-3-math-spanish-exptested.csv -> 2019-staar-3-math-spanish-exptested.csv (1568 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2019-staar-3-math-spanish-key.pdf -> 2019-staar-3-math-spanish-key.pdf (80167 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2019-staar-3-math-spanish-rationale.pdf -> 2019-staar-3-math-spanish-rationale.pdf (152211 bytes)
+- ok https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2011-yr-3-paper-test-answers.pdf -> naplan-2011-yr-3-paper-test-answers.pdf (201818 bytes)
+- ok https://www.nysedregents.org/algebraone/616/algone62016-mrs.pdf -> algone62016-mrs.pdf (2308969 bytes)
+- ok https://www.nysedregents.org/algebraone/616/algone62016-cc.pdf -> algone62016-cc.pdf (22933 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2019-staar-3-math-spanish-test.pdf -> 2019-staar-3-math-spanish-test.pdf (654244 bytes)
+- ok https://www.nysedregents.org/algebraone/616/algone62016-cc.xlsx -> algone62016-cc.xlsx (16016 bytes)
+- ok https://www.nysedregents.org/algebraone/116/algone12016-exam.pdf -> algone12016-exam.pdf (113049 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2019-staar-3-math-test.pdf -> 2019-staar-3-math-test.pdf (513783 bytes)
+- ok https://www.acara.edu.au/_resources/201106_NAPLAN_2011_Final_Test_Numeracy_Year_5.pdf -> 201106_NAPLAN_2011_Final_Test_Numeracy_Year_5.pdf (4620580 bytes)
+- ok https://www.nysedregents.org/algebraone/116/algone12016-rg.pdf -> algone12016-rg.pdf (81526 bytes)
+- ok https://www.nysedregents.org/algebraone/116/algone12016-sk.xlsx -> algone12016-sk.xlsx (13111 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2019-staar-4-math-exptested.csv -> 2019-staar-4-math-exptested.csv (1664 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2019-staar-4-math-key.pdf -> 2019-staar-4-math-key.pdf (81498 bytes)
+- ok https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2011-yr-5-paper-test-answers.pdf -> naplan-2011-yr-5-paper-test-answers.pdf (149994 bytes)
+- ok https://www.nysedregents.org/algebraone/116/algone12016-mrs.pdf -> algone12016-mrs.pdf (4178106 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2019-staar-4-math-rationales.pdf -> 2019-staar-4-math-rationales.pdf (279870 bytes)
+- ok https://www.nysedregents.org/algebraone/116/algone12016-cc.pdf -> algone12016-cc.pdf (23078 bytes)
+- ok https://www.nysedregents.org/algebraone/116/algone12016-cc.xlsx -> algone12016-cc.xlsx (15997 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2019-staar-4-math-spanish-exptested.pdf -> 2019-staar-4-math-spanish-exptested.pdf (1664 bytes)
+- ok https://www.nysedregents.org/algebraone/815/algone82015-exam.pdf -> algone82015-exam.pdf (118630 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2019-staar-4-math-spanish-key.pdf -> 2019-staar-4-math-spanish-key.pdf (80064 bytes)
+- ok https://www.acara.edu.au/_resources/201107_NAPLAN_2011_Final_Test_Numeracy_Year_7_calculator.pdf -> 201107_NAPLAN_2011_Final_Test_Numeracy_Year_7_calculator.pdf (3685758 bytes)
+- ok https://www.nysedregents.org/algebraone/815/algone82015-rg.pdf -> algone82015-rg.pdf (87415 bytes)
+- ok https://www.nysedregents.org/algebraone/815/algone82015-sk.xlsx -> algone82015-sk.xlsx (13040 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2019-staar-4-math-spanish-test.pdf -> 2019-staar-4-math-spanish-test.pdf (4589126 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2019-staar-4-math-test.pdf -> 2019-staar-4-math-test.pdf (278243 bytes)
+- ok https://www.acara.edu.au/_resources/201108_NAPLAN_2011_Final_Test_Numeracy_Year_7_non_calculator.pdf -> 201108_NAPLAN_2011_Final_Test_Numeracy_Year_7_non_calculator.pdf (3754667 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2019-staar-5-math-exptested.csv -> 2019-staar-5-math-exptested.csv (1829 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2019-staar-5-math-key.pdf -> 2019-staar-5-math-key.pdf (82601 bytes)
+- ok https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2011-yr-7-paper-test-answers.pdf -> naplan-2011-yr-7-paper-test-answers.pdf (153880 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2019-staar-5-math-rationales.pdf -> 2019-staar-5-math-rationales.pdf (283500 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2019-staar-5-math-spanish-exptested.pdf -> 2019-staar-5-math-spanish-exptested.pdf (1829 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2019-staar-5-math-spanish-key.pdf -> 2019-staar-5-math-spanish-key.pdf (81297 bytes)
+- ok https://www.nysedregents.org/algebraone/815/algone82015-mrs.pdf -> algone82015-mrs.pdf (3401712 bytes)
+- ok https://www.acara.edu.au/_resources/201109_NAPLAN_2011_Final_Test_Numeracy_Year_9_calculator.pdf -> 201109_NAPLAN_2011_Final_Test_Numeracy_Year_9_calculator.pdf (4959205 bytes)
+- ok https://www.nysedregents.org/algebraone/815/algone82015-cc.pdf -> algone82015-cc.pdf (145530 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2019-staar-5-math-spanish-rationale.pdf -> 2019-staar-5-math-spanish-rationale.pdf (194135 bytes)
+- ok https://www.nysedregents.org/algebraone/815/algone82015-cc.xlsx -> algone82015-cc.xlsx (15514 bytes)
+- ok https://www.acara.edu.au/_resources/201110_NAPLAN_2011_Final_Test_Numeracy_Year_9_non_calculator.pdf -> 201110_NAPLAN_2011_Final_Test_Numeracy_Year_9_non_calculator.pdf (3075588 bytes)
+- ok https://www.nysedregents.org/algebraone/615/algone62015-exam.pdf -> algone62015-exam.pdf (127745 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2019-staar-5-math-spanish-test.pdf -> 2019-staar-5-math-spanish-test.pdf (564486 bytes)
+- ok https://www.nysedregents.org/algebraone/615/algone62015-rg.pdf -> algone62015-rg.pdf (85033 bytes)
+- ok https://www.nysedregents.org/algebraone/615/algone62015-sk.xlsx -> algone62015-sk.xlsx (12985 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2019-staar-5-math-test.pdf -> 2019-staar-5-math-test.pdf (231497 bytes)
+- ok https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2011-yr-9-paper-test-answers.pdf -> naplan-2011-yr-9-paper-test-answers.pdf (155179 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2019-staar-6-math-exptested.csv -> 2019-staar-6-math-exptested.csv (1864 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2019-staar-6-math-key.pdf -> 2019-staar-6-math-key.pdf (82306 bytes)
+- ok https://www.nysedregents.org/algebraone/615/algone62015-mrs.pdf -> algone62015-mrs.pdf (4546283 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2019-staar-6-math-rationales.pdf -> 2019-staar-6-math-rationales.pdf (292326 bytes)
+- ok https://www.acara.edu.au/_resources/201005_NAPLAN_2010_Final_Test_Numeracy_Year_3.pdf -> 201005_NAPLAN_2010_Final_Test_Numeracy_Year_3.pdf (5100051 bytes)
+- ok https://www.nysedregents.org/algebraone/615/algone62015-cc.pdf -> algone62015-cc.pdf (145802 bytes)
+- ok https://www.nysedregents.org/algebraone/615/algone62015-cc.xlsx -> algone62015-cc.xlsx (15845 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2019-staar-6-math-test.pdf -> 2019-staar-6-math-test.pdf (461708 bytes)
+- ok https://www.nysedregents.org/algebraone/115/algone12015-exam.pdf -> algone12015-exam.pdf (105146 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2019-staar-7-math-exptested.csv -> 2019-staar-7-math-exptested.csv (1949 bytes)
+- ok https://www.nysedregents.org/algebraone/115/algone12015-rg.pdf -> algone12015-rg.pdf (77857 bytes)
+- ok https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2010-yr-3-paper-test-answers.pdf -> naplan-2010-yr-3-paper-test-answers.pdf (148878 bytes)
+- ok https://www.nysedregents.org/algebraone/115/algone12015-sk.xlsx -> algone12015-sk.xlsx (12969 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2019-staar-7-math-key.pdf -> 2019-staar-7-math-key.pdf (82883 bytes)
+
+# download_public_pdfs.py corpus=eqao
+
+## EQAO
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2019-staar-7-math-rationales.pdf -> 2019-staar-7-math-rationales.pdf (257806 bytes)
+- ok https://www.acara.edu.au/_resources/201006_NAPLAN_2010_Final_Test_Numeracy_Year_5.pdf -> 201006_NAPLAN_2010_Final_Test_Numeracy_Year_5.pdf (5918479 bytes)
+- ok https://www.nysedregents.org/algebraone/115/algone12015-mrs.pdf -> algone12015-mrs.pdf (3291492 bytes)
+- ok https://www.nysedregents.org/algebraone/115/algone12015-ccrev.pdf -> algone12015-ccrev.pdf (145833 bytes)
+- FAIL https://www.eqao.com/the-assessments/assessment-documents/ :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/algebraone/115/algone12015-ccrev.xlsx -> algone12015-ccrev.xlsx (15836 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2019-staar-7-math-test.pdf -> 2019-staar-7-math-test.pdf (3811705 bytes)
+- ok https://www.nysedregents.org/algebraone/115/algone12015-in.pdf -> algone12015-in.pdf (65307 bytes)
+- ok https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2010-yr-5-paper-test-answers.pdf -> naplan-2010-yr-5-paper-test-answers.pdf (180999 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2019-staar-8-math-exptested.csv -> 2019-staar-8-math-exptested.csv (2128 bytes)
+- ok https://www.nysedregents.org/algebraone/814/algone82014-exam.pdf -> algone82014-exam.pdf (135715 bytes)
+- ok https://www.nysedregents.org/algebraone/814/algone82014-rg.pdf -> algone82014-rg.pdf (78755 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2019-staar-8-math-key.pdf -> 2019-staar-8-math-key.pdf (83590 bytes)
+- FAIL https://web.archive.org/web/2020/https://www.eqao.com/the-assessments/assessment-documents/ :: curl: (22) The requested URL returned error: 404
+- ok https://www.eqao.com/ -> index.bin (456735 bytes)
+- ok https://www.acara.edu.au/_resources/201007_NAPLAN_2010_Final_Test_Numeracy_Year_7_calculator.pdf -> 201007_NAPLAN_2010_Final_Test_Numeracy_Year_7_calculator.pdf (4287294 bytes)
+- ok https://www.nysedregents.org/algebraone/814/algone82014-sk.xlsx -> algone82014-sk.xlsx (13028 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2019-staar-8-math-rationale.pdf -> 2019-staar-8-math-rationale.pdf (214377 bytes)
+- FAIL https://www.eqao.com/the-assessments/assessment-documents/ :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://www.eqao.com/the-assessments/assessment-documents/ :: curl: (22) The requested URL returned error: 404
+- FAIL https://www.eqao.com/wp-content/uploads/2021/07/g6-language-math-assessment-booklet-2016.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2019-staar-8-math-test.pdf -> 2019-staar-8-math-test.pdf (542027 bytes)
+- ok https://www.nysedregents.org/algebraone/814/algone82014-mrs.pdf -> algone82014-mrs.pdf (3631850 bytes)
+- FAIL https://web.archive.org/web/2020/https://www.eqao.com/wp-content/uploads/2021/07/g6-language-math-assessment-booklet-2016.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2019-staar-algebra-i-exptested.csv -> 2019-staar-algebra-i-exptested.csv (1935 bytes)
+- ok https://www.acara.edu.au/_resources/201008_NAPLAN_2010_Final_Test_Numeracy_Year_7_non_calculator.pdf -> 201008_NAPLAN_2010_Final_Test_Numeracy_Year_7_non_calculator.pdf (3022968 bytes)
+- ok https://www.nysedregents.org/algebraone/814/algone82014-cc.pdf -> algone82014-cc.pdf (10826 bytes)
+- FAIL https://www.eqao.com/wp-content/uploads/g6-2016-released-questions-language-answers.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/algebraone/814/algone82014-cc.xlsx -> algone82014-cc.xlsx (15930 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2019-staar-algebra-i-key.pdf -> 2019-staar-algebra-i-key.pdf (84564 bytes)
+- FAIL https://web.archive.org/web/2020/https://www.eqao.com/wp-content/uploads/g6-2016-released-questions-language-answers.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/algebraone/614/algone62014-exam.pdf -> algone62014-exam.pdf (143589 bytes)
+- FAIL https://www.eqao.com/wp-content/uploads/junior-division-assessment-math-language-2016.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://www.eqao.com/wp-content/uploads/junior-division-assessment-math-language-2016.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- ok https://www.eqao.com/the-assessments/grade-9-math/ -> grade-9-math.bin (410600 bytes)
+- ok https://www.nysedregents.org/algebraone/614/algone62014-rg.pdf -> algone62014-rg.pdf (78579 bytes)
+- ok https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2010-yr-7-paper-test-answers.pdf -> naplan-2010-yr-7-paper-test-answers.pdf (183313 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2019-staar-algebra-i-rationales.pdf -> 2019-staar-algebra-i-rationales.pdf (354148 bytes)
+- FAIL https://www.eqao.com/wp-content/uploads/2022/10/g9-released-questions-academic-2019.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/algebraone/614/algone62014-sk.xlsx -> algone62014-sk.xlsx (13051 bytes)
+- FAIL https://web.archive.org/web/2020/https://www.eqao.com/wp-content/uploads/2022/10/g9-released-questions-academic-2019.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 22 ms: Could not connect to server
+- FAIL https://www.eqao.com/wp-content/uploads/g3-2016-assessment-booklet.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://www.eqao.com/wp-content/uploads/g3-2016-assessment-booklet.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+done eqao
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2019-staar-algebra-i-test.pdf -> 2019-staar-algebra-i-test.pdf (997935 bytes)
+- ok https://www.acara.edu.au/_resources/201009_NAPLAN_2010_Final_Test_Numeracy_Year_9_calculator.pdf -> 201009_NAPLAN_2010_Final_Test_Numeracy_Year_9_calculator.pdf (3879942 bytes)
+- ok https://www.nysedregents.org/algebraone/614/algone62014-mrsw.pdf -> algone62014-mrsw.pdf (2067177 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2022-staar-redesign-3-math-paper-key.pdf -> 2022-staar-redesign-3-math-paper-key.pdf (198274 bytes)
+- ok https://www.acara.edu.au/_resources/201010_NAPLAN_2010_Final_Test_Numeracy_Year_9_non_calculator.pdf -> 201010_NAPLAN_2010_Final_Test_Numeracy_Year_9_non_calculator.pdf (3363326 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2022-staar-redesign-3-math-spanish-paper-key.pdf -> 2022-staar-redesign-3-math-spanish-paper-key.pdf (118233 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2022-staar-redesign-4-math-paper-key.pdf -> 2022-staar-redesign-4-math-paper-key.pdf (242519 bytes)
+- ok https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2010-yr-9-paper-test-answers.pdf -> naplan-2010-yr-9-paper-test-answers.pdf (154871 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2022-staar-redesign-4-math-spanish-paper-key.pdf -> 2022-staar-redesign-4-math-spanish-paper-key.pdf (120418 bytes)
+- ok https://www.nysedregents.org/algebraone/614/algebra-i-annotated-items-2014.pdf -> algebra-i-annotated-items-2014.pdf (4584643 bytes)
+- ok https://www.nysedregents.org/algebraone/614/algone62014-cc.pdf -> algone62014-cc.pdf (10835 bytes)
+- ok https://www.nysedregents.org/algebraone/614/algone62014-cc.xlsx -> algone62014-cc.xlsx (14444 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2022-staar-redesign-5-math-paper-key.pdf -> 2022-staar-redesign-5-math-paper-key.pdf (243123 bytes)
+- ok https://www.nysedregents.org/algebraone/614/in-algone-614zh.pdf -> in-algone-614zh.pdf (8483 bytes)
+- ok https://www.acara.edu.au/_resources/200905_NAPLAN_2009_Final_Test_Numeracy_Year_3.pdf -> 200905_NAPLAN_2009_Final_Test_Numeracy_Year_3.pdf (2561626 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2022-staar-redesign-5-math-spanish-paper-key.pdf -> 2022-staar-redesign-5-math-spanish-paper-key.pdf (138548 bytes)
+- ok https://nysedregents.org/algebraone/home.html -> regents-alg1b.html (76969 bytes)
+- exists https://nysedregents.org/algebraone/826/algone-82026-exam.pdf -> algone-82026-exam.pdf (184592 bytes)
+- exists https://nysedregents.org/algebraone/826/algone-82026-examlt.pdf -> algone-82026-examlt.pdf (277554 bytes)
+- exists https://nysedregents.org/algebraone/826/algone-82026-sk.pdf -> algone-82026-sk.pdf (142333 bytes)
+- exists https://nysedregents.org/algebraone/826/algone-82026-sk.xlsx -> algone-82026-sk.xlsx (12896 bytes)
+- exists https://nysedregents.org/algebraone/826/algone-82026-rg.pdf -> algone-82026-rg.pdf (186710 bytes)
+- exists https://nysedregents.org/algebraone/826/algone-82026-mrs.pdf -> algone-82026-mrs.pdf (1330091 bytes)
+- exists https://nysedregents.org/algebraone/826/algone-82026-cc.pdf -> algone-82026-cc.pdf (116914 bytes)
+- exists https://nysedregents.org/algebraone/826/algone-82026-cc.xlsx -> algone-82026-cc.xlsx (13947 bytes)
+- exists https://nysedregents.org/algebraone/626/algone-62026-exam.pdf -> algone-62026-exam.pdf (412281 bytes)
+- exists https://nysedregents.org/algebraone/626/algone-62026-examlt.pdf -> algone-62026-examlt.pdf (630147 bytes)
+- exists https://nysedregents.org/algebraone/626/algone-62026-sk.pdf -> algone-62026-sk.pdf (136482 bytes)
+- exists https://nysedregents.org/algebraone/626/algone-62026-sk.xlsx -> algone-62026-sk.xlsx (12839 bytes)
+- exists https://nysedregents.org/algebraone/626/algone-62026-rg.pdf -> algone-62026-rg.pdf (226082 bytes)
+- exists https://nysedregents.org/algebraone/626/algone-62026-mrs.pdf -> algone-62026-mrs.pdf (1891531 bytes)
+- exists https://nysedregents.org/algebraone/626/algone-62026-cc.pdf -> algone-62026-cc.pdf (113963 bytes)
+- exists https://nysedregents.org/algebraone/626/algone-62026-cc.xlsx -> algone-62026-cc.xlsx (15376 bytes)
+- exists https://nysedregents.org/algebraone/126/algone-12026-exam.pdf -> algone-12026-exam.pdf (530354 bytes)
+- exists https://nysedregents.org/algebraone/126/algone-12026-exam-lt.pdf -> algone-12026-exam-lt.pdf (650518 bytes)
+- exists https://nysedregents.org/algebraone/126/algone-12026-sk.pdf -> algone-12026-sk.pdf (130863 bytes)
+- exists https://nysedregents.org/algebraone/126/algone-12026-sk.xlsx -> algone-12026-sk.xlsx (12867 bytes)
+- exists https://nysedregents.org/algebraone/126/algone-12026-rg.pdf -> algone-12026-rg.pdf (241939 bytes)
+- exists https://nysedregents.org/algebraone/126/algone-12026-mrs.pdf -> algone-12026-mrs.pdf (1932198 bytes)
+- exists https://nysedregents.org/algebraone/126/algone-12026-cc.pdf -> algone-12026-cc.pdf (111149 bytes)
+- exists https://nysedregents.org/algebraone/126/algone-12026-cc.xlsx -> algone-12026-cc.xlsx (13878 bytes)
+- exists https://nysedregents.org/algebraone/825/algone-82025-exam.pdf -> algone-82025-exam.pdf (486738 bytes)
+- exists https://nysedregents.org/algebraone/825/algone-82025-examlt.pdf -> algone-82025-examlt.pdf (536685 bytes)
+- exists https://nysedregents.org/algebraone/825/algone-82025-sk.pdf -> algone-82025-sk.pdf (129188 bytes)
+- exists https://nysedregents.org/algebraone/825/algone-82025-sk.xlsx -> algone-82025-sk.xlsx (12894 bytes)
+- exists https://nysedregents.org/algebraone/825/algone-82025-rg.pdf -> algone-82025-rg.pdf (236072 bytes)
+- exists https://nysedregents.org/algebraone/825/algone-82025-mrs.pdf -> algone-82025-mrs.pdf (1983489 bytes)
+- exists https://nysedregents.org/algebraone/825/algone-82025-cc.pdf -> algone-82025-cc.pdf (109638 bytes)
+- exists https://nysedregents.org/algebraone/825/algone-82025-cc.xlsx -> algone-82025-cc.xlsx (21362 bytes)
+- exists https://nysedregents.org/algebraone/625/algone-62025-exam.pdf -> algone-62025-exam.pdf (457903 bytes)
+- exists https://nysedregents.org/algebraone/625/algone-62025-examlt.pdf -> algone-62025-examlt.pdf (494869 bytes)
+- exists https://nysedregents.org/algebraone/625/algone-62025-sk.pdf -> algone-62025-sk.pdf (130404 bytes)
+- exists https://nysedregents.org/algebraone/625/algone-62025-sk.xlsx -> algone-62025-sk.xlsx (12923 bytes)
+- exists https://nysedregents.org/algebraone/625/algone-62025-rg.pdf -> algone-62025-rg.pdf (240873 bytes)
+- exists https://nysedregents.org/algebraone/625/algone-62025-mrs.pdf -> algone-62025-mrs.pdf (1103355 bytes)
+- exists https://nysedregents.org/algebraone/625/algone-62025-cc.pdf -> algone-62025-cc.pdf (109790 bytes)
+- exists https://nysedregents.org/algebraone/625/algone-62025-cc.xlsx -> algone-62025-cc.xlsx (15386 bytes)
+- exists https://nysedregents.org/algebraone/125/algone-12025-exam.pdf -> algone-12025-exam.pdf (614863 bytes)
+- exists https://nysedregents.org/algebraone/125/algone-12025-exam-lt.pdf -> algone-12025-exam-lt.pdf (633311 bytes)
+- exists https://nysedregents.org/algebraone/125/algone-12025-sk.pdf -> algone-12025-sk.pdf (130170 bytes)
+- exists https://nysedregents.org/algebraone/125/algone-12025-sk.xlsx -> algone-12025-sk.xlsx (12926 bytes)
+- exists https://nysedregents.org/algebraone/125/algone-12025-rg.pdf -> algone-12025-rg.pdf (232180 bytes)
+- exists https://nysedregents.org/algebraone/125/algone-12025-mrs.pdf -> algone-12025-mrs.pdf (1139359 bytes)
+- exists https://nysedregents.org/algebraone/125/algone-12025-cc.pdf -> algone-12025-cc.pdf (110104 bytes)
+- exists https://nysedregents.org/algebraone/125/algone-12025-cc.xlsx -> algone-12025-cc.xlsx (14999 bytes)
+- exists https://nysedregents.org/algebraone/824/algone82024-exam.pdf -> algone82024-exam.pdf (354188 bytes)
+- exists https://nysedregents.org/algebraone/824/algone82024-examlt.pdf -> algone82024-examlt.pdf (562217 bytes)
+- exists https://nysedregents.org/algebraone/824/algone82024-sk.pdf -> algone82024-sk.pdf (129396 bytes)
+- exists https://nysedregents.org/algebraone/824/algone82024-sk.xlsx -> algone82024-sk.xlsx (12921 bytes)
+- exists https://nysedregents.org/algebraone/824/algone82024-rg.pdf -> algone82024-rg.pdf (214869 bytes)
+- exists https://nysedregents.org/algebraone/824/algone82024-mrs.pdf -> algone82024-mrs.pdf (1098008 bytes)
+- exists https://nysedregents.org/algebraone/824/algone82024-cc.pdf -> algone82024-cc.pdf (109481 bytes)
+- exists https://nysedregents.org/algebraone/824/algone82024-cc.xlsx -> algone82024-cc.xlsx (13253 bytes)
+- exists https://nysedregents.org/algebraone/624/algone62024-exam.pdf -> algone62024-exam.pdf (403994 bytes)
+- exists https://nysedregents.org/algebraone/624/algone62024-exam-lt.pdf -> algone62024-exam-lt.pdf (580161 bytes)
+- exists https://nysedregents.org/algebraone/624/algone62024-sk.pdf -> algone62024-sk.pdf (130217 bytes)
+- exists https://nysedregents.org/algebraone/624/algone62024-sk.xlsx -> algone62024-sk.xlsx (12931 bytes)
+- exists https://nysedregents.org/algebraone/624/algone62024-rg.pdf -> algone62024-rg.pdf (260223 bytes)
+- exists https://nysedregents.org/algebraone/624/algone62024-mrs.pdf -> algone62024-mrs.pdf (1130096 bytes)
+- exists https://nysedregents.org/algebraone/624/algone62024-cc.pdf -> algone62024-cc.pdf (109484 bytes)
+- exists https://nysedregents.org/algebraone/624/algone62024-cc.xlsx -> algone62024-cc.xlsx (13467 bytes)
+- exists https://nysedregents.org/algebraone/124/algone12024-exam.pdf -> algone12024-exam.pdf (472668 bytes)
+- exists https://nysedregents.org/algebraone/124/algone12024-exam-lt.pdf -> algone12024-exam-lt.pdf (598603 bytes)
+- exists https://nysedregents.org/algebraone/124/algone12024-sk.pdf -> algone12024-sk.pdf (130247 bytes)
+- exists https://nysedregents.org/algebraone/124/algone12024-sk.xlsx -> algone12024-sk.xlsx (12992 bytes)
+- exists https://nysedregents.org/algebraone/124/algone12024-rg.pdf -> algone12024-rg.pdf (207464 bytes)
+- exists https://nysedregents.org/algebraone/124/algone12024-mrs.pdf -> algone12024-mrs.pdf (1114333 bytes)
+- exists https://nysedregents.org/algebraone/124/algone12024-cc.pdf -> algone12024-cc.pdf (110825 bytes)
+- exists https://nysedregents.org/algebraone/124/algone12024-cc.xlsx -> algone12024-cc.xlsx (13219 bytes)
+- exists https://nysedregents.org/algebraone/823/algone82023-exam.pdf -> algone82023-exam.pdf (404859 bytes)
+- exists https://nysedregents.org/algebraone/823/algone82023-examlt.pdf -> algone82023-examlt.pdf (560533 bytes)
+- exists https://nysedregents.org/algebraone/823/algone82023-sk.pdf -> algone82023-sk.pdf (131430 bytes)
+- exists https://nysedregents.org/algebraone/823/algone82023-sk.xlsx -> algone82023-sk.xlsx (13417 bytes)
+- exists https://nysedregents.org/algebraone/823/algone82023-rg.pdf -> algone82023-rg.pdf (223398 bytes)
+- exists https://nysedregents.org/algebraone/823/algone82023-mrs.pdf -> algone82023-mrs.pdf (1367997 bytes)
+- exists https://nysedregents.org/algebraone/823/algone82023-cc.pdf -> algone82023-cc.pdf (110450 bytes)
+- exists https://nysedregents.org/algebraone/823/algone82023-cc.xlsx -> algone82023-cc.xlsx (13560 bytes)
+- exists https://nysedregents.org/algebraone/623/algone62023-exam.pdf -> algone62023-exam.pdf (476694 bytes)
+- exists https://nysedregents.org/algebraone/623/algone62023-exam-lt.pdf -> algone62023-exam-lt.pdf (632359 bytes)
+- exists https://nysedregents.org/algebraone/623/algone62023-sk.pdf -> algone62023-sk.pdf (131781 bytes)
+- exists https://nysedregents.org/algebraone/623/algone62023-sk.xlsx -> algone62023-sk.xlsx (13417 bytes)
+- exists https://nysedregents.org/algebraone/623/algone62023-rg.pdf -> algone62023-rg.pdf (189114 bytes)
+- exists https://nysedregents.org/algebraone/623/algone62023-mrs.pdf -> algone62023-mrs.pdf (1464734 bytes)
+- exists https://nysedregents.org/algebraone/623/algone62023-cc.pdf -> algone62023-cc.pdf (110745 bytes)
+- exists https://nysedregents.org/algebraone/623/algone62023-cc.xlsx -> algone62023-cc.xlsx (13581 bytes)
+- exists https://nysedregents.org/algebraone/123/algone12023-exam.pdf -> algone12023-exam.pdf (125197 bytes)
+- exists https://nysedregents.org/algebraone/123/algone12023-exam-lt.pdf -> algone12023-exam-lt.pdf (211544 bytes)
+- exists https://nysedregents.org/algebraone/123/algone12023-sk.pdf -> algone12023-sk.pdf (131845 bytes)
+- exists https://nysedregents.org/algebraone/123/algone12023-sk.xlsx -> algone12023-sk.xlsx (13399 bytes)
+- exists https://nysedregents.org/algebraone/123/algone12023-rg.pdf -> algone12023-rg.pdf (156433 bytes)
+- exists https://nysedregents.org/algebraone/123/algone12023-mrs.pdf -> algone12023-mrs.pdf (1724202 bytes)
+- exists https://nysedregents.org/algebraone/123/algone12023-cc.pdf -> algone12023-cc.pdf (110732 bytes)
+- exists https://nysedregents.org/algebraone/123/algone12023-cc.xlsx -> algone12023-cc.xlsx (13553 bytes)
+- exists https://nysedregents.org/algebraone/822/algone82022-exam.pdf -> algone82022-exam.pdf (89864 bytes)
+- exists https://nysedregents.org/algebraone/822/algone82022-examlt.pdf -> algone82022-examlt.pdf (123438 bytes)
+- exists https://nysedregents.org/algebraone/822/algone82022-sk.pdf -> algone82022-sk.pdf (131422 bytes)
+- exists https://nysedregents.org/algebraone/822/algone82022-sk.xlsx -> algone82022-sk.xlsx (13394 bytes)
+- exists https://nysedregents.org/algebraone/822/algone82022-rg.pdf -> algone82022-rg.pdf (76928 bytes)
+- exists https://nysedregents.org/algebraone/822/algone82022-mrs.pdf -> algone82022-mrs.pdf (1238091 bytes)
+- exists https://nysedregents.org/algebraone/822/algone82022-cc.pdf -> algone82022-cc.pdf (25623 bytes)
+- exists https://nysedregents.org/algebraone/822/algone82022-cc.xlsx -> algone82022-cc.xlsx (13190 bytes)
+- exists https://nysedregents.org/algebraone/622/algone62022-exam.pdf -> algone62022-exam.pdf (88155 bytes)
+- exists https://nysedregents.org/algebraone/622/algone62022-examlt.pdf -> algone62022-examlt.pdf (129538 bytes)
+- exists https://nysedregents.org/algebraone/622/algone62022-sk.pdf -> algone62022-sk.pdf (132014 bytes)
+- exists https://nysedregents.org/algebraone/622/algone62022-sk.xlsx -> algone62022-sk.xlsx (13395 bytes)
+- exists https://nysedregents.org/algebraone/622/algone62022-rg.pdf -> algone62022-rg.pdf (78628 bytes)
+- exists https://nysedregents.org/algebraone/622/algone62022-mrs.pdf -> algone62022-mrs.pdf (1062683 bytes)
+- exists https://nysedregents.org/algebraone/622/algone62022-cc.pdf -> algone62022-cc.pdf (82164 bytes)
+- exists https://nysedregents.org/algebraone/622/algone62022-cc.xlsx -> algone62022-cc.xlsx (13543 bytes)
+- exists https://nysedregents.org/algebraone/621/algone-v202-exam.pdf -> algone-v202-exam.pdf (87337 bytes)
+- exists https://nysedregents.org/algebraone/621/algone-v202-examlt.pdf -> algone-v202-examlt.pdf (122367 bytes)
+- exists https://nysedregents.org/algebraone/621/algone-v202-sk.pdf -> algone-v202-sk.pdf (22078 bytes)
+- exists https://nysedregents.org/algebraone/621/algone-v202-sk.xlsx -> algone-v202-sk.xlsx (13399 bytes)
+- exists https://nysedregents.org/algebraone/621/algone-v202-rg.pdf -> algone-v202-rg.pdf (74708 bytes)
+- exists https://nysedregents.org/algebraone/621/algone-v202-mrs.pdf -> algone-v202-mrs.pdf (1119149 bytes)
+- exists https://nysedregents.org/algebraone/621/algone-v202-cc.pdf -> algone-v202-cc.pdf (23037 bytes)
+- exists https://nysedregents.org/algebraone/621/algone-v202-cc.xlsx -> algone-v202-cc.xlsx (13809 bytes)
+- exists https://nysedregents.org/algebraone/120/algone12020-exam.pdf -> algone12020-exam.pdf (93897 bytes)
+- exists https://nysedregents.org/algebraone/120/algone12020-examlt.pdf -> algone12020-examlt.pdf (136062 bytes)
+- exists https://nysedregents.org/algebraone/120/algone12020-sk.pdf -> algone12020-sk.pdf (22362 bytes)
+- exists https://nysedregents.org/algebraone/120/algone12020-sk.xlsx -> algone12020-sk.xlsx (13384 bytes)
+- exists https://nysedregents.org/algebraone/120/algone12020-rg.pdf -> algone12020-rg.pdf (79360 bytes)
+- exists https://nysedregents.org/algebraone/120/algone12020-mrs.pdf -> algone12020-mrs.pdf (1229650 bytes)
+- exists https://nysedregents.org/algebraone/120/algone12020-cc.pdf -> algone12020-cc.pdf (145673 bytes)
+- exists https://nysedregents.org/algebraone/120/algone12020-cc.xlsx -> algone12020-cc.xlsx (13469 bytes)
+- exists https://nysedregents.org/algebraone/819/algone82019-exam.pdf -> algone82019-exam.pdf (87916 bytes)
+- exists https://nysedregents.org/algebraone/819/algone82019-examlt.pdf -> algone82019-examlt.pdf (138254 bytes)
+- exists https://nysedregents.org/algebraone/819/algone82019-sk.pdf -> algone82019-sk.pdf (22173 bytes)
+- exists https://nysedregents.org/algebraone/819/algone82019-sk.xlsx -> algone82019-sk.xlsx (13371 bytes)
+- exists https://nysedregents.org/algebraone/819/algone82019-rg.pdf -> algone82019-rg.pdf (78744 bytes)
+- exists https://nysedregents.org/algebraone/819/algone82019-mrsw.pdf -> algone82019-mrsw.pdf (1089537 bytes)
+- exists https://nysedregents.org/algebraone/819/algone82019-cc.pdf -> algone82019-cc.pdf (22843 bytes)
+- exists https://nysedregents.org/algebraone/819/algone82019-cc.xlsx -> algone82019-cc.xlsx (13909 bytes)
+- exists https://nysedregents.org/algebraone/619/algone62019-exam.pdf -> algone62019-exam.pdf (89364 bytes)
+- exists https://nysedregents.org/algebraone/619/algone62019-examlt.pdf -> algone62019-examlt.pdf (121432 bytes)
+- exists https://nysedregents.org/algebraone/619/algone62019-sk.pdf -> algone62019-sk.pdf (22187 bytes)
+- exists https://nysedregents.org/algebraone/619/algone62019-sk.xlsx -> algone62019-sk.xlsx (13373 bytes)
+- exists https://nysedregents.org/algebraone/619/algone62019-rg.pdf -> algone62019-rg.pdf (89333 bytes)
+- exists https://nysedregents.org/algebraone/619/algone62019-mrs.pdf -> algone62019-mrs.pdf (1001029 bytes)
+- exists https://nysedregents.org/algebraone/619/algone62019-cc.pdf -> algone62019-cc.pdf (145700 bytes)
+- exists https://nysedregents.org/algebraone/619/algone62019-cc.xlsx -> algone62019-cc.xlsx (13403 bytes)
+- exists https://nysedregents.org/algebraone/619/in-algone62019-zh.pdf -> in-algone62019-zh.pdf (60561 bytes)
+- exists https://nysedregents.org/algebraone/119/algone12019-exam.pdf -> algone12019-exam.pdf (839777 bytes)
+- exists https://nysedregents.org/algebraone/119/algone12019-examlt.pdf -> algone12019-examlt.pdf (159154 bytes)
+- exists https://nysedregents.org/algebraone/119/algone12019-rg.pdf -> algone12019-rg.pdf (135788 bytes)
+- exists https://nysedregents.org/algebraone/119/algone12019-sk.xlsx -> algone12019-sk.xlsx (13382 bytes)
+- exists https://nysedregents.org/algebraone/119/algone12019-mrsw.pdf -> algone12019-mrsw.pdf (1456416 bytes)
+- exists https://nysedregents.org/algebraone/119/algone12019-cc.pdf -> algone12019-cc.pdf (22926 bytes)
+- exists https://nysedregents.org/algebraone/119/algone12019-cc.xlsx -> algone12019-cc.xlsx (13763 bytes)
+- exists https://nysedregents.org/algebraone/818/algone82018-examp.pdf -> algone82018-examp.pdf (116897 bytes)
+- exists https://nysedregents.org/algebraone/818/algone82018-ltexam.pdf -> algone82018-ltexam.pdf (799438 bytes)
+- exists https://nysedregents.org/algebraone/818/algone82018-rg.pdf -> algone82018-rg.pdf (107204 bytes)
+- exists https://nysedregents.org/algebraone/818/algone82018-sk.xlsx -> algone82018-sk.xlsx (13266 bytes)
+- exists https://nysedregents.org/algebraone/818/algone82018-mrsw.pdf -> algone82018-mrsw.pdf (1896300 bytes)
+- exists https://nysedregents.org/algebraone/818/algone82018-cc.pdf -> algone82018-cc.pdf (28058 bytes)
+- exists https://nysedregents.org/algebraone/818/algone82018-cc.xlsx -> algone82018-cc.xlsx (13774 bytes)
+- exists https://nysedregents.org/algebraone/618/algone62018-exama.pdf -> algone62018-exama.pdf (143959 bytes)
+- exists https://nysedregents.org/algebraone/618/algone62018-lt.pdf -> algone62018-lt.pdf (702614 bytes)
+- exists https://nysedregents.org/algebraone/618/algone62018-rg.pdf -> algone62018-rg.pdf (111860 bytes)
+- exists https://nysedregents.org/algebraone/618/algone62018-sk.xlsx -> algone62018-sk.xlsx (13137 bytes)
+- exists https://nysedregents.org/algebraone/618/algone62018-mrsw.pdf -> algone62018-mrsw.pdf (1873863 bytes)
+- exists https://nysedregents.org/algebraone/618/algone62018-cc.pdf -> algone62018-cc.pdf (22909 bytes)
+- exists https://nysedregents.org/algebraone/618/algone62018-cc.xlsx -> algone62018-cc.xlsx (13425 bytes)
+- exists https://nysedregents.org/algebraone/618/algone62018-in.pdf -> algone62018-in.pdf (80006 bytes)
+- exists https://nysedregents.org/algebraone/118/algone12018-exam.pdf -> algone12018-exam.pdf (597419 bytes)
+- exists https://nysedregents.org/algebraone/118/algone12018-rgrevp.pdf -> algone12018-rgrevp.pdf (125965 bytes)
+- exists https://nysedregents.org/algebraone/118/algone12018-sk.xlsx -> algone12018-sk.xlsx (13149 bytes)
+- exists https://nysedregents.org/algebraone/118/algone12018-mrsw.pdf -> algone12018-mrsw.pdf (1890435 bytes)
+- exists https://nysedregents.org/algebraone/118/algone12018-cc.pdf -> algone12018-cc.pdf (164649 bytes)
+- exists https://nysedregents.org/algebraone/118/algone12018-cc.xlsx -> algone12018-cc.xlsx (13348 bytes)
+- exists https://nysedregents.org/algebraone/118/in-algone12018zh.pdf -> in-algone12018zh.pdf (106698 bytes)
+- exists https://nysedregents.org/algebraone/118/in-algone12018.pdf -> in-algone12018.pdf (66074 bytes)
+- exists https://nysedregents.org/algebraone/817/algone82017-exam.pdf -> algone82017-exam.pdf (170985 bytes)
+- exists https://nysedregents.org/algebraone/817/algone82017-rg.pdf -> algone82017-rg.pdf (80492 bytes)
+- exists https://nysedregents.org/algebraone/817/algone82017-sk.xlsx -> algone82017-sk.xlsx (13107 bytes)
+- exists https://nysedregents.org/algebraone/817/algone82017-mrsw.pdf -> algone82017-mrsw.pdf (2659507 bytes)
+- exists https://nysedregents.org/algebraone/817/algone82017-ccw.pdf -> algone82017-ccw.pdf (80345 bytes)
+- exists https://nysedregents.org/algebraone/817/algone82017-cc.xlsx -> algone82017-cc.xlsx (13376 bytes)
+- exists https://nysedregents.org/algebraone/617/algone62017-examp.pdf -> algone62017-examp.pdf (119548 bytes)
+- exists https://nysedregents.org/algebraone/617/algone62017-rg.pdf -> algone62017-rg.pdf (80008 bytes)
+- exists https://nysedregents.org/algebraone/617/algone62017-sk.xlsx -> algone62017-sk.xlsx (13156 bytes)
+- exists https://nysedregents.org/algebraone/617/algone62017-mrs.pdf -> algone62017-mrs.pdf (2710424 bytes)
+- exists https://nysedregents.org/algebraone/617/algone62017-ccr.pdf -> algone62017-ccr.pdf (145898 bytes)
+- exists https://nysedregents.org/algebraone/617/algone62017-ccr.xlsx -> algone62017-ccr.xlsx (14164 bytes)
+- exists https://nysedregents.org/algebraone/117/algone12017-exam.pdf -> algone12017-exam.pdf (215197 bytes)
+- exists https://nysedregents.org/algebraone/117/algone12017-rg.pdf -> algone12017-rg.pdf (83972 bytes)
+- exists https://nysedregents.org/algebraone/117/algone12017-sk.xlsx -> algone12017-sk.xlsx (13075 bytes)
+- exists https://nysedregents.org/algebraone/117/algone12017-mrs.pdf -> algone12017-mrs.pdf (2627413 bytes)
+- exists https://nysedregents.org/algebraone/117/algone12017-cc.pdf -> algone12017-cc.pdf (115306 bytes)
+- exists https://nysedregents.org/algebraone/117/algone12017-cc.xlsx -> algone12017-cc.xlsx (14188 bytes)
+- exists https://nysedregents.org/algebraone/816/algone82016-exam.pdf -> algone82016-exam.pdf (391741 bytes)
+- exists https://nysedregents.org/algebraone/816/algone82016-rg.pdf -> algone82016-rg.pdf (137141 bytes)
+- exists https://nysedregents.org/algebraone/816/algone82016-sk.xlsx -> algone82016-sk.xlsx (13076 bytes)
+- exists https://nysedregents.org/algebraone/816/algone82016-mrs.pdf -> algone82016-mrs.pdf (2120600 bytes)
+- exists https://nysedregents.org/algebraone/816/algone82016-cc.pdf -> algone82016-cc.pdf (22952 bytes)
+- exists https://nysedregents.org/algebraone/816/algone82016-cc.xlsx -> algone82016-cc.xlsx (16015 bytes)
+- exists https://nysedregents.org/algebraone/616/algone62016-exam.pdf -> algone62016-exam.pdf (92808 bytes)
+- exists https://nysedregents.org/algebraone/616/algone62016-rg.pdf -> algone62016-rg.pdf (89673 bytes)
+- exists https://nysedregents.org/algebraone/616/algone62016-sk.xlsx -> algone62016-sk.xlsx (13119 bytes)
+- exists https://nysedregents.org/algebraone/616/algone62016-mrs.pdf -> algone62016-mrs.pdf (2308969 bytes)
+- exists https://nysedregents.org/algebraone/616/algone62016-cc.pdf -> algone62016-cc.pdf (22933 bytes)
+- exists https://nysedregents.org/algebraone/616/algone62016-cc.xlsx -> algone62016-cc.xlsx (16016 bytes)
+- exists https://nysedregents.org/algebraone/116/algone12016-exam.pdf -> algone12016-exam.pdf (113049 bytes)
+- exists https://nysedregents.org/algebraone/116/algone12016-rg.pdf -> algone12016-rg.pdf (81526 bytes)
+- exists https://nysedregents.org/algebraone/116/algone12016-sk.xlsx -> algone12016-sk.xlsx (13111 bytes)
+- exists https://nysedregents.org/algebraone/116/algone12016-mrs.pdf -> algone12016-mrs.pdf (4178106 bytes)
+- exists https://nysedregents.org/algebraone/116/algone12016-cc.pdf -> algone12016-cc.pdf (23078 bytes)
+- exists https://nysedregents.org/algebraone/116/algone12016-cc.xlsx -> algone12016-cc.xlsx (15997 bytes)
+- exists https://nysedregents.org/algebraone/815/algone82015-exam.pdf -> algone82015-exam.pdf (118630 bytes)
+- exists https://nysedregents.org/algebraone/815/algone82015-rg.pdf -> algone82015-rg.pdf (87415 bytes)
+- exists https://nysedregents.org/algebraone/815/algone82015-sk.xlsx -> algone82015-sk.xlsx (13040 bytes)
+- exists https://nysedregents.org/algebraone/815/algone82015-mrs.pdf -> algone82015-mrs.pdf (3401712 bytes)
+- exists https://nysedregents.org/algebraone/815/algone82015-cc.pdf -> algone82015-cc.pdf (145530 bytes)
+- exists https://nysedregents.org/algebraone/815/algone82015-cc.xlsx -> algone82015-cc.xlsx (15514 bytes)
+- exists https://nysedregents.org/algebraone/615/algone62015-exam.pdf -> algone62015-exam.pdf (127745 bytes)
+- exists https://nysedregents.org/algebraone/615/algone62015-rg.pdf -> algone62015-rg.pdf (85033 bytes)
+- exists https://nysedregents.org/algebraone/615/algone62015-sk.xlsx -> algone62015-sk.xlsx (12985 bytes)
+- exists https://nysedregents.org/algebraone/615/algone62015-mrs.pdf -> algone62015-mrs.pdf (4546283 bytes)
+- exists https://nysedregents.org/algebraone/615/algone62015-cc.pdf -> algone62015-cc.pdf (145802 bytes)
+- exists https://nysedregents.org/algebraone/615/algone62015-cc.xlsx -> algone62015-cc.xlsx (15845 bytes)
+- exists https://nysedregents.org/algebraone/115/algone12015-exam.pdf -> algone12015-exam.pdf (105146 bytes)
+- exists https://nysedregents.org/algebraone/115/algone12015-rg.pdf -> algone12015-rg.pdf (77857 bytes)
+- exists https://nysedregents.org/algebraone/115/algone12015-sk.xlsx -> algone12015-sk.xlsx (12969 bytes)
+- exists https://nysedregents.org/algebraone/115/algone12015-mrs.pdf -> algone12015-mrs.pdf (3291492 bytes)
+- exists https://nysedregents.org/algebraone/115/algone12015-ccrev.pdf -> algone12015-ccrev.pdf (145833 bytes)
+- exists https://nysedregents.org/algebraone/115/algone12015-ccrev.xlsx -> algone12015-ccrev.xlsx (15836 bytes)
+- exists https://nysedregents.org/algebraone/115/algone12015-in.pdf -> algone12015-in.pdf (65307 bytes)
+- exists https://nysedregents.org/algebraone/814/algone82014-exam.pdf -> algone82014-exam.pdf (135715 bytes)
+- exists https://nysedregents.org/algebraone/814/algone82014-rg.pdf -> algone82014-rg.pdf (78755 bytes)
+- exists https://nysedregents.org/algebraone/814/algone82014-sk.xlsx -> algone82014-sk.xlsx (13028 bytes)
+- exists https://nysedregents.org/algebraone/814/algone82014-mrs.pdf -> algone82014-mrs.pdf (3631850 bytes)
+- exists https://nysedregents.org/algebraone/814/algone82014-cc.pdf -> algone82014-cc.pdf (10826 bytes)
+- exists https://nysedregents.org/algebraone/814/algone82014-cc.xlsx -> algone82014-cc.xlsx (15930 bytes)
+- exists https://nysedregents.org/algebraone/614/algone62014-exam.pdf -> algone62014-exam.pdf (143589 bytes)
+- exists https://nysedregents.org/algebraone/614/algone62014-rg.pdf -> algone62014-rg.pdf (78579 bytes)
+- exists https://nysedregents.org/algebraone/614/algone62014-sk.xlsx -> algone62014-sk.xlsx (13051 bytes)
+- exists https://nysedregents.org/algebraone/614/algone62014-mrsw.pdf -> algone62014-mrsw.pdf (2067177 bytes)
+- exists https://nysedregents.org/algebraone/614/algebra-i-annotated-items-2014.pdf -> algebra-i-annotated-items-2014.pdf (4584643 bytes)
+- exists https://nysedregents.org/algebraone/614/algone62014-cc.pdf -> algone62014-cc.pdf (10835 bytes)
+- exists https://nysedregents.org/algebraone/614/algone62014-cc.xlsx -> algone62014-cc.xlsx (14444 bytes)
+- exists https://nysedregents.org/algebraone/614/in-algone-614zh.pdf -> in-algone-614zh.pdf (8483 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2022-staar-redesign-6-math-paper-key.pdf -> 2022-staar-redesign-6-math-paper-key.pdf (121246 bytes)
+- ok https://www.nysedregents.org/geometryre/ -> regents-geo.html (66616 bytes)
+- ok https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2009-yr-3-paper-test-answers.pdf -> naplan-2009-yr-3-paper-test-answers.pdf (144812 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2022-staar-redesign-7-math-paper-key.pdf -> 2022-staar-redesign-7-math-paper-key.pdf (199876 bytes)
+- ok https://www.nysedregents.org/geometryre/826/geom-82026-exam.pdf -> geom-82026-exam.pdf (611605 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2022-staar-redesign-8-math-paper-key.pdf -> 2022-staar-redesign-8-math-paper-key.pdf (248226 bytes)
+- ok https://www.nysedregents.org/geometryre/826/geom-82026-examlt.pdf -> geom-82026-examlt.pdf (633651 bytes)
+- ok https://www.acara.edu.au/_resources/200906_NAPLAN_2009_Final_Test_Numeracy_Year_5.pdf -> 200906_NAPLAN_2009_Final_Test_Numeracy_Year_5.pdf (2390677 bytes)
+- ok https://www.nysedregents.org/geometryre/826/geom-82026-sk.pdf -> geom-82026-sk.pdf (94807 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2022-staar-redesign-algebra-i-paper-key.pdf -> 2022-staar-redesign-algebra-i-paper-key.pdf (341220 bytes)
+- ok https://www.nysedregents.org/geometryre/826/geom-82026-sk.xlsx -> geom-82026-sk.xlsx (12911 bytes)
+- ok https://www.nysedregents.org/geometryre/826/geom-82026-rg.pdf -> geom-82026-rg.pdf (207929 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2023-staar-3-math-item-sampler.pdf -> 2023-staar-3-math-item-sampler.pdf (867471 bytes)
+- ok https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2009-yr-5-paper-test-answers.pdf -> naplan-2009-yr-5-paper-test-answers.pdf (145653 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2023-staar-3-math-paper-sampler-key.pdf -> 2023-staar-3-math-paper-sampler-key.pdf (159658 bytes)
+- ok https://www.acara.edu.au/_resources/200907_NAPLAN_2009_Final_Test_Numeracy_Year_7_CALC.pdf -> 200907_NAPLAN_2009_Final_Test_Numeracy_Year_7_CALC.pdf (2475428 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2023-staar-3-math-spanish-itemsampler.pdf -> 2023-staar-3-math-spanish-itemsampler.pdf (444446 bytes)
+- ok https://www.nysedregents.org/geometryre/826/geom-82026-mrs.pdf -> geom-82026-mrs.pdf (2606621 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2023-staar-3-math-spanish-paper-sampler-key.pdf -> 2023-staar-3-math-spanish-paper-sampler-key.pdf (171787 bytes)
+- ok https://www.nysedregents.org/geometryre/826/geom-82026-cc.pdf -> geom-82026-cc.pdf (137277 bytes)
+- ok https://www.nysedregents.org/geometryre/826/geom-82026-cc.xlsx -> geom-82026-cc.xlsx (12834 bytes)
+- ok https://www.acara.edu.au/_resources/200908_NAPLAN_2009_Final_Test_Numeracy_Year_7_NON-CALC.pdf -> 200908_NAPLAN_2009_Final_Test_Numeracy_Year_7_NON-CALC.pdf (1935760 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2023-staar-4-math-item-sampler.pdf -> 2023-staar-4-math-item-sampler.pdf (846794 bytes)
+- ok https://www.nysedregents.org/geometryre/626/geom-62026-exam.pdf -> geom-62026-exam.pdf (622385 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2023-staar-4-math-paper-sampler-key.pdf -> 2023-staar-4-math-paper-sampler-key.pdf (189024 bytes)
+- ok https://www.nysedregents.org/geometryre/626/geom-62026-examlt.pdf -> geom-62026-examlt.pdf (656699 bytes)
+- ok https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2009-yr-7-paper-test-answers.pdf -> naplan-2009-yr-7-paper-test-answers.pdf (154630 bytes)
+- ok https://www.nysedregents.org/geometryre/626/geom-62026-sk.pdf -> geom-62026-sk.pdf (99078 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2023-staar-4-math-spanish-itemsampler.pdf -> 2023-staar-4-math-spanish-itemsampler.pdf (318896 bytes)
+- ok https://www.nysedregents.org/geometryre/626/geom-62026-sk.xlsx -> geom-62026-sk.xlsx (12908 bytes)
+- ok https://www.nysedregents.org/geometryre/626/geom-62026-rg.pdf -> geom-62026-rg.pdf (202052 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2023-staar-4-spanish-math-paper-sampler-key.pdf -> 2023-staar-4-spanish-math-paper-sampler-key.pdf (213520 bytes)
+- ok https://www.acara.edu.au/_resources/200909_NAPLAN_2009_Final_Test_Numeracy_Year_9_CALC.pdf -> 200909_NAPLAN_2009_Final_Test_Numeracy_Year_9_CALC.pdf (1722132 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2023-staar-5-math-item-sampler.pdf -> 2023-staar-5-math-item-sampler.pdf (825090 bytes)
+- ok https://www.nysedregents.org/geometryre/626/geom-62026-mrs.pdf -> geom-62026-mrs.pdf (2329061 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2023-staar-5-math-paper-sampler-key.pdf -> 2023-staar-5-math-paper-sampler-key.pdf (126373 bytes)
+- ok https://www.nysedregents.org/geometryre/626/geom-62026-cc.pdf -> geom-62026-cc.pdf (138499 bytes)
+- ok https://www.nysedregents.org/geometryre/626/geom-62026-cc.xlsx -> geom-62026-cc.xlsx (12829 bytes)
+- ok https://www.acara.edu.au/_resources/200910_NAPLAN_2009_Final_Test_Numeracy_Year_9_NON-CALC.pdf -> 200910_NAPLAN_2009_Final_Test_Numeracy_Year_9_NON-CALC.pdf (1692221 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2023-staar-5-math-spanish-itemsampler.pdf -> 2023-staar-5-math-spanish-itemsampler.pdf (392239 bytes)
+- ok https://www.nysedregents.org/geometryre/126/geom-12026-exam.pdf -> geom-12026-exam.pdf (835158 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2023-staar-5-math-spanish-paper-sampler-key.pdf -> 2023-staar-5-math-spanish-paper-sampler-key.pdf (147693 bytes)
+- ok https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2009-yr-9-paper-test-answers.pdf -> naplan-2009-yr-9-paper-test-answers.pdf (174850 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2023-staar-6-math-item-sampler.pdf -> 2023-staar-6-math-item-sampler.pdf (858324 bytes)
+- ok https://www.nysedregents.org/geometryre/126/geom-12026-exam-lt.pdf -> geom-12026-exam-lt.pdf (843654 bytes)
+- ok https://www.nysedregents.org/geometryre/126/geom-12026-sk.pdf -> geom-12026-sk.pdf (89589 bytes)
+- ok https://www.nysedregents.org/geometryre/126/geom-12026-sk.xlsx -> geom-12026-sk.xlsx (12796 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2023-staar-6-math-paper-sampler-key.pdf -> 2023-staar-6-math-paper-sampler-key.pdf (168468 bytes)
+- ok https://www.acara.edu.au/_resources/200805_NAPLAN_2008_Final_Test_Numeracy_Year_3.pdf -> 200805_NAPLAN_2008_Final_Test_Numeracy_Year_3.pdf (3247262 bytes)
+- ok https://www.nysedregents.org/geometryre/126/geom-12026-rg.pdf -> geom-12026-rg.pdf (220922 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2023-staar-7-math-item-sampler.pdf -> 2023-staar-7-math-item-sampler.pdf (903436 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2023-staar-7-math-paper-sampler-key.pdf -> 2023-staar-7-math-paper-sampler-key.pdf (231073 bytes)
+- ok https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2008-yr-3-paper-test-answers.pdf -> naplan-2008-yr-3-paper-test-answers.pdf (202599 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2023-staar-8-math-item-sampler.pdf -> 2023-staar-8-math-item-sampler.pdf (931075 bytes)
+- ok https://www.acara.edu.au/_resources/200806_NAPLAN_2008_Final_Test_Numeracy_Year_5.pdf -> 200806_NAPLAN_2008_Final_Test_Numeracy_Year_5.pdf (2903095 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2023-staar-8-math-paper-sampler-key.pdf -> 2023-staar-8-math-paper-sampler-key.pdf (211688 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2023-staar-algebra-i-item-sampler.pdf -> 2023-staar-algebra-i-item-sampler.pdf (858679 bytes)
+- ok https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2008-yr-5-paper-test-answers.pdf -> naplan-2008-yr-5-paper-test-answers.pdf (205491 bytes)
+- ok https://www.nysedregents.org/geometryre/126/geom-12026-mrs.pdf -> geom-12026-mrs.pdf (2840201 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2023-staar-algebra-i-paper-sampler-key.pdf -> 2023-staar-algebra-i-paper-sampler-key.pdf (248360 bytes)
+- ok https://www.acara.edu.au/_resources/200807_NAPLAN_2008_Final_Test_Numeracy_Year_7_calculator.pdf -> 200807_NAPLAN_2008_Final_Test_Numeracy_Year_7_calculator.pdf (2329874 bytes)
+- ok https://www.nysedregents.org/geometryre/126/geom-12026-cc.pdf -> geom-12026-cc.pdf (137142 bytes)
+- ok https://www.nysedregents.org/geometryre/126/geom-12026-cc.xlsx -> geom-12026-cc.xlsx (12792 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2023-staar-redesign-3-math-practice-test.pdf -> 2023-staar-redesign-3-math-practice-test.pdf (1037634 bytes)
+- ok https://www.nysedregents.org/geometryre/825/geom-82025-exam.pdf -> geom-82025-exam.pdf (185576 bytes)
+- ok https://www.acara.edu.au/_resources/200808_NAPLAN_2008_Final_Test_Numeracy_year_7_non_calculator.pdf -> 200808_NAPLAN_2008_Final_Test_Numeracy_year_7_non_calculator.pdf (2085584 bytes)
+- ok https://www.nysedregents.org/geometryre/825/geom-82025-examlt.pdf -> geom-82025-examlt.pdf (222111 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2023-staar-redesign-3-math-spanish-practice-test.pdf -> 2023-staar-redesign-3-math-spanish-practice-test.pdf (731276 bytes)
+- ok https://www.nysedregents.org/geometryre/825/geom-82025-sk.pdf -> geom-82025-sk.pdf (90227 bytes)
+- ok https://www.nysedregents.org/geometryre/825/geom-82025-sk.xlsx -> geom-82025-sk.xlsx (12827 bytes)
+- ok https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2008-yr-7-paper-test-answers.pdf -> naplan-2008-yr-7-paper-test-answers.pdf (153193 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2023-staar-redesign-4-math-practice-test.pdf -> 2023-staar-redesign-4-math-practice-test.pdf (1032481 bytes)
+- ok https://www.nysedregents.org/geometryre/825/geom-82025-rg.pdf -> geom-82025-rg.pdf (145830 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2023-staar-redesign-4-math-spanish-practice-test.pdf -> 2023-staar-redesign-4-math-spanish-practice-test.pdf (646584 bytes)
+- ok https://www.nysedregents.org/geometryre/825/geom-82025-mrs.pdf -> geom-82025-mrs.pdf (1328668 bytes)
+- ok https://www.acara.edu.au/_resources/200809_NAPLAN_2008_Final_Test_Numeracy_Year_9_calculator.pdf -> 200809_NAPLAN_2008_Final_Test_Numeracy_Year_9_calculator.pdf (1620269 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2023-staar-redesign-5-math-practice-test.pdf -> 2023-staar-redesign-5-math-practice-test.pdf (998152 bytes)
+- ok https://www.nysedregents.org/geometryre/825/geom-82025-cc.pdf -> geom-82025-cc.pdf (135351 bytes)
+- ok https://www.nysedregents.org/geometryre/825/geom-82025-cc.xlsx -> geom-82025-cc.xlsx (12739 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2023-staar-redesign-5-math-spanish-practice-test.pdf -> 2023-staar-redesign-5-math-spanish-practice-test.pdf (1083726 bytes)
+- ok https://www.acara.edu.au/_resources/200810_NAPLAN_2008_Final_Test_Numeracy_Year_9_non_calculator.pdf -> 200810_NAPLAN_2008_Final_Test_Numeracy_Year_9_non_calculator.pdf (2008596 bytes)
+- ok https://www.nysedregents.org/geometryre/625/geom-62025-exam.pdf -> geom-62025-exam.pdf (238740 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2023-staar-redesign-6-math-practice-test.pdf -> 2023-staar-redesign-6-math-practice-test.pdf (665950 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2023-staar-redesign-7-math-practice-test.pdf -> 2023-staar-redesign-7-math-practice-test.pdf (738439 bytes)
+- ok https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2008-yr-9-paper-test-answers.pdf -> naplan-2008-yr-9-paper-test-answers.pdf (151960 bytes)
+- ok https://www.nysedregents.org/geometryre/625/geom-62025-examlt.pdf -> geom-62025-examlt.pdf (897380 bytes)
+- ok https://www.nysedregents.org/geometryre/625/geom-62025-sk.pdf -> geom-62025-sk.pdf (89344 bytes)
+- ok https://www.nysedregents.org/geometryre/625/geom-62025-sk.xlsx -> geom-62025-sk.xlsx (12839 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2023-staar-redesign-8-math-practice-test.pdf -> 2023-staar-redesign-8-math-practice-test.pdf (926161 bytes)
+- ok https://www.acara.edu.au/assessment/naplan/naplan-2012-2016-test-papers -> naplan-2012-2016-test-papers.bin (79719 bytes)
+- ok https://www.nysedregents.org/geometryre/625/geom-62025-rg.pdf -> geom-62025-rg.pdf (173585 bytes)
+- ok https://tea.texas.gov/student-assessment/staar/released-test-questions/2023-staar-redesign-algebra-i-practice-test.pdf -> 2023-staar-redesign-algebra-i-practice-test.pdf (1093218 bytes)
+- ok https://www.acara.edu.au/assessment/naplan/naplan-2008-2011-test-papers -> naplan-2008-2011-test-papers.bin (59726 bytes)
+- ok https://www.nysedregents.org/geometryre/625/geom-62025-mrs.pdf -> geom-62025-mrs.pdf (1517258 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2012-final-test-numeracy-year-3.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/geometryre/625/geom-62025-cc.pdf -> geom-62025-cc.pdf (135067 bytes)
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2012-final-test-numeracy-year-3.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/geometryre/625/geom-62025-cc.xlsx -> geom-62025-cc.xlsx (12829 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2012-final-test-numeracy-year-3-(calculator).pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2012-final-test-numeracy-year-3-(calculator).pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/geometryre/125/geom-12025-exam.pdf -> geom-12025-exam.pdf (1057771 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2012-final-test-numeracy-year-3-(no-calculator).pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/geometryre/125/geom-12025-exam-lt.pdf -> geom-12025-exam-lt.pdf (1021010 bytes)
+- ok https://www.nysedregents.org/geometryre/125/geom-12025-sk.pdf -> geom-12025-sk.pdf (88416 bytes)
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2012-final-test-numeracy-year-3-(no-calculator).pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/geometryre/125/geom-12025-sk.xlsx -> geom-12025-sk.xlsx (12809 bytes)
+- ok https://www.nysedregents.org/geometryre/125/geom-12025-rg.pdf -> geom-12025-rg.pdf (220230 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2012-final-test-numeracy-year-3-(non-calculator).pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2012-final-test-numeracy-year-3-(non-calculator).pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/geometryre/125/geom-12025-mrs.pdf -> geom-12025-mrs.pdf (3009254 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/e5-naplan-2012-final-test-numeracy-year-3-(calc).pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/geometryre/125/geom-12025-cc.pdf -> geom-12025-cc.pdf (88956 bytes)
+- ok https://www.nysedregents.org/geometryre/125/geom-12025-cc.xlsx -> geom-12025-cc.xlsx (15131 bytes)
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/e5-naplan-2012-final-test-numeracy-year-3-(calc).pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2017_STAAR_AlgebraI_Key_Online_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2017_STAAR_AlgebraI_Key_Online_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/geometryre/824/geom-82024-exam.pdf -> geom-82024-exam.pdf (846358 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2012-final-test-numeracy-(calculator)-year-3.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/geometryre/824/geom-82024-examlt.pdf -> geom-82024-examlt.pdf (521294 bytes)
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2012-final-test-numeracy-(calculator)-year-3.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/geometryre/824/geom82024-sk.pdf -> geom82024-sk.pdf (88440 bytes)
+- ok https://www.nysedregents.org/geometryre/824/geom82024-sk.xlsx -> geom82024-sk.xlsx (12806 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2012-paper-test-answers.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2012-paper-test-answers.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/geometryre/824/geom-82024-rg.pdf -> geom-82024-rg.pdf (186337 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2012-final-test-answers.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2012-final-test-answers.pdf :: curl: (22) The requested URL returned error: 404
+- exists https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2012-final-test-numeracy-year-5.pdf -> naplan-2012-final-test-numeracy-year-5.pdf (2970258 bytes)
+- ok https://www.nysedregents.org/geometryre/824/geom-82024-mrs.pdf -> geom-82024-mrs.pdf (1380489 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2012-final-test-numeracy-year-5-(calculator).pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/geometryre/824/geom-82024-cc.pdf -> geom-82024-cc.pdf (89451 bytes)
+- ok https://www.nysedregents.org/geometryre/824/geom-82024-cc.xlsx -> geom-82024-cc.xlsx (13420 bytes)
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2012-final-test-numeracy-year-5-(calculator).pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/geometryre/624/geom62024-exam.pdf -> geom62024-exam.pdf (1494019 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2012-final-test-numeracy-year-5-(no-calculator).pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2012-final-test-numeracy-year-5-(no-calculator).pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/geometryre/624/geom62024-exam-lt.pdf -> geom62024-exam-lt.pdf (366375 bytes)
+- ok https://www.nysedregents.org/geometryre/624/geom62024-sk.pdf -> geom62024-sk.pdf (87894 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2012-final-test-numeracy-year-5-(non-calculator).pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/geometryre/624/geom62024-sk.xlsx -> geom62024-sk.xlsx (12813 bytes)
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2012-final-test-numeracy-year-5-(non-calculator).pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/geometryre/624/geom62024-rg.pdf -> geom62024-rg.pdf (355274 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/e5-naplan-2012-final-test-numeracy-year-5-(calc).pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/e5-naplan-2012-final-test-numeracy-year-5-(calc).pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2012-final-test-numeracy-(calculator)-year-5.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2012-final-test-numeracy-(calculator)-year-5.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 23 ms: Could not connect to server
+- ok https://www.nysedregents.org/geometryre/624/geom62024-mrs.pdf -> geom62024-mrs.pdf (4114496 bytes)
+- ok https://www.nysedregents.org/geometryre/624/geom62024-cc.pdf -> geom62024-cc.pdf (89374 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2012-paper-test-answers.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2012-paper-test-answers.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 24 ms: Could not connect to server
+- ok https://www.nysedregents.org/geometryre/624/geom62024-cc.xlsx -> geom62024-cc.xlsx (13990 bytes)
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2017_STAAR_AlgebraI_Key_Paper_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2017_STAAR_AlgebraI_Key_Paper_tagged.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2012-final-test-answers.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2012-final-test-answers.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- ok https://www.nysedregents.org/geometryre/124/geom12024-exam.pdf -> geom12024-exam.pdf (1495952 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2012-final-test-numeracy-year-7.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2012-final-test-numeracy-year-7.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- ok https://www.nysedregents.org/geometryre/124/geom12024-exam-lt.pdf -> geom12024-exam-lt.pdf (609336 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2012-final-test-numeracy-year-7-(calculator).pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/geometryre/124/geom12024-sk.pdf -> geom12024-sk.pdf (87981 bytes)
+- ok https://www.nysedregents.org/geometryre/124/geom12024-sk.xlsx -> geom12024-sk.xlsx (12846 bytes)
+- ok https://www.nysedregents.org/geometryre/124/geom12024-rg.pdf -> geom12024-rg.pdf (223393 bytes)
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2012-final-test-numeracy-year-7-(calculator).pdf :: curl: (22) The requested URL returned error: 404
+- exists https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2012-final-test-numeracy-year-7-(no-calculator).pdf -> naplan-2012-final-test-numeracy-year-7-_no-calculator_.pdf (2713613 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2012-final-test-numeracy-year-7-(non-calculator).pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2012-final-test-numeracy-year-7-(non-calculator).pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/e5-naplan-2012-final-test-numeracy-year-7-(calc).pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/e5-naplan-2012-final-test-numeracy-year-7-(calc).pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2012-final-test-numeracy-(calculator)-year-7.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2012-final-test-numeracy-(calculator)-year-7.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2012-paper-test-answers.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2012-paper-test-answers.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 22 ms: Could not connect to server
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2012-final-test-answers.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2017_STAAR_Gr3Math_Key_Online_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2012-final-test-answers.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2017_STAAR_Gr3Math_Key_Online_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2012-final-test-numeracy-year-9.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/geometryre/124/geom12024-mrs.pdf -> geom12024-mrs.pdf (5054121 bytes)
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2012-final-test-numeracy-year-9.pdf :: curl: (22) The requested URL returned error: 404
+- exists https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2012-final-test-numeracy-year-9-(calculator).pdf -> naplan-2012-final-test-numeracy-year-9-_calculator_.pdf (2795950 bytes)
+- exists https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2012-final-test-numeracy-year-9-(no-calculator).pdf -> naplan-2012-final-test-numeracy-year-9-_no-calculator_.pdf (2418601 bytes)
+- ok https://www.nysedregents.org/geometryre/124/geom12024-cc.pdf -> geom12024-cc.pdf (89004 bytes)
+- ok https://www.nysedregents.org/geometryre/124/geom12024-cc.xlsx -> geom12024-cc.xlsx (13562 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2012-final-test-numeracy-year-9-(non-calculator).pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/geometryre/823/geom82023-exam.pdf -> geom82023-exam.pdf (782994 bytes)
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2012-final-test-numeracy-year-9-(non-calculator).pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/geometryre/823/geom82023-examlt.pdf -> geom82023-examlt.pdf (459399 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/e5-naplan-2012-final-test-numeracy-year-9-(calc).pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/geometryre/823/geo82023-sk.pdf -> geo82023-sk.pdf (89852 bytes)
+- ok https://www.nysedregents.org/geometryre/823/geo82023-sk.xlsx -> geo82023-sk.xlsx (13128 bytes)
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/e5-naplan-2012-final-test-numeracy-year-9-(calc).pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/geometryre/823/geo82023-rg.pdf -> geo82023-rg.pdf (190480 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2012-final-test-numeracy-(calculator)-year-9.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/geometryre/823/geo82023-mrs.pdf -> geo82023-mrs.pdf (1591711 bytes)
+- ok https://www.nysedregents.org/geometryre/823/geom82023-cc.pdf -> geom82023-cc.pdf (89948 bytes)
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2012-final-test-numeracy-(calculator)-year-9.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/geometryre/823/geom82023-cc.xlsx -> geom82023-cc.xlsx (14274 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2012-paper-test-answers.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/geometryre/623/geom62023-exam.pdf -> geom62023-exam.pdf (532923 bytes)
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2012-paper-test-answers.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/geometryre/623/geom62023-examlt.pdf -> geom62023-examlt.pdf (581895 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2012-final-test-answers.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/geometryre/623/geom62023-sk.pdf -> geom62023-sk.pdf (89418 bytes)
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2012-final-test-answers.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/geometryre/623/geom62023-sk.xlsx -> geom62023-sk.xlsx (13125 bytes)
+- ok https://www.nysedregents.org/geometryre/623/geom62023-rg.pdf -> geom62023-rg.pdf (209522 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2013-final-test-numeracy-year-3.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2013-final-test-numeracy-year-3.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2017_STAAR_Gr3Math_Key_Paper_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2017_STAAR_Gr3Math_Key_Paper_tagged.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2013-final-test-numeracy-year-3-(calculator).pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2013-final-test-numeracy-year-3-(calculator).pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- ok https://www.nysedregents.org/geometryre/623/geom62023-mrs.pdf -> geom62023-mrs.pdf (1593959 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2013-final-test-numeracy-year-3-(no-calculator).pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/geometryre/623/geom62023-cc.pdf -> geom62023-cc.pdf (89512 bytes)
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2013-final-test-numeracy-year-3-(no-calculator).pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/geometryre/623/geom62023-cc.xlsx -> geom62023-cc.xlsx (14258 bytes)
+- ok https://www.nysedregents.org/geometryre/123/geom12023-exam.pdf -> geom12023-exam.pdf (131346 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2013-final-test-numeracy-year-3-(non-calculator).pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2013-final-test-numeracy-year-3-(non-calculator).pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/geometryre/123/geom12023-exam-lt.pdf -> geom12023-exam-lt.pdf (161863 bytes)
+- ok https://www.nysedregents.org/geometryre/123/geom12023-sk.pdf -> geom12023-sk.pdf (89466 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/e5-naplan-2013-final-test-numeracy-year-3-(calc).pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/geometryre/123/geom12023-sk.xlsx -> geom12023-sk.xlsx (13117 bytes)
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/e5-naplan-2013-final-test-numeracy-year-3-(calc).pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/geometryre/123/geom12023-rg.pdf -> geom12023-rg.pdf (123031 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2013-final-test-numeracy-(calculator)-year-3.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2013-final-test-numeracy-(calculator)-year-3.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2013-paper-test-answers.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/geometryre/123/geom12023-mrs.pdf -> geom12023-mrs.pdf (2549261 bytes)
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2013-paper-test-answers.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/geometryre/123/geom12023-cc.pdf -> geom12023-cc.pdf (89481 bytes)
+- ok https://www.nysedregents.org/geometryre/123/geom12023-cc.xlsx -> geom12023-cc.xlsx (14583 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2013-final-test-answers.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/geometryre/822/geom82022-exam.pdf -> geom82022-exam.pdf (414845 bytes)
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2013-final-test-answers.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2013-final-test-numeracy-year-5.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2013-final-test-numeracy-year-5.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2017_STAAR_Gr4Math_Key_Online_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2013-final-test-numeracy-year-5-(calculator).pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2013-final-test-numeracy-year-5-(calculator).pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 22 ms: Could not connect to server
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2017_STAAR_Gr4Math_Key_Online_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/geometryre/822/geom82022-examlt.pdf -> geom82022-examlt.pdf (659930 bytes)
+- ok https://www.nysedregents.org/geometryre/822/geom82022-sk.pdf -> geom82022-sk.pdf (87652 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2013-final-test-numeracy-year-5-(no-calculator).pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2013-final-test-numeracy-year-5-(no-calculator).pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 23 ms: Could not connect to server
+- ok https://www.nysedregents.org/geometryre/822/geom82022-sk.xlsx -> geom82022-sk.xlsx (12851 bytes)
+- ok https://www.nysedregents.org/geometryre/822/geom82022-rg.pdf -> geom82022-rg.pdf (115786 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2013-final-test-numeracy-year-5-(non-calculator).pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2013-final-test-numeracy-year-5-(non-calculator).pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/e5-naplan-2013-final-test-numeracy-year-5-(calc).pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/geometryre/822/geom82022-mrs-rev.pdf -> geom82022-mrs-rev.pdf (1598310 bytes)
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/e5-naplan-2013-final-test-numeracy-year-5-(calc).pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 22 ms: Could not connect to server
+- ok https://www.nysedregents.org/geometryre/822/geom82022-cc.pdf -> geom82022-cc.pdf (24596 bytes)
+- ok https://www.nysedregents.org/geometryre/822/geom82022-cc.xlsx -> geom82022-cc.xlsx (14587 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2013-final-test-numeracy-(calculator)-year-5.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2013-final-test-numeracy-(calculator)-year-5.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2013-paper-test-answers.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2013-paper-test-answers.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- ok https://www.nysedregents.org/geometryre/622/geom62022-exam.pdf -> geom62022-exam.pdf (435264 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2013-final-test-answers.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2013-final-test-answers.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- ok https://www.nysedregents.org/geometryre/622/geom62022-exam-lt.pdf -> geom62022-exam-lt.pdf (1058607 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2013-final-test-numeracy-year-7.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2013-final-test-numeracy-year-7.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- exists https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2013-final-test-numeracy-year-7-(calculator).pdf -> naplan-2013-final-test-numeracy-year-7-_calculator_.pdf (3052777 bytes)
+- exists https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2013-final-test-numeracy-year-7-(no-calculator).pdf -> naplan-2013-final-test-numeracy-year-7-_no-calculator_.pdf (3675643 bytes)
+- ok https://www.nysedregents.org/geometryre/622/geom622-sk.pdf -> geom622-sk.pdf (89554 bytes)
+- ok https://www.nysedregents.org/geometryre/622/geom622-sk.xlsx -> geom622-sk.xlsx (13102 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2013-final-test-numeracy-year-7-(non-calculator).pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2013-final-test-numeracy-year-7-(non-calculator).pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- ok https://www.nysedregents.org/geometryre/622/geom62022-rg.pdf -> geom62022-rg.pdf (119249 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/e5-naplan-2013-final-test-numeracy-year-7-(calc).pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/e5-naplan-2013-final-test-numeracy-year-7-(calc).pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 22 ms: Could not connect to server
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2013-final-test-numeracy-(calculator)-year-7.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2013-final-test-numeracy-(calculator)-year-7.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- ok https://www.nysedregents.org/geometryre/622/geom62022-mrs.pdf -> geom62022-mrs.pdf (1479848 bytes)
+- ok https://www.nysedregents.org/geometryre/622/geom62022-cc.pdf -> geom62022-cc.pdf (66566 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2013-paper-test-answers.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2013-paper-test-answers.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- ok https://www.nysedregents.org/geometryre/622/geom62022-cc.xlsx -> geom62022-cc.xlsx (14588 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2013-final-test-answers.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2013-final-test-answers.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- ok https://www.nysedregents.org/geometryre/120/geom12020-exam.pdf -> geom12020-exam.pdf (628670 bytes)
+- ok https://www.nysedregents.org/geometryre/120/geom12020-examlt.pdf -> geom12020-examlt.pdf (209395 bytes)
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2017_STAAR_Gr4Math_Key_Paper_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2013-final-test-numeracy-year-9.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2017_STAAR_Gr4Math_Key_Paper_tagged.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2013-final-test-numeracy-year-9.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- exists https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2013-final-test-numeracy-year-9-(calculator).pdf -> naplan-2013-final-test-numeracy-year-9-_calculator_.pdf (2454510 bytes)
+- ok https://www.nysedregents.org/geometryre/120/geom12020-sk.pdf -> geom12020-sk.pdf (20835 bytes)
+- ok https://www.nysedregents.org/geometryre/120/geom12020-sk.xlsx -> geom12020-sk.xlsx (13101 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2013-final-test-numeracy-year-9-(no-calculator).pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2013-final-test-numeracy-year-9-(no-calculator).pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- ok https://www.nysedregents.org/geometryre/120/geom12020-rg.pdf -> geom12020-rg.pdf (111509 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2013-final-test-numeracy-year-9-(non-calculator).pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/geometryre/120/geom12020-mrs.pdf -> geom12020-mrs.pdf (964909 bytes)
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2013-final-test-numeracy-year-9-(non-calculator).pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- ok https://www.nysedregents.org/geometryre/120/geom12020-cc.pdf -> geom12020-cc.pdf (143322 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/e5-naplan-2013-final-test-numeracy-year-9-(calc).pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/e5-naplan-2013-final-test-numeracy-year-9-(calc).pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- ok https://www.nysedregents.org/geometryre/120/geom12020-cc.xlsx -> geom12020-cc.xlsx (15334 bytes)
+- ok https://www.nysedregents.org/geometryre/819/geom82019-exam.pdf -> geom82019-exam.pdf (669764 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2013-final-test-numeracy-(calculator)-year-9.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2013-final-test-numeracy-(calculator)-year-9.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- ok https://www.nysedregents.org/geometryre/819/geom82019-examlt.pdf -> geom82019-examlt.pdf (351893 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2013-paper-test-answers.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2013-paper-test-answers.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 22 ms: Could not connect to server
+- ok https://www.nysedregents.org/geometryre/819/geom82019-sk.pdf -> geom82019-sk.pdf (20737 bytes)
+- ok https://www.nysedregents.org/geometryre/819/geom82019-sk.xlsx -> geom82019-sk.xlsx (13105 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2013-final-test-answers.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2013-final-test-answers.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- ok https://www.nysedregents.org/geometryre/819/geom82019-rg.pdf -> geom82019-rg.pdf (71432 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2014-final-test-numeracy-year-3.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2014-final-test-numeracy-year-3.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- ok https://www.nysedregents.org/geometryre/819/geom82019-mrs.pdf -> geom82019-mrs.pdf (1133591 bytes)
+- ok https://www.nysedregents.org/geometryre/819/geom82019-cc.pdf -> geom82019-cc.pdf (22143 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2014-final-test-numeracy-year-3-(calculator).pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/geometryre/819/geom82019-cc.xlsx -> geom82019-cc.xlsx (15374 bytes)
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2014-final-test-numeracy-year-3-(calculator).pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2014-final-test-numeracy-year-3-(no-calculator).pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2014-final-test-numeracy-year-3-(no-calculator).pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- ok https://www.nysedregents.org/geometryre/619/geom62019-exam.pdf -> geom62019-exam.pdf (517021 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2014-final-test-numeracy-year-3-(non-calculator).pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2014-final-test-numeracy-year-3-(non-calculator).pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 22 ms: Could not connect to server
+- ok https://www.nysedregents.org/geometryre/619/geom62019-examltw.pdf -> geom62019-examltw.pdf (194612 bytes)
+- ok https://www.nysedregents.org/geometryre/619/geom62019-sk.pdf -> geom62019-sk.pdf (20735 bytes)
+- ok https://www.nysedregents.org/geometryre/619/geom62019-sk.xlsx -> geom62019-sk.xlsx (13088 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/e5-naplan-2014-final-test-numeracy-year-3-(calc).pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/e5-naplan-2014-final-test-numeracy-year-3-(calc).pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- ok https://www.nysedregents.org/geometryre/619/geom62019-rg.pdf -> geom62019-rg.pdf (116052 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2014-final-test-numeracy-(calculator)-year-3.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2014-final-test-numeracy-(calculator)-year-3.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 22 ms: Could not connect to server
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2017_STAAR_Gr5Math_Key_Online_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2017_STAAR_Gr5Math_Key_Online_tagged.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 22 ms: Could not connect to server
+- ok https://www.nysedregents.org/geometryre/619/geom62019-mrs.pdf -> geom62019-mrs.pdf (874264 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2014-paper-test-answers.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2014-paper-test-answers.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- ok https://www.nysedregents.org/geometryre/619/geom62019-cc.pdf -> geom62019-cc.pdf (143346 bytes)
+- ok https://www.nysedregents.org/geometryre/619/geom62019-cc.xlsx -> geom62019-cc.xlsx (15536 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2014-final-test-answers.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2014-final-test-answers.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- exists https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2014-final-test-numeracy-year-5.pdf -> naplan-2014-final-test-numeracy-year-5.pdf (3474798 bytes)
+- ok https://www.nysedregents.org/geometryre/119/geom12019-exam.pdf -> geom12019-exam.pdf (156826 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2014-final-test-numeracy-year-5-(calculator).pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2014-final-test-numeracy-year-5-(calculator).pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 25 ms: Could not connect to server
+- ok https://www.nysedregents.org/geometryre/119/geom12019-examlt.pdf -> geom12019-examlt.pdf (163846 bytes)
+- ok https://www.nysedregents.org/geometryre/119/geom12019-rg.pdf -> geom12019-rg.pdf (70990 bytes)
+- ok https://www.nysedregents.org/geometryre/119/geom12019-sk.xlsx -> geom12019-sk.xlsx (13077 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2014-final-test-numeracy-year-5-(no-calculator).pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2014-final-test-numeracy-year-5-(no-calculator).pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 20 ms: Could not connect to server
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2014-final-test-numeracy-year-5-(non-calculator).pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2014-final-test-numeracy-year-5-(non-calculator).pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- ok https://www.nysedregents.org/geometryre/119/geom12019-mrs.pdf -> geom12019-mrs.pdf (1120759 bytes)
+- ok https://www.nysedregents.org/geometryre/119/geom12019-cc.pdf -> geom12019-cc.pdf (22220 bytes)
+- ok https://www.nysedregents.org/geometryre/119/geom12019-cc.xlsx -> geom12019-cc.xlsx (15557 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/e5-naplan-2014-final-test-numeracy-year-5-(calc).pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/e5-naplan-2014-final-test-numeracy-year-5-(calc).pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- ok https://www.nysedregents.org/geometryre/818/geom82018-examw.pdf -> geom82018-examw.pdf (151018 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2014-final-test-numeracy-(calculator)-year-5.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2014-final-test-numeracy-(calculator)-year-5.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2014-paper-test-answers.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2014-paper-test-answers.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 22 ms: Could not connect to server
+- ok https://www.nysedregents.org/geometryre/818/geom82018-ltexam.pdf -> geom82018-ltexam.pdf (767408 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2014-final-test-answers.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2014-final-test-answers.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 22 ms: Could not connect to server
+- ok https://www.nysedregents.org/geometryre/818/geom82018-rg.pdf -> geom82018-rg.pdf (67007 bytes)
+- ok https://www.nysedregents.org/geometryre/818/geom82018-sk.xlsx -> geom82018-sk.xlsx (13004 bytes)
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2017_STAAR_Gr5Math_Key_Paper_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2017_STAAR_Gr5Math_Key_Paper_tagged.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 22 ms: Could not connect to server
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2014-final-test-numeracy-year-7.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2014-final-test-numeracy-year-7.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- exists https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2014-final-test-numeracy-year-7-(calculator).pdf -> naplan-2014-final-test-numeracy-year-7-_calculator_.pdf (2814548 bytes)
+- exists https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2014-final-test-numeracy-year-7-(no-calculator).pdf -> naplan-2014-final-test-numeracy-year-7-_no-calculator_.pdf (2407666 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2014-final-test-numeracy-year-7-(non-calculator).pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2014-final-test-numeracy-year-7-(non-calculator).pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/e5-naplan-2014-final-test-numeracy-year-7-(calc).pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/e5-naplan-2014-final-test-numeracy-year-7-(calc).pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 22 ms: Could not connect to server
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2014-final-test-numeracy-(calculator)-year-7.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/geometryre/818/geom82018-mrs.pdf -> geom82018-mrs.pdf (2222233 bytes)
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2014-final-test-numeracy-(calculator)-year-7.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/geometryre/818/geom82018-cc.pdf -> geom82018-cc.pdf (22246 bytes)
+- ok https://www.nysedregents.org/geometryre/818/geom82018-cc.xlsx -> geom82018-cc.xlsx (15256 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2014-paper-test-answers.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2014-paper-test-answers.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 22 ms: Could not connect to server
+- ok https://www.nysedregents.org/geometryre/618/geom62018-exam.pdf -> geom62018-exam.pdf (194294 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2014-final-test-answers.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2014-final-test-answers.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- ok https://www.nysedregents.org/geometryre/618/geom62018-ltexam.pdf -> geom62018-ltexam.pdf (850807 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2014-final-test-numeracy-year-9.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2014-final-test-numeracy-year-9.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- exists https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2014-final-test-numeracy-year-9-(calculator).pdf -> naplan-2014-final-test-numeracy-year-9-_calculator_.pdf (1664951 bytes)
+- exists https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2014-final-test-numeracy-year-9-(no-calculator).pdf -> naplan-2014-final-test-numeracy-year-9-_no-calculator_.pdf (1533640 bytes)
+- ok https://www.nysedregents.org/geometryre/618/geom62018-rgcr2.pdf -> geom62018-rgcr2.pdf (76333 bytes)
+- ok https://www.nysedregents.org/geometryre/618/geom62018-sk.xlsx -> geom62018-sk.xlsx (12704 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2014-final-test-numeracy-year-9-(non-calculator).pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2014-final-test-numeracy-year-9-(non-calculator).pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/e5-naplan-2014-final-test-numeracy-year-9-(calc).pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/e5-naplan-2014-final-test-numeracy-year-9-(calc).pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2017_STAAR_Gr6Math_Key_Online_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2017_STAAR_Gr6Math_Key_Online_tagged.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2014-final-test-numeracy-(calculator)-year-9.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2014-final-test-numeracy-(calculator)-year-9.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2014-paper-test-answers.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2014-paper-test-answers.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- ok https://www.nysedregents.org/geometryre/618/geom62018-mrs.pdf -> geom62018-mrs.pdf (1731389 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2014-final-test-answers.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2014-final-test-answers.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- ok https://www.nysedregents.org/geometryre/618/geom62018-cc.pdf -> geom62018-cc.pdf (22187 bytes)
+- ok https://www.nysedregents.org/geometryre/618/geom62018-cc.xlsx -> geom62018-cc.xlsx (15227 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2015-final-test-numeracy-year-3.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2015-final-test-numeracy-year-3.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 22 ms: Could not connect to server
+- ok https://www.nysedregents.org/geometryre/618/geom62018-in.pdf -> geom62018-in.pdf (58189 bytes)
+- ok https://www.nysedregents.org/geometryre/118/geom12018-exam.pdf -> geom12018-exam.pdf (174451 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2015-final-test-numeracy-year-3-(calculator).pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2015-final-test-numeracy-year-3-(calculator).pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 20 ms: Could not connect to server
+- ok https://www.nysedregents.org/geometryre/118/geom12018-rg.pdf -> geom12018-rg.pdf (70259 bytes)
+- ok https://www.nysedregents.org/geometryre/118/geom12018-sk.xlsx -> geom12018-sk.xlsx (12853 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2015-final-test-numeracy-year-3-(no-calculator).pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2015-final-test-numeracy-year-3-(no-calculator).pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 22 ms: Could not connect to server
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2015-final-test-numeracy-year-3-(non-calculator).pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/geometryre/118/geom12018-mrs.pdf -> geom12018-mrs.pdf (1723722 bytes)
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2015-final-test-numeracy-year-3-(non-calculator).pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/geometryre/118/geom12018-cc.pdf -> geom12018-cc.pdf (87845 bytes)
+- ok https://www.nysedregents.org/geometryre/118/geom12018-cc.xlsx -> geom12018-cc.xlsx (15693 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/e5-naplan-2015-final-test-numeracy-year-3-(calc).pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/geometryre/118/sp-geom118.pdf -> sp-geom118.pdf (41073 bytes)
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/e5-naplan-2015-final-test-numeracy-year-3-(calc).pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/geometryre/817/geomcc82017-exam.pdf -> geomcc82017-exam.pdf (106307 bytes)
+- ok https://www.nysedregents.org/geometryre/817/geom82017-rg.pdf -> geom82017-rg.pdf (80673 bytes)
+- ok https://www.nysedregents.org/geometryre/817/geomcc82017-sk.xlsx -> geomcc82017-sk.xlsx (12774 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2015-final-test-numeracy-(calculator)-year-3.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2015-final-test-numeracy-(calculator)-year-3.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2015-paper-test-answers.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2015-paper-test-answers.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- ok https://www.nysedregents.org/geometryre/817/geom82017-mrsw.pdf -> geom82017-mrsw.pdf (1970485 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2015-final-test-answers.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/geometryre/817/geom82017-cc.pdf -> geom82017-cc.pdf (22488 bytes)
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2015-final-test-answers.pdf :: curl: (22) The requested URL returned error: 404
+- exists https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2015-final-test-numeracy-year-5.pdf -> naplan-2015-final-test-numeracy-year-5.pdf (2959195 bytes)
+- ok https://www.nysedregents.org/geometryre/817/geom82017-cc.xlsx -> geom82017-cc.xlsx (15063 bytes)
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2017_STAAR_Gr6Math_Key_Paper_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/geometryre/617/geomcc62017-exampr.pdf -> geomcc62017-exampr.pdf (129079 bytes)
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2017_STAAR_Gr6Math_Key_Paper_tagged.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 24 ms: Could not connect to server
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2015-final-test-numeracy-year-5-(calculator).pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2015-final-test-numeracy-year-5-(calculator).pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- ok https://www.nysedregents.org/geometryre/617/geomcc62017-rgcrp2.pdf -> geomcc62017-rgcrp2.pdf (122281 bytes)
+- ok https://www.nysedregents.org/geometryre/617/geomcc62017-sk.xlsx -> geomcc62017-sk.xlsx (12794 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2015-final-test-numeracy-year-5-(no-calculator).pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2015-final-test-numeracy-year-5-(no-calculator).pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2015-final-test-numeracy-year-5-(non-calculator).pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2015-final-test-numeracy-year-5-(non-calculator).pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 20 ms: Could not connect to server
+- ok https://www.nysedregents.org/geometryre/617/geomcc62017-mrsw.pdf -> geomcc62017-mrsw.pdf (3154154 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/e5-naplan-2015-final-test-numeracy-year-5-(calc).pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/e5-naplan-2015-final-test-numeracy-year-5-(calc).pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- ok https://www.nysedregents.org/geometryre/617/geomcc62017-cc.pdf -> geomcc62017-cc.pdf (145125 bytes)
+- ok https://www.nysedregents.org/geometryre/617/geomcc62017-cc.xlsx -> geomcc62017-cc.xlsx (14912 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2015-final-test-numeracy-(calculator)-year-5.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/geometryre/617/in-geomcc62017-q24.pdf -> in-geomcc62017-q24.pdf (45356 bytes)
+- ok https://www.nysedregents.org/geometryre/617/in-geomcc62017.pdf -> in-geomcc62017.pdf (13057 bytes)
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2015-final-test-numeracy-(calculator)-year-5.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/geometryre/117/geomcc12017-exam.pdf -> geomcc12017-exam.pdf (211515 bytes)
+- ok https://www.nysedregents.org/geometryre/117/geomcc12017-rg.pdf -> geomcc12017-rg.pdf (71584 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2015-paper-test-answers.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/geometryre/117/geomcc12017-sk.xlsx -> geomcc12017-sk.xlsx (12739 bytes)
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2015-paper-test-answers.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2015-final-test-answers.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2015-final-test-answers.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 20 ms: Could not connect to server
+- ok https://www.nysedregents.org/geometryre/117/geomcc12017-mrs.pdf -> geomcc12017-mrs.pdf (2037102 bytes)
+- ok https://www.nysedregents.org/geometryre/117/geomcc12017-cc.pdf -> geomcc12017-cc.pdf (22749 bytes)
+- ok https://www.nysedregents.org/geometryre/117/geomcc12017-cc.xlsx -> geomcc12017-cc.xlsx (14968 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2015-final-test-numeracy-year-7.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2015-final-test-numeracy-year-7.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 20 ms: Could not connect to server
+- ok https://www.nysedregents.org/geometryre/816/geomcc82016-examr.pdf -> geomcc82016-examr.pdf (193612 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2015-final-test-numeracy-year-7-(calculator).pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2015-final-test-numeracy-year-7-(calculator).pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 20 ms: Could not connect to server
+- ok https://www.nysedregents.org/geometryre/816/geomcc82016-rgr.pdf -> geomcc82016-rgr.pdf (85418 bytes)
+- ok https://www.nysedregents.org/geometryre/816/geomcc82016-skr.xlsx -> geomcc82016-skr.xlsx (12848 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2015-final-test-numeracy-year-7-(no-calculator).pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2015-final-test-numeracy-year-7-(no-calculator).pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- ok https://www.nysedregents.org/geometryre/816/geomcc82016-mrscrw.pdf -> geomcc82016-mrscrw.pdf (2732872 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2015-final-test-numeracy-year-7-(non-calculator).pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/geometryre/816/geomcc82016-cc.pdf -> geomcc82016-cc.pdf (22754 bytes)
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2015-final-test-numeracy-year-7-(non-calculator).pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/geometryre/816/geomcc82016-cc.xlsx -> geomcc82016-cc.xlsx (15108 bytes)
+- ok https://www.nysedregents.org/geometryre/816/in-geocc816r.pdf -> in-geocc816r.pdf (13289 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/e5-naplan-2015-final-test-numeracy-year-7-(calc).pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/e5-naplan-2015-final-test-numeracy-year-7-(calc).pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 20 ms: Could not connect to server
+- exists https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2015-final-test-numeracy-(calculator)-year-7.pdf -> naplan-2015-final-test-numeracy-_calculator_-year-7.pdf (1807669 bytes)
+- ok https://www.nysedregents.org/geometryre/616/geomcc62016-exam.pdf -> geomcc62016-exam.pdf (114115 bytes)
+- ok https://www.nysedregents.org/geometryre/616/geomcc62016-rg.pdf -> geomcc62016-rg.pdf (71007 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2015-paper-test-answers.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2015-paper-test-answers.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 23 ms: Could not connect to server
+- ok https://www.nysedregents.org/geometryre/616/geomcc62016-sk.xlsx -> geomcc62016-sk.xlsx (12839 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2015-final-test-answers.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2015-final-test-answers.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 20 ms: Could not connect to server
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2017_STAAR_Gr7Math_Key_Online_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2017_STAAR_Gr7Math_Key_Online_tagged.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2015-final-test-numeracy-year-9.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2015-final-test-numeracy-year-9.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- exists https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2015-final-test-numeracy-year-9-(calculator).pdf -> naplan-2015-final-test-numeracy-year-9-_calculator_.pdf (1877284 bytes)
+- exists https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2015-final-test-numeracy-year-9-(no-calculator).pdf -> naplan-2015-final-test-numeracy-year-9-_no-calculator_.pdf (1886924 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2015-final-test-numeracy-year-9-(non-calculator).pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2015-final-test-numeracy-year-9-(non-calculator).pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 20 ms: Could not connect to server
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/e5-naplan-2015-final-test-numeracy-year-9-(calc).pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/e5-naplan-2015-final-test-numeracy-year-9-(calc).pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2015-final-test-numeracy-(calculator)-year-9.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2015-final-test-numeracy-(calculator)-year-9.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2015-paper-test-answers.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2015-paper-test-answers.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2015-final-test-answers.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2015-final-test-answers.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- ok https://www.nysedregents.org/geometryre/616/geomcc62016-mrs.pdf -> geomcc62016-mrs.pdf (2459787 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2016-final-test-numeracy-year-3.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/geometryre/616/geomcc62016-cc.pdf -> geomcc62016-cc.pdf (22735 bytes)
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2016-final-test-numeracy-year-3.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/geometryre/616/geomcc62016-cc.xlsx -> geomcc62016-cc.xlsx (15111 bytes)
+- ok https://www.nysedregents.org/geometryre/116/geomcc12016-exam.pdf -> geomcc12016-exam.pdf (134187 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2016-final-test-numeracy-year-3-(calculator).pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2016-final-test-numeracy-year-3-(calculator).pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 20 ms: Could not connect to server
+- ok https://www.nysedregents.org/geometryre/116/geomcc12016-rg.pdf -> geomcc12016-rg.pdf (75002 bytes)
+- ok https://www.nysedregents.org/geometryre/116/geomcc12016-sk.xlsx -> geomcc12016-sk.xlsx (12810 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2016-final-test-numeracy-year-3-(no-calculator).pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2016-final-test-numeracy-year-3-(no-calculator).pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 22 ms: Could not connect to server
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2016-final-test-numeracy-year-3-(non-calculator).pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2016-final-test-numeracy-year-3-(non-calculator).pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/e5-naplan-2016-final-test-numeracy-year-3-(calc).pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/e5-naplan-2016-final-test-numeracy-year-3-(calc).pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2016-final-test-numeracy-(calculator)-year-3.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2016-final-test-numeracy-(calculator)-year-3.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- ok https://www.nysedregents.org/geometryre/116/geomcc12016-mrs.pdf -> geomcc12016-mrs.pdf (2849210 bytes)
+- ok https://www.nysedregents.org/geometryre/116/geomcc12016-cc.pdf -> geomcc12016-cc.pdf (26845 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2016-paper-test-answers.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/geometryre/116/geomcc12016-cc.xlsx -> geomcc12016-cc.xlsx (15125 bytes)
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2017_STAAR_Gr7Math_Key_Paper_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2017_STAAR_Gr7Math_Key_Paper_tagged.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2016-paper-test-answers.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/geometryre/815/geomcc82015-exam.pdf -> geomcc82015-exam.pdf (109212 bytes)
+- ok https://www.nysedregents.org/geometryre/815/geomcc82015-rg.pdf -> geomcc82015-rg.pdf (78230 bytes)
+- ok https://www.nysedregents.org/geometryre/815/geomcc82015-sk.xlsx -> geomcc82015-sk.xlsx (12726 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2016-final-test-answers.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2016-final-test-answers.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 20 ms: Could not connect to server
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2016-final-test-numeracy-year-5.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2016-final-test-numeracy-year-5.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2016-final-test-numeracy-year-5-(calculator).pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2016-final-test-numeracy-year-5-(calculator).pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2016-final-test-numeracy-year-5-(no-calculator).pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2016-final-test-numeracy-year-5-(no-calculator).pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 20 ms: Could not connect to server
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2016-final-test-numeracy-year-5-(non-calculator).pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2016-final-test-numeracy-year-5-(non-calculator).pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/e5-naplan-2016-final-test-numeracy-year-5-(calc).pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/e5-naplan-2016-final-test-numeracy-year-5-(calc).pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 23 ms: Could not connect to server
+- ok https://www.nysedregents.org/geometryre/815/geomcc82015-mrs.pdf -> geomcc82015-mrs.pdf (3347927 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2016-final-test-numeracy-(calculator)-year-5.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2016-final-test-numeracy-(calculator)-year-5.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- ok https://www.nysedregents.org/geometryre/815/geomcc82015-cc.pdf -> geomcc82015-cc.pdf (26869 bytes)
+- ok https://www.nysedregents.org/geometryre/815/geomcc82015-cc.xlsx -> geomcc82015-cc.xlsx (15094 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2016-paper-test-answers.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2016-paper-test-answers.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/geometryre/615/geomcc62015-examw.pdf -> geomcc62015-examw.pdf (241584 bytes)
+- ok https://www.nysedregents.org/geometryre/615/geomcc62015-rg.pdf -> geomcc62015-rg.pdf (79308 bytes)
+- ok https://www.nysedregents.org/geometryre/615/geomcc62015-sk.xlsx -> geomcc62015-sk.xlsx (12714 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2016-final-test-answers.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2016-final-test-answers.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 22 ms: Could not connect to server
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2016-final-test-numeracy-year-7.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2016-final-test-numeracy-year-7.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/geometryre/615/geomcc62015-mrs.pdf -> geomcc62015-mrs.pdf (5068311 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2016-final-test-numeracy-year-7-(calculator).pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2016-final-test-numeracy-year-7-(calculator).pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2016-final-test-numeracy-year-7-(no-calculator).pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2016-final-test-numeracy-year-7-(no-calculator).pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2016-final-test-numeracy-year-7-(non-calculator).pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2016-final-test-numeracy-year-7-(non-calculator).pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- exists https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/e5-naplan-2016-final-test-numeracy-year-7-(calc).pdf -> e5-naplan-2016-final-test-numeracy-year-7-_calc_.pdf (1244451 bytes)
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2016-final-test-numeracy-(calculator)-year-7.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2016-final-test-numeracy-(calculator)-year-7.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 22 ms: Could not connect to server
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2016-paper-test-answers.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2016-paper-test-answers.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 22 ms: Could not connect to server
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2016-final-test-answers.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2016-final-test-answers.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 22 ms: Could not connect to server
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2017_STAAR_Gr8Math_Key_Online_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2017_STAAR_Gr8Math_Key_Online_tagged.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 23 ms: Could not connect to server
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2016-final-test-numeracy-year-9.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2016-final-test-numeracy-year-9.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2016-final-test-numeracy-year-9-(calculator).pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2016-final-test-numeracy-year-9-(calculator).pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2016-final-test-numeracy-year-9-(no-calculator).pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2016-final-test-numeracy-year-9-(no-calculator).pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2016-final-test-numeracy-year-9-(non-calculator).pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2016-final-test-numeracy-year-9-(non-calculator).pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/e5-naplan-2016-final-test-numeracy-year-9-(calc).pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/e5-naplan-2016-final-test-numeracy-year-9-(calc).pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 20 ms: Could not connect to server
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2016-final-test-numeracy-(calculator)-year-9.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2016-final-test-numeracy-(calculator)-year-9.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 20 ms: Could not connect to server
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2016-paper-test-answers.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2016-paper-test-answers.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 20 ms: Could not connect to server
+- FAIL https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2016-final-test-answers.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2016-final-test-answers.pdf :: curl: (7) Failed to connect to web.archive.org port 443 after 21 ms: Could not connect to server
+- exists https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2012-final-test---numeracy-year-3-(redacted-image-of-face-page-14).pdf?sfvrsn=2 -> naplan-2012-final-test---numeracy-year-3-_redacted-image-of-face-page-14_.pdf (2995569 bytes)
+- exists https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2012-final-test-numeracy-year-9-(no-calculator).pdf -> naplan-2012-final-test-numeracy-year-9-_no-calculator_.pdf (2418601 bytes)
+- exists https://acaraweb.blob.core.windows.net/acaraweb/docs/default-source/assessment-and-reporting-publications/naplan-2014-final-test-numeracy-year-9-(calculator).pdf -> naplan-2014-final-test-numeracy-year-9-_calculator_.pdf (1664951 bytes)
+done naplan
+- ok https://www.nysedregents.org/geometryre/615/geometry-annotated-items-june-2015.pdf -> geometry-annotated-items-june-2015.pdf (11094394 bytes)
+- ok https://www.nysedregents.org/geometryre/615/geomcc62015-cc.pdf -> geomcc62015-cc.pdf (149312 bytes)
+- ok https://www.nysedregents.org/geometryre/615/geomcc62015-cc.xlsx -> geomcc62015-cc.xlsx (15162 bytes)
+- ok https://nysedregents.org/Geometry/ -> regents-geo-old.html (33030 bytes)
+- ok https://nysedregents.org/Geometry/116/geom12016-exam.pdf -> geom12016-exam.pdf (90589 bytes)
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2017_STAAR_Gr8Math_Key_Paper_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2017_STAAR_Gr8Math_Key_Paper_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://nysedregents.org/Geometry/116/geom12016-rg.pdf -> geom12016-rg.pdf (56549 bytes)
+- ok https://nysedregents.org/Geometry/116/geom12016-sk.xlsx -> geom12016-sk.xlsx (12568 bytes)
+- ok https://nysedregents.org/Geometry/116/geom12016-srs.pdf -> geom12016-srs.pdf (1312136 bytes)
+- ok https://nysedregents.org/Geometry/116/geom12016-cc.pdf -> geom12016-cc.pdf (18837 bytes)
+- ok https://nysedregents.org/Geometry/116/geom12016-cc.xlsx -> geom12016-cc.xlsx (14234 bytes)
+- ok https://nysedregents.org/Geometry/815/geom82015-exam.pdf -> geom82015-exam.pdf (98305 bytes)
+- ok https://nysedregents.org/Geometry/815/geom82015-rg.pdf -> geom82015-rg.pdf (58159 bytes)
+- ok https://nysedregents.org/Geometry/815/geom82015-sk.xlsx -> geom82015-sk.xlsx (12508 bytes)
+- ok https://nysedregents.org/Geometry/815/geom82015-cc.pdf -> geom82015-cc.pdf (18794 bytes)
+- ok https://nysedregents.org/Geometry/815/geom82015-cc.xls -> geom82015-cc.xls (37376 bytes)
+- ok https://nysedregents.org/Geometry/615/geom62015-exam.pdf -> geom62015-exam.pdf (90077 bytes)
+- ok https://nysedregents.org/Geometry/615/geom62015-rg.pdf -> geom62015-rg.pdf (57017 bytes)
+- ok https://nysedregents.org/Geometry/615/geom62015-sk.xlsx -> geom62015-sk.xlsx (12540 bytes)
+- ok https://nysedregents.org/Geometry/615/geom62015-srs.pdf -> geom62015-srs.pdf (2276390 bytes)
+- ok https://nysedregents.org/Geometry/615/geom62015-cc.pdf -> geom62015-cc.pdf (136898 bytes)
+- ok https://nysedregents.org/Geometry/615/geom62015-cc.xls -> geom62015-cc.xls (36864 bytes)
+- ok https://nysedregents.org/Geometry/115/geom12015-exam.pdf -> geom12015-exam.pdf (102078 bytes)
+- ok https://nysedregents.org/Geometry/115/geom12015-rg.pdf -> geom12015-rg.pdf (57801 bytes)
+- ok https://nysedregents.org/Geometry/115/geom12015-sk.xlsx -> geom12015-sk.xlsx (12534 bytes)
+- ok https://nysedregents.org/Geometry/115/geom12015-srs.pdf -> geom12015-srs.pdf (2487394 bytes)
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2017_STAAR_Spanish_Gr3Math_Key_Paper_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://nysedregents.org/Geometry/115/geom12015-cc.pdf -> geom12015-cc.pdf (136895 bytes)
+- ok https://nysedregents.org/Geometry/115/geom12015-cc.xls -> geom12015-cc.xls (36864 bytes)
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2017_STAAR_Spanish_Gr3Math_Key_Paper_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://nysedregents.org/Geometry/115/geom12015-in.pdf -> geom12015-in.pdf (8807 bytes)
+- ok https://nysedregents.org/Geometry/814/geom82014-exam.pdf -> geom82014-exam.pdf (114817 bytes)
+- ok https://nysedregents.org/Geometry/814/geom82014-rg.pdf -> geom82014-rg.pdf (58044 bytes)
+- ok https://nysedregents.org/Geometry/814/geom82014-sk.xlsx -> geom82014-sk.xlsx (12583 bytes)
+- ok https://nysedregents.org/Geometry/814/geom82014-cc.pdf -> geom82014-cc.pdf (10415 bytes)
+- ok https://nysedregents.org/Geometry/814/geom82014-cc.xlsx -> geom82014-cc.xlsx (12621 bytes)
+- ok https://nysedregents.org/Geometry/614/geom62014-exam.pdf -> geom62014-exam.pdf (110260 bytes)
+- ok https://nysedregents.org/Geometry/614/geom62014-rg.pdf -> geom62014-rg.pdf (57803 bytes)
+- ok https://nysedregents.org/Geometry/614/geom62014-sk.xlsx -> geom62014-sk.xlsx (12556 bytes)
+- ok https://nysedregents.org/Geometry/614/geom62014-srsw.pdf -> geom62014-srsw.pdf (1635356 bytes)
+- ok https://nysedregents.org/Geometry/614/geom62014-cc.pdf -> geom62014-cc.pdf (89674 bytes)
+- ok https://nysedregents.org/Geometry/614/geom62014-cc.xlsx -> geom62014-cc.xlsx (12773 bytes)
+- ok https://nysedregents.org/Geometry/114/geom12014-examw.pdf -> geom12014-examw.pdf (104878 bytes)
+- ok https://nysedregents.org/Geometry/114/geom12014-rg.pdf -> geom12014-rg.pdf (56546 bytes)
+- ok https://nysedregents.org/Geometry/114/geom12014-sk.xls -> geom12014-sk.xls (29184 bytes)
+- ok https://nysedregents.org/Geometry/114/geom12014-srsw.pdf -> geom12014-srsw.pdf (1410688 bytes)
+- ok https://nysedregents.org/Geometry/114/geom12014-cc.pdf -> geom12014-cc.pdf (60671 bytes)
+- ok https://nysedregents.org/Geometry/114/geom12014-cc.xls -> geom12014-cc.xls (20480 bytes)
+- ok https://nysedregents.org/Geometry/813/geom82013-exam.pdf -> geom82013-exam.pdf (95702 bytes)
+- ok https://nysedregents.org/Geometry/813/geom82013-rg.pdf -> geom82013-rg.pdf (59161 bytes)
+- ok https://nysedregents.org/Geometry/813/geom82013-sk.xls -> geom82013-sk.xls (31744 bytes)
+- ok https://nysedregents.org/Geometry/813/geom82013-cc.pdf -> geom82013-cc.pdf (59094 bytes)
+- ok https://nysedregents.org/Geometry/813/geom82013-cc.xls -> geom82013-cc.xls (24064 bytes)
+- ok https://nysedregents.org/Geometry/813/in-geom82013.pdf -> in-geom82013.pdf (95221 bytes)
+- ok https://nysedregents.org/Geometry/613/geom62013-exam.pdf -> geom62013-exam.pdf (93632 bytes)
+- ok https://nysedregents.org/Geometry/613/geom62013-rg.pdf -> geom62013-rg.pdf (58239 bytes)
+- ok https://nysedregents.org/Geometry/613/geom62013-sk.xls -> geom62013-sk.xls (31744 bytes)
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2017_STAAR_Spanish_Gr4Math_Key_Paper_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2017_STAAR_Spanish_Gr4Math_Key_Paper_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://nysedregents.org/Geometry/613/geom62013-srsw.pdf -> geom62013-srsw.pdf (1944800 bytes)
+- ok https://nysedregents.org/Geometry/613/geom62013-cc.pdf -> geom62013-cc.pdf (10093 bytes)
+- ok https://nysedregents.org/Geometry/613/geom62013-cc.xls -> geom62013-cc.xls (24064 bytes)
+- ok https://nysedregents.org/Geometry/613/in-geometry613.pdf -> in-geometry613.pdf (7237 bytes)
+- ok https://nysedregents.org/Geometry/113/geom12013-exam.pdf -> geom12013-exam.pdf (117740 bytes)
+- ok https://nysedregents.org/Geometry/113/geom12013-rg.pdf -> geom12013-rg.pdf (141415 bytes)
+- ok https://nysedregents.org/Geometry/113/geom12013-sk.xls -> geom12013-sk.xls (23552 bytes)
+- ok https://nysedregents.org/Geometry/113/geom12013-cc.pdf -> geom12013-cc.pdf (9776 bytes)
+- ok https://nysedregents.org/Geometry/113/geom12013-cc.xls -> geom12013-cc.xls (20480 bytes)
+- ok https://nysedregents.org/Geometry/812/geom82012-examrev.pdf -> geom82012-examrev.pdf (133884 bytes)
+- ok https://nysedregents.org/Geometry/812/geom82012-rgrev.pdf -> geom82012-rgrev.pdf (125258 bytes)
+- ok https://nysedregents.org/Geometry/812/geo82012-skrev.xls -> geo82012-skrev.xls (24576 bytes)
+- ok https://nysedregents.org/Geometry/812/geom82012-cc.pdf -> geom82012-cc.pdf (9580 bytes)
+- ok https://nysedregents.org/Geometry/812/geom82012-cc.xls -> geom82012-cc.xls (23552 bytes)
+- ok https://nysedregents.org/Geometry/812/in-geom812.pdf -> in-geom812.pdf (8406 bytes)
+- ok https://nysedregents.org/Geometry/612/geom62012-exam_w.pdf -> geom62012-exam_w.pdf (117470 bytes)
+- ok https://nysedregents.org/Geometry/612/geo62012-rg.pdf -> geo62012-rg.pdf (110460 bytes)
+- ok https://nysedregents.org/Geometry/612/geo62012-sk.xls -> geo62012-sk.xls (31744 bytes)
+- ok https://nysedregents.org/Geometry/612/geom62012-cc.pdf -> geom62012-cc.pdf (14823 bytes)
+- ok https://nysedregents.org/Geometry/612/geom62012-cc.xls -> geom62012-cc.xls (23552 bytes)
+- ok https://nysedregents.org/Geometry/112/geometry-exam112wrev.pdf -> geometry-exam112wrev.pdf (149718 bytes)
+- ok https://nysedregents.org/Geometry/112/geom12012-rg.pdf -> geom12012-rg.pdf (113537 bytes)
+- ok https://nysedregents.org/concht/112/geom12012-cc.pdf -> geom12012-cc.pdf (29749 bytes)
+- ok https://nysedregents.org/Geometry/811/geometry-exam811.pdf -> geometry-exam811.pdf (617280 bytes)
+- ok https://nysedregents.org/Geometry/811/geometry-rg811w.pdf -> geometry-rg811w.pdf (107696 bytes)
+- ok https://nysedregents.org/Geometry/811/geometry-cc811.pdf -> geometry-cc811.pdf (29724 bytes)
+- ok https://nysedregents.org/Geometry/611/geometry-exam611.pdf -> geometry-exam611.pdf (587279 bytes)
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2017_STAAR_Spanish_Gr5Math_Key_Paper_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://nysedregents.org/Geometry/611/geometry-rg611w.pdf -> geometry-rg611w.pdf (97472 bytes)
+- ok https://nysedregents.org/concht/611/geometry-cc611.pdf -> geometry-cc611.pdf (46800 bytes)
+- ok https://nysedregents.org/Geometry/611/geometry-sc611.pdf -> geometry-sc611.pdf (13049 bytes)
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2017_STAAR_Spanish_Gr5Math_Key_Paper_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://nysedregents.org/Geometry/archive/20110127-geo-exam.pdf -> 20110127-geo-exam.pdf (703508 bytes)
+- ok https://nysedregents.org/Geometry/archive/20110127-geo-rgw.pdf -> 20110127-geo-rgw.pdf (112008 bytes)
+- ok https://nysedregents.org/concht/111/geometry-cc111.pdf -> geometry-cc111.pdf (46860 bytes)
+- ok https://nysedregents.org/Geometry/archive/20100818-geo-exam.pdf -> 20100818-geo-exam.pdf (504164 bytes)
+- ok https://nysedregents.org/Geometry/archive/20100818-geo-rg.pdf -> 20100818-geo-rg.pdf (617234 bytes)
+- ok https://nysedregents.org/Geometry/archive/cc-geo-810.pdf -> cc-geo-810.pdf (29731 bytes)
+- ok https://nysedregents.org/Geometry/archive/20100617exam.pdf -> 20100617exam.pdf (108810 bytes)
+- ok https://nysedregents.org/Geometry/archive/20100617rg.pdf -> 20100617rg.pdf (209794 bytes)
+- ok https://nysedregents.org/Geometry/archive/cc-geometry-610.pdf -> cc-geometry-610.pdf (29794 bytes)
+- ok https://nysedregents.org/Geometry/archive/20100128exam.pdf -> 20100128exam.pdf (663212 bytes)
+- ok https://nysedregents.org/Geometry/archive/20100128scoringkey.pdf -> 20100128scoringkey.pdf (91429 bytes)
+- ok https://nysedregents.org/Geometry/archive/geometrycc-110.pdf -> geometrycc-110.pdf (29715 bytes)
+- ok https://nysedregents.org/Geometry/archive/20090813exam.pdf -> 20090813exam.pdf (108663 bytes)
+- ok https://nysedregents.org/Geometry/archive/20090813scoringkey.pdf -> 20090813scoringkey.pdf (103547 bytes)
+- ok https://nysedregents.org/Geometry/archive/geometrycc-809.pdf -> geometrycc-809.pdf (43979 bytes)
+- ok https://nysedregents.org/Geometry/archive/20090616exam.pdf -> 20090616exam.pdf (104048 bytes)
+- ok https://nysedregents.org/Geometry/archive/20090616scoringkey.pdf -> 20090616scoringkey.pdf (105563 bytes)
+- ok https://nysedregents.org/Geometry/archive/geometrycc-09.pdf -> geometrycc-09.pdf (29757 bytes)
+- ok https://www.nysedregents.org/algebratwo/ -> regents-alg2.html (60689 bytes)
+- ok https://www.nysedregents.org/algebratwo/826/algtwo-82026-exam.pdf -> algtwo-82026-exam.pdf (591945 bytes)
+- ok https://www.nysedregents.org/algebratwo/826/algtwo-82026-examlt.pdf -> algtwo-82026-examlt.pdf (775046 bytes)
+- ok https://www.nysedregents.org/algebratwo/826/algtwo-82026-sk.pdf -> algtwo-82026-sk.pdf (148120 bytes)
+- ok https://www.nysedregents.org/algebratwo/826/algtwo-82026-sk.xlsx -> algtwo-82026-sk.xlsx (13031 bytes)
+- ok https://www.nysedregents.org/algebratwo/826/algtwo-82026-rg.pdf -> algtwo-82026-rg.pdf (190933 bytes)
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2018_STAAR_Algebra_I_Key_Paper_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2018_STAAR_Algebra_I_Key_Paper_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/algebratwo/826/algtwo-82026-mrs.pdf -> algtwo-82026-mrs.pdf (1762028 bytes)
+- ok https://www.nysedregents.org/algebratwo/826/algtwo-82026-cc.pdf -> algtwo-82026-cc.pdf (117449 bytes)
+- ok https://www.nysedregents.org/algebratwo/826/algtwo-82026-cc.xlsx -> algtwo-82026-cc.xlsx (13704 bytes)
+- ok https://www.nysedregents.org/algebratwo/626/algtwo-62026-exam.pdf -> algtwo-62026-exam.pdf (601531 bytes)
+- ok https://www.nysedregents.org/algebratwo/626/algtwo-62026-examlt.pdf -> algtwo-62026-examlt.pdf (821471 bytes)
+- ok https://www.nysedregents.org/algebratwo/626/algtwo-62026-sk.pdf -> algtwo-62026-sk.pdf (132212 bytes)
+- ok https://www.nysedregents.org/algebratwo/626/algtwo-62026-sk.xlsx -> algtwo-62026-sk.xlsx (13036 bytes)
+- ok https://www.nysedregents.org/algebratwo/626/algtwo-62026-rg.pdf -> algtwo-62026-rg.pdf (241072 bytes)
+- ok https://www.nysedregents.org/algebratwo/626/algtwo-62026-mrs.pdf -> algtwo-62026-mrs.pdf (1650513 bytes)
+- ok https://www.nysedregents.org/algebratwo/626/algtwo-62026-cc.pdf -> algtwo-62026-cc.pdf (117310 bytes)
+- ok https://www.nysedregents.org/algebratwo/626/algtwo-62026-cc.xlsx -> algtwo-62026-cc.xlsx (15256 bytes)
+- ok https://www.nysedregents.org/algebratwo/626/special-notice-scoring-clarification-a2-exam-62026.pdf -> special-notice-scoring-clarification-a2-exam-62026.pdf (110952 bytes)
+- ok https://raw.githubusercontent.com/rowanz/swagaf/master/data/train.csv -> swag-train.csv
+- ok https://www.nysedregents.org/algebratwo/126/algtwo-12026-exam.pdf -> algtwo-12026-exam.pdf (717448 bytes)
+- ok https://www.nysedregents.org/algebratwo/126/algtwo-12026-exam-lt.pdf -> algtwo-12026-exam-lt.pdf (959364 bytes)
+
+## extra EQAO/PISA fetch
+- ok https://raw.githubusercontent.com/rowanz/swagaf/master/data/val.csv -> swag-val.csv
+- ok https://www.eqao.com/the-assessments/primary-division/ -> eqao-primary.html (403750 bytes)
+- ok https://www.nysedregents.org/algebratwo/126/algtwo-12026-sk.pdf -> algtwo-12026-sk.pdf (131793 bytes)
+- ok https://www.eqao.com/the-assessments/junior-division/ -> eqao-junior.html (411534 bytes)
+- ok https://www.nysedregents.org/algebratwo/126/algtwo-12026-sk.xlsx -> algtwo-12026-sk.xlsx (12975 bytes)
+- ok https://www.eqao.com/the-assessments/grade-9-math/ -> eqao-g9.html (410600 bytes)
+- FAIL https://raw.githubusercontent.com/UKPLab/acl2018-argument-reasoning-comprehension-task/master/data/train-w-swap.csv :: HTTP Error 404: Not Found
+- ok https://www.nysedregents.org/algebratwo/126/algtwo-12026-rg.pdf -> algtwo-12026-rg.pdf (212217 bytes)
+- FAIL https://raw.githubusercontent.com/UKPLab/acl2018-argument-reasoning-comprehension-task/master/data/dev-w-swap.csv :: HTTP Error 404: Not Found
+- FAIL https://raw.githubusercontent.com/UKPLab/acl2018-argument-reasoning-comprehension-task/master/data/test-w-swap.csv :: HTTP Error 404: Not Found
+- FAIL https://raw.githubusercontent.com/IBM/neuro-symbolic-ai/master/neuro-symbolic-pretrained-concept-tagger/data/arct/train.csv :: HTTP Error 404: Not Found
+- FAIL https://raw.githubusercontent.com/timniven/arct/master/data/train.csv :: HTTP Error 404: Not Found
+- FAIL https://raw.githubusercontent.com/timniven/arct/master/data/test.csv :: HTTP Error 404: Not Found
+- FAIL https://www.eqao.com/the-assessments/assessment-documents/ :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://www.eqao.com/the-assessments/assessment-documents/ :: curl: (22) The requested URL returned error: 404
+- FAIL https://raw.githubusercontent.com/habernal/acl2018-argument-reasoning-comprehension-task/master/data/train.csv :: HTTP Error 404: Not Found
+- FAIL https://github.com/UKPLab/acl2018-argument-reasoning-comprehension-task/raw/master/mturk/train-full.csv :: HTTP Error 404: Not Found
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2018_STAAR_Algebra_I_Test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://raw.githubusercontent.com/pepa/argument-reasoning-comprehension/master/data/test.csv :: HTTP Error 404: Not Found
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2018_STAAR_Algebra_I_Test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/https://www.eqao.com/the-assessments/assessment-documents/ :: curl: (22) The requested URL returned error: 404
+- ok https://www.eqao.com/ -> eqao-index.html (456735 bytes)
+- ok https://www.eqao.com/wp-content/uploads/2025/11/math-resource-released-questions-g9-25.pdf -> math-resource-released-questions-g9-25.pdf (679370 bytes)
+- FAIL https://www.eqao.com/wp-content/uploads/2025/11/math-resource-released-questions-g9-2025.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://www.eqao.com/wp-content/uploads/2025/11/math-resource-released-questions-g9-2025.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/algebratwo/126/algtwo-12026-mrs.pdf -> algtwo-12026-mrs.pdf (2283204 bytes)
+- ok https://www.nysedregents.org/algebratwo/126/algtwo-12026-cc.pdf -> algtwo-12026-cc.pdf (113087 bytes)
+- ok https://www.nysedregents.org/algebratwo/126/algtwo-12026-cc.xlsx -> algtwo-12026-cc.xlsx (13989 bytes)
+- ok https://www.nysedregents.org/algebratwo/825/algtwo-82025-exam.pdf -> algtwo-82025-exam.pdf (1066448 bytes)
+- ok https://www.nysedregents.org/algebratwo/825/algtwo-82025-examlt.pdf -> algtwo-82025-examlt.pdf (797728 bytes)
+- ok https://www.nysedregents.org/algebratwo/825/algtwo-82025-sk.pdf -> algtwo-82025-sk.pdf (130445 bytes)
+- ok https://www.nysedregents.org/algebratwo/825/algtwo-82025-sk.xlsx -> algtwo-82025-sk.xlsx (13008 bytes)
+- ok https://www.nysedregents.org/algebratwo/825/algtwo-82025-rg.pdf -> algtwo-82025-rg.pdf (292906 bytes)
+- ok https://www.nysedregents.org/algebratwo/825/algtwo-82025-mrs.pdf -> algtwo-82025-mrs.pdf (1573681 bytes)
+- ok https://www.nysedregents.org/algebratwo/825/algtwo-82025-cc.pdf -> algtwo-82025-cc.pdf (111094 bytes)
+- ok https://www.nysedregents.org/algebratwo/825/algtwo-82025-cc.xlsx -> algtwo-82025-cc.xlsx (13968 bytes)
+- ok https://www.nysedregents.org/algebratwo/625/algtwo-62025-exam.pdf -> algtwo-62025-exam.pdf (732876 bytes)
+- ok https://www.nysedregents.org/algebratwo/625/algtwo-62025-examlt.pdf -> algtwo-62025-examlt.pdf (798554 bytes)
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2018_STAAR_EOC_Algebra_I_Key_Online_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/algebratwo/625/algtwo-62025-sk.pdf -> algtwo-62025-sk.pdf (130738 bytes)
+- ok https://www.nysedregents.org/algebratwo/625/algtwo-62025-sk.xlsx -> algtwo-62025-sk.xlsx (13013 bytes)
+- ok https://www.nysedregents.org/algebratwo/625/algtwo-62025-rg.pdf -> algtwo-62025-rg.pdf (417523 bytes)
+- FAIL https://web.archive.org/web/https://www.eqao.com/wp-content/uploads/2025/11/math-resource-released-questions-g9-2025.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://www.eqao.com/wp-content/uploads/2025/11/math-resource-released-questions-g6-25.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/algebratwo/625/algtwo-62025-mrs.pdf -> algtwo-62025-mrs.pdf (1848465 bytes)
+- ok https://www.nysedregents.org/algebratwo/625/algtwo-62025-cc.pdf -> algtwo-62025-cc.pdf (110748 bytes)
+- ok https://www.nysedregents.org/algebratwo/625/algtwo-62025-cc.xlsx -> algtwo-62025-cc.xlsx (15521 bytes)
+- FAIL https://web.archive.org/web/2020/https://www.eqao.com/wp-content/uploads/2025/11/math-resource-released-questions-g6-25.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/algebratwo/125/algtwo-12025-exam.pdf -> algtwo-12025-exam.pdf (920673 bytes)
+- ok https://www.nysedregents.org/algebratwo/125/algtwo-12025-exam-lt.pdf -> algtwo-12025-exam-lt.pdf (514404 bytes)
+- ok https://www.nysedregents.org/algebratwo/125/algtwo-12025-sk.pdf -> algtwo-12025-sk.pdf (130911 bytes)
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2018_STAAR_EOC_Algebra_I_Key_Online_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/algebratwo/125/algtwo-12025-sk.xlsx -> algtwo-12025-sk.xlsx (13020 bytes)
+- ok https://www.nysedregents.org/algebratwo/125/algtwo-12025-rg.pdf -> algtwo-12025-rg.pdf (319878 bytes)
+- FAIL https://web.archive.org/web/https://www.eqao.com/wp-content/uploads/2025/11/math-resource-released-questions-g6-25.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.eqao.com/wp-content/uploads/2025/11/math-resource-released-questions-g6-2025.pdf -> math-resource-released-questions-g6-2025.pdf (653573 bytes)
+- ok https://www.nysedregents.org/algebratwo/125/algtwo-12025-mrs.pdf -> algtwo-12025-mrs.pdf (1348745 bytes)
+- FAIL https://www.eqao.com/wp-content/uploads/2025/11/math-resource-released-questions-g3-25.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/algebratwo/125/algtwo-12025-cc.pdf -> algtwo-12025-cc.pdf (110693 bytes)
+- ok https://www.nysedregents.org/algebratwo/125/algtwo-12025-cc.xlsx -> algtwo-12025-cc.xlsx (13536 bytes)
+- FAIL https://web.archive.org/web/2020/https://www.eqao.com/wp-content/uploads/2025/11/math-resource-released-questions-g3-25.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/https://www.eqao.com/wp-content/uploads/2025/11/math-resource-released-questions-g3-25.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/algebratwo/824/algtwo82024-exam.pdf -> algtwo82024-exam.pdf (512221 bytes)
+- ok https://www.eqao.com/wp-content/uploads/2025/11/math-resource-released-questions-g3-2025.pdf -> math-resource-released-questions-g3-2025.pdf (2944411 bytes)
+- ok https://www.eqao.com/wp-content/uploads/2025/01/math-resource-released-questions-g6-2024.pdf -> math-resource-released-questions-g6-2024.pdf (2165096 bytes)
+- ok https://www.eqao.com/wp-content/uploads/2025/01/math-resource-released-questions-g3-2024.pdf -> math-resource-released-questions-g3-2024.pdf (2676329 bytes)
+- ok https://www.nysedregents.org/algebratwo/824/algtwo82024-examlt.pdf -> algtwo82024-examlt.pdf (493234 bytes)
+- FAIL https://www.eqao.com/wp-content/uploads/2025/01/math-resource-released-questions-g9-2024.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/algebratwo/824/algtwo82024-sk.pdf -> algtwo82024-sk.pdf (129845 bytes)
+- ok https://www.nysedregents.org/algebratwo/824/algtwo82024-sk.xlsx -> algtwo82024-sk.xlsx (13021 bytes)
+- ok https://www.nysedregents.org/algebratwo/824/algtwo82024-rg.pdf -> algtwo82024-rg.pdf (224753 bytes)
+- FAIL https://web.archive.org/web/2020/https://www.eqao.com/wp-content/uploads/2025/01/math-resource-released-questions-g9-2024.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/algebratwo/824/algtwo82024-mrs.pdf -> algtwo82024-mrs.pdf (1132709 bytes)
+- ok https://www.nysedregents.org/algebratwo/824/algtwo82024-cc.pdf -> algtwo82024-cc.pdf (110410 bytes)
+- ok https://www.nysedregents.org/algebratwo/824/algtwo82024-cc.xlsx -> algtwo82024-cc.xlsx (13435 bytes)
+- FAIL https://web.archive.org/web/https://www.eqao.com/wp-content/uploads/2025/01/math-resource-released-questions-g9-2024.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/algebratwo/624/algtwo62024-exam.pdf -> algtwo62024-exam.pdf (498160 bytes)
+- FAIL https://www.eqao.com/wp-content/uploads/2024/11/math-resource-released-questions-g9-2024.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/algebratwo/624/algtwo62024-exam-lt.pdf -> algtwo62024-exam-lt.pdf (474600 bytes)
+- ok https://www.nysedregents.org/algebratwo/624/algtwo62024-sk.pdf -> algtwo62024-sk.pdf (130055 bytes)
+- ok https://www.nysedregents.org/algebratwo/624/algtwo62024-sk.xlsx -> algtwo62024-sk.xlsx (13012 bytes)
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2018_STAAR_G3_Math_Key_Online_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/algebratwo/624/algtwo62024-rg.pdf -> algtwo62024-rg.pdf (189924 bytes)
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2018_STAAR_G3_Math_Key_Online_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/algebratwo/624/algtwo62024-mrs.pdf -> algtwo62024-mrs.pdf (1322004 bytes)
+- ok https://www.nysedregents.org/algebratwo/624/algtwo62024-cc.pdf -> algtwo62024-cc.pdf (110930 bytes)
+- ok https://www.nysedregents.org/algebratwo/624/algtwo62024-cc.xlsx -> algtwo62024-cc.xlsx (14005 bytes)
+- ok https://www.nysedregents.org/algebratwo/124/algtwo12024-exam.pdf -> algtwo12024-exam.pdf (629794 bytes)
+- ok https://www.nysedregents.org/algebratwo/124/algtwo12024-exam-lt.pdf -> algtwo12024-exam-lt.pdf (511924 bytes)
+- FAIL https://web.archive.org/web/2020/https://www.eqao.com/wp-content/uploads/2024/11/math-resource-released-questions-g9-2024.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/algebratwo/124/algtwo12024-sk.pdf -> algtwo12024-sk.pdf (130147 bytes)
+- FAIL https://web.archive.org/web/https://www.eqao.com/wp-content/uploads/2024/11/math-resource-released-questions-g9-2024.pdf :: curl: (22) The requested URL returned error: 404
+- exists https://www.eqao.com/wp-content/uploads/2024/11/math-resource-released-questions-g6-2024.pdf -> math-resource-released-questions-g6-2024.pdf (2165096 bytes)
+- exists https://www.eqao.com/wp-content/uploads/2024/11/math-resource-released-questions-g3-2024.pdf -> math-resource-released-questions-g3-2024.pdf (2676329 bytes)
+- ok https://www.eqao.com/wp-content/uploads/2023/11/math-resource-released-questions-g9-2023.pdf -> math-resource-released-questions-g9-2023.pdf (690507 bytes)
+- ok https://www.nysedregents.org/algebratwo/124/algtwo12024-sk.xlsx -> algtwo12024-sk.xlsx (13015 bytes)
+- ok https://www.eqao.com/wp-content/uploads/2023/11/math-resource-released-questions-g6-2023.pdf -> math-resource-released-questions-g6-2023.pdf (270100 bytes)
+- ok https://www.eqao.com/wp-content/uploads/2023/11/math-resource-released-questions-g3-2023.pdf -> math-resource-released-questions-g3-2023.pdf (428591 bytes)
+- exists https://www.eqao.com/wp-content/uploads/2024/01/math-resource-released-questions-g3-2023.pdf -> math-resource-released-questions-g3-2023.pdf (428591 bytes)
+- ok https://www.nysedregents.org/algebratwo/124/algtwo12024-rg.pdf -> algtwo12024-rg.pdf (208389 bytes)
+- FAIL https://www.eqao.com/wp-content/uploads/2022/11/math-resource-released-questions-g9-2022.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://www.eqao.com/wp-content/uploads/2022/11/math-resource-released-questions-g9-2022.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/https://www.eqao.com/wp-content/uploads/2022/11/math-resource-released-questions-g9-2022.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://www.eqao.com/wp-content/uploads/2022/11/math-resource-released-questions-g6-2022.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/algebratwo/124/algtwo12024-mrs.pdf -> algtwo12024-mrs.pdf (1142303 bytes)
+- FAIL https://web.archive.org/web/2020/https://www.eqao.com/wp-content/uploads/2022/11/math-resource-released-questions-g6-2022.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/algebratwo/124/algtwo12024-cc.pdf -> algtwo12024-cc.pdf (110773 bytes)
+- FAIL https://web.archive.org/web/https://www.eqao.com/wp-content/uploads/2022/11/math-resource-released-questions-g6-2022.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/algebratwo/124/algtwo12024-cc.xlsx -> algtwo12024-cc.xlsx (13597 bytes)
+- FAIL https://www.eqao.com/wp-content/uploads/2022/11/math-resource-released-questions-g3-2022.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://www.eqao.com/wp-content/uploads/2022/11/math-resource-released-questions-g3-2022.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/https://www.eqao.com/wp-content/uploads/2022/11/math-resource-released-questions-g3-2022.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/algebratwo/823/algtwo82023-exam.pdf -> algtwo82023-exam.pdf (1410272 bytes)
+- ok https://www.nysedregents.org/algebratwo/823/algtwo82023-examlt.pdf -> algtwo82023-examlt.pdf (943318 bytes)
+- ok https://www.nysedregents.org/algebratwo/823/algtwo82023-sk.pdf -> algtwo82023-sk.pdf (131422 bytes)
+- ok https://www.acer.org/files/pisa_relitems_maths_2.pdf -> pisa_relitems_maths_2.pdf (1432845 bytes)
+- exists https://www.oecd.org/pisa/38709418.pdf -> 38709418.pdf (1380146 bytes)
+- ok https://www.nysedregents.org/algebratwo/823/algtwo82023-sk.xlsx -> algtwo82023-sk.xlsx (13429 bytes)
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2018_STAAR_G4_Math_Kay_Online_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2018_STAAR_G4_Math_Kay_Online_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/algebratwo/823/algtwo82023-rg.pdf -> algtwo82023-rg.pdf (770489 bytes)
+- ok https://www.nysedregents.org/algebratwo/823/algtwo82023-mrs.pdf -> algtwo82023-mrs.pdf (1541709 bytes)
+- ok https://www.nysedregents.org/algebratwo/823/algtwo82023-cc.pdf -> algtwo82023-cc.pdf (110589 bytes)
+- ok https://www.nysedregents.org/algebratwo/823/algtwo82023-cc.xlsx -> algtwo82023-cc.xlsx (14314 bytes)
+- ok https://nces.ed.gov/surveys/pisa/pdf/items_math.pdf -> items_math.pdf (1021672 bytes)
+- FAIL https://nces.ed.gov/surveys/pisa/pdf/MathItems.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/algebratwo/623/algtwo62023-exam.pdf -> algtwo62023-exam.pdf (1095270 bytes)
+- ok https://www.nysedregents.org/algebratwo/623/algtwo62023-examlt.pdf -> algtwo62023-examlt.pdf (743517 bytes)
+- FAIL https://web.archive.org/web/2020/https://nces.ed.gov/surveys/pisa/pdf/MathItems.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/algebratwo/623/algtwo62023-sk.pdf -> algtwo62023-sk.pdf (131780 bytes)
+- ok https://www.nysedregents.org/algebratwo/623/algtwo62023-sk.xlsx -> algtwo62023-sk.xlsx (13416 bytes)
+- FAIL https://web.archive.org/web/https://nces.ed.gov/surveys/pisa/pdf/MathItems.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/algebratwo/623/algtwo62023-rg.pdf -> algtwo62023-rg.pdf (289773 bytes)
+- ok https://www.nysedregents.org/algebratwo/623/algtwo62023-mrs.pdf -> algtwo62023-mrs.pdf (1343241 bytes)
+- ok https://www.nysedregents.org/algebratwo/623/algtwo62023-cc.pdf -> algtwo62023-cc.pdf (110984 bytes)
+- ok https://www.nysedregents.org/algebratwo/623/algtwo62023-cc.xlsx -> algtwo62023-cc.xlsx (14336 bytes)
+- ok https://www.nysedregents.org/algebratwo/123/algtwo12023-exam.pdf -> algtwo12023-exam.pdf (116661 bytes)
+- ok https://www.nysedregents.org/algebratwo/123/algtwo12023-exam-lt.pdf -> algtwo12023-exam-lt.pdf (125429 bytes)
+- ok https://www.nysedregents.org/algebratwo/123/algtwo12023-sk.pdf -> algtwo12023-sk.pdf (131773 bytes)
+- ok https://www.nysedregents.org/algebratwo/123/algtwo12023-sk.xlsx -> algtwo12023-sk.xlsx (13408 bytes)
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2018_STAAR_G5_Math_Key_Online_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/algebratwo/123/algtwo12023-rg.pdf -> algtwo12023-rg.pdf (103525 bytes)
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2018_STAAR_G5_Math_Key_Online_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/algebratwo/123/algtwo12023-mrs.pdf -> algtwo12023-mrs.pdf (956995 bytes)
+- ok https://www.nysedregents.org/algebratwo/123/algtwo12023-cc.pdf -> algtwo12023-cc.pdf (110923 bytes)
+- ok https://www.nysedregents.org/algebratwo/123/algtwo12023-cc.xlsx -> algtwo12023-cc.xlsx (13906 bytes)
+- ok https://www.nysedregents.org/algebratwo/822/algtwo82022-exam.pdf -> algtwo82022-exam.pdf (384681 bytes)
+- ok https://www.nysedregents.org/algebratwo/822/algtwo82022-examlt.pdf -> algtwo82022-examlt.pdf (538189 bytes)
+- ok https://www.nysedregents.org/algebratwo/822/algtwo82022-sk.pdf -> algtwo82022-sk.pdf (131421 bytes)
+- ok https://www.nysedregents.org/algebratwo/822/algtwo82022-sk.xlsx -> algtwo82022-sk.xlsx (13376 bytes)
+- ok https://www.nysedregents.org/algebratwo/822/algtwo82022-rg.pdf -> algtwo82022-rg.pdf (193837 bytes)
+- ok https://www.nysedregents.org/algebratwo/822/algtwo82022-mrs.pdf -> algtwo82022-mrs.pdf (2189000 bytes)
+- ok https://www.nysedregents.org/algebratwo/822/algtwo82022-cc.pdf -> algtwo82022-cc.pdf (25829 bytes)
+- ok https://www.nysedregents.org/algebratwo/822/algtwo82022-cc.xlsx -> algtwo82022-cc.xlsx (13793 bytes)
+- ok https://www.nysedregents.org/algebratwo/622/algtwo62022-exam.pdf -> algtwo62022-exam.pdf (88416 bytes)
+- ok https://www.nysedregents.org/algebratwo/622/algtwo62022-exam-lt.pdf -> algtwo62022-exam-lt.pdf (183304 bytes)
+- ok https://www.nysedregents.org/algebratwo/622/algtwo622-sk.pdf -> algtwo622-sk.pdf (132131 bytes)
+- ok https://www.nysedregents.org/algebratwo/622/algtwo622-sk.xlsx -> algtwo622-sk.xlsx (13381 bytes)
+- ok https://www.nysedregents.org/algebratwo/622/algtwo62022-rg.pdf -> algtwo62022-rg.pdf (83997 bytes)
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2018_STAAR_G6_Math_Key_Online_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2018_STAAR_G6_Math_Key_Online_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/algebratwo/622/algtwo62022-mrs.pdf -> algtwo62022-mrs.pdf (930853 bytes)
+- ok https://www.nysedregents.org/algebratwo/622/algtwo62022-cc.pdf -> algtwo62022-cc.pdf (115518 bytes)
+- ok https://www.nysedregents.org/algebratwo/622/algtwo62022-cc.xlsx -> algtwo62022-cc.xlsx (13795 bytes)
+- ok https://www.nysedregents.org/algebratwo/120/algtwo12020-exam.pdf -> algtwo12020-exam.pdf (98772 bytes)
+- ok https://www.nysedregents.org/algebratwo/120/algtwo12020-examlt.pdf -> algtwo12020-examlt.pdf (128474 bytes)
+- ok https://www.nysedregents.org/algebratwo/120/algtwo12020-sk.pdf -> algtwo12020-sk.pdf (22259 bytes)
+- ok https://www.nysedregents.org/algebratwo/120/algtwo12020-sk.xlsx -> algtwo12020-sk.xlsx (13360 bytes)
+- ok https://www.nysedregents.org/algebratwo/120/algtwo12020-rg.pdf -> algtwo12020-rg.pdf (81113 bytes)
+- ok https://www.nysedregents.org/algebratwo/120/algtwo12020-mrs2.pdf -> algtwo12020-mrs2.pdf (811309 bytes)
+- ok https://www.nysedregents.org/algebratwo/120/algtwo12020-cc.pdf -> algtwo12020-cc.pdf (145730 bytes)
+- ok https://www.nysedregents.org/algebratwo/120/algtwo12020-cc.xlsx -> algtwo12020-cc.xlsx (14376 bytes)
+- ok https://www.nysedregents.org/algebratwo/819/algtwo82019-exam.pdf -> algtwo82019-exam.pdf (211552 bytes)
+- ok https://www.nysedregents.org/algebratwo/819/algtwo82019-examlt.pdf -> algtwo82019-examlt.pdf (195773 bytes)
+- ok https://www.nysedregents.org/algebratwo/819/algtwo82019-sk.pdf -> algtwo82019-sk.pdf (22200 bytes)
+- ok https://www.nysedregents.org/algebratwo/819/algtwo82019-sk.xlsx -> algtwo82019-sk.xlsx (13348 bytes)
+- ok https://www.nysedregents.org/algebratwo/819/algtwo82019-rg.pdf -> algtwo82019-rg.pdf (77539 bytes)
+- ok https://www.nysedregents.org/algebratwo/819/algtwo82019-mrs.pdf -> algtwo82019-mrs.pdf (800125 bytes)
+- ok https://www.nysedregents.org/algebratwo/819/algtwo82019-cc.pdf -> algtwo82019-cc.pdf (22966 bytes)
+- ok https://www.nysedregents.org/algebratwo/819/algtwo82019-cc.xlsx -> algtwo82019-cc.xlsx (14379 bytes)
+- ok https://www.nysedregents.org/algebratwo/619/algtwo62019-exam.pdf -> algtwo62019-exam.pdf (354967 bytes)
+- ok https://www.nysedregents.org/algebratwo/619/algtwo62019-examlt.pdf -> algtwo62019-examlt.pdf (205353 bytes)
+- ok https://www.nysedregents.org/algebratwo/619/algtwo62019-sk.pdf -> algtwo62019-sk.pdf (22220 bytes)
+- ok https://www.nysedregents.org/algebratwo/619/algtwo62019-sk.xlsx -> algtwo62019-sk.xlsx (13343 bytes)
+- ok https://www.nysedregents.org/algebratwo/619/algtwo62019-rg.pdf -> algtwo62019-rg.pdf (83028 bytes)
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2018_STAAR_G7_Math_Key_Online_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2018_STAAR_G7_Math_Key_Online_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/algebratwo/619/algtwo62019-mrs.pdf -> algtwo62019-mrs.pdf (868353 bytes)
+- ok https://www.nysedregents.org/algebratwo/619/algtwo62019-cc.pdf -> algtwo62019-cc.pdf (145734 bytes)
+- ok https://www.nysedregents.org/algebratwo/619/algtwo62019-cc.xlsx -> algtwo62019-cc.xlsx (14765 bytes)
+- ok https://www.nysedregents.org/algebratwo/119/algtwo12019-exam.pdf -> algtwo12019-exam.pdf (319135 bytes)
+- ok https://www.nysedregents.org/algebratwo/119/algtwo12019-examlt.pdf -> algtwo12019-examlt.pdf (235473 bytes)
+- ok https://www.nysedregents.org/algebratwo/119/algtwo12019-rg.pdf -> algtwo12019-rg.pdf (79633 bytes)
+- ok https://www.nysedregents.org/algebratwo/119/algtwo12019-sk.xlsx -> algtwo12019-sk.xlsx (13367 bytes)
+- ok https://www.eqao.com/math-resource-released-questions-g9-24/ -> eqao-g9-24.html (2007 bytes)
+- ok https://www.nysedregents.org/algebratwo/119/algtwo12019-mrs.pdf -> algtwo12019-mrs.pdf (969295 bytes)
+- ok https://www.nysedregents.org/algebratwo/119/algtwo12019-cc.pdf -> algtwo12019-cc.pdf (23056 bytes)
+- ok https://www.nysedregents.org/algebratwo/119/algtwo12019-cc.xlsx -> algtwo12019-cc.xlsx (14488 bytes)
+- ok https://www.nysedregents.org/algebratwo/818/algtwo82018-exam.pdf -> algtwo82018-exam.pdf (186515 bytes)
+- ok https://www.nysedregents.org/algebratwo/818/algtwo82018-ltexam.pdf -> algtwo82018-ltexam.pdf (725854 bytes)
+- ok https://www.nysedregents.org/algebratwo/818/algtwo82018-rg.pdf -> algtwo82018-rg.pdf (167615 bytes)
+- ok https://www.nysedregents.org/algebratwo/818/algtwo82018-sk.xlsx -> algtwo82018-sk.xlsx (13216 bytes)
+- ok https://www.nysedregents.org/algebratwo/818/algtwo82018-mrsw.pdf -> algtwo82018-mrsw.pdf (2184088 bytes)
+- ok https://www.nysedregents.org/algebratwo/818/algtwo82018-cc.pdf -> algtwo82018-cc.pdf (23077 bytes)
+- ok https://www.nysedregents.org/algebratwo/818/algtwo82018-cc.xlsx -> algtwo82018-cc.xlsx (14275 bytes)
+- ok https://www.nysedregents.org/algebratwo/618/algtwo62018-exam.pdf -> algtwo62018-exam.pdf (254964 bytes)
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2018_STAAR_G8_Math_Key_Online_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/algebratwo/618/algtwo62018-ltexam.pdf -> algtwo62018-ltexam.pdf (804284 bytes)
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2018_STAAR_G8_Math_Key_Online_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/algebratwo/618/algtwo62018-rg.pdf -> algtwo62018-rg.pdf (107036 bytes)
+- ok https://www.nysedregents.org/algebratwo/618/algtwo62018-sk.xlsx -> algtwo62018-sk.xlsx (12991 bytes)
+- ok https://www.nysedregents.org/algebratwo/618/algtwo62018-mrsw.pdf -> algtwo62018-mrsw.pdf (2917128 bytes)
+- ok https://www.nysedregents.org/algebratwo/618/algtwo62018-cc.pdf -> algtwo62018-cc.pdf (23038 bytes)
+- ok https://www.nysedregents.org/algebratwo/618/algtwo62018-cc.xlsx -> algtwo62018-cc.xlsx (14257 bytes)
+- ok https://www.nysedregents.org/algebratwo/118/algtwo12018-exam.pdf -> algtwo12018-exam.pdf (127501 bytes)
+- ok https://www.nysedregents.org/algebratwo/118/algtwo12018-rg.pdf -> algtwo12018-rg.pdf (104766 bytes)
+- ok https://www.nysedregents.org/algebratwo/118/algtwo12018-sk.xlsx -> algtwo12018-sk.xlsx (13084 bytes)
+- ok https://www.nysedregents.org/algebratwo/118/algtwo12018-mrs.pdf -> algtwo12018-mrs.pdf (2630148 bytes)
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2018_STAAR_Gr3_Math_Key_Paper_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/algebratwo/118/algtwo12018-ccrev.pdf -> algtwo12018-ccrev.pdf (153619 bytes)
+- ok https://www.nysedregents.org/algebratwo/118/algtwo12018-ccrev.xlsx -> algtwo12018-ccrev.xlsx (14133 bytes)
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2018_STAAR_Gr3_Math_Key_Paper_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/algebratwo/817/algtwo82017-exam.pdf -> algtwo82017-exam.pdf (123220 bytes)
+- ok https://www.nysedregents.org/algebratwo/817/algtwo82017-rg.pdf -> algtwo82017-rg.pdf (81961 bytes)
+- ok https://www.nysedregents.org/algebratwo/817/algtwo82017-sk.xlsx -> algtwo82017-sk.xlsx (12996 bytes)
+- ok https://www.nysedregents.org/algebratwo/817/algtwo82017-mrs.pdf -> algtwo82017-mrs.pdf (2385334 bytes)
+- ok https://www.nysedregents.org/algebratwo/817/algtwo82017-cc.pdf -> algtwo82017-cc.pdf (22843 bytes)
+- ok https://www.nysedregents.org/algebratwo/817/algtwo82017-cc.xlsx -> algtwo82017-cc.xlsx (14642 bytes)
+- ok https://www.nysedregents.org/algebratwo/617/algtwo62017-exam.pdf -> algtwo62017-exam.pdf (180081 bytes)
+- ok https://www.nysedregents.org/algebratwo/617/algtwo62017-rg.pdf -> algtwo62017-rg.pdf (113744 bytes)
+- ok https://www.nysedregents.org/algebratwo/617/algtwo62017-sk.xlsx -> algtwo62017-sk.xlsx (12992 bytes)
+- ok https://www.nysedregents.org/algebratwo/617/algtwo62017-mrs.pdf -> algtwo62017-mrs.pdf (2831919 bytes)
+- ok https://www.nysedregents.org/algebratwo/617/algtwo62017-cc.pdf -> algtwo62017-cc.pdf (145918 bytes)
+- ok https://www.nysedregents.org/algebratwo/617/algtwo62017-cc.xlsx -> algtwo62017-cc.xlsx (14564 bytes)
+- ok https://www.eqao.com/wp-content/uploads/2020/10/math-resource-released-questions-g9-24.pdf -> math-resource-released-questions-g9-24.pdf (1854499 bytes)
+- ok https://www.nysedregents.org/algebratwo/117/algtwo12017-exam.pdf -> algtwo12017-exam.pdf (345868 bytes)
+- ok https://www.nysedregents.org/algebratwo/117/algtwo12017-rg.pdf -> algtwo12017-rg.pdf (110030 bytes)
+- ok https://www.nysedregents.org/algebratwo/117/algtwo12017-sk.xlsx -> algtwo12017-sk.xlsx (12910 bytes)
+- ok https://www.nysedregents.org/algebratwo/117/algtwo12017-mrs.pdf -> algtwo12017-mrs.pdf (3086699 bytes)
+- ok https://www.nysedregents.org/algebratwo/117/algtwo12017-cc.pdf -> algtwo12017-cc.pdf (23068 bytes)
+- ok https://www.nysedregents.org/algebratwo/117/algtwo12017-cc.xlsx -> algtwo12017-cc.xlsx (14591 bytes)
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2018_STAAR_Gr3_Math_Test.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/algebratwo/816/algtwo82016-exam.pdf -> algtwo82016-exam.pdf (225884 bytes)
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2018_STAAR_Gr3_Math_Test.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/algebratwo/816/algtwo82016-rg.pdf -> algtwo82016-rg.pdf (84393 bytes)
+- ok https://www.nysedregents.org/algebratwo/816/algtwo82016-sk.xlsx -> algtwo82016-sk.xlsx (12925 bytes)
+- ok https://www.nysedregents.org/algebratwo/816/algtwo82016-mrs.pdf -> algtwo82016-mrs.pdf (3042733 bytes)
+- ok https://www.nysedregents.org/algebratwo/816/algtwo82016-cc.pdf -> algtwo82016-cc.pdf (23103 bytes)
+- ok https://www.nysedregents.org/algebratwo/816/algtwo82016-cc.xlsx -> algtwo82016-cc.xlsx (14733 bytes)
+- ok https://www.nysedregents.org/algebratwo/616/algtwo62016-exam.pdf -> algtwo62016-exam.pdf (104225 bytes)
+- ok https://www.nysedregents.org/algebratwo/616/algtwo62016-rg.pdf -> algtwo62016-rg.pdf (80710 bytes)
+- ok https://www.nysedregents.org/algebratwo/616/algtwo62016-sk.xlsx -> algtwo62016-sk.xlsx (12918 bytes)
+- ok https://www.nysedregents.org/algebratwo/616/algtwo62016-mrs.pdf -> algtwo62016-mrs.pdf (2741165 bytes)
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2018_STAAR_Gr4_Math_Key_Paper_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2018_STAAR_Gr4_Math_Key_Paper_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://www.nysedregents.org/algebratwo/616/algebra-ii-annotations-june-2016.pdf -> algebra-ii-annotations-june-2016.pdf (4431670 bytes)
+- ok https://www.nysedregents.org/algebratwo/616/algtwo62016-cc.pdf -> algtwo62016-cc.pdf (23069 bytes)
+- ok https://www.nysedregents.org/algebratwo/616/algtwo62016-cc.xlsx -> algtwo62016-cc.xlsx (14743 bytes)
+- FAIL http://www.p12.nysed.gov/assessment/math/ccmath/algebra2standardsetting.pdf :: curl: (47) Maximum (50) redirects followed
+- ok https://web.archive.org/web/2020/http://www.p12.nysed.gov/assessment/math/ccmath/algebra2standardsetting.pdf -> algebra2standardsetting.pdf (247061 bytes)
+done regents
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2018_STAAR_Gr4_Math_Test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2018_STAAR_Gr4_Math_Test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2018_STAAR_Gr5_Math_Key_Paper_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2018_STAAR_Gr5_Math_Key_Paper_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2018_STAAR_Gr5_Math_Test.PDF :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2018_STAAR_Gr5_Math_Test.PDF :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2018_STAAR_Gr6_Math_Key_Paper_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2018_STAAR_Gr6_Math_Key_Paper_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2018_STAAR_Gr6_Math_Test.PDF :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2018_STAAR_Gr6_Math_Test.PDF :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2018_STAAR_Gr7_Math_Key_Paper_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2018_STAAR_Gr7_Math_Key_Paper_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2018_STAAR_Gr7_Math_Test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2018_STAAR_Gr7_Math_Test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2018_STAAR_Gr8_Math_Key_Paper_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2018_STAAR_Gr8_Math_Key_Paper_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2018_STAAR_Gr8_Math_Test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2018_STAAR_Gr8_Math_Test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2018_STAAR_Spanish_Gr3_Math_Key_Paper_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2018_STAAR_Spanish_Gr3_Math_Key_Paper_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2018_STAAR_Spanish_Gr3_Math_Test.PDF :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2018_STAAR_Spanish_Gr3_Math_Test.PDF :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2018_STAAR_Spanish_Gr4_Math_Key_Paper_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2018_STAAR_Spanish_Gr4_Math_Key_Paper_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2018_STAAR_Spanish_Gr4_Math_Test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2018_STAAR_Spanish_Gr4_Math_Test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2018_STAAR_Spanish_Gr5_Math_Key_Paper_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2018_STAAR_Spanish_Gr5_Math_Key_Paper_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2018_STAAR_Spanish_Gr5_Math_Test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2018_STAAR_Spanish_Gr5_Math_Test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2019_STAAR_Gr3_Mathematics_Test_v2.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2019_STAAR_Gr3_Mathematics_Test_v2.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2019_staar_algebra_i_test_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2019_staar_algebra_i_test_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2019_staar_gr4_mathematics_test_2.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2019_staar_gr4_mathematics_test_2.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2019_staar_gr5_mathematics_test_2.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2019_staar_gr5_mathematics_test_2.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2019_staar_gr6_mathematics_test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2019_staar_gr6_mathematics_test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2019_staar_gr7_mathematics_test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2019_staar_gr7_mathematics_test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2019_staar_gr8_mathematics_test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2019_staar_gr8_mathematics_test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2019_staar_spanish_gr3_mathematics_test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2019_staar_spanish_gr3_mathematics_test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2019_staar_spanish_gr4_mathematics_test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2019_staar_spanish_gr4_mathematics_test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2019_staar_spanish_gr5_mathematics_test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/2019_staar_spanish_gr5_mathematics_test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR%20L-2016-Key-Algebra%20I.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR%20L-2016-Key-Algebra%20I.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR%20L-2016-Key-G3-Math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR%20L-2016-Key-G3-Math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR%20L-2016-Key-G4-Math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR%20L-2016-Key-G4-Math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR%20L-2016-Key-G5-Math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR%20L-2016-Key-G5-Math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR%20L-2016-Key-G6-Math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR%20L-2016-Key-G6-Math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR%20L-2016-Key-G7-Math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR%20L-2016-Key-G7-Math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR%20L-2016-Key-G8-Math_2.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR%20L-2016-Key-G8-Math_2.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-2013-Key-G4-Math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-2013-Key-G4-Math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-2013-Key-G8-Math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-2013-Key-G8-Math.pdf :: curl: (22) The requested URL returned error: 404
+- exists https://www.acer.org/files/pisa_relitems_maths_2.pdf -> pisa_relitems_maths_2.pdf (1432845 bytes)
+- exists https://nces.ed.gov/surveys/pisa/pdf/items_math.pdf -> items_math.pdf (1021672 bytes)
+- PISA Take-the-Test competency map size 33
+- parse PISA_202012_20items_20for_20release_ENGLISH.pdf kept 37
+- parse 38709418.pdf kept 13
+- parse pisa_relitems_maths_2.pdf kept 13
+- parse items2_math.pdf kept 10
+- parse items_math.pdf kept 0
+- parse items_math2012.pdf kept 0
+- PISA wrote 52 ids sample=['pisa2012-PM00AQ01', 'pisa2012-PM00EQ03', 'pisa2012-PM00LQ01', 'pisa2012-PM00LQ02', 'pisa2012-PM00LQ03', 'pisa2012-PM00RQ01', 'pisa2012-PM903Q03', 'pisa2012-PM904Q02'] missing_keys=133 figure_or_choices=47 no_process=79
+- exists https://www.eqao.com/wp-content/uploads/2025/11/math-resource-released-questions-g9-25.pdf -> math-resource-released-questions-g9-25.pdf (679370 bytes)
+- exists https://www.eqao.com/wp-content/uploads/2025/11/math-resource-released-questions-g6-2025.pdf -> math-resource-released-questions-g6-2025.pdf (653573 bytes)
+- exists https://www.eqao.com/wp-content/uploads/2025/11/math-resource-released-questions-g3-2025.pdf -> math-resource-released-questions-g3-2025.pdf (2944411 bytes)
+- exists https://www.eqao.com/wp-content/uploads/2025/01/math-resource-released-questions-g6-2024.pdf -> math-resource-released-questions-g6-2024.pdf (2165096 bytes)
+- exists https://www.eqao.com/wp-content/uploads/2025/01/math-resource-released-questions-g3-2024.pdf -> math-resource-released-questions-g3-2024.pdf (2676329 bytes)
+- exists https://www.eqao.com/wp-content/uploads/2023/11/math-resource-released-questions-g9-2023.pdf -> math-resource-released-questions-g9-2023.pdf (690507 bytes)
+- exists https://www.eqao.com/wp-content/uploads/2023/11/math-resource-released-questions-g6-2023.pdf -> math-resource-released-questions-g6-2023.pdf (270100 bytes)
+- exists https://www.eqao.com/wp-content/uploads/2023/11/math-resource-released-questions-g3-2023.pdf -> math-resource-released-questions-g3-2023.pdf (428591 bytes)
+- exists https://www.eqao.com/wp-content/uploads/2020/10/math-resource-released-questions-g9-24.pdf -> math-resource-released-questions-g9-24.pdf (1854499 bytes)
+- parse math-resource-released-questions-g3-2023.pdf kept 21 of 28 questions
+- parse math-resource-released-questions-g3-2024.pdf kept 8 of 21 questions
+- parse math-resource-released-questions-g3-2025.pdf kept 1 of 18 questions
+- parse math-resource-released-questions-g6-2023.pdf kept 25 of 28 questions
+- parse math-resource-released-questions-g6-2024.pdf kept 14 of 23 questions
+- parse math-resource-released-questions-g6-2025.pdf kept 14 of 18 questions
+- parse math-resource-released-questions-g9-2023.pdf kept 27 of 33 questions
+- parse math-resource-released-questions-g9-24.pdf kept 5 of 23 questions
+- parse math-resource-released-questions-g9-25.pdf kept 3 of 23 questions
+- EQAO wrote 118 sample=['eqao-2023-g3-q1', 'eqao-2023-g3-q2', 'eqao-2023-g3-q3', 'eqao-2023-g3-q4', 'eqao-2023-g3-q5', 'eqao-2023-g3-q7', 'eqao-2023-g3-q8', 'eqao-2023-g3-q9'] missing_keys=71 figure_or_choices=23
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-2014-Key-G4-Math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-2014-Key-G4-Math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-2014-Key-G8-Math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-2014-Key-G8-Math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-2016-Key-Algebra%20I.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-2016-Key-Algebra%20I.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-2016-Key-Algebra%20I_0.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-2016-Key-Algebra%20I_0.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-2016-Key-G3-Math-Spanish.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-2016-Key-G3-Math-Spanish.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-2016-Key-G3-Math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-2016-Key-G3-Math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-2016-Key-G3_Math_SOA.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-2016-Key-G3_Math_SOA.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-2016-Key-G4-Math-Spanish.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-2016-Key-G4-Math-Spanish.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-2016-Key-G4-Math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-2016-Key-G4-Math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-2016-Key-G4_Math_SOA.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-2016-Key-G4_Math_SOA.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-2016-Key-G5-Math-Spanish.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-2016-Key-G5-Math-Spanish.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-2016-Key-G5-Math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-2016-Key-G5-Math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-2016-Key-G6-Math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-2016-Key-G6-Math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-2016-Key-G6_Math_SOA.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-2016-Key-G6_Math_SOA.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-2016-Key-G7-Math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-2016-Key-G7-Math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-2016-Key-G7_Math_SOA.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-2016-Key-G7_Math_SOA.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-2016-Key-G8-Math_2.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-2016-Key-G8-Math_2.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-2019-Key-G7-Math_app.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-2019-Key-G7-Math_app.pdf :: curl: (22) The requested URL returned error: 404
+- exists https://www.acer.org/files/pisa_relitems_maths_2.pdf -> pisa_relitems_maths_2.pdf (1432845 bytes)
+- exists https://nces.ed.gov/surveys/pisa/pdf/items_math.pdf -> items_math.pdf (1021672 bytes)
+- PISA Take-the-Test competency map size 108
+- parse PISA_202012_20items_20for_20release_ENGLISH.pdf kept 37
+- parse 38709418.pdf kept 29
+- parse pisa_relitems_maths_2.pdf kept 29
+- parse items2_math.pdf kept 22
+- parse items_math.pdf kept 0
+- parse items_math2012.pdf kept 0
+- PISA wrote 70 ids sample=['pisa2012-PM00AQ01', 'pisa2012-PM00EQ03', 'pisa2012-PM00LQ01', 'pisa2012-PM00LQ02', 'pisa2012-PM00LQ03', 'pisa2012-PM00RQ01', 'pisa2012-PM903Q03', 'pisa2012-PM904Q02'] missing_keys=133 figure_or_choices=47 no_process=35
+- exists https://www.eqao.com/wp-content/uploads/2025/11/math-resource-released-questions-g9-25.pdf -> math-resource-released-questions-g9-25.pdf (679370 bytes)
+- exists https://www.eqao.com/wp-content/uploads/2025/11/math-resource-released-questions-g6-2025.pdf -> math-resource-released-questions-g6-2025.pdf (653573 bytes)
+- exists https://www.eqao.com/wp-content/uploads/2025/11/math-resource-released-questions-g3-2025.pdf -> math-resource-released-questions-g3-2025.pdf (2944411 bytes)
+- exists https://www.eqao.com/wp-content/uploads/2025/01/math-resource-released-questions-g6-2024.pdf -> math-resource-released-questions-g6-2024.pdf (2165096 bytes)
+- exists https://www.eqao.com/wp-content/uploads/2025/01/math-resource-released-questions-g3-2024.pdf -> math-resource-released-questions-g3-2024.pdf (2676329 bytes)
+- exists https://www.eqao.com/wp-content/uploads/2023/11/math-resource-released-questions-g9-2023.pdf -> math-resource-released-questions-g9-2023.pdf (690507 bytes)
+- exists https://www.eqao.com/wp-content/uploads/2023/11/math-resource-released-questions-g6-2023.pdf -> math-resource-released-questions-g6-2023.pdf (270100 bytes)
+- exists https://www.eqao.com/wp-content/uploads/2023/11/math-resource-released-questions-g3-2023.pdf -> math-resource-released-questions-g3-2023.pdf (428591 bytes)
+- exists https://www.eqao.com/wp-content/uploads/2020/10/math-resource-released-questions-g9-24.pdf -> math-resource-released-questions-g9-24.pdf (1854499 bytes)
+- parse math-resource-released-questions-g3-2023.pdf kept 21 of 28 questions
+- parse math-resource-released-questions-g3-2024.pdf kept 13 of 21 questions
+- parse math-resource-released-questions-g3-2025.pdf kept 10 of 18 questions
+- parse math-resource-released-questions-g6-2023.pdf kept 25 of 28 questions
+- parse math-resource-released-questions-g6-2024.pdf kept 14 of 23 questions
+- parse math-resource-released-questions-g6-2025.pdf kept 14 of 18 questions
+- parse math-resource-released-questions-g9-2023.pdf kept 27 of 33 questions
+- parse math-resource-released-questions-g9-24.pdf kept 11 of 23 questions
+- parse math-resource-released-questions-g9-25.pdf kept 13 of 23 questions
+- EQAO wrote 148 sample=['eqao-2023-g3-q1', 'eqao-2023-g3-q2', 'eqao-2023-g3-q3', 'eqao-2023-g3-q4', 'eqao-2023-g3-q5', 'eqao-2023-g3-q7', 'eqao-2023-g3-q8', 'eqao-2023-g3-q9'] missing_keys=37 figure_or_choices=21
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-EOC-2016Test-Algebra%20I-f.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-EOC-2016Test-Algebra%20I-f.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-EOC-2017-Test-AlgebraI-f.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-EOC-2017-Test-AlgebraI-f.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-G3-2014Test-math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-G3-2014Test-math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-G3-2016Test-Math-Spanish-f.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-G3-2016Test-Math-Spanish-f.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-G3-2016Test-Math-f.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-G3-2016Test-Math-f.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-G4-2014Test-math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-G4-2014Test-math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-G4-2016Test-Math-Spanish-f.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-G4-2016Test-Math-Spanish-f.pdf :: curl: (22) The requested URL returned error: 404
+- exists https://www.eqao.com/wp-content/uploads/2025/11/math-resource-released-questions-g9-25.pdf -> math-resource-released-questions-g9-25.pdf (679370 bytes)
+- exists https://www.eqao.com/wp-content/uploads/2025/11/math-resource-released-questions-g6-2025.pdf -> math-resource-released-questions-g6-2025.pdf (653573 bytes)
+- exists https://www.eqao.com/wp-content/uploads/2025/11/math-resource-released-questions-g3-2025.pdf -> math-resource-released-questions-g3-2025.pdf (2944411 bytes)
+- exists https://www.eqao.com/wp-content/uploads/2025/01/math-resource-released-questions-g6-2024.pdf -> math-resource-released-questions-g6-2024.pdf (2165096 bytes)
+- exists https://www.eqao.com/wp-content/uploads/2025/01/math-resource-released-questions-g3-2024.pdf -> math-resource-released-questions-g3-2024.pdf (2676329 bytes)
+- exists https://www.eqao.com/wp-content/uploads/2023/11/math-resource-released-questions-g9-2023.pdf -> math-resource-released-questions-g9-2023.pdf (690507 bytes)
+- exists https://www.eqao.com/wp-content/uploads/2023/11/math-resource-released-questions-g6-2023.pdf -> math-resource-released-questions-g6-2023.pdf (270100 bytes)
+- exists https://www.eqao.com/wp-content/uploads/2023/11/math-resource-released-questions-g3-2023.pdf -> math-resource-released-questions-g3-2023.pdf (428591 bytes)
+- exists https://www.eqao.com/wp-content/uploads/2020/10/math-resource-released-questions-g9-24.pdf -> math-resource-released-questions-g9-24.pdf (1854499 bytes)
+- parse math-resource-released-questions-g3-2023.pdf kept 21 of 28 questions
+- parse math-resource-released-questions-g3-2024.pdf kept 13 of 21 questions
+- parse math-resource-released-questions-g3-2025.pdf kept 10 of 18 questions
+- parse math-resource-released-questions-g6-2023.pdf kept 25 of 28 questions
+- parse math-resource-released-questions-g6-2024.pdf kept 14 of 23 questions
+- parse math-resource-released-questions-g6-2025.pdf kept 14 of 18 questions
+- parse math-resource-released-questions-g9-2023.pdf kept 27 of 33 questions
+- parse math-resource-released-questions-g9-24.pdf kept 11 of 23 questions
+- parse math-resource-released-questions-g9-25.pdf kept 13 of 23 questions
+- EQAO wrote 148 sample=['eqao-2023-g3-q1', 'eqao-2023-g3-q2', 'eqao-2023-g3-q3', 'eqao-2023-g3-q4', 'eqao-2023-g3-q5', 'eqao-2023-g3-q7', 'eqao-2023-g3-q8', 'eqao-2023-g3-q9'] missing_keys=37 figure_or_choices=21
+- exists https://www.acer.org/files/pisa_relitems_maths_2.pdf -> pisa_relitems_maths_2.pdf (1432845 bytes)
+- exists https://nces.ed.gov/surveys/pisa/pdf/items_math.pdf -> items_math.pdf (1021672 bytes)
+- PISA Take-the-Test competency map size 108
+- parse PISA_202012_20items_20for_20release_ENGLISH.pdf kept 37
+- parse 38709418.pdf kept 29
+- parse pisa_relitems_maths_2.pdf kept 29
+- parse items2_math.pdf kept 22
+- parse items_math.pdf kept 0
+- parse items_math2012.pdf kept 0
+- PISA wrote 70 ids sample=['pisa2012-PM00AQ01', 'pisa2012-PM00EQ03', 'pisa2012-PM00LQ01', 'pisa2012-PM00LQ02', 'pisa2012-PM00LQ03', 'pisa2012-PM00RQ01', 'pisa2012-PM903Q03', 'pisa2012-PM904Q02'] missing_keys=133 figure_or_choices=47 no_process=35
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-G4-2016Test-Math-f.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-G4-2016Test-Math-f.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-G5-2016Test-Math-Spanish-f.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-G5-2016Test-Math-Spanish-f.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-G5-2016Test-Math_090816.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-G5-2016Test-Math_090816.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-G6-2016Test-Math-f.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-G6-2016Test-Math-f.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-G7-2014Test-math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-G7-2014Test-math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-G7-2016Test-Math-f.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-G7-2016Test-Math-f.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-G8-2014Test-math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-G8-2014Test-math.pdf :: curl: (22) The requested URL returned error: 404
+- exists https://www.acer.org/files/pisa_relitems_maths_2.pdf -> pisa_relitems_maths_2.pdf (1432845 bytes)
+- exists https://nces.ed.gov/surveys/pisa/pdf/items_math.pdf -> items_math.pdf (1021672 bytes)
+- PISA Take-the-Test competency map size 108
+- exists https://www.eqao.com/wp-content/uploads/2025/11/math-resource-released-questions-g9-25.pdf -> math-resource-released-questions-g9-25.pdf (679370 bytes)
+- exists https://www.eqao.com/wp-content/uploads/2025/11/math-resource-released-questions-g6-2025.pdf -> math-resource-released-questions-g6-2025.pdf (653573 bytes)
+- exists https://www.eqao.com/wp-content/uploads/2025/11/math-resource-released-questions-g3-2025.pdf -> math-resource-released-questions-g3-2025.pdf (2944411 bytes)
+- exists https://www.eqao.com/wp-content/uploads/2025/01/math-resource-released-questions-g6-2024.pdf -> math-resource-released-questions-g6-2024.pdf (2165096 bytes)
+- exists https://www.eqao.com/wp-content/uploads/2025/01/math-resource-released-questions-g3-2024.pdf -> math-resource-released-questions-g3-2024.pdf (2676329 bytes)
+- exists https://www.eqao.com/wp-content/uploads/2023/11/math-resource-released-questions-g9-2023.pdf -> math-resource-released-questions-g9-2023.pdf (690507 bytes)
+- exists https://www.eqao.com/wp-content/uploads/2023/11/math-resource-released-questions-g6-2023.pdf -> math-resource-released-questions-g6-2023.pdf (270100 bytes)
+- exists https://www.eqao.com/wp-content/uploads/2023/11/math-resource-released-questions-g3-2023.pdf -> math-resource-released-questions-g3-2023.pdf (428591 bytes)
+- exists https://www.eqao.com/wp-content/uploads/2020/10/math-resource-released-questions-g9-24.pdf -> math-resource-released-questions-g9-24.pdf (1854499 bytes)
+- parse math-resource-released-questions-g3-2023.pdf kept 21 of 28 questions
+- parse math-resource-released-questions-g3-2024.pdf kept 13 of 21 questions
+- parse math-resource-released-questions-g3-2025.pdf kept 10 of 18 questions
+- parse math-resource-released-questions-g6-2023.pdf kept 25 of 28 questions
+- parse math-resource-released-questions-g6-2024.pdf kept 14 of 23 questions
+- parse math-resource-released-questions-g6-2025.pdf kept 14 of 18 questions
+- parse math-resource-released-questions-g9-2023.pdf kept 27 of 33 questions
+- parse math-resource-released-questions-g9-24.pdf kept 11 of 23 questions
+- parse math-resource-released-questions-g9-25.pdf kept 14 of 23 questions
+- EQAO wrote 149 sample=['eqao-2023-g3-q1', 'eqao-2023-g3-q2', 'eqao-2023-g3-q3', 'eqao-2023-g3-q4', 'eqao-2023-g3-q5', 'eqao-2023-g3-q7', 'eqao-2023-g3-q8', 'eqao-2023-g3-q9'] missing_keys=37 figure_or_choices=21
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-G8-2015test-Math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-G8-2015test-Math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-G8-2016Test-Math-f.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-G8-2016Test-Math-f.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-S3M-2017-Test-Math-f.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-S3M-2017-Test-Math-f.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-S4M-2017-Test-Math-f.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-S4M-2017-Test-Math-f.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-S5M-2017-Test-Math-f.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-S5M-2017-Test-Math-f.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-TestMath-g3.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-TestMath-g3.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-TestMath-g4.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-TestMath-g4.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-TestMath-g7.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-TestMath-g7.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-TestMath-g8.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR-TestMath-g8.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR_A-2016-Key-Algebra%20I.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR_A-2016-Key-Algebra%20I.pdf :: curl: (22) The requested URL returned error: 404
+- exists https://www.acer.org/files/pisa_relitems_maths_2.pdf -> pisa_relitems_maths_2.pdf (1432845 bytes)
+- exists https://nces.ed.gov/surveys/pisa/pdf/items_math.pdf -> items_math.pdf (1021672 bytes)
+- PISA Take-the-Test competency map size 108
+- parse PISA_202012_20items_20for_20release_ENGLISH.pdf kept 30
+- parse 38709418.pdf kept 19
+- parse pisa_relitems_maths_2.pdf kept 19
+- parse items2_math.pdf kept 15
+- parse items_math.pdf kept 0
+- parse items_math2012.pdf kept 0
+- PISA wrote 50 ids sample=['pisa2012-PM00LQ02', 'pisa2012-PM00LQ03', 'pisa2012-PM903Q03', 'pisa2012-PM904Q02', 'pisa2012-PM918Q01', 'pisa2012-PM918Q02', 'pisa2012-PM918Q05', 'pisa2012-PM921Q01'] missing_keys=174 figure_or_choices=47 no_process=18
+- exists https://www.eqao.com/wp-content/uploads/2025/11/math-resource-released-questions-g9-25.pdf -> math-resource-released-questions-g9-25.pdf (679370 bytes)
+- exists https://www.eqao.com/wp-content/uploads/2025/11/math-resource-released-questions-g6-2025.pdf -> math-resource-released-questions-g6-2025.pdf (653573 bytes)
+- exists https://www.eqao.com/wp-content/uploads/2025/11/math-resource-released-questions-g3-2025.pdf -> math-resource-released-questions-g3-2025.pdf (2944411 bytes)
+- exists https://www.eqao.com/wp-content/uploads/2025/01/math-resource-released-questions-g6-2024.pdf -> math-resource-released-questions-g6-2024.pdf (2165096 bytes)
+- exists https://www.eqao.com/wp-content/uploads/2025/01/math-resource-released-questions-g3-2024.pdf -> math-resource-released-questions-g3-2024.pdf (2676329 bytes)
+- exists https://www.eqao.com/wp-content/uploads/2023/11/math-resource-released-questions-g9-2023.pdf -> math-resource-released-questions-g9-2023.pdf (690507 bytes)
+- exists https://www.eqao.com/wp-content/uploads/2023/11/math-resource-released-questions-g6-2023.pdf -> math-resource-released-questions-g6-2023.pdf (270100 bytes)
+- exists https://www.eqao.com/wp-content/uploads/2023/11/math-resource-released-questions-g3-2023.pdf -> math-resource-released-questions-g3-2023.pdf (428591 bytes)
+- exists https://www.eqao.com/wp-content/uploads/2020/10/math-resource-released-questions-g9-24.pdf -> math-resource-released-questions-g9-24.pdf (1854499 bytes)
+- parse math-resource-released-questions-g3-2023.pdf kept 21 of 28 questions
+- parse math-resource-released-questions-g3-2024.pdf kept 13 of 21 questions
+- parse math-resource-released-questions-g3-2025.pdf kept 10 of 18 questions
+- parse math-resource-released-questions-g6-2023.pdf kept 23 of 28 questions
+- parse math-resource-released-questions-g6-2024.pdf kept 13 of 23 questions
+- parse math-resource-released-questions-g6-2025.pdf kept 14 of 18 questions
+- parse math-resource-released-questions-g9-2023.pdf kept 26 of 33 questions
+- parse math-resource-released-questions-g9-24.pdf kept 11 of 23 questions
+- parse math-resource-released-questions-g9-25.pdf kept 12 of 23 questions
+- EQAO wrote 143 sample=['eqao-2023-g3-q1', 'eqao-2023-g3-q2', 'eqao-2023-g3-q3', 'eqao-2023-g3-q4', 'eqao-2023-g3-q5', 'eqao-2023-g3-q7', 'eqao-2023-g3-q8', 'eqao-2023-g3-q9'] missing_keys=37 figure_or_choices=27
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR_A-2016-Key-G3-Math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR_A-2016-Key-G3-Math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR_A-2016-Key-G4-Math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR_A-2016-Key-G4-Math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR_A-2016-Key-G5-Math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR_A-2016-Key-G5-Math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR_A-2016-Key-G6-Math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR_A-2016-Key-G6-Math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR_A-2016-Key-G7-Math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR_A-2016-Key-G7-Math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR_A-2016-Key-G8-Math_2.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR_A-2016-Key-G8-Math_2.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR_G3-2017-Test-Math-f.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR_G3-2017-Test-Math-f.pdf :: curl: (22) The requested URL returned error: 404
+- exists https://www.acer.org/files/pisa_relitems_maths_2.pdf -> pisa_relitems_maths_2.pdf (1432845 bytes)
+- exists https://nces.ed.gov/surveys/pisa/pdf/items_math.pdf -> items_math.pdf (1021672 bytes)
+- PISA Take-the-Test competency map size 108
+- parse PISA_202012_20items_20for_20release_ENGLISH.pdf kept 30
+- parse 38709418.pdf kept 19
+- parse pisa_relitems_maths_2.pdf kept 19
+- parse items2_math.pdf kept 15
+- parse items_math.pdf kept 0
+- parse items_math2012.pdf kept 0
+- PISA wrote 50 ids sample=['pisa2012-PM00LQ02', 'pisa2012-PM00LQ03', 'pisa2012-PM903Q03', 'pisa2012-PM904Q02', 'pisa2012-PM918Q01', 'pisa2012-PM918Q02', 'pisa2012-PM918Q05', 'pisa2012-PM921Q01'] missing_keys=172 figure_or_choices=47 no_process=20
+- exists https://www.eqao.com/wp-content/uploads/2025/11/math-resource-released-questions-g9-25.pdf -> math-resource-released-questions-g9-25.pdf (679370 bytes)
+- exists https://www.eqao.com/wp-content/uploads/2025/11/math-resource-released-questions-g6-2025.pdf -> math-resource-released-questions-g6-2025.pdf (653573 bytes)
+- exists https://www.eqao.com/wp-content/uploads/2025/11/math-resource-released-questions-g3-2025.pdf -> math-resource-released-questions-g3-2025.pdf (2944411 bytes)
+- exists https://www.eqao.com/wp-content/uploads/2025/01/math-resource-released-questions-g6-2024.pdf -> math-resource-released-questions-g6-2024.pdf (2165096 bytes)
+- exists https://www.eqao.com/wp-content/uploads/2025/01/math-resource-released-questions-g3-2024.pdf -> math-resource-released-questions-g3-2024.pdf (2676329 bytes)
+- exists https://www.eqao.com/wp-content/uploads/2023/11/math-resource-released-questions-g9-2023.pdf -> math-resource-released-questions-g9-2023.pdf (690507 bytes)
+- exists https://www.eqao.com/wp-content/uploads/2023/11/math-resource-released-questions-g6-2023.pdf -> math-resource-released-questions-g6-2023.pdf (270100 bytes)
+- exists https://www.eqao.com/wp-content/uploads/2023/11/math-resource-released-questions-g3-2023.pdf -> math-resource-released-questions-g3-2023.pdf (428591 bytes)
+- exists https://www.eqao.com/wp-content/uploads/2020/10/math-resource-released-questions-g9-24.pdf -> math-resource-released-questions-g9-24.pdf (1854499 bytes)
+- parse math-resource-released-questions-g3-2023.pdf kept 21 of 28 questions
+- parse math-resource-released-questions-g3-2024.pdf kept 13 of 21 questions
+- parse math-resource-released-questions-g3-2025.pdf kept 10 of 18 questions
+- parse math-resource-released-questions-g6-2023.pdf kept 23 of 28 questions
+- parse math-resource-released-questions-g6-2024.pdf kept 13 of 23 questions
+- parse math-resource-released-questions-g6-2025.pdf kept 14 of 18 questions
+- parse math-resource-released-questions-g9-2023.pdf kept 26 of 33 questions
+- parse math-resource-released-questions-g9-24.pdf kept 11 of 23 questions
+- parse math-resource-released-questions-g9-25.pdf kept 12 of 23 questions
+- EQAO wrote 143 sample=['eqao-2023-g3-q1', 'eqao-2023-g3-q2', 'eqao-2023-g3-q3', 'eqao-2023-g3-q4', 'eqao-2023-g3-q5', 'eqao-2023-g3-q7', 'eqao-2023-g3-q8', 'eqao-2023-g3-q9'] missing_keys=37 figure_or_choices=27
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR_G4-2017-Test-Math-f.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR_G4-2017-Test-Math-f.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR_G5-2017-Test-Math-f.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR_G5-2017-Test-Math-f.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR_G6-2017-Test-Math-f.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR_G6-2017-Test-Math-f.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR_G7-2017-Test-Math-f.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR_G7-2017-Test-Math-f.pdf :: curl: (22) The requested URL returned error: 404
+- SUMMARY PISA data/pisa.jsonl n=50 (2012=30, 2003=16, 2006=4); selected=18 numeric=32; merged existing pisa2012.jsonl without duplicate ids. Skipped constructed/figure items without a published simple key.
+- SUMMARY EQAO data/eqao.jsonl n=143 (g3=44, g6=50, g9=49) years 2023-2025; only items with published keys and recoverable text-layer choices. Figure-only and star-key constructed items skipped, not invented.
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR_G8-2017-Test-Math-f.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/STAAR_G8-2017-Test-Math-f.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/SampleBook-MathG08.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/SampleBook-MathG08.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/staar-2019-key-eoc-alg1_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/staar-2019-key-eoc-alg1_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/staar-2019-key-g3-math_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/staar-2019-key-g3-math_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/staar-2019-key-g4-math_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/staar-2019-key-g4-math_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/staar-2019-key-g5-math_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/staar-2019-key-g5-math_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/staar-2019-key-g6-math_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/staar-2019-key-g6-math_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/staar-2019-key-g7-math_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/staar-2019-key-g7-math_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/staar-2019-key-g8-math_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/staar-2019-key-g8-math_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/staar-2019-key-s3-math_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/staar-2019-key-s3-math_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/staar-2019-key-s4-math_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/staar-2019-key-s4-math_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/staar-2019-key-s5-math_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/web/20201230223459/https://tea.texas.gov/sites/default/files/staar-2019-key-s5-math_tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-3-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-3-math-test.pdf -> 2013-staar-3-math-test.pdf (1048576 bytes)
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-3-math-key.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-3-math-key.pdf -> 2013-staar-3-math-key.pdf (12539 bytes)
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-grade-3-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-grade-3-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-gr3-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-gr3-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-gr3-mathematics-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-gr3-mathematics-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-gr3-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-gr3-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2013-staar-gr3-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2013-staar-gr3-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2013-staar-gr3-mathematics-answer-key.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2013-staar-gr3-mathematics-answer-key.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2013-staar-may-grade-3-math-releasedtest.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2013-staar-may-grade-3-math-releasedtest.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2013-staar-may-grade-3-math-answerkey.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2013-staar-may-grade-3-math-answerkey.pdf :: curl: (22) The requested URL returned error: 404
+- exists https://tea.texas.gov/student-assessment/testing/staar/released-test-questions/2013-staar-3-math-test.pdf -> 2013-staar-3-math-test.pdf (1048576 bytes)
+- FAIL https://tea.texas.gov/sites/default/files/2013_staar_released_test_grade_3_math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/sites/default/files/2013_staar_released_test_grade_3_math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/testing/staar/2013-staar-released-grade-3-math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/testing/staar/2013-staar-released-grade-3-math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-4-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-4-math-test.pdf -> 2013-staar-4-math-test.pdf (1048576 bytes)
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-4-math-key.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-4-math-key.pdf -> 2013-staar-4-math-key.pdf (12557 bytes)
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-grade-4-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-grade-4-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-gr4-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-gr4-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-gr4-mathematics-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-gr4-mathematics-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-gr4-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-gr4-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2013-staar-gr4-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2013-staar-gr4-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2013-staar-gr4-mathematics-answer-key.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2013-staar-gr4-mathematics-answer-key.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2013-staar-may-grade-4-math-releasedtest.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2013-staar-may-grade-4-math-releasedtest.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2013-staar-may-grade-4-math-answerkey.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2013-staar-may-grade-4-math-answerkey.pdf :: curl: (22) The requested URL returned error: 404
+- exists https://tea.texas.gov/student-assessment/testing/staar/released-test-questions/2013-staar-4-math-test.pdf -> 2013-staar-4-math-test.pdf (1048576 bytes)
+- FAIL https://tea.texas.gov/sites/default/files/2013_staar_released_test_grade_4_math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/sites/default/files/2013_staar_released_test_grade_4_math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/testing/staar/2013-staar-released-grade-4-math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/testing/staar/2013-staar-released-grade-4-math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-5-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-5-math-test.pdf -> 2013-staar-5-math-test.pdf (441344 bytes)
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-5-math-key.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-5-math-key.pdf -> 2013-staar-5-math-key.pdf (92304 bytes)
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-grade-5-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-grade-5-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-gr5-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-gr5-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-gr5-mathematics-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-gr5-mathematics-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-gr5-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-gr5-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2013-staar-gr5-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2013-staar-gr5-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2013-staar-gr5-mathematics-answer-key.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2013-staar-gr5-mathematics-answer-key.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2013-staar-may-grade-5-math-releasedtest.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2013-staar-may-grade-5-math-releasedtest.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2013-staar-may-grade-5-math-answerkey.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2013-staar-may-grade-5-math-answerkey.pdf :: curl: (22) The requested URL returned error: 404
+- exists https://tea.texas.gov/student-assessment/testing/staar/released-test-questions/2013-staar-5-math-test.pdf -> 2013-staar-5-math-test.pdf (441344 bytes)
+- FAIL https://tea.texas.gov/sites/default/files/2013_staar_released_test_grade_5_math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/sites/default/files/2013_staar_released_test_grade_5_math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/testing/staar/2013-staar-released-grade-5-math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/testing/staar/2013-staar-released-grade-5-math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-6-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-6-math-test.pdf -> 2013-staar-6-math-test.pdf (508268 bytes)
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-6-math-key.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-6-math-key.pdf -> 2013-staar-6-math-key.pdf (12656 bytes)
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-grade-6-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-grade-6-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-gr6-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-gr6-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-gr6-mathematics-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-gr6-mathematics-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-gr6-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-gr6-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2013-staar-gr6-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2013-staar-gr6-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2013-staar-gr6-mathematics-answer-key.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2013-staar-gr6-mathematics-answer-key.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2013-staar-may-grade-6-math-releasedtest.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2013-staar-may-grade-6-math-releasedtest.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2013-staar-may-grade-6-math-answerkey.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2013-staar-may-grade-6-math-answerkey.pdf :: curl: (22) The requested URL returned error: 404
+- exists https://tea.texas.gov/student-assessment/testing/staar/released-test-questions/2013-staar-6-math-test.pdf -> 2013-staar-6-math-test.pdf (508268 bytes)
+- FAIL https://tea.texas.gov/sites/default/files/2013_staar_released_test_grade_6_math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/sites/default/files/2013_staar_released_test_grade_6_math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/testing/staar/2013-staar-released-grade-6-math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/testing/staar/2013-staar-released-grade-6-math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-7-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-7-math-test.pdf -> 2013-staar-7-math-test.pdf (483043 bytes)
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-7-math-key.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-7-math-key.pdf -> 2013-staar-7-math-key.pdf (26741 bytes)
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-grade-7-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-grade-7-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-gr7-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-gr7-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-gr7-mathematics-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-gr7-mathematics-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-gr7-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-gr7-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2013-staar-gr7-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2013-staar-gr7-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2013-staar-gr7-mathematics-answer-key.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2013-staar-gr7-mathematics-answer-key.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2013-staar-may-grade-7-math-releasedtest.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2013-staar-may-grade-7-math-releasedtest.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2013-staar-may-grade-7-math-answerkey.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2013-staar-may-grade-7-math-answerkey.pdf :: curl: (22) The requested URL returned error: 404
+- exists https://tea.texas.gov/student-assessment/testing/staar/released-test-questions/2013-staar-7-math-test.pdf -> 2013-staar-7-math-test.pdf (483043 bytes)
+- FAIL https://tea.texas.gov/sites/default/files/2013_staar_released_test_grade_7_math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/sites/default/files/2013_staar_released_test_grade_7_math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/testing/staar/2013-staar-released-grade-7-math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/testing/staar/2013-staar-released-grade-7-math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-8-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-8-math-test.pdf -> 2013-staar-8-math-test.pdf (471368 bytes)
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-8-math-key.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-8-math-key.pdf -> 2013-staar-8-math-key.pdf (135659 bytes)
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-grade-8-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-grade-8-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-gr8-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-gr8-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-gr8-mathematics-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-gr8-mathematics-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-gr8-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-gr8-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2013-staar-gr8-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2013-staar-gr8-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2013-staar-gr8-mathematics-answer-key.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2013-staar-gr8-mathematics-answer-key.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2013-staar-may-grade-8-math-releasedtest.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2013-staar-may-grade-8-math-releasedtest.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2013-staar-may-grade-8-math-answerkey.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2013-staar-may-grade-8-math-answerkey.pdf :: curl: (22) The requested URL returned error: 404
+- exists https://tea.texas.gov/student-assessment/testing/staar/released-test-questions/2013-staar-8-math-test.pdf -> 2013-staar-8-math-test.pdf (471368 bytes)
+- FAIL https://tea.texas.gov/sites/default/files/2013_staar_released_test_grade_8_math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/sites/default/files/2013_staar_released_test_grade_8_math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/testing/staar/2013-staar-released-grade-8-math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/testing/staar/2013-staar-released-grade-8-math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-algebra-i-test.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-algebra-i-test.pdf -> 2013-staar-algebra-i-test.pdf (1048576 bytes)
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-algebra-i-key.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2013-staar-algebra-i-key.pdf -> 2013-staar-algebra-i-key.pdf (78946 bytes)
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2013-staar-algebra-i-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2013-staar-algebra-i-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2013-staar-may-algebra-i-releasedtest.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2013-staar-may-algebra-i-releasedtest.pdf :: curl: (22) The requested URL returned error: 404
+- exists https://tea.texas.gov/student-assessment/testing/staar/released-test-questions/2013-staar-algebra-i-test.pdf -> 2013-staar-algebra-i-test.pdf (1048576 bytes)
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-3-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-3-math-test.pdf -> 2014-staar-3-math-test.pdf (4895001 bytes)
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-3-math-key.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-3-math-key.pdf -> 2014-staar-3-math-key.pdf (78900 bytes)
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-grade-3-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-grade-3-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-gr3-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-gr3-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-gr3-mathematics-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-gr3-mathematics-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-gr3-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-gr3-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2014-staar-gr3-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2014-staar-gr3-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2014-staar-gr3-mathematics-answer-key.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2014-staar-gr3-mathematics-answer-key.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2014-staar-may-grade-3-math-releasedtest.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2014-staar-may-grade-3-math-releasedtest.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2014-staar-may-grade-3-math-answerkey.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2014-staar-may-grade-3-math-answerkey.pdf :: curl: (22) The requested URL returned error: 404
+- exists https://tea.texas.gov/student-assessment/testing/staar/released-test-questions/2014-staar-3-math-test.pdf -> 2014-staar-3-math-test.pdf (4895001 bytes)
+- FAIL https://tea.texas.gov/sites/default/files/2014_staar_released_test_grade_3_math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/sites/default/files/2014_staar_released_test_grade_3_math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/testing/staar/2014-staar-released-grade-3-math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/testing/staar/2014-staar-released-grade-3-math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-4-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-4-math-test.pdf -> 2014-staar-4-math-test.pdf (1048576 bytes)
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-4-math-key.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-4-math-key.pdf -> 2014-staar-4-math-key.pdf (80937 bytes)
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-grade-4-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-grade-4-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-gr4-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-gr4-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-gr4-mathematics-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-gr4-mathematics-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-gr4-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-gr4-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2014-staar-gr4-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2014-staar-gr4-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2014-staar-gr4-mathematics-answer-key.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2014-staar-gr4-mathematics-answer-key.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2014-staar-may-grade-4-math-releasedtest.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2014-staar-may-grade-4-math-releasedtest.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2014-staar-may-grade-4-math-answerkey.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2014-staar-may-grade-4-math-answerkey.pdf :: curl: (22) The requested URL returned error: 404
+- exists https://tea.texas.gov/student-assessment/testing/staar/released-test-questions/2014-staar-4-math-test.pdf -> 2014-staar-4-math-test.pdf (1048576 bytes)
+- FAIL https://tea.texas.gov/sites/default/files/2014_staar_released_test_grade_4_math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/sites/default/files/2014_staar_released_test_grade_4_math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/testing/staar/2014-staar-released-grade-4-math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/testing/staar/2014-staar-released-grade-4-math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-5-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-5-math-test.pdf -> 2014-staar-5-math-test.pdf (2840107 bytes)
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-5-math-key.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-5-math-key.pdf -> 2014-staar-5-math-key.pdf (83257 bytes)
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-grade-5-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-grade-5-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-gr5-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-gr5-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-gr5-mathematics-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-gr5-mathematics-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-gr5-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-gr5-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2014-staar-gr5-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2014-staar-gr5-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2014-staar-gr5-mathematics-answer-key.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2014-staar-gr5-mathematics-answer-key.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2014-staar-may-grade-5-math-releasedtest.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2014-staar-may-grade-5-math-releasedtest.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2014-staar-may-grade-5-math-answerkey.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2014-staar-may-grade-5-math-answerkey.pdf :: curl: (22) The requested URL returned error: 404
+- exists https://tea.texas.gov/student-assessment/testing/staar/released-test-questions/2014-staar-5-math-test.pdf -> 2014-staar-5-math-test.pdf (2840107 bytes)
+- FAIL https://tea.texas.gov/sites/default/files/2014_staar_released_test_grade_5_math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/sites/default/files/2014_staar_released_test_grade_5_math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/testing/staar/2014-staar-released-grade-5-math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/testing/staar/2014-staar-released-grade-5-math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-6-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-6-math-test.pdf -> 2014-staar-6-math-test.pdf (3553739 bytes)
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-6-math-key.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-6-math-key.pdf -> 2014-staar-6-math-key.pdf (85678 bytes)
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-grade-6-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-grade-6-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-gr6-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-gr6-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-gr6-mathematics-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-gr6-mathematics-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-gr6-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-gr6-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2014-staar-gr6-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2014-staar-gr6-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2014-staar-gr6-mathematics-answer-key.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2014-staar-gr6-mathematics-answer-key.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2014-staar-may-grade-6-math-releasedtest.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2014-staar-may-grade-6-math-releasedtest.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2014-staar-may-grade-6-math-answerkey.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2014-staar-may-grade-6-math-answerkey.pdf :: curl: (22) The requested URL returned error: 404
+- exists https://tea.texas.gov/student-assessment/testing/staar/released-test-questions/2014-staar-6-math-test.pdf -> 2014-staar-6-math-test.pdf (3553739 bytes)
+- FAIL https://tea.texas.gov/sites/default/files/2014_staar_released_test_grade_6_math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/sites/default/files/2014_staar_released_test_grade_6_math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/testing/staar/2014-staar-released-grade-6-math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/testing/staar/2014-staar-released-grade-6-math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-7-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-7-math-test.pdf -> 2014-staar-7-math-test.pdf (1048576 bytes)
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-7-math-key.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-7-math-key.pdf -> 2014-staar-7-math-key.pdf (103991 bytes)
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-grade-7-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-grade-7-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-gr7-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-gr7-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-gr7-mathematics-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-gr7-mathematics-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-gr7-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-gr7-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2014-staar-gr7-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2014-staar-gr7-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2014-staar-gr7-mathematics-answer-key.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2014-staar-gr7-mathematics-answer-key.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2014-staar-may-grade-7-math-releasedtest.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2014-staar-may-grade-7-math-releasedtest.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2014-staar-may-grade-7-math-answerkey.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2014-staar-may-grade-7-math-answerkey.pdf :: curl: (22) The requested URL returned error: 404
+- exists https://tea.texas.gov/student-assessment/testing/staar/released-test-questions/2014-staar-7-math-test.pdf -> 2014-staar-7-math-test.pdf (1048576 bytes)
+- FAIL https://tea.texas.gov/sites/default/files/2014_staar_released_test_grade_7_math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/sites/default/files/2014_staar_released_test_grade_7_math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/testing/staar/2014-staar-released-grade-7-math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/testing/staar/2014-staar-released-grade-7-math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-8-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-8-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-8-math-key.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-8-math-key.pdf -> 2014-staar-8-math-key.pdf (106204 bytes)
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-grade-8-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-grade-8-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-gr8-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-gr8-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-gr8-mathematics-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-gr8-mathematics-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-gr8-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-gr8-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2014-staar-gr8-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2014-staar-gr8-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2014-staar-gr8-mathematics-answer-key.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2014-staar-gr8-mathematics-answer-key.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2014-staar-may-grade-8-math-releasedtest.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2014-staar-may-grade-8-math-releasedtest.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2014-staar-may-grade-8-math-answerkey.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2014-staar-may-grade-8-math-answerkey.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/testing/staar/released-test-questions/2014-staar-8-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/testing/staar/released-test-questions/2014-staar-8-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/sites/default/files/2014_staar_released_test_grade_8_math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/sites/default/files/2014_staar_released_test_grade_8_math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/testing/staar/2014-staar-released-grade-8-math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/testing/staar/2014-staar-released-grade-8-math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-algebra-i-test.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-algebra-i-test.pdf -> 2014-staar-algebra-i-test.pdf (4089333 bytes)
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-algebra-i-key.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2014-staar-algebra-i-key.pdf -> 2014-staar-algebra-i-key.pdf (83222 bytes)
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2014-staar-algebra-i-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2014-staar-algebra-i-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2014-staar-may-algebra-i-releasedtest.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2014-staar-may-algebra-i-releasedtest.pdf :: curl: (22) The requested URL returned error: 404
+- exists https://tea.texas.gov/student-assessment/testing/staar/released-test-questions/2014-staar-algebra-i-test.pdf -> 2014-staar-algebra-i-test.pdf (4089333 bytes)
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-3-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-3-math-test.pdf -> 2015-staar-3-math-test.pdf (478665 bytes)
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-3-math-key.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-3-math-key.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-grade-3-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-grade-3-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-gr3-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-gr3-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-gr3-mathematics-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-gr3-mathematics-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-gr3-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-gr3-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2015-staar-gr3-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2015-staar-gr3-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2015-staar-gr3-mathematics-answer-key.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2015-staar-gr3-mathematics-answer-key.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2015-staar-may-grade-3-math-releasedtest.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2015-staar-may-grade-3-math-releasedtest.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2015-staar-may-grade-3-math-answerkey.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2015-staar-may-grade-3-math-answerkey.pdf :: curl: (22) The requested URL returned error: 404
+- exists https://tea.texas.gov/student-assessment/testing/staar/released-test-questions/2015-staar-3-math-test.pdf -> 2015-staar-3-math-test.pdf (478665 bytes)
+- FAIL https://tea.texas.gov/sites/default/files/2015_staar_released_test_grade_3_math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/sites/default/files/2015_staar_released_test_grade_3_math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/testing/staar/2015-staar-released-grade-3-math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/testing/staar/2015-staar-released-grade-3-math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-4-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-4-math-test.pdf -> 2015-staar-4-math-test.pdf (312774 bytes)
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-4-math-key.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-4-math-key.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-grade-4-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-grade-4-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-gr4-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-gr4-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-gr4-mathematics-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-gr4-mathematics-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-gr4-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-gr4-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2015-staar-gr4-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2015-staar-gr4-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2015-staar-gr4-mathematics-answer-key.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2015-staar-gr4-mathematics-answer-key.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2015-staar-may-grade-4-math-releasedtest.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2015-staar-may-grade-4-math-releasedtest.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2015-staar-may-grade-4-math-answerkey.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2015-staar-may-grade-4-math-answerkey.pdf :: curl: (22) The requested URL returned error: 404
+- exists https://tea.texas.gov/student-assessment/testing/staar/released-test-questions/2015-staar-4-math-test.pdf -> 2015-staar-4-math-test.pdf (312774 bytes)
+- FAIL https://tea.texas.gov/sites/default/files/2015_staar_released_test_grade_4_math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/sites/default/files/2015_staar_released_test_grade_4_math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/testing/staar/2015-staar-released-grade-4-math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/testing/staar/2015-staar-released-grade-4-math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-5-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-5-math-test.pdf -> 2015-staar-5-math-test.pdf (477098 bytes)
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-5-math-key.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-5-math-key.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-grade-5-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-grade-5-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-gr5-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-gr5-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-gr5-mathematics-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-gr5-mathematics-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-gr5-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-gr5-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2015-staar-gr5-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2015-staar-gr5-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2015-staar-gr5-mathematics-answer-key.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2015-staar-gr5-mathematics-answer-key.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2015-staar-may-grade-5-math-releasedtest.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2015-staar-may-grade-5-math-releasedtest.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2015-staar-may-grade-5-math-answerkey.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2015-staar-may-grade-5-math-answerkey.pdf :: curl: (22) The requested URL returned error: 404
+- exists https://tea.texas.gov/student-assessment/testing/staar/released-test-questions/2015-staar-5-math-test.pdf -> 2015-staar-5-math-test.pdf (477098 bytes)
+- FAIL https://tea.texas.gov/sites/default/files/2015_staar_released_test_grade_5_math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/sites/default/files/2015_staar_released_test_grade_5_math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/testing/staar/2015-staar-released-grade-5-math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/testing/staar/2015-staar-released-grade-5-math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-6-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-6-math-test.pdf -> 2015-staar-6-math-test.pdf (321242 bytes)
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-6-math-key.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-6-math-key.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-grade-6-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-grade-6-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-gr6-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-gr6-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-gr6-mathematics-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-gr6-mathematics-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-gr6-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-gr6-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2015-staar-gr6-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2015-staar-gr6-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2015-staar-gr6-mathematics-answer-key.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2015-staar-gr6-mathematics-answer-key.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2015-staar-may-grade-6-math-releasedtest.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2015-staar-may-grade-6-math-releasedtest.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2015-staar-may-grade-6-math-answerkey.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2015-staar-may-grade-6-math-answerkey.pdf :: curl: (22) The requested URL returned error: 404
+- exists https://tea.texas.gov/student-assessment/testing/staar/released-test-questions/2015-staar-6-math-test.pdf -> 2015-staar-6-math-test.pdf (321242 bytes)
+- FAIL https://tea.texas.gov/sites/default/files/2015_staar_released_test_grade_6_math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/sites/default/files/2015_staar_released_test_grade_6_math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/testing/staar/2015-staar-released-grade-6-math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/testing/staar/2015-staar-released-grade-6-math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-7-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-7-math-test.pdf -> 2015-staar-7-math-test.pdf (495544 bytes)
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-7-math-key.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-7-math-key.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-grade-7-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-grade-7-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-gr7-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-gr7-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-gr7-mathematics-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-gr7-mathematics-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-gr7-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-gr7-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2015-staar-gr7-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2015-staar-gr7-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2015-staar-gr7-mathematics-answer-key.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2015-staar-gr7-mathematics-answer-key.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2015-staar-may-grade-7-math-releasedtest.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2015-staar-may-grade-7-math-releasedtest.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2015-staar-may-grade-7-math-answerkey.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2015-staar-may-grade-7-math-answerkey.pdf :: curl: (22) The requested URL returned error: 404
+- exists https://tea.texas.gov/student-assessment/testing/staar/released-test-questions/2015-staar-7-math-test.pdf -> 2015-staar-7-math-test.pdf (495544 bytes)
+- FAIL https://tea.texas.gov/sites/default/files/2015_staar_released_test_grade_7_math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/sites/default/files/2015_staar_released_test_grade_7_math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/testing/staar/2015-staar-released-grade-7-math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/testing/staar/2015-staar-released-grade-7-math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-8-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-8-math-test.pdf -> 2015-staar-8-math-test.pdf (1048576 bytes)
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-8-math-key.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-8-math-key.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-grade-8-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-grade-8-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-gr8-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-gr8-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-gr8-mathematics-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-gr8-mathematics-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-gr8-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-gr8-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2015-staar-gr8-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2015-staar-gr8-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2015-staar-gr8-mathematics-answer-key.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2015-staar-gr8-mathematics-answer-key.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2015-staar-may-grade-8-math-releasedtest.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2015-staar-may-grade-8-math-releasedtest.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2015-staar-may-grade-8-math-answerkey.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2015-staar-may-grade-8-math-answerkey.pdf :: curl: (22) The requested URL returned error: 404
+- exists https://tea.texas.gov/student-assessment/testing/staar/released-test-questions/2015-staar-8-math-test.pdf -> 2015-staar-8-math-test.pdf (1048576 bytes)
+- FAIL https://tea.texas.gov/sites/default/files/2015_staar_released_test_grade_8_math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/sites/default/files/2015_staar_released_test_grade_8_math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/testing/staar/2015-staar-released-grade-8-math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/testing/staar/2015-staar-released-grade-8-math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-algebra-i-test.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-algebra-i-test.pdf -> 2015-staar-algebra-i-test.pdf (1048576 bytes)
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-algebra-i-key.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2015-staar-algebra-i-key.pdf -> 2015-staar-algebra-i-key.pdf (95282 bytes)
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2015-staar-algebra-i-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2015-staar-algebra-i-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2015-staar-may-algebra-i-releasedtest.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2015-staar-may-algebra-i-releasedtest.pdf :: curl: (22) The requested URL returned error: 404
+- exists https://tea.texas.gov/student-assessment/testing/staar/released-test-questions/2015-staar-algebra-i-test.pdf -> 2015-staar-algebra-i-test.pdf (1048576 bytes)
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2016-staar-3-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2016-staar-3-math-test.pdf -> 2016-staar-3-math-test.pdf (1048576 bytes)
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2016-staar-3-math-key.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2016-staar-3-math-key.pdf -> 2016-staar-3-math-key.pdf (149527 bytes)
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2016-staar-grade-3-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2016-staar-grade-3-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2016-staar-gr3-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2016-staar-gr3-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2016-staar-gr3-mathematics-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2016-staar-gr3-mathematics-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2016-staar-gr3-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2016-staar-gr3-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2016-staar-gr3-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2016-staar-gr3-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2016-staar-gr3-mathematics-answer-key.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2016-staar-gr3-mathematics-answer-key.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2016-staar-may-grade-3-math-releasedtest.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2016-staar-may-grade-3-math-releasedtest.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2016-staar-may-grade-3-math-answerkey.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2016-staar-may-grade-3-math-answerkey.pdf :: curl: (22) The requested URL returned error: 404
+- exists https://tea.texas.gov/student-assessment/testing/staar/released-test-questions/2016-staar-3-math-test.pdf -> 2016-staar-3-math-test.pdf (1048576 bytes)
+- FAIL https://tea.texas.gov/sites/default/files/2016_staar_released_test_grade_3_math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/sites/default/files/2016_staar_released_test_grade_3_math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/testing/staar/2016-staar-released-grade-3-math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/testing/staar/2016-staar-released-grade-3-math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2016-staar-4-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2016-staar-4-math-test.pdf -> 2016-staar-4-math-test.pdf (2064440 bytes)
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2016-staar-4-math-key.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2016-staar-4-math-key.pdf -> 2016-staar-4-math-key.pdf (143344 bytes)
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2016-staar-grade-4-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2016-staar-grade-4-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2016-staar-gr4-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2016-staar-gr4-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2016-staar-gr4-mathematics-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2016-staar-gr4-mathematics-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2016-staar-gr4-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2016-staar-gr4-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2016-staar-gr4-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2016-staar-gr4-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2016-staar-gr4-mathematics-answer-key.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2016-staar-gr4-mathematics-answer-key.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2016-staar-may-grade-4-math-releasedtest.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2016-staar-may-grade-4-math-releasedtest.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2016-staar-may-grade-4-math-answerkey.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2016-staar-may-grade-4-math-answerkey.pdf :: curl: (22) The requested URL returned error: 404
+- exists https://tea.texas.gov/student-assessment/testing/staar/released-test-questions/2016-staar-4-math-test.pdf -> 2016-staar-4-math-test.pdf (2064440 bytes)
+- FAIL https://tea.texas.gov/sites/default/files/2016_staar_released_test_grade_4_math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/sites/default/files/2016_staar_released_test_grade_4_math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/testing/staar/2016-staar-released-grade-4-math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/testing/staar/2016-staar-released-grade-4-math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2016-staar-5-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2016-staar-5-math-test.pdf -> 2016-staar-5-math-test.pdf (970414 bytes)
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2016-staar-5-math-key.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2016-staar-5-math-key.pdf -> 2016-staar-5-math-key.pdf (147722 bytes)
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2016-staar-grade-5-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2016-staar-grade-5-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2016-staar-gr5-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2016-staar-gr5-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2016-staar-gr5-mathematics-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2016-staar-gr5-mathematics-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2016-staar-gr5-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2016-staar-gr5-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2016-staar-gr5-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2016-staar-gr5-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2016-staar-gr5-mathematics-answer-key.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2016-staar-gr5-mathematics-answer-key.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2016-staar-may-grade-5-math-releasedtest.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2016-staar-may-grade-5-math-releasedtest.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2016-staar-may-grade-5-math-answerkey.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2016-staar-may-grade-5-math-answerkey.pdf :: curl: (22) The requested URL returned error: 404
+- exists https://tea.texas.gov/student-assessment/testing/staar/released-test-questions/2016-staar-5-math-test.pdf -> 2016-staar-5-math-test.pdf (970414 bytes)
+- FAIL https://tea.texas.gov/sites/default/files/2016_staar_released_test_grade_5_math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/sites/default/files/2016_staar_released_test_grade_5_math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/testing/staar/2016-staar-released-grade-5-math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/testing/staar/2016-staar-released-grade-5-math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2016-staar-6-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2016-staar-6-math-test.pdf -> 2016-staar-6-math-test.pdf (698710 bytes)
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2016-staar-6-math-key.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2016-staar-6-math-key.pdf -> 2016-staar-6-math-key.pdf (150653 bytes)
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2016-staar-grade-6-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2016-staar-grade-6-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2016-staar-gr6-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2016-staar-gr6-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2016-staar-gr6-mathematics-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2016-staar-gr6-mathematics-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2016-staar-gr6-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2016-staar-gr6-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2016-staar-gr6-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2016-staar-gr6-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2016-staar-gr6-mathematics-answer-key.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2016-staar-gr6-mathematics-answer-key.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2016-staar-may-grade-6-math-releasedtest.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2016-staar-may-grade-6-math-releasedtest.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2016-staar-may-grade-6-math-answerkey.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/data-reports/staar/released-test-questions/2016-staar-may-grade-6-math-answerkey.pdf :: curl: (22) The requested URL returned error: 404
+- exists https://tea.texas.gov/student-assessment/testing/staar/released-test-questions/2016-staar-6-math-test.pdf -> 2016-staar-6-math-test.pdf (698710 bytes)
+- FAIL https://tea.texas.gov/sites/default/files/2016_staar_released_test_grade_6_math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/sites/default/files/2016_staar_released_test_grade_6_math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/testing/staar/2016-staar-released-grade-6-math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/testing/staar/2016-staar-released-grade-6-math.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2016-staar-7-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2016-staar-7-math-test.pdf -> 2016-staar-7-math-test.pdf (326651 bytes)
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2016-staar-7-math-key.pdf :: curl: (22) The requested URL returned error: 404
+- ok https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2016-staar-7-math-key.pdf -> 2016-staar-7-math-key.pdf (142823 bytes)
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2016-staar-grade-7-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2016-staar-grade-7-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2016-staar-gr7-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2016-staar-gr7-math-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2016-staar-gr7-mathematics-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2016-staar-gr7-mathematics-test.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/student-assessment/staar/released-test-questions/2016-staar-gr7-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://web.archive.org/web/2020/https://tea.texas.gov/student-assessment/staar/released-test-questions/2016-staar-gr7-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404
+- FAIL https://tea.texas.gov/data-reports/staar/released-test-questions/2016-staar-gr7-mathematics-test-tagged.pdf :: curl: (22) The requested URL returned error: 404

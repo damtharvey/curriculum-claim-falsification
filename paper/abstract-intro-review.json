@@ -1,0 +1,30 @@
+{
+  "review_scope": "abstract_intro",
+  "pass_kind": "writing_correction",
+  "skill": ".agents/skills/ml-paper-writing/references/first-reader-review.md",
+  "overall_recommendation": 4,
+  "first_reader_check": {
+    "pass": true,
+    "qualified_reviewer_can_follow_the_abstract": true,
+    "about": "Whether a published tag on a released mathematics item is required to match the key, tested by programs that lack the tagged operation.",
+    "shown": "Three Holm families, never a mixed pool. Catalog 105: zero Holm, two per-cell witnesses (Regents geometry 0.323 n=279; EQAO grade 6 0.500 n=40). Strategy 67: STAAR grade-5 arithmetic closure 0.525 n=40 is the discovery Holm reject and failed powered replication (combined 0.328, CI covers chance). LM 68: Qwen 7B/14B and Phi-4 recover keys from type plus option form on withheld-quantity Algebra I/II; Phi-4 also clears geometry 0.404 n=166 vs chance and modal 0.289; Mistral is a weak solver. TIMSS knowing/applying/reasoning remain null at clustered floors 0.400 to 0.421.",
+    "what_is_new": "A three-family requirement census with an existential partial-input reader across two model families, including Phi-4 geometry, and a strategy discovery that does not replicate.",
+    "why_a_big_deal": "Accountability and research that treat a pass on those matched items as evidence of the tagged skill are reading the wrong quantity.",
+    "unreadability": {
+      "stacked_if_thens": {"present": false},
+      "named_hypothesis_packing": {"present": false},
+      "formula_in_words": {"present": false},
+      "contribution_list_abstract": {"present": false},
+      "circular_definition": {"present": false},
+      "process_metadiscourse": {"present": false},
+      "abstract_not_claim": {"present": false},
+      "negative_contribution_bullets": {"present": false},
+      "repeated_disclaimer": {"present": false}
+    }
+  },
+  "reviewer_independence": {
+    "authored_the_science_edit": true,
+    "prompt_was_first_reader_only": true,
+    "added_theorems_in_this_pass": false
+  }
+}

@@ -1,0 +1,11 @@
+[
+  {
+    "itemId": "fixture-01",
+    "operation": "retrieve",
+    "value": 0,
+    "witness": { "programId": "longest-option", "trace": ["fixture"] },
+    "searched": ["longest-option"],
+    "attempted": true,
+    "review": "machine"
+  }
+]

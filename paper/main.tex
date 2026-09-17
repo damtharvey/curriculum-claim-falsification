@@ -1,0 +1,68 @@
+\documentclass[sigplan,screen,nonacm,review]{acmart}
+
+\setcopyright{none}
+\settopmatter{printfolios=true,printccs=false,printacmref=false}
+\citestyle{acmauthoryear}
+
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\usepackage{todonotes}
+\newcommand{\harvey}[1]{\todo[inline,color=orange!20]{Harvey: #1}}
+\definecolor{wipink}{RGB}{0,90,140}
+\newcommand{\wip}[1]{\textcolor{wipink}{#1}}
+\usepackage{url}
+
+\makeatletter
+\AddToHook{begindocument/end}{%
+  \setlength{\footskip}{48pt}%
+  \expandafter\def\expandafter\ps@standardpagestyle\expandafter{%
+    \ps@standardpagestyle
+    \fancyfoot[L]{\footnotesize Preprint.}%
+  }%
+  \expandafter\def\expandafter\ps@firstpagestyle\expandafter{%
+    \ps@firstpagestyle
+    \fancyfoot[L]{\footnotesize Preprint.}%
+  }%
+  \pagestyle{standardpagestyle}%
+}
+\makeatother
+
+\begin{document}
+
+\title[Does the Assessment Require the Skill?]{Does the Assessment Require the Skill?}
+\subtitle{A Public-Release Census of Requirement versus Mention}
+
+\author{Harvey Dam}
+\affiliation{%
+  \department{Kahlert School of Computing}
+  \institution{University of Utah}
+  \city{Salt Lake City}
+  \state{Utah}
+  \country{USA}}
+\author{Alejandra Moctezuma}
+\affiliation{%
+  \institution{Utah Valley University}
+  \city{Orem}
+  \state{Utah}
+  \country{USA}}
+
+\begin{abstract}
+\input{abstract}
+\end{abstract}
+
+\keywords{assessment validity, test-wiseness, TIMSS, requirement matrix}
+
+\maketitle
+
+\input{intro}
+\input{related}
+\input{method}
+\input{results}
+\input{limitations}
+
+\bibliographystyle{ACM-Reference-Format}
+\bibliography{references}
+
+\end{document}

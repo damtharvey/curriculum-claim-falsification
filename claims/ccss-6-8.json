@@ -1,0 +1,86 @@
+{
+  "authority": "ccss",
+  "note": "Utah Core codes for the seed standards match CCSS codes. Texts verified against Utah Core Standards Middle School PDF; CCSS wording is the same for these ten seeds except Utah's 6.NS.1 unpacking into a/b/c.",
+  "claims": [
+    {
+      "authority": "ccss",
+      "code": "7.RP.A.2.a",
+      "text": "Decide whether two quantities are in a proportional relationship, e.g., by testing for equivalent ratios in a table or graphing on a coordinate plane and observing whether the graph is a straight line through the origin.",
+      "operationalization": "Same code family as Utah Core 7.RP.2.a. Operationalization: USBE Core Guide skills to master for 7.RP.2.a (testing equivalent ratios; graphing a straight line through the origin).",
+      "operations": ["distinguish", "execute"],
+      "sourceUrl": "https://www.thecorestandards.org/Math/Content/7/RP/"
+    },
+    {
+      "authority": "ccss",
+      "code": "7.RP.A.2.b",
+      "text": "Identify the constant of proportionality (unit rate) in tables, graphs, equations, diagrams, and verbal descriptions of proportional relationships.",
+      "operationalization": "Same code family as Utah Core 7.RP.2.b. Operationalization: find the constant of proportionality from tables, graphs, equations, diagrams, or verbal descriptions.",
+      "operations": ["bind", "retrieve"],
+      "sourceUrl": "https://www.thecorestandards.org/Math/Content/7/RP/"
+    },
+    {
+      "authority": "ccss",
+      "code": "7.RP.A.2.c",
+      "text": "Represent proportional relationships by equations. For example, if total cost t is proportional to the number n of items purchased at a constant price p, the relationship between the total cost and the number of items can be expressed as t = pn.",
+      "operationalization": "Same code family as Utah Core 7.RP.2.c. Operationalization: write an equation for a proportional relationship in the form y = kx.",
+      "operations": ["bind", "execute"],
+      "sourceUrl": "https://www.thecorestandards.org/Math/Content/7/RP/"
+    },
+    {
+      "authority": "ccss",
+      "code": "7.RP.A.2.d",
+      "text": "Explain what a point (x, y) on the graph of a proportional relationship means in terms of the situation, with special attention to the points (0, 0) and (1, r) where r is the unit rate.",
+      "operationalization": "Same code family as Utah Core 7.RP.2.d. Operationalization: explain the meaning of a point (x, y) in terms of the situation, especially (0, 0) and (1, r).",
+      "operations": ["explain", "bind"],
+      "sourceUrl": "https://www.thecorestandards.org/Math/Content/7/RP/"
+    },
+    {
+      "authority": "ccss",
+      "code": "7.RP.A.3",
+      "text": "Use proportional relationships to solve multistep ratio and percent problems. Examples: simple interest, tax, markups and markdowns, gratuities and commissions, fees, percent increase and decrease, percent error.",
+      "operationalization": "Same code family as Utah Core 7.RP.3. Operationalization: use proportional reasoning to solve multistep ratio and percent problems, writing proportions from those contexts.",
+      "operations": ["bind", "execute"],
+      "sourceUrl": "https://www.thecorestandards.org/Math/Content/7/RP/"
+    },
+    {
+      "authority": "ccss",
+      "code": "7.EE.A.2",
+      "text": "Understand that rewriting an expression in different forms in a problem context can shed light on the problem and how the quantities in it are related. For example, a + 0.05a = 1.05a means that “increase by 5%” is the same as “multiply by 1.05.”",
+      "operationalization": "Same code family as Utah Core 7.EE.2. Operationalization: recognize that different forms of an expression can highlight different aspects of a problem; explain component parts in terms of a context.",
+      "operations": ["bind", "distinguish", "explain"],
+      "sourceUrl": "https://www.thecorestandards.org/Math/Content/7/EE/"
+    },
+    {
+      "authority": "ccss",
+      "code": "7.SP.A.1",
+      "text": "Understand that statistics can be used to gain information about a population by examining a sample of the population; generalizations about a population from a sample are valid only if the sample is representative of that population. Understand that random sampling tends to produce representative samples and support valid inferences.",
+      "operationalization": "Same code family as Utah Core 7.SP.1. Operationalization: distinguish representative from non-representative samples; treat random sampling as more likely to be representative.",
+      "operations": ["distinguish"],
+      "sourceUrl": "https://www.thecorestandards.org/Math/Content/7/SP/"
+    },
+    {
+      "authority": "ccss",
+      "code": "6.RP.A.2",
+      "text": "Understand the concept of a unit rate a/b associated with a ratio a:b with b ≠ 0, and use rate language in the context of a ratio relationship.",
+      "operationalization": "Same code family as Utah Core 6.RP.2. Operationalization: a unit rate is a ratio whose second term is one; use rate language (per, each) in context.",
+      "operations": ["bind", "retrieve"],
+      "sourceUrl": "https://www.thecorestandards.org/Math/Content/6/RP/"
+    },
+    {
+      "authority": "ccss",
+      "code": "6.NS.A.1",
+      "text": "Interpret and compute quotients of fractions, and solve word problems involving division of fractions by fractions, e.g., by using visual fraction models and equations to represent the problem. For example, create a story context for (2/3) ÷ (3/4) and use a visual fraction model to show the quotient.",
+      "operationalization": "CCSS does not split 6.NS.1 into a/b/c; Utah Core 6.NS.1.c is the explain clause of this standard. Operationalization used for NYSED/IM/Eureka tags to 6.NS.1: interpret the quotient (explain), not only compute.",
+      "operations": ["explain", "execute", "bind"],
+      "sourceUrl": "https://www.thecorestandards.org/Math/Content/6/NS/"
+    },
+    {
+      "authority": "ccss",
+      "code": "6.SP.A.1",
+      "text": "Recognize a statistical question as one that anticipates variability in the data related to the question and accounts for it in the answers.",
+      "operationalization": "Same code family as Utah Core 6.SP.1. Operationalization: identify the difference between a statistical and a non-statistical question.",
+      "operations": ["distinguish"],
+      "sourceUrl": "https://www.thecorestandards.org/Math/Content/6/SP/"
+    }
+  ]
+}

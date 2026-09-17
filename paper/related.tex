@@ -1,0 +1,8 @@
+\section{Related Work}
+\label{sec:related}
+
+Standards labeling matches item text to a code. MathFish and related classifiers ask whether a labeler agrees with a publisher~\cite{lucy2024mathfish}. Agreement between labelers is not a test of whether the tagged operation is required to pass. We keep the publisher's tag and search for programs that pass without it.
+
+Shortcut learning and partial-input baselines~\cite{Geirhos_2020,gururangan-etal-2018-annotation,poliak-etal-2018-hypothesis} show that models and rules can answer from the wrong slice of the input. The options-only and masked-stem language-model channel is that same hypothesis-only and question-ignored construction, now scored on public mathematics items: the scorer sees the option set, and in the masked condition the question type, but not the given quantities. Item-writing and test-wiseness catalogs~\cite{Millman_1965,Haladyna_2002} list surface cues that can determine a choice without content, including using the numbers given without binding them. Arithmetic closure is that unbound-execution move as a program. Those catalogs are our channels, not claims about students.
+
+Q-matrix and cognitive-diagnosis methods estimate which skills an item requires from student response data~\cite{Tatsuoka_1983}. $E$ is the adversarial counterpart that uses none. Comparisons to percent correct, when we make them, use only the statistics TIMSS already published with the public-release items.

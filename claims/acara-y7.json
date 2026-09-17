@@ -1,0 +1,14 @@
+{
+  "authority": "acara",
+  "note": "NAPLAN Year 7 numeracy is tagged at the paper grain, not an Australian Curriculum content code. Operationalization is applied numeracy: bind quantities in the stem and execute a calculation or comparison.",
+  "claims": [
+    {
+      "authority": "acara",
+      "code": "y7-numeracy",
+      "text": "Year 7 NAPLAN numeracy: solve number, measurement, chance, and algebra items on the public 2012-2016 papers.",
+      "operationalization": "Use the quantities named in the stem; select or compute the published key. No ACARA content-code split is assigned here.",
+      "operations": ["bind", "execute"],
+      "sourceUrl": "https://www.acara.edu.au/assessment/naplan/naplan-2012-2016-test-papers"
+    }
+  ]
+}

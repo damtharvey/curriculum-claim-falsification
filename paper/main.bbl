@@ -1,0 +1,261 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{14}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{} and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showURL}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showURL #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       {\relax}        \fi
+% The following commands are used for tagged output and should be
+% invisible to TeX
+\providecommand\bibfield[2]{#2}
+\providecommand\bibinfo[2]{#2}
+\providecommand\natexlab[1]{#1}
+\providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[Geirhos et~al\mbox{.}(2020)]%
+        {Geirhos_2020}
+\bibfield{author}{\bibinfo{person}{Robert Geirhos},
+  \bibinfo{person}{Jörn-Henrik Jacobsen}, \bibinfo{person}{Claudio Michaelis},
+  \bibinfo{person}{Richard Zemel}, \bibinfo{person}{Wieland Brendel},
+  \bibinfo{person}{Matthias Bethge}, {and} \bibinfo{person}{Felix~A.
+  Wichmann}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{Shortcut learning in deep neural networks}.
+\newblock \bibinfo{journal}{\emph{Nature Machine Intelligence}}
+  \bibinfo{volume}{2}, \bibinfo{number}{11} (\bibinfo{date}{Nov.}
+  \bibinfo{year}{2020}), \bibinfo{pages}{665–673}.
+\newblock
+\showISSN{2522-5839}
+\href{https://doi.org/10.1038/s42256-020-00257-z}{doi:\nolinkurl{10.1038/s42256-020-00257-z}}
+
+
+\bibitem[Gururangan et~al\mbox{.}(2018)]%
+        {gururangan-etal-2018-annotation}
+\bibfield{author}{\bibinfo{person}{Suchin Gururangan}, \bibinfo{person}{Swabha
+  Swayamdipta}, \bibinfo{person}{Omer Levy}, \bibinfo{person}{Roy Schwartz},
+  \bibinfo{person}{Samuel~R. Bowman}, {and} \bibinfo{person}{Noah~A. Smith}.}
+  \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{Annotation Artifacts in Natural Language Inference
+  Data}. In \bibinfo{booktitle}{\emph{Proceedings of the 2018 Conference of the
+  North {A}merican Chapter of the Association for Computational Linguistics:
+  Human Language Technologies, Volume 2 (Short Papers)}},
+  \bibfield{editor}{\bibinfo{person}{Marilyn Walker}, \bibinfo{person}{Heng
+  Ji}, {and} \bibinfo{person}{Amanda Stent}} (Eds.).
+  \bibinfo{publisher}{Association for Computational Linguistics},
+  \bibinfo{address}{New Orleans, Louisiana}, \bibinfo{pages}{107--112}.
+\newblock
+\href{https://doi.org/10.18653/v1/N18-2017}{doi:\nolinkurl{10.18653/v1/N18-2017}}
+
+
+\bibitem[Haladyna et~al\mbox{.}(2002)]%
+        {Haladyna_2002}
+\bibfield{author}{\bibinfo{person}{Thomas~M. Haladyna},
+  \bibinfo{person}{Steven~M. Downing}, {and} \bibinfo{person}{Michael~C.
+  Rodriguez}.} \bibinfo{year}{2002}\natexlab{}.
+\newblock \showarticletitle{A Review of Multiple-Choice Item-Writing Guidelines
+  for Classroom Assessment}.
+\newblock \bibinfo{journal}{\emph{Applied Measurement in Education}}
+  \bibinfo{volume}{15}, \bibinfo{number}{3} (\bibinfo{date}{July}
+  \bibinfo{year}{2002}), \bibinfo{pages}{309–333}.
+\newblock
+\showISSN{1532-4818}
+\href{https://doi.org/10.1207/s15324818ame1503_5}{doi:\nolinkurl{10.1207/s15324818ame1503_5}}
+
+
+\bibitem[{International Association for the Evaluation of Educational
+  Achievement}(2009)]%
+        {iea2009timss2011frameworks}
+\bibfield{author}{\bibinfo{person}{{International Association for the
+  Evaluation of Educational Achievement}}.} \bibinfo{year}{2009}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{{TIMSS} 2011 Assessment Frameworks}}.
+\newblock \bibinfo{type}{{T}echnical {R}eport}. \bibinfo{institution}{{TIMSS}
+  \& {PIRLS} International Study Center, Boston College},
+  \bibinfo{address}{Chestnut Hill, MA}.
+\newblock
+\urldef\tempurl%
+\url{https://timssandpirls.bc.edu/timss2011/frameworks.html}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Kane(1992)]%
+        {Kane_1992}
+\bibfield{author}{\bibinfo{person}{Michael~T. Kane}.}
+  \bibinfo{year}{1992}\natexlab{}.
+\newblock \showarticletitle{An argument-based approach to validity.}
+\newblock \bibinfo{journal}{\emph{Psychological Bulletin}}
+  \bibinfo{volume}{112}, \bibinfo{number}{3} (\bibinfo{date}{Nov.}
+  \bibinfo{year}{1992}), \bibinfo{pages}{527–535}.
+\newblock
+\showISSN{0033-2909}
+\href{https://doi.org/10.1037/0033-2909.112.3.527}{doi:\nolinkurl{10.1037/0033-2909.112.3.527}}
+
+
+\bibitem[Lai et~al\mbox{.}(2017)]%
+        {lai-etal-2017-race}
+\bibfield{author}{\bibinfo{person}{Guokun Lai}, \bibinfo{person}{Qizhe Xie},
+  \bibinfo{person}{Hanxiao Liu}, \bibinfo{person}{Yiming Yang}, {and}
+  \bibinfo{person}{Eduard Hovy}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{{RACE}: Large-scale {R}e{A}ding Comprehension
+  Dataset From Examinations}. In \bibinfo{booktitle}{\emph{Proceedings of the
+  2017 Conference on Empirical Methods in Natural Language Processing}},
+  \bibfield{editor}{\bibinfo{person}{Martha Palmer}, \bibinfo{person}{Rebecca
+  Hwa}, {and} \bibinfo{person}{Sebastian Riedel}} (Eds.).
+  \bibinfo{publisher}{Association for Computational Linguistics},
+  \bibinfo{address}{Copenhagen, Denmark}, \bibinfo{pages}{785--794}.
+\newblock
+\href{https://doi.org/10.18653/v1/D17-1082}{doi:\nolinkurl{10.18653/v1/D17-1082}}
+
+
+\bibitem[Lucy et~al\mbox{.}(2024)]%
+        {lucy2024mathfish}
+\bibfield{author}{\bibinfo{person}{Li Lucy}, \bibinfo{person}{Tal August},
+  \bibinfo{person}{Rose~E. Wang}, \bibinfo{person}{Luca Soldaini},
+  \bibinfo{person}{Courtney Allison}, {and} \bibinfo{person}{Kyle Lo}.}
+  \bibinfo{year}{2024}\natexlab{}.
+\newblock \bibinfo{title}{Mathfish: Evaluating Language Model Math Reasoning
+  via Grounding in Educational Curricula}.
+\newblock
+\showeprint[arxiv]{2408.04226}~[cs.CL]
+\urldef\tempurl%
+\url{https://arxiv.org/abs/2408.04226}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Messick(1995)]%
+        {Messick_1995}
+\bibfield{author}{\bibinfo{person}{Samuel Messick}.}
+  \bibinfo{year}{1995}\natexlab{}.
+\newblock \showarticletitle{Validity of psychological assessment: Validation of
+  inferences from persons’ responses and performances as scientific inquiry
+  into score meaning.}
+\newblock \bibinfo{journal}{\emph{American Psychologist}} \bibinfo{volume}{50},
+  \bibinfo{number}{9} (\bibinfo{date}{Sept.} \bibinfo{year}{1995}),
+  \bibinfo{pages}{741–749}.
+\newblock
+\showISSN{0003-066X}
+\href{https://doi.org/10.1037/0003-066x.50.9.741}{doi:\nolinkurl{10.1037/0003-066x.50.9.741}}
+
+
+\bibitem[Mihaylov et~al\mbox{.}(2018)]%
+        {mihaylov-etal-2018-suit}
+\bibfield{author}{\bibinfo{person}{Todor Mihaylov}, \bibinfo{person}{Peter
+  Clark}, \bibinfo{person}{Tushar Khot}, {and} \bibinfo{person}{Ashish
+  Sabharwal}.} \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{Can a Suit of Armor Conduct Electricity? A New
+  Dataset for Open Book Question Answering}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 2018 Conference on Empirical
+  Methods in Natural Language Processing}},
+  \bibfield{editor}{\bibinfo{person}{Ellen Riloff}, \bibinfo{person}{David
+  Chiang}, \bibinfo{person}{Julia Hockenmaier}, {and}
+  \bibinfo{person}{Jun{'}ichi Tsujii}} (Eds.). \bibinfo{publisher}{Association
+  for Computational Linguistics}, \bibinfo{address}{Brussels, Belgium},
+  \bibinfo{pages}{2381--2391}.
+\newblock
+\href{https://doi.org/10.18653/v1/D18-1260}{doi:\nolinkurl{10.18653/v1/D18-1260}}
+
+
+\bibitem[Millman et~al\mbox{.}(1965)]%
+        {Millman_1965}
+\bibfield{author}{\bibinfo{person}{Jason Millman}, \bibinfo{person}{Carol~H.
+  Bishop}, {and} \bibinfo{person}{Robert Ebel}.}
+  \bibinfo{year}{1965}\natexlab{}.
+\newblock \showarticletitle{An Analysis of Test-Wiseness}.
+\newblock \bibinfo{journal}{\emph{Educational and Psychological Measurement}}
+  \bibinfo{volume}{25}, \bibinfo{number}{3} (\bibinfo{date}{Oct.}
+  \bibinfo{year}{1965}), \bibinfo{pages}{707–726}.
+\newblock
+\showISSN{1552-3888}
+\href{https://doi.org/10.1177/001316446502500304}{doi:\nolinkurl{10.1177/001316446502500304}}
+
+
+\bibitem[Poliak et~al\mbox{.}(2018)]%
+        {poliak-etal-2018-hypothesis}
+\bibfield{author}{\bibinfo{person}{Adam Poliak}, \bibinfo{person}{Jason
+  Naradowsky}, \bibinfo{person}{Aparajita Haldar}, \bibinfo{person}{Rachel
+  Rudinger}, {and} \bibinfo{person}{Benjamin Van~Durme}.}
+  \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{Hypothesis Only Baselines in Natural Language
+  Inference}. In \bibinfo{booktitle}{\emph{Proceedings of the Seventh Joint
+  Conference on Lexical and Computational Semantics}},
+  \bibfield{editor}{\bibinfo{person}{Malvina Nissim}, \bibinfo{person}{Jonathan
+  Berant}, {and} \bibinfo{person}{Alessandro Lenci}} (Eds.).
+  \bibinfo{publisher}{Association for Computational Linguistics},
+  \bibinfo{address}{New Orleans, Louisiana}, \bibinfo{pages}{180--191}.
+\newblock
+\href{https://doi.org/10.18653/v1/S18-2023}{doi:\nolinkurl{10.18653/v1/S18-2023}}
+
+
+\bibitem[Talmor et~al\mbox{.}(2019)]%
+        {talmor-etal-2019-commonsenseqa}
+\bibfield{author}{\bibinfo{person}{Alon Talmor}, \bibinfo{person}{Jonathan
+  Herzig}, \bibinfo{person}{Nicholas Lourie}, {and} \bibinfo{person}{Jonathan
+  Berant}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{{C}ommonsense{QA}: A Question Answering Challenge
+  Targeting Commonsense Knowledge}. In \bibinfo{booktitle}{\emph{Proceedings of
+  the 2019 Conference of the North {A}merican Chapter of the Association for
+  Computational Linguistics: Human Language Technologies, Volume 1 (Long and
+  Short Papers)}}, \bibfield{editor}{\bibinfo{person}{Jill Burstein},
+  \bibinfo{person}{Christy Doran}, {and} \bibinfo{person}{Thamar Solorio}}
+  (Eds.). \bibinfo{publisher}{Association for Computational Linguistics},
+  \bibinfo{address}{Minneapolis, Minnesota}, \bibinfo{pages}{4149--4158}.
+\newblock
+\href{https://doi.org/10.18653/v1/N19-1421}{doi:\nolinkurl{10.18653/v1/N19-1421}}
+
+
+\bibitem[Tatsuoka(1983)]%
+        {Tatsuoka_1983}
+\bibfield{author}{\bibinfo{person}{Kikumi~K. Tatsuoka}.}
+  \bibinfo{year}{1983}\natexlab{}.
+\newblock \showarticletitle{Rule Space: An Approach for Dealing with
+  Misconceptions Based on Item Response Theory}.
+\newblock \bibinfo{journal}{\emph{Journal of Educational Measurement}}
+  \bibinfo{volume}{20}, \bibinfo{number}{4} (\bibinfo{year}{1983}),
+  \bibinfo{pages}{345--354}.
+\newblock
+\showISSN{1745-3984}
+\href{https://doi.org/10.1111/j.1745-3984.1983.tb00212.x}{doi:\nolinkurl{10.1111/j.1745-3984.1983.tb00212.x}}
+
+
+\bibitem[Zellers et~al\mbox{.}(2018)]%
+        {zellers-etal-2018-swag}
+\bibfield{author}{\bibinfo{person}{Rowan Zellers}, \bibinfo{person}{Yonatan
+  Bisk}, \bibinfo{person}{Roy Schwartz}, {and} \bibinfo{person}{Yejin Choi}.}
+  \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{{SWAG}: A Large-Scale Adversarial Dataset for
+  Grounded Commonsense Inference}. In \bibinfo{booktitle}{\emph{Proceedings of
+  the 2018 Conference on Empirical Methods in Natural Language Processing}},
+  \bibfield{editor}{\bibinfo{person}{Ellen Riloff}, \bibinfo{person}{David
+  Chiang}, \bibinfo{person}{Julia Hockenmaier}, {and}
+  \bibinfo{person}{Jun{'}ichi Tsujii}} (Eds.). \bibinfo{publisher}{Association
+  for Computational Linguistics}, \bibinfo{address}{Brussels, Belgium},
+  \bibinfo{pages}{93--104}.
+\newblock
+\href{https://doi.org/10.18653/v1/D18-1009}{doi:\nolinkurl{10.18653/v1/D18-1009}}
+
+
+\end{thebibliography}

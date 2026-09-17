@@ -1,0 +1,20 @@
+{
+  "rules": [
+    {
+      "id": "longest-option",
+      "channel": "item-cues",
+      "lacks": ["retrieve", "execute", "bind", "distinguish", "explain", "transfer"],
+      "description": "pick the longest option",
+      "citation": "Millman, Bishop, and Ebel (1965)",
+      "appliesTo": ["selected"]
+    },
+    {
+      "id": "percent-of",
+      "channel": "unbound-exec",
+      "lacks": ["bind", "explain"],
+      "description": "p% of n",
+      "citation": "Utah Core 6.RP.3.c",
+      "appliesTo": ["selected", "numeric", "griddable"]
+    }
+  ]
+}

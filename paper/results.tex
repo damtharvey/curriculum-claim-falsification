@@ -1,0 +1,291 @@
+\section{Results}
+\label{sec:results}
+
+\subsection{Controls}
+
+On 1{,}200 synthetic four-option items, each planted atomic program scored $50/50$ on holdout, confidence interval $[1, 1]$. Recall of planted flaw types is $6/6$. False-positive rate on matched clean holdout is 0. That shows the searcher fires when a unique surface cue is planted. It does not show that real released items contain such cues.
+
+On public cue sets, the same 1{,}847-program space, fit on a train split and scored held-out, is summarized in Table~\ref{tab:controls}. The searcher recovers documented shallow cues on at least two corpora whose authors already published an options-only or question-ignored number. A TIMSS null is therefore not a failure of the tool to find anything.
+
+\begin{table*}[t]
+  \caption{Method control: the same 1{,}847-program searcher recovers published options-only or question-ignored rates on OpenBookQA and SWAG. Chance is $0.25$ except CommonsenseQA ($0.20$, five options). RACE and CommonsenseQA do not yield a witness here.}
+  \label{tab:controls}
+  \centering
+  \small
+  \begin{tabular}{l l r r l}
+    \toprule
+    Corpus & Published cue number & Recovered & $n$ & Witness \\
+    \midrule
+    OpenBookQA & $0.496$, question ignored~\cite{mihaylov-etal-2018-suit} & $0.450$ (longest option) & 329 & yes \\
+    SWAG & $0.436$, ending-only~\cite{zellers-etal-2018-swag} & $0.565$ (searched) & 62 & yes \\
+    RACE~\cite{lai-etal-2017-race} & (no official options-only number) & $0.375$ & 8 & no ($n<10$) \\
+    CommonsenseQA~\cite{talmor-etal-2019-commonsenseqa} & chance $0.20$ & $0.227$ & 22 & no \\
+    \bottomrule
+  \end{tabular}
+\end{table*}
+
+\subsection{Power}
+
+A claim cannot clear the bar below $n=10$. For larger $n$, Table~\ref{tab:power} records two floors. The independent-items floor is the smallest observed pass rate whose item-level bootstrap interval excludes chance, at the cell's tagged-item count. The clustered floor is the bypass rate with 80\% power to clear that bar when administrations are resampled. Twenty-one cells in this census have $n\ge 10$. The smallest independent-items floor is $0.284$, on New York Regents Algebra~I ($n=598$); that cell's clustered floor is $0.303$. Public-release TIMSS items tagged knowing, applying, or reasoning pool the 2011 cycle with earlier released cycles at $n=81/68/86$. Independent-item floors are $0.358/0.353/0.372$. Clustered floors at those cell sizes, after applying the selected-response design effect, are $0.400/0.407/0.421$.
+
+\begin{table}[t]
+  \caption{Minimum detectable bypass rate at this cell's $n$ (every tagged item, not the subset a given rule scores). Independent is an item-level bootstrap. Clustered is 80\% power under administration resampling. TIMSS clustered entries apply the selected-response design effect to this $n$ (knowing, applying, reasoning selected-response $n=65/54/68$). TIMSS rows pool 2011 and earlier public-release cycles.}
+  \label{tab:power}
+  \centering
+  \small
+  \begin{tabular}{l l r r r}
+    \toprule
+    Authority & Claim & $n$ & Independent & Clustered \\
+    \midrule
+    NY Regents & Algebra I & 598 & $0.284$ & $0.303$ \\
+    NY Regents & Algebra II & 442 & $0.290$ & $0.308$ \\
+    NY Regents & geometry & 408 & $0.294$ & $0.309$ \\
+    TIMSS & applying & 68 & $0.353$ & $0.407$ \\
+    TIMSS & knowing & 81 & $0.358$ & $0.400$ \\
+    TIMSS & reasoning & 86 & $0.372$ & $0.421$ \\
+    EQAO & grade 6 & 53 & $0.396$ & $0.415$ \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+\subsection{Census}
+
+We ran 350{,}535 local trials. Fitted stem $n$-gram and overlap programs, state to TIMSS and the reverse, do not beat chance on holdout (state to TIMSS applying and reasoning: $36/122 = 0.295$, interval $[0.213, 0.377]$, chance $0.254$). Unbound unit-rate, $y=kx$, and percent-of do not clear the bar on TIMSS, PISA, or NAPLAN numeric items.
+
+No searched or a priori program cleared the bar on TIMSS knowing, applying, or reasoning. Failure to find a witness at a clustered bar that can see a bypass of $0.400$ to $0.421$ on those cells (independent-item floors $0.353$ to $0.372$) does not certify those tags. It shows that this program space, on these public items, did not refute them.
+
+Fifteen catalog rules were scored on every authority-by-claim cell. The a priori family is every (rule, cell) pair with $n$ scored at least 10 and a positive format chance: 105 tests. One PISA numeric unit-rate row with chance $0$ was excluded as degenerate. Five of those 105 tests clear the pre-registered per-cell bar. None of the five survives Holm or Bonferroni at $\alpha=0.05$ (Bonferroni cut $0.00048$). There is no family-wise a priori discovery. Two of the five remain witnesses at the per-cell bar and are candidates for replication, not family-wise discoveries (Table~\ref{tab:witnesses}). Both are the lower-central signed variant of the catalog numeric-central-value cue in Section~\ref{sec:method}. Their one-sided binomial $p$ values are $0.0038$ (geometry, $90/279$) and $0.00070$ (EQAO grade 6, $20/40$).
+
+The claimed $n$ is the number of items on which the rule fires (at least three parseable option numbers): 279 of 408 New York Regents geometry items and 40 of 53 EQAO grade~6 items. The remaining items in those cells are not scored by this rule.
+
+\begin{table*}[t]
+  \caption{Per-cell witnesses, candidates for replication. $n$ is items the rule fires on, not the cell size in Table~\ref{tab:power}. Item interval resamples items; clustered interval resamples administrations (year-session for Regents, year for EQAO). Neither row survives Holm over 105 a priori tests. The EQAO row is specific to the pre-registered lower-central index.}
+  \label{tab:witnesses}
+  \centering
+  \small
+  \begin{tabular}{l l r r l l}
+    \toprule
+    Authority & Claim & $n$ & Pass & Item 95\% CI & Clustered 95\% CI \\
+    \midrule
+    NY Regents & geometry & 279 & $0.323$ & $[0.265, 0.380]$ & $[0.265, 0.374]$ \\
+    EQAO & grade 6 & 40 & $0.500$ & $[0.350, 0.650]$ & $[0.417, 0.588]$ \\
+    \bottomrule
+  \end{tabular}
+\end{table*}
+
+On geometry, 19 of 27 administrations have rate above chance (sign test $p=0.014$); only one administration clears the item bar on its own, so single forms are underpowered and the claim remains the pooled cell. On EQAO grade~6, all three years are above chance by rate; one year clears individually.
+
+On geometry the cue is central-ness: upper-central $0.330$ ($n=279$, item interval $[0.272, 0.387]$) and nearest-to-mean $0.312$ also clear; smallest and largest both $0.219$ do not. On EQAO grade~6 only the pre-registered lower-central index clears; upper-central is $0.250$ (item interval $[0.125, 0.400]$). The EQAO witness is specific to the second-smallest option, not to a middle option in general.
+
+The one-sided claim covers only the matched subset: the 90 geometry items and 20 EQAO grade~6 items on which the rule returns the published key. On those items, matching the key does not require the tagged operation. The rule is a cell-level witness at the per-cell bar on the 279 and 40 items it fires on. It is not a witness against each unmatched item in the cell.
+
+The other three uncorrected clears are not claimed. New York Regents Algebra~II, same lower-central program, is $0.298$ at $n=372$. The item interval is $[0.253, 0.344]$ and the clustered interval is $[0.255, 0.341]$; the lower end sits on chance. Texas Essential Knowledge and Skills (TEKS) Algebra~I stem-number repeat: $0.395$, $n=43$, interval $[0.256, 0.535]$. TEKS grade~5 unit-rate: $0.417$, $n=12$, interval $[0.167, 0.750]$, chance $0.146$. Searched programs that clear the machine bar on TEKS grade~6 and on Regents Algebra~I / geometry have $n$ between 11 and 20. We do not claim them: that $n$ is the witness floor, 1{,}847 programs were searched, and all four searched programs fail a late-administration held-out test (late $n=6$ to $10$, intervals include chance). Fitted $n$-grams fail every temporal slice (state-pooled $0.257$, $n=1243$). One STAAR refit reaches $0.643$ on $n=14$ and is not claimed (train $n=8$, one form, 1{,}562 programs searched).
+
+Table~\ref{tab:middle} is every cell on which the claimed rule scored $n\ge 10$. Two cells clear the per-cell bar and are claimed. Algebra~II clears that bar and is not claimed. Over this 17-cell one-rule slice, Holm at $\alpha=0.05$ keeps EQAO grade 6 and drops geometry. That slice is exploratory: it is the cells this one rule scored, defined after seeing which rule cleared, and the protocol names no primary family. TIMSS reasoning is $0.368$, $n=57$, interval $[0.246, 0.491]$: the interval includes chance, so it is not a witness.
+
+\begin{table*}[t]
+  \caption{Lower-central on every cell with $n\ge 10$ (items the rule fires on). Geometry and EQAO grade~6 are per-cell witnesses. Algebra~II clears the bar and is not claimed. Holm on this 17-cell slice is exploratory. The other 88 of 105 a priori tests are omitted.}
+  \label{tab:middle}
+  \centering
+  \scriptsize
+  \begin{tabular}{l l r r l r l}
+    \toprule
+    Authority & Claim & $n$ & Pass & 95\% CI & Chance & Bar \\
+    \midrule
+    NY Regents & geometry & 279 & $0.323$ & $[0.265, 0.380]$ & $0.250$ & yes (claimed) \\
+    EQAO & grade 6 & 40 & $0.500$ & $[0.350, 0.650]$ & $0.254$ & yes (claimed) \\
+    NY Regents & Algebra II & 372 & $0.298$ & $[0.253, 0.344]$ & $0.250$ & yes (not claimed) \\
+    NY Regents & Algebra I & 458 & $0.260$ & $[0.223, 0.301]$ & $0.250$ & no \\
+    TIMSS & reasoning & 57 & $0.368$ & $[0.246, 0.491]$ & $0.249$ & no \\
+    TIMSS & applying & 50 & $0.240$ & $[0.120, 0.360]$ & $0.249$ & no \\
+    TIMSS & knowing & 41 & $0.293$ & $[0.146, 0.439]$ & $0.248$ & no \\
+    TEKS & Algebra I & 61 & $0.213$ & $[0.115, 0.328]$ & $0.250$ & no \\
+    TEKS & grade 6 & 52 & $0.327$ & $[0.192, 0.462]$ & $0.250$ & no \\
+    TEKS & grade 5 & 49 & $0.347$ & $[0.224, 0.490]$ & $0.250$ & no \\
+    TEKS & grade 8 & 45 & $0.267$ & $[0.156, 0.400]$ & $0.250$ & no \\
+    TEKS & grade 7 & 41 & $0.317$ & $[0.171, 0.463]$ & $0.250$ & no \\
+    TEKS & grade 3 & 36 & $0.278$ & $[0.139, 0.444]$ & $0.250$ & no \\
+    TEKS & grade 4 & 35 & $0.314$ & $[0.171, 0.486]$ & $0.250$ & no \\
+    EQAO & grade 9 & 38 & $0.211$ & $[0.079, 0.342]$ & $0.257$ & no \\
+    EQAO & grade 3 & 33 & $0.242$ & $[0.091, 0.394]$ & $0.253$ & no \\
+    NAPLAN & year 7 & 14 & $0.214$ & $[0.000, 0.429]$ & $0.250$ & no \\
+    \bottomrule
+  \end{tabular}
+\end{table*}
+
+Four further catalog cues were added after the primary scoring: longest option, convergence, stem-word overlap, and mean of other options. Hedge and grammatical never uniquely applied at $n\ge 10$. They give 22 further tests (127 total). The primary Holm family remains the 105 pre-registered tests. The combined family still has no Holm survivor. One further per-cell clear, not independent of the central-value cue, is mean of other options on geometry, $0.327$ ($n=156$, interval $[0.256, 0.404]$).
+
+\subsection{Adaptive strategy channels}
+\label{sec:strategies}
+
+The five strategy programs in Section~\ref{sec:method} are a second family: 67 tests, hashed before scoring, Holm inside the family. Three rows clear the per-cell bar. A 172-test pool with the 105 catalog tests is a sensitivity: the same single Holm reject, and none of the original 105 become Holm rejects. Catalog, strategy, and language-model tests are three Holm families, never one mixed pool.
+
+\paragraph{Arithmetic closure (unbound execution).}
+On STAAR grade~5 the depth-2 closure fires on 40 of 60 selected items and matches 21 of those 40 keys ($0.525$, $n=40$, item 95\% CI $[0.375, 0.675]$, chance $0.250$, one-sided binomial $p=0.000175$). That $p$ is the smallest in the 67-test family (Holm threshold $0.05/67=0.000746$) and remains the only Holm reject in that family and in the 172-test programmatic sensitivity (threshold $0.05/172=0.000291$). It is a discovery-set Holm reject on the frozen 2019/2021/2022 census. It did not replicate on held-out administrations, below. The catalog unit-rate row on the same cell ($0.417$, $n=12$, chance $0.146$) was already scored and unclaimed; closure is a different program with larger $n$, not a second independent mechanism. Grade~5 is the only closure cell that clears on the discovery set. Geometry is $0.196$ ($n=224$, interval $[0.143, 0.250]$), which does not clear.
+
+The registered rule still holds under the pre-registered robustness cuts: depth~1 only is $17/30=0.567$ $[0.400, 0.733]$; depth~2 without the geometry extras $\pi$ and $ab/2$ is $20/40=0.500$ $[0.350, 0.650]$. Lower-central alone on the same 40 items is $13/40=0.325$ $[0.200, 0.475]$ and does not clear. Random tie-breaks among minimum-depth options give expected rate $0.367$ with a 1{,}000-draw interval $[0.250, 0.475]$; observed $0.525$ sits above that interval. Twenty-seven of the 40 picks were settled by the lower-central tie-break among minimum-depth options (15 of those 27 correct); 13 were settled by depth alone. Mean closure density is $3.3$ of 4 options. Clustered by STAAR year the interval is $[0.455, 0.615]$: 2019 $8/13$, 2021 $8/16$, 2022 $5/11$. The sign test on three administrations above chance is $p=0.125$. Those three forms are the whole cell.
+
+Thirteen of the 40 fired stems contain artifact numerals (axis ticks, thousands separators, stem-and-leaf digits, footer grade numbers, leaked neighboring text). That is a construct problem for those 13. The remaining 27, a population defined after the fact, are $16/27=0.593$ $[0.370, 0.778]$. Unique depth-1 closure (exactly one option in the depth-1 set) is 10 of 40 fired, and that unique option is the key on 6 of those 10; $n=10$ is the bar edge. The frozen census row remains the Holm reject in the 67-test discovery family. It is not a confirmed family-wise discovery.
+
+% REPLICATION SLOT
+\paragraph{Replication on held-out STAAR grade~5.}
+The registered prediction was that filtered arithmetic closure on new grade~5 items alone would have a lower 95\% CI strictly above $0.250$. On the version-1 unrepaired parse, 18 of 44 keys match ($0.409$, CI $[0.273, 0.545]$): the prediction is met, and $n=44$ is below the registered power floor of 46. That positive is not described as underpowered. After a mechanical last-option page-leak repair, hashed before rescoring (42 last-option repairs, 3 stacked-fraction rejoins; hand-check 14 agree / 4 disagree / 2 uncertain, 0 key mismatches), 17 of 44 match ($0.386$, CI $[0.250, 0.545]$). The prediction is not met. That null is underpowered ($n=44<46$). English grade~5 forms for 2017 and 2018 were then parsed (the 2015 key, the 2020 test, and the 2023 test were not found). \wip{Further English grade~5 forms for 2015, 2020, and 2023 remain unfetched.} New forms alone are 4 of 20 ($0.200$, CI $[0.050, 0.400]$). Combined repaired plus new is 21 of 64 ($0.328$, CI $[0.219, 0.438]$). Here $n=64\ge 46$. The prediction is not met, and this null is not underpowered. Grade~4 lower-central is still 10 of 17 after repair; 5 of those 10 hits are parse artifacts, and the clean 5 of 9 does not clear. It is not a witness. The Holm-surviving unbound-execution row on the frozen STAAR 2019/2021/2022 grade~5 cell did not replicate on held-out 2013/2014/2016/2017/2018 administrations after the pre-registered option-leak repair. Discovery $0.525$, combined replication $0.328$ with an interval that covers chance.
+
+\paragraph{Hub, elimination, portfolio.}
+The distractor-derivation hub never clears once the random-program 95th percentile is required. Unique-hub share among 992 family-scored items is $0.189$; most hubs are ties broken by lower-central. Geometry is $0.255$ ($n=161$, interval $[0.193, 0.317]$) versus chance $0.250$ and p95 $0.311$. EQAO grade~6 is $0.321$ ($n=28$) versus p95 $0.438$. TEKS grade~4 is the only chance-only clear ($0.455$, $n=22$, interval $[0.273, 0.682]$ versus p95 $0.476$) and is not a witness.
+
+Constraint elimination barely eliminates: mean remaining options stay near 4 (geometry $3.92$, EQAO grade~6 $3.77$), and the share of options removed is $0.025$ on geometry and $0.019$ on EQAO grade~6. Two specified intersections kill the published key (probability with percent-point options; interior-angle $(0,180)$ on a rectangle angle-sum). Key-survival is $0.985$ on geometry, $0.906$ on EQAO grade~6, and $0.877$ on TEKS grade~8. A hand check of 15 keyword-matched items keeps 13 of 15 keys. The two per-cell clears, geometry $0.307$ ($n=404$, interval $[0.262, 0.351]$ versus effective chance $0.254$) and EQAO grade~6 $0.412$ ($n=51$, interval $[0.275, 0.529]$ versus $0.268$), are the lower-central rule again. The keyword-matched geometry subset still clears ($0.352$, $n=162$); the EQAO keyword subset ($n=19$) does not. We keep the catalog lower-central rows as the claimed witnesses on those cells. TIMSS reasoning is $0.379$ ($n=66$, interval $[0.258, 0.500]$ versus effective chance $0.263$) and does not clear.
+
+The portfolio never clears the random-program 95th percentile (Table~\ref{tab:portfolio}). EQAO grade~6 clears chance and one-over-$k$ ($0.453$, $n=53$, interval $[0.321, 0.585]$ versus $0.253$) and still fails p95 $0.472$. Almost all mass is lower-central among survivors.
+
+\begin{table*}[t]
+  \caption{Fixed-order strategy portfolio on the five headline cells. Rate is against effective chance of the branch used. Witnesses in this channel must also exceed the 95th percentile of 200 random programs of matched complexity. No cell clears that bar.}
+  \label{tab:portfolio}
+  \centering
+  \small
+  \begin{tabular}{l l r r r l r l}
+    \toprule
+    Authority & Claim & $n$ & Pass & Eff.\ chance & 95\% CI & p95 & Bar \\
+    \midrule
+    NY Regents & geometry & 408 & $0.279$ & $0.253$ & $[0.238, 0.321]$ & $0.297$ & no \\
+    EQAO & grade 6 & 53 & $0.453$ & $0.267$ & $[0.321, 0.585]$ & $0.472$ & no \\
+    TIMSS & knowing & 65 & $0.308$ & $0.271$ & $[0.200, 0.431]$ & $0.292$ & no \\
+    TIMSS & applying & 54 & $0.333$ & $0.254$ & $[0.204, 0.463]$ & $0.370$ & no \\
+    TIMSS & reasoning & 68 & $0.309$ & $0.263$ & $[0.206, 0.426]$ & $0.338$ & no \\
+    \bottomrule
+  \end{tabular}
+\end{table*}
+
+\paragraph{Backsolving is unmeasured.}
+A second, hashed parse (sha256 \texttt{c5b10dee}\ldots, 2026-09-16 21:07:00 UTC) still does not produce a family row. Among 1{,}186 solving-tagged stems, 42 carry a parseable equation, 6 fire with a unique satisfying option, and 5 of those 6 match the key ($0.833$, interval $[0.500, 1.000]$, $n=6$). No cell reaches $n\ge 10$ fired. TEKS Algebra~I is $3/3$, the TEKS solve student-expectation subset $2/2$, Regents Algebra~I $1/2$, TIMSS algebra $1/1$, EQAO grade~9 $0/52$. The rest of the census fires once in 1{,}059. Most equations in the source PDFs are images; the text layer does not carry them. A hand check of all 7 fired items finds parse correct on 4, wrong on 2, and ambiguous on 1. The original 2020 January Algebra~I inequality now parses but two options satisfy, so the unique-satisfier rule abstains. \wip{Backsolving is still unmeasured: equations in the source PDFs are images.}
+
+\paragraph{Strategy controls.}
+On the same OpenBookQA and SWAG hold-out splits used in Table~\ref{tab:controls}, elimination and portfolio sit on chance (OpenBookQA elimination $0.260$, $n=400$, interval $[0.218, 0.302]$; portfolio $0.268$ $[0.225, 0.310]$; SWAG elimination $0.248$ $[0.205, 0.288]$; portfolio $0.240$ $[0.198, 0.280]$). Numeric hub, closure, and backsolve do not fire on those language items.
+
+\subsection{Partial-input language-model channel}
+\label{sec:partial-input}
+
+A mechanical clean-option filter keeps 1{,}496 of 2{,}245 selected-response items, dropping exam footers, STAAR item codes, country-table fragments, options longer than 120 characters, and bleed from the next stem. TIMSS 2011 is mostly removed by country-table contamination (17 kept). Scorers take the letter with the highest next-token log-probability, with no chain of thought. The witness bar for this channel is $n\ge 10$ and a lower 95\% interval strictly above both format chance and the cell's modal-letter frequency, on items where at least one quantity was withheld. A pass on those items does not require processing the givens. It is not a claim that the model reasons, and not a claim that students guess. \wip{Human ratings on a 40-item Algebra~I masked-stem sheet are being collected; scores are not in.}
+
+\paragraph{Options only.}
+On the 1{,}487 scoreable clean items, both local models score $0.301$ versus chance $0.250$ and always-B $0.275$ (7B interval $[0.277, 0.326]$; 14B $[0.276, 0.323]$). Letter agreement between models is $0.457$. A with-stem sanity check on 7B is $0.460$ on 200 items. A proprietary assistant scored through an audited no-tool transcript scores $0.359$ ($n=1493$, interval $[0.334, 0.384]$). No $n\ge 10$ cell has a 7B lower interval above that cell's modal-letter frequency. Algebra~I is $0.309$ $[0.265, 0.355]$ versus modal B $0.272$ (111 of 408). On the 1{,}026 items whose key is not the cell modal letter, 7B is $0.318$ $[0.288, 0.347]$ versus chance $0.250$. On 14B, Algebra~I is $0.321$ $[0.279, 0.363]$ versus modal $0.272$: the lower interval exceeds the modal frequency. That options-only Algebra~I row is not a claimed witness; the claimed object is the masked-stem condition below. Recency on the proprietary scorer minus 7B is largest before 2015 ($+0.112$, $n=178$), then $+0.024$ in 2015--2019 ($n=578$) and $+0.069$ in 2020 and later ($n=712$).
+
+\paragraph{Masked stem plus options.}
+Every numeral, number word, fraction, percentage, decimal, and value binding in the stem is replaced by $[N]$. Question wording, units, and options remain. Of 1{,}487 scored items, 272 had nothing withheld; the primary population is the other 1{,}215. First-run pooled rates on all 1{,}487 (7B $0.405$, 14B $0.425$) mix those 272 in and are not the claim. On the withheld-quantity population, Regents Algebra~I is $139/358=0.388$ $[0.341, 0.439]$ on 7B and $149/358=0.416$ $[0.363, 0.469]$ on 14B, versus chance $0.250$ and modal B $0.271$ (97 of 358). Algebra~II is $91/248=0.367$ $[0.306, 0.423]$ on 7B and $89/248=0.359$ $[0.298, 0.415]$ on 14B, versus chance $0.250$ and modal C $0.278$ (69 of 248). Both cells clear both bars on both models (Table~\ref{tab:masked}). Geometry does not beat its modal letter $0.289$ on 7B ($0.319$, $n=166$, interval $[0.253, 0.392]$) and does not clear chance on 14B ($0.301$ $[0.235, 0.373]$). EQAO grade~6 does not clear chance on 7B ($0.400$, $n=40$, interval $[0.225, 0.575]$ versus $0.255$). TIMSS knowing on this population does not beat its modal letter $0.409$ on 7B ($0.500$, $n=22$, interval $[0.318, 0.682]$). The first-run TIMSS knowing rate $0.657$ ($n=35$) was carried by items where nothing was withheld: of 35 items, 18 are knowledge-answerable without any quantity, 12 are cue-readable from the leftover option set, and 5 are unclear.
+
+One-sided binomial $p$ against chance on the withheld-quantity population: Algebra~I $5.7\times 10^{-9}$ (Qwen 7B), $4.5\times 10^{-12}$ (Qwen 14B), and $9.4\times 10^{-13}$ (Phi-4); Algebra~II $2.9\times 10^{-5}$ (7B), $9.0\times 10^{-5}$ (14B), and $4.2\times 10^{-4}$ (Phi-4); Phi-4 geometry $9.9\times 10^{-6}$ ($67/166$). Against the cell modal frequency: Algebra~I $9.4\times 10^{-7}$, $2.2\times 10^{-9}$, and $5.6\times 10^{-10}$; Algebra~II $0.00147$, $0.00343$, and $0.011$; Phi-4 geometry $0.00104$. The language-model Holm family is every scored (model, cell) on the withheld-quantity masked-stem population with $n\ge 10$: 68 tests (four models, 17 cells). Options-only is a ladder rung, not a member of that family. Holm at $\alpha=0.05$ in that family, against chance, rejects both Qwen Algebra~I rows, both Qwen Algebra~II rows, Phi-4 Algebra~I, Phi-4 Algebra~II, Phi-4 geometry, and Qwen 7B TEKS grade~8. Claimed cells are those that clear the registered channel bar, lower 95\% CI above chance and above the cell modal-letter frequency, on a capable scorer. Scorers are not averaged. That set is Algebra~I and Algebra~II on Qwen 7B, Qwen 14B, and Phi-4, and geometry on Phi-4 ($67/166=0.404$, CI $[0.331, 0.476]$, versus chance $0.250$ and modal B $0.289$). Qwen geometry does not clear that bar. Qwen 7B TEKS grade~5 ($18/38=0.474$, CI $[0.316, 0.632]$ versus modal $0.263$) and grade~8 ($12/18=0.667$, CI $[0.444, 0.889]$ versus modal $0.389$) clear the bar on 7B only and fail it on Qwen 14B and on Phi-4; they are scorer-specific rows, not claimed witnesses. Qwen 14B TIMSS knowing rejects Holm against chance and does not beat its population modal $0.409$ (lower CI $0.409$). Mistral clears none of these cells on both bars.
+
+\paragraph{Contamination probes.}
+On the withheld-quantity items, 7B masked-stem accuracy by quartile of mean token log-probability of the original unmasked stem plus options is $0.349$ in Q1 versus $0.439$ in Q4 (Spearman $0.091$; 14B Spearman $0.107$, Q4 minus Q1 $0.120$). Recency on all 1{,}487 masked-stem 7B items is flat: $0.416$ / $0.409$ / $0.399$ / $0.402$ across before 2015, 2015 to 2019, 2020 to 2023, and 2024 and later ($n=178$ / $579$ / $383$ / $331$). Option permutation on the withheld-quantity items (7B) is $0.385$ $[0.357, 0.412]$ versus $0.376$ unpermuted; Algebra~I is $0.405$ $[0.355, 0.453]$. Version-2 masking (named figures, bindings, leftover coefficients) on the version-1 withheld-quantity overlap is $0.370$ versus $0.376$, delta $-0.007$ (McNemar 50 version-2-only correct, 58 version-1-only). Extra masking does not create the channel.
+
+\paragraph{Scorer dependence.}
+The claim is existential. A reader exists, Qwen2.5-7B-Instruct and Qwen2.5-14B-Instruct, that recovers the key from question type plus option form on the withheld-quantity population; the contamination probes above are negative for that reader. A weaker reader does not. Mistral-7B-Instruct-v0.3 (revision \texttt{c170c708}\allowbreak\texttt{c41dac92}\allowbreak\texttt{75d15a8f}\allowbreak\texttt{ff4eca08}\allowbreak\texttt{d52bab71}) on the primary population: Algebra~I $0.302$ $[0.257, 0.349]$ clears chance $0.250$ but not modal B $0.271$; Algebra~II $0.262$ $[0.210, 0.319]$ clears neither; pooled masked-stem $0.277$ versus options-only $0.249$. We report that row in Table~\ref{tab:masked} and do not average across scorers.
+
+Phi-4 (\texttt{microsoft/phi-4}, revision \texttt{2db69c1c}\allowbreak\texttt{3e91a05d}\allowbreak\texttt{2c64a318}\allowbreak\texttt{5acfbaf3}\allowbreak\texttt{6f744e25}), a 14-billion-parameter instruct model outside the Qwen family, clears both bars on Algebra~I, Algebra~II, and geometry: Algebra~I $0.422$ $[0.374, 0.472]$ versus chance $0.250$ and modal B $0.271$; Algebra~II $0.347$ $[0.286, 0.407]$ versus chance $0.250$ and modal C $0.278$; geometry $0.404$ $[0.331, 0.476]$ versus chance $0.250$ and modal B $0.289$ ($n=166$). Pooled masked-stem is $0.401$ $[0.374, 0.426]$ versus options-only $0.291$ (McNemar $277/143$). Residual with none of the four catalog cues is $0.380$ $[0.307, 0.460]$ ($n=163$). Numeric options also clear chance ($0.366$, $n=71$). Mistral's with-stem letter-argmax ceiling matches its masked-stem rate: Algebra~I $0.304$ $[0.257, 0.352]$ (chance only versus modal $0.271$) and Algebra~II $0.290$ $[0.230, 0.347]$ (neither), against masked-stem $0.302$ and $0.262$. That miss is capability, not a missing cue. The claim remains existential and now holds on two model families (Table~\ref{tab:scorer}). Geometry is claimed on Phi-4 only: Qwen 7B does not beat geometry's modal letter, and Qwen 14B does not clear chance on that cell.
+
+\begin{table*}[t]
+  \caption{With-stem letter-argmax ceiling versus masked-stem on withheld-quantity Algebra~I ($n=358$). Bar: lower 95\% CI above chance $0.250$ and modal B $0.271$. Mistral's ceiling is the masked-stem rate.}
+  \label{tab:scorer}
+  \centering
+  \small
+  \begin{tabular}{l l l l}
+    \toprule
+    Scorer & With stem & Masked stem & Bar \\
+    \midrule
+    Mistral 7B & $0.304$ $[0.257, 0.352]$ & $0.302$ $[0.257, 0.349]$ & chance only \\
+    Qwen 7B & $0.508$ $[0.461, 0.559]$ & $0.388$ $[0.341, 0.439]$ & both \\
+    Qwen 14B & $0.575$ $[0.525, 0.626]$ & $0.416$ $[0.363, 0.469]$ & both \\
+    Phi-4 & $0.497$ $[0.447, 0.553]$ & $0.422$ $[0.374, 0.472]$ & both \\
+    \bottomrule
+  \end{tabular}
+\end{table*}
+
+\paragraph{What the channel measures.}
+Cue attribution on Qwen 14B Algebra~I: rate when the key is versus is not the lower-central option $0.341$ ($n=82$) versus $0.438$ ($n=276$); modal letter $0.454$ ($n=97$) versus $0.402$ ($n=261$); hub $0.370$ ($n=46$) versus $0.423$ ($n=312$); unique longest $0.333$ ($n=42$) versus $0.427$ ($n=316$); residual with none of the four cues $0.442$ $[0.368, 0.521]$, $n=163$, versus chance $0.250$. Option type: algebraic expressions $0.462$ ($n=65$), text $0.452$ ($n=188$), numeric $0.310$ ($n=71$), mixed $0.385$ ($n=26$), ordered pairs $0.250$ ($n=8$). Phi-4 on the same Algebra~I split: residual $0.380$ $[0.307, 0.460]$ ($n=163$); algebraic $0.369$ ($n=65$), text $0.473$ ($n=188$), numeric $0.366$ $[0.254, 0.479]$ ($n=71$, clears chance), mixed $0.308$ ($n=26$), ordered pairs $0.500$ ($n=8$). On Qwen 14B the leftover is strongest on expression and text options and is weak on numeric options; Phi-4 also clears chance on numeric options. The reader uses cues outside the catalog. On those items a pass does not require executing the tagged computation on the givens; it may require recognizing the form the wording names.
+
+\paragraph{An item with the quantities hidden.}
+New York Regents Algebra~I, January 2023, item 22.
+
+The item id is \path{nyregents-algebra-i-2023-jan-q22}.
+
+Masked stem:
+
+{\small
+\begin{quote}
+If the zeros of the function $g(x)$ are $\{[N],[N],[N]\}$, which function could represent $g(x)$?
+
+A.\ $g(x)=(x+3)(x-4)$\\
+B.\ $g(x)=(x-3)(x+4)$\\
+C.\ $g(x)=x(x+3)(x-4)$\\
+D.\ $g(x)=x(x-3)(x+4)$
+\end{quote}
+}
+
+Published key: C. Qwen 14B letter-argmax picks C. The visible cue is the three placeholders in the zero set, which match the three-factor option that includes an $x$.
+
+\begin{table*}[t]
+  \caption{Partial-input language-model channel on named cells, Qwen and Mistral, withheld-quantity population. Chance is mean $1/k$. Modal is the cell's modal key-letter frequency on that population. Bar: $n\ge 10$ and lower 95\% CI above chance and above that modal frequency. Algebra~I and Algebra~II on Qwen2.5-7B and 14B are claimed here; Phi-4 on Algebra~I, Algebra~II, and geometry is in Table~\ref{tab:scorer} and in the scorer-dependence paragraph. Geometry on Qwen and Mistral does not clear; it is claimed on Phi-4 only. TEKS grade~5 and grade~8 clear on Qwen 7B only and are not claimed. Mistral-7B-Instruct-v0.3 does not clear.}
+  \label{tab:masked}
+  \centering
+  \scriptsize
+  \begin{tabular}{l r l l l r r l}
+    \toprule
+    Claim & $n$ & Qwen 7B & Qwen 14B & Mistral 7B & Chance & Modal & Bar \\
+    \midrule
+    Algebra I & 358 & $0.388$ $[0.341, 0.439]$ & $0.416$ $[0.363, 0.469]$ & $0.302$ $[0.257, 0.349]$ & $0.250$ & $0.271$ & Qwen; not Mistral \\
+    Algebra II & 248 & $0.367$ $[0.306, 0.423]$ & $0.359$ $[0.298, 0.415]$ & $0.262$ $[0.210, 0.319]$ & $0.250$ & $0.278$ & Qwen; not Mistral \\
+    geometry & 166 & $0.319$ $[0.253, 0.392]$ & $0.301$ $[0.235, 0.373]$ & $0.295$ $[0.229, 0.373]$ & $0.250$ & $0.289$ & Phi-4 only \\
+    EQAO grade 6 & 40 & $0.400$ $[0.225, 0.575]$ & $0.425$ $[0.300, 0.575]$ & $0.150$ $[0.050, 0.275]$ & $0.255$ & $0.475$ & none \\
+    TIMSS knowing & 22 & $0.500$ $[0.318, 0.682]$ & $0.591$ $[0.409, 0.773]$ & $0.364$ $[0.136, 0.545]$ & $0.248$ & $0.409$ & none \\
+    TIMSS applying & 24 & $0.375$ $[0.208, 0.583]$ & $0.375$ $[0.208, 0.583]$ & $0.167$ $[0.042, 0.333]$ & $0.248$ & $0.333$ & none \\
+    TIMSS reasoning & 42 & $0.286$ $[0.167, 0.429]$ & $0.310$ $[0.167, 0.452]$ & $0.238$ $[0.119, 0.381]$ & $0.261$ & $0.286$ & none \\
+    TEKS grade 5 & 38 & $0.474$ $[0.316, 0.632]$ & $0.368$ $[0.211, 0.526]$ & $0.184$ $[0.079, 0.316]$ & $0.250$ & $0.263$ & 7B only; not claimed \\
+    TEKS grade 8 & 18 & $0.667$ $[0.444, 0.889]$ & $0.611$ $[0.389, 0.833]$ & $0.389$ $[0.167, 0.611]$ & $0.250$ & $0.389$ & 7B only; not claimed \\
+    \bottomrule
+  \end{tabular}
+\end{table*}
+
+On the same withheld-quantity Algebra~I and Algebra~II items, letter-argmax with the original stem (no chain of thought) is higher than masked-stem, and masked-stem is higher than options-only (Table~\ref{tab:ladder}).
+
+\begin{table*}[t]
+  \caption{Information ladder on withheld-quantity Algebra~I ($n=358$) and Algebra~II ($n=248$), Qwen 7B and 14B. Each rung adds one kind of information; the gap between masked-stem and with-stem is what the givens buy.}
+  \label{tab:ladder}
+  \centering
+  \small
+  \begin{tabular}{l l r r r r r}
+    \toprule
+    Claim & Model & Chance & Modal & Options & Masked & With stem \\
+    \midrule
+    Algebra I & Qwen 7B & $0.250$ & $0.271$ $[0.226, 0.318]$ & $0.313$ $[0.268, 0.360]$ & $0.388$ $[0.341, 0.439]$ & $0.508$ $[0.461, 0.559]$ \\
+    Algebra I & Qwen 14B & $0.250$ & $0.271$ $[0.226, 0.318]$ & $0.332$ $[0.285, 0.380]$ & $0.416$ $[0.363, 0.469]$ & $0.575$ $[0.525, 0.626]$ \\
+    Algebra II & Qwen 7B & $0.250$ & $0.278$ $[0.222, 0.331]$ & $0.274$ $[0.218, 0.335]$ & $0.367$ $[0.306, 0.423]$ & $0.403$ $[0.339, 0.464]$ \\
+    Algebra II & Qwen 14B & $0.250$ & $0.278$ $[0.222, 0.331]$ & $0.286$ $[0.234, 0.343]$ & $0.359$ $[0.298, 0.415]$ & $0.440$ $[0.379, 0.500]$ \\
+    \bottomrule
+  \end{tabular}
+\end{table*}
+
+\subsection{An item the lower-central rule answers}
+
+EQAO 2023 grade~6, released questions, printed card page 8 (key table page 21). Stem: ``Which number has 4 as its tenths digit?''
+
+\begin{quote}
+A. $92.174$\quad B. $85.043$\quad C. $79.451$\quad D. $43.256$
+\end{quote}
+
+Published key: C. File tag B1-KU: B1 is EQAO's content code on this item; KU is the knowledge-and-understanding category. Item id \texttt{eqao-2023-g6-q1}.
+
+The sorted numbers are $43.256$, $79.451$, $85.043$, $92.174$. The rule picks index $\lfloor (4-1)/2 \rfloor = 1$, which is $79.451$, option C. The program never reads the stem and does not inspect tenths digits. Matching the key on this item does not require identifying a tenths digit.
+
+The geometry row is the same program on 279 Part~I items, the multiple-choice session of the New York Regents geometry examination. Several of our text-layer stems are too messy to print; the rate is the result, not a single photographed page.
+
+EQAO grade~6 and NY Regents geometry are exam or grade labels, not TIMSS reasoning. We do not rank Ontario, New York, or TIMSS.
+
+\subsection{What would refute these claims}
+
+The two catalog lower-central claims would be false if the published keys on the scored items were wrong, if the implemented rule picked any index other than $\lfloor (n-1)/2 \rfloor$ on the sorted parsed option values, or if a recomputed lower 95\% bootstrap confidence interval on the same correct/incorrect flags did not exceed chance, including the administration-clustered interval. A family-wise Holm miss is not a refutation of the per-cell bar; it is reported above. An EQAO witness under upper-central or nearest-to-mean would also change the specification claim on that row.
+
+The STAAR grade~5 closure discovery would be false if the published keys on those 40 fired items were wrong, if the implemented depth-2 closure with the registered tie-break did not produce 21 correct, or if the one-sided binomial $p$ against chance $0.25$ were larger than the Holm threshold on 67. That row is a discovery-set Holm reject that failed replication: the registered prediction on held-out filtered grade~5 items was a lower 95\% CI strictly above $0.250$, and the powered combined set is $21/64=0.328$, CI $[0.219, 0.438]$. Artifact numerals on 13 discovery stems and the three-administration sign test remain caveats on the discovery construct.
+
+The Algebra~I, Algebra~II, and Phi-4 geometry masked-stem claims would be false if a recomputed lower 95\% interval on the withheld-quantity items did not exceed both chance and the cell modal-letter frequency on that scorer, or if the masking left a computable given quantity in the stem. A Holm miss against chance in the 68-test family would remove the family-wise statement; it would not by itself remove the per-cell channel bar if the interval still cleared. Mistral failing the same bar does not refute the Qwen or Phi-4 rows. A with-stem ceiling at the masked-stem rate, as on Mistral, is a capability miss, not a missing-cue miss.
+
+A TIMSS knowing, applying, or reasoning witness would have been any catalog, strategy, or partial-input program that clears the bar stated for its channel, including the withheld-quantity language-model bar. No such row exists in this file. Bypass rates below the clustered floors in Table~\ref{tab:power} would not have been seen.
