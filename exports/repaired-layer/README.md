@@ -94,21 +94,21 @@ Join `exports/standards-split/item-standards.jsonl` with the locked cluster tabl
 
 ## Rank-preserving isomorph on repaired options
 
-Same numeral substitution as `scripts/perturb_option_numerals.py`, applied to transcription-1 options. Rank-preserving arm only. Items whose perturbation raised or timed out (`perturbFailed`, n=5) are excluded from this table; items with no numeral stay in.
+Same numeral substitution as `scripts/perturb_option_numerals.py`, applied to transcription-1 options. Rank-preserving arm only. Items whose perturbation raised or timed out (`perturbFailed`, n=4 after the rerun that recovered `nyregents-algebra-ii-2023-jun-q4`) are excluded from this table; items with no numeral stay in.
 
 | model | cell | subset | n | rate | 95% CI | modal (freq) | bar |
 |---|---|---|---:|---:|---|---|---|
 | Qwen2.5-7B-Instruct | Algebra I | rank-preserving / repaired all | 342 | 0.471 | [0.418, 0.523] | C (0.272) | yes |
 | Qwen2.5-7B-Instruct | Algebra I | rank-preserving / verified | 260 | 0.500 | [0.438, 0.562] | B (0.288) | yes |
-| Qwen2.5-7B-Instruct | Algebra II | rank-preserving / repaired all | 227 | 0.392 | [0.330, 0.454] | C (0.282) | yes |
+| Qwen2.5-7B-Instruct | Algebra II | rank-preserving / repaired all | 228 | 0.395 | [0.329, 0.456] | C (0.281) | yes |
 | Qwen2.5-7B-Instruct | Algebra II | rank-preserving / verified | 165 | 0.412 | [0.339, 0.485] | C (0.273) | yes |
 | Qwen2.5-14B-Instruct | Algebra I | rank-preserving / repaired all | 342 | 0.430 | [0.377, 0.482] | C (0.272) | yes |
 | Qwen2.5-14B-Instruct | Algebra I | rank-preserving / verified | 260 | 0.465 | [0.404, 0.527] | B (0.288) | yes |
-| Qwen2.5-14B-Instruct | Algebra II | rank-preserving / repaired all | 227 | 0.374 | [0.308, 0.436] | C (0.282) | yes |
+| Qwen2.5-14B-Instruct | Algebra II | rank-preserving / repaired all | 228 | 0.377 | [0.320, 0.439] | C (0.281) | yes |
 | Qwen2.5-14B-Instruct | Algebra II | rank-preserving / verified | 165 | 0.394 | [0.321, 0.473] | C (0.273) | yes |
 | Phi-4 | Algebra I | rank-preserving / repaired all | 342 | 0.409 | [0.357, 0.459] | C (0.272) | yes |
 | Phi-4 | Algebra I | rank-preserving / verified | 260 | 0.419 | [0.354, 0.477] | B (0.288) | yes |
-| Phi-4 | Algebra II | rank-preserving / repaired all | 227 | 0.352 | [0.291, 0.414] | C (0.282) | yes |
+| Phi-4 | Algebra II | rank-preserving / repaired all | 228 | 0.351 | [0.289, 0.408] | C (0.281) | yes |
 | Phi-4 | Algebra II | rank-preserving / verified | 165 | 0.382 | [0.315, 0.461] | C (0.273) | yes |
 
 ## Catalog lower-central on repaired options

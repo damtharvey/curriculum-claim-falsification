@@ -1,0 +1,3 @@
+- `execution`: to pick the key you must operate on the specific given quantities (solve, evaluate, compute, factor with these coefficients, rewrite this expression, create an equation from these numbers, graph from this equation, find this value).
+- `recognition_or_interpretation`: you can pick the key by recognizing or interpreting the form, meaning, or property named in the wording (which expression is equivalent in form, which statement describes, identify the type of function, interpret a parameter, choose the correct definition, read a feature off a described graph) without computing on the given numbers.
+- `mixed`: needs both, or the key needs a small computation that any option-form reading would also give.

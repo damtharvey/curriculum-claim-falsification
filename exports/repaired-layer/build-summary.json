@@ -4,7 +4,7 @@
   "nKeyMissing": 0,
   "nBelowMinMaskedTokenCount": 17,
   "nWithheldQuantity": 574,
-  "nPerturbFailed": 5,
+  "nPerturbFailed": 4,
   "verification": {
     "all": {
       "n": 606,
