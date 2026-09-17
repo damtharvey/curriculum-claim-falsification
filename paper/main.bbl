@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{35}
+\begin{thebibliography}{37}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -141,6 +141,18 @@
   \bibinfo{number}{2} (\bibinfo{year}{2016}), \bibinfo{pages}{253--273}.
 \newblock
 \href{https://doi.org/10.1007/s11336-015-9467-8}{doi:\nolinkurl{10.1007/s11336-015-9467-8}}
+
+
+\bibitem[Fan and Bialo(2026)]%
+        {Fan_Bialo_2026}
+\bibfield{author}{\bibinfo{person}{Kevin Fan} {and}
+  \bibinfo{person}{Jacquelyn~A. Bialo}.} \bibinfo{year}{2026}\natexlab{}.
+\newblock \showarticletitle{The Use of {AI} Tools to Develop and Validate
+  {Q}-Matrices}. In \bibinfo{booktitle}{\emph{Proceedings of the 90th Annual
+  International Meeting of the Psychometric Society}}.
+  \bibinfo{publisher}{Psychometric Society}.
+\newblock
+\href{https://doi.org/10.64028/imps2025.whsmqf4ego}{doi:\nolinkurl{10.64028/imps2025.whsmqf4ego}}
 
 
 \bibitem[Fang et~al\mbox{.}(2025)]%
@@ -570,6 +582,24 @@
   \bibinfo{pages}{93--104}.
 \newblock
 \href{https://doi.org/10.18653/v1/D18-1009}{doi:\nolinkurl{10.18653/v1/D18-1009}}
+
+
+\bibitem[Zhang et~al\mbox{.}(2024)]%
+        {zhang2024gsm1k}
+\bibfield{author}{\bibinfo{person}{Hugh Zhang}, \bibinfo{person}{Jeff Da},
+  \bibinfo{person}{Dean Lee}, \bibinfo{person}{Vaughn Robinson},
+  \bibinfo{person}{Catherine Wu}, \bibinfo{person}{Will Song},
+  \bibinfo{person}{Tiffany Zhao}, \bibinfo{person}{Pranav Raja},
+  \bibinfo{person}{Charlotte Zhuang}, \bibinfo{person}{Dylan Slack},
+  \bibinfo{person}{Qin Lyu}, \bibinfo{person}{Sean Hendryx},
+  \bibinfo{person}{Russell Kaplan}, \bibinfo{person}{Michele Lunati}, {and}
+  \bibinfo{person}{Summer Yue}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{A Careful Examination of Large Language Model
+  Performance on Grade School Arithmetic}. In
+  \bibinfo{booktitle}{\emph{Advances in Neural Information Processing Systems
+  37 (NeurIPS 2024)}}. \bibinfo{pages}{46819--46836}.
+\newblock
+\href{https://doi.org/10.52202/079017-1485}{doi:\nolinkurl{10.52202/079017-1485}}
 
 
 \end{thebibliography}

@@ -5,9 +5,29 @@ An assessment item arrives with a claim about what answering it requires. Utah C
 
 That inference is an argument, not a definition~\cite{Kane_1992,Kane_2013,Messick_1995}. It can be wrong even when the publisher's tag is sincere. The item may be answerable from a surface cue, from the choices without the stem, or from a formula that never binds symbols to the situation the standard names.
 
-This paper searches for those rival explanations as programs. A program that lacks an operation the tag names, never sees the published key, and still matches the key under the published scoring rule is a \emph{witness}. A witness refutes the claim that a pass on that item requires the tagged operation. A search that finds no witness does not certify the tag beyond the programs that were tried. We do not estimate whether students learned the skill, whether humans use the shortcuts, or which curriculum is better. We never say students do not learn~$X$.
+This paper searches for those rival explanations as deficient solver policies. Write $C$ for the tagged competency, $T$ for the tagged items of a cell, and $R$ for the published scoring rule. An \emph{assessment bypass} is a policy $S$ that lacks $C$ yet passes: $S \not\models C$ but $\operatorname{Pass}(S,T,R)=1$. A deficient policy is defined by explicit restrictions on the operations or on the information it receives, so what it lacks is a fact about its specification, not about its internals. The restrictions are of two kinds. Capability-restricted policies (item-writing cues, test-taking strategies, substitution of the options into the printed equation) lack the tagged operation because it is not in their instruction set. Information-restricted policies (a language model shown the question with every given quantity replaced by a placeholder, which we call masked-stem) have the operations and lack the inputs. A bypass by either kind, found without seeing the published key, is a \emph{witness} that the pass does not require the part of the competency the policy was denied. A search that finds no bypass does not certify the tag beyond the policies that were tried. We do not estimate whether students learned the skill, whether humans use the shortcuts, or which curriculum is better. We never say students do not learn~$X$.
 
-Results are pass rates of named programs on cells (an authority-by-tag group of items), not an item-by-operation table. The catalog rules lack every content operation. The language-model channel, which we call masked-stem, shows a model the question with every given quantity replaced by a placeholder, so what it lacks is information rather than an operation. TIMSS items keep their knowing, applying, and reasoning tags; we do not assign CCSS codes to TIMSS items.
+A tag can be read as making one of five progressively stronger claims (Table~\ref{tab:claim-ladder}). Alignment tools, which match item text to a standard, address Mention and Opportunity. This paper tests Requirement: does passing require the tagged competency. A bypass refutes Requirement on that cell. Discrimination and retention need student responses and are not tested here.
+
+\begin{table}[t]
+  \caption{Five claims a tag can be read as making, from weakest to strongest. This paper tests the third.}
+  \label{tab:claim-ladder}
+  \centering
+  \small
+  \begin{tabular}{l L{4.7cm}}
+    \toprule
+    Level & Claim \\
+    \midrule
+    Mention & The material contains the topic. \\
+    Opportunity & The student is given an opportunity to use the competency. \\
+    Requirement & Passing requires the competency. \\
+    Discrimination & Performance separates students who have the competency from those who do not. \\
+    Retention and transfer & The competency remains usable after delay and under different conditions. \\
+    \bottomrule
+  \end{tabular}
+\end{table}
+
+Results are pass rates of named deficient policies on cells (an authority-by-tag group of items), not a table of items by operation. The pass rate of a deficient family on a cell is a vulnerability measure, meaningful only relative to that documented family, and never a probability that a student lacks the competency. TIMSS items keep their knowing, applying, and reasoning tags; we do not assign CCSS codes to TIMSS items.
 
 Our contributions are the object, the bar, the census, and what the census found.
 
