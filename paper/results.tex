@@ -59,7 +59,7 @@ Fifteen catalog rules were scored on every authority-by-claim cell. The a priori
 The claimed $n$ is the number of items on which the rule fires (at least three parseable option numbers): 279 of 408 New York Regents geometry items and 40 of 53 EQAO grade~6 items. The remaining items in those cells are not scored by this rule.
 
 \begin{table*}[t]
-  \caption{Per-cell catalog existence rows, candidates for replication, not family-wise discoveries. $n$ is items the rule fires on, not the cell size in Table~\ref{tab:power}. Item interval resamples items; clustered interval resamples administrations (year-session for Regents, year for EQAO). Neither row survives Holm over 105 a priori tests. The EQAO row is specific to the pre-registered lower-central index; the existence claim is the item interval on $n=40$.}
+  \caption{Per-cell catalog existence rows: they beat chance in that cell and are candidates for replication, not family-wise discoveries. $n$ is items the rule fires on, not the cell size in Table~\ref{tab:power}. Item interval resamples items; clustered interval resamples administrations (year-session for Regents, year for EQAO). Neither row survives Holm (family-wise multiple-testing adjustment) over 105 a priori tests. The EQAO row is specific to the second-smallest option; the existence claim is the item interval on $n=40$.}
   \label{tab:witnesses}
   \centering
   \small
@@ -184,7 +184,7 @@ The claim is existential. A reader exists in the Qwen2.5 family (7B-Instruct and
 Phi-4 (\texttt{microsoft/phi-4}, revision \texttt{2db69c1c}\allowbreak\texttt{3e91a05d}\allowbreak\texttt{2c64a318}\allowbreak\texttt{5acfbaf3}\allowbreak\texttt{6f744e25}), a 14-billion-parameter instruct model outside the Qwen family, clears both bars on Algebra~I and Algebra~II: Algebra~I $0.422$ $[0.374, 0.472]$ versus chance $0.250$ and modal B $0.271$; Algebra~II $0.347$ $[0.286, 0.407]$ versus chance $0.250$ and modal C $0.278$. Algebra~I residual with none of the four catalog cues is $0.380$ $[0.307, 0.460]$ ($n=163$); non-modal-key accuracy is $0.387$ ($n=261$, CI above $0.250$). Numeric options also clear chance ($0.366$, $n=71$). Geometry meets the cell bar ($0.404$ $[0.331, 0.476]$ versus chance $0.250$ and modal B $0.289$, $n=166$) but not the non-modal-key split ($0.229$, $n=118$, CI $[0.161, 0.305]$) and is not claimed. Pooled masked-stem is $0.401$ $[0.374, 0.426]$ versus options-only $0.291$ (McNemar $277/143$). Mistral's with-stem letter-argmax ceiling matches its masked-stem rate: Algebra~I $0.304$ $[0.257, 0.352]$ (chance only versus modal $0.271$) and Algebra~II $0.290$ $[0.230, 0.347]$ (neither), against masked-stem $0.302$ and $0.262$. That miss is capability, not a missing cue. The Algebra~I and Algebra~II claim remains existential and holds in two model families, Qwen2.5 and Phi-4 (Table~\ref{tab:scorer}). Qwen 7B does not beat geometry's modal letter, and Qwen 14B does not clear chance on that cell.
 
 \begin{table*}[t]
-  \caption{With-stem letter-argmax ceiling versus masked-stem on withheld-quantity Algebra~I ($n=358$). Bar: lower 95\% CI above chance $0.250$ and modal B $0.271$. Mistral's ceiling is the masked-stem rate.}
+  \caption{With-stem letter-argmax ceiling versus masked-stem (given quantities replaced by placeholders) on withheld-quantity Algebra~I ($n=358$). Bar: lower 95\% CI above chance $0.250$ and modal B $0.271$. Mistral's ceiling is the masked-stem rate.}
   \label{tab:scorer}
   \centering
   \small
@@ -224,7 +224,7 @@ D.\ $g(x)=x(x-3)(x+4)$
 Published key: C. Qwen 14B letter-argmax picks C. The visible cue is the three placeholders in the zero set, which match the three-factor option that includes an $x$. That is form recognition of $n$ factors from $n$ placeholders, not execution of the tagged computation on the given zeros.
 
 \begin{table*}[t]
-  \caption{Partial-input language-model channel on named cells, Qwen and Mistral, withheld-quantity population. Chance is mean $1/k$. Modal is the cell's modal key-letter frequency on that population. Bar: $n\ge 10$ and lower 95\% CI above chance and above that modal frequency. Claimed cells are Algebra~I and Algebra~II on Qwen2.5-7B and 14B; Phi-4 on those two cells is in Table~\ref{tab:scorer}. Geometry is an unlabeled row: Phi-4 meets the cell bar but not the non-modal-key split ($0.229$, $n=118$, CI $[0.161, 0.305]$) and is not claimed. TEKS grade~5 and grade~8 clear on Qwen 7B only and are not claimed. Mistral-7B-Instruct-v0.3 does not clear.}
+  \caption{Partial-input language-model channel on named cells, Qwen and Mistral, withheld-quantity population. Chance is mean $1/k$. Modal is the cell's modal key-letter frequency on that population. Bar: $n\ge 10$ and lower 95\% CI above chance and above that modal frequency. Claimed cells are Algebra~I and Algebra~II on Qwen2.5-7B and 14B; Phi-4 on those two cells is in Table~\ref{tab:scorer}. Geometry is an unlabeled row: Phi-4 meets the cell bar but not the split on items whose key is not the cell's most common letter ($0.229$, $n=118$, CI $[0.161, 0.305]$) and is not claimed. TEKS grade~5 and grade~8 clear on Qwen 7B only and are not claimed. Mistral-7B-Instruct-v0.3 does not clear.}
   \label{tab:masked}
   \centering
   \scriptsize
@@ -248,7 +248,7 @@ Published key: C. Qwen 14B letter-argmax picks C. The visible cue is the three p
 On the same withheld-quantity Algebra~I and Algebra~II items, letter-argmax with the original stem (no chain of thought) is higher than masked-stem, and masked-stem is higher than options-only (Table~\ref{tab:ladder}).
 
 \begin{table*}[t]
-  \caption{Information ladder on withheld-quantity Algebra~I ($n=358$) and Algebra~II ($n=248$), Qwen 7B and 14B. Each rung adds one kind of information; the gap between masked-stem and with-stem is what the givens buy.}
+  \caption{Information ladder on withheld-quantity Algebra~I ($n=358$) and Algebra~II ($n=248$), Qwen 7B and 14B. Each rung adds one kind of information; the gap between masked-stem and with-stem is what the given quantities buy.}
   \label{tab:ladder}
   \centering
   \small
