@@ -13,6 +13,8 @@
 \definecolor{wipink}{RGB}{0,90,140}
 \newcommand{\wip}[1]{\textcolor{wipink}{#1}}
 \usepackage{url}
+\usepackage{seqsplit}
+\newcommand{\shahex}[1]{{\ttfamily\seqsplit{#1}}}
 
 \makeatletter
 \AddToHook{begindocument/end}{%
