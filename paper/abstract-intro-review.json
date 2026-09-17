@@ -3,11 +3,13 @@
   "pass_kind": "writing_correction",
   "skill": ".agents/skills/ml-paper-writing/references/first-reader-review.md",
   "overall_recommendation": 4,
-  "reviewed_at": "2026-09-17T14:10Z",
-  "paper_head_reviewed_after_science_commit": "d70ef8e",
+  "reviewed_at": "2026-09-17T15:05Z",
+  "paper_head_reviewed_after_science_commit": "1897ad1",
   "structural_pass_commit": "7f3e3e2",
-  "previous_abstract_pass_commit": "f5fb3d4",
-  "this_pass": "framing: general tagged assessments, mathematics as the instantiation; Limitations rewritten to real weaknesses; Conclusion added",
+  "previous_abstract_pass_commit": "2863839",
+  "this_pass": "writing-correction after the cross-family verification and 14B floor cause science pass (1897ad1). Abstract unchanged: every sentence checked against the new evidence and none became false; 'language models of two families' on Algebra I and II is a statement about the pre-registered claim population (repaired-verified), where all three scorers clear both cells; the stricter cross-family sensitivity, on which Phi-4 Algebra II misses at n = 57, is stated once in Results 4.2 and Table 1 and flagged in Limitations item 1, not in the abstract, introduction, or conclusion. Intro paragraph 3, contribution bullet 4, and the Conclusion checked for consistency with the claim population; unchanged. Touched surfaces polished: Table 1 caption (coinage 'Qwen-verified layers' replaced by the layer names), isomorph cross-family sentence reordered.",
+  "abstract_change": "none",
+  "previous_pass": "framing: general tagged assessments, mathematics as the instantiation; Limitations rewritten to real weaknesses; Conclusion added (2863839)",
   "story": "paper/reviews/story.md",
   "first_reader_check": {
     "pass": true,
@@ -22,7 +24,7 @@
       "second paragraph: instantiation on public-release mathematics items where tags, keys, and scoring rules are public, under a pre-registered bar; Algebra I and II language-model bypass in two model families surviving the form-preserving option-value change; the consequence for the key as evidence; the tagged-operation question left open; small programs on a few cells; TIMSS null at public sizes; rates claimed on the printed page; scope sentence: a method demonstration on one subject, and what the search needs elsewhere",
       "few numbers: none beyond the two cell names and the two model families"
     ],
-    "no_conjunction_contradicted_by_a_table": "The abstract conjoins Algebra I and II recovery with survival under the option-value change; Table tab:isomorph shows every scorer clearing on both cells under the rank-preserving arm on the repaired-verified population.",
+    "no_conjunction_contradicted_by_a_table": "The abstract conjoins Algebra I and II recovery with survival under the option-value change; Table tab:isomorph shows every scorer clearing on both cells under the rank-preserving arm on the repaired-verified population. The new cross-family column of Table tab:repaired is a stricter sensitivity, not the claim population; its one miss (Phi-4 Algebra II, dagger) is stated in Results 4.2 and does not contradict an abstract sentence, which speaks of the claim population and of two families, both of which still clear Algebra II there (Qwen2.5 7B and 14B, Phi-4).",
     "intro_lead": "Paragraph 1: an assessment item carries a tag that names the competency it is said to measure; a correct answer is read as evidence of that competency in accountability, procurement, and research; each use assumes passing requires the competency; testing standards and validity theory. Paragraph 2: the bypass, its two restriction kinds with one non-mathematics example each (lexical policy on a causal-inference item; passage-withheld reader on a reading-comprehension item, cited to partial-input baselines), one-sidedness, and where the requirement question sits relative to alignment tools and psychometrics. Paragraph 3: mathematics first, and why, in one sentence; then the findings. Contribution lead-in says the object and bar are general and the census and findings are the mathematics instantiation; bullet 3 opens with 'The first instantiation of the method'.",
     "where_mathematics_first_enters": {
       "abstract": "We instantiate the search on public-release mathematics items, where tags, keys, and scoring rules are public, under a pre-registered bar.",
@@ -40,7 +42,7 @@
       "negative_contribution_bullets": {"present": false},
       "repeated_disclaimer": {"present": false, "note": "one-sidedness is stated in the abstract (one sentence), intro paragraph 2, and the Conclusion close; the vulnerability-measure and matched-items-only statements moved from Limitations to Method 3.1; Limitations now contain only weaknesses of what was done, each with what it affects and what would fix it, and no design choice appears there"}
     },
-    "body_first_reader": "Method 3.1 defines bypass and both restriction kinds without a subject; Method 3.2 is where mathematics enters. Related Work's collective-advance paragraph states the object as general with the mathematics census as its first instantiation. Limitations list ten weaknesses (page instrument and unverified items; language-model coders; template memorization; 14B floor; one-rater sheet; small unreplicated catalog rows; STAAR replication forms and parse; instruction-only not run; constructed response; ingestion). The Conclusion carries what the method needs to run on another domain, once."
+    "body_first_reader": "Method 3.1 defines bypass and both restriction kinds without a subject; Method 3.2 is where mathematics enters. Method 3.6 names the cross-family verified population in one sentence and assigns the roles (claim: repaired-verified; stricter sensitivity: cross-family; looser: repaired all; audit trail: text layer and filter). Results 4.1 gives its counts, Table 1 shows it as the first column with the claimed column labelled, and Results 4.2 states plainly which rows hold on it and that Phi-4 Algebra II does not. Related Work's collective-advance paragraph states the object as general with the mathematics census as its first instantiation. Limitations list ten weaknesses (page instrument with what the second family settles and what remains; language-model coders; template memorization; 14B floor with its cause; one-rater sheet; small unreplicated catalog rows; STAAR replication forms and parse; instruction-only not run; constructed response; ingestion). The Conclusion carries what the method needs to run on another domain, once."
   },
   "reviewer_independence": {
     "authored_the_science_edit": false,

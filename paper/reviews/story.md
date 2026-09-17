@@ -39,6 +39,8 @@ Two new pieces of evidence, each with one home. The story sentence is unchanged:
 
 Page count 19 to 20, 0 overfull; `\dblfloatsep` tightened to 6pt so the trailing appendix tables pack onto two float pages instead of three.
 
+Writing pass after it (distinct commit): abstract unchanged, no sentence became false (the two-families statement is about the claim population, where all three scorers clear both cells); intro paragraph 3, contribution bullet 4, and the Conclusion checked and unchanged; Table 1 caption loses the coinage "Qwen-verified layers"; the isomorph cross-family sentence reordered. Record: `paper/abstract-intro-review.json`.
+
 # Redundancy map (writing pass on fe7e282)
 
 Format: idea -> home -> removed from (or cut to a clause in).
