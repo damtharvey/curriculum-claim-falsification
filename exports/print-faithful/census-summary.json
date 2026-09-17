@@ -1,0 +1,45 @@
+{
+  "preregistrationSha256": "0211585e9361d3771e04df5e118050ede761971da286f0b1333a7aac289737d6",
+  "modelId": "Qwen/Qwen2-VL-7B-Instruct",
+  "modelRevision": "eed13092ef92e448dd6875b2a00151bd3f7db0ac",
+  "snapshotPath": "/home/harvey/.cache/huggingface/hub/models--Qwen--Qwen2-VL-7B-Instruct/snapshots/eed13092ef92e448dd6875b2a00151bd3f7db0ac",
+  "seed": 20260916,
+  "thresholds": {
+    "stem": 0.8,
+    "option": 0.9
+  },
+  "nPopulation": 955,
+  "nScored": 955,
+  "verdicts": {
+    "faithful": 434,
+    "not_faithful": 502,
+    "unverified": 19
+  },
+  "perCell": {
+    "eqao::g6::lower-central-fired": {
+      "faithful": 14,
+      "not_faithful": 24,
+      "unverified": 2
+    },
+    "nyregents::algebra-i::masked-stem-primary": {
+      "not_faithful": 168,
+      "faithful": 184,
+      "unverified": 6
+    },
+    "nyregents::algebra-ii::masked-stem-primary": {
+      "faithful": 115,
+      "not_faithful": 124,
+      "unverified": 9
+    },
+    "nyregents::geometry::lower-central-fired": {
+      "not_faithful": 178,
+      "faithful": 99,
+      "unverified": 2
+    },
+    "nyregents::geometry::masked-stem-primary": {
+      "not_faithful": 57,
+      "faithful": 109
+    }
+  },
+  "completedAt": "2026-09-17T05:04:02Z"
+}

@@ -56,6 +56,7 @@ exports/replication-staar/fetch-log*.md
 exports/vision/
 exports/print-audit/pages/
 exports/addendum-vlm/pages/
+exports/print-faithful/pages/
 
 # Human packet: send the tracked .txt, not the PDF
 exports/human-masked-stem/rater-packet.pdf

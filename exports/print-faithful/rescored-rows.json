@@ -1,0 +1,2107 @@
+{
+  "preregistrationSha256": "0211585e9361d3771e04df5e118050ede761971da286f0b1333a7aac289737d6",
+  "calibration": {
+    "binaryAgreement": 17,
+    "n": 20,
+    "thresholds": {
+      "stem": 0.8,
+      "option": 0.9
+    },
+    "adjusted": false
+  },
+  "nFidelityRows": 955,
+  "verdicts": {
+    "faithful": 434,
+    "not_faithful": 502,
+    "unverified": 19
+  },
+  "cells": {
+    "nyregents::algebra-i::masked-stem-primary": {
+      "n": 358,
+      "faithful": 184,
+      "faithfulStrict": 149,
+      "notFaithful": 168,
+      "unverified": 6,
+      "faithfulFraction": 0.5227272727272727,
+      "numericFaithful": 198,
+      "trailingJunkOnly": 11,
+      "categories": {
+        "match": 184,
+        "ocr_glue": 54,
+        "option_mismatch": 1,
+        "truncated": 10,
+        "vlm_no_options": 1,
+        "vlm_unparseable": 5,
+        "wrong_item": 103
+      }
+    },
+    "nyregents::algebra-ii::masked-stem-primary": {
+      "n": 248,
+      "faithful": 115,
+      "faithfulStrict": 88,
+      "notFaithful": 124,
+      "unverified": 9,
+      "faithfulFraction": 0.4811715481171548,
+      "numericFaithful": 117,
+      "trailingJunkOnly": 6,
+      "categories": {
+        "match": 115,
+        "ocr_glue": 50,
+        "option_mismatch": 1,
+        "truncated": 4,
+        "vlm_no_options": 1,
+        "vlm_unparseable": 8,
+        "wrong_item": 69
+      }
+    },
+    "nyregents::geometry::lower-central-fired": {
+      "n": 279,
+      "faithful": 99,
+      "faithfulStrict": 80,
+      "notFaithful": 178,
+      "unverified": 2,
+      "faithfulFraction": 0.3574007220216607,
+      "numericFaithful": 173,
+      "trailingJunkOnly": 67,
+      "categories": {
+        "match": 99,
+        "ocr_glue": 116,
+        "truncated": 12,
+        "vlm_unparseable": 2,
+        "wrong_item": 50
+      }
+    },
+    "eqao::g6::lower-central-fired": {
+      "n": 40,
+      "faithful": 14,
+      "faithfulStrict": 10,
+      "notFaithful": 24,
+      "unverified": 2,
+      "faithfulFraction": 0.3684210526315789,
+      "numericFaithful": 32,
+      "trailingJunkOnly": 11,
+      "categories": {
+        "match": 14,
+        "ocr_glue": 17,
+        "truncated": 1,
+        "vlm_unparseable": 2,
+        "wrong_item": 6
+      }
+    },
+    "nyregents::geometry::masked-stem-primary": {
+      "n": 166,
+      "faithful": 109,
+      "faithfulStrict": 93,
+      "notFaithful": 57,
+      "unverified": 0,
+      "faithfulFraction": 0.6566265060240963,
+      "numericFaithful": 120,
+      "trailingJunkOnly": 5,
+      "categories": {
+        "match": 109,
+        "ocr_glue": 24,
+        "truncated": 12,
+        "wrong_item": 21
+      }
+    }
+  },
+  "catalog": {
+    "nyregents::geometry::lower-central-fired": {
+      "paperCell": "nyregents::geometry",
+      "label": "NY Regents geometry",
+      "programId": "middle-value-option (lower-central)",
+      "subsets": {
+        "original": {
+          "n": 279,
+          "passes": 90,
+          "passRate": 0.3225806451612903,
+          "chance": 0.25,
+          "itemCi95": [
+            0.26881720430107525,
+            0.37992831541218636
+          ],
+          "clusterCi95": [
+            0.26545454545454544,
+            0.3741721854304636
+          ],
+          "nAdministrations": 27,
+          "clearsItemBar": true,
+          "clearsClusterBar": true
+        },
+        "faithful": {
+          "n": 99,
+          "passes": 32,
+          "passRate": 0.32323232323232326,
+          "chance": 0.25,
+          "itemCi95": [
+            0.23232323232323232,
+            0.41414141414141414
+          ],
+          "clusterCi95": [
+            0.2268041237113402,
+            0.41379310344827586
+          ],
+          "nAdministrations": 27,
+          "clearsItemBar": false,
+          "clearsClusterBar": false
+        },
+        "faithful_after_relocation": {
+          "n": 100,
+          "passes": 32,
+          "passRate": 0.32,
+          "chance": 0.25,
+          "itemCi95": [
+            0.23,
+            0.41
+          ],
+          "clusterCi95": [
+            0.2247191011235955,
+            0.4090909090909091
+          ],
+          "nAdministrations": 27,
+          "clearsItemBar": false,
+          "clearsClusterBar": false
+        },
+        "faithful_strict": {
+          "n": 80,
+          "passes": 26,
+          "passRate": 0.325,
+          "chance": 0.25,
+          "itemCi95": [
+            0.225,
+            0.425
+          ],
+          "clusterCi95": [
+            0.20987654320987653,
+            0.43023255813953487
+          ],
+          "nAdministrations": 26,
+          "clearsItemBar": false,
+          "clearsClusterBar": false
+        },
+        "faithful_digit_suspect": {
+          "n": 19,
+          "passes": 6,
+          "passRate": 0.3157894736842105,
+          "chance": 0.25,
+          "itemCi95": [
+            0.10526315789473684,
+            0.5263157894736842
+          ],
+          "clusterCi95": [
+            0.1,
+            0.5882352941176471
+          ],
+          "nAdministrations": 9,
+          "clearsItemBar": false,
+          "clearsClusterBar": false
+        },
+        "not_faithful": {
+          "n": 178,
+          "passes": 58,
+          "passRate": 0.3258426966292135,
+          "chance": 0.25,
+          "itemCi95": [
+            0.25280898876404495,
+            0.398876404494382
+          ],
+          "clusterCi95": [
+            0.25136612021857924,
+            0.40119760479041916
+          ],
+          "nAdministrations": 27,
+          "clearsItemBar": true,
+          "clearsClusterBar": true
+        },
+        "unverified": {
+          "n": 2,
+          "passes": 0,
+          "passRate": 0.0,
+          "chance": 0.25,
+          "itemCi95": [
+            0.0,
+            0.0
+          ],
+          "clusterCi95": [
+            0.0,
+            0.0
+          ],
+          "nAdministrations": 2,
+          "clearsItemBar": false,
+          "clearsClusterBar": false
+        },
+        "numeric_faithful": {
+          "n": 173,
+          "passes": 56,
+          "passRate": 0.3236994219653179,
+          "chance": 0.25,
+          "itemCi95": [
+            0.2543352601156069,
+            0.3930635838150289
+          ],
+          "clusterCi95": [
+            0.2392638036809816,
+            0.40372670807453415
+          ],
+          "nAdministrations": 27,
+          "clearsItemBar": true,
+          "clearsClusterBar": false
+        },
+        "numeric_not_faithful": {
+          "n": 104,
+          "passes": 34,
+          "passRate": 0.3269230769230769,
+          "chance": 0.25,
+          "itemCi95": [
+            0.23076923076923078,
+            0.4230769230769231
+          ],
+          "clusterCi95": [
+            0.2571428571428571,
+            0.3942307692307692
+          ],
+          "nAdministrations": 27,
+          "clearsItemBar": false,
+          "clearsClusterBar": true
+        },
+        "trailing_junk_only": {
+          "n": 67,
+          "passes": 21,
+          "passRate": 0.31343283582089554,
+          "chance": 0.25,
+          "itemCi95": [
+            0.208955223880597,
+            0.43283582089552236
+          ],
+          "clusterCi95": [
+            0.21153846153846154,
+            0.43661971830985913
+          ],
+          "nAdministrations": 26,
+          "clearsItemBar": false,
+          "clearsClusterBar": false
+        }
+      },
+      "faithfulClearsItemBar": false,
+      "faithfulClearsClusterBar": false,
+      "faithfulStrictClearsItemBar": false
+    },
+    "eqao::g6::lower-central-fired": {
+      "paperCell": "eqao::g6",
+      "label": "EQAO grade 6",
+      "programId": "middle-value-option (lower-central)",
+      "subsets": {
+        "original": {
+          "n": 40,
+          "passes": 20,
+          "passRate": 0.5,
+          "chance": 0.25375000000000003,
+          "itemCi95": [
+            0.35,
+            0.65
+          ],
+          "clusterCi95": [
+            0.4166666666666667,
+            0.5882352941176471
+          ],
+          "nAdministrations": 3,
+          "clearsItemBar": true,
+          "clearsClusterBar": true
+        },
+        "faithful": {
+          "n": 14,
+          "passes": 8,
+          "passRate": 0.5714285714285714,
+          "chance": 0.24642857142857144,
+          "itemCi95": [
+            0.2857142857142857,
+            0.8571428571428571
+          ],
+          "clusterCi95": [
+            0.4,
+            0.7142857142857143
+          ],
+          "nAdministrations": 3,
+          "clearsItemBar": true,
+          "clearsClusterBar": true
+        },
+        "faithful_after_relocation": {
+          "n": 14,
+          "passes": 8,
+          "passRate": 0.5714285714285714,
+          "chance": 0.24642857142857144,
+          "itemCi95": [
+            0.2857142857142857,
+            0.8571428571428571
+          ],
+          "clusterCi95": [
+            0.4,
+            0.7142857142857143
+          ],
+          "nAdministrations": 3,
+          "clearsItemBar": true,
+          "clearsClusterBar": true
+        },
+        "faithful_strict": {
+          "n": 10,
+          "passes": 5,
+          "passRate": 0.5,
+          "chance": 0.24500000000000002,
+          "itemCi95": [
+            0.2,
+            0.8
+          ],
+          "clusterCi95": [
+            0.3333333333333333,
+            0.6
+          ],
+          "nAdministrations": 3,
+          "clearsItemBar": false,
+          "clearsClusterBar": true
+        },
+        "faithful_digit_suspect": {
+          "n": 4,
+          "passes": 3,
+          "passRate": 0.75,
+          "chance": 0.25,
+          "itemCi95": [
+            0.25,
+            1.0
+          ],
+          "clusterCi95": [
+            0.5,
+            1.0
+          ],
+          "nAdministrations": 2,
+          "clearsItemBar": false,
+          "clearsClusterBar": false
+        },
+        "not_faithful": {
+          "n": 24,
+          "passes": 11,
+          "passRate": 0.4583333333333333,
+          "chance": 0.25833333333333336,
+          "itemCi95": [
+            0.25,
+            0.6666666666666666
+          ],
+          "clusterCi95": [
+            0.4,
+            0.5
+          ],
+          "nAdministrations": 3,
+          "clearsItemBar": false,
+          "clearsClusterBar": true
+        },
+        "unverified": {
+          "n": 2,
+          "passes": 1,
+          "passRate": 0.5,
+          "chance": 0.25,
+          "itemCi95": [
+            0.0,
+            1.0
+          ],
+          "clusterCi95": [
+            0.0,
+            1.0
+          ],
+          "nAdministrations": 2,
+          "clearsItemBar": false,
+          "clearsClusterBar": false
+        },
+        "numeric_faithful": {
+          "n": 32,
+          "passes": 16,
+          "passRate": 0.5,
+          "chance": 0.2484375,
+          "itemCi95": [
+            0.34375,
+            0.6875
+          ],
+          "clusterCi95": [
+            0.3333333333333333,
+            0.6428571428571429
+          ],
+          "nAdministrations": 3,
+          "clearsItemBar": true,
+          "clearsClusterBar": true
+        },
+        "numeric_not_faithful": {
+          "n": 6,
+          "passes": 3,
+          "passRate": 0.5,
+          "chance": 0.2833333333333333,
+          "itemCi95": [
+            0.16666666666666666,
+            0.8333333333333334
+          ],
+          "clusterCi95": [
+            0.0,
+            1.0
+          ],
+          "nAdministrations": 3,
+          "clearsItemBar": false,
+          "clearsClusterBar": false
+        },
+        "trailing_junk_only": {
+          "n": 11,
+          "passes": 5,
+          "passRate": 0.45454545454545453,
+          "chance": 0.25,
+          "itemCi95": [
+            0.18181818181818182,
+            0.7272727272727273
+          ],
+          "clusterCi95": [
+            0.0,
+            0.6
+          ],
+          "nAdministrations": 3,
+          "clearsItemBar": false,
+          "clearsClusterBar": false
+        }
+      },
+      "faithfulClearsItemBar": true,
+      "faithfulClearsClusterBar": true,
+      "faithfulStrictClearsItemBar": false
+    }
+  },
+  "lm": {
+    "qwen2.5-7b-instruct": {
+      "label": "Qwen2.5-7B-Instruct",
+      "modelId": "Qwen/Qwen2.5-7B-Instruct",
+      "modelRevision": "a09a35458c702b33eeacc393d103063234e8bc28",
+      "itemsFile": "exports/addendum-gpu/masked-stem-7b-items.jsonl",
+      "cells": {
+        "nyregents::algebra-i::masked-stem-primary": {
+          "paperCell": "nyregents::algebra-i",
+          "label": "Algebra I",
+          "claimed": true,
+          "subsets": {
+            "original": {
+              "n": 358,
+              "nMissingPredictions": 0,
+              "passes": 139,
+              "passRate": 0.388268156424581,
+              "chance": 0.25,
+              "ci95": [
+                0.3407821229050279,
+                0.43854748603351956
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.2709497206703911,
+              "chosenLetterCounts": {
+                "A": 42,
+                "B": 118,
+                "C": 116,
+                "D": 82
+              },
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true
+            },
+            "faithful": {
+              "n": 184,
+              "nMissingPredictions": 0,
+              "passes": 86,
+              "passRate": 0.4673913043478261,
+              "chance": 0.25,
+              "ci95": [
+                0.391304347826087,
+                0.5434782608695652
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.2554347826086957,
+              "chosenLetterCounts": {
+                "A": 25,
+                "B": 61,
+                "C": 57,
+                "D": 41
+              },
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true
+            },
+            "faithful_after_relocation": {
+              "n": 184,
+              "nMissingPredictions": 0,
+              "passes": 86,
+              "passRate": 0.4673913043478261,
+              "chance": 0.25,
+              "ci95": [
+                0.391304347826087,
+                0.5434782608695652
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.2554347826086957,
+              "chosenLetterCounts": {
+                "A": 25,
+                "B": 61,
+                "C": 57,
+                "D": 41
+              },
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true
+            },
+            "faithful_strict": {
+              "n": 149,
+              "nMissingPredictions": 0,
+              "passes": 69,
+              "passRate": 0.46308724832214765,
+              "chance": 0.25,
+              "ci95": [
+                0.37583892617449666,
+                0.5436241610738255
+              ],
+              "modalLetter": "C",
+              "modalFrequency": 0.2751677852348993,
+              "chosenLetterCounts": {
+                "A": 21,
+                "B": 47,
+                "C": 48,
+                "D": 33
+              },
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true
+            },
+            "faithful_digit_suspect": {
+              "n": 35,
+              "nMissingPredictions": 0,
+              "passes": 17,
+              "passRate": 0.4857142857142857,
+              "chance": 0.25,
+              "ci95": [
+                0.3142857142857143,
+                0.6571428571428571
+              ],
+              "modalLetter": "D",
+              "modalFrequency": 0.37142857142857144,
+              "chosenLetterCounts": {
+                "A": 4,
+                "B": 14,
+                "C": 9,
+                "D": 8
+              },
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": false,
+              "clearsBar": false
+            },
+            "not_faithful": {
+              "n": 168,
+              "nMissingPredictions": 0,
+              "passes": 49,
+              "passRate": 0.2916666666666667,
+              "chance": 0.25,
+              "ci95": [
+                0.22023809523809523,
+                0.3630952380952381
+              ],
+              "modalLetter": "C",
+              "modalFrequency": 0.2857142857142857,
+              "chosenLetterCounts": {
+                "A": 16,
+                "B": 53,
+                "C": 59,
+                "D": 40
+              },
+              "lowerCiAboveChance": false,
+              "lowerCiAboveModal": false,
+              "clearsBar": false
+            },
+            "unverified": {
+              "n": 6,
+              "nMissingPredictions": 0,
+              "passes": 4,
+              "passRate": 0.6666666666666666,
+              "chance": 0.25,
+              "ci95": [
+                0.3333333333333333,
+                1.0
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.5,
+              "chosenLetterCounts": {
+                "A": 1,
+                "B": 4,
+                "D": 1
+              },
+              "lowerCiAboveChance": false,
+              "lowerCiAboveModal": false,
+              "clearsBar": false
+            },
+            "numeric_faithful": {
+              "n": 198,
+              "nMissingPredictions": 0,
+              "passes": 90,
+              "passRate": 0.45454545454545453,
+              "chance": 0.25,
+              "ci95": [
+                0.3838383838383838,
+                0.5252525252525253
+              ],
+              "modalLetter": "C",
+              "modalFrequency": 0.2878787878787879,
+              "chosenLetterCounts": {
+                "A": 26,
+                "B": 65,
+                "C": 66,
+                "D": 41
+              },
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true
+            },
+            "numeric_not_faithful": {
+              "n": 154,
+              "nMissingPredictions": 0,
+              "passes": 45,
+              "passRate": 0.2922077922077922,
+              "chance": 0.25,
+              "ci95": [
+                0.21428571428571427,
+                0.36363636363636365
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.2532467532467532,
+              "chosenLetterCounts": {
+                "A": 15,
+                "B": 49,
+                "C": 50,
+                "D": 40
+              },
+              "lowerCiAboveChance": false,
+              "lowerCiAboveModal": false,
+              "clearsBar": false
+            },
+            "trailing_junk_only": {
+              "n": 11,
+              "nMissingPredictions": 0,
+              "passes": 2,
+              "passRate": 0.18181818181818182,
+              "chance": 0.25,
+              "ci95": [
+                0.0,
+                0.45454545454545453
+              ],
+              "modalLetter": "A",
+              "modalFrequency": 0.36363636363636365,
+              "chosenLetterCounts": {
+                "A": 1,
+                "B": 4,
+                "C": 4,
+                "D": 2
+              },
+              "lowerCiAboveChance": false,
+              "lowerCiAboveModal": false,
+              "clearsBar": false
+            }
+          },
+          "faithfulClearsBar": true,
+          "faithfulStrictClearsBar": true
+        },
+        "nyregents::algebra-ii::masked-stem-primary": {
+          "paperCell": "nyregents::algebra-ii",
+          "label": "Algebra II",
+          "claimed": true,
+          "subsets": {
+            "original": {
+              "n": 248,
+              "nMissingPredictions": 0,
+              "passes": 91,
+              "passRate": 0.36693548387096775,
+              "chance": 0.25,
+              "ci95": [
+                0.3064516129032258,
+                0.42338709677419356
+              ],
+              "modalLetter": "C",
+              "modalFrequency": 0.2782258064516129,
+              "chosenLetterCounts": {
+                "A": 30,
+                "B": 73,
+                "C": 94,
+                "D": 51
+              },
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true
+            },
+            "faithful": {
+              "n": 115,
+              "nMissingPredictions": 0,
+              "passes": 40,
+              "passRate": 0.34782608695652173,
+              "chance": 0.25,
+              "ci95": [
+                0.2608695652173913,
+                0.43478260869565216
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.2956521739130435,
+              "chosenLetterCounts": {
+                "A": 16,
+                "B": 35,
+                "C": 44,
+                "D": 20
+              },
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": false,
+              "clearsBar": false
+            },
+            "faithful_after_relocation": {
+              "n": 115,
+              "nMissingPredictions": 0,
+              "passes": 40,
+              "passRate": 0.34782608695652173,
+              "chance": 0.25,
+              "ci95": [
+                0.2608695652173913,
+                0.43478260869565216
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.2956521739130435,
+              "chosenLetterCounts": {
+                "A": 16,
+                "B": 35,
+                "C": 44,
+                "D": 20
+              },
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": false,
+              "clearsBar": false
+            },
+            "faithful_strict": {
+              "n": 88,
+              "nMissingPredictions": 0,
+              "passes": 31,
+              "passRate": 0.3522727272727273,
+              "chance": 0.25,
+              "ci95": [
+                0.26136363636363635,
+                0.45454545454545453
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.29545454545454547,
+              "chosenLetterCounts": {
+                "A": 11,
+                "B": 25,
+                "C": 36,
+                "D": 16
+              },
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": false,
+              "clearsBar": false
+            },
+            "faithful_digit_suspect": {
+              "n": 27,
+              "nMissingPredictions": 0,
+              "passes": 9,
+              "passRate": 0.3333333333333333,
+              "chance": 0.25,
+              "ci95": [
+                0.18518518518518517,
+                0.5185185185185185
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.2962962962962963,
+              "chosenLetterCounts": {
+                "A": 5,
+                "B": 10,
+                "C": 8,
+                "D": 4
+              },
+              "lowerCiAboveChance": false,
+              "lowerCiAboveModal": false,
+              "clearsBar": false
+            },
+            "not_faithful": {
+              "n": 124,
+              "nMissingPredictions": 0,
+              "passes": 49,
+              "passRate": 0.3951612903225806,
+              "chance": 0.25,
+              "ci95": [
+                0.3064516129032258,
+                0.47580645161290325
+              ],
+              "modalLetter": "C",
+              "modalFrequency": 0.3225806451612903,
+              "chosenLetterCounts": {
+                "A": 14,
+                "B": 37,
+                "C": 45,
+                "D": 28
+              },
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": false,
+              "clearsBar": false
+            },
+            "unverified": {
+              "n": 9,
+              "nMissingPredictions": 0,
+              "passes": 2,
+              "passRate": 0.2222222222222222,
+              "chance": 0.25,
+              "ci95": [
+                0.0,
+                0.4444444444444444
+              ],
+              "modalLetter": "A",
+              "modalFrequency": 0.3333333333333333,
+              "chosenLetterCounts": {
+                "B": 1,
+                "C": 5,
+                "D": 3
+              },
+              "lowerCiAboveChance": false,
+              "lowerCiAboveModal": false,
+              "clearsBar": false
+            },
+            "numeric_faithful": {
+              "n": 117,
+              "nMissingPredictions": 0,
+              "passes": 45,
+              "passRate": 0.38461538461538464,
+              "chance": 0.25,
+              "ci95": [
+                0.2905982905982906,
+                0.46153846153846156
+              ],
+              "modalLetter": "C",
+              "modalFrequency": 0.28205128205128205,
+              "chosenLetterCounts": {
+                "A": 16,
+                "B": 33,
+                "C": 45,
+                "D": 23
+              },
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true
+            },
+            "numeric_not_faithful": {
+              "n": 122,
+              "nMissingPredictions": 0,
+              "passes": 44,
+              "passRate": 0.36065573770491804,
+              "chance": 0.25,
+              "ci95": [
+                0.2786885245901639,
+                0.4426229508196721
+              ],
+              "modalLetter": "C",
+              "modalFrequency": 0.28688524590163933,
+              "chosenLetterCounts": {
+                "A": 14,
+                "B": 39,
+                "C": 44,
+                "D": 25
+              },
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": false,
+              "clearsBar": false
+            },
+            "trailing_junk_only": {
+              "n": 6,
+              "nMissingPredictions": 0,
+              "passes": 2,
+              "passRate": 0.3333333333333333,
+              "chance": 0.25,
+              "ci95": [
+                0.0,
+                0.6666666666666666
+              ],
+              "modalLetter": "C",
+              "modalFrequency": 0.5,
+              "chosenLetterCounts": {
+                "B": 4,
+                "C": 1,
+                "D": 1
+              },
+              "lowerCiAboveChance": false,
+              "lowerCiAboveModal": false,
+              "clearsBar": false
+            }
+          },
+          "faithfulClearsBar": false,
+          "faithfulStrictClearsBar": false
+        }
+      }
+    },
+    "qwen2.5-14b-instruct": {
+      "label": "Qwen2.5-14B-Instruct",
+      "modelId": "Qwen/Qwen2.5-14B-Instruct",
+      "modelRevision": "cf98f3b3bbb457ad9e2bb7baf9a0125b6b88caa8",
+      "itemsFile": "exports/addendum-gpu/masked-stem-14b-items.jsonl",
+      "cells": {
+        "nyregents::algebra-i::masked-stem-primary": {
+          "paperCell": "nyregents::algebra-i",
+          "label": "Algebra I",
+          "claimed": true,
+          "subsets": {
+            "original": {
+              "n": 358,
+              "nMissingPredictions": 0,
+              "passes": 149,
+              "passRate": 0.41620111731843573,
+              "chance": 0.25,
+              "ci95": [
+                0.36312849162011174,
+                0.4692737430167598
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.2709497206703911,
+              "chosenLetterCounts": {
+                "A": 60,
+                "B": 104,
+                "C": 124,
+                "D": 70
+              },
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true
+            },
+            "faithful": {
+              "n": 184,
+              "nMissingPredictions": 0,
+              "passes": 79,
+              "passRate": 0.42934782608695654,
+              "chance": 0.25,
+              "ci95": [
+                0.358695652173913,
+                0.5
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.2554347826086957,
+              "chosenLetterCounts": {
+                "A": 33,
+                "B": 55,
+                "C": 61,
+                "D": 35
+              },
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true
+            },
+            "faithful_after_relocation": {
+              "n": 184,
+              "nMissingPredictions": 0,
+              "passes": 79,
+              "passRate": 0.42934782608695654,
+              "chance": 0.25,
+              "ci95": [
+                0.358695652173913,
+                0.5
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.2554347826086957,
+              "chosenLetterCounts": {
+                "A": 33,
+                "B": 55,
+                "C": 61,
+                "D": 35
+              },
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true
+            },
+            "faithful_strict": {
+              "n": 149,
+              "nMissingPredictions": 0,
+              "passes": 66,
+              "passRate": 0.4429530201342282,
+              "chance": 0.25,
+              "ci95": [
+                0.3691275167785235,
+                0.5167785234899329
+              ],
+              "modalLetter": "C",
+              "modalFrequency": 0.2751677852348993,
+              "chosenLetterCounts": {
+                "A": 25,
+                "B": 50,
+                "C": 50,
+                "D": 24
+              },
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true
+            },
+            "faithful_digit_suspect": {
+              "n": 35,
+              "nMissingPredictions": 0,
+              "passes": 13,
+              "passRate": 0.37142857142857144,
+              "chance": 0.25,
+              "ci95": [
+                0.2,
+                0.5428571428571428
+              ],
+              "modalLetter": "D",
+              "modalFrequency": 0.37142857142857144,
+              "chosenLetterCounts": {
+                "A": 8,
+                "B": 5,
+                "C": 11,
+                "D": 11
+              },
+              "lowerCiAboveChance": false,
+              "lowerCiAboveModal": false,
+              "clearsBar": false
+            },
+            "not_faithful": {
+              "n": 168,
+              "nMissingPredictions": 0,
+              "passes": 66,
+              "passRate": 0.39285714285714285,
+              "chance": 0.25,
+              "ci95": [
+                0.32142857142857145,
+                0.4642857142857143
+              ],
+              "modalLetter": "C",
+              "modalFrequency": 0.2857142857142857,
+              "chosenLetterCounts": {
+                "A": 24,
+                "B": 47,
+                "C": 63,
+                "D": 34
+              },
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true
+            },
+            "unverified": {
+              "n": 6,
+              "nMissingPredictions": 0,
+              "passes": 4,
+              "passRate": 0.6666666666666666,
+              "chance": 0.25,
+              "ci95": [
+                0.3333333333333333,
+                1.0
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.5,
+              "chosenLetterCounts": {
+                "A": 3,
+                "B": 2,
+                "D": 1
+              },
+              "lowerCiAboveChance": false,
+              "lowerCiAboveModal": false,
+              "clearsBar": false
+            },
+            "numeric_faithful": {
+              "n": 198,
+              "nMissingPredictions": 0,
+              "passes": 93,
+              "passRate": 0.4696969696969697,
+              "chance": 0.25,
+              "ci95": [
+                0.398989898989899,
+                0.5404040404040404
+              ],
+              "modalLetter": "C",
+              "modalFrequency": 0.2878787878787879,
+              "chosenLetterCounts": {
+                "A": 34,
+                "B": 63,
+                "C": 64,
+                "D": 37
+              },
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true
+            },
+            "numeric_not_faithful": {
+              "n": 154,
+              "nMissingPredictions": 0,
+              "passes": 52,
+              "passRate": 0.33766233766233766,
+              "chance": 0.25,
+              "ci95": [
+                0.2597402597402597,
+                0.4090909090909091
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.2532467532467532,
+              "chosenLetterCounts": {
+                "A": 23,
+                "B": 39,
+                "C": 60,
+                "D": 32
+              },
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true
+            },
+            "trailing_junk_only": {
+              "n": 11,
+              "nMissingPredictions": 0,
+              "passes": 5,
+              "passRate": 0.45454545454545453,
+              "chance": 0.25,
+              "ci95": [
+                0.18181818181818182,
+                0.7272727272727273
+              ],
+              "modalLetter": "A",
+              "modalFrequency": 0.36363636363636365,
+              "chosenLetterCounts": {
+                "A": 2,
+                "B": 4,
+                "C": 3,
+                "D": 2
+              },
+              "lowerCiAboveChance": false,
+              "lowerCiAboveModal": false,
+              "clearsBar": false
+            }
+          },
+          "faithfulClearsBar": true,
+          "faithfulStrictClearsBar": true
+        },
+        "nyregents::algebra-ii::masked-stem-primary": {
+          "paperCell": "nyregents::algebra-ii",
+          "label": "Algebra II",
+          "claimed": true,
+          "subsets": {
+            "original": {
+              "n": 248,
+              "nMissingPredictions": 0,
+              "passes": 89,
+              "passRate": 0.3588709677419355,
+              "chance": 0.25,
+              "ci95": [
+                0.29838709677419356,
+                0.4153225806451613
+              ],
+              "modalLetter": "C",
+              "modalFrequency": 0.2782258064516129,
+              "chosenLetterCounts": {
+                "A": 25,
+                "B": 68,
+                "C": 95,
+                "D": 60
+              },
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true
+            },
+            "faithful": {
+              "n": 115,
+              "nMissingPredictions": 0,
+              "passes": 44,
+              "passRate": 0.3826086956521739,
+              "chance": 0.25,
+              "ci95": [
+                0.28695652173913044,
+                0.4608695652173913
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.2956521739130435,
+              "chosenLetterCounts": {
+                "A": 11,
+                "B": 35,
+                "C": 46,
+                "D": 23
+              },
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": false,
+              "clearsBar": false
+            },
+            "faithful_after_relocation": {
+              "n": 115,
+              "nMissingPredictions": 0,
+              "passes": 44,
+              "passRate": 0.3826086956521739,
+              "chance": 0.25,
+              "ci95": [
+                0.28695652173913044,
+                0.4608695652173913
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.2956521739130435,
+              "chosenLetterCounts": {
+                "A": 11,
+                "B": 35,
+                "C": 46,
+                "D": 23
+              },
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": false,
+              "clearsBar": false
+            },
+            "faithful_strict": {
+              "n": 88,
+              "nMissingPredictions": 0,
+              "passes": 30,
+              "passRate": 0.3409090909090909,
+              "chance": 0.25,
+              "ci95": [
+                0.23863636363636365,
+                0.4318181818181818
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.29545454545454547,
+              "chosenLetterCounts": {
+                "A": 9,
+                "B": 25,
+                "C": 38,
+                "D": 16
+              },
+              "lowerCiAboveChance": false,
+              "lowerCiAboveModal": false,
+              "clearsBar": false
+            },
+            "faithful_digit_suspect": {
+              "n": 27,
+              "nMissingPredictions": 0,
+              "passes": 14,
+              "passRate": 0.5185185185185185,
+              "chance": 0.25,
+              "ci95": [
+                0.3333333333333333,
+                0.7037037037037037
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.2962962962962963,
+              "chosenLetterCounts": {
+                "A": 2,
+                "B": 10,
+                "C": 8,
+                "D": 7
+              },
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true
+            },
+            "not_faithful": {
+              "n": 124,
+              "nMissingPredictions": 0,
+              "passes": 42,
+              "passRate": 0.3387096774193548,
+              "chance": 0.25,
+              "ci95": [
+                0.25,
+                0.41935483870967744
+              ],
+              "modalLetter": "C",
+              "modalFrequency": 0.3225806451612903,
+              "chosenLetterCounts": {
+                "A": 14,
+                "B": 30,
+                "C": 46,
+                "D": 34
+              },
+              "lowerCiAboveChance": false,
+              "lowerCiAboveModal": false,
+              "clearsBar": false
+            },
+            "unverified": {
+              "n": 9,
+              "nMissingPredictions": 0,
+              "passes": 3,
+              "passRate": 0.3333333333333333,
+              "chance": 0.25,
+              "ci95": [
+                0.0,
+                0.6666666666666666
+              ],
+              "modalLetter": "A",
+              "modalFrequency": 0.3333333333333333,
+              "chosenLetterCounts": {
+                "B": 3,
+                "C": 3,
+                "D": 3
+              },
+              "lowerCiAboveChance": false,
+              "lowerCiAboveModal": false,
+              "clearsBar": false
+            },
+            "numeric_faithful": {
+              "n": 117,
+              "nMissingPredictions": 0,
+              "passes": 49,
+              "passRate": 0.4188034188034188,
+              "chance": 0.25,
+              "ci95": [
+                0.3247863247863248,
+                0.5042735042735043
+              ],
+              "modalLetter": "C",
+              "modalFrequency": 0.28205128205128205,
+              "chosenLetterCounts": {
+                "A": 9,
+                "B": 34,
+                "C": 48,
+                "D": 26
+              },
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true
+            },
+            "numeric_not_faithful": {
+              "n": 122,
+              "nMissingPredictions": 0,
+              "passes": 37,
+              "passRate": 0.30327868852459017,
+              "chance": 0.25,
+              "ci95": [
+                0.22131147540983606,
+                0.39344262295081966
+              ],
+              "modalLetter": "C",
+              "modalFrequency": 0.28688524590163933,
+              "chosenLetterCounts": {
+                "A": 16,
+                "B": 31,
+                "C": 44,
+                "D": 31
+              },
+              "lowerCiAboveChance": false,
+              "lowerCiAboveModal": false,
+              "clearsBar": false
+            },
+            "trailing_junk_only": {
+              "n": 6,
+              "nMissingPredictions": 0,
+              "passes": 2,
+              "passRate": 0.3333333333333333,
+              "chance": 0.25,
+              "ci95": [
+                0.0,
+                0.6666666666666666
+              ],
+              "modalLetter": "C",
+              "modalFrequency": 0.5,
+              "chosenLetterCounts": {
+                "B": 2,
+                "C": 2,
+                "D": 2
+              },
+              "lowerCiAboveChance": false,
+              "lowerCiAboveModal": false,
+              "clearsBar": false
+            }
+          },
+          "faithfulClearsBar": false,
+          "faithfulStrictClearsBar": false
+        }
+      }
+    },
+    "phi-4": {
+      "label": "Phi-4",
+      "modelId": "microsoft/phi-4",
+      "modelRevision": "2db69c1c3e91a05d2c64a3185acfbaf36f744e25",
+      "itemsFile": "exports/addendum-gpu/masked-stem-phi4-items.jsonl",
+      "cells": {
+        "nyregents::algebra-i::masked-stem-primary": {
+          "paperCell": "nyregents::algebra-i",
+          "label": "Algebra I",
+          "claimed": true,
+          "subsets": {
+            "original": {
+              "n": 358,
+              "nMissingPredictions": 0,
+              "passes": 151,
+              "passRate": 0.42178770949720673,
+              "chance": 0.25,
+              "ci95": [
+                0.3743016759776536,
+                0.4720670391061452
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.2709497206703911,
+              "chosenLetterCounts": {
+                "A": 71,
+                "B": 149,
+                "C": 69,
+                "D": 69
+              },
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true
+            },
+            "faithful": {
+              "n": 184,
+              "nMissingPredictions": 0,
+              "passes": 86,
+              "passRate": 0.4673913043478261,
+              "chance": 0.25,
+              "ci95": [
+                0.3967391304347826,
+                0.5380434782608695
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.2554347826086957,
+              "chosenLetterCounts": {
+                "A": 41,
+                "B": 68,
+                "C": 41,
+                "D": 34
+              },
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true
+            },
+            "faithful_after_relocation": {
+              "n": 184,
+              "nMissingPredictions": 0,
+              "passes": 86,
+              "passRate": 0.4673913043478261,
+              "chance": 0.25,
+              "ci95": [
+                0.3967391304347826,
+                0.5380434782608695
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.2554347826086957,
+              "chosenLetterCounts": {
+                "A": 41,
+                "B": 68,
+                "C": 41,
+                "D": 34
+              },
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true
+            },
+            "faithful_strict": {
+              "n": 149,
+              "nMissingPredictions": 0,
+              "passes": 68,
+              "passRate": 0.4563758389261745,
+              "chance": 0.25,
+              "ci95": [
+                0.3691275167785235,
+                0.5302013422818792
+              ],
+              "modalLetter": "C",
+              "modalFrequency": 0.2751677852348993,
+              "chosenLetterCounts": {
+                "A": 35,
+                "B": 57,
+                "C": 33,
+                "D": 24
+              },
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true
+            },
+            "faithful_digit_suspect": {
+              "n": 35,
+              "nMissingPredictions": 0,
+              "passes": 18,
+              "passRate": 0.5142857142857142,
+              "chance": 0.25,
+              "ci95": [
+                0.34285714285714286,
+                0.6857142857142857
+              ],
+              "modalLetter": "D",
+              "modalFrequency": 0.37142857142857144,
+              "chosenLetterCounts": {
+                "A": 6,
+                "B": 11,
+                "C": 8,
+                "D": 10
+              },
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": false,
+              "clearsBar": false
+            },
+            "not_faithful": {
+              "n": 168,
+              "nMissingPredictions": 0,
+              "passes": 61,
+              "passRate": 0.3630952380952381,
+              "chance": 0.25,
+              "ci95": [
+                0.2916666666666667,
+                0.44047619047619047
+              ],
+              "modalLetter": "C",
+              "modalFrequency": 0.2857142857142857,
+              "chosenLetterCounts": {
+                "A": 29,
+                "B": 79,
+                "C": 26,
+                "D": 34
+              },
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true
+            },
+            "unverified": {
+              "n": 6,
+              "nMissingPredictions": 0,
+              "passes": 4,
+              "passRate": 0.6666666666666666,
+              "chance": 0.25,
+              "ci95": [
+                0.3333333333333333,
+                1.0
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.5,
+              "chosenLetterCounts": {
+                "A": 1,
+                "B": 2,
+                "C": 2,
+                "D": 1
+              },
+              "lowerCiAboveChance": false,
+              "lowerCiAboveModal": false,
+              "clearsBar": false
+            },
+            "numeric_faithful": {
+              "n": 198,
+              "nMissingPredictions": 0,
+              "passes": 85,
+              "passRate": 0.4292929292929293,
+              "chance": 0.25,
+              "ci95": [
+                0.36363636363636365,
+                0.5
+              ],
+              "modalLetter": "C",
+              "modalFrequency": 0.2878787878787879,
+              "chosenLetterCounts": {
+                "A": 40,
+                "B": 77,
+                "C": 39,
+                "D": 42
+              },
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true
+            },
+            "numeric_not_faithful": {
+              "n": 154,
+              "nMissingPredictions": 0,
+              "passes": 62,
+              "passRate": 0.4025974025974026,
+              "chance": 0.25,
+              "ci95": [
+                0.33116883116883117,
+                0.474025974025974
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.2532467532467532,
+              "chosenLetterCounts": {
+                "A": 30,
+                "B": 70,
+                "C": 28,
+                "D": 26
+              },
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true
+            },
+            "trailing_junk_only": {
+              "n": 11,
+              "nMissingPredictions": 0,
+              "passes": 4,
+              "passRate": 0.36363636363636365,
+              "chance": 0.25,
+              "ci95": [
+                0.09090909090909091,
+                0.6363636363636364
+              ],
+              "modalLetter": "A",
+              "modalFrequency": 0.36363636363636365,
+              "chosenLetterCounts": {
+                "A": 1,
+                "B": 6,
+                "C": 1,
+                "D": 3
+              },
+              "lowerCiAboveChance": false,
+              "lowerCiAboveModal": false,
+              "clearsBar": false
+            }
+          },
+          "faithfulClearsBar": true,
+          "faithfulStrictClearsBar": true
+        },
+        "nyregents::algebra-ii::masked-stem-primary": {
+          "paperCell": "nyregents::algebra-ii",
+          "label": "Algebra II",
+          "claimed": true,
+          "subsets": {
+            "original": {
+              "n": 248,
+              "nMissingPredictions": 0,
+              "passes": 86,
+              "passRate": 0.3467741935483871,
+              "chance": 0.25,
+              "ci95": [
+                0.2862903225806452,
+                0.40725806451612906
+              ],
+              "modalLetter": "C",
+              "modalFrequency": 0.2782258064516129,
+              "chosenLetterCounts": {
+                "A": 30,
+                "B": 117,
+                "C": 34,
+                "D": 67
+              },
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true
+            },
+            "faithful": {
+              "n": 115,
+              "nMissingPredictions": 0,
+              "passes": 40,
+              "passRate": 0.34782608695652173,
+              "chance": 0.25,
+              "ci95": [
+                0.26956521739130435,
+                0.43478260869565216
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.2956521739130435,
+              "chosenLetterCounts": {
+                "A": 16,
+                "B": 51,
+                "C": 14,
+                "D": 34
+              },
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": false,
+              "clearsBar": false
+            },
+            "faithful_after_relocation": {
+              "n": 115,
+              "nMissingPredictions": 0,
+              "passes": 40,
+              "passRate": 0.34782608695652173,
+              "chance": 0.25,
+              "ci95": [
+                0.26956521739130435,
+                0.43478260869565216
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.2956521739130435,
+              "chosenLetterCounts": {
+                "A": 16,
+                "B": 51,
+                "C": 14,
+                "D": 34
+              },
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": false,
+              "clearsBar": false
+            },
+            "faithful_strict": {
+              "n": 88,
+              "nMissingPredictions": 0,
+              "passes": 30,
+              "passRate": 0.3409090909090909,
+              "chance": 0.25,
+              "ci95": [
+                0.25,
+                0.4431818181818182
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.29545454545454547,
+              "chosenLetterCounts": {
+                "A": 11,
+                "B": 41,
+                "C": 12,
+                "D": 24
+              },
+              "lowerCiAboveChance": false,
+              "lowerCiAboveModal": false,
+              "clearsBar": false
+            },
+            "faithful_digit_suspect": {
+              "n": 27,
+              "nMissingPredictions": 0,
+              "passes": 10,
+              "passRate": 0.37037037037037035,
+              "chance": 0.25,
+              "ci95": [
+                0.18518518518518517,
+                0.5555555555555556
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.2962962962962963,
+              "chosenLetterCounts": {
+                "A": 5,
+                "B": 10,
+                "C": 2,
+                "D": 10
+              },
+              "lowerCiAboveChance": false,
+              "lowerCiAboveModal": false,
+              "clearsBar": false
+            },
+            "not_faithful": {
+              "n": 124,
+              "nMissingPredictions": 0,
+              "passes": 43,
+              "passRate": 0.3467741935483871,
+              "chance": 0.25,
+              "ci95": [
+                0.2661290322580645,
+                0.4274193548387097
+              ],
+              "modalLetter": "C",
+              "modalFrequency": 0.3225806451612903,
+              "chosenLetterCounts": {
+                "A": 14,
+                "B": 60,
+                "C": 18,
+                "D": 32
+              },
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": false,
+              "clearsBar": false
+            },
+            "unverified": {
+              "n": 9,
+              "nMissingPredictions": 0,
+              "passes": 3,
+              "passRate": 0.3333333333333333,
+              "chance": 0.25,
+              "ci95": [
+                0.0,
+                0.6666666666666666
+              ],
+              "modalLetter": "A",
+              "modalFrequency": 0.3333333333333333,
+              "chosenLetterCounts": {
+                "B": 6,
+                "C": 2,
+                "D": 1
+              },
+              "lowerCiAboveChance": false,
+              "lowerCiAboveModal": false,
+              "clearsBar": false
+            },
+            "numeric_faithful": {
+              "n": 117,
+              "nMissingPredictions": 0,
+              "passes": 49,
+              "passRate": 0.4188034188034188,
+              "chance": 0.25,
+              "ci95": [
+                0.3333333333333333,
+                0.5128205128205128
+              ],
+              "modalLetter": "C",
+              "modalFrequency": 0.28205128205128205,
+              "chosenLetterCounts": {
+                "A": 12,
+                "B": 51,
+                "C": 19,
+                "D": 35
+              },
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true
+            },
+            "numeric_not_faithful": {
+              "n": 122,
+              "nMissingPredictions": 0,
+              "passes": 34,
+              "passRate": 0.2786885245901639,
+              "chance": 0.25,
+              "ci95": [
+                0.19672131147540983,
+                0.36065573770491804
+              ],
+              "modalLetter": "C",
+              "modalFrequency": 0.28688524590163933,
+              "chosenLetterCounts": {
+                "A": 18,
+                "B": 60,
+                "C": 13,
+                "D": 31
+              },
+              "lowerCiAboveChance": false,
+              "lowerCiAboveModal": false,
+              "clearsBar": false
+            },
+            "trailing_junk_only": {
+              "n": 6,
+              "nMissingPredictions": 0,
+              "passes": 3,
+              "passRate": 0.5,
+              "chance": 0.25,
+              "ci95": [
+                0.16666666666666666,
+                0.8333333333333334
+              ],
+              "modalLetter": "C",
+              "modalFrequency": 0.5,
+              "chosenLetterCounts": {
+                "B": 3,
+                "C": 2,
+                "D": 1
+              },
+              "lowerCiAboveChance": false,
+              "lowerCiAboveModal": false,
+              "clearsBar": false
+            }
+          },
+          "faithfulClearsBar": false,
+          "faithfulStrictClearsBar": false
+        },
+        "nyregents::geometry::masked-stem-primary": {
+          "paperCell": "nyregents::geometry",
+          "label": "geometry",
+          "claimed": false,
+          "subsets": {
+            "original": {
+              "n": 166,
+              "nMissingPredictions": 0,
+              "passes": 67,
+              "passRate": 0.4036144578313253,
+              "chance": 0.25,
+              "ci95": [
+                0.3313253012048193,
+                0.4759036144578313
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.2891566265060241,
+              "chosenLetterCounts": {
+                "A": 22,
+                "B": 103,
+                "C": 21,
+                "D": 20
+              },
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true
+            },
+            "faithful": {
+              "n": 109,
+              "nMissingPredictions": 0,
+              "passes": 46,
+              "passRate": 0.42201834862385323,
+              "chance": 0.25,
+              "ci95": [
+                0.3302752293577982,
+                0.5137614678899083
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.30275229357798167,
+              "chosenLetterCounts": {
+                "A": 12,
+                "B": 73,
+                "C": 12,
+                "D": 12
+              },
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true
+            },
+            "faithful_after_relocation": {
+              "n": 110,
+              "nMissingPredictions": 0,
+              "passes": 46,
+              "passRate": 0.41818181818181815,
+              "chance": 0.25,
+              "ci95": [
+                0.32727272727272727,
+                0.509090909090909
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.3,
+              "chosenLetterCounts": {
+                "A": 12,
+                "B": 74,
+                "C": 12,
+                "D": 12
+              },
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true
+            },
+            "faithful_strict": {
+              "n": 93,
+              "nMissingPredictions": 0,
+              "passes": 41,
+              "passRate": 0.44086021505376344,
+              "chance": 0.25,
+              "ci95": [
+                0.34408602150537637,
+                0.5376344086021505
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.3118279569892473,
+              "chosenLetterCounts": {
+                "A": 12,
+                "B": 61,
+                "C": 9,
+                "D": 11
+              },
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true
+            },
+            "faithful_digit_suspect": {
+              "n": 16,
+              "nMissingPredictions": 0,
+              "passes": 5,
+              "passRate": 0.3125,
+              "chance": 0.25,
+              "ci95": [
+                0.125,
+                0.5625
+              ],
+              "modalLetter": "C",
+              "modalFrequency": 0.3125,
+              "chosenLetterCounts": {
+                "B": 12,
+                "C": 3,
+                "D": 1
+              },
+              "lowerCiAboveChance": false,
+              "lowerCiAboveModal": false,
+              "clearsBar": false
+            },
+            "not_faithful": {
+              "n": 57,
+              "nMissingPredictions": 0,
+              "passes": 21,
+              "passRate": 0.3684210526315789,
+              "chance": 0.25,
+              "ci95": [
+                0.24561403508771928,
+                0.49122807017543857
+              ],
+              "modalLetter": "A",
+              "modalFrequency": 0.2631578947368421,
+              "chosenLetterCounts": {
+                "A": 10,
+                "B": 30,
+                "C": 9,
+                "D": 8
+              },
+              "lowerCiAboveChance": false,
+              "lowerCiAboveModal": false,
+              "clearsBar": false
+            },
+            "numeric_faithful": {
+              "n": 120,
+              "nMissingPredictions": 0,
+              "passes": 49,
+              "passRate": 0.4083333333333333,
+              "chance": 0.25,
+              "ci95": [
+                0.325,
+                0.49166666666666664
+              ],
+              "modalLetter": "C",
+              "modalFrequency": 0.3,
+              "chosenLetterCounts": {
+                "A": 14,
+                "B": 70,
+                "C": 20,
+                "D": 16
+              },
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true
+            },
+            "numeric_not_faithful": {
+              "n": 46,
+              "nMissingPredictions": 0,
+              "passes": 18,
+              "passRate": 0.391304347826087,
+              "chance": 0.25,
+              "ci95": [
+                0.2608695652173913,
+                0.5217391304347826
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.2826086956521739,
+              "chosenLetterCounts": {
+                "A": 8,
+                "B": 33,
+                "C": 1,
+                "D": 4
+              },
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": false,
+              "clearsBar": false
+            },
+            "trailing_junk_only": {
+              "n": 5,
+              "nMissingPredictions": 0,
+              "passes": 0,
+              "passRate": 0.0,
+              "chance": 0.25,
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "modalLetter": "A",
+              "modalFrequency": 0.6,
+              "chosenLetterCounts": {
+                "B": 3,
+                "C": 1,
+                "D": 1
+              },
+              "lowerCiAboveChance": false,
+              "lowerCiAboveModal": false,
+              "clearsBar": false
+            }
+          },
+          "faithfulClearsBar": true,
+          "faithfulStrictClearsBar": true
+        }
+      }
+    }
+  },
+  "claimedRowsFailingOnFaithfulSubset": [
+    "catalog NY Regents geometry lower-central: faithful subset does not clear the item bar",
+    "catalog NY Regents geometry lower-central: strict faithful subset (post hoc) does not clear the item bar",
+    "catalog EQAO grade 6 lower-central: strict faithful subset (post hoc) does not clear the item bar",
+    "LM Qwen2.5-7B-Instruct Algebra II: faithful subset does not clear chance and modal",
+    "LM Qwen2.5-7B-Instruct Algebra II: strict faithful subset (post hoc) does not clear chance and modal",
+    "LM Qwen2.5-14B-Instruct Algebra II: faithful subset does not clear chance and modal",
+    "LM Qwen2.5-14B-Instruct Algebra II: strict faithful subset (post hoc) does not clear chance and modal",
+    "LM Phi-4 Algebra II: faithful subset does not clear chance and modal",
+    "LM Phi-4 Algebra II: strict faithful subset (post hoc) does not clear chance and modal"
+  ],
+  "relocation": {
+    "nRelocated": 12,
+    "nVerdictChanged": 3,
+    "changed": [
+      {
+        "id": "nyregents-algebra-ii-2025-jan-q5",
+        "preregistered": "unverified",
+        "relocated": "not_faithful"
+      },
+      {
+        "id": "nyregents-geometry-2019-aug-q17",
+        "preregistered": "not_faithful",
+        "relocated": "faithful"
+      },
+      {
+        "id": "nyregents-geometry-2026-jan-q3",
+        "preregistered": "not_faithful",
+        "relocated": "unverified"
+      }
+    ],
+    "note": "Post-hoc locator repair; see relocate_print_fidelity_items.py. faithful_after_relocation applies these verdicts."
+  },
+  "strictFaithfulNote": "faithful_strict is a post-hoc tightening, not in the preregistration: a faithful item is dropped if its text-layer stem or any option carries a digit token absent from the transcription (the recent Regents encoding of =, +, - as 5, 1, 2; lost minus signs; glued page numbers). Motivation: the pre-registered option score accepts max(token F1, character ratio) >= 0.9, and the character ratio admits a one-character digit substitution inside a long option string.",
+  "bootstrap": {
+    "catalogItem": "addendum_lib.bootstrap_ci_mulberry, mulberry32 seed 11, 1000 replicates",
+    "catalogCluster": "addendum_lib.cluster_bootstrap_ci by administration, seed 20260916, 2000 replicates",
+    "lm": "score_choices_only_local_lm.bootstrap_ci, random.Random(21 + n), 1000 replicates"
+  },
+  "generatedAt": "2026-09-17T05:10:34Z"
+}
