@@ -1,0 +1,238 @@
+{
+  "seedRule": "31 + n, 1000 replicates, random.Random.randrange",
+  "pairedOn": "items with at least one option numeral whose rank-preserving perturbation succeeded",
+  "models": {
+    "7b": {
+      "label": "Qwen2.5-7B-Instruct",
+      "cells": {
+        "algebra-i": {
+          "all": {
+            "n": 284,
+            "mean": -0.04225352112676056,
+            "ci95": [
+              -0.10211267605633803,
+              0.014084507042253521
+            ],
+            "includesZero": true,
+            "nNoNumeral": 58,
+            "nPerturbFailed": 1,
+            "originalRateOnPaired": 0.5,
+            "perturbedRateOnPaired": 0.45774647887323944,
+            "repairVerdicts": {
+              "repaired_verified": 223,
+              "repaired_unverified": 61
+            }
+          },
+          "verified": {
+            "n": 223,
+            "mean": -0.04932735426008968,
+            "ci95": [
+              -0.11659192825112108,
+              0.02242152466367713
+            ],
+            "includesZero": true,
+            "nNoNumeral": 37,
+            "nPerturbFailed": 1,
+            "originalRateOnPaired": 0.5336322869955157,
+            "perturbedRateOnPaired": 0.484304932735426,
+            "repairVerdicts": {
+              "repaired_verified": 223,
+              "repaired_unverified": 0
+            }
+          }
+        },
+        "algebra-ii": {
+          "all": {
+            "n": 207,
+            "mean": -0.043478260869565216,
+            "ci95": [
+              -0.11594202898550725,
+              0.028985507246376812
+            ],
+            "includesZero": true,
+            "nNoNumeral": 21,
+            "nPerturbFailed": 3,
+            "originalRateOnPaired": 0.4251207729468599,
+            "perturbedRateOnPaired": 0.38164251207729466,
+            "repairVerdicts": {
+              "repaired_verified": 153,
+              "repaired_unverified": 54
+            }
+          },
+          "verified": {
+            "n": 153,
+            "mean": -0.0392156862745098,
+            "ci95": [
+              -0.11764705882352941,
+              0.0457516339869281
+            ],
+            "includesZero": true,
+            "nNoNumeral": 12,
+            "nPerturbFailed": 2,
+            "originalRateOnPaired": 0.43137254901960786,
+            "perturbedRateOnPaired": 0.39215686274509803,
+            "repairVerdicts": {
+              "repaired_verified": 153,
+              "repaired_unverified": 0
+            }
+          }
+        }
+      }
+    },
+    "14b": {
+      "label": "Qwen2.5-14B-Instruct",
+      "cells": {
+        "algebra-i": {
+          "all": {
+            "n": 284,
+            "mean": -0.10915492957746478,
+            "ci95": [
+              -0.16549295774647887,
+              -0.04929577464788732
+            ],
+            "includesZero": false,
+            "nNoNumeral": 58,
+            "nPerturbFailed": 1,
+            "originalRateOnPaired": 0.5316901408450704,
+            "perturbedRateOnPaired": 0.4225352112676056,
+            "repairVerdicts": {
+              "repaired_verified": 223,
+              "repaired_unverified": 61
+            }
+          },
+          "verified": {
+            "n": 223,
+            "mean": -0.1031390134529148,
+            "ci95": [
+              -0.16591928251121077,
+              -0.04035874439461883
+            ],
+            "includesZero": false,
+            "nNoNumeral": 37,
+            "nPerturbFailed": 1,
+            "originalRateOnPaired": 0.5560538116591929,
+            "perturbedRateOnPaired": 0.452914798206278,
+            "repairVerdicts": {
+              "repaired_verified": 223,
+              "repaired_unverified": 0
+            }
+          }
+        },
+        "algebra-ii": {
+          "all": {
+            "n": 207,
+            "mean": -0.04830917874396135,
+            "ci95": [
+              -0.12077294685990338,
+              0.024154589371980676
+            ],
+            "includesZero": true,
+            "nNoNumeral": 21,
+            "nPerturbFailed": 3,
+            "originalRateOnPaired": 0.4106280193236715,
+            "perturbedRateOnPaired": 0.36231884057971014,
+            "repairVerdicts": {
+              "repaired_verified": 153,
+              "repaired_unverified": 54
+            }
+          },
+          "verified": {
+            "n": 153,
+            "mean": -0.0457516339869281,
+            "ci95": [
+              -0.13071895424836602,
+              0.0457516339869281
+            ],
+            "includesZero": true,
+            "nNoNumeral": 12,
+            "nPerturbFailed": 2,
+            "originalRateOnPaired": 0.41830065359477125,
+            "perturbedRateOnPaired": 0.37254901960784315,
+            "repairVerdicts": {
+              "repaired_verified": 153,
+              "repaired_unverified": 0
+            }
+          }
+        }
+      }
+    },
+    "phi4": {
+      "label": "Phi-4",
+      "cells": {
+        "algebra-i": {
+          "all": {
+            "n": 284,
+            "mean": -0.10211267605633803,
+            "ci95": [
+              -0.1619718309859155,
+              -0.03873239436619718
+            ],
+            "includesZero": false,
+            "nNoNumeral": 58,
+            "nPerturbFailed": 1,
+            "originalRateOnPaired": 0.4753521126760563,
+            "perturbedRateOnPaired": 0.3732394366197183,
+            "repairVerdicts": {
+              "repaired_verified": 223,
+              "repaired_unverified": 61
+            }
+          },
+          "verified": {
+            "n": 223,
+            "mean": -0.08968609865470852,
+            "ci95": [
+              -0.15695067264573992,
+              -0.013452914798206279
+            ],
+            "includesZero": false,
+            "nNoNumeral": 37,
+            "nPerturbFailed": 1,
+            "originalRateOnPaired": 0.47533632286995514,
+            "perturbedRateOnPaired": 0.38565022421524664,
+            "repairVerdicts": {
+              "repaired_verified": 223,
+              "repaired_unverified": 0
+            }
+          }
+        },
+        "algebra-ii": {
+          "all": {
+            "n": 207,
+            "mean": -0.06763285024154589,
+            "ci95": [
+              -0.13526570048309178,
+              0.004830917874396135
+            ],
+            "includesZero": true,
+            "nNoNumeral": 21,
+            "nPerturbFailed": 3,
+            "originalRateOnPaired": 0.3864734299516908,
+            "perturbedRateOnPaired": 0.3188405797101449,
+            "repairVerdicts": {
+              "repaired_verified": 153,
+              "repaired_unverified": 54
+            }
+          },
+          "verified": {
+            "n": 153,
+            "mean": -0.0392156862745098,
+            "ci95": [
+              -0.12418300653594772,
+              0.0392156862745098
+            ],
+            "includesZero": true,
+            "nNoNumeral": 12,
+            "nPerturbFailed": 2,
+            "originalRateOnPaired": 0.39215686274509803,
+            "perturbedRateOnPaired": 0.35294117647058826,
+            "repairVerdicts": {
+              "repaired_verified": 153,
+              "repaired_unverified": 0
+            }
+          }
+        }
+      }
+    }
+  },
+  "writtenAt": "2026-09-17T12:05:54.803312+00:00"
+}
