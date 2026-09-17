@@ -7,9 +7,9 @@
     "pass": true,
     "qualified_reviewer_can_follow_the_abstract": true,
     "about": "Whether a published tag on a released mathematics item is required to match the key, tested by programs that lack the tagged operation.",
-    "shown": "Catalog 105 tests, 0 Holm, two existence rows (Regents geometry 0.323 n=279; EQAO grade 6 0.500 n=40 at the second-smallest option). Strategy: STAAR grade-5 arithmetic closure 21/40 is the only Holm reject and failed powered replication (21/64=0.328, CI covers chance). Image-channel backsolving 14/15 Algebra I items with a unique printed equation, n=15, coverage 15/598, not Holm, not a census. Masked-stem LM: Qwen2.5 and Phi-4 on Algebra I n=358 and Algebra II n=248; Phi-4 geometry unclaimed (0.229 n=118); Mistral does not clear; human 15/40 uninformative null. TIMSS knowing/applying/reasoning remain null at selected-response n about 50 to 80.",
-    "what_is_new": "A three-family requirement census on tagged public mathematics: masked-stem (quantities withheld) increment on the choices-only construction, publisher tags, Holm within family, TIMSS cells, a strategy discovery that does not replicate, and an image-channel backsolve existence row on rare unique-equation Algebra I items. Related work now states the joint gap against validity, CDM, test-wiseness, choices-only, and contamination literatures.",
-    "why_a_big_deal": "If a pass does not require the tagged operation, accountability, curriculum evaluation, and research that treat the tag as the competency are reading the wrong quantity. On Algebra I and Algebra II masked-stem hits, matching the key need not execute the tagged computation on the givens. On the 14 Algebra I substitution hits, matching the key need not solve.",
+    "shown": "A catalog of item-writing rules does not survive Holm correction. Two catalog tests beat chance and remain replication candidates, not family-wise discoveries. Image-channel backsolving fires on a small unique-equation Algebra I subset. A language model recovers Algebra I and Algebra II keys with the given quantities withheld. TIMSS knowing, applying, and reasoning stay null.",
+    "what_is_new": "A one-sided program witness on tagged public mathematics: a program that lacks the tagged operation can still match the key. That is not a student non-learning claim. The census is three Holm-split families, including withheld-quantity language models on tagged items.",
+    "why_a_big_deal": "If a pass does not require the tagged operation, accountability, curriculum evaluation, and research that treat the tag as the competency are reading the wrong quantity. On Algebra I and Algebra II withheld-quantity hits, matching the key need not execute the tagged computation on the givens.",
     "unreadability": {
       "stacked_if_thens": {"present": false},
       "named_hypothesis_packing": {"present": false},
@@ -23,7 +23,7 @@
     }
   },
   "reviewer_independence": {
-    "authored_the_science_edit": true,
+    "authored_the_science_edit": false,
     "prompt_was_first_reader_only": true,
     "added_theorems_in_this_pass": false
   }
