@@ -12,7 +12,7 @@ CloudFront
 └── /api/*         → API Gateway → Lambda (interactive rule runner)
 ```
 
-- **Frontend:** React + Vite SPA with five pages — dashboard, item browser, witness browser, interactive rule runner, and about.
+- **Frontend:** React + Vite SPA matching the artboards in `design/` — an item explorer, an item page that runs the a priori rules live (witness-found / no-witness states), and three configuration templates (rules, claims, data & deploy).
 - **API Lambda:** Runs all 15 a priori programs against any item in real time. Reads items and rules from S3.
 - **Data:** Pre-computed exports (witnesses, cell tables, comparisons, GPU results) served as static JSON from S3.
 - **Infrastructure:** AWS CDK (TypeScript) — single stack with auto-delete on teardown.
@@ -74,14 +74,14 @@ CloudFront propagation takes a few minutes; the API Gateway URL works immediatel
 
 ## Local Development
 
-### Frontend only (with API proxy)
+### Full stack, no AWS
 
 ```bash
-cd demo/frontend
-npm run dev
+cd demo/lambda && npm run dev        # builds the handler, serves it on :3001 from the repo checkout
+cd demo/frontend && npm run dev      # Vite on :5173, proxies /api/* to :3001
 ```
 
-This starts Vite on `http://localhost:5173` with a proxy to `http://localhost:3001` for `/api/*`.
+`lambda/dev-server.mjs` sets `LOCAL_DATA_ROOT` to the repo root so the handler reads `data/`, `rules/`, `claims/` and `exports/` directly instead of S3.
 
 ### Teardown
 
@@ -96,21 +96,24 @@ All resources have `RemovalPolicy.DESTROY` and `autoDeleteObjects: true` — not
 
 | Route | Source | Description |
 |-------|--------|-------------|
-| `/` | Frontend | Dashboard with stats |
-| `/items` | Frontend + API | Paginated item browser with search/filter |
-| `/items/:id` | Frontend + API | Item detail with witnesses and run-rules |
-| `/witnesses` | Frontend + S3 | Browse all witnesses with filters |
-| `/runner` | Frontend + API | Interactive: pick any item, run all 15 rules live |
-| `/about` | Frontend | Project explanation and channel descriptions |
+| `/items` | Frontend + API | Explorer: stats strip, filters (authority, claim, channel, witnessed-only, search), paged table |
+| `/items/:id` | Frontend + API | Item with choices and key; runs every a priori rule on load and shows the witness-found or no-witness state |
+| `/admin/rules` | Frontend + API | Rules list and edit form; edits are local, exported as `apriori.json` |
+| `/admin/claims` | Frontend + API | Per-authority claims and edit form; exported as `claims/<authority>.json` |
+| `/admin/data` | Frontend + API | Bucket contents, API routes, runtime settings kept in the browser |
+
+The API has no write route, so the configuration pages export JSON for a commit rather than saving to the bucket.
 
 ## API Endpoints
 
 | Method | Path | Description |
 |--------|------|-------------|
 | `GET` | `/api/stats` | Summary stats (item count, witness count, corpora) |
-| `GET` | `/api/items?page=1&corpus=staar&search=...` | Paginated item list |
+| `GET` | `/api/items?page=1&authority=teks&claim=g5&channel=item-cues&witnessed=1&search=...` | Paginated item list with witness counts |
 | `GET` | `/api/items/{itemId}` | Single item with associated witnesses |
 | `GET` | `/api/rules` | List all a priori rule definitions |
+| `GET` | `/api/claims` | One entry per `claims/<authority>.json`, with item counts |
+| `GET` | `/api/config` | Bucket contents, routes, runtime |
 | `POST` | `/api/run-rules` | `{ "itemId": "..." }` → run all rules on item |
 
 ## Data Files Uploaded
@@ -118,7 +121,8 @@ All resources have `RemovalPolicy.DESTROY` and `autoDeleteObjects: true` — not
 The upload script sends these from the repo's existing exports:
 
 - `data/items.jsonl` — 2,405 keyed items
-- `rules/apriori.json` — 15+ a priori rule definitions
+- `rules/apriori.json` — 15 a priori rule definitions
+- `claims/*.json` — claims per authority
 - `exports/witnesses.json` — all witness records
 - `exports/rule-chance.json` — per-rule per-claim pass rates
 - `exports/apriori-cell-table.json` — family-wise correction table

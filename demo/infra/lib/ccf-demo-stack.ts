@@ -122,6 +122,18 @@ export class CcfDemoStack extends cdk.Stack {
       integration: lambdaIntegration,
     });
 
+    httpApi.addRoutes({
+      path: "/api/claims",
+      methods: [apigateway.HttpMethod.GET],
+      integration: lambdaIntegration,
+    });
+
+    httpApi.addRoutes({
+      path: "/api/config",
+      methods: [apigateway.HttpMethod.GET],
+      integration: lambdaIntegration,
+    });
+
     // ---------------------------------------------------------------
     // CloudFront – single distribution for frontend + data + API
     // ---------------------------------------------------------------

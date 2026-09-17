@@ -1,45 +1,34 @@
-import { NavLink, Route, Routes } from "react-router-dom";
-import { Dashboard } from "./pages/Dashboard";
-import { ItemBrowser } from "./pages/ItemBrowser";
-import { ItemDetail } from "./pages/ItemDetail";
-import { WitnessBrowser } from "./pages/WitnessBrowser";
-import { InteractiveRunner } from "./pages/InteractiveRunner";
-import { About } from "./pages/About";
+import { Navigate, NavLink, Route, Routes } from "react-router-dom";
+import { Items } from "./pages/Items";
+import { ItemPage } from "./pages/ItemPage";
+import { AdminRules } from "./pages/AdminRules";
+import { AdminClaims } from "./pages/AdminClaims";
+import { AdminData } from "./pages/AdminData";
 
 export function App() {
   return (
-    <div className="app-layout">
+    <>
       <header className="app-header">
-        <h1>CCF Demo</h1>
+        <NavLink to="/items" className="brand">CCF</NavLink>
+        <span className="tagline">Does the assessment require the skill?</span>
         <nav>
-          <NavLink to="/" end className={({ isActive }) => isActive ? "active" : ""}>
-            Dashboard
-          </NavLink>
-          <NavLink to="/items" className={({ isActive }) => isActive ? "active" : ""}>
-            Items
-          </NavLink>
-          <NavLink to="/witnesses" className={({ isActive }) => isActive ? "active" : ""}>
-            Witnesses
-          </NavLink>
-          <NavLink to="/runner" className={({ isActive }) => isActive ? "active" : ""}>
-            Run Rules
-          </NavLink>
-          <NavLink to="/about" className={({ isActive }) => isActive ? "active" : ""}>
-            About
-          </NavLink>
+          <NavLink to="/items">Items</NavLink>
+          <NavLink to="/admin/rules">Rules</NavLink>
+          <NavLink to="/admin/claims">Claims</NavLink>
+          <NavLink to="/admin/data">Data</NavLink>
         </nav>
       </header>
-
       <main className="app-main">
         <Routes>
-          <Route path="/" element={<Dashboard />} />
-          <Route path="/items" element={<ItemBrowser />} />
-          <Route path="/items/:itemId" element={<ItemDetail />} />
-          <Route path="/witnesses" element={<WitnessBrowser />} />
-          <Route path="/runner" element={<InteractiveRunner />} />
-          <Route path="/about" element={<About />} />
+          <Route path="/" element={<Navigate to="/items" replace />} />
+          <Route path="/items" element={<Items />} />
+          <Route path="/items/:itemId" element={<ItemPage />} />
+          <Route path="/admin/rules" element={<AdminRules />} />
+          <Route path="/admin/claims" element={<AdminClaims />} />
+          <Route path="/admin/data" element={<AdminData />} />
+          <Route path="*" element={<Navigate to="/items" replace />} />
         </Routes>
       </main>
-    </div>
+    </>
   );
 }

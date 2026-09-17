@@ -17,9 +17,14 @@ export interface ItemSummary {
   contentDomain?: string;
   grade?: string;
   year?: string;
+  witnessCount: number;
+  witnessPrograms: number;
+  channels: string[];
 }
 
 export interface ItemDetail extends ItemSummary {
+  sourceUrl?: string;
+  figureDependent?: boolean;
   witnesses: WitnessRecord[];
 }
 
@@ -69,10 +74,50 @@ export interface RunRulesResponse {
 export interface DemoStats {
   totalItems: number;
   totalWitnesses: number;
+  witnessedItems: number;
+  ruleCount: number;
   corpora: string[];
   authorities: string[];
+  claims: { authority: string; claim: string; items: number }[];
+  channels: string[];
   responseTypes: Record<string, number>;
 }
+
+export interface Claim {
+  authority: string;
+  code: string;
+  text: string;
+  operationalization: string;
+  operations: string[];
+  sourceUrl?: string;
+  items: number;
+}
+
+export interface ClaimFile {
+  authority: string;
+  note?: string;
+  file: string;
+  claims: Claim[];
+}
+
+export interface DataFile {
+  key: string;
+  size: number;
+  lastModified?: string;
+}
+
+export interface DemoConfig {
+  dataBucket: string | null;
+  localDataRoot: string | null;
+  region: string | null;
+  functionName: string | null;
+  memoryMb: number | null;
+  nodeVersion: string;
+  routes: { method: string; path: string; note: string }[];
+  dataFiles: DataFile[];
+}
+
+export const OPERATIONS = ["retrieve", "execute", "bind", "distinguish", "explain", "transfer"] as const;
 
 export interface PagedItems {
   total: number;
@@ -105,6 +150,14 @@ export function getItem(itemId: string): Promise<ItemDetail> {
 
 export function getRules(): Promise<RuleDefinition[]> {
   return fetchJson("/api/rules");
+}
+
+export function getClaims(): Promise<ClaimFile[]> {
+  return fetchJson("/api/claims");
+}
+
+export function getConfig(): Promise<DemoConfig> {
+  return fetchJson("/api/config");
 }
 
 export function runRules(itemId: string): Promise<RunRulesResponse> {
