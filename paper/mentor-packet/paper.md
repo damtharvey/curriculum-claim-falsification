@@ -122,7 +122,7 @@ Constructed-response items are not headline cells. Scoring guides that reduce to
 
 ## 6. Release
 
-Programs, filters, trials, and this text are in `temp/chat-assessment/`. The protocol is written and not yet timestamped. We will not plant a preprint while Algebra II sits on the bar, while searched n is 11, or while choices-only options still contain footers. Mentors are asked to read this draft as the paper, not as a preview of a longer one.
+Programs, filters, trials, and this text are in this repository. The protocol is written and not yet timestamped. We will not plant a preprint while Algebra II sits on the bar, while searched n is 11, or while choices-only options still contain footers. Mentors are asked to read this draft as the paper, not as a preview of a longer one.
 
 ## References (to verify in copy-editing)
 

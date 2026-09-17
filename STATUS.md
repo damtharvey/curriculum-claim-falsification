@@ -1,12 +1,12 @@
 # STATUS
 
-Wednesday 2026-09-16 about 17:55 MDT. Owner: Harvey (all build, science, paper). Alejandra Moctezuma (Utah Valley University): mentor outreach only. Coy is out. See `CHAT-hackathon-plan.md`.
+Wednesday 2026-09-16 about 17:55 MDT. Author A owns all build, science, and paper. Author B owns mentor outreach. A third collaborator is out. See `CHAT-hackathon-plan.md`.
 
 Nothing is frozen. No arXiv or OSF. Thursday talk 15:00–17:00; mentor comments that arrive later do not change it. One-sided wording in force: a pass does not require the tagged operation. Never "students didn't learn."
 
 ## Paper
 
-`acmart` `sigplan,screen,nonacm,review`, author-year, 11 pages. Authors Harvey Dam (Utah) and Alejandra Moctezuma (UVU). Navy `\wip` on unfinished work. Copy: `paper/mentor-packet/paper.pdf`.
+`acmart` `sigplan,screen,nonacm,review,anonymous`, author-year, 11 pages. Anonymous review. Navy `\wip` on unfinished work. Copy: `paper/mentor-packet/paper.pdf`.
 
 Mentor send: paste `paper/mentor-packet/cover.md` as the email body; attach only `paper.pdf`. Unstructured feedback or a short review. No questionnaire. Do not send `paper.md`.
 

@@ -2,7 +2,7 @@
 
 Minds and Machines (CHAT), 15-17 September 2026.
 
-This repository is the **Curriculum Claim Falsification** project, also called CHAT: Does the Assessment Require the Skill? It was split out of another tree (`whats_new/temp/`) on 2026-09-16 with independent git history. The originals were left in place so that tree can keep running.
+This repository is the **Curriculum Claim Falsification** project, also called CHAT: Does the Assessment Require the Skill? Independent git history begins 2026-09-16.
 
 ## One-sided claim
 
@@ -88,4 +88,4 @@ Send `exports/human-masked-stem/rater-packet.txt`, not a PDF.
 
 ## Opening this repository
 
-In Cursor: File, Open Folder, `/home/harvey/repos/curriculum-claim-falsification`. Work here for CHAT; leave `whats_new` for the rest of that tree. No git remote is configured yet (Origin CLI is installed but not logged in).
+Open this repository root in the editor. No git remote is configured yet.
