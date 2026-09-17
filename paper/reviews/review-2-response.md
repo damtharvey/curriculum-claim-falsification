@@ -1,8 +1,24 @@
 # Response to review 2 (`icml-style-review-2.md`)
 
-Status at 2026-09-17, after the print-fidelity check (`exports/print-faithful/`, commit `2e3ec8c`), the standards split (`exports/standards-split/`, commit `b99d2a1`), the integration pass on the paper body (`8d28f39`, writing `8dff566`), and the option-numeral isomorph control (`exports/isomorph-options/`, commit `462f963`; integrated at `b6ea3d3`, writing `94f3ff1`). Per weakness: what changed, where.
+Status at 2026-09-17, after the print-fidelity check (`exports/print-faithful/`, commit `2e3ec8c`), the standards split (`exports/standards-split/`, commit `b99d2a1`), the integration pass on the paper body (`8d28f39`, writing `8dff566`), the option-numeral isomorph control (`exports/isomorph-options/`, commit `462f963`; integrated at `b6ea3d3`, writing `94f3ff1`), and, after the post-rebuttal note (`icml-style-review-2-post-rebuttal.md`), the repaired layer (`exports/repaired-layer/`, commit `e5b3e68`) and the item-level demand coding (`exports/item-demand-coding/`, commit `357a73c`). Per weakness: what changed, where.
 
-## What is claimed now
+## What is claimed now (after the repaired layer)
+
+Claims in the language-model channel are on the repaired-verified population: stem and options re-read from the page image by Qwen2-VL-7B-Instruct and confirmed by an independent second transcription (431 of 606 Algebra items; withheld-quantity 261 Algebra I, 167 Algebra II). Repaired-all is a sensitivity. Text layer and print-faithful filter are the audit trail (Appendix `app:trail`).
+
+| row | text layer | print-faithful filter | repaired-verified (claimed) | status |
+|---|---|---|---|---|
+| Algebra I masked-stem, Qwen 7B / 14B / Phi-4 | 0.388 / 0.416 / 0.422, n=358 | 0.467 / 0.429 / 0.467, n=184 | 0.540 / 0.552 / 0.494, n=261, modal B 0.287; repaired-all n=343: 0.504 / 0.519 / 0.493 | **claimed**, three scorers |
+| Algebra II masked-stem, three scorers | 0.367 / 0.359 / 0.347, n=248 | 0.348 / 0.383 / 0.348, n=115, failed modal 0.296 | 0.449 / 0.431 / 0.413, n=167, modal C 0.275; repaired-all n=231: 0.433 / 0.416 / 0.407 | **claimed again**; the filter had removed n, not the effect |
+| Isomorph, rank-preserving, three scorers | 14B below floor | 7B 0.391, Phi-4 0.408 on n=184 | Algebra I 0.500 / 0.465 / 0.419 (n=260); Algebra II 0.412 / 0.394 / 0.382 (n=165); all clear; paired Algebra I -0.049 [-0.117, 0.022] / -0.103 [-0.166, -0.040] / -0.090 [-0.157, -0.013] | form component on all three scorers, both cells; no floor needed (same run) |
+| Execution-tagged (cluster) Algebra I | n=164: 14B only | n=75: none | n=130: 0.546 / 0.515 / 0.477 vs modal B 0.323, all three | clears, but the tag class is not an execution population (coders below) |
+| Both coders execution, Algebra I | n=195: Phi-4 only | n=91: none | n=142: 0.401 / 0.437 / 0.352 vs modal B 0.303; Qwen clear, Phi-4 lower 0.275 | **execution statement not made**; information-withholding statement kept |
+| Both coders recognition, Algebra I | n=82: all three | n=54: all three | n=61: 0.738 / 0.705 / 0.705 vs modal A 0.295; isomorph 0.639 / 0.689 / 0.607 | carries the highest rates |
+| Geometry lower-central | 90/279 = 0.323 [0.265, 0.380] | 32/99 = 0.323 [0.232, 0.414] | page-read options (transcription 1 only): 80/246 = 0.325 [0.264, 0.382] | per-cell existence row again; not Holm; replication candidate |
+| EQAO grade 6 lower-central | 20/40 = 0.500 [0.350, 0.650] | 8/14 = 0.571 [0.286, 0.857] | page-read options: 18/38 = 0.474 [0.316, 0.632] | per-cell existence row; not Holm; replication candidate |
+| Image backsolving, STAAR closure, TIMSS, catalog 0 Holm | unchanged | unchanged | unchanged | unchanged |
+
+## What was claimed after the filter step (superseded)
 
 | row | before (text layer) | now (print-faithful) | status |
 |---|---|---|---|
@@ -66,3 +82,13 @@ Partly: the truncated hashes in Appendix A (image addendum preregistration `d6ee
 
 - Table 4 "yes (not claimed)" for Algebra II lower-central is unchanged; the geometry and EQAO rows in that table now carry their print-faithful status.
 - 350,535 trials, proprietary assistant naming, Bonferroni in the abstract: not changed in this pass.
+
+## Post-rebuttal priority list (`icml-style-review-2-post-rebuttal.md`, section 4)
+
+1. **Item-level tag coding.** Done for all 358 Algebra I items, twice, by two language-model coders (GLM 5.2, Kimi K3) blind to key, predictions, and the cluster split, under one fixed rubric with recorded sha (`exports/item-demand-coding/`). Kappa GLM vs Kimi 0.576; each vs the cluster split 0.071 / 0.230. Both coders code more items execution (212, 249) than the tag (164); 79 recognition-tagged items are coded execution by both. On the repaired-verified population, both-coders execution (n=142) clears on Qwen 7B and 14B and not on Phi-4 (0.352 [0.275, 0.430] vs modal 0.303); both-coders recognition (n=61) clears on all three at about 0.7. The reviewer's fork: execution items do not fail on every model, and recognition items are not the only carrier, so the row is not simply carried by form tags; but the execution subset does not clear on all three either, so the paper keeps the information-withholding statement and does not make the operation statement. Title and subtitle unchanged (the catalog and image-backsolve rows still match keys without the tagged operation); the abstract lead is revised in the writing pass. Coders are language models, not humans; stated in Limitations.
+2. **Repair the text layer.** Done for all 606 Algebra I and II items (`exports/repaired-layer/`, preregistration sha `87ec5754...`): transcription 1 = the fidelity VLM output; transcription 2 = same model, reworded prompt, 6 pt larger crop; verified when the two agree under the fidelity thresholds. 431 verified, 185 of them items the filter had dropped. Cell rates on repaired-verified: Algebra I 0.540 / 0.552 / 0.494 (n=261), Algebra II 0.449 / 0.431 / 0.413 (n=167), all clear chance and modal; repaired-all clears too. W2 / N1: the claimed population is no longer selected on text-layer agreement; its remaining selection is two-transcription agreement (0.73 / 0.68 of each cell). Algebra II re-enters.
+3. **Qwen 14B on the isomorph arms.** Done two ways. (a) Text-layer amendment, pre-registered with the floor kept at 0.98: agreement again 592/606 = 0.977, labelled below floor, arms reported in Appendix `tab:amend14b` and not called a pass. (b) Repaired layer: original and rank-preserving letters scored in one run for all three models, no floor needed; 14B 0.465 [0.404, 0.527] on Algebra I verified, 0.394 [0.321, 0.473] on Algebra II verified, both clear; paired -0.103 [-0.166, -0.040] on Algebra I. The conjunction the reviewer objected to (N2) is now true as stated for all three scorers on both cells at the cell level; the writing pass rewrites the abstract sentence so that it conjoins only what Table `tab:isomorph` shows.
+4. **Demote EQAO and TIMSS.** Body: EQAO grade 6 and geometry are per-cell existence rows on page-read options, not Holm survivors, replication candidates (Table `tab:witnesses`); TIMSS is one paragraph in Census and one in Limitations. Contribution bullet 4 now gives them one clause each. Abstract: handled in the writing pass (this ledger entry is written before it).
+5. **Dirty-layer tables to the appendix; lead with the claimed object.** Done: `tab:middle`, `tab:masked`, `tab:ladder`, `tab:scorer`, `tab:faithful`, `tab:verbclass-text`, `tab:isomorph-text`, `tab:amend14b` are in Appendix B (audit trail). Results now runs Controls, Power, then the language-model channel with `tab:repaired`, `tab:verbclass`, `tab:isomorph` (pages 8 to 9 of the PDF), then Census with `tab:witnesses` on three layers, then strategies. Not done: the 350,535-trial arithmetic and the proprietary assistant's name are unchanged (the options-only paragraph that mentions the assistant is now in the appendix).
+
+Still open from the post-rebuttal note: W5 (score-use evidence; no student data), W6 (family graph lock), Q5 (constraint-elimination key kills not joined to tags), Q6 (instruction-only), human validation of the language-model coders, code URL.

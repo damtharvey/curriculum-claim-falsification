@@ -40,7 +40,7 @@ Version 2 is \shahex{8e6186728bf247d8349f1d94b68280b49eeebac7684c7ebeaf80f29345a
 \paragraph{Option-numeral isomorph control.}
 The preregistration of this control was hashed before any scoring for it:
 \shahex{997242b9fb7437ffc2e86e2759e1373ba8ad98e231b0836ef8798a2266523e9b}.
-Population: the 606 withheld-quantity Algebra~I and Algebra~II items under masking version 1 (358 and 248), with the subsets of Appendices~\ref{app:fidelity} and \ref{app:standards}. Seed 20260916; per item and arm the generator is seeded from the sha256 of seed, arm, and item id, so the substitution does not depend on processing order. Numerals in the option strings are integers (including coefficients and exponents), decimals, comma-grouped integers, and fractions. A replacement keeps the digit count, sign, number of decimal places, leading-dot form, and comma grouping, keeps denominators nonzero, and maps every repeat of the same literal within an item to the same new literal; zero becomes a positive one-digit integer. Variables, operators, units, words, option letters, letter order, and the key letter are unchanged. In the rank-preserving arm the leading numbers of the options are redrawn until their pairwise order equals the original order, ties remaining ties; the scrambled arm has no order constraint. Items with no numeral in any option (61 Algebra~I, 21 Algebra~II) are unchanged under both arms, are included in pass rates, and are excluded from the paired difference. Example, June 2016 Algebra~I item 7: options A to D $6.2$, $7.3$, $8.6$, $8.8$ become $7.4$, $9.6$, $9.7$, $9.8$ in the rank-preserving arm and $8.2$, $4.9$, $4.2$, $2.7$ in the scrambled arm. These invariants were asserted on every item before any perturbed arm was scored. Scoring reuses the masked-stem letter rule above, one model load per model. Original letters are re-scored, not copied, and must agree with the saved per-item predictions on at least $0.98$ of the 606 ids before the perturbed arms are scored: Qwen2.5-7B-Instruct $595/606=0.982$ and Phi-4 $606/606=1.000$ cleared; Qwen2.5-14B-Instruct $592/606=0.977$ did not, so its perturbed arms were not scored. Pass-rate intervals are percentile bootstraps seeded by $21+n$ and paired differences by $31+n$, 1{,}000 replicates each. The pre-registered reading applies to Algebra~I print-faithful items on the rank-preserving arm, each model separately: form-based if the perturbed rate clears the channel bar and the paired difference includes zero; not a form effect if the perturbed rate falls to chance; mixed otherwise.
+Population: the 606 withheld-quantity Algebra~I and Algebra~II items under masking version 1 (358 and 248), with the subsets of Appendices~\ref{app:fidelity} and \ref{app:standards}. Seed 20260916; per item and arm the generator is seeded from the sha256 of seed, arm, and item id, so the substitution does not depend on processing order. Numerals in the option strings are integers (including coefficients and exponents), decimals, comma-grouped integers, and fractions. A replacement keeps the digit count, sign, number of decimal places, leading-dot form, and comma grouping, keeps denominators nonzero, and maps every repeat of the same literal within an item to the same new literal; zero becomes a positive one-digit integer. Variables, operators, units, words, option letters, letter order, and the key letter are unchanged. In the rank-preserving arm the leading numbers of the options are redrawn until their pairwise order equals the original order, ties remaining ties; the scrambled arm has no order constraint. Items with no numeral in any option (61 Algebra~I, 21 Algebra~II) are unchanged under both arms, are included in pass rates, and are excluded from the paired difference. Example, June 2016 Algebra~I item 7: options A to D $6.2$, $7.3$, $8.6$, $8.8$ become $7.4$, $9.6$, $9.7$, $9.8$ in the rank-preserving arm and $8.2$, $4.9$, $4.2$, $2.7$ in the scrambled arm. These invariants were asserted on every item before any perturbed arm was scored. Scoring reuses the masked-stem letter rule above, one model load per model. Original letters are re-scored, not copied, and must agree with the saved per-item predictions on at least $0.98$ of the 606 ids before the perturbed arms are scored: Qwen2.5-7B-Instruct $595/606=0.982$ and Phi-4 $606/606=1.000$ cleared; Qwen2.5-14B-Instruct $592/606=0.977$ did not, so its perturbed arms were not scored. Pass-rate intervals are percentile bootstraps seeded by $21+n$ and paired differences by $31+n$, 1{,}000 replicates each. The pre-registered reading applies to Algebra~I print-faithful items on the rank-preserving arm, each model separately: form-based if the perturbed rate clears the channel bar and the paired difference includes zero; not a form effect if the perturbed rate falls to chance; mixed otherwise. Under that reading, on the text layer, Phi-4 is form-based and Qwen 7B is mixed (Table~\ref{tab:isomorph-text}). The same perturbation, rank-preserving arm only, was then applied to the repaired options of Appendix~\ref{app:repair} under the preregistration of that layer; there the original and the perturbed letters were scored in the same run, so no reproduction floor applies. On that layer Qwen 7B's paired difference includes zero on both cells and Qwen 14B's and Phi-4's exclude it on Algebra~I (Table~\ref{tab:isomorph}). Four repaired items whose perturbation raised or exceeded a 20-second limit are excluded from the perturbed arm and counted.
 
 \subsection{Searched program class}
 \label{app:searched}
@@ -61,4 +61,201 @@ Normalization is identical on both sides: Unicode NFKC, LaTeX commands removed e
 Tags: the ``Map to the Learning Standards'' table of the NYSED rating guide for each of the 58 Algebra~I and Algebra~II administrations in the masked-stem primary population, read from the PDF text layer (50 guides, 518 items), from a glyph table for three guides whose Calibri subset has a broken character map (30 items), or by template matching of rendered glyphs against six text-layer guides for five guides with no character map at all (57 items; 0 errors on 33{,}704 held-out characters). Every parsed table is validated (questions 1 to $N$ contiguous, exactly 24 multiple-choice rows). All 358 Algebra~I and 248 Algebra~II items carry a cluster code; 33 distinct clusters are used. Cluster headings and standards were fetched from the CCSS site and stored with page hashes before classification. The verb-class rule, vocabulary, and classification of all 33 clusters were hashed before any prediction was joined to a tag:
 \shahex{c87a5ae0d897b389dbf5cda52086c1754955f7cbb5f9e7a7382f5ac7cc475488}.
 
-Rule: each imperative verb heading a top-level clause of the cluster heading is execution (add, apply a rule, build, calculate, complete the square, compute, construct an equation or model, create, derive, evaluate an expression, factor, find, fit, graph, perform arithmetic operations, produce, rearrange, represent as a graph or table, rewrite, solve, summarize data, transform, translate between forms, write) or recognition or interpretation (analyze, choose, compare, construct an argument, decide, describe, distinguish, evaluate a process or claim, explain, identify, interpret, justify, know, make an inference, prove, reason, recognize, relate, understand). A purpose clause ``use $X$ to $V$'' takes the class of $V$; ``extend'' and ``use $X$'' with no purpose verb are unclassified, and a heading with no classifiable verb takes the class of its non-plus numbered standards. All execution: execution; all recognition: recognition or interpretation; both: mixed. Algebra~I: execution 164 items (clusters A-APR.A, A-CED.A, A-REI.B, A-REI.C, A-REI.D, A-SSE.B, F-BF.A, F-BF.B), recognition or interpretation 151 (A-APR.B, A-REI.A, A-SSE.A, F-IF.A, F-IF.B, F-IF.C, F-LE.B, N-RN.B, S-ID.C), mixed 43 (F-LE.A, N-Q.A, S-ID.A, S-ID.B). Algebra~II: 120, 93, and 35. A disclosed stricter execution class, which also requires that no numbered standard under the cluster be purely recognition, has 133 Algebra~I items (66 print-faithful) and does not clear on any model either. The rows use the saved per-item predictions and the same bootstrap as the main text; the full-cell and faithful rows reproduce the main-text and print-faithful rows exactly.
+Rule: each imperative verb heading a top-level clause of the cluster heading is execution (add, apply a rule, build, calculate, complete the square, compute, construct an equation or model, create, derive, evaluate an expression, factor, find, fit, graph, perform arithmetic operations, produce, rearrange, represent as a graph or table, rewrite, solve, summarize data, transform, translate between forms, write) or recognition or interpretation (analyze, choose, compare, construct an argument, decide, describe, distinguish, evaluate a process or claim, explain, identify, interpret, justify, know, make an inference, prove, reason, recognize, relate, understand). A purpose clause ``use $X$ to $V$'' takes the class of $V$; ``extend'' and ``use $X$'' with no purpose verb are unclassified, and a heading with no classifiable verb takes the class of its non-plus numbered standards. All execution: execution; all recognition: recognition or interpretation; both: mixed. Algebra~I: execution 164 items (clusters A-APR.A, A-CED.A, A-REI.B, A-REI.C, A-REI.D, A-SSE.B, F-BF.A, F-BF.B), recognition or interpretation 151 (A-APR.B, A-REI.A, A-SSE.A, F-IF.A, F-IF.B, F-IF.C, F-LE.B, N-RN.B, S-ID.C), mixed 43 (F-LE.A, N-Q.A, S-ID.A, S-ID.B). Algebra~II: 120, 93, and 35. A disclosed stricter execution class, which also requires that no numbered standard under the cluster be purely recognition, has 133 Algebra~I items (66 print-faithful) and does not clear on any model on the text layer either. The text-layer and filtered rows use the saved per-item predictions and the same bootstrap as the main text; the full-cell and faithful rows reproduce the text-layer and print-faithful rows exactly. On the repaired layer the same class table is joined to the repaired scores: Algebra~I verified 130 execution, 105 recognition or interpretation, 26 mixed; Algebra~II verified 83, 57, and 27.
+
+\subsection{Repaired layer}
+\label{app:repair}
+
+The preregistration of the repaired layer and of the Qwen 14B amendment below was hashed before the verification transcription and before any scoring on that layer:
+\shahex{87ec5754c1b696b25366547793365610a13084f1230247b898f564ea9f92caee}.
+Population: the 606 withheld-quantity Algebra~I and Algebra~II items (358 and 248). Transcription 1 is the stored output of the print-fidelity check (Qwen2-VL-7B-Instruct, revision \shahex{eed13092ef92e448dd6875b2a00151bd3f7db0ac}, prompt and crops of Appendix~\ref{app:fidelity}); items whose stored output has no parseable stem or fewer than two options (15) are left without a repaired stem, and no text is invented. Transcription 2 is a second pass of the same model and revision at greedy decoding, 640 new tokens, seed 20260916, with two deliberate differences: the crop is expanded by 6~pt at the top and bottom (8~pt pad to 14~pt) and the prompt is reworded (it asks the model to copy the printed question, to skip headers, footers, other questions, and the computations box, to copy table cells row by row, to put no answer choice in the stem, and to return one JSON object). Parser, option-label map, and stem post-processing are the functions of the print-fidelity check. An item is repaired-verified when \texttt{score\_fidelity}, applied with transcription 1 as the item text and transcription 2 as the page reading, returns faithful (stem F1, precision, and recall each at least $0.8$; every option at least $0.9$; equal option counts). The key letter is the census key. Masking is version 1 (hash above) applied to the transcription-1 stem; options are not masked; the withheld-quantity population is items with a usable transcription 1, the census key among the transcribed options (no item fails this), and at least one masked token (17 items fail this).
+
+Counts: 431 verified and 175 unverified of 606. Against the filter verdicts, verified items were 246 faithful and 185 not faithful; unverified items were 53 faithful, 107 not faithful, and 15 unverified. Algebra~I: 263 verified (150 faithful, 113 not faithful) and 95 unverified; Algebra~II: 168 verified (96, 72) and 80 unverified. Withheld-quantity population: 574 (343 Algebra~I, 231 Algebra~II), of which 261 and 167 verified. Scoring: the models, revisions, seed, prompt mode, and letter rule of Appendix~\ref{app:lm} (Qwen 7B batch size 4; Qwen 14B and Phi-4 batch size 1), on CUDA, one model load per model; the rank-preserving isomorph arm was scored in the same load. Intervals: \texttt{random.Random.randrange} percentile bootstrap, 1{,}000 replicates, seed $21+n$; paired differences seed $31+n$. Bar: $n\ge 10$, lower bound strictly above $0.25$ and strictly above the subset modal-letter frequency. The preregistration's honesty clause requires the README to say in its first section if a repaired-all Algebra~I row does not clear; none fails. The catalog lower-central rows on the page-read options rerun the same rule on transcription-1 options where stored (item bootstrap seed 11, 1{,}000 replicates; cluster bootstrap seed 20260916, 2{,}000 replicates); no new transcription was made for those cells and no second transcription verifies them.
+
+\paragraph{Qwen 14B amendment on the text layer.}
+The original isomorph control excluded Qwen 14B at $592/606=0.977$ against a $0.98$ reproduction floor. The preregistration above re-runs the 14B original masked-stem letters on the census text layer at batch size 1, keeps the floor at $0.98$, and scores both perturbed arms whatever the agreement, with the label attached. Agreement was again $592/606=0.977$, label \emph{below floor}; the 14 disagreeing item ids are listed in the export. Table~\ref{tab:amend14b} reports the arms so a reader can see them. It is not a pass of the control. The repaired-layer control in Table~\ref{tab:isomorph} covers Qwen 14B without a floor because the original and perturbed letters come from one run.
+
+\subsection{Item-level demand coding}
+\label{app:coders}
+
+Two language-model coders, GLM 5.2 and Kimi K3, each coded the 358 Algebra~I withheld-quantity items under one fixed rubric with three codes: execution (to pick the key you must operate on the specific given quantities: solve, evaluate, compute, factor with these coefficients, rewrite this expression, create an equation from these numbers, graph from this equation, find this value), recognition or interpretation (you can pick the key by recognizing or interpreting the form, meaning, or property named in the wording without computing on the given numbers), and mixed (needs both, or the key needs a small computation that any option-form reading would also give). Each coder received only the item id, stem, and options, with the key, every prediction, and every score field stripped by a helper script, and neither read the cluster split or the other coder's output. Each coder's README records the rubric verbatim with its sha256 (\shahex{ae93b7c651614dd622bba6ff4a9eddbe43c69b4b9ff67407d245365c18b11446} for the three rubric lines joined by newlines; \shahex{434ed271810ece24b0aa050e9424f0caaf7e3398d5654de7318a558505b6ef18} for the same lines as a bulleted text file). Item text came from the print-fidelity transcription where it existed (352 and 351 items) and from the text layer otherwise; the repaired layer did not yet exist when the coders ran. Coders could mark an item unreadable; GLM did so on two items whose options refer to a list absent from the transcribed text.
+
+Codes: GLM 212 execution, 116 recognition or interpretation, 28 mixed, 2 unreadable; Kimi 249, 94, 15, 0; the cluster split 164, 151, 43. Cohen's $\kappa$ (unweighted, three classes, unreadable dropped): GLM versus Kimi $0.576$ ($n=356$, observed agreement $0.789$); GLM versus cluster $0.071$ ($0.461$); Kimi versus cluster $0.230$ ($0.564$). GLM against Kimi: 195 items both execution, 82 both recognition or interpretation, 4 both mixed; 32 items GLM recognition and Kimi execution, 8 the reverse. Against the cluster tag, 86 of the 151 recognition-tagged items are coded execution by GLM and 86 by Kimi (79 by both), and 41 (GLM) and 18 (Kimi) of the 164 execution-tagged items are coded recognition or interpretation. Subsets used in Table~\ref{tab:verbclass}: both coders execution 195 items (142 repaired-verified), both recognition 82 (61), both coders and the tag execution 97 (79), both coders and the tag recognition 51 (35). Rows are recomputed from the saved repaired-layer scores with the bootstrap above; the script and the per-subset id lists are in the export.
+
+\section{Audit trail: text-layer and print-faithful rows}
+\label{app:trail}
+
+These tables are the rows on which earlier revisions made their claims, kept so a reader can follow each row from the text layer, through the print-faithful filter, to the repaired layer of Section~\ref{sec:partial-input}. Nothing in this appendix is claimed on its own.
+
+\begin{table*}[t]
+  \caption{Lower-central on every cell with $n\ge 10$ (items the rule fires on), text layer. Geometry and EQAO grade~6 clear the per-cell bar here and again on the page-read options (Table~\ref{tab:witnesses}). Algebra~II clears the bar and is not claimed (lower end on chance). Holm on this 17-cell slice is exploratory. The other 88 of 105 a priori tests are omitted.}
+  \label{tab:middle}
+  \centering
+  \scriptsize
+  \begin{tabular}{l l r r l r l}
+    \toprule
+    Authority & Claim & $n$ & Pass & 95\% CI & Chance & Bar \\
+    \midrule
+    NY Regents & geometry & 279 & $0.323$ & $[0.265, 0.380]$ & $0.250$ & yes \\
+    EQAO & grade 6 & 40 & $0.500$ & $[0.350, 0.650]$ & $0.254$ & yes \\
+    NY Regents & Algebra II & 372 & $0.298$ & $[0.253, 0.344]$ & $0.250$ & yes (not claimed) \\
+    NY Regents & Algebra I & 458 & $0.260$ & $[0.223, 0.301]$ & $0.250$ & no \\
+    TIMSS & reasoning & 57 & $0.368$ & $[0.246, 0.491]$ & $0.249$ & no \\
+    TIMSS & applying & 50 & $0.240$ & $[0.120, 0.360]$ & $0.249$ & no \\
+    TIMSS & knowing & 41 & $0.293$ & $[0.146, 0.439]$ & $0.248$ & no \\
+    TEKS & Algebra I & 61 & $0.213$ & $[0.115, 0.328]$ & $0.250$ & no \\
+    TEKS & grade 6 & 52 & $0.327$ & $[0.192, 0.462]$ & $0.250$ & no \\
+    TEKS & grade 5 & 49 & $0.347$ & $[0.224, 0.490]$ & $0.250$ & no \\
+    TEKS & grade 8 & 45 & $0.267$ & $[0.156, 0.400]$ & $0.250$ & no \\
+    TEKS & grade 7 & 41 & $0.317$ & $[0.171, 0.463]$ & $0.250$ & no \\
+    TEKS & grade 3 & 36 & $0.278$ & $[0.139, 0.444]$ & $0.250$ & no \\
+    TEKS & grade 4 & 35 & $0.314$ & $[0.171, 0.486]$ & $0.250$ & no \\
+    EQAO & grade 9 & 38 & $0.211$ & $[0.079, 0.342]$ & $0.257$ & no \\
+    EQAO & grade 3 & 33 & $0.242$ & $[0.091, 0.394]$ & $0.253$ & no \\
+    NAPLAN & year 7 & 14 & $0.214$ & $[0.000, 0.429]$ & $0.250$ & no \\
+    \bottomrule
+  \end{tabular}
+\end{table*}
+
+\paragraph{Options only.}
+On the 1{,}487 scoreable clean items, both local Qwen models score $0.301$ versus chance $0.250$ and always-B $0.275$ (7B interval $[0.277, 0.326]$; 14B $[0.276, 0.323]$). Letter agreement between models is $0.457$. A with-stem sanity check on 7B is $0.460$ on 200 items. A proprietary assistant scored through an audited no-tool transcript scores $0.359$ ($n=1493$, interval $[0.334, 0.384]$). No $n\ge 10$ cell has a 7B lower interval above that cell's modal-letter frequency. Algebra~I is $0.309$ $[0.265, 0.355]$ versus modal B $0.272$ (111 of 408). On the 1{,}026 items whose key is not the cell modal letter, 7B is $0.318$ $[0.288, 0.347]$ versus chance $0.250$. On 14B, Algebra~I is $0.321$ $[0.279, 0.363]$ versus modal $0.272$: the lower interval exceeds the modal frequency. That options-only Algebra~I row is not a claimed witness; the claimed object is the masked-stem condition. Recency on the proprietary scorer minus 7B is largest before 2015 ($+0.112$, $n=178$), then $+0.024$ in 2015--2019 ($n=578$) and $+0.069$ in 2020 and later ($n=712$).
+
+\paragraph{Masked stem on the text layer.}
+Of 1{,}487 scored items, 272 had nothing withheld; the primary population is the other 1{,}215. First-run pooled rates on all 1{,}487 (7B $0.405$, 14B $0.425$) mix those 272 in and are not the claim. Table~\ref{tab:masked} gives the named cells. Geometry does not beat its modal letter $0.289$ on 7B ($0.319$, $n=166$, interval $[0.253, 0.392]$) and does not clear chance on 14B ($0.301$ $[0.235, 0.373]$). EQAO grade~6 does not clear chance on 7B ($0.400$, $n=40$, interval $[0.225, 0.575]$ versus $0.255$). TIMSS knowing on this population does not beat its modal letter $0.409$ on 7B ($0.500$, $n=22$, interval $[0.318, 0.682]$). The first-run TIMSS knowing rate $0.657$ ($n=35$) was carried by items where nothing was withheld: of 35 items, 18 are knowledge-answerable without any quantity, 12 are cue-readable from the leftover option set, and 5 are unclear. One-sided binomial $p$ against chance on the text-layer withheld-quantity population: Algebra~I $5.7\times 10^{-9}$ (Qwen 7B), $4.5\times 10^{-12}$ (Qwen 14B), and $9.4\times 10^{-13}$ (Phi-4); Algebra~II $2.9\times 10^{-5}$ (7B), $9.0\times 10^{-5}$ (14B), and $4.2\times 10^{-4}$ (Phi-4); Phi-4 geometry $9.9\times 10^{-6}$ ($67/166$). Against the cell modal frequency: Algebra~I $9.4\times 10^{-7}$, $2.2\times 10^{-9}$, and $5.6\times 10^{-10}$; Algebra~II $0.00147$, $0.00343$, and $0.011$; Phi-4 geometry $0.00104$. Phi-4 text-layer rows: Algebra~I $0.422$ $[0.374, 0.472]$; Algebra~II $0.347$ $[0.286, 0.407]$; Algebra~I residual with none of the four catalog cues $0.380$ $[0.307, 0.460]$ ($n=163$); non-modal-key accuracy $0.387$ ($n=261$); numeric options $0.366$ ($n=71$); geometry $0.404$ $[0.331, 0.476]$ ($n=166$) with non-modal-key split $0.229$ ($n=118$); pooled masked-stem $0.401$ $[0.374, 0.426]$ versus options-only $0.291$ (McNemar $277/143$). Qwen 14B on the 40-item human sheet is $0.425$; on the 28 items whose census row matches the printed packet, Cohen's $\kappa$ with the rater is $0.212$ (human $9/28$, 14B $14/28$).
+
+\begin{table*}[t]
+  \caption{Partial-input language-model channel on named cells, Qwen and Mistral, withheld-quantity population, text layer. Chance is mean $1/k$. Modal is the cell's modal key-letter frequency on that population. Bar: $n\ge 10$ and lower 95\% CI above chance and above that modal frequency. Algebra~I and Algebra~II are claimed on the repaired layer (Table~\ref{tab:repaired}), not here. Geometry: Phi-4 meets the cell bar on the text layer but not the split on items whose key is not the cell's most common letter and is not claimed. TEKS grade~5 and grade~8 clear on Qwen 7B only and are not claimed. Mistral-7B-Instruct-v0.3 does not clear.}
+  \label{tab:masked}
+  \centering
+  \scriptsize
+  \begin{tabular}{l r l l l r r l}
+    \toprule
+    Claim & $n$ & Qwen 7B & Qwen 14B & Mistral 7B & Chance & Modal & Bar \\
+    \midrule
+    Algebra I & 358 & $0.388$ $[0.341, 0.439]$ & $0.416$ $[0.363, 0.469]$ & $0.302$ $[0.257, 0.349]$ & $0.250$ & $0.271$ & Qwen; not Mistral \\
+    Algebra II & 248 & $0.367$ $[0.306, 0.423]$ & $0.359$ $[0.298, 0.415]$ & $0.262$ $[0.210, 0.319]$ & $0.250$ & $0.278$ & Qwen; not Mistral \\
+    geometry & 166 & $0.319$ $[0.253, 0.392]$ & $0.301$ $[0.235, 0.373]$ & $0.295$ $[0.229, 0.373]$ & $0.250$ & $0.289$ & none \\
+    EQAO grade 6 & 40 & $0.400$ $[0.225, 0.575]$ & $0.425$ $[0.300, 0.575]$ & $0.150$ $[0.050, 0.275]$ & $0.255$ & $0.475$ & none \\
+    TIMSS knowing & 22 & $0.500$ $[0.318, 0.682]$ & $0.591$ $[0.409, 0.773]$ & $0.364$ $[0.136, 0.545]$ & $0.248$ & $0.409$ & none \\
+    TIMSS applying & 24 & $0.375$ $[0.208, 0.583]$ & $0.375$ $[0.208, 0.583]$ & $0.167$ $[0.042, 0.333]$ & $0.248$ & $0.333$ & none \\
+    TIMSS reasoning & 42 & $0.286$ $[0.167, 0.429]$ & $0.310$ $[0.167, 0.452]$ & $0.238$ $[0.119, 0.381]$ & $0.261$ & $0.286$ & none \\
+    TEKS grade 5 & 38 & $0.474$ $[0.316, 0.632]$ & $0.368$ $[0.211, 0.526]$ & $0.184$ $[0.079, 0.316]$ & $0.250$ & $0.263$ & 7B only; not claimed \\
+    TEKS grade 8 & 18 & $0.667$ $[0.444, 0.889]$ & $0.611$ $[0.389, 0.833]$ & $0.389$ $[0.167, 0.611]$ & $0.250$ & $0.389$ & 7B only; not claimed \\
+    \bottomrule
+  \end{tabular}
+\end{table*}
+
+\begin{table*}[t]
+  \caption{Information ladder on text-layer withheld-quantity Algebra~I ($n=358$) and Algebra~II ($n=248$), Qwen 7B and 14B. Each rung adds one kind of information; the gap between masked-stem and with-stem is what the given quantities buy.}
+  \label{tab:ladder}
+  \centering
+  \small
+  \begin{tabular}{l l r r r r r}
+    \toprule
+    Claim & Model & Chance & Modal & Options & Masked & With stem \\
+    \midrule
+    Algebra I & Qwen 7B & $0.250$ & $0.271$ $[0.226, 0.318]$ & $0.313$ $[0.268, 0.360]$ & $0.388$ $[0.341, 0.439]$ & $0.508$ $[0.461, 0.559]$ \\
+    Algebra I & Qwen 14B & $0.250$ & $0.271$ $[0.226, 0.318]$ & $0.332$ $[0.285, 0.380]$ & $0.416$ $[0.363, 0.469]$ & $0.575$ $[0.525, 0.626]$ \\
+    Algebra II & Qwen 7B & $0.250$ & $0.278$ $[0.222, 0.331]$ & $0.274$ $[0.218, 0.335]$ & $0.367$ $[0.306, 0.423]$ & $0.403$ $[0.339, 0.464]$ \\
+    Algebra II & Qwen 14B & $0.250$ & $0.278$ $[0.222, 0.331]$ & $0.286$ $[0.234, 0.343]$ & $0.359$ $[0.298, 0.415]$ & $0.440$ $[0.379, 0.500]$ \\
+    \bottomrule
+  \end{tabular}
+\end{table*}
+
+\begin{table*}[t]
+  \caption{With-stem letter-argmax ceiling versus masked-stem on text-layer withheld-quantity Algebra~I ($n=358$). Bar: lower 95\% CI above chance $0.250$ and modal B $0.271$. Mistral's ceiling is its masked-stem rate.}
+  \label{tab:scorer}
+  \centering
+  \small
+  \begin{tabular}{l l l l}
+    \toprule
+    Scorer & With stem & Masked stem & Bar \\
+    \midrule
+    Mistral 7B & $0.304$ $[0.257, 0.352]$ & $0.302$ $[0.257, 0.349]$ & chance only \\
+    Qwen 7B & $0.508$ $[0.461, 0.559]$ & $0.388$ $[0.341, 0.439]$ & both \\
+    Qwen 14B & $0.575$ $[0.525, 0.626]$ & $0.416$ $[0.363, 0.469]$ & both \\
+    Phi-4 & $0.497$ $[0.447, 0.553]$ & $0.422$ $[0.374, 0.472]$ & both \\
+    \bottomrule
+  \end{tabular}
+\end{table*}
+
+\begin{table*}[t]
+  \caption{Every row claimed on the text layer, recomputed on print-faithful items and on the not-faithful complement (the filter step). Catalog rows: the lower-central rule; bar is item lower bound above chance. Language-model rows: masked-stem; bar is lower bound above chance $0.250$ and above the modal key-letter frequency of that subset (Algebra~I: $0.271$ text layer, $0.255$ faithful, $0.286$ not faithful; Algebra~II: $0.278$, $0.296$, $0.323$). Algebra~II cleared chance but not the modal-letter bar on its 115 faithful items and was dropped at this step; it re-enters on the repaired layer (Table~\ref{tab:repaired}). Geometry kept its rate and lost its interval at $n=99$ and re-enters on the page-read options (Table~\ref{tab:witnesses}).}
+  \label{tab:faithful}
+  \centering
+  \scriptsize
+  \begin{tabular}{l l r l l r l l r l l}
+    \toprule
+    & & \multicolumn{3}{c}{Text layer} & \multicolumn{3}{c}{Print-faithful} & \multicolumn{3}{c}{Not faithful} \\
+    Row & Scorer & $n$ & Rate [95\% CI] & Bar & $n$ & Rate [95\% CI] & Bar & $n$ & Rate [95\% CI] & Bar \\
+    \midrule
+    Geometry lower-central & rule & 279 & $0.323$ $[0.265, 0.380]$ & yes & 99 & $0.323$ $[0.232, 0.414]$ & no & 178 & $0.326$ $[0.253, 0.399]$ & yes \\
+    EQAO grade 6 lower-central & rule & 40 & $0.500$ $[0.350, 0.650]$ & yes & 14 & $0.571$ $[0.286, 0.857]$ & yes & 24 & $0.458$ $[0.250, 0.667]$ & no \\
+    Algebra I masked-stem & Qwen 7B & 358 & $0.388$ $[0.341, 0.439]$ & yes & 184 & $0.467$ $[0.391, 0.543]$ & yes & 168 & $0.292$ $[0.220, 0.363]$ & no \\
+    Algebra I masked-stem & Qwen 14B & 358 & $0.416$ $[0.363, 0.469]$ & yes & 184 & $0.429$ $[0.359, 0.500]$ & yes & 168 & $0.393$ $[0.321, 0.464]$ & yes \\
+    Algebra I masked-stem & Phi-4 & 358 & $0.422$ $[0.374, 0.472]$ & yes & 184 & $0.467$ $[0.397, 0.538]$ & yes & 168 & $0.363$ $[0.292, 0.440]$ & yes \\
+    Algebra II masked-stem & Qwen 7B & 248 & $0.367$ $[0.306, 0.423]$ & yes & 115 & $0.348$ $[0.261, 0.435]$ & no & 124 & $0.395$ $[0.306, 0.476]$ & no \\
+    Algebra II masked-stem & Qwen 14B & 248 & $0.359$ $[0.298, 0.415]$ & yes & 115 & $0.383$ $[0.287, 0.461]$ & no & 124 & $0.339$ $[0.250, 0.419]$ & no \\
+    Algebra II masked-stem & Phi-4 & 248 & $0.347$ $[0.286, 0.407]$ & yes & 115 & $0.348$ $[0.270, 0.435]$ & no & 124 & $0.347$ $[0.266, 0.427]$ & no \\
+    \bottomrule
+  \end{tabular}
+\end{table*}
+
+\begin{table*}[t]
+  \caption{Masked-stem rows by the verb class of the publisher's tag on the text layer and on print-faithful items (the filter step). Bar: $n\ge 10$, lower 95\% CI above chance $0.250$ and above the modal key-letter frequency of that subset. On print-faithful items the execution-tagged Algebra~I class ($n=75$) cleared on no model; on the repaired-verified population ($n=130$) it clears on all three (Table~\ref{tab:verbclass}).}
+  \label{tab:verbclass-text}
+  \centering
+  \scriptsize
+  \begin{tabular}{l l r l l l l l}
+    \toprule
+    Claim & Tag class & $n$ & Qwen 7B & Qwen 14B & Phi-4 & Modal & Bar \\
+    \midrule
+    Algebra I & execution, text layer & 164 & $0.293$ $[0.220, 0.360]$ & $0.378$ $[0.311, 0.457]$ & $0.366$ $[0.293, 0.439]$ & B $0.299$ & 14B only \\
+    Algebra I & execution, print-faithful & 75 & $0.360$ $[0.253, 0.480]$ & $0.333$ $[0.240, 0.440]$ & $0.387$ $[0.293, 0.507]$ & B $0.293$ & none \\
+    Algebra I & recognition or interpretation, print-faithful & 83 & $0.518$ $[0.410, 0.614]$ & $0.446$ $[0.349, 0.554]$ & $0.506$ $[0.398, 0.614]$ & D $0.265$ & all three \\
+    Algebra I & mixed, print-faithful & 26 & $0.615$ $[0.423, 0.808]$ & $0.654$ $[0.462, 0.846]$ & $0.577$ $[0.385, 0.769]$ & C $0.346$ & all three \\
+    Algebra II & execution, text layer & 120 & $0.392$ $[0.308, 0.483]$ & $0.400$ $[0.317, 0.475]$ & $0.367$ $[0.283, 0.450]$ & C $0.300$ & Qwen only \\
+    Algebra II & execution, print-faithful & 56 & $0.393$ $[0.250, 0.518]$ & $0.411$ $[0.286, 0.536]$ & $0.339$ $[0.214, 0.464]$ & C $0.286$ & none \\
+    Algebra II & recognition or interpretation, print-faithful & 38 & $0.316$ $[0.184, 0.474]$ & $0.342$ $[0.211, 0.500]$ & $0.316$ $[0.184, 0.474]$ & B $0.395$ & none \\
+    Algebra II & mixed, print-faithful & 21 & $0.286$ $[0.095, 0.476]$ & $0.381$ $[0.190, 0.571]$ & $0.429$ $[0.238, 0.619]$ & A $0.333$ & none \\
+    \bottomrule
+  \end{tabular}
+\end{table*}
+
+\begin{table*}[t]
+  \caption{Option-numeral isomorph control on print-faithful Algebra~I masked-stem items, text layer (the filter step). Original is the re-scored rate from the same model load; it differs from the saved rates by at most one item per row on Qwen 7B (11 of 606 letters changed on re-scoring) and by none on Phi-4. Rank-preserving keeps the order of the options' leading numbers (primary arm); scrambled does not. Paired $\Delta$ is rank-preserving minus original on items with at least one option numeral ($n=136$, $56$, $66$). Bar: lower 95\% CI above chance $0.250$ and above the subset modal-letter frequency ($0.255$, $0.265$, $0.293$), for the rank-preserving and the scrambled arm. Qwen 14B was not scored here: its re-scored original letters agreed with the saved letters on $592/606=0.977$, below the pre-registered floor of $0.98$ (Table~\ref{tab:amend14b}). The repaired-layer control that covers all three scorers is Table~\ref{tab:isomorph}.}
+  \label{tab:isomorph-text}
+  \centering
+  \scriptsize
+  \begin{tabular}{l l r l l l l l}
+    \toprule
+    Scorer & Items & $n$ & Original & Rank-preserving & Scrambled & Paired $\Delta$ [95\% CI] & Bar \\
+    \midrule
+    Qwen 7B & faithful & 184 & $0.473$ $[0.397, 0.549]$ & $0.391$ $[0.321, 0.462]$ & $0.391$ $[0.321, 0.462]$ & $-0.110$ $[-0.199, -0.015]$ & yes / yes \\
+    Qwen 7B & recognition or interpretation & 83 & $0.530$ $[0.422, 0.627]$ & $0.361$ $[0.253, 0.458]$ & $0.410$ $[0.301, 0.518]$ & $-0.250$ $[-0.375, -0.125]$ & no / yes \\
+    Qwen 7B & execution & 75 & $0.360$ $[0.253, 0.480]$ & $0.387$ $[0.280, 0.507]$ & $0.320$ $[0.213, 0.427]$ & $+0.030$ $[-0.106, 0.152]$ & no / no \\
+    Phi-4 & faithful & 184 & $0.467$ $[0.397, 0.538]$ & $0.408$ $[0.342, 0.478]$ & $0.446$ $[0.375, 0.516]$ & $-0.081$ $[-0.169, 0.015]$ & yes / yes \\
+    Phi-4 & recognition or interpretation & 83 & $0.506$ $[0.398, 0.614]$ & $0.398$ $[0.289, 0.506]$ & $0.410$ $[0.301, 0.518]$ & $-0.161$ $[-0.304, -0.036]$ & yes / yes \\
+    Phi-4 & execution & 75 & $0.387$ $[0.293, 0.507]$ & $0.373$ $[0.267, 0.480]$ & $0.440$ $[0.333, 0.560]$ & $-0.015$ $[-0.152, 0.121]$ & no / yes \\
+    \bottomrule
+  \end{tabular}
+\end{table*}
+
+\begin{table*}[t]
+  \caption{Qwen 14B option-numeral arms on the text layer under the amendment of Appendix~\ref{app:repair}. Re-scored original letters agreed with the saved letters on $592/606=0.977$, below the $0.98$ floor, so this table is labelled below floor and is not a pass of the control. Paired $\Delta$ is rank-preserving minus original on items with an option numeral. Bar is for the rank-preserving arm against chance $0.250$ and the subset modal-letter frequency.}
+  \label{tab:amend14b}
+  \centering
+  \scriptsize
+  \begin{tabular}{l r l l l l l}
+    \toprule
+    Items & $n$ & Original & Rank-preserving & Scrambled & Paired $\Delta$ [95\% CI] & Bar \\
+    \midrule
+    Algebra I, all & 358 & $0.408$ $[0.355, 0.458]$ & $0.360$ $[0.313, 0.413]$ & $0.316$ $[0.271, 0.366]$ & $-0.057$ $[-0.114, 0.000]$ & yes \\
+    Algebra I, faithful & 184 & $0.418$ $[0.348, 0.489]$ & $0.380$ $[0.315, 0.457]$ & $0.370$ $[0.304, 0.446]$ & $-0.051$ $[-0.132, 0.029]$ & yes \\
+    Algebra I, faithful, recognition-tagged & 83 & $0.446$ $[0.337, 0.554]$ & $0.386$ $[0.289, 0.494]$ & $0.410$ $[0.301, 0.518]$ & $-0.089$ $[-0.214, 0.054]$ & yes \\
+    Algebra I, faithful, execution-tagged & 75 & $0.307$ $[0.213, 0.413]$ & $0.333$ $[0.227, 0.440]$ & $0.293$ $[0.187, 0.400]$ & $+0.030$ $[-0.076, 0.136]$ & no \\
+    Algebra II, all & 248 & $0.363$ $[0.302, 0.423]$ & $0.323$ $[0.262, 0.379]$ & $0.294$ $[0.238, 0.351]$ & $-0.044$ $[-0.119, 0.026]$ & no \\
+    Algebra II, faithful & 115 & $0.374$ $[0.287, 0.452]$ & $0.339$ $[0.252, 0.435]$ & $0.278$ $[0.200, 0.365]$ & $-0.038$ $[-0.160, 0.085]$ & no \\
+    \bottomrule
+  \end{tabular}
+\end{table*}
