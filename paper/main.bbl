@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{31}
+\begin{thebibliography}{35}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -141,6 +141,26 @@
   \bibinfo{number}{2} (\bibinfo{year}{2016}), \bibinfo{pages}{253--273}.
 \newblock
 \href{https://doi.org/10.1007/s11336-015-9467-8}{doi:\nolinkurl{10.1007/s11336-015-9467-8}}
+
+
+\bibitem[Fang et~al\mbox{.}(2025)]%
+        {fang-etal-2025-patch}
+\bibfield{author}{\bibinfo{person}{Qixiang Fang}, \bibinfo{person}{Daniel
+  Oberski}, {and} \bibinfo{person}{Dong Nguyen}.}
+  \bibinfo{year}{2025}\natexlab{}.
+\newblock \showarticletitle{{PATCH}! {P}sychometrics-{A}ssis{T}ed
+  {B}en{CH}marking of Large Language Models against Human Populations: A Case
+  Study of Proficiency in 8th Grade Mathematics}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the Fourth Workshop on Generation,
+  Evaluation and Metrics (GEM{\texttwosuperior})}}.
+  \bibinfo{publisher}{Association for Computational Linguistics},
+  \bibinfo{address}{Vienna, Austria and virtual meeting},
+  \bibinfo{pages}{808--823}.
+\newblock
+\urldef\tempurl%
+\url{https://aclanthology.org/2025.gem-1.68/}
+\showURL{%
+\tempurl}
 
 
 \bibitem[Geirhos et~al\mbox{.}(2020)]%
@@ -398,6 +418,36 @@
 \href{https://doi.org/10.1177/001316446502500304}{doi:\nolinkurl{10.1177/001316446502500304}}
 
 
+\bibitem[Mirzadeh et~al\mbox{.}(2025)]%
+        {mirzadeh2025gsmsymbolic}
+\bibfield{author}{\bibinfo{person}{Seyed~Iman Mirzadeh},
+  \bibinfo{person}{Keivan Alizadeh}, \bibinfo{person}{Hooman Shahrokhi},
+  \bibinfo{person}{Oncel Tuzel}, \bibinfo{person}{Samy Bengio}, {and}
+  \bibinfo{person}{Mehrdad Farajtabar}.} \bibinfo{year}{2025}\natexlab{}.
+\newblock \showarticletitle{{GSM}-Symbolic: Understanding the Limitations of
+  Mathematical Reasoning in Large Language Models}. In
+  \bibinfo{booktitle}{\emph{The Thirteenth International Conference on Learning
+  Representations (ICLR)}}.
+\newblock
+\urldef\tempurl%
+\url{https://openreview.net/forum?id=AjXkRZIvjB}
+\showURL{%
+\tempurl}
+
+
+\bibitem[Moore et~al\mbox{.}(2024)]%
+        {Moore_2024}
+\bibfield{author}{\bibinfo{person}{Steven Moore}, \bibinfo{person}{Eamon
+  Costello}, \bibinfo{person}{Huy~A. Nguyen}, {and} \bibinfo{person}{John
+  Stamper}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{An Automatic Question Usability Evaluation
+  Toolkit}. In \bibinfo{booktitle}{\emph{Artificial Intelligence in Education
+  (AIED 2024), Lecture Notes in Computer Science}}.
+  \bibinfo{publisher}{Springer Nature Switzerland}, \bibinfo{pages}{31--46}.
+\newblock
+\href{https://doi.org/10.1007/978-3-031-64299-9_3}{doi:\nolinkurl{10.1007/978-3-031-64299-9_3}}
+
+
 \bibitem[Poliak et~al\mbox{.}(2018)]%
         {poliak-etal-2018-hypothesis}
 \bibfield{author}{\bibinfo{person}{Adam Poliak}, \bibinfo{person}{Jason
@@ -475,6 +525,21 @@
   \bibinfo{pages}{2158244019832684}.
 \newblock
 \href{https://doi.org/10.1177/2158244019832684}{doi:\nolinkurl{10.1177/2158244019832684}}
+
+
+\bibitem[Watson et~al\mbox{.}(2018)]%
+        {Watson_2018}
+\bibfield{author}{\bibinfo{person}{Patrick Watson}, \bibinfo{person}{TengFei
+  Ma}, \bibinfo{person}{Ravi Tejwani}, \bibinfo{person}{Maria Chang},
+  \bibinfo{person}{JaeWook Ahn}, {and} \bibinfo{person}{Sharad Sundararajan}.}
+  \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{Human-level Multiple Choice Question Guessing
+  Without Domain Knowledge: Machine-Learning of Framing Effects}. In
+  \bibinfo{booktitle}{\emph{Companion Proceedings of the The Web Conference
+  2018 (WWW '18 Companion)}}. \bibinfo{publisher}{ACM},
+  \bibinfo{pages}{299--303}.
+\newblock
+\href{https://doi.org/10.1145/3184558.3186340}{doi:\nolinkurl{10.1145/3184558.3186340}}
 
 
 \bibitem[White and Zammarelli(1981)]%
