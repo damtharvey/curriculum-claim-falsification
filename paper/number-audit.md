@@ -22,6 +22,8 @@ Source of record for numbers in the paper after the ICML-style science pass. Ind
 - Discovery Holm reject: STAAR grade 5 arithmetic closure 21/40 = 0.525, CI [0.375, 0.675].
 - Powered replication after option-leak repair: combined 21/64 = 0.328, CI [0.219, 0.438], covers chance.
 - 172-test pool with the 105 catalog tests: same single Holm reject.
+- Text-layer backsolving: no cell n fired >= 10 (6 unique fires / 1186 solving-tagged stems).
+- Image-channel backsolving (Qwen2-VL-7B-Instruct rev eed13092..., hashed before scoring, not in the 67 Holm family). Original unique-satisfier Algebra I 14/17 = 0.824, CI [0.647, 1.000], coverage 17/598 = 0.028. Honest displayed-equation set: 14/15 = 0.933, n=15, CI [0.800, 1.000], chance 0.25, coverage 15/598 = 0.025. Clears per-cell bar. Dropped: 2024-jan-q2 invented x=2; 2018-jan-q10 parse_wrong. Kept miss: 2014-aug-q5 not-on-graph. Source: `exports/addendum-vlm/backsolve-extract-honest.json`.
 
 ## Language-model family (68 tests)
 

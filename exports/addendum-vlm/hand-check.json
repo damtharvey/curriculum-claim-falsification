@@ -1,0 +1,1578 @@
+{
+  "rule": "Fired extract+sympy items sorted by id, first 30. Compare extracted equation to the PNG.",
+  "nFiredAvailable": 31,
+  "nSample": 30,
+  "parseCorrect": 25,
+  "parseWrong": 5,
+  "parseAmbiguous": 0,
+  "keyDoesNotSatisfy": 6,
+  "items": [
+    {
+      "id": "nyregents-algebra-i-2014-aug-q5",
+      "png": "exports/addendum-vlm/pages/nyregents-algebra-i-2014-aug-q5.png",
+      "extractedLatex": "y = x^2 + 3x - 6",
+      "extractedAscii": "y = x**2 + 3*x - 6",
+      "satisfierLetter": "B",
+      "key": "D",
+      "correct": false,
+      "transcribedOptions": {
+        "A": "(-6,12)",
+        "B": "(-4,-2)",
+        "C": "(2,4)",
+        "D": "(3,-6)"
+      },
+      "substitution": {
+        "equations": [
+          {
+            "left": "y",
+            "rel": "=",
+            "right": "x**2 + 3*x - 6",
+            "variable": "x",
+            "variables": [
+              "x",
+              "y"
+            ]
+          }
+        ],
+        "nEquations": 1,
+        "parsedScalars": {},
+        "parsedPairs": {
+          "B": [
+            -4.0,
+            -2.0
+          ],
+          "D": [
+            3.0,
+            -6.0
+          ]
+        },
+        "used": {
+          "kind": "pair",
+          "variables": [
+            "x",
+            "y"
+          ]
+        },
+        "hits": [
+          "B"
+        ]
+      },
+      "judgment": "parse_correct",
+      "keyDoesNotSatisfy": true,
+      "notes": "Equation y=x^2+3x-6 matches. Item asks which point is NOT on the graph; unique satisfier therefore misses the key."
+    },
+    {
+      "id": "nyregents-algebra-i-2016-jun-q18",
+      "png": "exports/addendum-vlm/pages/nyregents-algebra-i-2016-jun-q18.png",
+      "extractedLatex": "4y + 2x = 33.6",
+      "extractedAscii": "4*y + 2*x = 33.6",
+      "satisfierLetter": "D",
+      "key": "D",
+      "correct": true,
+      "transcribedOptions": {
+        "A": "(-14.0, -1.4)",
+        "B": "(-6.8, 5.0)",
+        "C": "(1.9, 4.6)",
+        "D": "(6.0, 5.4)"
+      },
+      "substitution": {
+        "equations": [
+          {
+            "left": "4*y + 2*x",
+            "rel": "=",
+            "right": "33.6",
+            "variable": "x",
+            "variables": [
+              "x",
+              "y"
+            ]
+          }
+        ],
+        "nEquations": 1,
+        "parsedScalars": {},
+        "parsedPairs": {
+          "A": [
+            -14.0,
+            -1.4
+          ],
+          "B": [
+            -6.8,
+            5.0
+          ],
+          "C": [
+            1.9,
+            4.6
+          ],
+          "D": [
+            6.0,
+            5.4
+          ]
+        },
+        "used": {
+          "kind": "pair",
+          "variables": [
+            "x",
+            "y"
+          ]
+        },
+        "hits": [
+          "D"
+        ]
+      },
+      "judgment": "parse_correct",
+      "keyDoesNotSatisfy": false,
+      "notes": "Displayed line 4y+2x=33.6 matches. D uniquely satisfies that equation among options."
+    },
+    {
+      "id": "nyregents-algebra-i-2017-jan-q15",
+      "png": "exports/addendum-vlm/pages/nyregents-algebra-i-2017-jan-q15.png",
+      "extractedLatex": "13 - 36x^2 = -12",
+      "extractedAscii": "13 - 36*x**2 = -12",
+      "satisfierLetter": "D",
+      "key": "D",
+      "correct": true,
+      "transcribedOptions": {
+        "A": "36/25",
+        "B": "25/36",
+        "C": "-6/5",
+        "D": "-5/6"
+      },
+      "substitution": {
+        "equations": [
+          {
+            "left": "13 - 36*x**2",
+            "rel": "=",
+            "right": "-12",
+            "variable": "x",
+            "variables": [
+              "x"
+            ]
+          }
+        ],
+        "nEquations": 1,
+        "parsedScalars": {
+          "A": 1.44,
+          "B": 0.6944444444444444,
+          "C": -1.2,
+          "D": -0.8333333333333334
+        },
+        "parsedPairs": {},
+        "used": {
+          "kind": "scalar",
+          "variable": "x",
+          "left": "13 - 36*x**2",
+          "rel": "=",
+          "right": "-12"
+        },
+        "hits": [
+          "D"
+        ]
+      },
+      "judgment": "parse_correct",
+      "keyDoesNotSatisfy": false,
+      "notes": "Equation 13-36x^2=-12 matches. D=-5/6 uniquely satisfies among the four scalars."
+    },
+    {
+      "id": "nyregents-algebra-i-2017-jun-q13",
+      "png": "exports/addendum-vlm/pages/nyregents-algebra-i-2017-jun-q13.png",
+      "extractedLatex": "47 - 4x < 7",
+      "extractedAscii": "47 - 4*x < 7",
+      "satisfierLetter": "D",
+      "key": "D",
+      "correct": true,
+      "transcribedOptions": {
+        "A": "-13",
+        "B": "-10",
+        "C": "10",
+        "D": "11"
+      },
+      "substitution": {
+        "equations": [
+          {
+            "left": "47 - 4*x",
+            "rel": "<",
+            "right": "7",
+            "variable": "x",
+            "variables": [
+              "x"
+            ]
+          }
+        ],
+        "nEquations": 1,
+        "parsedScalars": {
+          "A": -13.0,
+          "B": -10.0,
+          "C": 10.0,
+          "D": 11.0
+        },
+        "parsedPairs": {},
+        "used": {
+          "kind": "scalar",
+          "variable": "x",
+          "left": "47 - 4*x",
+          "rel": "<",
+          "right": "7"
+        },
+        "hits": [
+          "D"
+        ]
+      },
+      "judgment": "parse_correct",
+      "keyDoesNotSatisfy": false,
+      "notes": "Inequality 47-4x<7 matches. Only 11 among the options satisfies x>10."
+    },
+    {
+      "id": "nyregents-algebra-i-2018-aug-q4",
+      "png": "exports/addendum-vlm/pages/nyregents-algebra-i-2018-aug-q4.png",
+      "extractedLatex": "-2(1 - 4x) = 3x + 8",
+      "extractedAscii": "-2*(1 - 4*x) = 3*x + 8",
+      "satisfierLetter": "B",
+      "key": "B",
+      "correct": true,
+      "transcribedOptions": {
+        "A": "6/11",
+        "B": "2",
+        "C": "-10/7",
+        "D": "-2"
+      },
+      "substitution": {
+        "equations": [
+          {
+            "left": "-2*(1 - 4*x)",
+            "rel": "=",
+            "right": "3*x + 8",
+            "variable": "x",
+            "variables": [
+              "x"
+            ]
+          }
+        ],
+        "nEquations": 1,
+        "parsedScalars": {
+          "A": 0.5454545454545454,
+          "B": 2.0,
+          "C": -1.4285714285714286,
+          "D": -2.0
+        },
+        "parsedPairs": {},
+        "used": {
+          "kind": "scalar",
+          "variable": "x",
+          "left": "-2*(1 - 4*x)",
+          "rel": "=",
+          "right": "3*x + 8"
+        },
+        "hits": [
+          "B"
+        ]
+      },
+      "judgment": "parse_correct",
+      "keyDoesNotSatisfy": false,
+      "notes": "Equation -2(1-4x)=3x+8 matches."
+    },
+    {
+      "id": "nyregents-algebra-i-2018-jan-q10",
+      "png": "exports/addendum-vlm/pages/nyregents-algebra-i-2018-jan-q10.png",
+      "extractedLatex": "y = x^2 - 3",
+      "extractedAscii": "y = x**2 - 3",
+      "satisfierLetter": "A",
+      "key": "C",
+      "correct": false,
+      "transcribedOptions": {
+        "A": "(0.38, -2.85)",
+        "B": "(2.62, 3.85)",
+        "C": "(0.38, -2.85) and (2.62, 3.85)",
+        "D": "(0.38, -2.85) and (3.85, 2.62)"
+      },
+      "substitution": {
+        "equations": [
+          {
+            "left": "y",
+            "rel": "=",
+            "right": "x**2 - 3",
+            "variable": "x",
+            "variables": [
+              "x",
+              "y"
+            ]
+          }
+        ],
+        "nEquations": 1,
+        "parsedScalars": {},
+        "parsedPairs": {
+          "A": [
+            0.38,
+            -2.85
+          ],
+          "B": [
+            2.62,
+            3.85
+          ]
+        },
+        "used": {
+          "kind": "pair",
+          "variables": [
+            "x",
+            "y"
+          ]
+        },
+        "hits": [
+          "A"
+        ]
+      },
+      "judgment": "parse_wrong",
+      "keyDoesNotSatisfy": true,
+      "notes": "Page shows two graphs y=x^2-3 and y=3x-4. Extracted only the first. Option C is a pair of points and did not strict-parse."
+    },
+    {
+      "id": "nyregents-algebra-i-2018-jan-q22",
+      "png": "exports/addendum-vlm/pages/nyregents-algebra-i-2018-jan-q22.png",
+      "extractedLatex": "\\frac{2}{3}\\left(\\frac{1}{4}x - 2\\right) = \\frac{1}{5}\\left(\\frac{4}{3}x - 1\\right)",
+      "extractedAscii": "2/3*(1/4*x - 2) = 1/5*(4/3*x - 1)",
+      "satisfierLetter": "D",
+      "key": "D",
+      "correct": true,
+      "transcribedOptions": {
+        "A": "-10",
+        "B": "-2",
+        "C": "-9.09",
+        "D": "-11.3"
+      },
+      "substitution": {
+        "equations": [
+          {
+            "left": "2/3*(1/4*x - 2)",
+            "rel": "=",
+            "right": "1/5*(4/3*x - 1)",
+            "variable": "x",
+            "variables": [
+              "x"
+            ]
+          }
+        ],
+        "nEquations": 1,
+        "parsedScalars": {
+          "A": -10.0,
+          "B": -2.0,
+          "C": -9.09,
+          "D": -11.3
+        },
+        "parsedPairs": {},
+        "used": {
+          "kind": "scalar",
+          "variable": "x",
+          "left": "2/3*(1/4*x - 2)",
+          "rel": "=",
+          "right": "1/5*(4/3*x - 1)"
+        },
+        "hits": [
+          "D"
+        ]
+      },
+      "judgment": "parse_correct",
+      "keyDoesNotSatisfy": false,
+      "notes": "Equation matches. Repeating-decimal options were rounded in transcription; D still uniquely satisfies."
+    },
+    {
+      "id": "nyregents-algebra-i-2019-aug-q4",
+      "png": "exports/addendum-vlm/pages/nyregents-algebra-i-2019-aug-q4.png",
+      "extractedLatex": "\\frac{4}{3} = \\frac{x + 10}{15}",
+      "extractedAscii": "4/3 = (x + 10) / 15",
+      "satisfierLetter": "C",
+      "key": "C",
+      "correct": true,
+      "transcribedOptions": {
+        "A": "-6",
+        "B": "5",
+        "C": "10",
+        "D": "30"
+      },
+      "substitution": {
+        "equations": [
+          {
+            "left": "4/3",
+            "rel": "=",
+            "right": "(x + 10) / 15",
+            "variable": "x",
+            "variables": [
+              "x"
+            ]
+          }
+        ],
+        "nEquations": 1,
+        "parsedScalars": {
+          "A": -6.0,
+          "B": 5.0,
+          "C": 10.0,
+          "D": 30.0
+        },
+        "parsedPairs": {},
+        "used": {
+          "kind": "scalar",
+          "variable": "x",
+          "left": "4/3",
+          "rel": "=",
+          "right": "(x + 10) / 15"
+        },
+        "hits": [
+          "C"
+        ]
+      },
+      "judgment": "parse_correct",
+      "keyDoesNotSatisfy": false,
+      "notes": "Proportion 4/3=(x+10)/15 matches."
+    },
+    {
+      "id": "nyregents-algebra-i-2019-jan-q5",
+      "png": "exports/addendum-vlm/pages/nyregents-algebra-i-2019-jan-q5.png",
+      "extractedLatex": "\\frac{3}{5}(x + \\frac{4}{3}) = 1.04",
+      "extractedAscii": "(3/5)*(x + 4/3) = 1.04",
+      "satisfierLetter": "B",
+      "key": "B",
+      "correct": true,
+      "transcribedOptions": {
+        "A": "3.06",
+        "B": "0.4",
+        "C": "-0.48",
+        "D": "-0.7093"
+      },
+      "substitution": {
+        "equations": [
+          {
+            "left": "(3/5)*(x + 4/3)",
+            "rel": "=",
+            "right": "1.04",
+            "variable": "x",
+            "variables": [
+              "x"
+            ]
+          }
+        ],
+        "nEquations": 1,
+        "parsedScalars": {
+          "A": 3.06,
+          "B": 0.4,
+          "C": -0.48,
+          "D": -0.7093
+        },
+        "parsedPairs": {},
+        "used": {
+          "kind": "scalar",
+          "variable": "x",
+          "left": "(3/5)*(x + 4/3)",
+          "rel": "=",
+          "right": "1.04"
+        },
+        "hits": [
+          "B"
+        ]
+      },
+      "judgment": "parse_correct",
+      "keyDoesNotSatisfy": false,
+      "notes": "Equation matches. Repeating bars on options were dropped; 0.4 still uniquely satisfies."
+    },
+    {
+      "id": "nyregents-algebra-i-2023-aug-q3",
+      "png": "exports/addendum-vlm/pages/nyregents-algebra-i-2023-aug-q3.png",
+      "extractedLatex": "y = x^3 - 2x",
+      "extractedAscii": "y = x**3 - 2*x",
+      "satisfierLetter": "A",
+      "key": "A",
+      "correct": true,
+      "transcribedOptions": {
+        "A": "(-3, -21)",
+        "B": "(-2, 10)",
+        "C": "(1, 1)",
+        "D": "(4, 2)"
+      },
+      "substitution": {
+        "equations": [
+          {
+            "left": "y",
+            "rel": "=",
+            "right": "x**3 - 2*x",
+            "variable": "x",
+            "variables": [
+              "x",
+              "y"
+            ]
+          }
+        ],
+        "nEquations": 1,
+        "parsedScalars": {},
+        "parsedPairs": {
+          "A": [
+            -3.0,
+            -21.0
+          ],
+          "B": [
+            -2.0,
+            10.0
+          ],
+          "C": [
+            1.0,
+            1.0
+          ],
+          "D": [
+            4.0,
+            2.0
+          ]
+        },
+        "used": {
+          "kind": "pair",
+          "variables": [
+            "x",
+            "y"
+          ]
+        },
+        "hits": [
+          "A"
+        ]
+      },
+      "judgment": "parse_correct",
+      "keyDoesNotSatisfy": false,
+      "notes": "Equation y=x^3-2x matches. Point (-3,-21) uniquely satisfies."
+    },
+    {
+      "id": "nyregents-algebra-i-2023-jan-q7",
+      "png": "exports/addendum-vlm/pages/nyregents-algebra-i-2023-jan-q7.png",
+      "extractedLatex": "2 + 3(2a + 1) = 3(a + 2)",
+      "extractedAscii": "2 + 3*(2a + 1) = 3*(a + 2)",
+      "satisfierLetter": "B",
+      "key": "B",
+      "correct": true,
+      "transcribedOptions": {
+        "A": "1/7",
+        "B": "1/3",
+        "C": "-3/7",
+        "D": "-1/3"
+      },
+      "substitution": {
+        "equations": [
+          {
+            "left": "2 + 3*(2a + 1)",
+            "rel": "=",
+            "right": "3*(a + 2)",
+            "variable": "a",
+            "variables": [
+              "a"
+            ]
+          }
+        ],
+        "nEquations": 1,
+        "parsedScalars": {
+          "A": 0.14285714285714285,
+          "B": 0.3333333333333333,
+          "C": -0.42857142857142855,
+          "D": -0.3333333333333333
+        },
+        "parsedPairs": {},
+        "used": {
+          "kind": "scalar",
+          "variable": "a",
+          "left": "2 + 3*(2a + 1)",
+          "rel": "=",
+          "right": "3*(a + 2)"
+        },
+        "hits": [
+          "B"
+        ]
+      },
+      "judgment": "parse_correct",
+      "keyDoesNotSatisfy": false,
+      "notes": "Equation 2+3(2a+1)=3(a+2) matches."
+    },
+    {
+      "id": "nyregents-algebra-i-2024-jan-q2",
+      "png": "exports/addendum-vlm/pages/nyregents-algebra-i-2024-jan-q2.png",
+      "extractedLatex": "x = 2",
+      "extractedAscii": "x = 2",
+      "satisfierLetter": "B",
+      "key": "C",
+      "correct": false,
+      "transcribedOptions": {
+        "A": "0",
+        "B": "2",
+        "C": "6",
+        "D": "4"
+      },
+      "substitution": {
+        "equations": [
+          {
+            "left": "x",
+            "rel": "=",
+            "right": "2",
+            "variable": "x",
+            "variables": [
+              "x"
+            ]
+          }
+        ],
+        "nEquations": 1,
+        "parsedScalars": {
+          "A": 0.0,
+          "B": 2.0,
+          "C": 6.0,
+          "D": 4.0
+        },
+        "parsedPairs": {},
+        "used": {
+          "kind": "scalar",
+          "variable": "x",
+          "left": "x",
+          "rel": "=",
+          "right": "2"
+        },
+        "hits": [
+          "B"
+        ]
+      },
+      "judgment": "parse_wrong",
+      "keyDoesNotSatisfy": true,
+      "notes": "No displayed equation. Item is a function/relation question. Model invented x=2 from an option."
+    },
+    {
+      "id": "nyregents-algebra-i-2025-jan-q18",
+      "png": "exports/addendum-vlm/pages/nyregents-algebra-i-2025-jan-q18.png",
+      "extractedLatex": "y - 1 = 2(x + \\frac{1}{4})",
+      "extractedAscii": "y - 1 = 2(x + 0.25)",
+      "satisfierLetter": "B",
+      "key": "B",
+      "correct": true,
+      "transcribedOptions": {
+        "A": "(0.75, 0)",
+        "B": "(1.25, 4)",
+        "C": "(2.5, -6.5)",
+        "D": "(4, -9.5)"
+      },
+      "substitution": {
+        "equations": [
+          {
+            "left": "y - 1",
+            "rel": "=",
+            "right": "2(x + 0.25)",
+            "variable": "x",
+            "variables": [
+              "x",
+              "y"
+            ]
+          }
+        ],
+        "nEquations": 1,
+        "parsedScalars": {},
+        "parsedPairs": {
+          "A": [
+            0.75,
+            0.0
+          ],
+          "B": [
+            1.25,
+            4.0
+          ],
+          "C": [
+            2.5,
+            -6.5
+          ],
+          "D": [
+            4.0,
+            -9.5
+          ]
+        },
+        "used": {
+          "kind": "pair",
+          "variables": [
+            "x",
+            "y"
+          ]
+        },
+        "hits": [
+          "B"
+        ]
+      },
+      "judgment": "parse_correct",
+      "keyDoesNotSatisfy": false,
+      "notes": "Equation y-1=2(x+1/4) matches. Point (1.25,4) uniquely satisfies."
+    },
+    {
+      "id": "nyregents-algebra-i-2026-aug-q2",
+      "png": "exports/addendum-vlm/pages/nyregents-algebra-i-2026-aug-q2.png",
+      "extractedLatex": "3x - 4 = 2.6x + 8.2",
+      "extractedAscii": "3x - 4 = 2.6x + 8.2",
+      "satisfierLetter": "A",
+      "key": "A",
+      "correct": true,
+      "transcribedOptions": {
+        "A": "30.5",
+        "B": "10.5",
+        "C": "21.5",
+        "D": "3.05"
+      },
+      "substitution": {
+        "equations": [
+          {
+            "left": "3x - 4",
+            "rel": "=",
+            "right": "2.6x + 8.2",
+            "variable": "x",
+            "variables": [
+              "x"
+            ]
+          }
+        ],
+        "nEquations": 1,
+        "parsedScalars": {
+          "A": 30.5,
+          "B": 10.5,
+          "C": 21.5,
+          "D": 3.05
+        },
+        "parsedPairs": {},
+        "used": {
+          "kind": "scalar",
+          "variable": "x",
+          "left": "3x - 4",
+          "rel": "=",
+          "right": "2.6x + 8.2"
+        },
+        "hits": [
+          "A"
+        ]
+      },
+      "judgment": "parse_correct",
+      "keyDoesNotSatisfy": false,
+      "notes": "Equation 3x-4=2.6x+8.2 matches (crop also shows later items; stem prefix kept q2)."
+    },
+    {
+      "id": "nyregents-algebra-i-2026-aug-q22",
+      "png": "exports/addendum-vlm/pages/nyregents-algebra-i-2026-aug-q22.png",
+      "extractedLatex": "y = x^2 - 7x - 10",
+      "extractedAscii": "y = x**2 - 7*x - 10",
+      "satisfierLetter": "D",
+      "key": "D",
+      "correct": true,
+      "transcribedOptions": {
+        "A": "(10, 0)",
+        "B": "(-10, 0)",
+        "C": "(3.5, -22.5)",
+        "D": "(3.5, -22.25)"
+      },
+      "substitution": {
+        "equations": [
+          {
+            "left": "y",
+            "rel": "=",
+            "right": "x**2 - 7*x - 10",
+            "variable": "x",
+            "variables": [
+              "x",
+              "y"
+            ]
+          }
+        ],
+        "nEquations": 1,
+        "parsedScalars": {},
+        "parsedPairs": {
+          "A": [
+            10.0,
+            0.0
+          ],
+          "B": [
+            -10.0,
+            0.0
+          ],
+          "C": [
+            3.5,
+            -22.5
+          ],
+          "D": [
+            3.5,
+            -22.25
+          ]
+        },
+        "used": {
+          "kind": "pair",
+          "variables": [
+            "x",
+            "y"
+          ]
+        },
+        "hits": [
+          "D"
+        ]
+      },
+      "judgment": "parse_correct",
+      "keyDoesNotSatisfy": false,
+      "notes": "Equation y=x^2-7x-10 matches. A/B letters were swapped vs (1)/(2) but D is the unique point on the graph."
+    },
+    {
+      "id": "nyregents-algebra-i-2026-jun-q2",
+      "png": "exports/addendum-vlm/pages/nyregents-algebra-i-2026-jun-q2.png",
+      "extractedLatex": "0.5x - 4 = 8 - x",
+      "extractedAscii": "0.5x - 4 = 8 - x",
+      "satisfierLetter": "B",
+      "key": "B",
+      "correct": true,
+      "transcribedOptions": {
+        "A": "6",
+        "B": "8",
+        "C": "18",
+        "D": "24"
+      },
+      "substitution": {
+        "equations": [
+          {
+            "left": "0.5x - 4",
+            "rel": "=",
+            "right": "8 - x",
+            "variable": "x",
+            "variables": [
+              "x"
+            ]
+          }
+        ],
+        "nEquations": 1,
+        "parsedScalars": {
+          "A": 6.0,
+          "B": 8.0,
+          "C": 18.0,
+          "D": 24.0
+        },
+        "parsedPairs": {},
+        "used": {
+          "kind": "scalar",
+          "variable": "x",
+          "left": "0.5x - 4",
+          "rel": "=",
+          "right": "8 - x"
+        },
+        "hits": [
+          "B"
+        ]
+      },
+      "judgment": "parse_correct",
+      "keyDoesNotSatisfy": false,
+      "notes": "Equation 0.5x-4=8-x matches."
+    },
+    {
+      "id": "nyregents-algebra-i-unknown-unk-q6",
+      "png": "exports/addendum-vlm/pages/nyregents-algebra-i-unknown-unk-q6.png",
+      "extractedLatex": "3(x - 8) + 4x = 8x + 4",
+      "extractedAscii": "3*(x - 8) + 4*x = 8*x + 4",
+      "satisfierLetter": "D",
+      "key": "D",
+      "correct": true,
+      "transcribedOptions": {
+        "A": "12",
+        "B": "28",
+        "C": "-12",
+        "D": "-28"
+      },
+      "substitution": {
+        "equations": [
+          {
+            "left": "3*(x - 8) + 4*x",
+            "rel": "=",
+            "right": "8*x + 4",
+            "variable": "x",
+            "variables": [
+              "x"
+            ]
+          }
+        ],
+        "nEquations": 1,
+        "parsedScalars": {
+          "A": 12.0,
+          "B": 28.0,
+          "C": -12.0,
+          "D": -28.0
+        },
+        "parsedPairs": {},
+        "used": {
+          "kind": "scalar",
+          "variable": "x",
+          "left": "3*(x - 8) + 4*x",
+          "rel": "=",
+          "right": "8*x + 4"
+        },
+        "hits": [
+          "D"
+        ]
+      },
+      "judgment": "parse_correct",
+      "keyDoesNotSatisfy": false,
+      "notes": "Equation 3(x-8)+4x=8x+4 matches."
+    },
+    {
+      "id": "nyregents-algebra-ii-2018-aug-q23",
+      "png": "exports/addendum-vlm/pages/nyregents-algebra-ii-2018-aug-q23.png",
+      "extractedLatex": "y = \\frac{1}{12}(x - 2)^2 + 2",
+      "extractedAscii": "y = 1/12*(x - 2)**2 + 2",
+      "satisfierLetter": "B",
+      "key": "D",
+      "correct": false,
+      "transcribedOptions": {
+        "A": "(2, -1)",
+        "B": "(2, 2)",
+        "C": "(2, 3)",
+        "D": "(2, 5)"
+      },
+      "substitution": {
+        "equations": [
+          {
+            "left": "y",
+            "rel": "=",
+            "right": "1/12*(x - 2)**2 + 2",
+            "variable": "x",
+            "variables": [
+              "x",
+              "y"
+            ]
+          }
+        ],
+        "nEquations": 1,
+        "parsedScalars": {},
+        "parsedPairs": {
+          "A": [
+            2.0,
+            -1.0
+          ],
+          "B": [
+            2.0,
+            2.0
+          ],
+          "C": [
+            2.0,
+            3.0
+          ],
+          "D": [
+            2.0,
+            5.0
+          ]
+        },
+        "used": {
+          "kind": "pair",
+          "variables": [
+            "x",
+            "y"
+          ]
+        },
+        "hits": [
+          "B"
+        ]
+      },
+      "judgment": "parse_correct",
+      "keyDoesNotSatisfy": true,
+      "notes": "Parabola equation matches. Item asks for the focus; unique on-curve option is the vertex (2,2), not key (2,5)."
+    },
+    {
+      "id": "nyregents-algebra-ii-2019-aug-q17",
+      "png": "exports/addendum-vlm/pages/nyregents-algebra-ii-2019-aug-q17.png",
+      "extractedLatex": "A = 5000 * (1 + 0.035/12)**(12*6)",
+      "extractedAscii": "A = 5000 * (1 + 0.035/12)**(12*6)",
+      "satisfierLetter": "D",
+      "key": "D",
+      "correct": true,
+      "transcribedOptions": {
+        "A": "$5177.80",
+        "B": "$5941.30",
+        "C": "$6146.30",
+        "D": "$6166.50"
+      },
+      "substitution": {
+        "equations": [
+          {
+            "left": "A",
+            "rel": "=",
+            "right": "5000 * (1 + 0.035/12)**(12*6)",
+            "variable": "a",
+            "variables": [
+              "a"
+            ]
+          }
+        ],
+        "nEquations": 1,
+        "parsedScalars": {
+          "A": 5177.8,
+          "B": 5941.3,
+          "C": 6146.3,
+          "D": 6166.5
+        },
+        "parsedPairs": {},
+        "used": {
+          "kind": "scalar",
+          "variable": "a",
+          "left": "A",
+          "rel": "=",
+          "right": "5000 * (1 + 0.035/12)**(12*6)"
+        },
+        "hits": [
+          "D"
+        ]
+      },
+      "judgment": "parse_wrong",
+      "keyDoesNotSatisfy": false,
+      "notes": "No equation on the page. Model wrote the compound-interest formula and evaluated it. Prompt forbids solving."
+    },
+    {
+      "id": "nyregents-algebra-ii-2019-aug-q4",
+      "png": "exports/addendum-vlm/pages/nyregents-algebra-ii-2019-aug-q4.png",
+      "extractedLatex": "(a^3 + 27) = (a + 3)(a^2 + ma + 9)",
+      "extractedAscii": "(a**3 + 27) = (a + 3)(a**2 + ma + 9)",
+      "satisfierLetter": "B",
+      "key": "B",
+      "correct": true,
+      "transcribedOptions": {
+        "A": "-9",
+        "B": "-3",
+        "C": "3",
+        "D": "6"
+      },
+      "substitution": {
+        "equations": [
+          {
+            "left": "(a**3 + 27)",
+            "rel": "=",
+            "right": "(a + 3)(a**2 + ma + 9)",
+            "variable": "a",
+            "variables": [
+              "a"
+            ]
+          }
+        ],
+        "nEquations": 1,
+        "parsedScalars": {
+          "A": -9.0,
+          "B": -3.0,
+          "C": 3.0,
+          "D": 6.0
+        },
+        "parsedPairs": {},
+        "used": {
+          "kind": "scalar",
+          "variable": "a",
+          "left": "(a**3 + 27)",
+          "rel": "=",
+          "right": "(a + 3)(a**2 + ma + 9)"
+        },
+        "hits": [
+          "B"
+        ]
+      },
+      "judgment": "parse_correct",
+      "keyDoesNotSatisfy": false,
+      "notes": "Identity (a^3+27)=(a+3)(a^2+ma+9) matches. m=-3 uniquely satisfies."
+    },
+    {
+      "id": "nyregents-algebra-ii-2019-jun-q12",
+      "png": "exports/addendum-vlm/pages/nyregents-algebra-ii-2019-jun-q12.png",
+      "extractedLatex": "wx^2 + w = 0",
+      "extractedAscii": "wx**2 + w = 0",
+      "satisfierLetter": "B",
+      "key": "D",
+      "correct": false,
+      "transcribedOptions": {
+        "A": "-1",
+        "B": "0",
+        "C": "6",
+        "D": "±i"
+      },
+      "substitution": {
+        "equations": [
+          {
+            "left": "wx**2 + w",
+            "rel": "=",
+            "right": "0",
+            "variable": "w",
+            "variables": [
+              "w"
+            ]
+          }
+        ],
+        "nEquations": 1,
+        "parsedScalars": {
+          "A": -1.0,
+          "B": 0.0,
+          "C": 6.0
+        },
+        "parsedPairs": {},
+        "used": {
+          "kind": "scalar",
+          "variable": "w",
+          "left": "wx**2 + w",
+          "rel": "=",
+          "right": "0"
+        },
+        "hits": [
+          "B"
+        ]
+      },
+      "judgment": "parse_correct",
+      "keyDoesNotSatisfy": true,
+      "notes": "Equation wx^2+w=0 matches. Key ±i did not strict-parse; program fired on 0."
+    },
+    {
+      "id": "nyregents-algebra-ii-2019-jun-q19",
+      "png": "exports/addendum-vlm/pages/nyregents-algebra-ii-2019-jun-q19.png",
+      "extractedLatex": "b = \\sqrt{2b^2 - 64}",
+      "extractedAscii": "b = sqrt(2*b**2 - 64)",
+      "satisfierLetter": "B",
+      "key": "B",
+      "correct": true,
+      "transcribedOptions": {
+        "A": "-8",
+        "B": "8",
+        "C": "±8",
+        "D": ""
+      },
+      "substitution": {
+        "equations": [
+          {
+            "left": "b",
+            "rel": "=",
+            "right": "sqrt(2*b**2 - 64)",
+            "variable": "b",
+            "variables": [
+              "b"
+            ]
+          }
+        ],
+        "nEquations": 1,
+        "parsedScalars": {
+          "A": -8.0,
+          "B": 8.0
+        },
+        "parsedPairs": {},
+        "used": {
+          "kind": "scalar",
+          "variable": "b",
+          "left": "b",
+          "rel": "=",
+          "right": "sqrt(2*b**2 - 64)"
+        },
+        "hits": [
+          "B"
+        ]
+      },
+      "judgment": "parse_correct",
+      "keyDoesNotSatisfy": false,
+      "notes": "Equation b=sqrt(2b^2-64) matches. Substituting the scalar 8 uniquely works; set braces were dropped in transcription."
+    },
+    {
+      "id": "nyregents-algebra-ii-2023-jan-q9",
+      "png": "exports/addendum-vlm/pages/nyregents-algebra-ii-2023-jan-q9.png",
+      "extractedLatex": "\\frac{x + 2}{x} + \\frac{x}{3} = \\frac{2x^2 + 6}{3x}",
+      "extractedAscii": "(x + 2) / x + x / 3 = (2x^2 + 6) / (3x)",
+      "satisfierLetter": "C",
+      "key": "C",
+      "correct": true,
+      "transcribedOptions": {
+        "A": "-3",
+        "B": "-3, 0",
+        "C": "3",
+        "D": "0, 3"
+      },
+      "substitution": {
+        "equations": [
+          {
+            "left": "(x + 2) / x + x / 3",
+            "rel": "=",
+            "right": "(2x^2 + 6) / (3x)",
+            "variable": "x",
+            "variables": [
+              "x"
+            ]
+          }
+        ],
+        "nEquations": 1,
+        "parsedScalars": {
+          "A": -3.0,
+          "C": 3.0
+        },
+        "parsedPairs": {},
+        "used": {
+          "kind": "scalar",
+          "variable": "x",
+          "left": "(x + 2) / x + x / 3",
+          "rel": "=",
+          "right": "(2x^2 + 6) / (3x)"
+        },
+        "hits": [
+          "C"
+        ]
+      },
+      "judgment": "parse_correct",
+      "keyDoesNotSatisfy": false,
+      "notes": "Rational equation matches. Scalar 3 uniquely satisfies among options that parse."
+    },
+    {
+      "id": "staar-2019-alg1-q3",
+      "png": "exports/addendum-vlm/pages/staar-2019-alg1-q3.png",
+      "extractedLatex": null,
+      "extractedAscii": "1.25*(4*x - 10) = 7.5",
+      "satisfierLetter": "D",
+      "key": "D",
+      "correct": true,
+      "transcribedOptions": {
+        "A": "3.5",
+        "B": "-1",
+        "C": "-0.5",
+        "D": "4"
+      },
+      "substitution": {
+        "equations": [
+          {
+            "left": "1.25*(4*x - 10)",
+            "rel": "=",
+            "right": "7.5",
+            "variable": "x",
+            "variables": [
+              "x"
+            ]
+          }
+        ],
+        "nEquations": 1,
+        "parsedScalars": {
+          "A": 3.5,
+          "B": -1.0,
+          "C": -0.5,
+          "D": 4.0
+        },
+        "parsedPairs": {},
+        "used": {
+          "kind": "scalar",
+          "variable": "x",
+          "left": "1.25*(4*x - 10)",
+          "rel": "=",
+          "right": "7.5"
+        },
+        "hits": [
+          "D"
+        ]
+      },
+      "judgment": "parse_correct",
+      "keyDoesNotSatisfy": false,
+      "notes": "Equation 1.25(4x-10)=7.5 matches."
+    },
+    {
+      "id": "staar-2021-alg1-q23",
+      "png": "exports/addendum-vlm/pages/staar-2021-alg1-q23.png",
+      "extractedLatex": "3x^2 - 30x - 72 = 0",
+      "extractedAscii": "3*x**2 - 30*x - 72 = 0",
+      "satisfierLetter": "C",
+      "key": "C",
+      "correct": true,
+      "transcribedOptions": {
+        "A": "x = -12",
+        "B": "x = -4",
+        "C": "x = -2",
+        "D": "x = -6"
+      },
+      "substitution": {
+        "equations": [
+          {
+            "left": "3*x**2 - 30*x - 72",
+            "rel": "=",
+            "right": "0",
+            "variable": "x",
+            "variables": [
+              "x"
+            ]
+          }
+        ],
+        "nEquations": 1,
+        "parsedScalars": {
+          "A": -12.0,
+          "B": -4.0,
+          "C": -2.0,
+          "D": -6.0
+        },
+        "parsedPairs": {},
+        "used": {
+          "kind": "scalar",
+          "variable": "x",
+          "left": "3*x**2 - 30*x - 72",
+          "rel": "=",
+          "right": "0"
+        },
+        "hits": [
+          "C"
+        ]
+      },
+      "judgment": "parse_correct",
+      "keyDoesNotSatisfy": false,
+      "notes": "Equation 3x^2-30x-72=0 matches. x=-2 uniquely satisfies among the four listed roots."
+    },
+    {
+      "id": "staar-2021-alg1-q5",
+      "png": "exports/addendum-vlm/pages/staar-2021-alg1-q5.png",
+      "extractedLatex": "8x + 16y > 32",
+      "extractedAscii": "8*x + 16*y > 32",
+      "satisfierLetter": "B",
+      "key": "B",
+      "correct": true,
+      "transcribedOptions": {
+        "A": "(0, 2)",
+        "B": "(-3, 5)",
+        "C": "(-1, 1)",
+        "D": "(4, 0)"
+      },
+      "substitution": {
+        "equations": [
+          {
+            "left": "8*x + 16*y",
+            "rel": ">",
+            "right": "32",
+            "variable": "x",
+            "variables": [
+              "x",
+              "y"
+            ]
+          }
+        ],
+        "nEquations": 1,
+        "parsedScalars": {},
+        "parsedPairs": {
+          "A": [
+            0.0,
+            2.0
+          ],
+          "B": [
+            -3.0,
+            5.0
+          ],
+          "C": [
+            -1.0,
+            1.0
+          ],
+          "D": [
+            4.0,
+            0.0
+          ]
+        },
+        "used": {
+          "kind": "pair",
+          "variables": [
+            "x",
+            "y"
+          ]
+        },
+        "hits": [
+          "B"
+        ]
+      },
+      "judgment": "parse_correct",
+      "keyDoesNotSatisfy": false,
+      "notes": "Inequality 8x+16y>32 matches. Only (-3,5) among the four points satisfies."
+    },
+    {
+      "id": "staar-2021-alg1-q54",
+      "png": "exports/addendum-vlm/pages/staar-2021-alg1-q54.png",
+      "extractedLatex": "-4(2m - 7) = 3(52 - 4m)",
+      "extractedAscii": "-4*(2*m - 7) = 3*(52 - 4*m)",
+      "satisfierLetter": "A",
+      "key": "A",
+      "correct": true,
+      "transcribedOptions": {
+        "A": "32",
+        "B": "46",
+        "C": "-6.4",
+        "D": "-40.75"
+      },
+      "substitution": {
+        "equations": [
+          {
+            "left": "-4*(2*m - 7)",
+            "rel": "=",
+            "right": "3*(52 - 4*m)",
+            "variable": "m",
+            "variables": [
+              "m"
+            ]
+          }
+        ],
+        "nEquations": 1,
+        "parsedScalars": {
+          "A": 32.0,
+          "B": 46.0,
+          "C": -6.4,
+          "D": -40.75
+        },
+        "parsedPairs": {},
+        "used": {
+          "kind": "scalar",
+          "variable": "m",
+          "left": "-4*(2*m - 7)",
+          "rel": "=",
+          "right": "3*(52 - 4*m)"
+        },
+        "hits": [
+          "A"
+        ]
+      },
+      "judgment": "parse_correct",
+      "keyDoesNotSatisfy": false,
+      "notes": "Equation -4(2m-7)=3(52-4m) matches. F/G/H/J mapped to A/B/C/D."
+    },
+    {
+      "id": "staar-2022-8-q35",
+      "png": "exports/addendum-vlm/pages/staar-2022-8-q35.png",
+      "extractedLatex": "9x - 120 = 3x - 30",
+      "extractedAscii": "9x - 120 = 3x - 30",
+      "satisfierLetter": "C",
+      "key": "C",
+      "correct": true,
+      "transcribedOptions": {
+        "A": "$25",
+        "B": "$12.50",
+        "C": "$15",
+        "D": "$7.50"
+      },
+      "substitution": {
+        "equations": [
+          {
+            "left": "9x - 120",
+            "rel": "=",
+            "right": "3x - 30",
+            "variable": "x",
+            "variables": [
+              "x"
+            ]
+          }
+        ],
+        "nEquations": 1,
+        "parsedScalars": {
+          "A": 25.0,
+          "B": 12.5,
+          "C": 15.0,
+          "D": 7.5
+        },
+        "parsedPairs": {},
+        "used": {
+          "kind": "scalar",
+          "variable": "x",
+          "left": "9x - 120",
+          "rel": "=",
+          "right": "3x - 30"
+        },
+        "hits": [
+          "C"
+        ]
+      },
+      "judgment": "parse_wrong",
+      "keyDoesNotSatisfy": false,
+      "notes": "Word problem with no displayed equation. Model invented 9x-120=3x-30."
+    },
+    {
+      "id": "staar-2022-alg1-q37",
+      "png": "exports/addendum-vlm/pages/staar-2022-alg1-q37.png",
+      "extractedLatex": "y = -\\frac{1}{6}x - 4",
+      "extractedAscii": "y = -1/6*x - 4",
+      "satisfierLetter": "B",
+      "key": "A",
+      "correct": false,
+      "transcribedOptions": {
+        "A": "(-8, 8)",
+        "B": "(6, -5)",
+        "C": "(4, -6)",
+        "D": "(-2, -7)"
+      },
+      "substitution": {
+        "equations": [
+          {
+            "left": "y",
+            "rel": "=",
+            "right": "-1/6*x - 4",
+            "variable": "x",
+            "variables": [
+              "x",
+              "y"
+            ]
+          }
+        ],
+        "nEquations": 1,
+        "parsedScalars": {},
+        "parsedPairs": {
+          "A": [
+            -8.0,
+            8.0
+          ],
+          "B": [
+            6.0,
+            -5.0
+          ],
+          "C": [
+            4.0,
+            -6.0
+          ],
+          "D": [
+            -2.0,
+            -7.0
+          ]
+        },
+        "used": {
+          "kind": "pair",
+          "variables": [
+            "x",
+            "y"
+          ]
+        },
+        "hits": [
+          "B"
+        ]
+      },
+      "judgment": "parse_wrong",
+      "keyDoesNotSatisfy": true,
+      "notes": "Extracted the graphed equality y=-x/6-4. The stem asks the strict inequality y>-x/6-4."
+    },
+    {
+      "id": "staar-2022-alg1-q51",
+      "png": "exports/addendum-vlm/pages/staar-2022-alg1-q51.png",
+      "extractedLatex": "2(40 - 5y) = 10y + 5(1 - y)",
+      "extractedAscii": "2*(40 - 5*y) = 10*y + 5*(1 - y)",
+      "satisfierLetter": "C",
+      "key": "C",
+      "correct": true,
+      "transcribedOptions": {
+        "A": "7.5",
+        "B": "15",
+        "C": "5",
+        "D": "Not here"
+      },
+      "substitution": {
+        "equations": [
+          {
+            "left": "2*(40 - 5*y)",
+            "rel": "=",
+            "right": "10*y + 5*(1 - y)",
+            "variable": "y",
+            "variables": [
+              "y"
+            ]
+          }
+        ],
+        "nEquations": 1,
+        "parsedScalars": {
+          "A": 7.5,
+          "B": 15.0,
+          "C": 5.0
+        },
+        "parsedPairs": {},
+        "used": {
+          "kind": "scalar",
+          "variable": "y",
+          "left": "2*(40 - 5*y)",
+          "rel": "=",
+          "right": "10*y + 5*(1 - y)"
+        },
+        "hits": [
+          "C"
+        ]
+      },
+      "judgment": "parse_correct",
+      "keyDoesNotSatisfy": false,
+      "notes": "Equation 2(40-5y)=10y+5(1-y) matches."
+    }
+  ],
+  "judge": "human visual check of PNG vs extracted latex/ascii",
+  "judgedAt": "2026-09-17T02:50:00Z"
+}

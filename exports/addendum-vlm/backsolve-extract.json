@@ -1,0 +1,269 @@
+{
+  "channel": "backsolve-extract",
+  "question": "Does substituting VLM-transcribed options into a VLM-extracted page equation uniquely recover the key?",
+  "citation": "Millman, Bishop, and Ebel 1965 substitution; verify-versus-solve.",
+  "preregistration": "exports/addendum-vlm/preregistration.md",
+  "preregistrationSha256": "d6ee8cafd35d04bba7bfd4d4d364ee6f274d715e9b6b7020c454dbdfbd994732",
+  "modelId": "Qwen/Qwen2-VL-7B-Instruct",
+  "modelRevision": "eed13092ef92e448dd6875b2a00151bd3f7db0ac",
+  "snapshotPath": "/home/harvey/.cache/huggingface/hub/models--Qwen--Qwen2-VL-7B-Instruct/snapshots/eed13092ef92e448dd6875b2a00151bd3f7db0ac",
+  "scoredAt": "2026-09-17T02:42:03Z",
+  "nSolvingTaggedSelected": 1186,
+  "nFiredUnique": 31,
+  "unblocksBacksolvingUnmeasured": true,
+  "namedCellsWithNFiredAtLeast10": [
+    "nyregents/algebra-i"
+  ],
+  "namedCellsClearingBar": [
+    "nyregents/algebra-i"
+  ],
+  "cells": {
+    "eqao/g9": {
+      "nEligible": 52,
+      "nWithImage": 52,
+      "nFiredUnique": 0,
+      "hits": 0,
+      "rate": 0.0,
+      "chance": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "binomialPGreater": 1.0,
+      "coverage": 0.0,
+      "rateWithAbstentionAsChance": 0.2548076923076923,
+      "clearsBar": false
+    },
+    "nyregents/algebra-i": {
+      "nEligible": 598,
+      "nWithImage": 598,
+      "nFiredUnique": 17,
+      "hits": 14,
+      "rate": 0.8235294117647058,
+      "chance": 0.25,
+      "ci95": [
+        0.6470588235294118,
+        1.0
+      ],
+      "binomialPGreater": 1.1429656296968473e-06,
+      "coverage": 0.028428093645484948,
+      "rateWithAbstentionAsChance": 0.266304347826087,
+      "clearsBar": true
+    },
+    "nyregents/algebra-ii": {
+      "nEligible": 442,
+      "nWithImage": 442,
+      "nFiredUnique": 6,
+      "hits": 4,
+      "rate": 0.6666666666666666,
+      "chance": 0.25,
+      "ci95": [
+        0.3333333333333333,
+        1.0
+      ],
+      "binomialPGreater": 0.037597656250000104,
+      "coverage": 0.013574660633484163,
+      "rateWithAbstentionAsChance": 0.25565610859728505,
+      "clearsBar": false
+    },
+    "teks/alg1": {
+      "nEligible": 67,
+      "nWithImage": 67,
+      "nFiredUnique": 6,
+      "hits": 5,
+      "rate": 0.8333333333333334,
+      "chance": 0.25,
+      "ci95": [
+        0.5,
+        1.0
+      ],
+      "binomialPGreater": 0.004638671875000003,
+      "coverage": 0.08955223880597014,
+      "rateWithAbstentionAsChance": 0.30223880597014924,
+      "clearsBar": false
+    },
+    "teks/g6": {
+      "nEligible": 5,
+      "nWithImage": 5,
+      "nFiredUnique": 0,
+      "hits": 0,
+      "rate": 0.0,
+      "chance": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "binomialPGreater": 1.0,
+      "coverage": 0.0,
+      "rateWithAbstentionAsChance": 0.25,
+      "clearsBar": false
+    },
+    "teks/g7": {
+      "nEligible": 3,
+      "nWithImage": 3,
+      "nFiredUnique": 0,
+      "hits": 0,
+      "rate": 0.0,
+      "chance": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "binomialPGreater": 1.0,
+      "coverage": 0.0,
+      "rateWithAbstentionAsChance": 0.25,
+      "clearsBar": false
+    },
+    "teks/g8": {
+      "nEligible": 5,
+      "nWithImage": 5,
+      "nFiredUnique": 1,
+      "hits": 1,
+      "rate": 1.0,
+      "chance": 0.25,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "binomialPGreater": 0.25,
+      "coverage": 0.2,
+      "rateWithAbstentionAsChance": 0.4,
+      "clearsBar": false
+    },
+    "teks/solve-se": {
+      "nEligible": 21,
+      "nWithImage": 21,
+      "nFiredUnique": 5,
+      "hits": 5,
+      "rate": 1.0,
+      "chance": 0.25,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "binomialPGreater": 0.0009765625,
+      "coverage": 0.23809523809523808,
+      "rateWithAbstentionAsChance": 0.42857142857142855,
+      "clearsBar": false
+    },
+    "timss/algebra": {
+      "nEligible": 14,
+      "nWithImage": 14,
+      "nFiredUnique": 1,
+      "hits": 0,
+      "rate": 0.0,
+      "chance": 0.25,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "binomialPGreater": 1.0,
+      "coverage": 0.07142857142857142,
+      "rateWithAbstentionAsChance": 0.23214285714285715,
+      "clearsBar": false
+    },
+    "timss/applying": {
+      "nEligible": 5,
+      "nWithImage": 5,
+      "nFiredUnique": 0,
+      "hits": 0,
+      "rate": 0.0,
+      "chance": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "binomialPGreater": 1.0,
+      "coverage": 0.0,
+      "rateWithAbstentionAsChance": 0.25,
+      "clearsBar": false
+    },
+    "timss/knowing": {
+      "nEligible": 8,
+      "nWithImage": 8,
+      "nFiredUnique": 1,
+      "hits": 0,
+      "rate": 0.0,
+      "chance": 0.25,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "binomialPGreater": 1.0,
+      "coverage": 0.125,
+      "rateWithAbstentionAsChance": 0.21875,
+      "clearsBar": false
+    },
+    "timss/reasoning": {
+      "nEligible": 1,
+      "nWithImage": 1,
+      "nFiredUnique": 0,
+      "hits": 0,
+      "rate": 0.0,
+      "chance": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "binomialPGreater": 1.0,
+      "coverage": 0.0,
+      "rateWithAbstentionAsChance": 0.25,
+      "clearsBar": false
+    }
+  },
+  "promptTemplate": "You are a transcription tool, not a tutor.\n\nThe page image may contain several items. Use only the item whose printed stem begins with:\n{stem_prefix}\n\nTranscribe:\n1. every displayed equation or inequality in that item that involves an unknown (the relation a student could substitute into);\n2. the printed multiple-choice option contents for that item, keyed by letter A,B,C,D. If the page uses F,G,H,J, map F->A, G->B, H->C, J->D.\n\nDo not solve. Do not say which option is correct. Do not compute a value for the unknown.\n\nReply with a JSON object and nothing else:\n{{\"has_equation\": true, \"equations\": [{{\"latex\": \"...\", \"ascii\": \"...\"}}], \"options\": {{\"A\": \"...\", \"B\": \"...\", \"C\": \"...\", \"D\": \"...\"}}}}\nIf that item has no equation or inequality, use has_equation false and equations [].\nascii uses * for multiplication, ** for powers, sqrt(...) for roots, and a single relation from = < > <= >= !=.\n",
+  "substitution": "vlm_backsolve_lib.unique_satisfier",
+  "imageDpi": 150,
+  "maxNewTokens": 400,
+  "seed": 20260917,
+  "dtype": "bfloat16",
+  "device": "cuda",
+  "exploratoryVerifyArmRan": false,
+  "exploratoryVerifyReason": "Algebra I nFiredUnique=17 >= 10; preregistered trigger not met.",
+  "abstainReasonsOverall": {
+    "no_equation": 618,
+    "no_parsed_options": 422,
+    "zero_hits": 76,
+    "extract_unparseable": 30,
+    "unique": 31,
+    "multiple_hits": 9
+  },
+  "abstainReasonsAlgebraI": {
+    "no_equation": 297,
+    "no_parsed_options": 238,
+    "extract_unparseable": 8,
+    "unique": 17,
+    "zero_hits": 34,
+    "multiple_hits": 4
+  },
+  "handCheck": {
+    "nSample": 30,
+    "nFiredAvailable": 31,
+    "parseCorrect": 25,
+    "parseWrong": 5,
+    "parseAmbiguous": 0,
+    "keyDoesNotSatisfy": 6
+  },
+  "cachedVisionReposInspected": [
+    {
+      "id": "Qwen/Qwen2-VL-7B-Instruct",
+      "revision": "eed13092ef92e448dd6875b2a00151bd3f7db0ac",
+      "used": true
+    },
+    {
+      "id": "Qwen/Qwen2-VL-2B-Instruct",
+      "revision": "895c3a49bc3fa70a340399125c650a463535e71c",
+      "used": false
+    },
+    {
+      "id": "liuhaotian/llava-v1.5-7b",
+      "revision": "4481d270cc22fd5c4d1bb5df129622006ccd9234",
+      "used": false
+    },
+    {
+      "id": "llava-hf/llava-v1.6-vicuna-13b-hf",
+      "revision": "745cfbdb14dfeff9bcc6eb731937102e88ea3024",
+      "used": false
+    }
+  ]
+}
