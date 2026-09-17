@@ -1,0 +1,1001 @@
+{
+  "status": "stopped_reproduction_failed",
+  "stoppedModels": [
+    "14b"
+  ],
+  "preregistration": "exports/isomorph-options/preregistration.md",
+  "preregistrationSha256": "997242b9fb7437ffc2e86e2759e1373ba8ad98e231b0836ef8798a2266523e9b",
+  "seed": 20260916,
+  "maskingHash": "v1",
+  "maskingPreregistrationSha256": "af473bb6cd9d46dc74e034f4460d56a808273fe83ffaf457cd7d122c40ae80e8",
+  "chance": 0.25,
+  "noNumeral": {
+    "algebra-i": 61,
+    "algebra-ii": 21,
+    "total": 82
+  },
+  "models": {
+    "7b": {
+      "label": "Qwen2.5-7B-Instruct",
+      "modelId": "Qwen/Qwen2.5-7B-Instruct",
+      "modelRevision": "a09a35458c702b33eeacc393d103063234e8bc28",
+      "reproduction": {
+        "n": 606,
+        "nAgree": 595,
+        "agreement": 0.9818481848184818,
+        "clearsFloor": true,
+        "mismatches": [
+          {
+            "id": "nyregents-algebra-i-2024-jun-q16",
+            "rerun": "C",
+            "saved": "B"
+          },
+          {
+            "id": "nyregents-algebra-i-2018-jun-q5",
+            "rerun": "B",
+            "saved": "A"
+          },
+          {
+            "id": "nyregents-algebra-i-2019-jan-q20",
+            "rerun": "A",
+            "saved": "D"
+          },
+          {
+            "id": "nyregents-algebra-i-2019-aug-q23",
+            "rerun": "D",
+            "saved": "C"
+          },
+          {
+            "id": "nyregents-algebra-i-2018-aug-q13",
+            "rerun": "B",
+            "saved": "C"
+          },
+          {
+            "id": "nyregents-algebra-i-2015-aug-q9",
+            "rerun": "B",
+            "saved": "C"
+          },
+          {
+            "id": "nyregents-algebra-i-2015-aug-q23",
+            "rerun": "B",
+            "saved": "D"
+          },
+          {
+            "id": "nyregents-algebra-i-2025-aug-q10",
+            "rerun": "B",
+            "saved": "D"
+          },
+          {
+            "id": "nyregents-algebra-ii-2019-jan-q23",
+            "rerun": "C",
+            "saved": "D"
+          },
+          {
+            "id": "nyregents-algebra-ii-2017-jan-q8",
+            "rerun": "A",
+            "saved": "D"
+          },
+          {
+            "id": "nyregents-algebra-ii-2026-aug-q4",
+            "rerun": "D",
+            "saved": "B"
+          }
+        ],
+        "savedPath": "exports/addendum-gpu/masked-stem-7b-items.jsonl"
+      },
+      "reading": "mixed: neither polar reading; the rank-preserving faithful rate did not both clear the bar and have a paired difference CI that includes 0, and it did not fall to chance",
+      "subsets": {
+        "algebra_i_all": {
+          "n": 358,
+          "nPaired": 297,
+          "nNoNumeral": 61,
+          "original": {
+            "n": 358,
+            "passes": 140,
+            "passRate": 0.39106145251396646,
+            "chance": 0.25,
+            "ci95": [
+              0.3435754189944134,
+              0.441340782122905
+            ],
+            "modalLetter": "B",
+            "modalFrequency": 0.2709497206703911,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true
+          },
+          "rankPreserving": {
+            "n": 358,
+            "passes": 123,
+            "passRate": 0.3435754189944134,
+            "chance": 0.25,
+            "ci95": [
+              0.29329608938547486,
+              0.39385474860335196
+            ],
+            "modalLetter": "B",
+            "modalFrequency": 0.2709497206703911,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true
+          },
+          "scrambled": {
+            "n": 358,
+            "passes": 129,
+            "passRate": 0.36033519553072624,
+            "chance": 0.25,
+            "ci95": [
+              0.3128491620111732,
+              0.4106145251396648
+            ],
+            "modalLetter": "B",
+            "modalFrequency": 0.2709497206703911,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true
+          },
+          "pairedRankPreserving": {
+            "n": 297,
+            "mean": -0.05723905723905724,
+            "ci95": [
+              -0.11784511784511785,
+              0.003367003367003367
+            ],
+            "includesZero": true
+          },
+          "pairedScrambled": {
+            "n": 297,
+            "mean": -0.037037037037037035,
+            "ci95": [
+              -0.09427609427609428,
+              0.02356902356902357
+            ],
+            "includesZero": true
+          }
+        },
+        "algebra_i_faithful": {
+          "n": 184,
+          "nPaired": 136,
+          "nNoNumeral": 48,
+          "original": {
+            "n": 184,
+            "passes": 87,
+            "passRate": 0.47282608695652173,
+            "chance": 0.25,
+            "ci95": [
+              0.3967391304347826,
+              0.5489130434782609
+            ],
+            "modalLetter": "B",
+            "modalFrequency": 0.2554347826086957,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true
+          },
+          "rankPreserving": {
+            "n": 184,
+            "passes": 72,
+            "passRate": 0.391304347826087,
+            "chance": 0.25,
+            "ci95": [
+              0.32065217391304346,
+              0.46195652173913043
+            ],
+            "modalLetter": "B",
+            "modalFrequency": 0.2554347826086957,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true
+          },
+          "scrambled": {
+            "n": 184,
+            "passes": 72,
+            "passRate": 0.391304347826087,
+            "chance": 0.25,
+            "ci95": [
+              0.32065217391304346,
+              0.46195652173913043
+            ],
+            "modalLetter": "B",
+            "modalFrequency": 0.2554347826086957,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true
+          },
+          "pairedRankPreserving": {
+            "n": 136,
+            "mean": -0.11029411764705882,
+            "ci95": [
+              -0.19852941176470587,
+              -0.014705882352941176
+            ],
+            "includesZero": false
+          },
+          "pairedScrambled": {
+            "n": 136,
+            "mean": -0.11029411764705882,
+            "ci95": [
+              -0.19117647058823528,
+              -0.029411764705882353
+            ],
+            "includesZero": false
+          }
+        },
+        "algebra_i_faithful_recognition": {
+          "n": 83,
+          "nPaired": 56,
+          "nNoNumeral": 27,
+          "original": {
+            "n": 83,
+            "passes": 44,
+            "passRate": 0.5301204819277109,
+            "chance": 0.25,
+            "ci95": [
+              0.42168674698795183,
+              0.6265060240963856
+            ],
+            "modalLetter": "D",
+            "modalFrequency": 0.26506024096385544,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true
+          },
+          "rankPreserving": {
+            "n": 83,
+            "passes": 30,
+            "passRate": 0.3614457831325301,
+            "chance": 0.25,
+            "ci95": [
+              0.25301204819277107,
+              0.4578313253012048
+            ],
+            "modalLetter": "D",
+            "modalFrequency": 0.26506024096385544,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": false,
+            "clearsBar": false
+          },
+          "scrambled": {
+            "n": 83,
+            "passes": 34,
+            "passRate": 0.40963855421686746,
+            "chance": 0.25,
+            "ci95": [
+              0.30120481927710846,
+              0.5180722891566265
+            ],
+            "modalLetter": "D",
+            "modalFrequency": 0.26506024096385544,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true
+          },
+          "pairedRankPreserving": {
+            "n": 56,
+            "mean": -0.25,
+            "ci95": [
+              -0.375,
+              -0.125
+            ],
+            "includesZero": false
+          },
+          "pairedScrambled": {
+            "n": 56,
+            "mean": -0.17857142857142858,
+            "ci95": [
+              -0.2857142857142857,
+              -0.07142857142857142
+            ],
+            "includesZero": false
+          }
+        },
+        "algebra_i_faithful_execution": {
+          "n": 75,
+          "nPaired": 66,
+          "nNoNumeral": 9,
+          "original": {
+            "n": 75,
+            "passes": 27,
+            "passRate": 0.36,
+            "chance": 0.25,
+            "ci95": [
+              0.25333333333333335,
+              0.48
+            ],
+            "modalLetter": "B",
+            "modalFrequency": 0.29333333333333333,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": false,
+            "clearsBar": false
+          },
+          "rankPreserving": {
+            "n": 75,
+            "passes": 29,
+            "passRate": 0.38666666666666666,
+            "chance": 0.25,
+            "ci95": [
+              0.28,
+              0.5066666666666667
+            ],
+            "modalLetter": "B",
+            "modalFrequency": 0.29333333333333333,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": false,
+            "clearsBar": false
+          },
+          "scrambled": {
+            "n": 75,
+            "passes": 24,
+            "passRate": 0.32,
+            "chance": 0.25,
+            "ci95": [
+              0.21333333333333335,
+              0.4266666666666667
+            ],
+            "modalLetter": "B",
+            "modalFrequency": 0.29333333333333333,
+            "lowerCiAboveChance": false,
+            "lowerCiAboveModal": false,
+            "clearsBar": false
+          },
+          "pairedRankPreserving": {
+            "n": 66,
+            "mean": 0.030303030303030304,
+            "ci95": [
+              -0.10606060606060606,
+              0.15151515151515152
+            ],
+            "includesZero": true
+          },
+          "pairedScrambled": {
+            "n": 66,
+            "mean": -0.045454545454545456,
+            "ci95": [
+              -0.18181818181818182,
+              0.09090909090909091
+            ],
+            "includesZero": true
+          }
+        },
+        "algebra_ii_all": {
+          "n": 248,
+          "nPaired": 227,
+          "nNoNumeral": 21,
+          "original": {
+            "n": 248,
+            "passes": 91,
+            "passRate": 0.36693548387096775,
+            "chance": 0.25,
+            "ci95": [
+              0.3064516129032258,
+              0.42338709677419356
+            ],
+            "modalLetter": "C",
+            "modalFrequency": 0.2782258064516129,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true
+          },
+          "rankPreserving": {
+            "n": 248,
+            "passes": 84,
+            "passRate": 0.3387096774193548,
+            "chance": 0.25,
+            "ci95": [
+              0.28225806451612906,
+              0.3951612903225806
+            ],
+            "modalLetter": "C",
+            "modalFrequency": 0.2782258064516129,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true
+          },
+          "scrambled": {
+            "n": 248,
+            "passes": 75,
+            "passRate": 0.3024193548387097,
+            "chance": 0.25,
+            "ci95": [
+              0.24596774193548387,
+              0.3629032258064516
+            ],
+            "modalLetter": "C",
+            "modalFrequency": 0.2782258064516129,
+            "lowerCiAboveChance": false,
+            "lowerCiAboveModal": false,
+            "clearsBar": false
+          },
+          "pairedRankPreserving": {
+            "n": 227,
+            "mean": -0.030837004405286344,
+            "ci95": [
+              -0.09251101321585903,
+              0.03524229074889868
+            ],
+            "includesZero": true
+          },
+          "pairedScrambled": {
+            "n": 227,
+            "mean": -0.07048458149779736,
+            "ci95": [
+              -0.13215859030837004,
+              -0.00881057268722467
+            ],
+            "includesZero": false
+          }
+        },
+        "algebra_ii_faithful": {
+          "n": 115,
+          "nPaired": 106,
+          "nNoNumeral": 9,
+          "original": {
+            "n": 115,
+            "passes": 40,
+            "passRate": 0.34782608695652173,
+            "chance": 0.25,
+            "ci95": [
+              0.2608695652173913,
+              0.43478260869565216
+            ],
+            "modalLetter": "B",
+            "modalFrequency": 0.2956521739130435,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": false,
+            "clearsBar": false
+          },
+          "rankPreserving": {
+            "n": 115,
+            "passes": 41,
+            "passRate": 0.3565217391304348,
+            "chance": 0.25,
+            "ci95": [
+              0.26956521739130435,
+              0.45217391304347826
+            ],
+            "modalLetter": "B",
+            "modalFrequency": 0.2956521739130435,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": false,
+            "clearsBar": false
+          },
+          "scrambled": {
+            "n": 115,
+            "passes": 33,
+            "passRate": 0.28695652173913044,
+            "chance": 0.25,
+            "ci95": [
+              0.2,
+              0.3652173913043478
+            ],
+            "modalLetter": "B",
+            "modalFrequency": 0.2956521739130435,
+            "lowerCiAboveChance": false,
+            "lowerCiAboveModal": false,
+            "clearsBar": false
+          },
+          "pairedRankPreserving": {
+            "n": 106,
+            "mean": 0.009433962264150943,
+            "ci95": [
+              -0.08490566037735849,
+              0.10377358490566038
+            ],
+            "includesZero": true
+          },
+          "pairedScrambled": {
+            "n": 106,
+            "mean": -0.0660377358490566,
+            "ci95": [
+              -0.16037735849056603,
+              0.02830188679245283
+            ],
+            "includesZero": true
+          }
+        }
+      }
+    },
+    "14b": {
+      "label": "Qwen2.5-14B-Instruct",
+      "modelId": "Qwen/Qwen2.5-14B-Instruct",
+      "modelRevision": "cf98f3b3bbb457ad9e2bb7baf9a0125b6b88caa8",
+      "reproduction": {
+        "n": 606,
+        "nAgree": 592,
+        "agreement": 0.976897689768977,
+        "clearsFloor": false,
+        "mismatches": [
+          {
+            "id": "nyregents-algebra-i-2020-jan-q12",
+            "rerun": "B",
+            "saved": "D"
+          },
+          {
+            "id": "nyregents-algebra-i-2019-jan-q21",
+            "rerun": "C",
+            "saved": "A"
+          },
+          {
+            "id": "nyregents-algebra-i-2026-jun-q6",
+            "rerun": "A",
+            "saved": "C"
+          },
+          {
+            "id": "nyregents-algebra-i-2025-aug-q6",
+            "rerun": "A",
+            "saved": "C"
+          },
+          {
+            "id": "nyregents-algebra-i-2015-jan-q8",
+            "rerun": "A",
+            "saved": "B"
+          },
+          {
+            "id": "nyregents-algebra-i-unknown-unk-q6",
+            "rerun": "C",
+            "saved": "A"
+          },
+          {
+            "id": "nyregents-algebra-i-2016-jan-q11",
+            "rerun": "A",
+            "saved": "B"
+          },
+          {
+            "id": "nyregents-algebra-ii-2023-jan-q5",
+            "rerun": "D",
+            "saved": "B"
+          },
+          {
+            "id": "nyregents-algebra-ii-2023-jan-q19",
+            "rerun": "B",
+            "saved": "C"
+          },
+          {
+            "id": "nyregents-algebra-ii-2018-jan-q18",
+            "rerun": "A",
+            "saved": "B"
+          },
+          {
+            "id": "nyregents-algebra-ii-2024-jun-q1",
+            "rerun": "B",
+            "saved": "D"
+          },
+          {
+            "id": "nyregents-algebra-ii-2024-jan-q8",
+            "rerun": "B",
+            "saved": "D"
+          }
+        ],
+        "savedPath": "exports/addendum-gpu/masked-stem-14b-items.jsonl"
+      },
+      "reading": "not scored: original letter agreement was below 0.98",
+      "subsets": null,
+      "status": "stopped_reproduction_failed"
+    },
+    "phi4": {
+      "label": "Phi-4",
+      "modelId": "microsoft/phi-4",
+      "modelRevision": "2db69c1c3e91a05d2c64a3185acfbaf36f744e25",
+      "reproduction": {
+        "n": 606,
+        "nAgree": 606,
+        "agreement": 1.0,
+        "clearsFloor": true,
+        "mismatches": [],
+        "savedPath": "exports/addendum-gpu/masked-stem-phi4-items.jsonl"
+      },
+      "reading": "form-based: the rank-preserving faithful rate clears the channel bar and the paired difference CI includes 0; the contamination concern is not supported",
+      "subsets": {
+        "algebra_i_all": {
+          "n": 358,
+          "nPaired": 297,
+          "nNoNumeral": 61,
+          "original": {
+            "n": 358,
+            "passes": 151,
+            "passRate": 0.42178770949720673,
+            "chance": 0.25,
+            "ci95": [
+              0.3743016759776536,
+              0.4720670391061452
+            ],
+            "modalLetter": "B",
+            "modalFrequency": 0.2709497206703911,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true
+          },
+          "rankPreserving": {
+            "n": 358,
+            "passes": 129,
+            "passRate": 0.36033519553072624,
+            "chance": 0.25,
+            "ci95": [
+              0.3100558659217877,
+              0.40782122905027934
+            ],
+            "modalLetter": "B",
+            "modalFrequency": 0.2709497206703911,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true
+          },
+          "scrambled": {
+            "n": 358,
+            "passes": 136,
+            "passRate": 0.37988826815642457,
+            "chance": 0.25,
+            "ci95": [
+              0.3268156424581006,
+              0.4273743016759777
+            ],
+            "modalLetter": "B",
+            "modalFrequency": 0.2709497206703911,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true
+          },
+          "pairedRankPreserving": {
+            "n": 297,
+            "mean": -0.07407407407407407,
+            "ci95": [
+              -0.13804713804713806,
+              -0.016835016835016835
+            ],
+            "includesZero": false
+          },
+          "pairedScrambled": {
+            "n": 297,
+            "mean": -0.050505050505050504,
+            "ci95": [
+              -0.10774410774410774,
+              0.003367003367003367
+            ],
+            "includesZero": true
+          }
+        },
+        "algebra_i_faithful": {
+          "n": 184,
+          "nPaired": 136,
+          "nNoNumeral": 48,
+          "original": {
+            "n": 184,
+            "passes": 86,
+            "passRate": 0.4673913043478261,
+            "chance": 0.25,
+            "ci95": [
+              0.3967391304347826,
+              0.5380434782608695
+            ],
+            "modalLetter": "B",
+            "modalFrequency": 0.2554347826086957,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true
+          },
+          "rankPreserving": {
+            "n": 184,
+            "passes": 75,
+            "passRate": 0.4076086956521739,
+            "chance": 0.25,
+            "ci95": [
+              0.3423913043478261,
+              0.4782608695652174
+            ],
+            "modalLetter": "B",
+            "modalFrequency": 0.2554347826086957,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true
+          },
+          "scrambled": {
+            "n": 184,
+            "passes": 82,
+            "passRate": 0.44565217391304346,
+            "chance": 0.25,
+            "ci95": [
+              0.375,
+              0.5163043478260869
+            ],
+            "modalLetter": "B",
+            "modalFrequency": 0.2554347826086957,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true
+          },
+          "pairedRankPreserving": {
+            "n": 136,
+            "mean": -0.08088235294117647,
+            "ci95": [
+              -0.16911764705882354,
+              0.014705882352941176
+            ],
+            "includesZero": true
+          },
+          "pairedScrambled": {
+            "n": 136,
+            "mean": -0.029411764705882353,
+            "ci95": [
+              -0.125,
+              0.07352941176470588
+            ],
+            "includesZero": true
+          }
+        },
+        "algebra_i_faithful_recognition": {
+          "n": 83,
+          "nPaired": 56,
+          "nNoNumeral": 27,
+          "original": {
+            "n": 83,
+            "passes": 42,
+            "passRate": 0.5060240963855421,
+            "chance": 0.25,
+            "ci95": [
+              0.39759036144578314,
+              0.6144578313253012
+            ],
+            "modalLetter": "D",
+            "modalFrequency": 0.26506024096385544,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true
+          },
+          "rankPreserving": {
+            "n": 83,
+            "passes": 33,
+            "passRate": 0.39759036144578314,
+            "chance": 0.25,
+            "ci95": [
+              0.2891566265060241,
+              0.5060240963855421
+            ],
+            "modalLetter": "D",
+            "modalFrequency": 0.26506024096385544,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true
+          },
+          "scrambled": {
+            "n": 83,
+            "passes": 34,
+            "passRate": 0.40963855421686746,
+            "chance": 0.25,
+            "ci95": [
+              0.30120481927710846,
+              0.5180722891566265
+            ],
+            "modalLetter": "D",
+            "modalFrequency": 0.26506024096385544,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true
+          },
+          "pairedRankPreserving": {
+            "n": 56,
+            "mean": -0.16071428571428573,
+            "ci95": [
+              -0.30357142857142855,
+              -0.03571428571428571
+            ],
+            "includesZero": false
+          },
+          "pairedScrambled": {
+            "n": 56,
+            "mean": -0.14285714285714285,
+            "ci95": [
+              -0.2857142857142857,
+              0.0
+            ],
+            "includesZero": true
+          }
+        },
+        "algebra_i_faithful_execution": {
+          "n": 75,
+          "nPaired": 66,
+          "nNoNumeral": 9,
+          "original": {
+            "n": 75,
+            "passes": 29,
+            "passRate": 0.38666666666666666,
+            "chance": 0.25,
+            "ci95": [
+              0.29333333333333333,
+              0.5066666666666667
+            ],
+            "modalLetter": "B",
+            "modalFrequency": 0.29333333333333333,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": false,
+            "clearsBar": false
+          },
+          "rankPreserving": {
+            "n": 75,
+            "passes": 28,
+            "passRate": 0.37333333333333335,
+            "chance": 0.25,
+            "ci95": [
+              0.26666666666666666,
+              0.48
+            ],
+            "modalLetter": "B",
+            "modalFrequency": 0.29333333333333333,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": false,
+            "clearsBar": false
+          },
+          "scrambled": {
+            "n": 75,
+            "passes": 33,
+            "passRate": 0.44,
+            "chance": 0.25,
+            "ci95": [
+              0.3333333333333333,
+              0.56
+            ],
+            "modalLetter": "B",
+            "modalFrequency": 0.29333333333333333,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true
+          },
+          "pairedRankPreserving": {
+            "n": 66,
+            "mean": -0.015151515151515152,
+            "ci95": [
+              -0.15151515151515152,
+              0.12121212121212122
+            ],
+            "includesZero": true
+          },
+          "pairedScrambled": {
+            "n": 66,
+            "mean": 0.06060606060606061,
+            "ci95": [
+              -0.07575757575757576,
+              0.18181818181818182
+            ],
+            "includesZero": true
+          }
+        },
+        "algebra_ii_all": {
+          "n": 248,
+          "nPaired": 227,
+          "nNoNumeral": 21,
+          "original": {
+            "n": 248,
+            "passes": 86,
+            "passRate": 0.3467741935483871,
+            "chance": 0.25,
+            "ci95": [
+              0.2862903225806452,
+              0.40725806451612906
+            ],
+            "modalLetter": "C",
+            "modalFrequency": 0.2782258064516129,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true
+          },
+          "rankPreserving": {
+            "n": 248,
+            "passes": 81,
+            "passRate": 0.32661290322580644,
+            "chance": 0.25,
+            "ci95": [
+              0.2661290322580645,
+              0.3870967741935484
+            ],
+            "modalLetter": "C",
+            "modalFrequency": 0.2782258064516129,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": false,
+            "clearsBar": false
+          },
+          "scrambled": {
+            "n": 248,
+            "passes": 76,
+            "passRate": 0.3064516129032258,
+            "chance": 0.25,
+            "ci95": [
+              0.2540322580645161,
+              0.3629032258064516
+            ],
+            "modalLetter": "C",
+            "modalFrequency": 0.2782258064516129,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": false,
+            "clearsBar": false
+          },
+          "pairedRankPreserving": {
+            "n": 227,
+            "mean": -0.022026431718061675,
+            "ci95": [
+              -0.07929515418502203,
+              0.030837004405286344
+            ],
+            "includesZero": true
+          },
+          "pairedScrambled": {
+            "n": 227,
+            "mean": -0.04405286343612335,
+            "ci95": [
+              -0.1013215859030837,
+              0.00881057268722467
+            ],
+            "includesZero": true
+          }
+        },
+        "algebra_ii_faithful": {
+          "n": 115,
+          "nPaired": 106,
+          "nNoNumeral": 9,
+          "original": {
+            "n": 115,
+            "passes": 40,
+            "passRate": 0.34782608695652173,
+            "chance": 0.25,
+            "ci95": [
+              0.26956521739130435,
+              0.43478260869565216
+            ],
+            "modalLetter": "B",
+            "modalFrequency": 0.2956521739130435,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": false,
+            "clearsBar": false
+          },
+          "rankPreserving": {
+            "n": 115,
+            "passes": 39,
+            "passRate": 0.3391304347826087,
+            "chance": 0.25,
+            "ci95": [
+              0.25217391304347825,
+              0.4260869565217391
+            ],
+            "modalLetter": "B",
+            "modalFrequency": 0.2956521739130435,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": false,
+            "clearsBar": false
+          },
+          "scrambled": {
+            "n": 115,
+            "passes": 38,
+            "passRate": 0.33043478260869563,
+            "chance": 0.25,
+            "ci95": [
+              0.24347826086956523,
+              0.40869565217391307
+            ],
+            "modalLetter": "B",
+            "modalFrequency": 0.2956521739130435,
+            "lowerCiAboveChance": false,
+            "lowerCiAboveModal": false,
+            "clearsBar": false
+          },
+          "pairedRankPreserving": {
+            "n": 106,
+            "mean": -0.009433962264150943,
+            "ci95": [
+              -0.10377358490566038,
+              0.07547169811320754
+            ],
+            "includesZero": true
+          },
+          "pairedScrambled": {
+            "n": 106,
+            "mean": -0.018867924528301886,
+            "ci95": [
+              -0.10377358490566038,
+              0.05660377358490566
+            ],
+            "includesZero": true
+          }
+        }
+      }
+    }
+  },
+  "writtenAt": "2026-09-17T06:20:54.689714+00:00"
+}
