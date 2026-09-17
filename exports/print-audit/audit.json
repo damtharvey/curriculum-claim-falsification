@@ -1,0 +1,592 @@
+{
+  "seed": 20260916,
+  "nRequested": 20,
+  "nGeometryPool": 90,
+  "nAlgebraIMaskedStemHitPool": 149,
+  "nPdfsIndexed": 1247,
+  "rawTreePresent": true,
+  "ocrUsed": false,
+  "classification": [
+    "match",
+    "ocr_glue",
+    "truncated",
+    "wrong_item",
+    "pdf_missing",
+    "unreadable"
+  ],
+  "counts": {
+    "match": 8,
+    "ocr_glue": 8,
+    "truncated": 3,
+    "wrong_item": 1
+  },
+  "rows": [
+    {
+      "id": "nyregents-geometry-2019-jan-q13",
+      "slice": "geometry_lower_central_hit",
+      "qnum": 13,
+      "sourceUrl": "https://www.nysedregents.org/geom12019-exam.pdf",
+      "pdf": "data/raw/regents-geo/geom12019-exam.pdf",
+      "pdfPage": 8,
+      "pagePng": "exports/print-audit/pages/nyregents-geometry-2019-jan-q13-item.png",
+      "censusKey": "B",
+      "printedKey": null,
+      "censusStem": "From a point on the ground one-half mile from the base of a historic monument, the angle of elevation to its top is 11.87°. To the nearest foot, what is the height of the monument?",
+      "censusChoices": {
+        "A": "543",
+        "C": "1086",
+        "B": "555",
+        "D": "1110"
+      },
+      "pdfChoices": {
+        "A": "543",
+        "C": "1086",
+        "B": "555",
+        "D": "1110"
+      },
+      "pdfBlockPreview": "13 From a point on the ground one-half mile from the base of a historic monument, the angle of elevation to its top is 11.87°. To the nearest foot, what is the height of the monument? (1) 543 (3) 1086 (2) 555 (4) 1110 ",
+      "label": "match",
+      "labelSource": "hand_vs_printed_page",
+      "notes": "Printed options 543/555/1086/1110 match the census. Key B."
+    },
+    {
+      "id": "nyregents-geometry-2019-jun-q15",
+      "slice": "geometry_lower_central_hit",
+      "qnum": 15,
+      "sourceUrl": "https://www.nysedregents.org/geom62019-exam.pdf",
+      "pdf": "data/raw/regents-geo/geom62019-exam.pdf",
+      "pdfPage": 7,
+      "pagePng": "exports/print-audit/pages/nyregents-geometry-2019-jun-q15-item.png",
+      "censusKey": "B",
+      "printedKey": null,
+      "censusStem": "In rABC shown below, ∠ACB is a right angle, E is a point on AC ___ , and ED ___ is drawn perpendicular to hypotenuse AB ___ . If AB \u0004 9, BC \u0004 6, and DE \u0004 4, what is the length of AE ___ ?",
+      "censusChoices": {
+        "A": "5",
+        "C": "7",
+        "B": "6",
+        "D": "8 E J R O T M A E C B D computations. Geometry – June ’19"
+      },
+      "pdfChoices": {
+        "A": "5",
+        "C": "7",
+        "B": "6",
+        "D": "8 E J R O T M A E C B D computations. Geometry – June ’19 [8]"
+      },
+      "pdfBlockPreview": "15 In rABC shown below, ∠ACB is a right angle, E is a point on AC ___ , and ED ___ is drawn perpendicular to hypotenuse AB ___ . If AB \u0004 9, BC \u0004 6, and DE \u0004 4, what is the length of AE ___ ? (1) 5 (3) 7 (2) 6 (4) 8 E J R O T M A E C B D Use this space for computations. ---PAGE 8--- Geometry – June ’19 [8] ",
+      "label": "ocr_glue",
+      "labelSource": "hand_vs_printed_page",
+      "notes": "Printed D is 8. Census D appends figure labels from q13 and the page footer. Leading numbers 5/6/7/8 match."
+    },
+    {
+      "id": "nyregents-geometry-2017-unk-q9",
+      "slice": "geometry_lower_central_hit",
+      "qnum": 9,
+      "sourceUrl": "https://www.nysedregents.org/geomcc12017-exam.pdf",
+      "pdf": "data/raw/regents-geo/geomcc12017-exam.pdf",
+      "pdfPage": 4,
+      "pagePng": "exports/print-audit/pages/nyregents-geometry-2017-unk-q9-item.png",
+      "censusKey": "B",
+      "printedKey": null,
+      "censusStem": "The diagram shows rectangle ABCD, with diagonal . What is the perimeter of rectangle ABCD, to the nearest tenth?",
+      "censusChoices": {
+        "A": "28.4",
+        "C": "48.0",
+        "B": "32.8",
+        "D": "62.4 A C B D 30° 12 BD 3 7 2.4 x θ Geometry (Common Core) –Jan. ’17 Geometry (Common Core) – Jan. ’17 [OVER] computations."
+      },
+      "pdfChoices": {
+        "A": "28.4",
+        "C": "48.0",
+        "B": "32.8",
+        "D": "62.4 A C B D 30° 12 BD 3 7 2.4 x θ Geometry (Common Core) –Jan. ’17 [4] Geometry (Common Core) – Jan. ’17 [5] [OVER] computations."
+      },
+      "pdfBlockPreview": "9 The diagram shows rectangle ABCD, with diagonal . What is the perimeter of rectangle ABCD, to the nearest tenth? (1) 28.4 (3) 48.0 (2) 32.8 (4) 62.4 A C B D 30° 12 BD 3 7 2.4 x θ Geometry (Common Core) –Jan. ’17 [4] ---PAGE 5--- Geometry (Common Core) – Jan. ’17 [5] [OVER] Use this space for computations. ",
+      "label": "ocr_glue",
+      "labelSource": "hand_vs_printed_page",
+      "notes": "Printed D is 62.4. Census D appends diagram labels and the page footer. Stem omits the BD bar label."
+    },
+    {
+      "id": "nyregents-geometry-2024-jan-q10",
+      "slice": "geometry_lower_central_hit",
+      "qnum": 10,
+      "sourceUrl": "https://www.nysedregents.org/geom12024-exam-lt.pdf",
+      "pdf": "data/raw/regents-geo/geom12024-exam.pdf",
+      "pdfPage": 7,
+      "pagePng": "exports/print-audit/pages/nyregents-geometry-2024-jan-q10-item.png",
+      "censusKey": "D",
+      "printedKey": null,
+      "censusStem": "Directed line segment AJ has endpoints whose coordinates are A(5,7) and J(210,28). Point E is on __ AJ such that AE:EJ is 2:3. What are the coordinates of point E?",
+      "censusChoices": {
+        "A": "(1,21)",
+        "C": "(24,22)",
+        "B": "(25,23)",
+        "D": "(21,1) Geometry – Jan. ’24 13 [OVER] computations."
+      },
+      "pdfChoices": {
+        "A": "(1,21)",
+        "C": "(24,22)",
+        "B": "(25,23)",
+        "D": "(21,1)"
+      },
+      "pdfBlockPreview": "10 Directed line segment AJ has endpoints whose coordinates are A(5,7) and J(210,28). Point E is on __ AJ such that AE:EJ is 2:3. What are the coordinates of point E? (1) (1,21) (3) (24,22) (2) (25,23) (4) (21,1) ",
+      "label": "ocr_glue",
+      "labelSource": "hand_vs_printed_page",
+      "notes": "Printed options are (1,-1), (-5,-3), (-4,-2), (-1,1). Census encodes minus as 2 and glues the footer onto D."
+    },
+    {
+      "id": "nyregents-geometry-2023-jan-q6",
+      "slice": "geometry_lower_central_hit",
+      "qnum": 6,
+      "sourceUrl": "https://www.nysedregents.org/geom12023-exam.pdf",
+      "pdf": "data/raw/regents-geo/geom12023-exam.pdf",
+      "pdfPage": 4,
+      "pagePng": "exports/print-audit/pages/nyregents-geometry-2023-jan-q6-item.png",
+      "censusKey": "B",
+      "printedKey": null,
+      "censusStem": "A jewelry company makes copper heart pendants. Each heart uses 0.75 in3 of copper and there is 0.323 pound of copper per cubic inch. If copper costs $3.68 per pound, what is the total cost for 24 copper hearts?",
+      "censusChoices": {
+        "A": "$5.81",
+        "C": "$66.24",
+        "B": "$21.40",
+        "D": "$205.08 A D C E B F computations. Geometry – Jan. ’23 [OVER]"
+      },
+      "pdfChoices": {
+        "A": "$5.81",
+        "C": "$66.24",
+        "B": "$21.40",
+        "D": "$205.08 A D C E B F computations. Geometry – Jan. ’23 [5] [OVER]"
+      },
+      "pdfBlockPreview": " 6 A jewelry company makes copper heart pendants. Each heart uses 0.75 in3 of copper and there is 0.323 pound of copper per cubic inch. If copper costs $3.68 per pound, what is the total cost for 24 copper hearts? (1) $5.81 (3) $66.24 (2) $21.40 (4) $205.08 A D C E B F Use this space for computations. ---PAGE 5--- Geometry – Jan. ’23 [5] [OVER] ",
+      "label": "ocr_glue",
+      "labelSource": "hand_vs_printed_page",
+      "notes": "Printed D is $205.08. Census D appends triangle labels from q5 and the footer. Dollar amounts match."
+    },
+    {
+      "id": "nyregents-geometry-2025-jun-q7",
+      "slice": "geometry_lower_central_hit",
+      "qnum": 7,
+      "sourceUrl": "https://www.nysedregents.org/geom-62025-exam.pdf",
+      "pdf": "data/raw/regents-geo/geom-62025-exam.pdf",
+      "pdfPage": 4,
+      "pagePng": "exports/print-audit/pages/nyregents-geometry-2025-jun-q7-item.png",
+      "censusKey": "C",
+      "printedKey": null,
+      "censusStem": "In nHSF below, m/S 5 90°, HF 5 30, and FS 5 23. S 30 H F 23 What is m/F, to the nearest degree?",
+      "censusChoices": {
+        "A": "53°",
+        "C": "40°",
+        "B": "50°",
+        "D": "37° computations. Geometry – June ’25 [OVER]"
+      },
+      "pdfChoices": {
+        "A": "53°",
+        "C": "40°",
+        "B": "50°",
+        "D": "37° computations. Geometry – June ’25 [5] [OVER]"
+      },
+      "pdfBlockPreview": " 7 In nHSF below, m/S 5 90°, HF 5 30, and FS 5 23. S 30 H F 23 What is m/F, to the nearest degree? (1) 53° (3) 40° (2) 50° (4) 37° ---PAGE 5--- Use this space for computations. Geometry – June ’25 [5] [OVER] ",
+      "label": "ocr_glue",
+      "labelSource": "hand_vs_printed_page",
+      "notes": "Printed D is 37 degrees. Census D appends the page footer. Angle options match."
+    },
+    {
+      "id": "nyregents-geometry-2015-aug-q13",
+      "slice": "geometry_lower_central_hit",
+      "qnum": 13,
+      "sourceUrl": "https://www.nysedregents.org/geom82015-exam.pdf",
+      "pdf": "data/raw/regents-geo/geom82015-exam.pdf",
+      "pdfPage": 6,
+      "pagePng": "exports/print-audit/pages/nyregents-geometry-2015-aug-q13-item.png",
+      "censusKey": "A",
+      "printedKey": null,
+      "censusStem": "Given: “If a polygon is a triangle, then the sum of its interior angles is 180°.” What is the contrapositive of this statement?",
+      "censusChoices": {
+        "A": "“If the sum of the interior angles of a polygon is not 180°, then it is not a triangle.”",
+        "B": "“A polygon is a triangle if and only if the sum of its interior angles is 180°.”",
+        "C": "“If a polygon is not a triangle, then the sum of the interior angles is not 180°.”",
+        "D": "“If the sum of the interior angles of a polygon is 180°, then it is a triangle.” \u0002\u0003\u0004 \u0002\u0005\u0004 \u0002\u0006\u0004 \u0002\u0007\u0004 computations. Geometry – Aug. ’15 [OVER]"
+      },
+      "pdfChoices": {
+        "A": "“If the sum of the interior angles of a polygon is not 180°, then it is not a triangle.”",
+        "B": "“A polygon is a triangle if and only if the sum of its interior angles is 180°.”",
+        "C": "“If a polygon is not a triangle, then the sum of the interior angles is not 180°.”",
+        "D": "“If the sum of the interior angles of a polygon is 180°, then it is a triangle.” \u0002\u0003\u0004 \u0002\u0005\u0004 \u0002\u0006\u0004 \u0002\u0007\u0004 computations. Geometry – Aug. ’15 [7] [OVER]"
+      },
+      "pdfBlockPreview": "13 Given: “If a polygon is a triangle, then the sum of its interior angles is 180°.” What is the contrapositive of this statement? (1) “If the sum of the interior angles of a polygon is not 180°, then it is not a triangle.” (2) “A polygon is a triangle if and only if the sum of its interior angles is 180°.” (3) “If a polygon is not a triangle, then the sum of the interior angles is not 180°.” (4) “If the sum of the interior angles of a polygon is 180°, then it is a triangle.” \u0002\u0003\u0004 \u0002\u0005\u0004 \u0002\u0006\u0004 \u0002\u0007\u0004 Use this space for computations. ---PAGE 7--- Geometry – Aug. ’15 [7] [OVER] ",
+      "label": "ocr_glue",
+      "labelSource": "hand_vs_printed_page",
+      "notes": "Printed D is the full contrapositive sentence. Census D appends control codes and the footer after that sentence."
+    },
+    {
+      "id": "nyregents-geometry-2019-jan-q15",
+      "slice": "geometry_lower_central_hit",
+      "qnum": 15,
+      "sourceUrl": "https://www.nysedregents.org/geom12019-exam.pdf",
+      "pdf": "data/raw/regents-geo/geom12019-exam.pdf",
+      "pdfPage": 8,
+      "pagePng": "exports/print-audit/pages/nyregents-geometry-2019-jan-q15-item.png",
+      "censusKey": "A",
+      "printedKey": null,
+      "censusStem": "Point M divides so that AM:MB \u0002 1:2. If A has coordinates (\u00031,\u00033) and B has coordinates (8,9), the coordinates of M are",
+      "censusChoices": {
+        "A": "(2,1)",
+        "C": "(5,5)",
+        "B": "( ,0)",
+        "D": "( ,8) 5 3 23 3 AB Geometry – Jan. ’19 computations."
+      },
+      "pdfChoices": {
+        "A": "(2,1)",
+        "C": "(5,5)",
+        "B": "( ,0)",
+        "D": "( ,8) 5 3 23 3 AB Geometry – Jan. ’19 [8] computations."
+      },
+      "pdfBlockPreview": "15 Point M divides so that AM:MB \u0002 1:2. If A has coordinates (\u00031,\u00033) and B has coordinates (8,9), the coordinates of M are (1) (2,1) (3) (5,5) (2) ( ,0) (4) ( ,8) 5 3 23 3 AB Geometry – Jan. ’19 [8] ---PAGE 9--- Use this space for computations. ",
+      "label": "truncated",
+      "labelSource": "hand_vs_printed_page",
+      "notes": "Printed B is (5/3, 0) and D is (23/3, 8). Census B is '( ,0)' and D is '( ,8)' plus stacked-fraction debris and footer."
+    },
+    {
+      "id": "nyregents-geometry-2024-jan-q18",
+      "slice": "geometry_lower_central_hit",
+      "qnum": 18,
+      "sourceUrl": "https://www.nysedregents.org/geom12024-exam-lt.pdf",
+      "pdf": "data/raw/regents-geo/geom12024-exam.pdf",
+      "pdfPage": 11,
+      "pagePng": "exports/print-audit/pages/nyregents-geometry-2024-jan-q18-item.png",
+      "censusKey": "A",
+      "printedKey": null,
+      "censusStem": "In the diagram of nCAT below, m/A 5 90° and altitude ___ AE is drawn from vertex A. A E C T Which statement is always true?",
+      "censusChoices": {
+        "A": "CE ___ AE 5 AE ___ ET",
+        "C": "AC ___ CE 5 AT ___ ET",
+        "B": "AE ___ CE 5 AE ___ ET",
+        "D": "CE ___ AC 5 AC ___ ET Geometry – Jan. ’24 20 computations."
+      },
+      "pdfChoices": {
+        "A": "CE ___ AE 5 AE ___ ET",
+        "C": "AC ___ CE 5 AT ___ ET",
+        "B": "AE ___ CE 5 AE ___ ET",
+        "D": "CE ___ AC 5 AC ___ ET"
+      },
+      "pdfBlockPreview": "18 In the diagram of nCAT below, m/A 5 90° and altitude ___ AE is drawn from vertex A. A E C T Which statement is always true? (1) CE ___ AE 5 AE ___ ET (3) AC ___ CE 5 AT ___ ET (2) AE ___ CE 5 AE ___ ET (4) CE ___ AC 5 AC ___ ET ",
+      "label": "ocr_glue",
+      "labelSource": "hand_vs_printed_page",
+      "notes": "Printed D is the last proportion. Census D appends the page footer. Stem and A-C match with minus/equals encoding."
+    },
+    {
+      "id": "nyregents-geometry-2016-unk-q15",
+      "slice": "geometry_lower_central_hit",
+      "qnum": 15,
+      "sourceUrl": "https://www.nysedregents.org/geomcc12016-exam.pdf",
+      "pdf": "data/raw/regents-geo/geomcc12016-exam.pdf",
+      "pdfPage": 8,
+      "pagePng": "exports/print-audit/pages/nyregents-geometry-2016-unk-q15-item.png",
+      "censusKey": "B",
+      "printedKey": null,
+      "censusStem": "The endpoints of one side of a regular pentagon are (\u00031,4) and (2,3). What is the perimeter of the pentagon?",
+      "censusChoices": {
+        "A": "√\u0004\u0004 10",
+        "C": "5√\u00042",
+        "B": "5√\u0004\u0004 10",
+        "D": "25√\u00042"
+      },
+      "pdfChoices": {
+        "A": "√\u0004\u0004 10",
+        "C": "5√\u00042",
+        "B": "5√\u0004\u0004 10",
+        "D": "25√\u00042"
+      },
+      "pdfBlockPreview": "15 The endpoints of one side of a regular pentagon are (\u00031,4) and (2,3). What is the perimeter of the pentagon? (1) √\u0004\u0004 10 (3) 5√\u00042 (2) 5√\u0004\u0004 10 (4) 25√\u00042 ",
+      "label": "match",
+      "labelSource": "hand_vs_printed_page",
+      "notes": "Printed radical options match the census row."
+    },
+    {
+      "id": "nyregents-algebra-i-2018-aug-q8",
+      "slice": "algebra_i_masked_stem_hit",
+      "qnum": 8,
+      "sourceUrl": "https://www.nysedregents.org/algone82018-examp.pdf",
+      "pdf": "data/raw/regents-alg1/algone82018-examp.pdf",
+      "pdfPage": 4,
+      "pagePng": "exports/print-audit/pages/nyregents-algebra-i-2018-aug-q8-item.png",
+      "censusKey": "C",
+      "printedKey": null,
+      "censusStem": "Compared to the graph of f(x) \u0002 x2, the graph of g(x) \u0002 (x \u0003 2)2 \u0004 3 is the result of translating f(x)",
+      "censusChoices": {
+        "A": "2 units up and 3 units right",
+        "B": "2 units down and 3 units up",
+        "C": "2 units right and 3 units up",
+        "D": "2 units left and 3 units right"
+      },
+      "pdfChoices": {
+        "A": "2 units up and 3 units right",
+        "B": "2 units down and 3 units up",
+        "C": "2 units right and 3 units up",
+        "D": "2 units left and 3 units right"
+      },
+      "pdfBlockPreview": " 8 Compared to the graph of f(x) \u0002 x2, the graph of g(x) \u0002 (x \u0003 2)2 \u0004 3 is the result of translating f(x) (1) 2 units up and 3 units right (2) 2 units down and 3 units up (3) 2 units right and 3 units up (4) 2 units left and 3 units right ",
+      "label": "match",
+      "labelSource": "hand_vs_printed_page",
+      "notes": "Printed translation options match the census row."
+    },
+    {
+      "id": "nyregents-algebra-i-2014-aug-q6",
+      "slice": "algebra_i_masked_stem_hit",
+      "qnum": 6,
+      "sourceUrl": "https://www.nysedregents.org/algone82014-exam.pdf",
+      "pdf": "data/raw/regents-alg1/algone82014-exam.pdf",
+      "pdfPage": 4,
+      "pagePng": "exports/print-audit/pages/nyregents-algebra-i-2014-aug-q6-item.png",
+      "censusKey": "B",
+      "printedKey": null,
+      "censusStem": "A company produces x units of a product per month, where C(x) represents the total cost and R(x) represents the total revenue for the month. The functions are modeled by C(x) \u0002 300x \u0003 250 and R(x) \u0002 \u00040.5x2 \u0003 800x \u0004 100. The profit is the difference between revenue and cost where P(x) \u0002 R(x) \u0004 C(x). What is the total profit, P(x), for the month?",
+      "censusChoices": {
+        "A": "P(x) \u0002 \u00040.5x2 \u0003 500x \u0004 150",
+        "B": "P(x) \u0002 \u00040.5x2 \u0003 500x \u0004 350",
+        "C": "P(x) \u0002 \u00040.5x2 \u0004 500x \u0003 350",
+        "D": "P(x) \u0002 \u00040.5x2 \u0003 500x \u0003 350"
+      },
+      "pdfChoices": {
+        "A": "P(x) \u0002 \u00040.5x2 \u0003 500x \u0004 150",
+        "B": "P(x) \u0002 \u00040.5x2 \u0003 500x \u0004 350",
+        "C": "P(x) \u0002 \u00040.5x2 \u0004 500x \u0003 350",
+        "D": "P(x) \u0002 \u00040.5x2 \u0003 500x \u0003 350"
+      },
+      "pdfBlockPreview": "6 A company produces x units of a product per month, where C(x) represents the total cost and R(x) represents the total revenue for the month. The functions are modeled by C(x) \u0002 300x \u0003 250 and R(x) \u0002 \u00040.5x2 \u0003 800x \u0004 100. The profit is the difference between revenue and cost where P(x) \u0002 R(x) \u0004 C(x). What is the total profit, P(x), for the month? (1) P(x) \u0002 \u00040.5x2 \u0003 500x \u0004 150 (2) P(x) \u0002 \u00040.5x2 \u0003 500x \u0004 350 (3) P(x) \u0002 \u00040.5x2 \u0004 500x \u0003 350 (4) P(x) \u0002 \u00040.5x2 \u0003 500x \u0003 350 ",
+      "label": "match",
+      "labelSource": "hand_vs_printed_page",
+      "notes": "Printed P(x) options match the census row."
+    },
+    {
+      "id": "nyregents-algebra-i-2026-aug-q20",
+      "slice": "algebra_i_masked_stem_hit",
+      "qnum": 20,
+      "sourceUrl": "https://www.nysedregents.org/algone-82026-exam.pdf",
+      "pdf": "data/raw/regents-alg1/algone-82026-exam.pdf",
+      "pdfPage": 7,
+      "pagePng": "exports/print-audit/pages/nyregents-algebra-i-2026-aug-q20-item.png",
+      "censusKey": "A",
+      "printedKey": null,
+      "censusStem": "The function f(x) 5 |x 1 6| 2 5 is shifted to the right 2 units to make the function g(x). Which function represents g(x)?",
+      "censusChoices": {
+        "A": "g(x) 5 |x 1 4| 2 5",
+        "C": "g(x) 5 |x 1 6| 2 3",
+        "B": "g(x) 5 |x 1 8| 2 5",
+        "D": "g(x) 5 |x 1 6| 2 7"
+      },
+      "pdfChoices": {
+        "A": "g(x) 5 |x 1 4| 2 5",
+        "C": "g(x) 5 |x 1 6| 2 3",
+        "B": "g(x) 5 |x 1 8| 2 5",
+        "D": "g(x) 5 |x 1 6| 2 7"
+      },
+      "pdfBlockPreview": "20 4 6 8 10 Internet-Connected Devices Members of Household For a household that has six members, what would be the best estimate for the number of internet-connected devices? (1) 6 (3) 14 (2) 10 (4) 18 ---PAGE 4--- Use this space for computations. Algebra I – Aug. ’26 [4] 8 What is the equation of the axis of symmetry for y 5 2x2 1 6x? (1) y 5 9 (3) y 5 3 (2) x 5 9 (4) x 5 3 9 The first step in solving a quadratic equation is shown below. x2 2 2x 1 3 5 212 x2 2 2x 1 15 5 0 Which property was used? (1) additive identity (2) addition property of equality (3) commutative property of addition (4) associative property of addition 10 A fourth-degree polynomial with a leading coefficient of eight and a constant term of twelve written in standard form is (1) 12 1 5x2 1 8x4 (3) 12 1 6x 1 5x2 1 8x3",
+      "label": "match",
+      "labelSource": "hand_vs_printed_page",
+      "notes": "Printed absolute-value options match. Census uses 5 for equals. First-pass page finder had hit axis labels; this is the printed q20."
+    },
+    {
+      "id": "nyregents-algebra-i-2017-jan-q8",
+      "slice": "algebra_i_masked_stem_hit",
+      "qnum": 8,
+      "sourceUrl": "https://www.nysedregents.org/algone12017-exam.pdf",
+      "pdf": "data/raw/regents-alg1/algone12017-exam.pdf",
+      "pdfPage": 4,
+      "pagePng": "exports/print-audit/pages/nyregents-algebra-i-2017-jan-q8-item.png",
+      "censusKey": "A",
+      "printedKey": null,
+      "censusStem": "In 2014, the cost to mail a letter was 49¢ for up to one ounce. Every additional ounce cost 21¢. Which recursive function could be used to determine the cost of a 3-ounce letter, in cents?",
+      "censusChoices": {
+        "A": "a1 \u0004 49; an \u0004 an \u0002 1 \u0003 21",
+        "B": "a1 \u0004 0; an \u0004 49an \u0002 1 \u0003 21",
+        "C": "a1 \u0004 21; an \u0004 an \u0002 1 \u0003 49",
+        "D": "a1 \u0004 0; an \u0004 21an \u0002 1 \u0003 49"
+      },
+      "pdfChoices": {
+        "A": "a1 \u0004 49; an \u0004 an \u0002 1 \u0003 21",
+        "B": "a1 \u0004 0; an \u0004 49an \u0002 1 \u0003 21",
+        "C": "a1 \u0004 21; an \u0004 an \u0002 1 \u0003 49",
+        "D": "a1 \u0004 0; an \u0004 21an \u0002 1 \u0003 49"
+      },
+      "pdfBlockPreview": " 8 In 2014, the cost to mail a letter was 49¢ for up to one ounce. Every additional ounce cost 21¢. Which recursive function could be used to determine the cost of a 3-ounce letter, in cents? (1) a1 \u0004 49; an \u0004 an \u0002 1 \u0003 21 (2) a1 \u0004 0; an \u0004 49an \u0002 1 \u0003 21 (3) a1 \u0004 21; an \u0004 an \u0002 1 \u0003 49 (4) a1 \u0004 0; an \u0004 21an \u0002 1 \u0003 49 ",
+      "label": "match",
+      "labelSource": "hand_vs_printed_page",
+      "notes": "Printed recursive-function options match the census row."
+    },
+    {
+      "id": "nyregents-algebra-i-2025-jun-q13",
+      "slice": "algebra_i_masked_stem_hit",
+      "qnum": 13,
+      "sourceUrl": "https://www.nysedregents.org/algone-62025-exam.pdf",
+      "pdf": "data/raw/regents-alg1/algone-62025-exam.pdf",
+      "pdfPage": 6,
+      "pagePng": "exports/print-audit/pages/nyregents-algebra-i-2025-jun-q13-item.png",
+      "censusKey": "C",
+      "printedKey": null,
+      "censusStem": "14 15 Based on the box plots, which statement must be true?",
+      "censusChoices": {
+        "A": "[0,12]",
+        "B": "[15,45]",
+        "C": "0 , x # 12",
+        "D": "15 , x # 45"
+      },
+      "pdfChoices": {
+        "A": "[0,12]",
+        "B": "[15,45]",
+        "C": "0 , x # 12",
+        "D": "15 , x # 45"
+      },
+      "pdfBlockPreview": "13 14 15 Based on the box plots, which statement must be true? (1) The IQR of both teams is the same. (2) There are more athletes on the swim team than on the track team. (3) The median age of the swim team is less than the median age of the track team. (4) The range of ages of the swim team is smaller than the range of ages of the track team. ---PAGE 6--- Use this space for computations. Algebra I – June ’25 [6] 13 The graph of f(x) is shown below. y x 5 10 10 20 30 40 50 15 f(x) The domain of this function is (1) [0,12] (3) 0 , x # 12 (2) [15,45] (4) 15 , x # 45 ",
+      "label": "ocr_glue",
+      "labelSource": "hand_vs_printed_page",
+      "notes": "Printed q13 is a graph-domain item whose options match the census. Census stem is axis ticks 14 15 plus the previous item's box-plot sentence."
+    },
+    {
+      "id": "nyregents-algebra-i-2023-jun-q3",
+      "slice": "algebra_i_masked_stem_hit",
+      "qnum": 3,
+      "sourceUrl": "https://www.nysedregents.org/algone62023-exam-lt.pdf",
+      "pdf": "data/raw/regents-alg1/algone62023-exam.pdf",
+      "pdfPage": 2,
+      "pagePng": "exports/print-audit/pages/nyregents-algebra-i-2023-jun-q3-item.png",
+      "censusKey": "A",
+      "printedKey": null,
+      "censusStem": "Which linear equation represents a line that passes through the point (23,28)?",
+      "censusChoices": {
+        "A": "x # 11",
+        "C": "x # 215",
+        "B": "x $ 11",
+        "D": "x $ 215"
+      },
+      "pdfChoices": {
+        "A": "y 5 2x 2 2",
+        "C": "y 5 2x 1 13",
+        "B": "y 5 2x 2 8",
+        "D": "y 5 2x 2 14"
+      },
+      "pdfBlockPreview": " 3 Which linear equation represents a line that passes through the point (23,28)? (1) y 5 2x 2 2 (3) y 5 2x 1 13 (2) y 5 2x 2 8 (4) y 5 2x 2 14 ",
+      "label": "wrong_item",
+      "labelSource": "hand_vs_printed_page",
+      "notes": "Printed q3 options are y=2x-2 and three other lines. Census options are inequalities x # 11 etc. Stem matches the printed linear-equation item."
+    },
+    {
+      "id": "nyregents-algebra-i-2025-jan-q10",
+      "slice": "algebra_i_masked_stem_hit",
+      "qnum": 10,
+      "sourceUrl": "https://www.nysedregents.org/algone-12025-exam.pdf",
+      "pdf": "data/raw/regents-alg1/algone-12025-exam.pdf",
+      "pdfPage": 4,
+      "pagePng": "exports/print-audit/pages/nyregents-algebra-i-2025-jan-q10-item.png",
+      "censusKey": "A",
+      "printedKey": null,
+      "censusStem": "Market Street Pizza kept a record of pizza sales for the month of February. The results are shown in the table below. Type Plain Veggie Meat Only The Works Thin Crust 300 80 120 100 Deep-dish 200 25 105 70 Of all the pizzas sold in February, what percent were plain, deep-dish pizzas?",
+      "censusChoices": {
+        "A": "20%",
+        "C": "40%",
+        "B": "30%",
+        "D": "50%"
+      },
+      "pdfChoices": {
+        "A": "20%",
+        "C": "40%",
+        "B": "30%",
+        "D": "50%"
+      },
+      "pdfBlockPreview": "10 Market Street Pizza kept a record of pizza sales for the month of February. The results are shown in the table below. Type Plain Veggie Meat Only The Works Thin Crust 300 80 120 100 Deep-dish 200 25 105 70 Of all the pizzas sold in February, what percent were plain, deep-dish pizzas? (1) 20% (3) 40% (2) 30% (4) 50% ",
+      "label": "match",
+      "labelSource": "hand_vs_printed_page",
+      "notes": "Printed pizza-table percents match the census row."
+    },
+    {
+      "id": "nyregents-algebra-i-2024-jun-q15",
+      "slice": "algebra_i_masked_stem_hit",
+      "qnum": 15,
+      "sourceUrl": "https://www.nysedregents.org/algone62024-exam.pdf",
+      "pdf": "data/raw/regents-alg1/algone62024-exam.pdf",
+      "pdfPage": 6,
+      "pagePng": "exports/print-audit/pages/nyregents-algebra-i-2024-jun-q15-item.png",
+      "censusKey": "B",
+      "printedKey": null,
+      "censusStem": "The equation that represents the sequence 22, 25, 28, 211, 214, . . . is",
+      "censusChoices": {
+        "A": "an 5 23 1 (22)(n 2 1)",
+        "C": "(n 2 1)",
+        "B": "an 5 22 1 (23)(n 2 1)",
+        "D": "an 5 22 1"
+      },
+      "pdfChoices": {
+        "A": "an 5 23 1 (22)(n 2 1)",
+        "C": "(n 2 1)",
+        "B": "an 5 22 1 (23)(n 2 1)",
+        "D": "an 5 22 1"
+      },
+      "pdfBlockPreview": "15 The equation that represents the sequence 22, 25, 28, 211, 214, . . . is (1) an 5 23 1 (22)(n 2 1) (3) an 5 3 1 (22)(n 2 1) (2) an 5 22 1 (23)(n 2 1) (4) an 5 22 1 (3)(n 2 1) ",
+      "label": "truncated",
+      "labelSource": "hand_vs_printed_page",
+      "notes": "Printed C and D are full a_n formulas. Census C is '(n 2 1)' and D is 'an 5 22 1'."
+    },
+    {
+      "id": "nyregents-algebra-i-2018-jun-q22",
+      "slice": "algebra_i_masked_stem_hit",
+      "qnum": 22,
+      "sourceUrl": "https://www.nysedregents.org/algone62018-exama.pdf",
+      "pdf": "data/raw/regents-alg1/algone62018-exama.pdf",
+      "pdfPage": 9,
+      "pagePng": "exports/print-audit/pages/nyregents-algebra-i-2018-jun-q22-item.png",
+      "censusKey": "C",
+      "printedKey": null,
+      "censusStem": "How many real-number solutions does 4x2 + 2x + 5 = 0 have?",
+      "censusChoices": {
+        "A": "one",
+        "C": "zero",
+        "B": "two",
+        "D": "infinitely many"
+      },
+      "pdfChoices": {
+        "A": "one",
+        "C": "zero",
+        "B": "two",
+        "D": "infinitely many"
+      },
+      "pdfBlockPreview": "22 How many real-number solutions does 4x2 + 2x + 5 = 0 have? (1) one (3) zero (2) two (4) infinitely many ",
+      "label": "match",
+      "labelSource": "hand_vs_printed_page",
+      "notes": "Printed solution-count options match the census row."
+    },
+    {
+      "id": "nyregents-algebra-i-2023-jan-q8",
+      "slice": "algebra_i_masked_stem_hit",
+      "qnum": 8,
+      "sourceUrl": "https://www.nysedregents.org/algone12023-exam-lt.pdf",
+      "pdf": "data/raw/regents-alg1/algone12023-exam.pdf",
+      "pdfPage": 4,
+      "pagePng": "exports/print-audit/pages/nyregents-algebra-i-2023-jan-q8-item.png",
+      "censusKey": "A",
+      "printedKey": null,
+      "censusStem": "One Saturday afternoon, three friends decided to keep track of the number of text messages they received each hour from 8 a.m. to noon. The results are shown below. Emily said that the number of messages she received increased by each hour. Jessica said that the number of messages she received doubled every hour. Chris said that he received 3 messages the first hour, 10 the second hour, none the t",
+      "censusChoices": {
+        "A": "Emily, only",
+        "C": "Emily and Chris",
+        "B": "Jessica, only",
+        "D": "Jessica and Chris"
+      },
+      "pdfChoices": {
+        "A": "Emily, only",
+        "C": "Emily and Chris",
+        "B": "Jessica, only",
+        "D": "Jessica and Chris"
+      },
+      "pdfBlockPreview": "8 11 Domain Range y x 6 What is the value of the third quartile in the box plot shown below? 14 20 26 32 38 44 50 (1) 18 (3) 36 (2) 22 (4) 46 7 What is the solution to 2 \u0003 3(2a \u0003 1) \u0004 3(a \u0003 2)? (1) 1 7 (3) 3 7 \u0002 (2) 1 3 (4) 1 3 \u0002 ---PAGE 4--- Use this space for computations. Algebra I – Jan. ’23 [4] 8 One Saturday afternoon, three friends decided to keep track of the number of text messages they received each hour from 8 a.m. to noon. The results are shown below. Emily said that the number of messages she received increased by 8 each hour. Jessica said that the number of messages she received doubled every hour. Chris said that he received 3 messages the first hour, 10 the second hour, none the third hour, and 15 the last hour. Which of the friends’ responses best classifies the number of ",
+      "label": "truncated",
+      "labelSource": "hand_vs_printed_page",
+      "notes": "Printed stem is complete. Census stem cuts at 'none the t'. Options match."
+    }
+  ],
+  "cite": "exports/print-audit/audit.json",
+  "reviewer": "printed-page hand check against pymupdf-rendered exam pages; no OCR",
+  "nMatch": 8,
+  "nOcrGlue": 8,
+  "nTruncated": 3,
+  "nWrongItem": 1,
+  "nPdfMissing": 0
+}

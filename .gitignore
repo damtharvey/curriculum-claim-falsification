@@ -54,6 +54,7 @@ exports/replication-staar/fetch-log*.md
 
 # Rendered PDF page PNGs (recreate with scripts/render_pdf_pages.py)
 exports/vision/
+exports/print-audit/pages/
 
 # Human packet: send the tracked .txt, not the PDF
 exports/human-masked-stem/rater-packet.pdf
