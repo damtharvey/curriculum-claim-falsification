@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+  <style>
+    body { margin: 0; font-family: "Instrument Sans", system-ui, sans-serif; background: #F4F1EA; color: #1A1917; -webkit-font-smoothing: antialiased; }
+    a { color: #1A1917; text-decoration: none; } a:hover { color: #8A2F2A; }
+    .serif { font-family: "Fraunces", Georgia, serif; }
+    .mono { font-family: "JetBrains Mono", ui-monospace, monospace; }
+    .nav a { padding: 8px 12px; border-radius: 6px; font-size: 14px; font-weight: 500; color: #5A554C; }
+    .nav a.on { background: #1A1917; color: #F4F1EA; }
+    .nav a:hover { color: #1A1917; }
+    .nav a.on:hover { color: #F4F1EA; }
+    table { border-collapse: collapse; width: 100%; font-size: 14px; }
+    th { text-align: left; font-weight: 500; font-size: 12px; letter-spacing: 0.04em; text-transform: uppercase; color: #5A554C; padding: 10px 12px; border-bottom: 1px solid #D9D3C6; }
+    td { padding: 12px; border-bottom: 1px solid #E8E3D8; vertical-align: top; }
+    tr.sel td { background: #FBF9F4; }
+    .pill { display: inline-block; padding: 2px 9px; border-radius: 999px; font-size: 12px; font-weight: 500; line-height: 18px; }
+    .pill.wit { background: #8A2F2A; color: #FFFFFF; }
+    .pill.none { background: #E8E3D8; color: #5A554C; }
+    .pill.tag { background: #FFFFFF; color: #1A1917; border: 1px solid #D9D3C6; }
+    .pill.op { background: #E6EFEE; color: #1F514E; }
+    .pill.lack { background: #F5E4E2; color: #7A2823; }
+    .field label { display: block; font-size: 12px; font-weight: 600; letter-spacing: 0.03em; text-transform: uppercase; color: #5A554C; margin-bottom: 6px; }
+    .field input, .field select, .field textarea { box-sizing: border-box; width: 100%; font: inherit; font-size: 14px; color: #1A1917; background: #FFFFFF; border: 1px solid #C9C2B4; border-radius: 8px; padding: 10px 12px; min-height: 44px; }
+    .field textarea { min-height: 96px; resize: vertical; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 44px; padding: 0 18px; border-radius: 8px; font: inherit; font-size: 14px; font-weight: 600; cursor: pointer; border: 1px solid #1A1917; background: #1A1917; color: #F4F1EA; }
+    .btn.ghost { background: transparent; color: #1A1917; }
+    .btn.danger { background: transparent; color: #8A2F2A; border-color: #C9C2B4; }
+    .check { display: flex; align-items: center; gap: 10px; min-height: 44px; font-size: 14px; }
+    .check input { width: 18px; height: 18px; margin: 0; accent-color: #1A1917; }
+    .side a { display: block; padding: 10px 12px; border-radius: 6px; font-size: 14px; font-weight: 500; color: #5A554C; }
+    .side a.on { background: #FFFFFF; color: #1A1917; border: 1px solid #D9D3C6; }
+  </style>
+</helmet>
+<div style="width: 1280px; height: 900px; box-sizing: border-box; display: flex; flex-direction: column; background: #F4F1EA; overflow: hidden;">
+<div style="display: flex; align-items: center; gap: 16px; height: 64px; padding: 0 40px; box-sizing: border-box; border-bottom: 1px solid #D9D3C6; background: #F4F1EA;">
+  <a href="Main.dc.html" class="serif" style="font-size: 22px; font-weight: 600; letter-spacing: -0.01em;">CCF</a>
+  <span style="font-size: 13px; color: #5A554C;">Does the assessment require the skill?</span>
+  <div class="nav" style="margin-left: auto; display: flex; gap: 4px;">
+    <a href="Main.dc.html" class="on">Items</a>
+    <a href="Admin-Rules.dc.html">Rules</a>
+    <a href="Admin-Claims.dc.html">Claims</a>
+    <a href="Admin-Data.dc.html">Data</a>
+  </div>
+</div>
+<div style="width: 1280px; height: 836px; box-sizing: border-box; padding: 32px 40px; display: flex; flex-direction: column; gap: 24px;">
+  <div style="display: flex; align-items: flex-end; gap: 24px;">
+    <div style="display: flex; flex-direction: column; gap: 6px;">
+      <h1 class="serif" style="margin: 0; font-size: 36px; font-weight: 400; letter-spacing: -0.01em;">Items</h1>
+      <p style="margin: 0; font-size: 14px; color: #5A554C; max-width: 640px;">A witness is a program that lacks the tagged operation and still passes under the published key. A pass refutes the tag for that item. A fail proves nothing beyond the programs tried.</p>
+    </div>
+    <div style="margin-left: auto; display: flex; gap: 12px;">
+      <div style="padding: 12px 16px; background: #FFFFFF; border: 1px solid #D9D3C6; border-radius: 10px; min-width: 96px;"><div style="font-size: 11px; letter-spacing: 0.05em; text-transform: uppercase; color: #5A554C;">Items</div><div class="serif" style="font-size: 26px;">2,405</div></div>
+      <div style="padding: 12px 16px; background: #FFFFFF; border: 1px solid #D9D3C6; border-radius: 10px; min-width: 96px;"><div style="font-size: 11px; letter-spacing: 0.05em; text-transform: uppercase; color: #5A554C;">Selected</div><div class="serif" style="font-size: 26px;">2,245</div></div>
+      <div style="padding: 12px 16px; background: #FFFFFF; border: 1px solid #D9D3C6; border-radius: 10px; min-width: 96px;"><div style="font-size: 11px; letter-spacing: 0.05em; text-transform: uppercase; color: #5A554C;">Numeric</div><div class="serif" style="font-size: 26px;">160</div></div>
+      <div style="padding: 12px 16px; background: #FFFFFF; border: 1px solid #D9D3C6; border-radius: 10px; min-width: 96px;"><div style="font-size: 11px; letter-spacing: 0.05em; text-transform: uppercase; color: #5A554C;">A priori rules</div><div class="serif" style="font-size: 26px;">15</div></div>
+      <div style="padding: 12px 16px; background: #1A1917; color: #F4F1EA; border-radius: 10px; min-width: 96px;"><div style="font-size: 11px; letter-spacing: 0.05em; text-transform: uppercase; color: #C9C2B4;">Witness rows</div><div class="serif" style="font-size: 26px;">516</div></div>
+    </div>
+  </div>
+
+  <div style="display: flex; gap: 12px; align-items: flex-end;">
+    <div class="field" style="width: 300px;"><label for="q">Search</label><input id="q" type="search" placeholder="Item id or stem text"></div>
+    <div class="field" style="width: 160px;"><label for="auth">Authority</label><select id="auth"><option>All</option><option>teks</option><option>nyregents</option><option>timss</option><option>eqao</option><option>acara</option><option>ccss</option></select></div>
+    <div class="field" style="width: 160px;"><label for="claim">Claim</label><select id="claim"><option>All</option><option>g5</option><option>g6</option><option>algebra-i</option><option>geometry</option><option>applying</option></select></div>
+    <div class="field" style="width: 160px;"><label for="chan">Channel</label><select id="chan"><option>All</option><option>item-cues</option><option>partial-input</option><option>unbound-exec</option></select></div>
+    <label class="check" style="padding: 0 4px;"><input type="checkbox" checked> Witnessed only</label>
+    <button class="btn ghost" style="margin-left: auto;">Export CSV</button>
+  </div>
+
+  <div style="background: #FFFFFF; border: 1px solid #D9D3C6; border-radius: 12px; overflow: hidden; flex-grow: 1;">
+    <table>
+      <thead><tr><th style="width: 300px;">Item</th><th>Stem</th><th style="width: 110px;">Authority</th><th style="width: 100px;">Claim</th><th style="width: 90px;">Type</th><th style="width: 120px;">Channel</th><th style="width: 110px;">Status</th></tr></thead>
+      <tbody>
+        <tr><td><a class="mono" href="Item-Witness.dc.html" style="font-size: 13px;">staar-2019-5-q7</a></td><td style="color: #5A554C;">Ms. Jaffey had a total of 428.5 ounces of pretzels to put into 5 bowls…</td><td>teks</td><td>g5</td><td>selected</td><td>unbound-exec</td><td><span class="pill wit">Witness · 1</span></td></tr>
+        <tr><td><a class="mono" href="Item-Witness.dc.html" style="font-size: 13px;">nyregents-geometry-2025-jan-q6</a></td><td style="color: #5A554C;">The equation of a circle is x² + 6y = 4x − y² + 12. What are the coordinates…</td><td>nyregents</td><td>geometry</td><td>selected</td><td>item-cues</td><td><span class="pill wit">Witness · 2</span></td></tr>
+        <tr><td><a class="mono" href="Item-Witness.dc.html" style="font-size: 13px;">staar-2019-6-q8</a></td><td style="color: #5A554C;">The dot plot shows the wing lengths in millimeters for ten birds…</td><td>teks</td><td>g6</td><td>selected</td><td>item-cues</td><td><span class="pill wit">Witness · 2</span></td></tr>
+        <tr><td><a class="mono" href="Item-Witness.dc.html" style="font-size: 13px;">staar-2021-alg1-q3</a></td><td style="color: #5A554C;">The values in the table represent a linear relationship between x and y…</td><td>teks</td><td>alg1</td><td>selected</td><td>partial-input</td><td><span class="pill wit">Witness · 1</span></td></tr>
+        <tr><td><a class="mono" href="Item-Witness.dc.html" style="font-size: 13px;">nyregents-algebra-i-2017-aug-q21</a></td><td style="color: #5A554C;">The Ebola virus has an infection rate of 11% per day as compared to the SARS virus…</td><td>nyregents</td><td>algebra-i</td><td>selected</td><td>item-cues</td><td><span class="pill wit">Witness · 1</span></td></tr>
+        <tr><td><a class="mono" href="Item-Witness.dc.html" style="font-size: 13px;">nyregents-algebra-i-2014-jun-q7</a></td><td style="color: #5A554C;">A company that manufactures radios first pays a start-up cost, and then spends a…</td><td>nyregents</td><td>algebra-i</td><td>selected</td><td>item-cues</td><td><span class="pill wit">Witness · 1</span></td></tr>
+        <tr><td><a class="mono" href="Item-NoWitness.dc.html" style="font-size: 13px;">timss2011-8-M032064</a></td><td style="color: #5A554C;">Ann and Jenny divide 560 zeds between them. If Jenny gets 3/8 of the money…</td><td>timss</td><td>applying</td><td>numeric</td><td>—</td><td><span class="pill none">No witness</span></td></tr>
+        <tr><td><a class="mono" href="Item-Witness.dc.html" style="font-size: 13px;">nyregents-geometry-2026-jan-q1</a></td><td style="color: #5A554C;">On the set of axes below, △RST and its image, △R′S′T′, are graphed…</td><td>nyregents</td><td>geometry</td><td>selected</td><td>item-cues</td><td><span class="pill wit">Witness · 1</span></td></tr>
+      </tbody>
+    </table>
+    <div style="display: flex; align-items: center; gap: 12px; padding: 12px 16px; font-size: 13px; color: #5A554C; border-top: 1px solid #E8E3D8;">
+      <span>Showing 8 of 516 witnessed rows</span>
+      <div style="margin-left: auto; display: flex; gap: 8px;"><button class="btn ghost" style="min-height: 36px; padding: 0 12px;">Prev</button><button class="btn ghost" style="min-height: 36px; padding: 0 12px;">Next</button></div>
+    </div>
+  </div>
+</div>
+</div>
+</x-dc>
+<script data-dc-script data-props='{"accent":{"editor":"color","default":"#8A2F2A","options":["#8A2F2A","#1F514E","#3B3A8C"]},"$preview":{"width":1280,"height":900}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return { accent: this.props.accent ?? '#8A2F2A' };
+  }
+}
+</script>
+</body>
+</html>

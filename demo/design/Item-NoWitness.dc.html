@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+  <style>
+    body { margin: 0; font-family: "Instrument Sans", system-ui, sans-serif; background: #F4F1EA; color: #1A1917; -webkit-font-smoothing: antialiased; }
+    a { color: #1A1917; text-decoration: none; } a:hover { color: #8A2F2A; }
+    .serif { font-family: "Fraunces", Georgia, serif; }
+    .mono { font-family: "JetBrains Mono", ui-monospace, monospace; }
+    .nav a { padding: 8px 12px; border-radius: 6px; font-size: 14px; font-weight: 500; color: #5A554C; }
+    .nav a.on { background: #1A1917; color: #F4F1EA; }
+    .nav a:hover { color: #1A1917; }
+    .nav a.on:hover { color: #F4F1EA; }
+    table { border-collapse: collapse; width: 100%; font-size: 14px; }
+    th { text-align: left; font-weight: 500; font-size: 12px; letter-spacing: 0.04em; text-transform: uppercase; color: #5A554C; padding: 10px 12px; border-bottom: 1px solid #D9D3C6; }
+    td { padding: 12px; border-bottom: 1px solid #E8E3D8; vertical-align: top; }
+    tr.sel td { background: #FBF9F4; }
+    .pill { display: inline-block; padding: 2px 9px; border-radius: 999px; font-size: 12px; font-weight: 500; line-height: 18px; }
+    .pill.wit { background: #8A2F2A; color: #FFFFFF; }
+    .pill.none { background: #E8E3D8; color: #5A554C; }
+    .pill.tag { background: #FFFFFF; color: #1A1917; border: 1px solid #D9D3C6; }
+    .pill.op { background: #E6EFEE; color: #1F514E; }
+    .pill.lack { background: #F5E4E2; color: #7A2823; }
+    .field label { display: block; font-size: 12px; font-weight: 600; letter-spacing: 0.03em; text-transform: uppercase; color: #5A554C; margin-bottom: 6px; }
+    .field input, .field select, .field textarea { box-sizing: border-box; width: 100%; font: inherit; font-size: 14px; color: #1A1917; background: #FFFFFF; border: 1px solid #C9C2B4; border-radius: 8px; padding: 10px 12px; min-height: 44px; }
+    .field textarea { min-height: 96px; resize: vertical; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 44px; padding: 0 18px; border-radius: 8px; font: inherit; font-size: 14px; font-weight: 600; cursor: pointer; border: 1px solid #1A1917; background: #1A1917; color: #F4F1EA; }
+    .btn.ghost { background: transparent; color: #1A1917; }
+    .btn.danger { background: transparent; color: #8A2F2A; border-color: #C9C2B4; }
+    .check { display: flex; align-items: center; gap: 10px; min-height: 44px; font-size: 14px; }
+    .check input { width: 18px; height: 18px; margin: 0; accent-color: #1A1917; }
+    .side a { display: block; padding: 10px 12px; border-radius: 6px; font-size: 14px; font-weight: 500; color: #5A554C; }
+    .side a.on { background: #FFFFFF; color: #1A1917; border: 1px solid #D9D3C6; }
+  </style>
+</helmet>
+<div style="width: 1280px; height: 900px; box-sizing: border-box; display: flex; flex-direction: column; background: #F4F1EA; overflow: hidden;">
+<div style="display: flex; align-items: center; gap: 16px; height: 64px; padding: 0 40px; box-sizing: border-box; border-bottom: 1px solid #D9D3C6; background: #F4F1EA;">
+  <a href="Main.dc.html" class="serif" style="font-size: 22px; font-weight: 600; letter-spacing: -0.01em;">CCF</a>
+  <span style="font-size: 13px; color: #5A554C;">Does the assessment require the skill?</span>
+  <div class="nav" style="margin-left: auto; display: flex; gap: 4px;">
+    <a href="Main.dc.html" class="on">Items</a>
+    <a href="Admin-Rules.dc.html">Rules</a>
+    <a href="Admin-Claims.dc.html">Claims</a>
+    <a href="Admin-Data.dc.html">Data</a>
+  </div>
+</div>
+<div style="width: 1280px; height: 836px; box-sizing: border-box; padding: 32px 40px; display: flex; flex-direction: column; gap: 20px;">
+  <div style="display: flex; align-items: center; gap: 10px; font-size: 13px; color: #5A554C;">
+    <a href="Main.dc.html">Items</a><span>/</span><span class="mono" style="color: #1A1917;">timss2011-8-M032064</span>
+  </div>
+  <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; flex-grow: 1;">
+
+    <div style="display: flex; flex-direction: column; gap: 16px; background: #FFFFFF; border: 1px solid #D9D3C6; border-radius: 12px; padding: 28px; box-sizing: border-box;">
+      <div style="display: flex; gap: 8px; flex-wrap: wrap; align-items: center;">
+        <span class="pill tag">TIMSS · applying</span>
+        <span class="pill tag">2011 · grade 8 · Number</span>
+        <span class="pill tag">numeric · stem restored</span>
+        <span style="margin-left: auto; font-size: 12px; color: #5A554C;">Tag requires</span>
+        <span class="pill op">bind</span><span class="pill op">execute</span>
+      </div>
+      <p class="serif" style="margin: 8px 0 0; font-size: 22px; line-height: 1.4; font-weight: 400;">Ann and Jenny divide 560 zeds between them. If Jenny gets 3/8 of the money, how many zeds will Ann get?</p>
+      <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 8px;">
+        <div style="display: flex; align-items: center; gap: 12px; padding: 12px 14px; border: 1px solid #1A1917; border-radius: 8px; background: #FBF9F4;"><span class="mono" style="font-weight: 500; color: #5A554C;">Key</span><span class="mono" style="flex-grow: 1; font-size: 16px;">350</span><span style="font-size: 12px; color: #5A554C;">numeric · exact match</span></div>
+        <div style="font-size: 13px; color: #5A554C; padding: 4px 2px;">Listed incorrect responses in the scoring guide: 210 (Jenny's share), 5/8 (Ann's fraction). International percent correct: 27.</div>
+      </div>
+      <div style="margin-top: auto; display: flex; gap: 16px; font-size: 12px; color: #5A554C; border-top: 1px solid #E8E3D8; padding-top: 12px;">
+        <span>Source: nces.ed.gov · TIMSS 2011 G8 released items</span>
+        <a href="Main.dc.html" style="margin-left: auto; text-decoration: underline;">Restoration note</a>
+      </div>
+    </div>
+
+    <div style="display: flex; flex-direction: column; gap: 16px;">
+      <div style="display: flex; align-items: center; gap: 12px;">
+        <h2 class="serif" style="margin: 0; font-size: 24px; font-weight: 400;">A priori rules</h2>
+        <span style="font-size: 13px; color: #5A554C;">15 programs · no fitted parameters · key withheld</span>
+        <button class="btn" style="margin-left: auto;">Run again</button>
+      </div>
+
+      <div style="border-radius: 12px; padding: 20px 24px; background: #FFFFFF; border: 1px dashed #A9A295; color: #1A1917; display: flex; flex-direction: column; gap: 6px;">
+        <div style="display: flex; align-items: center; gap: 10px; color: #5A554C;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"></circle><path d="M8 12h8"></path></svg>
+          <span style="font-size: 12px; letter-spacing: 0.06em; text-transform: uppercase; font-weight: 600;">No witness</span>
+        </div>
+        <div class="serif" style="font-size: 20px; line-height: 1.35;">None of the searched programs returned the key.</div>
+        <div style="font-size: 13px; color: #5A554C;">This proves nothing beyond the programs we tried. The tag is not certified, and it is not refuted.</div>
+      </div>
+
+      <div style="background: #FFFFFF; border: 1px solid #D9D3C6; border-radius: 12px; overflow: hidden; flex-grow: 1;">
+        <table>
+          <thead><tr><th>Program</th><th style="width: 110px;">Channel</th><th style="width: 130px;">Lacks</th><th style="width: 90px;">Answer</th><th style="width: 100px;">Result</th></tr></thead>
+          <tbody>
+            <tr><td><span class="mono" style="font-size: 13px;">unit-rate</span><div class="mono" style="font-size: 11px; color: #5A554C; margin-top: 4px;">a=560, b=3 · candidates 186.67, 0.0054</div></td><td>unbound-exec</td><td><span class="pill lack">bind</span> <span class="pill lack">explain</span></td><td class="mono">186.67</td><td><span class="pill none">Miss</span></td></tr>
+            <tr><td><span class="mono" style="font-size: 13px;">mean-of-listed-numbers</span><div class="mono" style="font-size: 11px; color: #5A554C; margin-top: 4px;">stem lacks mean / average → abstain</div></td><td>unbound-exec</td><td><span class="pill lack">bind</span> <span class="pill lack">explain</span></td><td class="mono">—</td><td><span class="pill none">Abstain</span></td></tr>
+            <tr><td><span class="mono" style="font-size: 13px;">percent-of</span><div class="mono" style="font-size: 11px; color: #5A554C; margin-top: 4px;">no percent token → abstain</div></td><td>unbound-exec</td><td><span class="pill lack">bind</span> <span class="pill lack">explain</span></td><td class="mono">—</td><td><span class="pill none">Abstain</span></td></tr>
+            <tr><td><span class="mono" style="font-size: 13px;">area-lw</span><div class="mono" style="font-size: 11px; color: #5A554C; margin-top: 4px;">stem lacks area / rectangle / square → abstain</div></td><td>unbound-exec</td><td><span class="pill lack">bind</span> <span class="pill lack">explain</span></td><td class="mono">—</td><td><span class="pill none">Abstain</span></td></tr>
+            <tr><td><span class="mono" style="font-size: 13px; color: #5A554C;">6 selected-response rules</span><div style="font-size: 11px; color: #5A554C; margin-top: 4px;">longest-option, position-c, middle-value-option, avoid-absolute-terms, stem-option-overlap, option-repeating-stem-numbers</div></td><td style="color: #5A554C;">—</td><td></td><td class="mono" style="color: #5A554C;">—</td><td><span class="pill none">N/A numeric</span></td></tr>
+            <tr><td><span class="mono" style="font-size: 13px; color: #5A554C;">5 more not applicable</span></td><td style="color: #5A554C;">—</td><td></td><td class="mono" style="color: #5A554C;">—</td><td><span class="pill none">Skip</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</x-dc>
+<script data-dc-script data-props='{"accent":{"editor":"color","default":"#8A2F2A","options":["#8A2F2A","#1F514E","#3B3A8C"]},"$preview":{"width":1280,"height":900}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return { accent: this.props.accent ?? '#8A2F2A' };
+  }
+}
+</script>
+</body>
+</html>
