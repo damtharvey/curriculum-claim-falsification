@@ -1,8 +1,28 @@
 # The one story
 
-A tagged pass is read as evidence of the tagged competency, and that reading assumes the pass requires it; on public-release mathematics items we search for assessment bypasses, solvers that lack the tagged competency by an explicit restriction on operations or information yet pass under the published scoring rule, and we find them: on New York Regents Algebra I and II a language model that never sees the given quantities recovers the key in two model families and the recovery survives a change of option values, so a pass there does not require computing on the givens; small capability-restricted programs match keys on a few cells; TIMSS cognitive-domain cells, at the public sizes, yield no bypass; the claim is one-sided and student-free, and it is made on items re-read from the printed page because the released text layer often differs from the print.
+A pass on a tagged assessment item, in any subject, is read as evidence of the tagged competency, and that reading assumes the pass requires it; an assessment bypass, a solver that lacks the tagged competency by an explicit restriction on its operations or its information yet passes under the published scoring rule, refutes that requirement without students, and any assessment whose tag text, item text, keys, and scoring rule are public can be searched for one; we run the search first on public-release mathematics items, where those inputs are public and machine-checkable, and we find bypasses: on New York Regents Algebra I and II a language model that never sees the given quantities recovers the key in two model families and the recovery survives a change of option values, so a pass there does not require computing on the givens; small capability-restricted programs match keys on a few cells; TIMSS cognitive-domain cells, at the public sizes, yield no bypass; the claim is one-sided and student-free, and it is made on items re-read from the printed page because the released text layer often differs from the print.
 
-Every section exists to support that sentence. The introduction states it; Method defines its terms once, in the order bypass, restriction kinds, items, families, bar and Holm, controls, print fidelity, codings; Results delivers it in the order measurement layer, language-model bypass, capability-restricted rows, TIMSS null and controls; Related Work says who studied one piece of it before; Limitations bounds it.
+Every section exists to support that sentence. The introduction states it, general phenomenon first and mathematics as the instantiation; Method defines its terms once, in the order bypass and restriction kinds (domain-neutral), items (where mathematics enters), families, bar and Holm, controls, print fidelity, codings; Results delivers it in the order measurement layer, language-model bypass, capability-restricted rows, TIMSS null and controls; Related Work says who studied one piece of it before; Limitations lists the real weaknesses of what was done, each with what it affects and what would fix it; the Conclusion restates what was asked, what each family showed, what it means for reading a tagged pass, what the method needs elsewhere, and the one-sided close.
+
+# Framing pass (on f5fb3d4)
+
+Mathematics first enters the body in Method 3.2, first sentence: "This census instantiates the method on public-release mathematics items." In the introduction it enters in paragraph 3: "We run the search first on public-release mathematics items, because ..." In the abstract: "We instantiate the search on public-release mathematics items, where tags, keys, and scoring rules are public, under a pre-registered bar."
+
+| Idea | Home | Elsewhere |
+|---|---|---|
+| Why the tagged-pass reading matters across subjects (accountability, procurement, research outcome measures) | Intro para 1 | abstract, one clause |
+| Restriction kinds are domain-neutral; one non-mathematics example of each (lexical policy on a causal-inference item; passage-withheld reader on a reading-comprehension item, which partial-input baselines already show) | Intro para 2 (examples); Method 3.1 (neutral definitions) | none |
+| Why mathematics first (public standards, keys, scoring rules, item text; developed shortcut catalog) | Intro para 3, one sentence | Method 3.2 says only "instantiates" |
+| Object and bar are general; census and findings are the mathematics instantiation | Intro contribution lead-in and bullets 1, 3 | Related Work last paragraph, one clause |
+| What the method needs to run on another domain (tag text, item text, keys, executable scoring rule, machine-enforceable restriction) | Conclusion para 2 | abstract last sentence, one clause; removed from Limitations |
+| Design choices formerly in Limitations (student-free, one-sided, vulnerability measure not a probability, matched-items-only coverage) | Intro para 2 (one-sided, student-free); Method 3.1 (vulnerability measure; matched items only) | Conclusion close (one-sided), stated as the close, not as an apology; removed from Limitations and Related Work ("Those catalogs are our programs, not claims about students") |
+| Public-release only, TIMSS 2011 cutoff, selected-response floor, family splitting | Method 3.2 and 3.4 | removed from Limitations |
+| Instruction-only channel specified and not run | Limitations (weakness, with the reason and the fix) | removed from Method 3.3 |
+| Constructed-response scoring | Limitations (weakness) | removed from the old ingestion paragraph |
+
+Limitations now hold ten weaknesses, each as one paragraph opening with the limitation: page instrument and 175 unverified items; item demand measured by language-model coders; template memorization untested; Qwen 14B text-layer arms below the floor; human sheet with one rater; EQAO and geometry rows small and unreplicated; STAAR replication limited to fetched forms and a hand-checked parse; instruction-only family not run; constructed-response items scored only where the guide reduces to a value; ingestion incomplete. The subset a reviewer would call inexcusable, with cost and whether it can still be done, is in `paper/reviews/weaknesses-without-excuse.md` and not in the paper.
+
+The page target is dropped (no venue chosen): 19 pages, 0 overfull. No number changed; the only numbers in the new Limitations and Conclusion are already in Results or the appendix.
 
 # Redundancy map (writing pass on fe7e282)
 
@@ -36,9 +56,13 @@ Format: idea -> home -> removed from (or cut to a clause in).
 
 Count: 23 ideas homed; 71 restatements removed or cut to a clause.
 
-# Abstract (second commit)
+# Abstract (second commit of the writing pass on 7f3e3e2)
 
 Rewritten last from the first-reader test alone: 227 words (LaTeX-stripped count), no numbers beyond the two cell names and the two model families; first paragraph is the tag, the reading, the assumption, the bypass, and one-sidedness; second paragraph is the findings in the story's order and the page re-read. Record: `paper/abstract-intro-review.json`.
+
+# Abstract (second commit of the framing pass)
+
+Rewritten last: 242 words. First paragraph is tags in general (standard codes, cognitive domains, rubric criteria), the reading of a pass as evidence in accountability, procurement, and research, the assumption, the bypass as a general student-free test, and one-sidedness. Second paragraph instantiates on public-release mathematics items, gives the findings in the story's order and the page re-read, and closes with the scope sentence: a method demonstration on one subject, and what the search needs to run elsewhere. Record: `paper/abstract-intro-review.json`.
 
 # Build
 
