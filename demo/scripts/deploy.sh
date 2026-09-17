@@ -22,12 +22,22 @@ npm install
 echo "=== Building frontend ==="
 npm run build
 
+echo "=== Resolving AWS credentials ==="
+# The CDK CLI's bundled SDK cannot read an `aws login` session, so hand it
+# the session as plain env vars. Fails loudly here rather than inside CDK.
+eval "$(aws configure export-credentials --format env)"
+export AWS_REGION="${AWS_REGION:-$(aws configure get region 2>/dev/null || echo us-east-1)}"
+export CDK_DEFAULT_REGION="$AWS_REGION"
+export CDK_DEFAULT_ACCOUNT="$(aws sts get-caller-identity --query Account --output text)"
+export JSII_SILENCE_WARNING_UNTESTED_NODE_VERSION=1
+echo "account $CDK_DEFAULT_ACCOUNT, region $AWS_REGION"
+
 echo "=== CDK bootstrap (if needed) ==="
 cd "$DIR/infra"
 npx cdk bootstrap 2>/dev/null || true
 
 echo "=== CDK deploy ==="
-JSII_SILENCE_WARNING_UNTESTED_NODE_VERSION=1 npx cdk deploy --all --require-approval never --outputs-file "$DIR/cdk-outputs.json"
+npx cdk deploy --all --require-approval never --outputs-file "$DIR/cdk-outputs.json"
 
 echo "=== Extracting bucket name from CDK outputs ==="
 DATA_BUCKET=$(python3 -c "

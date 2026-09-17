@@ -1,131 +1,152 @@
-# CCF Live Demo — AWS Hybrid Deployment
+# CCF Live Demo
 
-Interactive demo for the Curriculum Claim Falsification project.
-Built for the CHAT: Minds and Machines hackathon (September 2026).
+Interactive demo for **Curriculum Claim Falsification** — Does the Assessment Require the Skill?
+
+Built for the CHAT: Minds and Machines hackathon, September 15–17, 2026. Deployed on AWS infrastructure provided by the hackathon (auto-deleted after the event).
+
+**Live:** [https://d2nqjgx9lqdrd.cloudfront.net](https://d2nqjgx9lqdrd.cloudfront.net)
 
 ## Architecture
 
 ```
-CloudFront
-├── /              → S3 (React frontend)
-├── /data/*        → S3 (pre-computed JSON exports)
-└── /api/*         → API Gateway → Lambda (interactive rule runner)
+CloudFront (d2nqjgx9lqdrd.cloudfront.net)
+├── /              → S3 frontend bucket (React SPA)
+├── /data/*        → S3 data bucket (pre-computed JSON exports)
+└── /api/*         → API Gateway → Lambda (a priori rule runner)
 ```
 
-- **Frontend:** React + Vite SPA matching the artboards in `design/` — an item explorer, an item page that runs the a priori rules live (witness-found / no-witness states), and three configuration templates (rules, claims, data & deploy).
-- **API Lambda:** Runs all 15 a priori programs against any item in real time. Reads items and rules from S3.
-- **Data:** Pre-computed exports (witnesses, cell tables, comparisons, GPU results) served as static JSON from S3.
-- **Infrastructure:** AWS CDK (TypeScript) — single stack with auto-delete on teardown.
+| Component | Stack | Notes |
+|-----------|-------|-------|
+| Frontend | React 18 + Vite, served from S3 via CloudFront | ~196 KB JS, ~8 KB CSS |
+| API | Lambda (Node.js 20) behind HTTP API Gateway | 15 KB bundled, 512 MB memory, 15 s timeout |
+| Data | S3 bucket with pre-computed exports | 2,405 items, witnesses, cell tables, GPU results |
+| Infra | AWS CDK (TypeScript), single stack | All resources set to auto-delete on teardown |
 
-## Prerequisites
+## Pages
 
-- Node.js 20+
-- AWS CLI configured with credentials
-- AWS CDK (`npm install -g aws-cdk` or use `npx`)
+| Route | What it does |
+|-------|-------------|
+| `/items` | Item explorer with stats strip, filters (authority, claim, channel, witnessed-only, search), and paged table |
+| `/items/:id` | Item detail showing stem, choices, and key. Runs all 15 a priori rules on load and shows witness-found or no-witness verdict |
+| `/admin/rules` | Browse the a priori rule definitions — channel, lacks, applies-to, description, and citation |
+| `/admin/claims` | Per-authority claim files with expandable tables of claim codes, operations, and item counts |
+| `/admin/data` | Runtime info (region, memory, Node version), API route table, and S3 data file inventory |
 
-## Quick Deploy
+## API
+
+| Method | Path | Description |
+|--------|------|-------------|
+| `GET` | `/api/stats` | Counts for the header strip (items, witnesses, rules, corpora) |
+| `GET` | `/api/items` | Paged list; filter by `authority`, `claim`, `channel`, `witnessed`, `search`, `page`, `pageSize` |
+| `GET` | `/api/items/{itemId}` | Item with choices, key, and associated witness rows |
+| `GET` | `/api/rules` | A priori rule definitions |
+| `GET` | `/api/claims` | Claims per authority with item counts |
+| `GET` | `/api/config` | Bucket contents, routes, runtime |
+| `POST` | `/api/run-rules` | `{ "itemId": "..." }` → score one item against every rule |
+
+Direct API base: `https://4bbskj3on9.execute-api.us-east-1.amazonaws.com`
+
+## Deploying
+
+### One-command deploy
 
 ```bash
 bash demo/scripts/deploy.sh
 ```
 
-This will:
-1. Install all dependencies (infra, lambda, frontend)
-2. Build the frontend
-3. CDK bootstrap + deploy the stack
-4. Upload pre-computed data to S3
-5. Print the CloudFront URL
+Installs deps → builds frontend → CDK bootstrap → CDK deploy → uploads data → prints URL.
 
-## Manual Steps
-
-### 1. Install dependencies
+### Manual deploy
 
 ```bash
+# 1. Install
 cd demo/infra    && npm install
 cd demo/lambda   && npm install
 cd demo/frontend && npm install
-```
 
-### 2. Build the frontend
-
-```bash
+# 2. Build frontend
 cd demo/frontend && npm run build
-```
 
-### 3. Deploy infrastructure
-
-```bash
+# 3. CDK
 cd demo/infra
-npx cdk bootstrap           # first time only
+npx cdk bootstrap                                               # first time only
 npx cdk deploy --all --require-approval never --outputs-file ../cdk-outputs.json
-```
 
-### 4. Upload data
-
-```bash
-# Get the bucket name from CDK outputs
+# 4. Upload data (bucket name from CDK output)
 node demo/scripts/upload-data.mjs <DataBucketName>
 ```
 
-### 5. Access the demo
+### Prerequisites
 
-The CloudFront URL is printed in the CDK output (`DistributionUrl`).
-CloudFront propagation takes a few minutes; the API Gateway URL works immediately.
+- Node.js 20+
+- AWS CLI configured with credentials (`aws sts get-caller-identity` to verify)
+- Python 3 (used by the deploy script to parse CDK outputs)
 
 ## Local Development
 
-### Full stack, no AWS
+No AWS needed — the Lambda has a dev server that reads directly from the repo checkout.
 
 ```bash
-cd demo/lambda && npm run dev        # builds the handler, serves it on :3001 from the repo checkout
-cd demo/frontend && npm run dev      # Vite on :5173, proxies /api/* to :3001
+# Terminal 1: build and serve the API on :3001
+cd demo/lambda
+npm run build
+node dev-server.mjs
+
+# Terminal 2: Vite dev server on :5173 with proxy to :3001
+cd demo/frontend
+npm run dev
 ```
 
-`lambda/dev-server.mjs` sets `LOCAL_DATA_ROOT` to the repo root so the handler reads `data/`, `rules/`, `claims/` and `exports/` directly instead of S3.
+Open [http://localhost:5173](http://localhost:5173). The Vite proxy forwards `/api/*` to the local Lambda dev server, which reads `data/items.jsonl`, `rules/apriori.json`, `claims/*.json`, and `exports/*.json` from the repo root.
 
-### Teardown
+## Data Uploaded to S3
+
+The upload script (`demo/scripts/upload-data.mjs`) sends these files:
+
+| Local path | S3 key | Purpose |
+|------------|--------|---------|
+| `data/items.jsonl` | `data/items.jsonl` | 2,405 keyed items |
+| `rules/apriori.json` | `data/apriori.json` | 15 a priori rule definitions |
+| `claims/*.json` | `data/claims/*.json` | Claim files per authority |
+| `exports/witnesses.json` | `data/witnesses.json` | All witness records |
+| `exports/rule-chance.json` | `data/rule-chance.json` | Per-rule per-claim pass rates and CI |
+| `exports/apriori-cell-table.json` | `data/apriori-cell-table.json` | Family-wise correction table |
+| `exports/comparisons.json` | `data/comparisons.json` | Comparison rows with power analysis |
+| `exports/addendum-gpu/*.json` | `data/gpu/*.json` | Masked-stem LM results (7B, 14B, Phi-4, Mistral) |
+| `exports/addendum/*.json` | `data/addendum/*.json` | Witness dependence, cue attribution, power |
+
+## Teardown
 
 ```bash
-cd demo/infra
-npx cdk destroy --all --force
+cd demo/infra && npx cdk destroy --all --force
 ```
 
-All resources have `RemovalPolicy.DESTROY` and `autoDeleteObjects: true` — nothing survives teardown. AWS also auto-deletes hackathon resources.
+All resources have `RemovalPolicy.DESTROY` and `autoDeleteObjects: true`. Nothing survives teardown.
 
-## What's Served
+## Directory Structure
 
-| Route | Source | Description |
-|-------|--------|-------------|
-| `/items` | Frontend + API | Explorer: stats strip, filters (authority, claim, channel, witnessed-only, search), paged table |
-| `/items/:id` | Frontend + API | Item with choices and key; runs every a priori rule on load and shows the witness-found or no-witness state |
-| `/admin/rules` | Frontend + API | Rules list and edit form; edits are local, exported as `apriori.json` |
-| `/admin/claims` | Frontend + API | Per-authority claims and edit form; exported as `claims/<authority>.json` |
-| `/admin/data` | Frontend + API | Bucket contents, API routes, runtime settings kept in the browser |
-
-The API has no write route, so the configuration pages export JSON for a commit rather than saving to the bucket.
-
-## API Endpoints
-
-| Method | Path | Description |
-|--------|------|-------------|
-| `GET` | `/api/stats` | Summary stats (item count, witness count, corpora) |
-| `GET` | `/api/items?page=1&authority=teks&claim=g5&channel=item-cues&witnessed=1&search=...` | Paginated item list with witness counts |
-| `GET` | `/api/items/{itemId}` | Single item with associated witnesses |
-| `GET` | `/api/rules` | List all a priori rule definitions |
-| `GET` | `/api/claims` | One entry per `claims/<authority>.json`, with item counts |
-| `GET` | `/api/config` | Bucket contents, routes, runtime |
-| `POST` | `/api/run-rules` | `{ "itemId": "..." }` → run all rules on item |
-
-## Data Files Uploaded
-
-The upload script sends these from the repo's existing exports:
-
-- `data/items.jsonl` — 2,405 keyed items
-- `rules/apriori.json` — 15 a priori rule definitions
-- `claims/*.json` — claims per authority
-- `exports/witnesses.json` — all witness records
-- `exports/rule-chance.json` — per-rule per-claim pass rates
-- `exports/apriori-cell-table.json` — family-wise correction table
-- `exports/comparisons.json` — comparison rows with power analysis
-- `exports/addendum-gpu/*.json` — masked-stem LM results
-- `exports/addendum/*.json` — witness dependence, cue attribution
+```
+demo/
+├── frontend/          React + Vite SPA
+│   └── src/
+│       ├── pages/     Items, ItemPage, AdminRules, AdminClaims, AdminData
+│       ├── components/ Pill, Stat, LacksPills, AdminShell, useAsync
+│       ├── api.ts     API client
+│       └── styles.css Design system (ivory ground, oxblood accent, Fraunces/Instrument Sans)
+├── lambda/            Node.js Lambda function
+│   ├── src/
+│   │   ├── handler.ts Route dispatcher
+│   │   ├── programs.ts 15 a priori programs (ported from runner/)
+│   │   ├── channels.ts View constructors and surface features
+│   │   ├── data.ts    S3 / local file loading with caching
+│   │   └── types.ts   Shared types
+│   └── dev-server.mjs Local HTTP wrapper for development
+├── infra/             AWS CDK stack
+│   ├── lib/ccf-demo-stack.ts  S3, CloudFront, Lambda, API Gateway
+│   └── bin/app.ts
+├── design/            HTML artboards (design reference)
+├── scripts/
+│   ├── deploy.sh      One-command deploy
+│   └── upload-data.mjs S3 data uploader
+└── cdk-outputs.json   Deployment outputs (generated)
+```
