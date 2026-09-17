@@ -66,16 +66,6 @@ exports/human-masked-stem/rater-packet.pdf
 .cache/
 huggingface/
 
-# LaTeX auxiliaries (keep built hackathon PDFs)
-hackathon/*.aux
-hackathon/*.log
-hackathon/*.out
-hackathon/*.blg
-hackathon/*.toc
-hackathon/*.fls
-hackathon/*.fdb_latexmk
-hackathon/*.synctex.gz
-
 # CCSS domain-page HTML cache (refetch with scripts/fetch_ccss_cluster_text.py)
 exports/standards-split/ccss-html/
 
