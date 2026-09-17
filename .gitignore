@@ -24,10 +24,9 @@ Thumbs.db
 .idea/
 .vscode/
 
-# Oversized local exports (GitHub 100 MB limit)
-exports/trials.jsonl
-exports/trials-census.jsonl
-exports/trials-n2405.jsonl
+# Local data and generated artifacts (can exceed GitHub's 100 MB limit)
+data/
+exports/
 
 # LaTeX auxiliaries (keep built paper PDFs)
 paper/*.aux
