@@ -1,0 +1,1667 @@
+{
+  "status": "complete",
+  "preregistration": "exports/repaired-layer/preregistration.md",
+  "preregistrationSha256": "87ec5754c1b696b25366547793365610a13084f1230247b898f564ea9f92caee",
+  "seed": 20260916,
+  "chance": 0.25,
+  "maskingHash": "v1",
+  "verification": {
+    "all": {
+      "n": 606,
+      "repaired_verified": 431,
+      "repaired_unverified": 175,
+      "transcription1_usable": 591,
+      "overlap": {
+        "faithful": {
+          "repaired_verified": 246,
+          "repaired_unverified": 53
+        },
+        "not_faithful": {
+          "repaired_verified": 185,
+          "repaired_unverified": 107
+        },
+        "unverified": {
+          "repaired_verified": 0,
+          "repaired_unverified": 15
+        }
+      }
+    },
+    "algebra-i": {
+      "n": 358,
+      "repaired_verified": 263,
+      "repaired_unverified": 95,
+      "transcription1_usable": 352,
+      "overlap": {
+        "faithful": {
+          "repaired_verified": 150,
+          "repaired_unverified": 34
+        },
+        "not_faithful": {
+          "repaired_verified": 113,
+          "repaired_unverified": 55
+        },
+        "unverified": {
+          "repaired_verified": 0,
+          "repaired_unverified": 6
+        }
+      }
+    },
+    "algebra-ii": {
+      "n": 248,
+      "repaired_verified": 168,
+      "repaired_unverified": 80,
+      "transcription1_usable": 239,
+      "overlap": {
+        "faithful": {
+          "repaired_verified": 96,
+          "repaired_unverified": 19
+        },
+        "not_faithful": {
+          "repaired_verified": 72,
+          "repaired_unverified": 52
+        },
+        "unverified": {
+          "repaired_verified": 0,
+          "repaired_unverified": 9
+        }
+      }
+    }
+  },
+  "masking": {
+    "nPrimary": 606,
+    "nUnusableTranscription1": 15,
+    "nKeyMissing": 0,
+    "nBelowMinMaskedTokenCount": 17,
+    "nWithheldQuantity": 574
+  },
+  "idLists": {
+    "algebra_i_original": 358,
+    "algebra_ii_original": 248,
+    "algebra_i_repaired_all": 343,
+    "algebra_ii_repaired_all": 231,
+    "algebra_i_repaired_verified": 261,
+    "algebra_ii_repaired_verified": 167,
+    "algebra_i_execution_all": 159,
+    "algebra_i_recognition_all": 148,
+    "algebra_i_mixed_all": 36,
+    "algebra_i_execution_verified": 130,
+    "algebra_i_recognition_verified": 105,
+    "algebra_ii_execution_all": 108,
+    "algebra_ii_recognition_all": 88,
+    "algebra_ii_execution_verified": 83,
+    "algebra_ii_recognition_verified": 57,
+    "algebra_i_isomorph_all": 342,
+    "algebra_ii_isomorph_all": 227,
+    "algebra_i_isomorph_verified": 260,
+    "algebra_ii_isomorph_verified": 165
+  },
+  "catalog": {
+    "geometry_lower_central": {
+      "skipped": false,
+      "cell": "nyregents::geometry::lower-central-fired",
+      "nOriginalFired": 279,
+      "nMissingTranscription1": 2,
+      "nWithRepairedOptions": 277,
+      "nRuleFires": 246,
+      "passes": 80,
+      "passRate": 0.3252032520325203,
+      "chance": 0.25,
+      "itemCi95": [
+        0.26422764227642276,
+        0.3821138211382114
+      ],
+      "clusterCi95": [
+        0.26394052044609667,
+        0.3868312757201646
+      ],
+      "clearsItemBar": true,
+      "nAdministrations": 27
+    },
+    "eqao_g6_lower_central": {
+      "skipped": false,
+      "cell": "eqao::g6::lower-central-fired",
+      "nOriginalFired": 40,
+      "nMissingTranscription1": 2,
+      "nWithRepairedOptions": 38,
+      "nRuleFires": 38,
+      "passes": 18,
+      "passRate": 0.47368421052631576,
+      "chance": 0.2495614035087719,
+      "itemCi95": [
+        0.3157894736842105,
+        0.631578947368421
+      ],
+      "clusterCi95": [
+        0.2727272727272727,
+        0.5882352941176471
+      ],
+      "clearsItemBar": true,
+      "nAdministrations": 3
+    }
+  },
+  "models": {
+    "7b": {
+      "label": "Qwen2.5-7B-Instruct",
+      "modelId": "Qwen/Qwen2.5-7B-Instruct",
+      "modelRevision": "a09a35458c702b33eeacc393d103063234e8bc28",
+      "cells": {
+        "algebra-i": {
+          "original": {
+            "n": 358,
+            "nMissingPredictions": 0,
+            "passes": 139,
+            "passRate": 0.388268156424581,
+            "chance": 0.25,
+            "ci95": [
+              0.3407821229050279,
+              0.43854748603351956
+            ],
+            "modalLetter": "B",
+            "modalFrequency": 0.2709497206703911,
+            "chosenLetterCounts": {
+              "A": 42,
+              "B": 118,
+              "C": 116,
+              "D": 82
+            },
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true
+          },
+          "repaired_all": {
+            "n": 343,
+            "passes": 173,
+            "passRate": 0.5043731778425656,
+            "chance": 0.250242954324587,
+            "ci95": [
+              0.4489795918367347,
+              0.5597667638483965
+            ],
+            "modalLetter": "C",
+            "modalFrequency": 0.27113702623906705,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true,
+            "nRequested": 343,
+            "nMissingScores": 0
+          },
+          "repaired_verified": {
+            "n": 261,
+            "passes": 141,
+            "passRate": 0.5402298850574713,
+            "chance": 0.25,
+            "ci95": [
+              0.4789272030651341,
+              0.5977011494252874
+            ],
+            "modalLetter": "B",
+            "modalFrequency": 0.28735632183908044,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true,
+            "nRequested": 261,
+            "nMissingScores": 0
+          },
+          "execution_all": {
+            "n": 159,
+            "passes": 80,
+            "passRate": 0.5031446540880503,
+            "chance": 0.2505241090146751,
+            "ci95": [
+              0.4276729559748428,
+              0.5849056603773585
+            ],
+            "modalLetter": "B",
+            "modalFrequency": 0.3018867924528302,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true,
+            "nRequested": 159,
+            "nMissingScores": 0
+          },
+          "recognition_all": {
+            "n": 148,
+            "passes": 73,
+            "passRate": 0.49324324324324326,
+            "chance": 0.25,
+            "ci95": [
+              0.4189189189189189,
+              0.5743243243243243
+            ],
+            "modalLetter": "C",
+            "modalFrequency": 0.27702702702702703,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true,
+            "nRequested": 148,
+            "nMissingScores": 0
+          },
+          "execution_verified": {
+            "n": 130,
+            "passes": 71,
+            "passRate": 0.5461538461538461,
+            "chance": 0.25,
+            "ci95": [
+              0.45384615384615384,
+              0.6307692307692307
+            ],
+            "modalLetter": "B",
+            "modalFrequency": 0.3230769230769231,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true,
+            "nRequested": 130,
+            "nMissingScores": 0
+          },
+          "recognition_verified": {
+            "n": 105,
+            "passes": 54,
+            "passRate": 0.5142857142857142,
+            "chance": 0.25,
+            "ci95": [
+              0.42857142857142855,
+              0.6095238095238096
+            ],
+            "modalLetter": "B",
+            "modalFrequency": 0.26666666666666666,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true,
+            "nRequested": 105,
+            "nMissingScores": 0
+          },
+          "isomorph_all": {
+            "n": 342,
+            "passes": 161,
+            "passRate": 0.47076023391812866,
+            "chance": 0.25024366471734893,
+            "ci95": [
+              0.41812865497076024,
+              0.5233918128654971
+            ],
+            "modalLetter": "C",
+            "modalFrequency": 0.2719298245614035,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true,
+            "nRequested": 342,
+            "nMissingScores": 0
+          },
+          "isomorph_verified": {
+            "n": 260,
+            "passes": 130,
+            "passRate": 0.5,
+            "chance": 0.25,
+            "ci95": [
+              0.43846153846153846,
+              0.5615384615384615
+            ],
+            "modalLetter": "B",
+            "modalFrequency": 0.28846153846153844,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true,
+            "nRequested": 260,
+            "nMissingScores": 0
+          },
+          "mixed_all": {
+            "n": 36,
+            "passes": 20,
+            "passRate": 0.5555555555555556,
+            "chance": 0.25,
+            "ci95": [
+              0.3888888888888889,
+              0.7222222222222222
+            ],
+            "modalLetter": "C",
+            "modalFrequency": 0.3333333333333333,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true,
+            "nRequested": 36,
+            "nMissingScores": 0
+          }
+        },
+        "algebra-ii": {
+          "original": {
+            "n": 248,
+            "nMissingPredictions": 0,
+            "passes": 91,
+            "passRate": 0.36693548387096775,
+            "chance": 0.25,
+            "ci95": [
+              0.3064516129032258,
+              0.42338709677419356
+            ],
+            "modalLetter": "C",
+            "modalFrequency": 0.2782258064516129,
+            "chosenLetterCounts": {
+              "A": 30,
+              "B": 73,
+              "C": 94,
+              "D": 51
+            },
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true
+          },
+          "repaired_all": {
+            "n": 231,
+            "passes": 100,
+            "passRate": 0.4329004329004329,
+            "chance": 0.25,
+            "ci95": [
+              0.36796536796536794,
+              0.49783549783549785
+            ],
+            "modalLetter": "C",
+            "modalFrequency": 0.2857142857142857,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true,
+            "nRequested": 231,
+            "nMissingScores": 0
+          },
+          "repaired_verified": {
+            "n": 167,
+            "passes": 75,
+            "passRate": 0.4491017964071856,
+            "chance": 0.25,
+            "ci95": [
+              0.3712574850299401,
+              0.5269461077844312
+            ],
+            "modalLetter": "C",
+            "modalFrequency": 0.2754491017964072,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true,
+            "nRequested": 167,
+            "nMissingScores": 0
+          },
+          "execution_all": {
+            "n": 108,
+            "passes": 48,
+            "passRate": 0.4444444444444444,
+            "chance": 0.25,
+            "ci95": [
+              0.35185185185185186,
+              0.5370370370370371
+            ],
+            "modalLetter": "C",
+            "modalFrequency": 0.3055555555555556,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true,
+            "nRequested": 108,
+            "nMissingScores": 0
+          },
+          "recognition_all": {
+            "n": 88,
+            "passes": 41,
+            "passRate": 0.4659090909090909,
+            "chance": 0.25,
+            "ci95": [
+              0.36363636363636365,
+              0.5681818181818182
+            ],
+            "modalLetter": "B",
+            "modalFrequency": 0.3068181818181818,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true,
+            "nRequested": 88,
+            "nMissingScores": 0
+          },
+          "execution_verified": {
+            "n": 83,
+            "passes": 41,
+            "passRate": 0.4939759036144578,
+            "chance": 0.25,
+            "ci95": [
+              0.3855421686746988,
+              0.6024096385542169
+            ],
+            "modalLetter": "D",
+            "modalFrequency": 0.30120481927710846,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true,
+            "nRequested": 83,
+            "nMissingScores": 0
+          },
+          "recognition_verified": {
+            "n": 57,
+            "passes": 27,
+            "passRate": 0.47368421052631576,
+            "chance": 0.25,
+            "ci95": [
+              0.3508771929824561,
+              0.6140350877192983
+            ],
+            "modalLetter": "B",
+            "modalFrequency": 0.2631578947368421,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true,
+            "nRequested": 57,
+            "nMissingScores": 0
+          },
+          "isomorph_all": {
+            "n": 227,
+            "passes": 89,
+            "passRate": 0.3920704845814978,
+            "chance": 0.25,
+            "ci95": [
+              0.3303964757709251,
+              0.45374449339207046
+            ],
+            "modalLetter": "C",
+            "modalFrequency": 0.28193832599118945,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true,
+            "nRequested": 227,
+            "nMissingScores": 0
+          },
+          "isomorph_verified": {
+            "n": 165,
+            "passes": 68,
+            "passRate": 0.4121212121212121,
+            "chance": 0.25,
+            "ci95": [
+              0.3393939393939394,
+              0.48484848484848486
+            ],
+            "modalLetter": "C",
+            "modalFrequency": 0.2727272727272727,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true,
+            "nRequested": 165,
+            "nMissingScores": 0
+          }
+        }
+      }
+    },
+    "14b": {
+      "label": "Qwen2.5-14B-Instruct",
+      "modelId": "Qwen/Qwen2.5-14B-Instruct",
+      "modelRevision": "cf98f3b3bbb457ad9e2bb7baf9a0125b6b88caa8",
+      "cells": {
+        "algebra-i": {
+          "original": {
+            "n": 358,
+            "nMissingPredictions": 0,
+            "passes": 149,
+            "passRate": 0.41620111731843573,
+            "chance": 0.25,
+            "ci95": [
+              0.36312849162011174,
+              0.4692737430167598
+            ],
+            "modalLetter": "B",
+            "modalFrequency": 0.2709497206703911,
+            "chosenLetterCounts": {
+              "A": 60,
+              "B": 104,
+              "C": 124,
+              "D": 70
+            },
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true
+          },
+          "repaired_all": {
+            "n": 343,
+            "passes": 178,
+            "passRate": 0.5189504373177842,
+            "chance": 0.250242954324587,
+            "ci95": [
+              0.46355685131195334,
+              0.5743440233236151
+            ],
+            "modalLetter": "C",
+            "modalFrequency": 0.27113702623906705,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true,
+            "nRequested": 343,
+            "nMissingScores": 0
+          },
+          "repaired_verified": {
+            "n": 261,
+            "passes": 144,
+            "passRate": 0.5517241379310345,
+            "chance": 0.25,
+            "ci95": [
+              0.4942528735632184,
+              0.6130268199233716
+            ],
+            "modalLetter": "B",
+            "modalFrequency": 0.28735632183908044,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true,
+            "nRequested": 261,
+            "nMissingScores": 0
+          },
+          "execution_all": {
+            "n": 159,
+            "passes": 76,
+            "passRate": 0.4779874213836478,
+            "chance": 0.2505241090146751,
+            "ci95": [
+              0.4025157232704403,
+              0.5471698113207547
+            ],
+            "modalLetter": "B",
+            "modalFrequency": 0.3018867924528302,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true,
+            "nRequested": 159,
+            "nMissingScores": 0
+          },
+          "recognition_all": {
+            "n": 148,
+            "passes": 79,
+            "passRate": 0.5337837837837838,
+            "chance": 0.25,
+            "ci95": [
+              0.4527027027027027,
+              0.6081081081081081
+            ],
+            "modalLetter": "C",
+            "modalFrequency": 0.27702702702702703,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true,
+            "nRequested": 148,
+            "nMissingScores": 0
+          },
+          "execution_verified": {
+            "n": 130,
+            "passes": 67,
+            "passRate": 0.5153846153846153,
+            "chance": 0.25,
+            "ci95": [
+              0.4230769230769231,
+              0.6
+            ],
+            "modalLetter": "B",
+            "modalFrequency": 0.3230769230769231,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true,
+            "nRequested": 130,
+            "nMissingScores": 0
+          },
+          "recognition_verified": {
+            "n": 105,
+            "passes": 57,
+            "passRate": 0.5428571428571428,
+            "chance": 0.25,
+            "ci95": [
+              0.44761904761904764,
+              0.6285714285714286
+            ],
+            "modalLetter": "B",
+            "modalFrequency": 0.26666666666666666,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true,
+            "nRequested": 105,
+            "nMissingScores": 0
+          },
+          "isomorph_all": {
+            "n": 342,
+            "passes": 147,
+            "passRate": 0.4298245614035088,
+            "chance": 0.25024366471734893,
+            "ci95": [
+              0.37719298245614036,
+              0.4824561403508772
+            ],
+            "modalLetter": "C",
+            "modalFrequency": 0.2719298245614035,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true,
+            "nRequested": 342,
+            "nMissingScores": 0
+          },
+          "isomorph_verified": {
+            "n": 260,
+            "passes": 121,
+            "passRate": 0.4653846153846154,
+            "chance": 0.25,
+            "ci95": [
+              0.40384615384615385,
+              0.5269230769230769
+            ],
+            "modalLetter": "B",
+            "modalFrequency": 0.28846153846153844,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true,
+            "nRequested": 260,
+            "nMissingScores": 0
+          },
+          "mixed_all": {
+            "n": 36,
+            "passes": 23,
+            "passRate": 0.6388888888888888,
+            "chance": 0.25,
+            "ci95": [
+              0.4722222222222222,
+              0.7777777777777778
+            ],
+            "modalLetter": "C",
+            "modalFrequency": 0.3333333333333333,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true,
+            "nRequested": 36,
+            "nMissingScores": 0
+          }
+        },
+        "algebra-ii": {
+          "original": {
+            "n": 248,
+            "nMissingPredictions": 0,
+            "passes": 89,
+            "passRate": 0.3588709677419355,
+            "chance": 0.25,
+            "ci95": [
+              0.29838709677419356,
+              0.4153225806451613
+            ],
+            "modalLetter": "C",
+            "modalFrequency": 0.2782258064516129,
+            "chosenLetterCounts": {
+              "A": 25,
+              "B": 68,
+              "C": 95,
+              "D": 60
+            },
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true
+          },
+          "repaired_all": {
+            "n": 231,
+            "passes": 96,
+            "passRate": 0.4155844155844156,
+            "chance": 0.25,
+            "ci95": [
+              0.35064935064935066,
+              0.4805194805194805
+            ],
+            "modalLetter": "C",
+            "modalFrequency": 0.2857142857142857,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true,
+            "nRequested": 231,
+            "nMissingScores": 0
+          },
+          "repaired_verified": {
+            "n": 167,
+            "passes": 72,
+            "passRate": 0.4311377245508982,
+            "chance": 0.25,
+            "ci95": [
+              0.3532934131736527,
+              0.5029940119760479
+            ],
+            "modalLetter": "C",
+            "modalFrequency": 0.2754491017964072,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true,
+            "nRequested": 167,
+            "nMissingScores": 0
+          },
+          "execution_all": {
+            "n": 108,
+            "passes": 46,
+            "passRate": 0.42592592592592593,
+            "chance": 0.25,
+            "ci95": [
+              0.3333333333333333,
+              0.5185185185185185
+            ],
+            "modalLetter": "C",
+            "modalFrequency": 0.3055555555555556,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true,
+            "nRequested": 108,
+            "nMissingScores": 0
+          },
+          "recognition_all": {
+            "n": 88,
+            "passes": 38,
+            "passRate": 0.4318181818181818,
+            "chance": 0.25,
+            "ci95": [
+              0.3409090909090909,
+              0.5340909090909091
+            ],
+            "modalLetter": "B",
+            "modalFrequency": 0.3068181818181818,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true,
+            "nRequested": 88,
+            "nMissingScores": 0
+          },
+          "execution_verified": {
+            "n": 83,
+            "passes": 35,
+            "passRate": 0.42168674698795183,
+            "chance": 0.25,
+            "ci95": [
+              0.3132530120481928,
+              0.5301204819277109
+            ],
+            "modalLetter": "D",
+            "modalFrequency": 0.30120481927710846,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true,
+            "nRequested": 83,
+            "nMissingScores": 0
+          },
+          "recognition_verified": {
+            "n": 57,
+            "passes": 28,
+            "passRate": 0.49122807017543857,
+            "chance": 0.25,
+            "ci95": [
+              0.3684210526315789,
+              0.6140350877192983
+            ],
+            "modalLetter": "B",
+            "modalFrequency": 0.2631578947368421,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true,
+            "nRequested": 57,
+            "nMissingScores": 0
+          },
+          "isomorph_all": {
+            "n": 227,
+            "passes": 85,
+            "passRate": 0.3744493392070485,
+            "chance": 0.25,
+            "ci95": [
+              0.30837004405286345,
+              0.43612334801762115
+            ],
+            "modalLetter": "C",
+            "modalFrequency": 0.28193832599118945,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true,
+            "nRequested": 227,
+            "nMissingScores": 0
+          },
+          "isomorph_verified": {
+            "n": 165,
+            "passes": 65,
+            "passRate": 0.3939393939393939,
+            "chance": 0.25,
+            "ci95": [
+              0.3212121212121212,
+              0.4727272727272727
+            ],
+            "modalLetter": "C",
+            "modalFrequency": 0.2727272727272727,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true,
+            "nRequested": 165,
+            "nMissingScores": 0
+          }
+        }
+      }
+    },
+    "phi4": {
+      "label": "Phi-4",
+      "modelId": "microsoft/phi-4",
+      "modelRevision": "2db69c1c3e91a05d2c64a3185acfbaf36f744e25",
+      "cells": {
+        "algebra-i": {
+          "original": {
+            "n": 358,
+            "nMissingPredictions": 0,
+            "passes": 151,
+            "passRate": 0.42178770949720673,
+            "chance": 0.25,
+            "ci95": [
+              0.3743016759776536,
+              0.4720670391061452
+            ],
+            "modalLetter": "B",
+            "modalFrequency": 0.2709497206703911,
+            "chosenLetterCounts": {
+              "A": 71,
+              "B": 149,
+              "C": 69,
+              "D": 69
+            },
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true
+          },
+          "repaired_all": {
+            "n": 343,
+            "passes": 169,
+            "passRate": 0.49271137026239065,
+            "chance": 0.250242954324587,
+            "ci95": [
+              0.44314868804664725,
+              0.5451895043731778
+            ],
+            "modalLetter": "C",
+            "modalFrequency": 0.27113702623906705,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true,
+            "nRequested": 343,
+            "nMissingScores": 0
+          },
+          "repaired_verified": {
+            "n": 261,
+            "passes": 129,
+            "passRate": 0.4942528735632184,
+            "chance": 0.25,
+            "ci95": [
+              0.4367816091954023,
+              0.5593869731800766
+            ],
+            "modalLetter": "B",
+            "modalFrequency": 0.28735632183908044,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true,
+            "nRequested": 261,
+            "nMissingScores": 0
+          },
+          "execution_all": {
+            "n": 159,
+            "passes": 72,
+            "passRate": 0.4528301886792453,
+            "chance": 0.2505241090146751,
+            "ci95": [
+              0.3710691823899371,
+              0.5283018867924528
+            ],
+            "modalLetter": "B",
+            "modalFrequency": 0.3018867924528302,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true,
+            "nRequested": 159,
+            "nMissingScores": 0
+          },
+          "recognition_all": {
+            "n": 148,
+            "passes": 75,
+            "passRate": 0.5067567567567568,
+            "chance": 0.25,
+            "ci95": [
+              0.42567567567567566,
+              0.581081081081081
+            ],
+            "modalLetter": "C",
+            "modalFrequency": 0.27702702702702703,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true,
+            "nRequested": 148,
+            "nMissingScores": 0
+          },
+          "execution_verified": {
+            "n": 130,
+            "passes": 62,
+            "passRate": 0.47692307692307695,
+            "chance": 0.25,
+            "ci95": [
+              0.38461538461538464,
+              0.5615384615384615
+            ],
+            "modalLetter": "B",
+            "modalFrequency": 0.3230769230769231,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true,
+            "nRequested": 130,
+            "nMissingScores": 0
+          },
+          "recognition_verified": {
+            "n": 105,
+            "passes": 52,
+            "passRate": 0.49523809523809526,
+            "chance": 0.25,
+            "ci95": [
+              0.4,
+              0.5904761904761905
+            ],
+            "modalLetter": "B",
+            "modalFrequency": 0.26666666666666666,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true,
+            "nRequested": 105,
+            "nMissingScores": 0
+          },
+          "isomorph_all": {
+            "n": 342,
+            "passes": 140,
+            "passRate": 0.4093567251461988,
+            "chance": 0.25024366471734893,
+            "ci95": [
+              0.3567251461988304,
+              0.4590643274853801
+            ],
+            "modalLetter": "C",
+            "modalFrequency": 0.2719298245614035,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true,
+            "nRequested": 342,
+            "nMissingScores": 0
+          },
+          "isomorph_verified": {
+            "n": 260,
+            "passes": 109,
+            "passRate": 0.41923076923076924,
+            "chance": 0.25,
+            "ci95": [
+              0.35384615384615387,
+              0.47692307692307695
+            ],
+            "modalLetter": "B",
+            "modalFrequency": 0.28846153846153844,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true,
+            "nRequested": 260,
+            "nMissingScores": 0
+          },
+          "mixed_all": {
+            "n": 36,
+            "passes": 22,
+            "passRate": 0.6111111111111112,
+            "chance": 0.25,
+            "ci95": [
+              0.4444444444444444,
+              0.7777777777777778
+            ],
+            "modalLetter": "C",
+            "modalFrequency": 0.3333333333333333,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true,
+            "nRequested": 36,
+            "nMissingScores": 0
+          }
+        },
+        "algebra-ii": {
+          "original": {
+            "n": 248,
+            "nMissingPredictions": 0,
+            "passes": 86,
+            "passRate": 0.3467741935483871,
+            "chance": 0.25,
+            "ci95": [
+              0.2862903225806452,
+              0.40725806451612906
+            ],
+            "modalLetter": "C",
+            "modalFrequency": 0.2782258064516129,
+            "chosenLetterCounts": {
+              "A": 30,
+              "B": 117,
+              "C": 34,
+              "D": 67
+            },
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true
+          },
+          "repaired_all": {
+            "n": 231,
+            "passes": 94,
+            "passRate": 0.4069264069264069,
+            "chance": 0.25,
+            "ci95": [
+              0.341991341991342,
+              0.47186147186147187
+            ],
+            "modalLetter": "C",
+            "modalFrequency": 0.2857142857142857,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true,
+            "nRequested": 231,
+            "nMissingScores": 0
+          },
+          "repaired_verified": {
+            "n": 167,
+            "passes": 69,
+            "passRate": 0.41317365269461076,
+            "chance": 0.25,
+            "ci95": [
+              0.33532934131736525,
+              0.49101796407185627
+            ],
+            "modalLetter": "C",
+            "modalFrequency": 0.2754491017964072,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true,
+            "nRequested": 167,
+            "nMissingScores": 0
+          },
+          "execution_all": {
+            "n": 108,
+            "passes": 48,
+            "passRate": 0.4444444444444444,
+            "chance": 0.25,
+            "ci95": [
+              0.35185185185185186,
+              0.5462962962962963
+            ],
+            "modalLetter": "C",
+            "modalFrequency": 0.3055555555555556,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true,
+            "nRequested": 108,
+            "nMissingScores": 0
+          },
+          "recognition_all": {
+            "n": 88,
+            "passes": 34,
+            "passRate": 0.38636363636363635,
+            "chance": 0.25,
+            "ci95": [
+              0.2840909090909091,
+              0.48863636363636365
+            ],
+            "modalLetter": "B",
+            "modalFrequency": 0.3068181818181818,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": false,
+            "clearsBar": false,
+            "nRequested": 88,
+            "nMissingScores": 0
+          },
+          "execution_verified": {
+            "n": 83,
+            "passes": 38,
+            "passRate": 0.4578313253012048,
+            "chance": 0.25,
+            "ci95": [
+              0.3493975903614458,
+              0.5662650602409639
+            ],
+            "modalLetter": "D",
+            "modalFrequency": 0.30120481927710846,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true,
+            "nRequested": 83,
+            "nMissingScores": 0
+          },
+          "recognition_verified": {
+            "n": 57,
+            "passes": 21,
+            "passRate": 0.3684210526315789,
+            "chance": 0.25,
+            "ci95": [
+              0.24561403508771928,
+              0.49122807017543857
+            ],
+            "modalLetter": "B",
+            "modalFrequency": 0.2631578947368421,
+            "lowerCiAboveChance": false,
+            "lowerCiAboveModal": false,
+            "clearsBar": false,
+            "nRequested": 57,
+            "nMissingScores": 0
+          },
+          "isomorph_all": {
+            "n": 227,
+            "passes": 80,
+            "passRate": 0.3524229074889868,
+            "chance": 0.25,
+            "ci95": [
+              0.2907488986784141,
+              0.41409691629955947
+            ],
+            "modalLetter": "C",
+            "modalFrequency": 0.28193832599118945,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true,
+            "nRequested": 227,
+            "nMissingScores": 0
+          },
+          "isomorph_verified": {
+            "n": 165,
+            "passes": 63,
+            "passRate": 0.38181818181818183,
+            "chance": 0.25,
+            "ci95": [
+              0.3151515151515151,
+              0.46060606060606063
+            ],
+            "modalLetter": "C",
+            "modalFrequency": 0.2727272727272727,
+            "lowerCiAboveChance": true,
+            "lowerCiAboveModal": true,
+            "clearsBar": true,
+            "nRequested": 165,
+            "nMissingScores": 0
+          }
+        }
+      }
+    }
+  },
+  "amendment_14b": {
+    "status": "scored",
+    "label": "below_floor",
+    "agreement": {
+      "n": 606,
+      "nAgree": 592,
+      "agreement": 0.976897689768977,
+      "clearsFloor": false,
+      "label": "below_floor",
+      "disagreeingIds": [
+        {
+          "id": "nyregents-algebra-i-2020-jan-q12",
+          "rerun": "B",
+          "saved": "D"
+        },
+        {
+          "id": "nyregents-algebra-i-2019-jan-q21",
+          "rerun": "C",
+          "saved": "A"
+        },
+        {
+          "id": "nyregents-algebra-i-2026-jun-q6",
+          "rerun": "A",
+          "saved": "C"
+        },
+        {
+          "id": "nyregents-algebra-i-2025-aug-q6",
+          "rerun": "A",
+          "saved": "C"
+        },
+        {
+          "id": "nyregents-algebra-i-2015-jan-q8",
+          "rerun": "A",
+          "saved": "B"
+        },
+        {
+          "id": "nyregents-algebra-i-unknown-unk-q6",
+          "rerun": "C",
+          "saved": "A"
+        },
+        {
+          "id": "nyregents-algebra-i-2016-jan-q11",
+          "rerun": "A",
+          "saved": "B"
+        },
+        {
+          "id": "nyregents-algebra-ii-2023-jan-q5",
+          "rerun": "D",
+          "saved": "B"
+        },
+        {
+          "id": "nyregents-algebra-ii-2023-jan-q19",
+          "rerun": "B",
+          "saved": "C"
+        },
+        {
+          "id": "nyregents-algebra-ii-2018-jan-q18",
+          "rerun": "A",
+          "saved": "B"
+        },
+        {
+          "id": "nyregents-algebra-ii-2024-jun-q1",
+          "rerun": "B",
+          "saved": "D"
+        },
+        {
+          "id": "nyregents-algebra-ii-2024-jan-q8",
+          "rerun": "B",
+          "saved": "D"
+        },
+        {
+          "id": "nyregents-algebra-ii-2016-jun-q18",
+          "rerun": "D",
+          "saved": "A"
+        },
+        {
+          "id": "nyregents-algebra-ii-2020-jan-q4",
+          "rerun": "C",
+          "saved": "B"
+        }
+      ],
+      "savedPath": "exports/addendum-gpu/masked-stem-14b-items.jsonl"
+    },
+    "note": "clears_floor means letter agreement >= 0.98. below_floor arms are reported so a reader can see them; they are not a pass of the isomorph control.",
+    "subsets": {
+      "algebra_i_all": {
+        "n": 358,
+        "nPaired": 297,
+        "original": {
+          "n": 358,
+          "passes": 146,
+          "passRate": 0.40782122905027934,
+          "chance": 0.25,
+          "ci95": [
+            0.3547486033519553,
+            0.4581005586592179
+          ],
+          "modalLetter": "B",
+          "modalFrequency": 0.2709497206703911,
+          "lowerCiAboveChance": true,
+          "lowerCiAboveModal": true,
+          "clearsBar": true
+        },
+        "rankPreserving": {
+          "n": 358,
+          "passes": 129,
+          "passRate": 0.36033519553072624,
+          "chance": 0.25,
+          "ci95": [
+            0.3128491620111732,
+            0.4134078212290503
+          ],
+          "modalLetter": "B",
+          "modalFrequency": 0.2709497206703911,
+          "lowerCiAboveChance": true,
+          "lowerCiAboveModal": true,
+          "clearsBar": true
+        },
+        "scrambled": {
+          "n": 358,
+          "passes": 113,
+          "passRate": 0.31564245810055863,
+          "chance": 0.25,
+          "ci95": [
+            0.2709497206703911,
+            0.3659217877094972
+          ],
+          "modalLetter": "B",
+          "modalFrequency": 0.2709497206703911,
+          "lowerCiAboveChance": true,
+          "lowerCiAboveModal": false,
+          "clearsBar": false
+        },
+        "pairedRankPreserving": {
+          "n": 297,
+          "mean": -0.05723905723905724,
+          "ci95": [
+            -0.11447811447811448,
+            0.0
+          ],
+          "includesZero": true
+        },
+        "pairedScrambled": {
+          "n": 297,
+          "mean": -0.1111111111111111,
+          "ci95": [
+            -0.1717171717171717,
+            -0.050505050505050504
+          ],
+          "includesZero": false
+        }
+      },
+      "algebra_i_faithful": {
+        "n": 184,
+        "nPaired": 136,
+        "original": {
+          "n": 184,
+          "passes": 77,
+          "passRate": 0.41847826086956524,
+          "chance": 0.25,
+          "ci95": [
+            0.34782608695652173,
+            0.4891304347826087
+          ],
+          "modalLetter": "B",
+          "modalFrequency": 0.2554347826086957,
+          "lowerCiAboveChance": true,
+          "lowerCiAboveModal": true,
+          "clearsBar": true
+        },
+        "rankPreserving": {
+          "n": 184,
+          "passes": 70,
+          "passRate": 0.3804347826086957,
+          "chance": 0.25,
+          "ci95": [
+            0.31521739130434784,
+            0.45652173913043476
+          ],
+          "modalLetter": "B",
+          "modalFrequency": 0.2554347826086957,
+          "lowerCiAboveChance": true,
+          "lowerCiAboveModal": true,
+          "clearsBar": true
+        },
+        "scrambled": {
+          "n": 184,
+          "passes": 68,
+          "passRate": 0.3695652173913043,
+          "chance": 0.25,
+          "ci95": [
+            0.30434782608695654,
+            0.44565217391304346
+          ],
+          "modalLetter": "B",
+          "modalFrequency": 0.2554347826086957,
+          "lowerCiAboveChance": true,
+          "lowerCiAboveModal": true,
+          "clearsBar": true
+        },
+        "pairedRankPreserving": {
+          "n": 136,
+          "mean": -0.051470588235294115,
+          "ci95": [
+            -0.1323529411764706,
+            0.029411764705882353
+          ],
+          "includesZero": true
+        },
+        "pairedScrambled": {
+          "n": 136,
+          "mean": -0.0661764705882353,
+          "ci95": [
+            -0.15441176470588236,
+            0.022058823529411766
+          ],
+          "includesZero": true
+        }
+      },
+      "algebra_i_faithful_recognition": {
+        "n": 83,
+        "nPaired": 56,
+        "original": {
+          "n": 83,
+          "passes": 37,
+          "passRate": 0.4457831325301205,
+          "chance": 0.25,
+          "ci95": [
+            0.3373493975903614,
+            0.5542168674698795
+          ],
+          "modalLetter": "D",
+          "modalFrequency": 0.26506024096385544,
+          "lowerCiAboveChance": true,
+          "lowerCiAboveModal": true,
+          "clearsBar": true
+        },
+        "rankPreserving": {
+          "n": 83,
+          "passes": 32,
+          "passRate": 0.3855421686746988,
+          "chance": 0.25,
+          "ci95": [
+            0.2891566265060241,
+            0.4939759036144578
+          ],
+          "modalLetter": "D",
+          "modalFrequency": 0.26506024096385544,
+          "lowerCiAboveChance": true,
+          "lowerCiAboveModal": true,
+          "clearsBar": true
+        },
+        "scrambled": {
+          "n": 83,
+          "passes": 34,
+          "passRate": 0.40963855421686746,
+          "chance": 0.25,
+          "ci95": [
+            0.30120481927710846,
+            0.5180722891566265
+          ],
+          "modalLetter": "D",
+          "modalFrequency": 0.26506024096385544,
+          "lowerCiAboveChance": true,
+          "lowerCiAboveModal": true,
+          "clearsBar": true
+        },
+        "pairedRankPreserving": {
+          "n": 56,
+          "mean": -0.08928571428571429,
+          "ci95": [
+            -0.21428571428571427,
+            0.05357142857142857
+          ],
+          "includesZero": true
+        },
+        "pairedScrambled": {
+          "n": 56,
+          "mean": -0.05357142857142857,
+          "ci95": [
+            -0.19642857142857142,
+            0.10714285714285714
+          ],
+          "includesZero": true
+        }
+      },
+      "algebra_i_faithful_execution": {
+        "n": 75,
+        "nPaired": 66,
+        "original": {
+          "n": 75,
+          "passes": 23,
+          "passRate": 0.30666666666666664,
+          "chance": 0.25,
+          "ci95": [
+            0.21333333333333335,
+            0.41333333333333333
+          ],
+          "modalLetter": "B",
+          "modalFrequency": 0.29333333333333333,
+          "lowerCiAboveChance": false,
+          "lowerCiAboveModal": false,
+          "clearsBar": false
+        },
+        "rankPreserving": {
+          "n": 75,
+          "passes": 25,
+          "passRate": 0.3333333333333333,
+          "chance": 0.25,
+          "ci95": [
+            0.22666666666666666,
+            0.44
+          ],
+          "modalLetter": "B",
+          "modalFrequency": 0.29333333333333333,
+          "lowerCiAboveChance": false,
+          "lowerCiAboveModal": false,
+          "clearsBar": false
+        },
+        "scrambled": {
+          "n": 75,
+          "passes": 22,
+          "passRate": 0.29333333333333333,
+          "chance": 0.25,
+          "ci95": [
+            0.18666666666666668,
+            0.4
+          ],
+          "modalLetter": "B",
+          "modalFrequency": 0.29333333333333333,
+          "lowerCiAboveChance": false,
+          "lowerCiAboveModal": false,
+          "clearsBar": false
+        },
+        "pairedRankPreserving": {
+          "n": 66,
+          "mean": 0.030303030303030304,
+          "ci95": [
+            -0.07575757575757576,
+            0.13636363636363635
+          ],
+          "includesZero": true
+        },
+        "pairedScrambled": {
+          "n": 66,
+          "mean": -0.015151515151515152,
+          "ci95": [
+            -0.15151515151515152,
+            0.10606060606060606
+          ],
+          "includesZero": true
+        }
+      },
+      "algebra_ii_all": {
+        "n": 248,
+        "nPaired": 227,
+        "original": {
+          "n": 248,
+          "passes": 90,
+          "passRate": 0.3629032258064516,
+          "chance": 0.25,
+          "ci95": [
+            0.3024193548387097,
+            0.42338709677419356
+          ],
+          "modalLetter": "C",
+          "modalFrequency": 0.2782258064516129,
+          "lowerCiAboveChance": true,
+          "lowerCiAboveModal": true,
+          "clearsBar": true
+        },
+        "rankPreserving": {
+          "n": 248,
+          "passes": 80,
+          "passRate": 0.3225806451612903,
+          "chance": 0.25,
+          "ci95": [
+            0.2620967741935484,
+            0.3790322580645161
+          ],
+          "modalLetter": "C",
+          "modalFrequency": 0.2782258064516129,
+          "lowerCiAboveChance": true,
+          "lowerCiAboveModal": false,
+          "clearsBar": false
+        },
+        "scrambled": {
+          "n": 248,
+          "passes": 73,
+          "passRate": 0.29435483870967744,
+          "chance": 0.25,
+          "ci95": [
+            0.23790322580645162,
+            0.35080645161290325
+          ],
+          "modalLetter": "C",
+          "modalFrequency": 0.2782258064516129,
+          "lowerCiAboveChance": false,
+          "lowerCiAboveModal": false,
+          "clearsBar": false
+        },
+        "pairedRankPreserving": {
+          "n": 227,
+          "mean": -0.04405286343612335,
+          "ci95": [
+            -0.11894273127753303,
+            0.02643171806167401
+          ],
+          "includesZero": true
+        },
+        "pairedScrambled": {
+          "n": 227,
+          "mean": -0.07488986784140969,
+          "ci95": [
+            -0.14977973568281938,
+            0.004405286343612335
+          ],
+          "includesZero": true
+        }
+      },
+      "algebra_ii_faithful": {
+        "n": 115,
+        "nPaired": 106,
+        "original": {
+          "n": 115,
+          "passes": 43,
+          "passRate": 0.3739130434782609,
+          "chance": 0.25,
+          "ci95": [
+            0.28695652173913044,
+            0.45217391304347826
+          ],
+          "modalLetter": "B",
+          "modalFrequency": 0.2956521739130435,
+          "lowerCiAboveChance": true,
+          "lowerCiAboveModal": false,
+          "clearsBar": false
+        },
+        "rankPreserving": {
+          "n": 115,
+          "passes": 39,
+          "passRate": 0.3391304347826087,
+          "chance": 0.25,
+          "ci95": [
+            0.25217391304347825,
+            0.43478260869565216
+          ],
+          "modalLetter": "B",
+          "modalFrequency": 0.2956521739130435,
+          "lowerCiAboveChance": true,
+          "lowerCiAboveModal": false,
+          "clearsBar": false
+        },
+        "scrambled": {
+          "n": 115,
+          "passes": 32,
+          "passRate": 0.2782608695652174,
+          "chance": 0.25,
+          "ci95": [
+            0.2,
+            0.3652173913043478
+          ],
+          "modalLetter": "B",
+          "modalFrequency": 0.2956521739130435,
+          "lowerCiAboveChance": false,
+          "lowerCiAboveModal": false,
+          "clearsBar": false
+        },
+        "pairedRankPreserving": {
+          "n": 106,
+          "mean": -0.03773584905660377,
+          "ci95": [
+            -0.16037735849056603,
+            0.08490566037735849
+          ],
+          "includesZero": true
+        },
+        "pairedScrambled": {
+          "n": 106,
+          "mean": -0.10377358490566038,
+          "ci95": [
+            -0.19811320754716982,
+            0.0
+          ],
+          "includesZero": true
+        }
+      }
+    }
+  },
+  "perturbFailed": 5,
+  "writtenAt": "2026-09-17T07:45:54.477192+00:00"
+}
