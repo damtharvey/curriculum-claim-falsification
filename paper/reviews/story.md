@@ -36,6 +36,10 @@ Format: idea -> home -> removed from (or cut to a clause in).
 
 Count: 23 ideas homed; 71 restatements removed or cut to a clause.
 
+# Abstract (second commit)
+
+Rewritten last from the first-reader test alone: 227 words (LaTeX-stripped count), no numbers beyond the two cell names and the two model families; first paragraph is the tag, the reading, the assumption, the bypass, and one-sidedness; second paragraph is the findings in the story's order and the page re-read. Record: `paper/abstract-intro-review.json`.
+
 # Build
 
 - Before: 23 pages, 0 overfull, body (intro through limitations) pages 1 to 16, appendix pages 18 to 23.

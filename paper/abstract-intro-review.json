@@ -3,41 +3,40 @@
   "pass_kind": "writing_correction",
   "skill": ".agents/skills/ml-paper-writing/references/first-reader-review.md",
   "overall_recommendation": 4,
-  "reviewed_at": "2026-09-17T13:05Z",
+  "reviewed_at": "2026-09-17T13:40Z",
   "paper_head_reviewed_after_science_commit": "d70ef8e",
+  "structural_pass_commit": "7f3e3e2",
+  "story": "paper/reviews/story.md",
   "first_reader_check": {
     "pass": true,
     "qualified_reviewer_can_follow_the_abstract": true,
-    "about": "Whether passing a tagged released mathematics item requires the tagged competency, tested by assessment bypasses: solver policies that lack the competency by an explicit restriction on their operations or their information and pass under the published scoring rule anyway, with no student data.",
-    "shown": "Item-writing rules yield no family-wise discovery; one rule beats chance on two cells and awaits replication. Claimed results are measured on items re-read from the printed page, the language-model results only where a second transcription agrees. Language models of two families recover New York Regents Algebra I and Algebra II keys with the given quantities withheld, and the recovery survives a change of every option value with the form kept. On items two independent codings mark as requiring computation on the givens, one of three scorers misses the bar; those bypasses are information-restricted, so a matched pass does not require computing on the givens and whether it requires the tagged operation is left open. The international cognitive-domain cells yield no bypass at about 50 to 80 public items each.",
-    "what_is_new": "The assessment bypass as the object, with two restriction kinds (capability-restricted: item-writing cues, strategies, option substitution into the printed equation; information-restricted: language models denied the given quantities) that are the same object, each refuting Requirement on its cell for the part of the competency the policy was denied; the five-level claim ladder placing the paper at Requirement; hashed programs Holm-corrected inside three families; a measurement layer in which the released text is replaced by two page transcriptions; two blind item-level codings joined to the rows; an option-value control that covers every scorer.",
-    "why_a_big_deal": "Accountability and research read a tagged pass as evidence of the tagged competency, which assumes passing requires it. Where a policy denied the given quantities matches the key on both Regents algebra cells, on every scorer, and with the option values changed, that reading is of the wrong quantity on those items. The text layer of released forms differs from the print on about half the items, so a census that does not re-read the page measures a proxy.",
-    "abstract_word_count": 242,
+    "about": "Whether passing a tagged released mathematics item requires the tagged competency, tested without student data by searching for assessment bypasses: solvers that lack the competency by an explicit restriction on their operations or their information, never see the key, and pass under the published scoring rule.",
+    "shown": "Under a pre-registered bar, language models of two families recover New York Regents Algebra I and Algebra II keys with every given quantity withheld, and the recovery survives a change of every option value with the form kept; on those items a pass does not require computing on the givens, and whether it requires the tagged operation is left open. Small programs denied the tagged operation match keys on a few cells. TIMSS cognitive-domain cells yield no bypass at their public sizes. Claimed rates are measured on items re-read from the printed page, which released text layers often misstate.",
+    "what_is_new": "The assessment bypass as a one-sided, student-free test of a tag, with two restriction kinds (capability and information) that are the same object; a pre-registered witness bar with hashed programs and Holm correction inside each solver family; a census of 2,405 tagged public-release items; and the measurement finding that the released text layer must be replaced by a page re-read before any rate is claimed.",
+    "why_a_big_deal": "Accountability, curriculum evaluation, and research read a tagged pass as evidence of the tagged competency. Where a solver denied the given quantities matches the key on both Regents algebra cells, on every scorer, and with every option value changed, the key does not carry the evidence it is read as on those items. The abstract states that consequence in one clause: so the key does not carry the evidence it is read as.",
+    "abstract_word_count": 227,
     "abstract_says": [
-      "first paragraph states the bypass phenomenon and the Requirement assumption before any channel is named: a correct answer is read as evidence of the competency, a reading that assumes passing requires it; we search for solver policies that lack the competency by an explicit restriction on operations or information and pass anyway; one-sided",
-      "measurement story in one sentence: claimed results re-read from the printed page, which the PDF text layer often misstates; language-model results confirmed by a second transcription",
-      "Algebra I and Algebra II in two model families; the recovery survives a change of every option value with the form kept (Table tab:isomorph, all three scorers, both cells)",
-      "execution statement not made: one of three scorers misses the bar on items both codings mark as requiring computation on the givens; the bypasses are information-restricted, so a matched pass does not require computing on the givens and whether it requires the tagged operation is left open (Table tab:verbclass)",
-      "EQAO not named; catalog one clause; TIMSS one unnamed clause (no bypass at about 50 to 80 public items each)"
+      "first paragraph: the tag, the reading, the assumption the reading makes, the bypass as the test (glossed inline), one-sided in one sentence",
+      "second paragraph: pre-registered bar; Algebra I and II language-model bypass in two model families surviving the option-value change; the consequence for the key as evidence; the tagged-operation question left open; small programs on a few cells; TIMSS null at public sizes; claimed rates measured on the printed page",
+      "few numbers: none in the abstract beyond the two cell names and the two model families"
     ],
-    "no_conjunction_contradicted_by_a_table": "The abstract conjoins Algebra I and II recovery with survival under the option-value change; Table tab:isomorph shows every scorer clearing on both cells under the rank-preserving arm. It does not conjoin recognition-tagged carry with isomorph survival.",
-    "title_and_subtitle": "Title unchanged (Does the Assessment Require the Skill?); subtitle removed at Harvey's instruction. The title is the Requirement question the paper measures a part of on each cell.",
-    "intro_lead": "An assessment item arrives with a claim about what answering it requires, and this paper asks whether that claim holds at the level of requirement: whether a solver that lacks the tagged competency can still pass under the published scoring rule.",
+    "no_conjunction_contradicted_by_a_table": "The abstract conjoins Algebra I and II recovery with survival under the option-value change; Table tab:isomorph shows every scorer clearing on both cells under the rank-preserving arm on the repaired-verified population.",
+    "intro_lead": "A released mathematics item carries a published tag ... A correct answer is then read as evidence of the tagged competency ... That reading assumes that passing requires the competency. The second paragraph names the bypass, its one-sidedness, and where the requirement question sits relative to alignment tools and psychometrics; the third paragraph states what was found; four contribution bullets of one or two sentences follow. The formal notation (S, C, T, R) and the claim-ladder table are gone; the ladder is one sentence in words.",
     "unreadability": {
       "stacked_if_thens": {"present": false},
       "named_hypothesis_packing": {"present": false},
-      "formula_in_words": {"present": false, "note": "the S, C, T, R notation appears in the intro body and Method, not in the abstract"},
+      "formula_in_words": {"present": false, "note": "no notation anywhere in the introduction or Method; the bypass is defined in words in Method 3.1"},
       "contribution_list_abstract": {"present": false},
-      "circular_definition": {"present": false, "note": "assessment bypass is glossed inline in the abstract and defined once in the intro and once at the top of Method"},
-      "process_metadiscourse": {"present": false},
+      "circular_definition": {"present": false, "note": "assessment bypass is glossed inline in the abstract and in intro paragraph 2, and defined once in Method 3.1"},
+      "process_metadiscourse": {"present": false, "note": "the 'What would refute these claims' subsection, which argued with earlier drafts, is removed; its refutation conditions are the bar in Method 3.4"},
       "abstract_not_claim": {"present": false},
-      "negative_contribution_bullets": {"present": false},
-      "repeated_disclaimer": {"present": false, "note": "the one-sided sentence appears once in the abstract and once in the intro bypass paragraph; the vulnerability-measure caveat appears in the intro results paragraph, Method, and Limitations once each"}
+      "negative_contribution_bullets": {"present": false, "note": "bullet 1 states the object as a result; no bullet's payload is a disclaimer"},
+      "repeated_disclaimer": {"present": false, "note": "one-sidedness is stated in the abstract (one sentence), intro paragraph 2 (story), and Limitations paragraph 1 (scope); removed from intro bullet 1, Method, Related Work, and five places in Results. Redundancy map in paper/reviews/story.md."}
     },
-    "intro_and_captions": "Contribution bullet 1 is the bypass object with its two restriction kinds and Requirement. The bypass paragraph in the intro defines S, C, T, R and the two restriction kinds, names a bypass a witness, and keeps the scope sentences. The claim ladder (Table 1) sits after it, one paragraph, with the paper placed at Requirement. Contribution bullet 4 now says the language-model bypasses are information-restricted and leaves the tagged-operation question open rather than calling the claim narrower. Captions unchanged from the previous writing pass."
+    "body_first_reader": "Method defines bypass, restriction kinds, items, families, bar and Holm families, controls, print fidelity, and the two codings once each in that order. Results run measurement layer, language-model bypass with isomorph and codings, capability-restricted rows, TIMSS null and controls. Related Work keeps the collective-advance paragraph and states the object in one clause. Limitations state each limitation once and no result twice."
   },
   "reviewer_independence": {
-    "authored_the_science_edit": true,
+    "authored_the_science_edit": false,
     "same_session_distinct_pass_after_science_commit": true,
     "prompt_was_first_reader_only": true,
     "added_theorems_in_this_pass": false
