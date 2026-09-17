@@ -77,3 +77,6 @@ paper/*.synctex.gz
 
 # CCSS domain-page HTML cache (refetch with scripts/fetch_ccss_cluster_text.py)
 exports/standards-split/ccss-html/
+
+# CDK synth output
+cdk.out/
