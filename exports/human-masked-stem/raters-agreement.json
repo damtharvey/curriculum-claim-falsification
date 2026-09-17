@@ -1,0 +1,14 @@
+{
+ "rater1_hits": 15,
+ "rater2_hits": 21,
+ "letter_agreement": 0.475,
+ "kappa_human_human": 0.308,
+ "both_correct": 11,
+ "either_correct": 25,
+ "pooled_rate": 0.45,
+ "pooled_item_clustered_ci95": [
+  0.325,
+  0.575
+ ],
+ "note": "pooled is descriptive; preregistration says rater 2 is a replication, not pooled"
+}

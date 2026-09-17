@@ -31,7 +31,7 @@ Source of record for numbers in the paper after the ICML-style science pass. Cla
 - Algebra II n=248: Qwen 7B 0.367, Qwen 14B 0.359, Phi-4 0.347; all clear chance 0.250 and modal C 0.278.
 - Phi-4 geometry 67/166 = 0.404 meets the cell bar versus modal B 0.289; non-modal-key 0.229 n=118, CI [0.161, 0.305], at or below chance. Not claimed. Table row unlabeled.
 - Qwen 14B Algebra I residual (none of four catalog cues): 0.442 n=163.
-- Human masked-stem sheet: 15/40 = 0.375, CI [0.225, 0.525]. Uninformative null. Not a human witness.
+- Human masked-stem sheet (`exports/human-masked-stem/results-survey-{1,2}.json`, `raters-agreement.json`): rater 1 (registered primary) 15/40 = 0.375, CI [0.225, 0.525], does not clear; rater 2 (registered replication, not pooled) 21/40 = 0.525, CI [0.375, 0.675], clears chance 0.250 and modal 0.271; letter agreement 19/40, kappa 0.31; both right on 11; pooled 36/80 = 0.450, item-clustered CI [0.325, 0.575] (descriptive). No item marked recognized by either rater.
 
 ## Repaired layer (`exports/repaired-layer/results.json`, README; preregistration sha 87ec5754... written before verification and scoring)
 

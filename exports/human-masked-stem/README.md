@@ -20,3 +20,10 @@
    - 40: census B/D were stacked-radical OCR, not (5 ± √41)/2.
 
 5. `rater-packet.md` is a byte-identical copy of `rater-packet.txt`.
+
+## Results (two raters, 2026-09-17)
+
+- survey-1 (registered primary): 15/40 = 0.375, bootstrap 95% CI [0.225, 0.525], no `R`. Does not clear chance 0.250 or modal 0.271. Underpowered null for true rates below 0.479.
+- survey-2 (registered replication on the same 40 items, not pooled): 21/40 = 0.525, CI [0.375, 0.675], no `R`. Clears both bars.
+- Agreement (`raters-agreement.json`): letter agreement 19/40, Cohen's kappa 0.308; both correct on 11 items, either correct on 25; pooled 36/80 = 0.450 with item-clustered bootstrap CI [0.325, 0.575] (descriptive only, per preregistration).
+- Kappa with the frozen 14B letters: survey-1 0.135, survey-2 0.160.
