@@ -1,0 +1,8 @@
+{
+  "CcfDemoStack": {
+    "ApiUrl": "https://4bbskj3on9.execute-api.us-east-1.amazonaws.com/",
+    "DataBucketName": "ccfdemostack-databuckete3889a50-79fgzienojtx",
+    "FrontendBucketName": "ccfdemostack-frontendbucketefe2e19c-3pern1x4os7i",
+    "DistributionUrl": "https://d2nqjgx9lqdrd.cloudfront.net"
+  }
+}

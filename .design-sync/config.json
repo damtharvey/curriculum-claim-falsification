@@ -1,0 +1,40 @@
+{
+  "projectId": "916b39cb-73f5-4f8d-b6bf-76efd49876a9",
+  "pkg": "ccf-frontend",
+  "globalName": "CcfDemo",
+  "shape": "package",
+  "srcDir": "src/components",
+  "cssEntry": "src/styles.css",
+  "tsconfig": "tsconfig.json",
+  "componentSrcMap": {
+    "Pill": "src/components/bits.tsx",
+    "Stat": "src/components/bits.tsx",
+    "LacksPills": "src/components/bits.tsx",
+    "AdminShell": "src/components/AdminShell.tsx"
+  },
+  "dtsPropsFor": {
+    "Pill": "/** Visual kind: `wit` witness found (oxblood), `none` no witness (grey), `tag` plain outlined tag, `op` operation (teal), `lack` missing prerequisite (rose), `tag strong` bold outlined tag. */ kind: \"wit\" | \"none\" | \"tag\" | \"op\" | \"lack\" | \"tag strong\"; children: React.ReactNode;",
+    "Stat": "/** Small uppercase caption above the value. */ label: string; /** The figure or short text shown large. */ value: React.ReactNode; /** Inverted ink-on-dark variant. */ dark?: boolean;",
+    "LacksPills": "/** Prerequisite names the item lacks; rendered as `lack` pills. */ lacks: string[]; /** How many pills to show before collapsing the rest to `+N`. Default 2. */ max?: number;",
+    "AdminShell": "/** Page content rendered in the column beside the Configuration sidebar. */ children: React.ReactNode;"
+  },
+  "extraEntries": [
+    "react-router-dom"
+  ],
+  "provider": {
+    "component": "MemoryRouter",
+    "props": {
+      "initialEntries": [
+        "/admin/rules"
+      ]
+    }
+  },
+  "overrides": {
+    "AdminShell": {
+      "cardMode": "single",
+      "primaryStory": "RulesPage",
+      "viewport": "1200x640"
+    }
+  },
+  "readmeHeader": ".design-sync/conventions.md"
+}
