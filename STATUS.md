@@ -1,6 +1,6 @@
 # STATUS
 
-Wednesday 2026-09-16 about 20:50 MDT. Author A owns all build, science, and paper. Author B owns mentor outreach. A third collaborator is out. See `CHAT-hackathon-plan.md`.
+Wednesday 2026-09-16 about 21:10 MDT. Author A owns all build, science, and paper. Author B owns mentor outreach. A third collaborator is out. See `CHAT-hackathon-plan.md`.
 
 Nothing is frozen. No arXiv or OSF. Thursday talk 15:00–17:00; mentor comments that arrive later do not change it. One-sided wording in force: a pass does not require the tagged operation. Never "students didn't learn."
 
