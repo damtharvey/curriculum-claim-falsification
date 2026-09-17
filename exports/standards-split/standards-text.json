@@ -1,0 +1,924 @@
+{
+ "source": "thecorestandards.org (CCSSO mirror of corestandards.org), Common Core State Standards for Mathematics, high school",
+ "fetchedAt": "2026-09-17T05:18:08+00:00",
+ "codesInUse": [
+  "A-APR.A",
+  "A-APR.B",
+  "A-APR.C",
+  "A-APR.D",
+  "A-CED.A",
+  "A-REI.A",
+  "A-REI.B",
+  "A-REI.C",
+  "A-REI.D",
+  "A-SSE.A",
+  "A-SSE.B",
+  "F-BF.A",
+  "F-BF.B",
+  "F-IF.A",
+  "F-IF.B",
+  "F-IF.C",
+  "F-LE.A",
+  "F-LE.B",
+  "F-TF.A",
+  "F-TF.C",
+  "G-GPE.A",
+  "N-CN.A",
+  "N-CN.C",
+  "N-Q.A",
+  "N-RN.A",
+  "N-RN.B",
+  "S-CP.A",
+  "S-CP.B",
+  "S-IC.A",
+  "S-IC.B",
+  "S-ID.A",
+  "S-ID.B",
+  "S-ID.C"
+ ],
+ "clusters": {
+  "A-APR.A": {
+   "ccssIdentifier": "CCSS.Math.Content.HSA.APR.A",
+   "heading": "Perform arithmetic operations on polynomials.",
+   "standards": [
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSA.APR.A.1",
+     "text": "Understand that polynomials form a system analogous to the integers, namely, they are closed under the operations of addition, subtraction, and multiplication; add, subtract, and multiply polynomials."
+    }
+   ],
+   "sourceUrl": "https://www.thecorestandards.org/Math/Content/HSA/APR/"
+  },
+  "A-APR.B": {
+   "ccssIdentifier": "CCSS.Math.Content.HSA.APR.B",
+   "heading": "Understand the relationship between zeros and factors of polynomials.",
+   "standards": [
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSA.APR.B.2",
+     "text": "Know and apply the Remainder Theorem: For a polynomial p(x) and a number a, the remainder on division by x - a is p(a), so p(a) = 0 if and only if (x - a) is a factor of p(x)."
+    },
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSA.APR.B.3",
+     "text": "Identify zeros of polynomials when suitable factorizations are available, and use the zeros to construct a rough graph of the function defined by the polynomial."
+    }
+   ],
+   "sourceUrl": "https://www.thecorestandards.org/Math/Content/HSA/APR/"
+  },
+  "A-APR.C": {
+   "ccssIdentifier": "CCSS.Math.Content.HSA.APR.C",
+   "heading": "Use polynomial identities to solve problems.",
+   "standards": [
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSA.APR.C.4",
+     "text": "Prove polynomial identities and use them to describe numerical relationships. For example, the polynomial identity (x2 + y2)2 = (x2 - y2)2 + (2xy)2 can be used to generate Pythagorean triples."
+    },
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSA.APR.C.5",
+     "text": "(+) Know and apply the Binomial Theorem for the expansion of (x + y)n in powers of x and y for a positive integer n, where x and y are any numbers, with coefficients determined for example by Pascal's Triangle.1"
+    }
+   ],
+   "sourceUrl": "https://www.thecorestandards.org/Math/Content/HSA/APR/"
+  },
+  "A-APR.D": {
+   "ccssIdentifier": "CCSS.Math.Content.HSA.APR.D",
+   "heading": "Rewrite rational expressions.",
+   "standards": [
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSA.APR.D.6",
+     "text": "Rewrite simple rational expressions in different forms; write a(x)/b(x) in the form q(x) + r(x)/b(x), where a(x), b(x), q(x), and r(x) are polynomials with the degree of r(x) less than the degree of b(x), using inspection, long division, or, for the more complicated examples, a computer algebra system."
+    },
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSA.APR.D.7",
+     "text": "(+) Understand that rational expressions form a system analogous to the rational numbers, closed under addition, subtraction, multiplication, and division by a nonzero rational expression; add, subtract, multiply, and divide rational expressions."
+    }
+   ],
+   "sourceUrl": "https://www.thecorestandards.org/Math/Content/HSA/APR/"
+  },
+  "A-CED.A": {
+   "ccssIdentifier": "CCSS.Math.Content.HSA.CED.A",
+   "heading": "Create equations that describe numbers or relationships.",
+   "standards": [
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSA.CED.A.1",
+     "text": "Create equations and inequalities in one variable and use them to solve problems. Include equations arising from linear and quadratic functions, and simple rational and exponential functions."
+    },
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSA.CED.A.2",
+     "text": "Create equations in two or more variables to represent relationships between quantities; graph equations on coordinate axes with labels and scales."
+    },
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSA.CED.A.3",
+     "text": "Represent constraints by equations or inequalities, and by systems of equations and/or inequalities, and interpret solutions as viable or nonviable options in a modeling context. For example, represent inequalities describing nutritional and cost constraints on combinations of different foods."
+    },
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSA.CED.A.4",
+     "text": "Rearrange formulas to highlight a quantity of interest, using the same reasoning as in solving equations. For example, rearrange Ohm's law V = IR to highlight resistance R."
+    }
+   ],
+   "sourceUrl": "https://www.thecorestandards.org/Math/Content/HSA/CED/"
+  },
+  "A-REI.A": {
+   "ccssIdentifier": "CCSS.Math.Content.HSA.REI.A",
+   "heading": "Understand solving equations as a process of reasoning and explain the reasoning.",
+   "standards": [
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSA.REI.A.1",
+     "text": "Explain each step in solving a simple equation as following from the equality of numbers asserted at the previous step, starting from the assumption that the original equation has a solution. Construct a viable argument to justify a solution method."
+    },
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSA.REI.A.2",
+     "text": "Solve simple rational and radical equations in one variable, and give examples showing how extraneous solutions may arise."
+    }
+   ],
+   "sourceUrl": "https://www.thecorestandards.org/Math/Content/HSA/REI/"
+  },
+  "A-REI.B": {
+   "ccssIdentifier": "CCSS.Math.Content.HSA.REI.B",
+   "heading": "Solve equations and inequalities in one variable.",
+   "standards": [
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSA.REI.B.3",
+     "text": "Solve linear equations and inequalities in one variable, including equations with coefficients represented by letters."
+    },
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSA.REI.B.4",
+     "text": "Solve quadratic equations in one variable."
+    },
+    {
+     "kind": "substandard",
+     "id": "CCSS.Math.Content.HSA.REI.B.4.a",
+     "text": "Use the method of completing the square to transform any quadratic equation in x into an equation of the form (x - p)2 = q that has the same solutions. Derive the quadratic formula from this form."
+    },
+    {
+     "kind": "substandard",
+     "id": "CCSS.Math.Content.HSA.REI.B.4.b",
+     "text": "Solve quadratic equations by inspection (e.g., for x2 = 49), taking square roots, completing the square, the quadratic formula and factoring, as appropriate to the initial form of the equation. Recognize when the quadratic formula gives complex solutions and write them as a ± bi for real numbers a and b."
+    }
+   ],
+   "sourceUrl": "https://www.thecorestandards.org/Math/Content/HSA/REI/"
+  },
+  "A-REI.C": {
+   "ccssIdentifier": "CCSS.Math.Content.HSA.REI.C",
+   "heading": "Solve systems of equations.",
+   "standards": [
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSA.REI.C.5",
+     "text": "Prove that, given a system of two equations in two variables, replacing one equation by the sum of that equation and a multiple of the other produces a system with the same solutions."
+    },
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSA.REI.C.6",
+     "text": "Solve systems of linear equations exactly and approximately (e.g., with graphs), focusing on pairs of linear equations in two variables."
+    },
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSA.REI.C.7",
+     "text": "Solve a simple system consisting of a linear equation and a quadratic equation in two variables algebraically and graphically. For example, find the points of intersection between the line y = -3x and the circle x2 + y2 = 3."
+    },
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSA.REI.C.8",
+     "text": "(+) Represent a system of linear equations as a single matrix equation in a vector variable."
+    },
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSA.REI.C.9",
+     "text": "(+) Find the inverse of a matrix if it exists and use it to solve systems of linear equations (using technology for matrices of dimension 3 × 3 or greater)."
+    }
+   ],
+   "sourceUrl": "https://www.thecorestandards.org/Math/Content/HSA/REI/"
+  },
+  "A-REI.D": {
+   "ccssIdentifier": "CCSS.Math.Content.HSA.REI.D",
+   "heading": "Represent and solve equations and inequalities graphically.",
+   "standards": [
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSA.REI.D.10",
+     "text": "Understand that the graph of an equation in two variables is the set of all its solutions plotted in the coordinate plane, often forming a curve (which could be a line)."
+    },
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSA.REI.D.11",
+     "text": "Explain why the x-coordinates of the points where the graphs of the equations y = f(x) and y = g(x) intersect are the solutions of the equation f(x) = g(x); find the solutions approximately, e.g., using technology to graph the functions, make tables of values, or find successive approximations. Include cases where f(x) and/or g(x) are linear, polynomial, rational, absolute value, exponential, and logarithmic functions.*"
+    },
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSA.REI.D.12",
+     "text": "Graph the solutions to a linear inequality in two variables as a half-plane (excluding the boundary in the case of a strict inequality), and graph the solution set to a system of linear inequalities in two variables as the intersection of the corresponding half-planes."
+    }
+   ],
+   "sourceUrl": "https://www.thecorestandards.org/Math/Content/HSA/REI/"
+  },
+  "A-SSE.A": {
+   "ccssIdentifier": "CCSS.Math.Content.HSA.SSE.A",
+   "heading": "Interpret the structure of expressions.",
+   "standards": [
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSA.SSE.A.1",
+     "text": "Interpret expressions that represent a quantity in terms of its context.*"
+    },
+    {
+     "kind": "substandard",
+     "id": "CCSS.Math.Content.HSA.SSE.A.1.a",
+     "text": "Interpret parts of an expression, such as terms, factors, and coefficients."
+    },
+    {
+     "kind": "substandard",
+     "id": "CCSS.Math.Content.HSA.SSE.A.1.b",
+     "text": "Interpret complicated expressions by viewing one or more of their parts as a single entity. For example, interpret P(1+r)n as the product of P and a factor not depending on P."
+    },
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSA.SSE.A.2",
+     "text": "Use the structure of an expression to identify ways to rewrite it. For example, see x4 - y4 as (x2)2 - (y2)2, thus recognizing it as a difference of squares that can be factored as (x2 - y2)(x2 + y2)."
+    }
+   ],
+   "sourceUrl": "https://www.thecorestandards.org/Math/Content/HSA/SSE/"
+  },
+  "A-SSE.B": {
+   "ccssIdentifier": "CCSS.Math.Content.HSA.SSE.B",
+   "heading": "Write expressions in equivalent forms to solve problems.",
+   "standards": [
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSA.SSE.B.3",
+     "text": "Choose and produce an equivalent form of an expression to reveal and explain properties of the quantity represented by the expression.*"
+    },
+    {
+     "kind": "substandard",
+     "id": "CCSS.Math.Content.HSA.SSE.B.3.a",
+     "text": "Factor a quadratic expression to reveal the zeros of the function it defines."
+    },
+    {
+     "kind": "substandard",
+     "id": "CCSS.Math.Content.HSA.SSE.B.3.b",
+     "text": "Complete the square in a quadratic expression to reveal the maximum or minimum value of the function it defines."
+    },
+    {
+     "kind": "substandard",
+     "id": "CCSS.Math.Content.HSA.SSE.B.3.c",
+     "text": "Use the properties of exponents to transform expressions for exponential functions. For example the expression 1.15t can be rewritten as (1.151/12)12t ≈ 1.01212t to reveal the approximate equivalent monthly interest rate if the annual rate is 15%."
+    },
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSA.SSE.B.4",
+     "text": "Derive the formula for the sum of a finite geometric series (when the common ratio is not 1), and use the formula to solve problems. For example, calculate mortgage payments.*"
+    }
+   ],
+   "sourceUrl": "https://www.thecorestandards.org/Math/Content/HSA/SSE/"
+  },
+  "F-BF.A": {
+   "ccssIdentifier": "CCSS.Math.Content.HSF.BF.A",
+   "heading": "Build a function that models a relationship between two quantities.",
+   "standards": [
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSF.BF.A.1",
+     "text": "Write a function that describes a relationship between two quantities.*"
+    },
+    {
+     "kind": "substandard",
+     "id": "CCSS.Math.Content.HSF.BF.A.1.a",
+     "text": "Determine an explicit expression, a recursive process, or steps for calculation from a context."
+    },
+    {
+     "kind": "substandard",
+     "id": "CCSS.Math.Content.HSF.BF.A.1.b",
+     "text": "Combine standard function types using arithmetic operations. For example, build a function that models the temperature of a cooling body by adding a constant function to a decaying exponential, and relate these functions to the model."
+    },
+    {
+     "kind": "substandard",
+     "id": "CCSS.Math.Content.HSF.BF.A.1.c",
+     "text": "(+) Compose functions. For example, if T(y) is the temperature in the atmosphere as a function of height, and h(t) is the height of a weather balloon as a function of time, then T(h(t)) is the temperature at the location of the weather balloon as a function of time."
+    },
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSF.BF.A.2",
+     "text": "Write arithmetic and geometric sequences both recursively and with an explicit formula, use them to model situations, and translate between the two forms.*"
+    }
+   ],
+   "sourceUrl": "https://www.thecorestandards.org/Math/Content/HSF/BF/"
+  },
+  "F-BF.B": {
+   "ccssIdentifier": "CCSS.Math.Content.HSF.BF.B",
+   "heading": "Build new functions from existing functions.",
+   "standards": [
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSF.BF.B.3",
+     "text": "Identify the effect on the graph of replacing f(x) by f(x) + k, k f(x), f(kx), and f(x + k) for specific values of k (both positive and negative); find the value of k given the graphs. Experiment with cases and illustrate an explanation of the effects on the graph using technology. Include recognizing even and odd functions from their graphs and algebraic expressions for them."
+    },
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSF.BF.B.4",
+     "text": "Find inverse functions."
+    },
+    {
+     "kind": "substandard",
+     "id": "CCSS.Math.Content.HSF.BF.B.4.a",
+     "text": "Solve an equation of the form f(x) = c for a simple function f that has an inverse and write an expression for the inverse. For example, f(x) =2 x3 or f(x) = (x+1)/(x-1) for x ≠ 1."
+    },
+    {
+     "kind": "substandard",
+     "id": "CCSS.Math.Content.HSF.BF.B.4.b",
+     "text": "(+) Verify by composition that one function is the inverse of another."
+    },
+    {
+     "kind": "substandard",
+     "id": "CCSS.Math.Content.HSF.BF.B.4.c",
+     "text": "(+) Read values of an inverse function from a graph or a table, given that the function has an inverse."
+    },
+    {
+     "kind": "substandard",
+     "id": "CCSS.Math.Content.HSF.BF.B.4.d",
+     "text": "(+) Produce an invertible function from a non-invertible function by restricting the domain."
+    },
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSF.BF.B.5",
+     "text": "(+) Understand the inverse relationship between exponents and logarithms and use this relationship to solve problems involving logarithms and exponents."
+    }
+   ],
+   "sourceUrl": "https://www.thecorestandards.org/Math/Content/HSF/BF/"
+  },
+  "F-IF.A": {
+   "ccssIdentifier": "CCSS.Math.Content.HSF.IF.A",
+   "heading": "Understand the concept of a function and use function notation.",
+   "standards": [
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSF.IF.A.1",
+     "text": "Understand that a function from one set (called the domain) to another set (called the range) assigns to each element of the domain exactly one element of the range. If f is a function and x is an element of its domain, then f(x) denotes the output of f corresponding to the input x. The graph of f is the graph of the equation y = f(x)."
+    },
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSF.IF.A.2",
+     "text": "Use function notation, evaluate functions for inputs in their domains, and interpret statements that use function notation in terms of a context."
+    },
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSF.IF.A.3",
+     "text": "Recognize that sequences are functions, sometimes defined recursively, whose domain is a subset of the integers. For example, the Fibonacci sequence is defined recursively by f(0) = f(1) = 1, f(n+1) = f(n) + f(n-1) for n ≥ 1."
+    }
+   ],
+   "sourceUrl": "https://www.thecorestandards.org/Math/Content/HSF/IF/"
+  },
+  "F-IF.B": {
+   "ccssIdentifier": "CCSS.Math.Content.HSF.IF.B",
+   "heading": "Interpret functions that arise in applications in terms of the context.",
+   "standards": [
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSF.IF.B.4",
+     "text": "For a function that models a relationship between two quantities, interpret key features of graphs and tables in terms of the quantities, and sketch graphs showing key features given a verbal description of the relationship. Key features include: intercepts; intervals where the function is increasing, decreasing, positive, or negative; relative maximums and minimums; symmetries; end behavior; and periodicity.*"
+    },
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSF.IF.B.5",
+     "text": "Relate the domain of a function to its graph and, where applicable, to the quantitative relationship it describes. For example, if the function h(n) gives the number of person-hours it takes to assemble n engines in a factory, then the positive integers would be an appropriate domain for the function.*"
+    },
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSF.IF.B.6",
+     "text": "Calculate and interpret the average rate of change of a function (presented symbolically or as a table) over a specified interval. Estimate the rate of change from a graph.*"
+    }
+   ],
+   "sourceUrl": "https://www.thecorestandards.org/Math/Content/HSF/IF/"
+  },
+  "F-IF.C": {
+   "ccssIdentifier": "CCSS.Math.Content.HSF.IF.C",
+   "heading": "Analyze functions using different representations.",
+   "standards": [
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSF.IF.C.7",
+     "text": "Graph functions expressed symbolically and show key features of the graph, by hand in simple cases and using technology for more complicated cases.*"
+    },
+    {
+     "kind": "substandard",
+     "id": "CCSS.Math.Content.HSF.IF.C.7.a",
+     "text": "Graph linear and quadratic functions and show intercepts, maxima, and minima."
+    },
+    {
+     "kind": "substandard",
+     "id": "CCSS.Math.Content.HSF.IF.C.7.b",
+     "text": "Graph square root, cube root, and piecewise-defined functions, including step functions and absolute value functions."
+    },
+    {
+     "kind": "substandard",
+     "id": "CCSS.Math.Content.HSF.IF.C.7.c",
+     "text": "Graph polynomial functions, identifying zeros when suitable factorizations are available, and showing end behavior."
+    },
+    {
+     "kind": "substandard",
+     "id": "CCSS.Math.Content.HSF.IF.C.7.d",
+     "text": "(+) Graph rational functions, identifying zeros and asymptotes when suitable factorizations are available, and showing end behavior."
+    },
+    {
+     "kind": "substandard",
+     "id": "CCSS.Math.Content.HSF.IF.C.7.e",
+     "text": "Graph exponential and logarithmic functions, showing intercepts and end behavior, and trigonometric functions, showing period, midline, and amplitude."
+    },
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSF.IF.C.8",
+     "text": "Write a function defined by an expression in different but equivalent forms to reveal and explain different properties of the function."
+    },
+    {
+     "kind": "substandard",
+     "id": "CCSS.Math.Content.HSF.IF.C.8.a",
+     "text": "Use the process of factoring and completing the square in a quadratic function to show zeros, extreme values, and symmetry of the graph, and interpret these in terms of a context."
+    },
+    {
+     "kind": "substandard",
+     "id": "CCSS.Math.Content.HSF.IF.C.8.b",
+     "text": "Use the properties of exponents to interpret expressions for exponential functions. For example, identify percent rate of change in functions such as y = (1.02)ᵗ, y = (0.97)ᵗ, y = (1.01)12ᵗ, y = (1.2)ᵗ/10, and classify them as representing exponential growth or decay."
+    },
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSF.IF.C.9",
+     "text": "Compare properties of two functions each represented in a different way (algebraically, graphically, numerically in tables, or by verbal descriptions). For example, given a graph of one quadratic function and an algebraic expression for another, say which has the larger maximum."
+    }
+   ],
+   "sourceUrl": "https://www.thecorestandards.org/Math/Content/HSF/IF/"
+  },
+  "F-LE.A": {
+   "ccssIdentifier": "CCSS.Math.Content.HSF.LE.A",
+   "heading": "Construct and compare linear, quadratic, and exponential models and solve problems.",
+   "standards": [
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSF.LE.A.1",
+     "text": "Distinguish between situations that can be modeled with linear functions and with exponential functions."
+    },
+    {
+     "kind": "substandard",
+     "id": "CCSS.Math.Content.HSF.LE.A.1.a",
+     "text": "Prove that linear functions grow by equal differences over equal intervals, and that exponential functions grow by equal factors over equal intervals."
+    },
+    {
+     "kind": "substandard",
+     "id": "CCSS.Math.Content.HSF.LE.A.1.b",
+     "text": "Recognize situations in which one quantity changes at a constant rate per unit interval relative to another."
+    },
+    {
+     "kind": "substandard",
+     "id": "CCSS.Math.Content.HSF.LE.A.1.c",
+     "text": "Recognize situations in which a quantity grows or decays by a constant percent rate per unit interval relative to another."
+    },
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSF.LE.A.2",
+     "text": "Construct linear and exponential functions, including arithmetic and geometric sequences, given a graph, a description of a relationship, or two input-output pairs (include reading these from a table)."
+    },
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSF.LE.A.3",
+     "text": "Observe using graphs and tables that a quantity increasing exponentially eventually exceeds a quantity increasing linearly, quadratically, or (more generally) as a polynomial function."
+    },
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSF.LE.A.4",
+     "text": "For exponential models, express as a logarithm the solution to abct = d where a, c, and d are numbers and the base b is 2, 10, or e; evaluate the logarithm using technology."
+    }
+   ],
+   "sourceUrl": "https://www.thecorestandards.org/Math/Content/HSF/LE/"
+  },
+  "F-LE.B": {
+   "ccssIdentifier": "CCSS.Math.Content.HSF.LE.B",
+   "heading": "Interpret expressions for functions in terms of the situation they model.",
+   "standards": [
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSF.LE.B.5",
+     "text": "Interpret the parameters in a linear or exponential function in terms of a context."
+    }
+   ],
+   "sourceUrl": "https://www.thecorestandards.org/Math/Content/HSF/LE/"
+  },
+  "F-TF.A": {
+   "ccssIdentifier": "CCSS.Math.Content.HSF.TF.A",
+   "heading": "Extend the domain of trigonometric functions using the unit circle.",
+   "standards": [
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSF.TF.A.1",
+     "text": "Understand radian measure of an angle as the length of the arc on the unit circle subtended by the angle."
+    },
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSF.TF.A.2",
+     "text": "Explain how the unit circle in the coordinate plane enables the extension of trigonometric functions to all real numbers, interpreted as radian measures of angles traversed counterclockwise around the unit circle."
+    },
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSF.TF.A.3",
+     "text": "(+) Use special triangles to determine geometrically the values of sine, cosine, tangent for π/3, π/4 and π/6, and use the unit circle to express the values of sine, cosine, and tangent for x, π + x, and 2π - x in terms of their values for x, where x is any real number."
+    },
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSF.TF.A.4",
+     "text": "(+) Use the unit circle to explain symmetry (odd and even) and periodicity of trigonometric functions."
+    }
+   ],
+   "sourceUrl": "https://www.thecorestandards.org/Math/Content/HSF/TF/"
+  },
+  "F-TF.C": {
+   "ccssIdentifier": "CCSS.Math.Content.HSF.TF.C",
+   "heading": "Prove and apply trigonometric identities.",
+   "standards": [
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSF.TF.C.8",
+     "text": "Prove the Pythagorean identity sin2(θ) + cos2(θ) = 1 and use it to find sin(θ), cos(θ), or tan(θ) given sin(θ), cos(θ), or tan(θ) and the quadrant of the angle."
+    },
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSF.TF.C.9",
+     "text": "(+) Prove the addition and subtraction formulas for sine, cosine, and tangent and use them to solve problems."
+    }
+   ],
+   "sourceUrl": "https://www.thecorestandards.org/Math/Content/HSF/TF/"
+  },
+  "G-GPE.A": {
+   "ccssIdentifier": "CCSS.Math.Content.HSG.GPE.A",
+   "heading": "Translate between the geometric description and the equation for a conic section",
+   "standards": [
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSG.GPE.A.1",
+     "text": "Derive the equation of a circle of given center and radius using the Pythagorean Theorem; complete the square to find the center and radius of a circle given by an equation."
+    },
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSG.GPE.A.2",
+     "text": "Derive the equation of a parabola given a focus and directrix."
+    },
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSG.GPE.A.3",
+     "text": "(+) Derive the equations of ellipses and hyperbolas given the foci, using the fact that the sum or difference of distances from the foci is constant."
+    }
+   ],
+   "sourceUrl": "https://www.thecorestandards.org/Math/Content/HSG/GPE/"
+  },
+  "N-CN.A": {
+   "ccssIdentifier": "CCSS.Math.Content.HSN.CN.A",
+   "heading": "Perform arithmetic operations with complex numbers.",
+   "standards": [
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSN.CN.A.1",
+     "text": "Know there is a complex number i such that i2 = -1, and every complex number has the form a + bi with a and b real."
+    },
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSN.CN.A.2",
+     "text": "Use the relation i2 = -1 and the commutative, associative, and distributive properties to add, subtract, and multiply complex numbers."
+    },
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSN.CN.A.3",
+     "text": "(+) Find the conjugate of a complex number; use conjugates to find moduli and quotients of complex numbers."
+    }
+   ],
+   "sourceUrl": "https://www.thecorestandards.org/Math/Content/HSN/CN/"
+  },
+  "N-CN.C": {
+   "ccssIdentifier": "CCSS.Math.Content.HSN.CN.C",
+   "heading": "Use complex numbers in polynomial identities and equations.",
+   "standards": [
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSN.CN.C.7",
+     "text": "Solve quadratic equations with real coefficients that have complex solutions."
+    },
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSN.CN.C.8",
+     "text": "(+) Extend polynomial identities to the complex numbers. For example, rewrite x2 + 4 as (x + 2i)(x - 2i)."
+    },
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSN.CN.C.9",
+     "text": "(+) Know the Fundamental Theorem of Algebra; show that it is true for quadratic polynomials."
+    }
+   ],
+   "sourceUrl": "https://www.thecorestandards.org/Math/Content/HSN/CN/"
+  },
+  "N-Q.A": {
+   "ccssIdentifier": "CCSS.Math.Content.HSN.Q.A",
+   "heading": "Reason quantitatively and use units to solve problems.",
+   "standards": [
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSN.Q.A.1",
+     "text": "Use units as a way to understand problems and to guide the solution of multi-step problems; choose and interpret units consistently in formulas; choose and interpret the scale and the origin in graphs and data displays."
+    },
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSN.Q.A.2",
+     "text": "Define appropriate quantities for the purpose of descriptive modeling."
+    },
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSN.Q.A.3",
+     "text": "Choose a level of accuracy appropriate to limitations on measurement when reporting quantities."
+    }
+   ],
+   "sourceUrl": "https://www.thecorestandards.org/Math/Content/HSN/Q/"
+  },
+  "N-RN.A": {
+   "ccssIdentifier": "CCSS.Math.Content.HSN.RN.A",
+   "heading": "Extend the properties of exponents to rational exponents.",
+   "standards": [
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSN.RN.A.1",
+     "text": "Explain how the definition of the meaning of rational exponents follows from extending the properties of integer exponents to those values, allowing for a notation for radicals in terms of rational exponents. For example, we define 51/3 to be the cube root of 5 because we want (51/3)3 = 5(1/3)3 to hold, so (51/3)3 must equal 5."
+    },
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSN.RN.A.2",
+     "text": "Rewrite expressions involving radicals and rational exponents using the properties of exponents."
+    }
+   ],
+   "sourceUrl": "https://www.thecorestandards.org/Math/Content/HSN/RN/"
+  },
+  "N-RN.B": {
+   "ccssIdentifier": "CCSS.Math.Content.HSN.RN.B",
+   "heading": "Use properties of rational and irrational numbers.",
+   "standards": [
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSN.RN.B.3",
+     "text": "Explain why the sum or product of two rational numbers is rational; that the sum of a rational number and an irrational number is irrational; and that the product of a nonzero rational number and an irrational number is irrational."
+    }
+   ],
+   "sourceUrl": "https://www.thecorestandards.org/Math/Content/HSN/RN/"
+  },
+  "S-CP.A": {
+   "ccssIdentifier": "CCSS.Math.Content.HSS.CP.A",
+   "heading": "Understand independence and conditional probability and use them to interpret data",
+   "standards": [
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSS.CP.A.1",
+     "text": "Describe events as subsets of a sample space (the set of outcomes) using characteristics (or categories) of the outcomes, or as unions, intersections, or complements of other events (\"or,\" \"and,\" \"not\")."
+    },
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSS.CP.A.2",
+     "text": "Understand that two events A and B are independent if the probability of A and B occurring together is the product of their probabilities, and use this characterization to determine if they are independent."
+    },
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSS.CP.A.3",
+     "text": "Understand the conditional probability of A given B as P(A and B)/P(B), and interpret independence of A and B as saying that the conditional probability of A given B is the same as the probability of A, and the conditional probability of B given A is the same as the probability of B."
+    },
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSS.CP.A.4",
+     "text": "Construct and interpret two-way frequency tables of data when two categories are associated with each object being classified. Use the two-way table as a sample space to decide if events are independent and to approximate conditional probabilities. For example, collect data from a random sample of students in your school on their favorite subject among math, science, and English. Estimate the probability that a randomly selected student from your school will favor science given that the student is in tenth grade. Do the same for other subjects and compare the results."
+    },
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSS.CP.A.5",
+     "text": "Recognize and explain the concepts of conditional probability and independence in everyday language and everyday situations. For example, compare the chance of having lung cancer if you are a smoker with the chance of being a smoker if you have lung cancer."
+    }
+   ],
+   "sourceUrl": "https://www.thecorestandards.org/Math/Content/HSS/CP/"
+  },
+  "S-CP.B": {
+   "ccssIdentifier": "CCSS.Math.Content.HSS.CP.B",
+   "heading": "Use the rules of probability to compute probabilities of compound events.",
+   "standards": [
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSS.CP.B.6",
+     "text": "Find the conditional probability of A given B as the fraction of B's outcomes that also belong to A, and interpret the answer in terms of the model."
+    },
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSS.CP.B.7",
+     "text": "Apply the Addition Rule, P(A or B) = P(A) + P(B) - P(A and B), and interpret the answer in terms of the model."
+    },
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSS.CP.B.8",
+     "text": "(+) Apply the general Multiplication Rule in a uniform probability model, P(A and B) = P(A)P(B|A) = P(B)P(A|B), and interpret the answer in terms of the model."
+    },
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSS.CP.B.9",
+     "text": "(+) Use permutations and combinations to compute probabilities of compound events and solve problems."
+    }
+   ],
+   "sourceUrl": "https://www.thecorestandards.org/Math/Content/HSS/CP/"
+  },
+  "S-IC.A": {
+   "ccssIdentifier": "CCSS.Math.Content.HSS.IC.A",
+   "heading": "Understand and evaluate random processes underlying statistical experiments",
+   "standards": [
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSS.IC.A.1",
+     "text": "Understand statistics as a process for making inferences about population parameters based on a random sample from that population."
+    },
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSS.IC.A.2",
+     "text": "Decide if a specified model is consistent with results from a given data-generating process, e.g., using simulation. For example, a model says a spinning coin falls heads up with probability 0.5. Would a result of 5 tails in a row cause you to question the model?"
+    }
+   ],
+   "sourceUrl": "https://www.thecorestandards.org/Math/Content/HSS/IC/"
+  },
+  "S-IC.B": {
+   "ccssIdentifier": "CCSS.Math.Content.HSS.IC.B",
+   "heading": "Make inferences and justify conclusions from sample surveys, experiments, and observational studies",
+   "standards": [
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSS.IC.B.3",
+     "text": "Recognize the purposes of and differences among sample surveys, experiments, and observational studies; explain how randomization relates to each."
+    },
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSS.IC.B.4",
+     "text": "Use data from a sample survey to estimate a population mean or proportion; develop a margin of error through the use of simulation models for random sampling."
+    },
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSS.IC.B.5",
+     "text": "Use data from a randomized experiment to compare two treatments; use simulations to decide if differences between parameters are significant."
+    },
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSS.IC.B.6",
+     "text": "Evaluate reports based on data."
+    }
+   ],
+   "sourceUrl": "https://www.thecorestandards.org/Math/Content/HSS/IC/"
+  },
+  "S-ID.A": {
+   "ccssIdentifier": "CCSS.Math.Content.HSS.ID.A",
+   "heading": "Summarize, represent, and interpret data on a single count or measurement variable",
+   "standards": [
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSS.ID.A.1",
+     "text": "Represent data with plots on the real number line (dot plots, histograms, and box plots)."
+    },
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSS.ID.A.2",
+     "text": "Use statistics appropriate to the shape of the data distribution to compare center (median, mean) and spread (interquartile range, standard deviation) of two or more different data sets."
+    },
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSS.ID.A.3",
+     "text": "Interpret differences in shape, center, and spread in the context of the data sets, accounting for possible effects of extreme data points (outliers)."
+    },
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSS.ID.A.4",
+     "text": "Use the mean and standard deviation of a data set to fit it to a normal distribution and to estimate population percentages. Recognize that there are data sets for which such a procedure is not appropriate. Use calculators, spreadsheets, and tables to estimate areas under the normal curve."
+    }
+   ],
+   "sourceUrl": "https://www.thecorestandards.org/Math/Content/HSS/ID/"
+  },
+  "S-ID.B": {
+   "ccssIdentifier": "CCSS.Math.Content.HSS.ID.B",
+   "heading": "Summarize, represent, and interpret data on two categorical and quantitative variables",
+   "standards": [
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSS.ID.B.5",
+     "text": "Summarize categorical data for two categories in two-way frequency tables. Interpret relative frequencies in the context of the data (including joint, marginal, and conditional relative frequencies). Recognize possible associations and trends in the data."
+    },
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSS.ID.B.6",
+     "text": "Represent data on two quantitative variables on a scatter plot, and describe how the variables are related."
+    },
+    {
+     "kind": "substandard",
+     "id": "CCSS.Math.Content.HSS.ID.B.6.a",
+     "text": "Fit a function to the data; use functions fitted to data to solve problems in the context of the data. Use given functions or choose a function suggested by the context. Emphasize linear, quadratic, and exponential models."
+    },
+    {
+     "kind": "substandard",
+     "id": "CCSS.Math.Content.HSS.ID.B.6.b",
+     "text": "Informally assess the fit of a function by plotting and analyzing residuals."
+    },
+    {
+     "kind": "substandard",
+     "id": "CCSS.Math.Content.HSS.ID.B.6.c",
+     "text": "Fit a linear function for a scatter plot that suggests a linear association."
+    }
+   ],
+   "sourceUrl": "https://www.thecorestandards.org/Math/Content/HSS/ID/"
+  },
+  "S-ID.C": {
+   "ccssIdentifier": "CCSS.Math.Content.HSS.ID.C",
+   "heading": "Interpret linear models",
+   "standards": [
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSS.ID.C.7",
+     "text": "Interpret the slope (rate of change) and the intercept (constant term) of a linear model in the context of the data."
+    },
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSS.ID.C.8",
+     "text": "Compute (using technology) and interpret the correlation coefficient of a linear fit."
+    },
+    {
+     "kind": "standard",
+     "id": "CCSS.Math.Content.HSS.ID.C.9",
+     "text": "Distinguish between correlation and causation."
+    }
+   ],
+   "sourceUrl": "https://www.thecorestandards.org/Math/Content/HSS/ID/"
+  }
+ },
+ "domainPages": {
+  "HSA.APR": {
+   "url": "https://www.thecorestandards.org/Math/Content/HSA/APR/",
+   "sha256": "a7fad45d978609fb088414a49750c6869f7b6d1e678633aaf2b4a9e2361b7d01"
+  },
+  "HSA.CED": {
+   "url": "https://www.thecorestandards.org/Math/Content/HSA/CED/",
+   "sha256": "ae4dc70b37e17fef0ef06ebc7bfa24464b909c60ab60e7edab6fa23c3d7dc966"
+  },
+  "HSA.REI": {
+   "url": "https://www.thecorestandards.org/Math/Content/HSA/REI/",
+   "sha256": "f1dc447ed7c706b9dd7ede374fad91aaf710da17dea5c4a38c3a6e876cb7f726"
+  },
+  "HSA.SSE": {
+   "url": "https://www.thecorestandards.org/Math/Content/HSA/SSE/",
+   "sha256": "27ab03fa5ad439f9afecb49be91b44c8c8b6130e520f8e7e7370a917496b0c50"
+  },
+  "HSF.BF": {
+   "url": "https://www.thecorestandards.org/Math/Content/HSF/BF/",
+   "sha256": "3c8ff80166e24b8e6408f4fdd16b2582c686add600d6f2f71446def2c81504b4"
+  },
+  "HSF.IF": {
+   "url": "https://www.thecorestandards.org/Math/Content/HSF/IF/",
+   "sha256": "3e89acfd609f53298ae3ebbd78060acd6184c772525df7479d8946c9c92a5f77"
+  },
+  "HSF.LE": {
+   "url": "https://www.thecorestandards.org/Math/Content/HSF/LE/",
+   "sha256": "d477ecbb23ac12ab82b953e8b0689b6de0a5044e6357b39107318fd334a5ed9f"
+  },
+  "HSF.TF": {
+   "url": "https://www.thecorestandards.org/Math/Content/HSF/TF/",
+   "sha256": "b295c90025095e103a9f71d67dfdbe58e59d28c8dc389a6beb6d019ec96eda01"
+  },
+  "HSG.GPE": {
+   "url": "https://www.thecorestandards.org/Math/Content/HSG/GPE/",
+   "sha256": "6ac9cf51431fb7b6260de1af3d5c0149517dae4bf6ef29a0c973153604dfd186"
+  },
+  "HSN.CN": {
+   "url": "https://www.thecorestandards.org/Math/Content/HSN/CN/",
+   "sha256": "2dfd2aa906693e052c65673236ac3c84895b7d29b616170c6f1b97dfb4ae37f3"
+  },
+  "HSN.Q": {
+   "url": "https://www.thecorestandards.org/Math/Content/HSN/Q/",
+   "sha256": "b4a8281d22432427d9fc67568e565ba3f3ef0495245fc03b4594f04029715589"
+  },
+  "HSN.RN": {
+   "url": "https://www.thecorestandards.org/Math/Content/HSN/RN/",
+   "sha256": "cdbd35b0f519e165cf3d253858095713ddb3967f1c6ce65c3c38e2eeb9fd517f"
+  },
+  "HSS.CP": {
+   "url": "https://www.thecorestandards.org/Math/Content/HSS/CP/",
+   "sha256": "0c7ddcc08f52dc0582f9d442665d6b5b5161bf4d51f931751ac205b46e6e6753"
+  },
+  "HSS.IC": {
+   "url": "https://www.thecorestandards.org/Math/Content/HSS/IC/",
+   "sha256": "85c0cc446528febcc1d074fcdbb8149275dc64d5bc72a074b68d2130a6031ddf"
+  },
+  "HSS.ID": {
+   "url": "https://www.thecorestandards.org/Math/Content/HSS/ID/",
+   "sha256": "f46b77303e1817ca3c801e147988730337189aecac8dd868a1d769d087a99c11"
+  }
+ }
+}

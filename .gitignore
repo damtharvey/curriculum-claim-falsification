@@ -74,3 +74,6 @@ paper/*.toc
 paper/*.fls
 paper/*.fdb_latexmk
 paper/*.synctex.gz
+
+# CCSS domain-page HTML cache (refetch with scripts/fetch_ccss_cluster_text.py)
+exports/standards-split/ccss-html/
