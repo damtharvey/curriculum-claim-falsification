@@ -1,0 +1,3538 @@
+{
+  "universe": {
+    "cell": "nyregents::algebra-i",
+    "n": 358,
+    "source": "exports/addendum-gpu/masked-stem-algebra-primary-item-ids.json"
+  },
+  "coders": {
+    "glm": {
+      "path": "exports/item-demand-coding/coder-glm/codes.jsonl",
+      "code_counts": {
+        "execution": 212,
+        "recognition_or_interpretation": 116,
+        "mixed": 28,
+        "unreadable": 2
+      },
+      "confidence_counts": {
+        "high": 285,
+        "medium": 70,
+        "low": 3
+      }
+    },
+    "kimi": {
+      "path": "exports/item-demand-coding/coder-kimi/codes.jsonl",
+      "code_counts": {
+        "mixed": 15,
+        "execution": 249,
+        "recognition_or_interpretation": 94
+      },
+      "confidence_counts": {
+        "medium": 52,
+        "high": 290,
+        "low": 16
+      }
+    }
+  },
+  "cluster_class_counts": {
+    "execution": 164,
+    "recognition_or_interpretation": 151,
+    "mixed": 43
+  },
+  "agreement": {
+    "glm_vs_kimi": {
+      "n": 356,
+      "agree": 281,
+      "observed": 0.7893258426966292,
+      "expected": 0.5032824138366367,
+      "kappa": 0.5758673274876096,
+      "confusion_rows_glm_cols_kimi": {
+        "execution": {
+          "execution": 195,
+          "recognition_or_interpretation": 8,
+          "mixed": 9
+        },
+        "recognition_or_interpretation": {
+          "execution": 32,
+          "recognition_or_interpretation": 82,
+          "mixed": 2
+        },
+        "mixed": {
+          "execution": 21,
+          "recognition_or_interpretation": 3,
+          "mixed": 4
+        }
+      },
+      "dropped_unreadable": 2
+    },
+    "glm_vs_cluster": {
+      "n": 356,
+      "agree": 164,
+      "observed": 0.4606741573033708,
+      "expected": 0.4194546143163742,
+      "kappa": 0.07100141350440362,
+      "confusion_rows_glm_cols_cluster": {
+        "execution": {
+          "execution": 105,
+          "recognition_or_interpretation": 86,
+          "mixed": 21
+        },
+        "recognition_or_interpretation": {
+          "execution": 41,
+          "recognition_or_interpretation": 56,
+          "mixed": 19
+        },
+        "mixed": {
+          "execution": 17,
+          "recognition_or_interpretation": 8,
+          "mixed": 3
+        }
+      },
+      "dropped_unreadable": 2
+    },
+    "kimi_vs_cluster": {
+      "n": 358,
+      "agree": 202,
+      "observed": 0.5642458100558659,
+      "expected": 0.4344043569176992,
+      "kappa": 0.22956586516574934,
+      "confusion_rows_kimi_cols_cluster": {
+        "execution": {
+          "execution": 140,
+          "recognition_or_interpretation": 86,
+          "mixed": 23
+        },
+        "recognition_or_interpretation": {
+          "execution": 18,
+          "recognition_or_interpretation": 59,
+          "mixed": 17
+        },
+        "mixed": {
+          "execution": 6,
+          "recognition_or_interpretation": 6,
+          "mixed": 3
+        }
+      },
+      "dropped_unreadable": 0
+    },
+    "glm_vs_kimi_execution_binary": {
+      "n": 356,
+      "agree": 286,
+      "observed": 0.8033707865168539,
+      "expected": 0.5375583890922864,
+      "kappa": 0.5748020748020747
+    }
+  },
+  "subsets": {
+    "execution_either": {
+      "n": 266,
+      "cluster_mix": {
+        "execution": 148,
+        "recognition_or_interpretation": 93,
+        "mixed": 25
+      },
+      "ids": [
+        "nyregents-algebra-i-2023-jun-q3",
+        "nyregents-algebra-i-2023-jun-q4",
+        "nyregents-algebra-i-2023-jun-q5",
+        "nyregents-algebra-i-2023-jun-q6",
+        "nyregents-algebra-i-2023-jun-q11",
+        "nyregents-algebra-i-2023-jun-q12",
+        "nyregents-algebra-i-2023-jun-q14",
+        "nyregents-algebra-i-2024-jan-q6",
+        "nyregents-algebra-i-2024-jan-q8",
+        "nyregents-algebra-i-2024-jan-q10",
+        "nyregents-algebra-i-2024-jan-q15",
+        "nyregents-algebra-i-2024-jan-q18",
+        "nyregents-algebra-i-2024-jan-q19",
+        "nyregents-algebra-i-2024-jan-q21",
+        "nyregents-algebra-i-2024-jan-q23",
+        "nyregents-algebra-i-2023-jan-q11",
+        "nyregents-algebra-i-2023-jan-q14",
+        "nyregents-algebra-i-2023-jan-q21",
+        "nyregents-algebra-i-2023-jan-q22",
+        "nyregents-algebra-i-2015-jun-q3",
+        "nyregents-algebra-i-2015-jun-q6",
+        "nyregents-algebra-i-2015-jun-q10",
+        "nyregents-algebra-i-2015-jun-q11",
+        "nyregents-algebra-i-2015-jun-q21",
+        "nyregents-algebra-i-2015-jun-q23",
+        "nyregents-algebra-i-2026-jan-q9",
+        "nyregents-algebra-i-2026-jan-q10",
+        "nyregents-algebra-i-2026-jan-q16",
+        "nyregents-algebra-i-2026-jan-q17",
+        "nyregents-algebra-i-2026-jan-q20",
+        "nyregents-algebra-i-2026-jan-q22",
+        "nyregents-algebra-i-2026-jan-q23",
+        "nyregents-algebra-i-2017-aug-q4",
+        "nyregents-algebra-i-2017-aug-q14",
+        "nyregents-algebra-i-2017-aug-q19",
+        "nyregents-algebra-i-2017-aug-q23",
+        "nyregents-algebra-i-2014-jun-q12",
+        "nyregents-algebra-i-2014-jun-q14",
+        "nyregents-algebra-i-2014-jun-q16",
+        "nyregents-algebra-i-2014-jun-q22",
+        "nyregents-algebra-i-2024-jun-q1",
+        "nyregents-algebra-i-2024-jun-q2",
+        "nyregents-algebra-i-2024-jun-q4",
+        "nyregents-algebra-i-2024-jun-q9",
+        "nyregents-algebra-i-2024-jun-q11",
+        "nyregents-algebra-i-2024-jun-q13",
+        "nyregents-algebra-i-2024-jun-q15",
+        "nyregents-algebra-i-2024-jun-q16",
+        "nyregents-algebra-i-2024-jun-q20",
+        "nyregents-algebra-i-2018-jun-q1",
+        "nyregents-algebra-i-2018-jun-q2",
+        "nyregents-algebra-i-2018-jun-q3",
+        "nyregents-algebra-i-2018-jun-q6",
+        "nyregents-algebra-i-2018-jun-q7",
+        "nyregents-algebra-i-2018-jun-q9",
+        "nyregents-algebra-i-2018-jun-q10",
+        "nyregents-algebra-i-2018-jun-q22",
+        "nyregents-algebra-i-2018-jun-q23",
+        "nyregents-algebra-i-2020-jan-q1",
+        "nyregents-algebra-i-2020-jan-q2",
+        "nyregents-algebra-i-2020-jan-q3",
+        "nyregents-algebra-i-2020-jan-q6",
+        "nyregents-algebra-i-2020-jan-q8",
+        "nyregents-algebra-i-2020-jan-q9",
+        "nyregents-algebra-i-2020-jan-q12",
+        "nyregents-algebra-i-2020-jan-q15",
+        "nyregents-algebra-i-2020-jan-q16",
+        "nyregents-algebra-i-2020-jan-q19",
+        "nyregents-algebra-i-2020-jan-q20",
+        "nyregents-algebra-i-2020-jan-q23",
+        "nyregents-algebra-i-2022-aug-q10",
+        "nyregents-algebra-i-2022-aug-q15",
+        "nyregents-algebra-i-2022-aug-q17",
+        "nyregents-algebra-i-2022-aug-q18",
+        "nyregents-algebra-i-2022-aug-q23",
+        "nyregents-algebra-i-2025-jan-q1",
+        "nyregents-algebra-i-2025-jan-q2",
+        "nyregents-algebra-i-2025-jan-q6",
+        "nyregents-algebra-i-2025-jan-q8",
+        "nyregents-algebra-i-2025-jan-q10",
+        "nyregents-algebra-i-2025-jan-q12",
+        "nyregents-algebra-i-2025-jan-q18",
+        "nyregents-algebra-i-2025-jan-q23",
+        "nyregents-algebra-i-2024-aug-q3",
+        "nyregents-algebra-i-2024-aug-q13",
+        "nyregents-algebra-i-2024-aug-q15",
+        "nyregents-algebra-i-2024-aug-q16",
+        "nyregents-algebra-i-2024-aug-q17",
+        "nyregents-algebra-i-2024-aug-q18",
+        "nyregents-algebra-i-2024-aug-q20",
+        "nyregents-algebra-i-2024-aug-q21",
+        "nyregents-algebra-i-2024-aug-q22",
+        "nyregents-algebra-i-2016-jun-q1",
+        "nyregents-algebra-i-2016-jun-q7",
+        "nyregents-algebra-i-2016-jun-q10",
+        "nyregents-algebra-i-2016-jun-q11",
+        "nyregents-algebra-i-2016-jun-q12",
+        "nyregents-algebra-i-2016-jun-q13",
+        "nyregents-algebra-i-2016-jun-q15",
+        "nyregents-algebra-i-2016-jun-q16",
+        "nyregents-algebra-i-2016-jun-q18",
+        "nyregents-algebra-i-2016-jun-q19",
+        "nyregents-algebra-i-2016-jun-q21",
+        "nyregents-algebra-i-2016-jun-q22",
+        "nyregents-algebra-i-2022-jun-q2",
+        "nyregents-algebra-i-2022-jun-q3",
+        "nyregents-algebra-i-2022-jun-q4",
+        "nyregents-algebra-i-2022-jun-q12",
+        "nyregents-algebra-i-2022-jun-q14",
+        "nyregents-algebra-i-2018-jan-q7",
+        "nyregents-algebra-i-2018-jan-q9",
+        "nyregents-algebra-i-2018-jan-q10",
+        "nyregents-algebra-i-2018-jan-q13",
+        "nyregents-algebra-i-2018-jan-q14",
+        "nyregents-algebra-i-2018-jan-q17",
+        "nyregents-algebra-i-2018-jan-q21",
+        "nyregents-algebra-i-2018-jan-q22",
+        "nyregents-algebra-i-2019-jun-q1",
+        "nyregents-algebra-i-2019-jun-q2",
+        "nyregents-algebra-i-2019-jun-q10",
+        "nyregents-algebra-i-2019-jun-q12",
+        "nyregents-algebra-i-2019-jun-q14",
+        "nyregents-algebra-i-2019-jun-q16",
+        "nyregents-algebra-i-2019-jun-q17",
+        "nyregents-algebra-i-2019-jun-q18",
+        "nyregents-algebra-i-2019-jun-q21",
+        "nyregents-algebra-i-2019-jun-q22",
+        "nyregents-algebra-i-2019-jan-q4",
+        "nyregents-algebra-i-2019-jan-q5",
+        "nyregents-algebra-i-2019-jan-q6",
+        "nyregents-algebra-i-2019-jan-q8",
+        "nyregents-algebra-i-2019-jan-q11",
+        "nyregents-algebra-i-2019-jan-q12",
+        "nyregents-algebra-i-2019-jan-q14",
+        "nyregents-algebra-i-2019-jan-q15",
+        "nyregents-algebra-i-2019-jan-q18",
+        "nyregents-algebra-i-2019-jan-q20",
+        "nyregents-algebra-i-2019-jan-q21",
+        "nyregents-algebra-i-2019-jan-q23",
+        "nyregents-algebra-i-2017-jun-q5",
+        "nyregents-algebra-i-2017-jun-q6",
+        "nyregents-algebra-i-2017-jun-q8",
+        "nyregents-algebra-i-2017-jun-q11",
+        "nyregents-algebra-i-2017-jun-q12",
+        "nyregents-algebra-i-2017-jun-q13",
+        "nyregents-algebra-i-2017-jun-q17",
+        "nyregents-algebra-i-2017-jun-q23",
+        "nyregents-algebra-i-2016-aug-q4",
+        "nyregents-algebra-i-2016-aug-q7",
+        "nyregents-algebra-i-2016-aug-q8",
+        "nyregents-algebra-i-2016-aug-q10",
+        "nyregents-algebra-i-2016-aug-q12",
+        "nyregents-algebra-i-2016-aug-q13",
+        "nyregents-algebra-i-2016-aug-q21",
+        "nyregents-algebra-i-2019-aug-q1",
+        "nyregents-algebra-i-2019-aug-q3",
+        "nyregents-algebra-i-2019-aug-q6",
+        "nyregents-algebra-i-2019-aug-q8",
+        "nyregents-algebra-i-2019-aug-q11",
+        "nyregents-algebra-i-2019-aug-q12",
+        "nyregents-algebra-i-2019-aug-q17",
+        "nyregents-algebra-i-2019-aug-q20",
+        "nyregents-algebra-i-2019-aug-q22",
+        "nyregents-algebra-i-2019-aug-q23",
+        "nyregents-algebra-i-2023-aug-q2",
+        "nyregents-algebra-i-2023-aug-q6",
+        "nyregents-algebra-i-2023-aug-q8",
+        "nyregents-algebra-i-2023-aug-q11",
+        "nyregents-algebra-i-2023-aug-q13",
+        "nyregents-algebra-i-2023-aug-q18",
+        "nyregents-algebra-i-2023-aug-q20",
+        "nyregents-algebra-i-2023-aug-q21",
+        "nyregents-algebra-i-2017-jan-q1",
+        "nyregents-algebra-i-2017-jan-q5",
+        "nyregents-algebra-i-2017-jan-q7",
+        "nyregents-algebra-i-2017-jan-q8",
+        "nyregents-algebra-i-2017-jan-q15",
+        "nyregents-algebra-i-2018-aug-q1",
+        "nyregents-algebra-i-2018-aug-q3",
+        "nyregents-algebra-i-2018-aug-q4",
+        "nyregents-algebra-i-2018-aug-q6",
+        "nyregents-algebra-i-2018-aug-q7",
+        "nyregents-algebra-i-2018-aug-q10",
+        "nyregents-algebra-i-2018-aug-q13",
+        "nyregents-algebra-i-2018-aug-q16",
+        "nyregents-algebra-i-2018-aug-q18",
+        "nyregents-algebra-i-2018-aug-q22",
+        "nyregents-algebra-i-2015-aug-q9",
+        "nyregents-algebra-i-2015-aug-q10",
+        "nyregents-algebra-i-2015-aug-q18",
+        "nyregents-algebra-i-2015-aug-q19",
+        "nyregents-algebra-i-2015-aug-q20",
+        "nyregents-algebra-i-2015-aug-q21",
+        "nyregents-algebra-i-2015-aug-q23",
+        "nyregents-algebra-i-2014-aug-q4",
+        "nyregents-algebra-i-2014-aug-q6",
+        "nyregents-algebra-i-2014-aug-q8",
+        "nyregents-algebra-i-2014-aug-q9",
+        "nyregents-algebra-i-2014-aug-q14",
+        "nyregents-algebra-i-2014-aug-q15",
+        "nyregents-algebra-i-2014-aug-q19",
+        "nyregents-algebra-i-2026-jun-q1",
+        "nyregents-algebra-i-2026-jun-q2",
+        "nyregents-algebra-i-2026-jun-q3",
+        "nyregents-algebra-i-2026-jun-q5",
+        "nyregents-algebra-i-2026-jun-q7",
+        "nyregents-algebra-i-2026-jun-q9",
+        "nyregents-algebra-i-2026-jun-q13",
+        "nyregents-algebra-i-2026-jun-q14",
+        "nyregents-algebra-i-2026-jun-q15",
+        "nyregents-algebra-i-2026-jun-q18",
+        "nyregents-algebra-i-2026-jun-q19",
+        "nyregents-algebra-i-2026-jun-q21",
+        "nyregents-algebra-i-2025-aug-q2",
+        "nyregents-algebra-i-2025-aug-q3",
+        "nyregents-algebra-i-2025-aug-q4",
+        "nyregents-algebra-i-2025-aug-q6",
+        "nyregents-algebra-i-2025-aug-q10",
+        "nyregents-algebra-i-2025-aug-q12",
+        "nyregents-algebra-i-2025-aug-q19",
+        "nyregents-algebra-i-2025-aug-q20",
+        "nyregents-algebra-i-2025-aug-q21",
+        "nyregents-algebra-i-2025-aug-q23",
+        "nyregents-algebra-i-2015-jan-q3",
+        "nyregents-algebra-i-2015-jan-q4",
+        "nyregents-algebra-i-2015-jan-q8",
+        "nyregents-algebra-i-2015-jan-q10",
+        "nyregents-algebra-i-2015-jan-q11",
+        "nyregents-algebra-i-2015-jan-q13",
+        "nyregents-algebra-i-2015-jan-q17",
+        "nyregents-algebra-i-2015-jan-q21",
+        "nyregents-algebra-i-2015-jan-q23",
+        "nyregents-algebra-i-2026-aug-q2",
+        "nyregents-algebra-i-2026-aug-q3",
+        "nyregents-algebra-i-2026-aug-q5",
+        "nyregents-algebra-i-2026-aug-q6",
+        "nyregents-algebra-i-2026-aug-q8",
+        "nyregents-algebra-i-2026-aug-q11",
+        "nyregents-algebra-i-2026-aug-q16",
+        "nyregents-algebra-i-2026-aug-q17",
+        "nyregents-algebra-i-2026-aug-q22",
+        "nyregents-algebra-i-2026-aug-q23",
+        "nyregents-algebra-i-2025-jun-q4",
+        "nyregents-algebra-i-2025-jun-q7",
+        "nyregents-algebra-i-2025-jun-q11",
+        "nyregents-algebra-i-2025-jun-q15",
+        "nyregents-algebra-i-2025-jun-q21",
+        "nyregents-algebra-i-unknown-unk-q1",
+        "nyregents-algebra-i-unknown-unk-q2",
+        "nyregents-algebra-i-unknown-unk-q3",
+        "nyregents-algebra-i-unknown-unk-q5",
+        "nyregents-algebra-i-unknown-unk-q6",
+        "nyregents-algebra-i-unknown-unk-q8",
+        "nyregents-algebra-i-unknown-unk-q9",
+        "nyregents-algebra-i-unknown-unk-q10",
+        "nyregents-algebra-i-unknown-unk-q14",
+        "nyregents-algebra-i-unknown-unk-q23",
+        "nyregents-algebra-i-unknown-unk-q24",
+        "nyregents-algebra-i-2016-jan-q3",
+        "nyregents-algebra-i-2016-jan-q7",
+        "nyregents-algebra-i-2016-jan-q9",
+        "nyregents-algebra-i-2016-jan-q11",
+        "nyregents-algebra-i-2016-jan-q12",
+        "nyregents-algebra-i-2016-jan-q14",
+        "nyregents-algebra-i-2016-jan-q18",
+        "nyregents-algebra-i-2016-jan-q21"
+      ]
+    },
+    "execution_both": {
+      "n": 195,
+      "cluster_mix": {
+        "execution": 97,
+        "recognition_or_interpretation": 79,
+        "mixed": 19
+      },
+      "ids": [
+        "nyregents-algebra-i-2023-jun-q4",
+        "nyregents-algebra-i-2023-jun-q5",
+        "nyregents-algebra-i-2023-jun-q6",
+        "nyregents-algebra-i-2023-jun-q11",
+        "nyregents-algebra-i-2024-jan-q6",
+        "nyregents-algebra-i-2024-jan-q8",
+        "nyregents-algebra-i-2024-jan-q10",
+        "nyregents-algebra-i-2024-jan-q15",
+        "nyregents-algebra-i-2024-jan-q18",
+        "nyregents-algebra-i-2024-jan-q21",
+        "nyregents-algebra-i-2023-jan-q14",
+        "nyregents-algebra-i-2023-jan-q21",
+        "nyregents-algebra-i-2015-jun-q3",
+        "nyregents-algebra-i-2015-jun-q6",
+        "nyregents-algebra-i-2015-jun-q10",
+        "nyregents-algebra-i-2015-jun-q11",
+        "nyregents-algebra-i-2015-jun-q21",
+        "nyregents-algebra-i-2015-jun-q23",
+        "nyregents-algebra-i-2026-jan-q9",
+        "nyregents-algebra-i-2026-jan-q10",
+        "nyregents-algebra-i-2026-jan-q16",
+        "nyregents-algebra-i-2026-jan-q17",
+        "nyregents-algebra-i-2026-jan-q22",
+        "nyregents-algebra-i-2026-jan-q23",
+        "nyregents-algebra-i-2017-aug-q4",
+        "nyregents-algebra-i-2017-aug-q19",
+        "nyregents-algebra-i-2014-jun-q14",
+        "nyregents-algebra-i-2024-jun-q4",
+        "nyregents-algebra-i-2024-jun-q9",
+        "nyregents-algebra-i-2024-jun-q11",
+        "nyregents-algebra-i-2024-jun-q16",
+        "nyregents-algebra-i-2018-jun-q1",
+        "nyregents-algebra-i-2018-jun-q2",
+        "nyregents-algebra-i-2018-jun-q3",
+        "nyregents-algebra-i-2018-jun-q7",
+        "nyregents-algebra-i-2018-jun-q9",
+        "nyregents-algebra-i-2018-jun-q10",
+        "nyregents-algebra-i-2018-jun-q22",
+        "nyregents-algebra-i-2018-jun-q23",
+        "nyregents-algebra-i-2020-jan-q1",
+        "nyregents-algebra-i-2020-jan-q3",
+        "nyregents-algebra-i-2020-jan-q6",
+        "nyregents-algebra-i-2020-jan-q8",
+        "nyregents-algebra-i-2020-jan-q9",
+        "nyregents-algebra-i-2020-jan-q12",
+        "nyregents-algebra-i-2020-jan-q15",
+        "nyregents-algebra-i-2020-jan-q16",
+        "nyregents-algebra-i-2020-jan-q20",
+        "nyregents-algebra-i-2020-jan-q23",
+        "nyregents-algebra-i-2022-aug-q10",
+        "nyregents-algebra-i-2022-aug-q15",
+        "nyregents-algebra-i-2022-aug-q23",
+        "nyregents-algebra-i-2025-jan-q1",
+        "nyregents-algebra-i-2025-jan-q2",
+        "nyregents-algebra-i-2025-jan-q6",
+        "nyregents-algebra-i-2025-jan-q8",
+        "nyregents-algebra-i-2025-jan-q10",
+        "nyregents-algebra-i-2024-aug-q3",
+        "nyregents-algebra-i-2024-aug-q13",
+        "nyregents-algebra-i-2024-aug-q15",
+        "nyregents-algebra-i-2024-aug-q16",
+        "nyregents-algebra-i-2024-aug-q17",
+        "nyregents-algebra-i-2024-aug-q20",
+        "nyregents-algebra-i-2016-jun-q1",
+        "nyregents-algebra-i-2016-jun-q7",
+        "nyregents-algebra-i-2016-jun-q10",
+        "nyregents-algebra-i-2016-jun-q11",
+        "nyregents-algebra-i-2016-jun-q12",
+        "nyregents-algebra-i-2016-jun-q13",
+        "nyregents-algebra-i-2016-jun-q15",
+        "nyregents-algebra-i-2016-jun-q16",
+        "nyregents-algebra-i-2016-jun-q18",
+        "nyregents-algebra-i-2016-jun-q19",
+        "nyregents-algebra-i-2016-jun-q21",
+        "nyregents-algebra-i-2016-jun-q22",
+        "nyregents-algebra-i-2022-jun-q2",
+        "nyregents-algebra-i-2022-jun-q4",
+        "nyregents-algebra-i-2022-jun-q12",
+        "nyregents-algebra-i-2022-jun-q14",
+        "nyregents-algebra-i-2018-jan-q9",
+        "nyregents-algebra-i-2018-jan-q10",
+        "nyregents-algebra-i-2018-jan-q13",
+        "nyregents-algebra-i-2018-jan-q22",
+        "nyregents-algebra-i-2019-jun-q1",
+        "nyregents-algebra-i-2019-jun-q2",
+        "nyregents-algebra-i-2019-jun-q12",
+        "nyregents-algebra-i-2019-jun-q14",
+        "nyregents-algebra-i-2019-jun-q17",
+        "nyregents-algebra-i-2019-jun-q21",
+        "nyregents-algebra-i-2019-jun-q22",
+        "nyregents-algebra-i-2019-jan-q4",
+        "nyregents-algebra-i-2019-jan-q5",
+        "nyregents-algebra-i-2019-jan-q6",
+        "nyregents-algebra-i-2019-jan-q11",
+        "nyregents-algebra-i-2019-jan-q14",
+        "nyregents-algebra-i-2019-jan-q15",
+        "nyregents-algebra-i-2019-jan-q20",
+        "nyregents-algebra-i-2019-jan-q21",
+        "nyregents-algebra-i-2019-jan-q23",
+        "nyregents-algebra-i-2017-jun-q5",
+        "nyregents-algebra-i-2017-jun-q6",
+        "nyregents-algebra-i-2017-jun-q8",
+        "nyregents-algebra-i-2017-jun-q13",
+        "nyregents-algebra-i-2017-jun-q17",
+        "nyregents-algebra-i-2017-jun-q23",
+        "nyregents-algebra-i-2016-aug-q7",
+        "nyregents-algebra-i-2016-aug-q8",
+        "nyregents-algebra-i-2016-aug-q10",
+        "nyregents-algebra-i-2016-aug-q12",
+        "nyregents-algebra-i-2016-aug-q21",
+        "nyregents-algebra-i-2019-aug-q3",
+        "nyregents-algebra-i-2019-aug-q6",
+        "nyregents-algebra-i-2019-aug-q8",
+        "nyregents-algebra-i-2019-aug-q11",
+        "nyregents-algebra-i-2019-aug-q12",
+        "nyregents-algebra-i-2019-aug-q22",
+        "nyregents-algebra-i-2019-aug-q23",
+        "nyregents-algebra-i-2023-aug-q2",
+        "nyregents-algebra-i-2023-aug-q8",
+        "nyregents-algebra-i-2023-aug-q13",
+        "nyregents-algebra-i-2023-aug-q18",
+        "nyregents-algebra-i-2023-aug-q20",
+        "nyregents-algebra-i-2023-aug-q21",
+        "nyregents-algebra-i-2017-jan-q1",
+        "nyregents-algebra-i-2017-jan-q5",
+        "nyregents-algebra-i-2017-jan-q7",
+        "nyregents-algebra-i-2017-jan-q15",
+        "nyregents-algebra-i-2018-aug-q3",
+        "nyregents-algebra-i-2018-aug-q4",
+        "nyregents-algebra-i-2018-aug-q6",
+        "nyregents-algebra-i-2018-aug-q7",
+        "nyregents-algebra-i-2018-aug-q13",
+        "nyregents-algebra-i-2018-aug-q16",
+        "nyregents-algebra-i-2018-aug-q22",
+        "nyregents-algebra-i-2015-aug-q9",
+        "nyregents-algebra-i-2015-aug-q10",
+        "nyregents-algebra-i-2015-aug-q18",
+        "nyregents-algebra-i-2015-aug-q19",
+        "nyregents-algebra-i-2015-aug-q20",
+        "nyregents-algebra-i-2015-aug-q21",
+        "nyregents-algebra-i-2015-aug-q23",
+        "nyregents-algebra-i-2014-aug-q4",
+        "nyregents-algebra-i-2014-aug-q6",
+        "nyregents-algebra-i-2014-aug-q8",
+        "nyregents-algebra-i-2014-aug-q14",
+        "nyregents-algebra-i-2014-aug-q15",
+        "nyregents-algebra-i-2026-jun-q1",
+        "nyregents-algebra-i-2026-jun-q2",
+        "nyregents-algebra-i-2026-jun-q3",
+        "nyregents-algebra-i-2026-jun-q13",
+        "nyregents-algebra-i-2026-jun-q14",
+        "nyregents-algebra-i-2026-jun-q15",
+        "nyregents-algebra-i-2026-jun-q18",
+        "nyregents-algebra-i-2026-jun-q19",
+        "nyregents-algebra-i-2026-jun-q21",
+        "nyregents-algebra-i-2025-aug-q3",
+        "nyregents-algebra-i-2025-aug-q4",
+        "nyregents-algebra-i-2025-aug-q6",
+        "nyregents-algebra-i-2025-aug-q10",
+        "nyregents-algebra-i-2025-aug-q12",
+        "nyregents-algebra-i-2025-aug-q19",
+        "nyregents-algebra-i-2025-aug-q20",
+        "nyregents-algebra-i-2025-aug-q21",
+        "nyregents-algebra-i-2025-aug-q23",
+        "nyregents-algebra-i-2015-jan-q3",
+        "nyregents-algebra-i-2015-jan-q8",
+        "nyregents-algebra-i-2015-jan-q10",
+        "nyregents-algebra-i-2015-jan-q11",
+        "nyregents-algebra-i-2015-jan-q17",
+        "nyregents-algebra-i-2015-jan-q21",
+        "nyregents-algebra-i-2026-aug-q2",
+        "nyregents-algebra-i-2026-aug-q3",
+        "nyregents-algebra-i-2026-aug-q6",
+        "nyregents-algebra-i-2026-aug-q8",
+        "nyregents-algebra-i-2026-aug-q11",
+        "nyregents-algebra-i-2026-aug-q17",
+        "nyregents-algebra-i-2026-aug-q23",
+        "nyregents-algebra-i-2025-jun-q4",
+        "nyregents-algebra-i-2025-jun-q7",
+        "nyregents-algebra-i-2025-jun-q11",
+        "nyregents-algebra-i-2025-jun-q21",
+        "nyregents-algebra-i-unknown-unk-q2",
+        "nyregents-algebra-i-unknown-unk-q3",
+        "nyregents-algebra-i-unknown-unk-q5",
+        "nyregents-algebra-i-unknown-unk-q6",
+        "nyregents-algebra-i-unknown-unk-q8",
+        "nyregents-algebra-i-unknown-unk-q10",
+        "nyregents-algebra-i-unknown-unk-q24",
+        "nyregents-algebra-i-2016-jan-q3",
+        "nyregents-algebra-i-2016-jan-q7",
+        "nyregents-algebra-i-2016-jan-q9",
+        "nyregents-algebra-i-2016-jan-q12",
+        "nyregents-algebra-i-2016-jan-q14",
+        "nyregents-algebra-i-2016-jan-q18",
+        "nyregents-algebra-i-2016-jan-q21"
+      ]
+    },
+    "recognition_both": {
+      "n": 82,
+      "cluster_mix": {
+        "recognition_or_interpretation": 51,
+        "mixed": 15,
+        "execution": 16
+      },
+      "ids": [
+        "nyregents-algebra-i-2023-jun-q8",
+        "nyregents-algebra-i-2023-jun-q20",
+        "nyregents-algebra-i-2024-jan-q3",
+        "nyregents-algebra-i-2023-jan-q6",
+        "nyregents-algebra-i-2023-jan-q8",
+        "nyregents-algebra-i-2023-jan-q10",
+        "nyregents-algebra-i-2023-jan-q16",
+        "nyregents-algebra-i-2015-jun-q1",
+        "nyregents-algebra-i-2026-jan-q12",
+        "nyregents-algebra-i-2017-aug-q1",
+        "nyregents-algebra-i-2017-aug-q9",
+        "nyregents-algebra-i-2017-aug-q10",
+        "nyregents-algebra-i-2017-aug-q17",
+        "nyregents-algebra-i-2017-aug-q22",
+        "nyregents-algebra-i-2014-jun-q1",
+        "nyregents-algebra-i-2014-jun-q7",
+        "nyregents-algebra-i-2024-jun-q7",
+        "nyregents-algebra-i-2024-jun-q21",
+        "nyregents-algebra-i-2018-jun-q5",
+        "nyregents-algebra-i-2018-jun-q11",
+        "nyregents-algebra-i-2018-jun-q16",
+        "nyregents-algebra-i-2018-jun-q19",
+        "nyregents-algebra-i-2018-jun-q21",
+        "nyregents-algebra-i-2020-jan-q11",
+        "nyregents-algebra-i-2020-jan-q14",
+        "nyregents-algebra-i-2022-aug-q11",
+        "nyregents-algebra-i-2025-jan-q5",
+        "nyregents-algebra-i-2025-jan-q13",
+        "nyregents-algebra-i-2025-jan-q14",
+        "nyregents-algebra-i-2024-aug-q5",
+        "nyregents-algebra-i-2024-aug-q6",
+        "nyregents-algebra-i-2024-aug-q11",
+        "nyregents-algebra-i-2024-aug-q12",
+        "nyregents-algebra-i-2016-jun-q2",
+        "nyregents-algebra-i-2016-jun-q4",
+        "nyregents-algebra-i-2022-jun-q18",
+        "nyregents-algebra-i-2022-jun-q20",
+        "nyregents-algebra-i-2022-jun-q21",
+        "nyregents-algebra-i-2018-jan-q1",
+        "nyregents-algebra-i-2018-jan-q5",
+        "nyregents-algebra-i-2018-jan-q19",
+        "nyregents-algebra-i-2019-jun-q4",
+        "nyregents-algebra-i-2019-jun-q5",
+        "nyregents-algebra-i-2019-jun-q23",
+        "nyregents-algebra-i-2019-jan-q10",
+        "nyregents-algebra-i-2017-jun-q21",
+        "nyregents-algebra-i-2016-aug-q2",
+        "nyregents-algebra-i-2016-aug-q9",
+        "nyregents-algebra-i-2016-aug-q18",
+        "nyregents-algebra-i-2016-aug-q20",
+        "nyregents-algebra-i-2019-aug-q5",
+        "nyregents-algebra-i-2019-aug-q9",
+        "nyregents-algebra-i-2023-aug-q7",
+        "nyregents-algebra-i-2023-aug-q12",
+        "nyregents-algebra-i-2017-jan-q2",
+        "nyregents-algebra-i-2017-jan-q3",
+        "nyregents-algebra-i-2017-jan-q17",
+        "nyregents-algebra-i-2017-jan-q19",
+        "nyregents-algebra-i-2017-jan-q21",
+        "nyregents-algebra-i-2025-jan-q4",
+        "nyregents-algebra-i-2018-aug-q8",
+        "nyregents-algebra-i-2015-aug-q1",
+        "nyregents-algebra-i-2015-aug-q2",
+        "nyregents-algebra-i-2015-aug-q14",
+        "nyregents-algebra-i-2014-aug-q2",
+        "nyregents-algebra-i-2026-jun-q6",
+        "nyregents-algebra-i-2026-jun-q17",
+        "nyregents-algebra-i-2025-aug-q7",
+        "nyregents-algebra-i-2025-aug-q13",
+        "nyregents-algebra-i-2025-aug-q15",
+        "nyregents-algebra-i-2026-aug-q9",
+        "nyregents-algebra-i-2026-aug-q10",
+        "nyregents-algebra-i-2026-aug-q19",
+        "nyregents-algebra-i-2026-aug-q20",
+        "nyregents-algebra-i-2025-jun-q5",
+        "nyregents-algebra-i-2025-jun-q8",
+        "nyregents-algebra-i-2025-jun-q13",
+        "nyregents-algebra-i-unknown-unk-q13",
+        "nyregents-algebra-i-unknown-unk-q18",
+        "nyregents-algebra-i-unknown-unk-q22",
+        "nyregents-algebra-i-2016-jan-q8",
+        "nyregents-algebra-i-2016-jan-q23"
+      ]
+    },
+    "execution_both_and_cluster": {
+      "n": 97,
+      "cluster_mix": {
+        "execution": 97
+      },
+      "ids": [
+        "nyregents-algebra-i-2023-jun-q4",
+        "nyregents-algebra-i-2023-jun-q6",
+        "nyregents-algebra-i-2024-jan-q6",
+        "nyregents-algebra-i-2024-jan-q8",
+        "nyregents-algebra-i-2024-jan-q15",
+        "nyregents-algebra-i-2024-jan-q18",
+        "nyregents-algebra-i-2015-jun-q6",
+        "nyregents-algebra-i-2015-jun-q10",
+        "nyregents-algebra-i-2015-jun-q23",
+        "nyregents-algebra-i-2026-jan-q9",
+        "nyregents-algebra-i-2026-jan-q10",
+        "nyregents-algebra-i-2026-jan-q17",
+        "nyregents-algebra-i-2026-jan-q22",
+        "nyregents-algebra-i-2026-jan-q23",
+        "nyregents-algebra-i-2017-aug-q19",
+        "nyregents-algebra-i-2014-jun-q14",
+        "nyregents-algebra-i-2024-jun-q4",
+        "nyregents-algebra-i-2018-jun-q1",
+        "nyregents-algebra-i-2018-jun-q3",
+        "nyregents-algebra-i-2018-jun-q7",
+        "nyregents-algebra-i-2018-jun-q22",
+        "nyregents-algebra-i-2018-jun-q23",
+        "nyregents-algebra-i-2020-jan-q3",
+        "nyregents-algebra-i-2020-jan-q15",
+        "nyregents-algebra-i-2020-jan-q20",
+        "nyregents-algebra-i-2022-aug-q15",
+        "nyregents-algebra-i-2025-jan-q2",
+        "nyregents-algebra-i-2025-jan-q6",
+        "nyregents-algebra-i-2024-aug-q3",
+        "nyregents-algebra-i-2024-aug-q13",
+        "nyregents-algebra-i-2024-aug-q16",
+        "nyregents-algebra-i-2024-aug-q17",
+        "nyregents-algebra-i-2024-aug-q20",
+        "nyregents-algebra-i-2016-jun-q7",
+        "nyregents-algebra-i-2016-jun-q10",
+        "nyregents-algebra-i-2016-jun-q19",
+        "nyregents-algebra-i-2022-jun-q4",
+        "nyregents-algebra-i-2018-jan-q10",
+        "nyregents-algebra-i-2018-jan-q13",
+        "nyregents-algebra-i-2018-jan-q22",
+        "nyregents-algebra-i-2019-jun-q21",
+        "nyregents-algebra-i-2019-jan-q4",
+        "nyregents-algebra-i-2019-jan-q5",
+        "nyregents-algebra-i-2019-jan-q11",
+        "nyregents-algebra-i-2019-jan-q15",
+        "nyregents-algebra-i-2019-jan-q20",
+        "nyregents-algebra-i-2019-jan-q23",
+        "nyregents-algebra-i-2017-jun-q8",
+        "nyregents-algebra-i-2017-jun-q13",
+        "nyregents-algebra-i-2017-jun-q23",
+        "nyregents-algebra-i-2016-aug-q7",
+        "nyregents-algebra-i-2016-aug-q12",
+        "nyregents-algebra-i-2016-aug-q21",
+        "nyregents-algebra-i-2019-aug-q3",
+        "nyregents-algebra-i-2019-aug-q11",
+        "nyregents-algebra-i-2019-aug-q22",
+        "nyregents-algebra-i-2023-aug-q2",
+        "nyregents-algebra-i-2023-aug-q8",
+        "nyregents-algebra-i-2023-aug-q20",
+        "nyregents-algebra-i-2023-aug-q21",
+        "nyregents-algebra-i-2017-jan-q7",
+        "nyregents-algebra-i-2017-jan-q15",
+        "nyregents-algebra-i-2018-aug-q4",
+        "nyregents-algebra-i-2018-aug-q7",
+        "nyregents-algebra-i-2018-aug-q13",
+        "nyregents-algebra-i-2018-aug-q16",
+        "nyregents-algebra-i-2018-aug-q22",
+        "nyregents-algebra-i-2015-aug-q10",
+        "nyregents-algebra-i-2015-aug-q20",
+        "nyregents-algebra-i-2015-aug-q23",
+        "nyregents-algebra-i-2014-aug-q6",
+        "nyregents-algebra-i-2026-jun-q2",
+        "nyregents-algebra-i-2026-jun-q13",
+        "nyregents-algebra-i-2026-jun-q15",
+        "nyregents-algebra-i-2026-jun-q19",
+        "nyregents-algebra-i-2025-aug-q6",
+        "nyregents-algebra-i-2025-aug-q10",
+        "nyregents-algebra-i-2025-aug-q19",
+        "nyregents-algebra-i-2025-aug-q21",
+        "nyregents-algebra-i-2025-aug-q23",
+        "nyregents-algebra-i-2015-jan-q3",
+        "nyregents-algebra-i-2015-jan-q10",
+        "nyregents-algebra-i-2015-jan-q11",
+        "nyregents-algebra-i-2015-jan-q17",
+        "nyregents-algebra-i-2026-aug-q2",
+        "nyregents-algebra-i-2026-aug-q3",
+        "nyregents-algebra-i-2026-aug-q17",
+        "nyregents-algebra-i-2025-jun-q11",
+        "nyregents-algebra-i-2025-jun-q21",
+        "nyregents-algebra-i-unknown-unk-q2",
+        "nyregents-algebra-i-unknown-unk-q6",
+        "nyregents-algebra-i-unknown-unk-q8",
+        "nyregents-algebra-i-unknown-unk-q24",
+        "nyregents-algebra-i-2016-jan-q7",
+        "nyregents-algebra-i-2016-jan-q9",
+        "nyregents-algebra-i-2016-jan-q14",
+        "nyregents-algebra-i-2016-jan-q21"
+      ]
+    },
+    "recognition_both_and_cluster": {
+      "n": 51,
+      "cluster_mix": {
+        "recognition_or_interpretation": 51
+      },
+      "ids": [
+        "nyregents-algebra-i-2023-jun-q8",
+        "nyregents-algebra-i-2023-jun-q20",
+        "nyregents-algebra-i-2024-jan-q3",
+        "nyregents-algebra-i-2015-jun-q1",
+        "nyregents-algebra-i-2026-jan-q12",
+        "nyregents-algebra-i-2017-aug-q1",
+        "nyregents-algebra-i-2017-aug-q9",
+        "nyregents-algebra-i-2017-aug-q10",
+        "nyregents-algebra-i-2017-aug-q22",
+        "nyregents-algebra-i-2014-jun-q1",
+        "nyregents-algebra-i-2014-jun-q7",
+        "nyregents-algebra-i-2024-jun-q21",
+        "nyregents-algebra-i-2018-jun-q11",
+        "nyregents-algebra-i-2018-jun-q16",
+        "nyregents-algebra-i-2018-jun-q19",
+        "nyregents-algebra-i-2018-jun-q21",
+        "nyregents-algebra-i-2020-jan-q14",
+        "nyregents-algebra-i-2022-aug-q11",
+        "nyregents-algebra-i-2025-jan-q5",
+        "nyregents-algebra-i-2025-jan-q14",
+        "nyregents-algebra-i-2024-aug-q5",
+        "nyregents-algebra-i-2024-aug-q6",
+        "nyregents-algebra-i-2024-aug-q12",
+        "nyregents-algebra-i-2016-jun-q2",
+        "nyregents-algebra-i-2016-jun-q4",
+        "nyregents-algebra-i-2022-jun-q20",
+        "nyregents-algebra-i-2018-jan-q1",
+        "nyregents-algebra-i-2019-jun-q5",
+        "nyregents-algebra-i-2019-jun-q23",
+        "nyregents-algebra-i-2016-aug-q20",
+        "nyregents-algebra-i-2023-aug-q12",
+        "nyregents-algebra-i-2017-jan-q3",
+        "nyregents-algebra-i-2017-jan-q19",
+        "nyregents-algebra-i-2017-jan-q21",
+        "nyregents-algebra-i-2025-jan-q4",
+        "nyregents-algebra-i-2018-aug-q8",
+        "nyregents-algebra-i-2015-aug-q14",
+        "nyregents-algebra-i-2014-aug-q2",
+        "nyregents-algebra-i-2026-jun-q6",
+        "nyregents-algebra-i-2026-jun-q17",
+        "nyregents-algebra-i-2025-aug-q7",
+        "nyregents-algebra-i-2025-aug-q15",
+        "nyregents-algebra-i-2026-aug-q9",
+        "nyregents-algebra-i-2026-aug-q10",
+        "nyregents-algebra-i-2026-aug-q19",
+        "nyregents-algebra-i-2025-jun-q5",
+        "nyregents-algebra-i-2025-jun-q8",
+        "nyregents-algebra-i-2025-jun-q13",
+        "nyregents-algebra-i-unknown-unk-q18",
+        "nyregents-algebra-i-unknown-unk-q22",
+        "nyregents-algebra-i-2016-jan-q8"
+      ]
+    },
+    "cluster_execution": {
+      "n": 164,
+      "cluster_mix": {
+        "execution": 164
+      },
+      "ids": [
+        "nyregents-algebra-i-2023-jun-q3",
+        "nyregents-algebra-i-2023-jun-q4",
+        "nyregents-algebra-i-2023-jun-q6",
+        "nyregents-algebra-i-2023-jun-q12",
+        "nyregents-algebra-i-2023-jun-q14",
+        "nyregents-algebra-i-2024-jan-q6",
+        "nyregents-algebra-i-2024-jan-q8",
+        "nyregents-algebra-i-2024-jan-q15",
+        "nyregents-algebra-i-2024-jan-q18",
+        "nyregents-algebra-i-2024-jan-q19",
+        "nyregents-algebra-i-2023-jan-q10",
+        "nyregents-algebra-i-2023-jan-q11",
+        "nyregents-algebra-i-2015-jun-q6",
+        "nyregents-algebra-i-2015-jun-q10",
+        "nyregents-algebra-i-2015-jun-q23",
+        "nyregents-algebra-i-2026-jan-q9",
+        "nyregents-algebra-i-2026-jan-q10",
+        "nyregents-algebra-i-2026-jan-q17",
+        "nyregents-algebra-i-2026-jan-q20",
+        "nyregents-algebra-i-2026-jan-q22",
+        "nyregents-algebra-i-2026-jan-q23",
+        "nyregents-algebra-i-2017-aug-q14",
+        "nyregents-algebra-i-2017-aug-q19",
+        "nyregents-algebra-i-2017-aug-q23",
+        "nyregents-algebra-i-2014-jun-q12",
+        "nyregents-algebra-i-2014-jun-q14",
+        "nyregents-algebra-i-2014-jun-q16",
+        "nyregents-algebra-i-2014-jun-q22",
+        "nyregents-algebra-i-2024-jun-q2",
+        "nyregents-algebra-i-2024-jun-q4",
+        "nyregents-algebra-i-2024-jun-q20",
+        "nyregents-algebra-i-2018-jun-q1",
+        "nyregents-algebra-i-2018-jun-q3",
+        "nyregents-algebra-i-2018-jun-q6",
+        "nyregents-algebra-i-2018-jun-q7",
+        "nyregents-algebra-i-2018-jun-q22",
+        "nyregents-algebra-i-2018-jun-q23",
+        "nyregents-algebra-i-2020-jan-q3",
+        "nyregents-algebra-i-2020-jan-q11",
+        "nyregents-algebra-i-2020-jan-q15",
+        "nyregents-algebra-i-2020-jan-q19",
+        "nyregents-algebra-i-2020-jan-q20",
+        "nyregents-algebra-i-2022-aug-q15",
+        "nyregents-algebra-i-2022-aug-q17",
+        "nyregents-algebra-i-2022-aug-q18",
+        "nyregents-algebra-i-2025-jan-q2",
+        "nyregents-algebra-i-2025-jan-q6",
+        "nyregents-algebra-i-2025-jan-q12",
+        "nyregents-algebra-i-2025-jan-q18",
+        "nyregents-algebra-i-2025-jan-q23",
+        "nyregents-algebra-i-2024-aug-q3",
+        "nyregents-algebra-i-2024-aug-q11",
+        "nyregents-algebra-i-2024-aug-q13",
+        "nyregents-algebra-i-2024-aug-q16",
+        "nyregents-algebra-i-2024-aug-q17",
+        "nyregents-algebra-i-2024-aug-q18",
+        "nyregents-algebra-i-2024-aug-q20",
+        "nyregents-algebra-i-2024-aug-q22",
+        "nyregents-algebra-i-2016-jun-q7",
+        "nyregents-algebra-i-2016-jun-q10",
+        "nyregents-algebra-i-2016-jun-q19",
+        "nyregents-algebra-i-2022-jun-q3",
+        "nyregents-algebra-i-2022-jun-q4",
+        "nyregents-algebra-i-2022-jun-q18",
+        "nyregents-algebra-i-2018-jan-q10",
+        "nyregents-algebra-i-2018-jan-q13",
+        "nyregents-algebra-i-2018-jan-q14",
+        "nyregents-algebra-i-2018-jan-q17",
+        "nyregents-algebra-i-2018-jan-q19",
+        "nyregents-algebra-i-2018-jan-q21",
+        "nyregents-algebra-i-2018-jan-q22",
+        "nyregents-algebra-i-2019-jun-q4",
+        "nyregents-algebra-i-2019-jun-q10",
+        "nyregents-algebra-i-2019-jun-q16",
+        "nyregents-algebra-i-2019-jun-q18",
+        "nyregents-algebra-i-2019-jun-q21",
+        "nyregents-algebra-i-2019-jan-q4",
+        "nyregents-algebra-i-2019-jan-q5",
+        "nyregents-algebra-i-2019-jan-q10",
+        "nyregents-algebra-i-2019-jan-q11",
+        "nyregents-algebra-i-2019-jan-q12",
+        "nyregents-algebra-i-2019-jan-q15",
+        "nyregents-algebra-i-2019-jan-q18",
+        "nyregents-algebra-i-2019-jan-q20",
+        "nyregents-algebra-i-2019-jan-q23",
+        "nyregents-algebra-i-2017-jun-q8",
+        "nyregents-algebra-i-2017-jun-q11",
+        "nyregents-algebra-i-2017-jun-q13",
+        "nyregents-algebra-i-2017-jun-q23",
+        "nyregents-algebra-i-2016-aug-q2",
+        "nyregents-algebra-i-2016-aug-q7",
+        "nyregents-algebra-i-2016-aug-q12",
+        "nyregents-algebra-i-2016-aug-q21",
+        "nyregents-algebra-i-2019-aug-q3",
+        "nyregents-algebra-i-2019-aug-q5",
+        "nyregents-algebra-i-2019-aug-q11",
+        "nyregents-algebra-i-2019-aug-q20",
+        "nyregents-algebra-i-2019-aug-q22",
+        "nyregents-algebra-i-2023-aug-q2",
+        "nyregents-algebra-i-2023-aug-q6",
+        "nyregents-algebra-i-2023-aug-q8",
+        "nyregents-algebra-i-2023-aug-q11",
+        "nyregents-algebra-i-2023-aug-q20",
+        "nyregents-algebra-i-2023-aug-q21",
+        "nyregents-algebra-i-2017-jan-q2",
+        "nyregents-algebra-i-2017-jan-q7",
+        "nyregents-algebra-i-2017-jan-q15",
+        "nyregents-algebra-i-2017-jan-q17",
+        "nyregents-algebra-i-2018-aug-q1",
+        "nyregents-algebra-i-2018-aug-q4",
+        "nyregents-algebra-i-2018-aug-q7",
+        "nyregents-algebra-i-2018-aug-q13",
+        "nyregents-algebra-i-2018-aug-q16",
+        "nyregents-algebra-i-2018-aug-q18",
+        "nyregents-algebra-i-2018-aug-q22",
+        "nyregents-algebra-i-2015-aug-q1",
+        "nyregents-algebra-i-2015-aug-q2",
+        "nyregents-algebra-i-2015-aug-q10",
+        "nyregents-algebra-i-2015-aug-q20",
+        "nyregents-algebra-i-2015-aug-q23",
+        "nyregents-algebra-i-2014-aug-q6",
+        "nyregents-algebra-i-2014-aug-q9",
+        "nyregents-algebra-i-2014-aug-q19",
+        "nyregents-algebra-i-2026-jun-q2",
+        "nyregents-algebra-i-2026-jun-q5",
+        "nyregents-algebra-i-2026-jun-q9",
+        "nyregents-algebra-i-2026-jun-q13",
+        "nyregents-algebra-i-2026-jun-q15",
+        "nyregents-algebra-i-2026-jun-q19",
+        "nyregents-algebra-i-2025-aug-q2",
+        "nyregents-algebra-i-2025-aug-q6",
+        "nyregents-algebra-i-2025-aug-q10",
+        "nyregents-algebra-i-2025-aug-q13",
+        "nyregents-algebra-i-2025-aug-q19",
+        "nyregents-algebra-i-2025-aug-q21",
+        "nyregents-algebra-i-2025-aug-q23",
+        "nyregents-algebra-i-2015-jan-q3",
+        "nyregents-algebra-i-2015-jan-q4",
+        "nyregents-algebra-i-2015-jan-q10",
+        "nyregents-algebra-i-2015-jan-q11",
+        "nyregents-algebra-i-2015-jan-q13",
+        "nyregents-algebra-i-2015-jan-q17",
+        "nyregents-algebra-i-2015-jan-q23",
+        "nyregents-algebra-i-2026-aug-q2",
+        "nyregents-algebra-i-2026-aug-q3",
+        "nyregents-algebra-i-2026-aug-q16",
+        "nyregents-algebra-i-2026-aug-q17",
+        "nyregents-algebra-i-2026-aug-q20",
+        "nyregents-algebra-i-2026-aug-q22",
+        "nyregents-algebra-i-2025-jun-q11",
+        "nyregents-algebra-i-2025-jun-q15",
+        "nyregents-algebra-i-2025-jun-q21",
+        "nyregents-algebra-i-unknown-unk-q1",
+        "nyregents-algebra-i-unknown-unk-q2",
+        "nyregents-algebra-i-unknown-unk-q6",
+        "nyregents-algebra-i-unknown-unk-q8",
+        "nyregents-algebra-i-unknown-unk-q13",
+        "nyregents-algebra-i-unknown-unk-q14",
+        "nyregents-algebra-i-unknown-unk-q24",
+        "nyregents-algebra-i-2016-jan-q7",
+        "nyregents-algebra-i-2016-jan-q9",
+        "nyregents-algebra-i-2016-jan-q11",
+        "nyregents-algebra-i-2016-jan-q14",
+        "nyregents-algebra-i-2016-jan-q21"
+      ]
+    },
+    "cluster_recognition": {
+      "n": 151,
+      "cluster_mix": {
+        "recognition_or_interpretation": 151
+      },
+      "ids": [
+        "nyregents-algebra-i-2023-jun-q5",
+        "nyregents-algebra-i-2023-jun-q8",
+        "nyregents-algebra-i-2023-jun-q11",
+        "nyregents-algebra-i-2023-jun-q20",
+        "nyregents-algebra-i-2024-jan-q3",
+        "nyregents-algebra-i-2024-jan-q10",
+        "nyregents-algebra-i-2024-jan-q21",
+        "nyregents-algebra-i-2024-jan-q23",
+        "nyregents-algebra-i-2023-jan-q14",
+        "nyregents-algebra-i-2023-jan-q21",
+        "nyregents-algebra-i-2023-jan-q22",
+        "nyregents-algebra-i-2015-jun-q1",
+        "nyregents-algebra-i-2015-jun-q3",
+        "nyregents-algebra-i-2015-jun-q11",
+        "nyregents-algebra-i-2015-jun-q21",
+        "nyregents-algebra-i-2026-jan-q12",
+        "nyregents-algebra-i-2026-jan-q16",
+        "nyregents-algebra-i-2017-aug-q1",
+        "nyregents-algebra-i-2017-aug-q4",
+        "nyregents-algebra-i-2017-aug-q9",
+        "nyregents-algebra-i-2017-aug-q10",
+        "nyregents-algebra-i-2017-aug-q22",
+        "nyregents-algebra-i-2014-jun-q1",
+        "nyregents-algebra-i-2014-jun-q7",
+        "nyregents-algebra-i-2024-jun-q1",
+        "nyregents-algebra-i-2024-jun-q9",
+        "nyregents-algebra-i-2024-jun-q15",
+        "nyregents-algebra-i-2024-jun-q21",
+        "nyregents-algebra-i-2018-jun-q2",
+        "nyregents-algebra-i-2018-jun-q10",
+        "nyregents-algebra-i-2018-jun-q11",
+        "nyregents-algebra-i-2018-jun-q16",
+        "nyregents-algebra-i-2018-jun-q19",
+        "nyregents-algebra-i-2018-jun-q21",
+        "nyregents-algebra-i-2020-jan-q1",
+        "nyregents-algebra-i-2020-jan-q6",
+        "nyregents-algebra-i-2020-jan-q8",
+        "nyregents-algebra-i-2020-jan-q9",
+        "nyregents-algebra-i-2020-jan-q12",
+        "nyregents-algebra-i-2020-jan-q14",
+        "nyregents-algebra-i-2020-jan-q16",
+        "nyregents-algebra-i-2020-jan-q23",
+        "nyregents-algebra-i-2022-aug-q11",
+        "nyregents-algebra-i-2022-aug-q19",
+        "nyregents-algebra-i-2022-aug-q23",
+        "nyregents-algebra-i-2025-jan-q1",
+        "nyregents-algebra-i-2025-jan-q5",
+        "nyregents-algebra-i-2025-jan-q8",
+        "nyregents-algebra-i-2025-jan-q14",
+        "nyregents-algebra-i-2024-aug-q5",
+        "nyregents-algebra-i-2024-aug-q6",
+        "nyregents-algebra-i-2024-aug-q12",
+        "nyregents-algebra-i-2024-aug-q15",
+        "nyregents-algebra-i-2024-aug-q21",
+        "nyregents-algebra-i-2016-jun-q1",
+        "nyregents-algebra-i-2016-jun-q2",
+        "nyregents-algebra-i-2016-jun-q4",
+        "nyregents-algebra-i-2016-jun-q11",
+        "nyregents-algebra-i-2016-jun-q12",
+        "nyregents-algebra-i-2016-jun-q13",
+        "nyregents-algebra-i-2016-jun-q16",
+        "nyregents-algebra-i-2016-jun-q18",
+        "nyregents-algebra-i-2016-jun-q22",
+        "nyregents-algebra-i-2022-jun-q2",
+        "nyregents-algebra-i-2022-jun-q12",
+        "nyregents-algebra-i-2022-jun-q20",
+        "nyregents-algebra-i-2018-jan-q1",
+        "nyregents-algebra-i-2018-jan-q7",
+        "nyregents-algebra-i-2018-jan-q8",
+        "nyregents-algebra-i-2018-jan-q9",
+        "nyregents-algebra-i-2019-jun-q1",
+        "nyregents-algebra-i-2019-jun-q2",
+        "nyregents-algebra-i-2019-jun-q5",
+        "nyregents-algebra-i-2019-jun-q14",
+        "nyregents-algebra-i-2019-jun-q17",
+        "nyregents-algebra-i-2019-jun-q23",
+        "nyregents-algebra-i-2019-jan-q6",
+        "nyregents-algebra-i-2019-jan-q8",
+        "nyregents-algebra-i-2019-jan-q14",
+        "nyregents-algebra-i-2019-jan-q21",
+        "nyregents-algebra-i-2017-jun-q5",
+        "nyregents-algebra-i-2017-jun-q6",
+        "nyregents-algebra-i-2017-jun-q17",
+        "nyregents-algebra-i-2017-jun-q24",
+        "nyregents-algebra-i-2016-aug-q8",
+        "nyregents-algebra-i-2016-aug-q10",
+        "nyregents-algebra-i-2016-aug-q13",
+        "nyregents-algebra-i-2016-aug-q20",
+        "nyregents-algebra-i-2019-aug-q1",
+        "nyregents-algebra-i-2019-aug-q8",
+        "nyregents-algebra-i-2019-aug-q12",
+        "nyregents-algebra-i-2019-aug-q17",
+        "nyregents-algebra-i-2019-aug-q23",
+        "nyregents-algebra-i-2023-aug-q12",
+        "nyregents-algebra-i-2023-aug-q13",
+        "nyregents-algebra-i-2023-aug-q18",
+        "nyregents-algebra-i-2017-jan-q1",
+        "nyregents-algebra-i-2017-jan-q3",
+        "nyregents-algebra-i-2017-jan-q8",
+        "nyregents-algebra-i-2017-jan-q19",
+        "nyregents-algebra-i-2017-jan-q21",
+        "nyregents-algebra-i-2025-jan-q4",
+        "nyregents-algebra-i-2018-aug-q3",
+        "nyregents-algebra-i-2018-aug-q6",
+        "nyregents-algebra-i-2018-aug-q8",
+        "nyregents-algebra-i-2018-aug-q10",
+        "nyregents-algebra-i-2018-aug-q15",
+        "nyregents-algebra-i-2015-aug-q9",
+        "nyregents-algebra-i-2015-aug-q14",
+        "nyregents-algebra-i-2015-aug-q21",
+        "nyregents-algebra-i-2014-aug-q2",
+        "nyregents-algebra-i-2014-aug-q8",
+        "nyregents-algebra-i-2014-aug-q14",
+        "nyregents-algebra-i-2014-aug-q15",
+        "nyregents-algebra-i-2014-aug-q23",
+        "nyregents-algebra-i-2026-jun-q1",
+        "nyregents-algebra-i-2026-jun-q3",
+        "nyregents-algebra-i-2026-jun-q6",
+        "nyregents-algebra-i-2026-jun-q7",
+        "nyregents-algebra-i-2026-jun-q17",
+        "nyregents-algebra-i-2025-aug-q3",
+        "nyregents-algebra-i-2025-aug-q4",
+        "nyregents-algebra-i-2025-aug-q7",
+        "nyregents-algebra-i-2025-aug-q12",
+        "nyregents-algebra-i-2025-aug-q15",
+        "nyregents-algebra-i-2025-aug-q20",
+        "nyregents-algebra-i-2015-jan-q8",
+        "nyregents-algebra-i-2015-jan-q21",
+        "nyregents-algebra-i-2026-aug-q6",
+        "nyregents-algebra-i-2026-aug-q8",
+        "nyregents-algebra-i-2026-aug-q9",
+        "nyregents-algebra-i-2026-aug-q10",
+        "nyregents-algebra-i-2026-aug-q11",
+        "nyregents-algebra-i-2026-aug-q13",
+        "nyregents-algebra-i-2026-aug-q19",
+        "nyregents-algebra-i-2026-aug-q23",
+        "nyregents-algebra-i-2025-jun-q5",
+        "nyregents-algebra-i-2025-jun-q7",
+        "nyregents-algebra-i-2025-jun-q8",
+        "nyregents-algebra-i-2025-jun-q13",
+        "nyregents-algebra-i-2025-jun-q14",
+        "nyregents-algebra-i-unknown-unk-q3",
+        "nyregents-algebra-i-unknown-unk-q5",
+        "nyregents-algebra-i-unknown-unk-q9",
+        "nyregents-algebra-i-unknown-unk-q10",
+        "nyregents-algebra-i-unknown-unk-q18",
+        "nyregents-algebra-i-unknown-unk-q22",
+        "nyregents-algebra-i-2016-jan-q3",
+        "nyregents-algebra-i-2016-jan-q8",
+        "nyregents-algebra-i-2016-jan-q12",
+        "nyregents-algebra-i-2016-jan-q18"
+      ]
+    }
+  },
+  "populations": {
+    "repaired_verified": 261,
+    "repaired_all": 343,
+    "text_layer": 358,
+    "text_layer_faithful": 184
+  },
+  "bar": "n >= 10, lower 95% bootstrap CI strictly above chance 0.25 and strictly above the subset modal key-letter frequency",
+  "bootstrap": "random.Random.randrange, 1000 replicates, seed 21 + n, rows in primary-id order",
+  "rows": {
+    "repaired_verified": {
+      "execution_either": {
+        "n_subset_in_population": 193,
+        "models": {
+          "7b": {
+            "masked_stem": {
+              "n": 193,
+              "passes": 92,
+              "passRate": 0.47668393782383417,
+              "chance": 0.25,
+              "ci95": [
+                0.40414507772020725,
+                0.5492227979274611
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.32124352331606215,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nMissingScores": 0
+            },
+            "isomorph_rank_preserving": {
+              "n": 192,
+              "passes": 88,
+              "passRate": 0.4583333333333333,
+              "chance": 0.25,
+              "ci95": [
+                0.3854166666666667,
+                0.5260416666666666
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.3229166666666667,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nExcludedPerturbFailed": 1
+            }
+          },
+          "14b": {
+            "masked_stem": {
+              "n": 193,
+              "passes": 97,
+              "passRate": 0.5025906735751295,
+              "chance": 0.25,
+              "ci95": [
+                0.43523316062176165,
+                0.5751295336787565
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.32124352331606215,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nMissingScores": 0
+            },
+            "isomorph_rank_preserving": {
+              "n": 192,
+              "passes": 77,
+              "passRate": 0.4010416666666667,
+              "chance": 0.25,
+              "ci95": [
+                0.328125,
+                0.46875
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.3229166666666667,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nExcludedPerturbFailed": 1
+            }
+          },
+          "phi4": {
+            "masked_stem": {
+              "n": 193,
+              "passes": 81,
+              "passRate": 0.41968911917098445,
+              "chance": 0.25,
+              "ci95": [
+                0.35233160621761656,
+                0.49222797927461137
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.32124352331606215,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nMissingScores": 0
+            },
+            "isomorph_rank_preserving": {
+              "n": 192,
+              "passes": 68,
+              "passRate": 0.3541666666666667,
+              "chance": 0.25,
+              "ci95": [
+                0.2864583333333333,
+                0.421875
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.3229166666666667,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": false,
+              "clearsBar": false,
+              "nExcludedPerturbFailed": 1
+            }
+          }
+        }
+      },
+      "execution_both": {
+        "n_subset_in_population": 142,
+        "models": {
+          "7b": {
+            "masked_stem": {
+              "n": 142,
+              "passes": 57,
+              "passRate": 0.4014084507042254,
+              "chance": 0.25,
+              "ci95": [
+                0.323943661971831,
+                0.4859154929577465
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.3028169014084507,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nMissingScores": 0
+            },
+            "isomorph_rank_preserving": {
+              "n": 141,
+              "passes": 59,
+              "passRate": 0.41843971631205673,
+              "chance": 0.25,
+              "ci95": [
+                0.3404255319148936,
+                0.49645390070921985
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.3049645390070922,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nExcludedPerturbFailed": 1
+            }
+          },
+          "14b": {
+            "masked_stem": {
+              "n": 142,
+              "passes": 62,
+              "passRate": 0.43661971830985913,
+              "chance": 0.25,
+              "ci95": [
+                0.3591549295774648,
+                0.5211267605633803
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.3028169014084507,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nMissingScores": 0
+            },
+            "isomorph_rank_preserving": {
+              "n": 141,
+              "passes": 47,
+              "passRate": 0.3333333333333333,
+              "chance": 0.25,
+              "ci95": [
+                0.2624113475177305,
+                0.41134751773049644
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.3049645390070922,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": false,
+              "clearsBar": false,
+              "nExcludedPerturbFailed": 1
+            }
+          },
+          "phi4": {
+            "masked_stem": {
+              "n": 142,
+              "passes": 50,
+              "passRate": 0.352112676056338,
+              "chance": 0.25,
+              "ci95": [
+                0.2746478873239437,
+                0.4295774647887324
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.3028169014084507,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": false,
+              "clearsBar": false,
+              "nMissingScores": 0
+            },
+            "isomorph_rank_preserving": {
+              "n": 141,
+              "passes": 42,
+              "passRate": 0.2978723404255319,
+              "chance": 0.25,
+              "ci95": [
+                0.22695035460992907,
+                0.375886524822695
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.3049645390070922,
+              "lowerCiAboveChance": false,
+              "lowerCiAboveModal": false,
+              "clearsBar": false,
+              "nExcludedPerturbFailed": 1
+            }
+          }
+        }
+      },
+      "recognition_both": {
+        "n_subset_in_population": 61,
+        "models": {
+          "7b": {
+            "masked_stem": {
+              "n": 61,
+              "passes": 45,
+              "passRate": 0.7377049180327869,
+              "chance": 0.25,
+              "ci95": [
+                0.6229508196721312,
+                0.8360655737704918
+              ],
+              "modalLetter": "A",
+              "modalFrequency": 0.29508196721311475,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nMissingScores": 0
+            },
+            "isomorph_rank_preserving": {
+              "n": 61,
+              "passes": 39,
+              "passRate": 0.639344262295082,
+              "chance": 0.25,
+              "ci95": [
+                0.5245901639344263,
+                0.7540983606557377
+              ],
+              "modalLetter": "A",
+              "modalFrequency": 0.29508196721311475,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nExcludedPerturbFailed": 0
+            }
+          },
+          "14b": {
+            "masked_stem": {
+              "n": 61,
+              "passes": 43,
+              "passRate": 0.7049180327868853,
+              "chance": 0.25,
+              "ci95": [
+                0.5901639344262295,
+                0.819672131147541
+              ],
+              "modalLetter": "A",
+              "modalFrequency": 0.29508196721311475,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nMissingScores": 0
+            },
+            "isomorph_rank_preserving": {
+              "n": 61,
+              "passes": 42,
+              "passRate": 0.6885245901639344,
+              "chance": 0.25,
+              "ci95": [
+                0.5737704918032787,
+                0.8032786885245902
+              ],
+              "modalLetter": "A",
+              "modalFrequency": 0.29508196721311475,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nExcludedPerturbFailed": 0
+            }
+          },
+          "phi4": {
+            "masked_stem": {
+              "n": 61,
+              "passes": 43,
+              "passRate": 0.7049180327868853,
+              "chance": 0.25,
+              "ci95": [
+                0.5901639344262295,
+                0.819672131147541
+              ],
+              "modalLetter": "A",
+              "modalFrequency": 0.29508196721311475,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nMissingScores": 0
+            },
+            "isomorph_rank_preserving": {
+              "n": 61,
+              "passes": 37,
+              "passRate": 0.6065573770491803,
+              "chance": 0.25,
+              "ci95": [
+                0.4918032786885246,
+                0.7213114754098361
+              ],
+              "modalLetter": "A",
+              "modalFrequency": 0.29508196721311475,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nExcludedPerturbFailed": 0
+            }
+          }
+        }
+      },
+      "execution_both_and_cluster": {
+        "n_subset_in_population": 79,
+        "models": {
+          "7b": {
+            "masked_stem": {
+              "n": 79,
+              "passes": 34,
+              "passRate": 0.43037974683544306,
+              "chance": 0.25,
+              "ci95": [
+                0.3291139240506329,
+                0.5443037974683544
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.3037974683544304,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nMissingScores": 0
+            },
+            "isomorph_rank_preserving": {
+              "n": 78,
+              "passes": 33,
+              "passRate": 0.4230769230769231,
+              "chance": 0.25,
+              "ci95": [
+                0.3076923076923077,
+                0.5256410256410257
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.3076923076923077,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": false,
+              "clearsBar": false,
+              "nExcludedPerturbFailed": 1
+            }
+          },
+          "14b": {
+            "masked_stem": {
+              "n": 79,
+              "passes": 30,
+              "passRate": 0.379746835443038,
+              "chance": 0.25,
+              "ci95": [
+                0.27848101265822783,
+                0.4936708860759494
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.3037974683544304,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": false,
+              "clearsBar": false,
+              "nMissingScores": 0
+            },
+            "isomorph_rank_preserving": {
+              "n": 78,
+              "passes": 26,
+              "passRate": 0.3333333333333333,
+              "chance": 0.25,
+              "ci95": [
+                0.23076923076923078,
+                0.44871794871794873
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.3076923076923077,
+              "lowerCiAboveChance": false,
+              "lowerCiAboveModal": false,
+              "clearsBar": false,
+              "nExcludedPerturbFailed": 1
+            }
+          },
+          "phi4": {
+            "masked_stem": {
+              "n": 79,
+              "passes": 28,
+              "passRate": 0.35443037974683544,
+              "chance": 0.25,
+              "ci95": [
+                0.26582278481012656,
+                0.45569620253164556
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.3037974683544304,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": false,
+              "clearsBar": false,
+              "nMissingScores": 0
+            },
+            "isomorph_rank_preserving": {
+              "n": 78,
+              "passes": 24,
+              "passRate": 0.3076923076923077,
+              "chance": 0.25,
+              "ci95": [
+                0.20512820512820512,
+                0.41025641025641024
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.3076923076923077,
+              "lowerCiAboveChance": false,
+              "lowerCiAboveModal": false,
+              "clearsBar": false,
+              "nExcludedPerturbFailed": 1
+            }
+          }
+        }
+      },
+      "recognition_both_and_cluster": {
+        "n_subset_in_population": 35,
+        "models": {
+          "7b": {
+            "masked_stem": {
+              "n": 35,
+              "passes": 23,
+              "passRate": 0.6571428571428571,
+              "chance": 0.25,
+              "ci95": [
+                0.4857142857142857,
+                0.8
+              ],
+              "modalLetter": "D",
+              "modalFrequency": 0.34285714285714286,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nMissingScores": 0
+            },
+            "isomorph_rank_preserving": {
+              "n": 35,
+              "passes": 19,
+              "passRate": 0.5428571428571428,
+              "chance": 0.25,
+              "ci95": [
+                0.37142857142857144,
+                0.7142857142857143
+              ],
+              "modalLetter": "D",
+              "modalFrequency": 0.34285714285714286,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nExcludedPerturbFailed": 0
+            }
+          },
+          "14b": {
+            "masked_stem": {
+              "n": 35,
+              "passes": 20,
+              "passRate": 0.5714285714285714,
+              "chance": 0.25,
+              "ci95": [
+                0.42857142857142855,
+                0.7142857142857143
+              ],
+              "modalLetter": "D",
+              "modalFrequency": 0.34285714285714286,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nMissingScores": 0
+            },
+            "isomorph_rank_preserving": {
+              "n": 35,
+              "passes": 20,
+              "passRate": 0.5714285714285714,
+              "chance": 0.25,
+              "ci95": [
+                0.4,
+                0.7142857142857143
+              ],
+              "modalLetter": "D",
+              "modalFrequency": 0.34285714285714286,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nExcludedPerturbFailed": 0
+            }
+          },
+          "phi4": {
+            "masked_stem": {
+              "n": 35,
+              "passes": 23,
+              "passRate": 0.6571428571428571,
+              "chance": 0.25,
+              "ci95": [
+                0.5142857142857142,
+                0.8
+              ],
+              "modalLetter": "D",
+              "modalFrequency": 0.34285714285714286,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nMissingScores": 0
+            },
+            "isomorph_rank_preserving": {
+              "n": 35,
+              "passes": 18,
+              "passRate": 0.5142857142857142,
+              "chance": 0.25,
+              "ci95": [
+                0.34285714285714286,
+                0.6857142857142857
+              ],
+              "modalLetter": "D",
+              "modalFrequency": 0.34285714285714286,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": false,
+              "clearsBar": false,
+              "nExcludedPerturbFailed": 0
+            }
+          }
+        }
+      },
+      "cluster_execution": {
+        "n_subset_in_population": 130,
+        "models": {
+          "7b": {
+            "masked_stem": {
+              "n": 130,
+              "passes": 71,
+              "passRate": 0.5461538461538461,
+              "chance": 0.25,
+              "ci95": [
+                0.45384615384615384,
+                0.6307692307692307
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.3230769230769231,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nMissingScores": 0
+            },
+            "isomorph_rank_preserving": {
+              "n": 129,
+              "passes": 65,
+              "passRate": 0.5038759689922481,
+              "chance": 0.25,
+              "ci95": [
+                0.4186046511627907,
+                0.5968992248062015
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.32558139534883723,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nExcludedPerturbFailed": 1
+            }
+          },
+          "14b": {
+            "masked_stem": {
+              "n": 130,
+              "passes": 67,
+              "passRate": 0.5153846153846153,
+              "chance": 0.25,
+              "ci95": [
+                0.4230769230769231,
+                0.6
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.3230769230769231,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nMissingScores": 0
+            },
+            "isomorph_rank_preserving": {
+              "n": 129,
+              "passes": 59,
+              "passRate": 0.4573643410852713,
+              "chance": 0.25,
+              "ci95": [
+                0.37209302325581395,
+                0.5348837209302325
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.32558139534883723,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nExcludedPerturbFailed": 1
+            }
+          },
+          "phi4": {
+            "masked_stem": {
+              "n": 130,
+              "passes": 62,
+              "passRate": 0.47692307692307695,
+              "chance": 0.25,
+              "ci95": [
+                0.38461538461538464,
+                0.5615384615384615
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.3230769230769231,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nMissingScores": 0
+            },
+            "isomorph_rank_preserving": {
+              "n": 129,
+              "passes": 54,
+              "passRate": 0.4186046511627907,
+              "chance": 0.25,
+              "ci95": [
+                0.3333333333333333,
+                0.5116279069767442
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.32558139534883723,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nExcludedPerturbFailed": 1
+            }
+          }
+        }
+      },
+      "cluster_recognition": {
+        "n_subset_in_population": 105,
+        "models": {
+          "7b": {
+            "masked_stem": {
+              "n": 105,
+              "passes": 54,
+              "passRate": 0.5142857142857142,
+              "chance": 0.25,
+              "ci95": [
+                0.42857142857142855,
+                0.6095238095238096
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.26666666666666666,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nMissingScores": 0
+            },
+            "isomorph_rank_preserving": {
+              "n": 105,
+              "passes": 52,
+              "passRate": 0.49523809523809526,
+              "chance": 0.25,
+              "ci95": [
+                0.4,
+                0.5904761904761905
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.26666666666666666,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nExcludedPerturbFailed": 0
+            }
+          },
+          "14b": {
+            "masked_stem": {
+              "n": 105,
+              "passes": 57,
+              "passRate": 0.5428571428571428,
+              "chance": 0.25,
+              "ci95": [
+                0.44761904761904764,
+                0.6285714285714286
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.26666666666666666,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nMissingScores": 0
+            },
+            "isomorph_rank_preserving": {
+              "n": 105,
+              "passes": 44,
+              "passRate": 0.41904761904761906,
+              "chance": 0.25,
+              "ci95": [
+                0.3238095238095238,
+                0.5142857142857142
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.26666666666666666,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nExcludedPerturbFailed": 0
+            }
+          },
+          "phi4": {
+            "masked_stem": {
+              "n": 105,
+              "passes": 52,
+              "passRate": 0.49523809523809526,
+              "chance": 0.25,
+              "ci95": [
+                0.4,
+                0.5904761904761905
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.26666666666666666,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nMissingScores": 0
+            },
+            "isomorph_rank_preserving": {
+              "n": 105,
+              "passes": 41,
+              "passRate": 0.3904761904761905,
+              "chance": 0.25,
+              "ci95": [
+                0.3047619047619048,
+                0.47619047619047616
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.26666666666666666,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nExcludedPerturbFailed": 0
+            }
+          }
+        }
+      }
+    },
+    "repaired_all": {
+      "execution_either": {
+        "n_subset_in_population": 255,
+        "models": {
+          "7b": {
+            "masked_stem": {
+              "n": 255,
+              "passes": 113,
+              "passRate": 0.44313725490196076,
+              "chance": 0.2503267973856209,
+              "ci95": [
+                0.3803921568627451,
+                0.5058823529411764
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.2823529411764706,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nMissingScores": 0
+            },
+            "isomorph_rank_preserving": {
+              "n": 254,
+              "passes": 108,
+              "passRate": 0.4251968503937008,
+              "chance": 0.25032808398950135,
+              "ci95": [
+                0.3661417322834646,
+                0.484251968503937
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.28346456692913385,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nExcludedPerturbFailed": 1
+            }
+          },
+          "14b": {
+            "masked_stem": {
+              "n": 255,
+              "passes": 122,
+              "passRate": 0.47843137254901963,
+              "chance": 0.2503267973856209,
+              "ci95": [
+                0.41568627450980394,
+                0.5372549019607843
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.2823529411764706,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nMissingScores": 0
+            },
+            "isomorph_rank_preserving": {
+              "n": 254,
+              "passes": 95,
+              "passRate": 0.37401574803149606,
+              "chance": 0.25032808398950135,
+              "ci95": [
+                0.31496062992125984,
+                0.42913385826771655
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.28346456692913385,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nExcludedPerturbFailed": 1
+            }
+          },
+          "phi4": {
+            "masked_stem": {
+              "n": 255,
+              "passes": 108,
+              "passRate": 0.4235294117647059,
+              "chance": 0.2503267973856209,
+              "ci95": [
+                0.36470588235294116,
+                0.4823529411764706
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.2823529411764706,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nMissingScores": 0
+            },
+            "isomorph_rank_preserving": {
+              "n": 254,
+              "passes": 88,
+              "passRate": 0.3464566929133858,
+              "chance": 0.25032808398950135,
+              "ci95": [
+                0.29133858267716534,
+                0.40551181102362205
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.28346456692913385,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nExcludedPerturbFailed": 1
+            }
+          }
+        }
+      },
+      "execution_both": {
+        "n_subset_in_population": 188,
+        "models": {
+          "7b": {
+            "masked_stem": {
+              "n": 188,
+              "passes": 72,
+              "passRate": 0.3829787234042553,
+              "chance": 0.25,
+              "ci95": [
+                0.31382978723404253,
+                0.4521276595744681
+              ],
+              "modalLetter": "C",
+              "modalFrequency": 0.2872340425531915,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nMissingScores": 0
+            },
+            "isomorph_rank_preserving": {
+              "n": 187,
+              "passes": 72,
+              "passRate": 0.3850267379679144,
+              "chance": 0.25,
+              "ci95": [
+                0.3155080213903743,
+                0.45454545454545453
+              ],
+              "modalLetter": "C",
+              "modalFrequency": 0.2887700534759358,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nExcludedPerturbFailed": 1
+            }
+          },
+          "14b": {
+            "masked_stem": {
+              "n": 188,
+              "passes": 82,
+              "passRate": 0.43617021276595747,
+              "chance": 0.25,
+              "ci95": [
+                0.3670212765957447,
+                0.5053191489361702
+              ],
+              "modalLetter": "C",
+              "modalFrequency": 0.2872340425531915,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nMissingScores": 0
+            },
+            "isomorph_rank_preserving": {
+              "n": 187,
+              "passes": 59,
+              "passRate": 0.3155080213903743,
+              "chance": 0.25,
+              "ci95": [
+                0.25668449197860965,
+                0.37967914438502676
+              ],
+              "modalLetter": "C",
+              "modalFrequency": 0.2887700534759358,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": false,
+              "clearsBar": false,
+              "nExcludedPerturbFailed": 1
+            }
+          },
+          "phi4": {
+            "masked_stem": {
+              "n": 188,
+              "passes": 69,
+              "passRate": 0.3670212765957447,
+              "chance": 0.25,
+              "ci95": [
+                0.2978723404255319,
+                0.43617021276595747
+              ],
+              "modalLetter": "C",
+              "modalFrequency": 0.2872340425531915,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nMissingScores": 0
+            },
+            "isomorph_rank_preserving": {
+              "n": 187,
+              "passes": 55,
+              "passRate": 0.29411764705882354,
+              "chance": 0.25,
+              "ci95": [
+                0.22994652406417113,
+                0.3582887700534759
+              ],
+              "modalLetter": "C",
+              "modalFrequency": 0.2887700534759358,
+              "lowerCiAboveChance": false,
+              "lowerCiAboveModal": false,
+              "clearsBar": false,
+              "nExcludedPerturbFailed": 1
+            }
+          }
+        }
+      },
+      "recognition_both": {
+        "n_subset_in_population": 78,
+        "models": {
+          "7b": {
+            "masked_stem": {
+              "n": 78,
+              "passes": 53,
+              "passRate": 0.6794871794871795,
+              "chance": 0.25,
+              "ci95": [
+                0.5769230769230769,
+                0.782051282051282
+              ],
+              "modalLetter": "A",
+              "modalFrequency": 0.2692307692307692,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nMissingScores": 0
+            },
+            "isomorph_rank_preserving": {
+              "n": 78,
+              "passes": 48,
+              "passRate": 0.6153846153846154,
+              "chance": 0.25,
+              "ci95": [
+                0.5128205128205128,
+                0.717948717948718
+              ],
+              "modalLetter": "A",
+              "modalFrequency": 0.2692307692307692,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nExcludedPerturbFailed": 0
+            }
+          },
+          "14b": {
+            "masked_stem": {
+              "n": 78,
+              "passes": 51,
+              "passRate": 0.6538461538461539,
+              "chance": 0.25,
+              "ci95": [
+                0.5384615384615384,
+                0.7564102564102564
+              ],
+              "modalLetter": "A",
+              "modalFrequency": 0.2692307692307692,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nMissingScores": 0
+            },
+            "isomorph_rank_preserving": {
+              "n": 78,
+              "passes": 50,
+              "passRate": 0.6410256410256411,
+              "chance": 0.25,
+              "ci95": [
+                0.5256410256410257,
+                0.7435897435897436
+              ],
+              "modalLetter": "A",
+              "modalFrequency": 0.2692307692307692,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nExcludedPerturbFailed": 0
+            }
+          },
+          "phi4": {
+            "masked_stem": {
+              "n": 78,
+              "passes": 53,
+              "passRate": 0.6794871794871795,
+              "chance": 0.25,
+              "ci95": [
+                0.5769230769230769,
+                0.7692307692307693
+              ],
+              "modalLetter": "A",
+              "modalFrequency": 0.2692307692307692,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nMissingScores": 0
+            },
+            "isomorph_rank_preserving": {
+              "n": 78,
+              "passes": 46,
+              "passRate": 0.5897435897435898,
+              "chance": 0.25,
+              "ci95": [
+                0.48717948717948717,
+                0.6923076923076923
+              ],
+              "modalLetter": "A",
+              "modalFrequency": 0.2692307692307692,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nExcludedPerturbFailed": 0
+            }
+          }
+        }
+      },
+      "execution_both_and_cluster": {
+        "n_subset_in_population": 95,
+        "models": {
+          "7b": {
+            "masked_stem": {
+              "n": 95,
+              "passes": 40,
+              "passRate": 0.42105263157894735,
+              "chance": 0.25,
+              "ci95": [
+                0.3263157894736842,
+                0.5157894736842106
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.28421052631578947,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nMissingScores": 0
+            },
+            "isomorph_rank_preserving": {
+              "n": 94,
+              "passes": 38,
+              "passRate": 0.40425531914893614,
+              "chance": 0.25,
+              "ci95": [
+                0.3191489361702128,
+                0.5
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.2872340425531915,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nExcludedPerturbFailed": 1
+            }
+          },
+          "14b": {
+            "masked_stem": {
+              "n": 95,
+              "passes": 36,
+              "passRate": 0.37894736842105264,
+              "chance": 0.25,
+              "ci95": [
+                0.28421052631578947,
+                0.47368421052631576
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.28421052631578947,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": false,
+              "clearsBar": false,
+              "nMissingScores": 0
+            },
+            "isomorph_rank_preserving": {
+              "n": 94,
+              "passes": 29,
+              "passRate": 0.30851063829787234,
+              "chance": 0.25,
+              "ci95": [
+                0.2127659574468085,
+                0.40425531914893614
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.2872340425531915,
+              "lowerCiAboveChance": false,
+              "lowerCiAboveModal": false,
+              "clearsBar": false,
+              "nExcludedPerturbFailed": 1
+            }
+          },
+          "phi4": {
+            "masked_stem": {
+              "n": 95,
+              "passes": 32,
+              "passRate": 0.3368421052631579,
+              "chance": 0.25,
+              "ci95": [
+                0.24210526315789474,
+                0.42105263157894735
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.28421052631578947,
+              "lowerCiAboveChance": false,
+              "lowerCiAboveModal": false,
+              "clearsBar": false,
+              "nMissingScores": 0
+            },
+            "isomorph_rank_preserving": {
+              "n": 94,
+              "passes": 29,
+              "passRate": 0.30851063829787234,
+              "chance": 0.25,
+              "ci95": [
+                0.2127659574468085,
+                0.4148936170212766
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.2872340425531915,
+              "lowerCiAboveChance": false,
+              "lowerCiAboveModal": false,
+              "clearsBar": false,
+              "nExcludedPerturbFailed": 1
+            }
+          }
+        }
+      },
+      "recognition_both_and_cluster": {
+        "n_subset_in_population": 49,
+        "models": {
+          "7b": {
+            "masked_stem": {
+              "n": 49,
+              "passes": 31,
+              "passRate": 0.6326530612244898,
+              "chance": 0.25,
+              "ci95": [
+                0.5102040816326531,
+                0.7755102040816326
+              ],
+              "modalLetter": "D",
+              "modalFrequency": 0.3673469387755102,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nMissingScores": 0
+            },
+            "isomorph_rank_preserving": {
+              "n": 49,
+              "passes": 28,
+              "passRate": 0.5714285714285714,
+              "chance": 0.25,
+              "ci95": [
+                0.42857142857142855,
+                0.7142857142857143
+              ],
+              "modalLetter": "D",
+              "modalFrequency": 0.3673469387755102,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nExcludedPerturbFailed": 0
+            }
+          },
+          "14b": {
+            "masked_stem": {
+              "n": 49,
+              "passes": 28,
+              "passRate": 0.5714285714285714,
+              "chance": 0.25,
+              "ci95": [
+                0.42857142857142855,
+                0.6938775510204082
+              ],
+              "modalLetter": "D",
+              "modalFrequency": 0.3673469387755102,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nMissingScores": 0
+            },
+            "isomorph_rank_preserving": {
+              "n": 49,
+              "passes": 28,
+              "passRate": 0.5714285714285714,
+              "chance": 0.25,
+              "ci95": [
+                0.42857142857142855,
+                0.7142857142857143
+              ],
+              "modalLetter": "D",
+              "modalFrequency": 0.3673469387755102,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nExcludedPerturbFailed": 0
+            }
+          },
+          "phi4": {
+            "masked_stem": {
+              "n": 49,
+              "passes": 32,
+              "passRate": 0.6530612244897959,
+              "chance": 0.25,
+              "ci95": [
+                0.5102040816326531,
+                0.7755102040816326
+              ],
+              "modalLetter": "D",
+              "modalFrequency": 0.3673469387755102,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nMissingScores": 0
+            },
+            "isomorph_rank_preserving": {
+              "n": 49,
+              "passes": 26,
+              "passRate": 0.5306122448979592,
+              "chance": 0.25,
+              "ci95": [
+                0.3877551020408163,
+                0.673469387755102
+              ],
+              "modalLetter": "D",
+              "modalFrequency": 0.3673469387755102,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nExcludedPerturbFailed": 0
+            }
+          }
+        }
+      },
+      "cluster_execution": {
+        "n_subset_in_population": 159,
+        "models": {
+          "7b": {
+            "masked_stem": {
+              "n": 159,
+              "passes": 80,
+              "passRate": 0.5031446540880503,
+              "chance": 0.2505241090146751,
+              "ci95": [
+                0.4276729559748428,
+                0.5849056603773585
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.3018867924528302,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nMissingScores": 0
+            },
+            "isomorph_rank_preserving": {
+              "n": 158,
+              "passes": 74,
+              "passRate": 0.46835443037974683,
+              "chance": 0.2505274261603376,
+              "ci95": [
+                0.3860759493670886,
+                0.5443037974683544
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.3037974683544304,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nExcludedPerturbFailed": 1
+            }
+          },
+          "14b": {
+            "masked_stem": {
+              "n": 159,
+              "passes": 76,
+              "passRate": 0.4779874213836478,
+              "chance": 0.2505241090146751,
+              "ci95": [
+                0.4025157232704403,
+                0.5471698113207547
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.3018867924528302,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nMissingScores": 0
+            },
+            "isomorph_rank_preserving": {
+              "n": 158,
+              "passes": 65,
+              "passRate": 0.41139240506329117,
+              "chance": 0.2505274261603376,
+              "ci95": [
+                0.33544303797468356,
+                0.4873417721518987
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.3037974683544304,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nExcludedPerturbFailed": 1
+            }
+          },
+          "phi4": {
+            "masked_stem": {
+              "n": 159,
+              "passes": 72,
+              "passRate": 0.4528301886792453,
+              "chance": 0.2505241090146751,
+              "ci95": [
+                0.3710691823899371,
+                0.5283018867924528
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.3018867924528302,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nMissingScores": 0
+            },
+            "isomorph_rank_preserving": {
+              "n": 158,
+              "passes": 64,
+              "passRate": 0.4050632911392405,
+              "chance": 0.2505274261603376,
+              "ci95": [
+                0.3291139240506329,
+                0.4810126582278481
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.3037974683544304,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nExcludedPerturbFailed": 1
+            }
+          }
+        }
+      },
+      "cluster_recognition": {
+        "n_subset_in_population": 148,
+        "models": {
+          "7b": {
+            "masked_stem": {
+              "n": 148,
+              "passes": 73,
+              "passRate": 0.49324324324324326,
+              "chance": 0.25,
+              "ci95": [
+                0.4189189189189189,
+                0.5743243243243243
+              ],
+              "modalLetter": "C",
+              "modalFrequency": 0.27702702702702703,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nMissingScores": 0
+            },
+            "isomorph_rank_preserving": {
+              "n": 148,
+              "passes": 71,
+              "passRate": 0.4797297297297297,
+              "chance": 0.25,
+              "ci95": [
+                0.40540540540540543,
+                0.5540540540540541
+              ],
+              "modalLetter": "C",
+              "modalFrequency": 0.27702702702702703,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nExcludedPerturbFailed": 0
+            }
+          },
+          "14b": {
+            "masked_stem": {
+              "n": 148,
+              "passes": 79,
+              "passRate": 0.5337837837837838,
+              "chance": 0.25,
+              "ci95": [
+                0.4527027027027027,
+                0.6081081081081081
+              ],
+              "modalLetter": "C",
+              "modalFrequency": 0.27702702702702703,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nMissingScores": 0
+            },
+            "isomorph_rank_preserving": {
+              "n": 148,
+              "passes": 62,
+              "passRate": 0.4189189189189189,
+              "chance": 0.25,
+              "ci95": [
+                0.33783783783783783,
+                0.5
+              ],
+              "modalLetter": "C",
+              "modalFrequency": 0.27702702702702703,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nExcludedPerturbFailed": 0
+            }
+          },
+          "phi4": {
+            "masked_stem": {
+              "n": 148,
+              "passes": 75,
+              "passRate": 0.5067567567567568,
+              "chance": 0.25,
+              "ci95": [
+                0.42567567567567566,
+                0.581081081081081
+              ],
+              "modalLetter": "C",
+              "modalFrequency": 0.27702702702702703,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nMissingScores": 0
+            },
+            "isomorph_rank_preserving": {
+              "n": 148,
+              "passes": 58,
+              "passRate": 0.3918918918918919,
+              "chance": 0.25,
+              "ci95": [
+                0.3108108108108108,
+                0.47297297297297297
+              ],
+              "modalLetter": "C",
+              "modalFrequency": 0.27702702702702703,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nExcludedPerturbFailed": 0
+            }
+          }
+        }
+      }
+    },
+    "text_layer": {
+      "execution_either": {
+        "n_subset_in_population": 266,
+        "models": {
+          "7b": {
+            "masked_stem": {
+              "n": 266,
+              "passes": 87,
+              "passRate": 0.32706766917293234,
+              "chance": 0.25,
+              "ci95": [
+                0.2631578947368421,
+                0.38345864661654133
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.2894736842105263,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": false,
+              "clearsBar": false,
+              "nMissingScores": 0
+            }
+          },
+          "14b": {
+            "masked_stem": {
+              "n": 266,
+              "passes": 97,
+              "passRate": 0.36466165413533835,
+              "chance": 0.25,
+              "ci95": [
+                0.31203007518796994,
+                0.424812030075188
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.2894736842105263,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nMissingScores": 0
+            }
+          },
+          "phi4": {
+            "masked_stem": {
+              "n": 266,
+              "passes": 102,
+              "passRate": 0.38345864661654133,
+              "chance": 0.25,
+              "ci95": [
+                0.3233082706766917,
+                0.44360902255639095
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.2894736842105263,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nMissingScores": 0
+            }
+          }
+        }
+      },
+      "execution_both": {
+        "n_subset_in_population": 195,
+        "models": {
+          "7b": {
+            "masked_stem": {
+              "n": 195,
+              "passes": 54,
+              "passRate": 0.27692307692307694,
+              "chance": 0.25,
+              "ci95": [
+                0.2153846153846154,
+                0.3435897435897436
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.27692307692307694,
+              "lowerCiAboveChance": false,
+              "lowerCiAboveModal": false,
+              "clearsBar": false,
+              "nMissingScores": 0
+            }
+          },
+          "14b": {
+            "masked_stem": {
+              "n": 195,
+              "passes": 63,
+              "passRate": 0.3230769230769231,
+              "chance": 0.25,
+              "ci95": [
+                0.2564102564102564,
+                0.38974358974358975
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.27692307692307694,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": false,
+              "clearsBar": false,
+              "nMissingScores": 0
+            }
+          },
+          "phi4": {
+            "masked_stem": {
+              "n": 195,
+              "passes": 72,
+              "passRate": 0.36923076923076925,
+              "chance": 0.25,
+              "ci95": [
+                0.30256410256410254,
+                0.4358974358974359
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.27692307692307694,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nMissingScores": 0
+            }
+          }
+        }
+      },
+      "recognition_both": {
+        "n_subset_in_population": 82,
+        "models": {
+          "7b": {
+            "masked_stem": {
+              "n": 82,
+              "passes": 46,
+              "passRate": 0.5609756097560976,
+              "chance": 0.25,
+              "ci95": [
+                0.4634146341463415,
+                0.6707317073170732
+              ],
+              "modalLetter": "A",
+              "modalFrequency": 0.2682926829268293,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nMissingScores": 0
+            }
+          },
+          "14b": {
+            "masked_stem": {
+              "n": 82,
+              "passes": 46,
+              "passRate": 0.5609756097560976,
+              "chance": 0.25,
+              "ci95": [
+                0.43902439024390244,
+                0.6707317073170732
+              ],
+              "modalLetter": "A",
+              "modalFrequency": 0.2682926829268293,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nMissingScores": 0
+            }
+          },
+          "phi4": {
+            "masked_stem": {
+              "n": 82,
+              "passes": 44,
+              "passRate": 0.5365853658536586,
+              "chance": 0.25,
+              "ci95": [
+                0.43902439024390244,
+                0.6585365853658537
+              ],
+              "modalLetter": "A",
+              "modalFrequency": 0.2682926829268293,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nMissingScores": 0
+            }
+          }
+        }
+      },
+      "execution_both_and_cluster": {
+        "n_subset_in_population": 97,
+        "models": {
+          "7b": {
+            "masked_stem": {
+              "n": 97,
+              "passes": 19,
+              "passRate": 0.1958762886597938,
+              "chance": 0.25,
+              "ci95": [
+                0.12371134020618557,
+                0.27835051546391754
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.28865979381443296,
+              "lowerCiAboveChance": false,
+              "lowerCiAboveModal": false,
+              "clearsBar": false,
+              "nMissingScores": 0
+            }
+          },
+          "14b": {
+            "masked_stem": {
+              "n": 97,
+              "passes": 33,
+              "passRate": 0.3402061855670103,
+              "chance": 0.25,
+              "ci95": [
+                0.24742268041237114,
+                0.4329896907216495
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.28865979381443296,
+              "lowerCiAboveChance": false,
+              "lowerCiAboveModal": false,
+              "clearsBar": false,
+              "nMissingScores": 0
+            }
+          },
+          "phi4": {
+            "masked_stem": {
+              "n": 97,
+              "passes": 33,
+              "passRate": 0.3402061855670103,
+              "chance": 0.25,
+              "ci95": [
+                0.25773195876288657,
+                0.44329896907216493
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.28865979381443296,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": false,
+              "clearsBar": false,
+              "nMissingScores": 0
+            }
+          }
+        }
+      },
+      "recognition_both_and_cluster": {
+        "n_subset_in_population": 51,
+        "models": {
+          "7b": {
+            "masked_stem": {
+              "n": 51,
+              "passes": 27,
+              "passRate": 0.5294117647058824,
+              "chance": 0.25,
+              "ci95": [
+                0.39215686274509803,
+                0.6666666666666666
+              ],
+              "modalLetter": "D",
+              "modalFrequency": 0.35294117647058826,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nMissingScores": 0
+            }
+          },
+          "14b": {
+            "masked_stem": {
+              "n": 51,
+              "passes": 27,
+              "passRate": 0.5294117647058824,
+              "chance": 0.25,
+              "ci95": [
+                0.39215686274509803,
+                0.6666666666666666
+              ],
+              "modalLetter": "D",
+              "modalFrequency": 0.35294117647058826,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nMissingScores": 0
+            }
+          },
+          "phi4": {
+            "masked_stem": {
+              "n": 51,
+              "passes": 25,
+              "passRate": 0.49019607843137253,
+              "chance": 0.25,
+              "ci95": [
+                0.35294117647058826,
+                0.6274509803921569
+              ],
+              "modalLetter": "D",
+              "modalFrequency": 0.35294117647058826,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": false,
+              "clearsBar": false,
+              "nMissingScores": 0
+            }
+          }
+        }
+      },
+      "cluster_execution": {
+        "n_subset_in_population": 164,
+        "models": {
+          "7b": {
+            "masked_stem": {
+              "n": 164,
+              "passes": 48,
+              "passRate": 0.2926829268292683,
+              "chance": 0.25,
+              "ci95": [
+                0.21951219512195122,
+                0.3597560975609756
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.29878048780487804,
+              "lowerCiAboveChance": false,
+              "lowerCiAboveModal": false,
+              "clearsBar": false,
+              "nMissingScores": 0
+            }
+          },
+          "14b": {
+            "masked_stem": {
+              "n": 164,
+              "passes": 62,
+              "passRate": 0.3780487804878049,
+              "chance": 0.25,
+              "ci95": [
+                0.31097560975609756,
+                0.4573170731707317
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.29878048780487804,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nMissingScores": 0
+            }
+          },
+          "phi4": {
+            "masked_stem": {
+              "n": 164,
+              "passes": 60,
+              "passRate": 0.36585365853658536,
+              "chance": 0.25,
+              "ci95": [
+                0.2926829268292683,
+                0.43902439024390244
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.29878048780487804,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": false,
+              "clearsBar": false,
+              "nMissingScores": 0
+            }
+          }
+        }
+      },
+      "cluster_recognition": {
+        "n_subset_in_population": 151,
+        "models": {
+          "7b": {
+            "masked_stem": {
+              "n": 151,
+              "passes": 66,
+              "passRate": 0.4370860927152318,
+              "chance": 0.25,
+              "ci95": [
+                0.3576158940397351,
+                0.5099337748344371
+              ],
+              "modalLetter": "C",
+              "modalFrequency": 0.271523178807947,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nMissingScores": 0
+            }
+          },
+          "14b": {
+            "masked_stem": {
+              "n": 151,
+              "passes": 63,
+              "passRate": 0.41721854304635764,
+              "chance": 0.25,
+              "ci95": [
+                0.3443708609271523,
+                0.4900662251655629
+              ],
+              "modalLetter": "C",
+              "modalFrequency": 0.271523178807947,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nMissingScores": 0
+            }
+          },
+          "phi4": {
+            "masked_stem": {
+              "n": 151,
+              "passes": 69,
+              "passRate": 0.45695364238410596,
+              "chance": 0.25,
+              "ci95": [
+                0.37748344370860926,
+                0.5364238410596026
+              ],
+              "modalLetter": "C",
+              "modalFrequency": 0.271523178807947,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nMissingScores": 0
+            }
+          }
+        }
+      }
+    },
+    "text_layer_faithful": {
+      "execution_either": {
+        "n_subset_in_population": 124,
+        "models": {
+          "7b": {
+            "masked_stem": {
+              "n": 124,
+              "passes": 50,
+              "passRate": 0.4032258064516129,
+              "chance": 0.25,
+              "ci95": [
+                0.31451612903225806,
+                0.49193548387096775
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.28225806451612906,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nMissingScores": 0
+            }
+          },
+          "14b": {
+            "masked_stem": {
+              "n": 124,
+              "passes": 45,
+              "passRate": 0.3629032258064516,
+              "chance": 0.25,
+              "ci95": [
+                0.27419354838709675,
+                0.4435483870967742
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.28225806451612906,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": false,
+              "clearsBar": false,
+              "nMissingScores": 0
+            }
+          },
+          "phi4": {
+            "masked_stem": {
+              "n": 124,
+              "passes": 49,
+              "passRate": 0.3951612903225806,
+              "chance": 0.25,
+              "ci95": [
+                0.3064516129032258,
+                0.4838709677419355
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.28225806451612906,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nMissingScores": 0
+            }
+          }
+        }
+      },
+      "execution_both": {
+        "n_subset_in_population": 91,
+        "models": {
+          "7b": {
+            "masked_stem": {
+              "n": 91,
+              "passes": 31,
+              "passRate": 0.34065934065934067,
+              "chance": 0.25,
+              "ci95": [
+                0.24175824175824176,
+                0.43956043956043955
+              ],
+              "modalLetter": "C",
+              "modalFrequency": 0.27472527472527475,
+              "lowerCiAboveChance": false,
+              "lowerCiAboveModal": false,
+              "clearsBar": false,
+              "nMissingScores": 0
+            }
+          },
+          "14b": {
+            "masked_stem": {
+              "n": 91,
+              "passes": 28,
+              "passRate": 0.3076923076923077,
+              "chance": 0.25,
+              "ci95": [
+                0.2087912087912088,
+                0.3956043956043956
+              ],
+              "modalLetter": "C",
+              "modalFrequency": 0.27472527472527475,
+              "lowerCiAboveChance": false,
+              "lowerCiAboveModal": false,
+              "clearsBar": false,
+              "nMissingScores": 0
+            }
+          },
+          "phi4": {
+            "masked_stem": {
+              "n": 91,
+              "passes": 33,
+              "passRate": 0.3626373626373626,
+              "chance": 0.25,
+              "ci95": [
+                0.26373626373626374,
+                0.46153846153846156
+              ],
+              "modalLetter": "C",
+              "modalFrequency": 0.27472527472527475,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": false,
+              "clearsBar": false,
+              "nMissingScores": 0
+            }
+          }
+        }
+      },
+      "recognition_both": {
+        "n_subset_in_population": 54,
+        "models": {
+          "7b": {
+            "masked_stem": {
+              "n": 54,
+              "passes": 32,
+              "passRate": 0.5925925925925926,
+              "chance": 0.25,
+              "ci95": [
+                0.46296296296296297,
+                0.7222222222222222
+              ],
+              "modalLetter": "A",
+              "modalFrequency": 0.2777777777777778,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nMissingScores": 0
+            }
+          },
+          "14b": {
+            "masked_stem": {
+              "n": 54,
+              "passes": 31,
+              "passRate": 0.5740740740740741,
+              "chance": 0.25,
+              "ci95": [
+                0.4444444444444444,
+                0.7037037037037037
+              ],
+              "modalLetter": "A",
+              "modalFrequency": 0.2777777777777778,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nMissingScores": 0
+            }
+          },
+          "phi4": {
+            "masked_stem": {
+              "n": 54,
+              "passes": 34,
+              "passRate": 0.6296296296296297,
+              "chance": 0.25,
+              "ci95": [
+                0.5,
+                0.7592592592592593
+              ],
+              "modalLetter": "A",
+              "modalFrequency": 0.2777777777777778,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nMissingScores": 0
+            }
+          }
+        }
+      },
+      "execution_both_and_cluster": {
+        "n_subset_in_population": 43,
+        "models": {
+          "7b": {
+            "masked_stem": {
+              "n": 43,
+              "passes": 10,
+              "passRate": 0.23255813953488372,
+              "chance": 0.25,
+              "ci95": [
+                0.11627906976744186,
+                0.37209302325581395
+              ],
+              "modalLetter": "D",
+              "modalFrequency": 0.27906976744186046,
+              "lowerCiAboveChance": false,
+              "lowerCiAboveModal": false,
+              "clearsBar": false,
+              "nMissingScores": 0
+            }
+          },
+          "14b": {
+            "masked_stem": {
+              "n": 43,
+              "passes": 12,
+              "passRate": 0.27906976744186046,
+              "chance": 0.25,
+              "ci95": [
+                0.16279069767441862,
+                0.4186046511627907
+              ],
+              "modalLetter": "D",
+              "modalFrequency": 0.27906976744186046,
+              "lowerCiAboveChance": false,
+              "lowerCiAboveModal": false,
+              "clearsBar": false,
+              "nMissingScores": 0
+            }
+          },
+          "phi4": {
+            "masked_stem": {
+              "n": 43,
+              "passes": 14,
+              "passRate": 0.32558139534883723,
+              "chance": 0.25,
+              "ci95": [
+                0.18604651162790697,
+                0.46511627906976744
+              ],
+              "modalLetter": "D",
+              "modalFrequency": 0.27906976744186046,
+              "lowerCiAboveChance": false,
+              "lowerCiAboveModal": false,
+              "clearsBar": false,
+              "nMissingScores": 0
+            }
+          }
+        }
+      },
+      "recognition_both_and_cluster": {
+        "n_subset_in_population": 34,
+        "models": {
+          "7b": {
+            "masked_stem": {
+              "n": 34,
+              "passes": 18,
+              "passRate": 0.5294117647058824,
+              "chance": 0.25,
+              "ci95": [
+                0.35294117647058826,
+                0.6764705882352942
+              ],
+              "modalLetter": "D",
+              "modalFrequency": 0.38235294117647056,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": false,
+              "clearsBar": false,
+              "nMissingScores": 0
+            }
+          },
+          "14b": {
+            "masked_stem": {
+              "n": 34,
+              "passes": 17,
+              "passRate": 0.5,
+              "chance": 0.25,
+              "ci95": [
+                0.35294117647058826,
+                0.6764705882352942
+              ],
+              "modalLetter": "D",
+              "modalFrequency": 0.38235294117647056,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": false,
+              "clearsBar": false,
+              "nMissingScores": 0
+            }
+          },
+          "phi4": {
+            "masked_stem": {
+              "n": 34,
+              "passes": 19,
+              "passRate": 0.5588235294117647,
+              "chance": 0.25,
+              "ci95": [
+                0.38235294117647056,
+                0.7058823529411765
+              ],
+              "modalLetter": "D",
+              "modalFrequency": 0.38235294117647056,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": false,
+              "clearsBar": false,
+              "nMissingScores": 0
+            }
+          }
+        }
+      },
+      "cluster_execution": {
+        "n_subset_in_population": 75,
+        "models": {
+          "7b": {
+            "masked_stem": {
+              "n": 75,
+              "passes": 27,
+              "passRate": 0.36,
+              "chance": 0.25,
+              "ci95": [
+                0.25333333333333335,
+                0.48
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.29333333333333333,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": false,
+              "clearsBar": false,
+              "nMissingScores": 0
+            }
+          },
+          "14b": {
+            "masked_stem": {
+              "n": 75,
+              "passes": 25,
+              "passRate": 0.3333333333333333,
+              "chance": 0.25,
+              "ci95": [
+                0.24,
+                0.44
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.29333333333333333,
+              "lowerCiAboveChance": false,
+              "lowerCiAboveModal": false,
+              "clearsBar": false,
+              "nMissingScores": 0
+            }
+          },
+          "phi4": {
+            "masked_stem": {
+              "n": 75,
+              "passes": 29,
+              "passRate": 0.38666666666666666,
+              "chance": 0.25,
+              "ci95": [
+                0.29333333333333333,
+                0.5066666666666667
+              ],
+              "modalLetter": "B",
+              "modalFrequency": 0.29333333333333333,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": false,
+              "clearsBar": false,
+              "nMissingScores": 0
+            }
+          }
+        }
+      },
+      "cluster_recognition": {
+        "n_subset_in_population": 83,
+        "models": {
+          "7b": {
+            "masked_stem": {
+              "n": 83,
+              "passes": 43,
+              "passRate": 0.5180722891566265,
+              "chance": 0.25,
+              "ci95": [
+                0.40963855421686746,
+                0.6144578313253012
+              ],
+              "modalLetter": "D",
+              "modalFrequency": 0.26506024096385544,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nMissingScores": 0
+            }
+          },
+          "14b": {
+            "masked_stem": {
+              "n": 83,
+              "passes": 37,
+              "passRate": 0.4457831325301205,
+              "chance": 0.25,
+              "ci95": [
+                0.3493975903614458,
+                0.5542168674698795
+              ],
+              "modalLetter": "D",
+              "modalFrequency": 0.26506024096385544,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nMissingScores": 0
+            }
+          },
+          "phi4": {
+            "masked_stem": {
+              "n": 83,
+              "passes": 42,
+              "passRate": 0.5060240963855421,
+              "chance": 0.25,
+              "ci95": [
+                0.39759036144578314,
+                0.6144578313253012
+              ],
+              "modalLetter": "D",
+              "modalFrequency": 0.26506024096385544,
+              "lowerCiAboveChance": true,
+              "lowerCiAboveModal": true,
+              "clearsBar": true,
+              "nMissingScores": 0
+            }
+          }
+        }
+      }
+    }
+  },
+  "writtenAt": "2026-09-17T11:26:49.330613+00:00"
+}

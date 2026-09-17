@@ -91,7 +91,7 @@
     "algebra_ii_execution_verified": 83,
     "algebra_ii_recognition_verified": 57,
     "algebra_i_isomorph_all": 342,
-    "algebra_ii_isomorph_all": 227,
+    "algebra_ii_isomorph_all": 228,
     "algebra_i_isomorph_verified": 260,
     "algebra_ii_isomorph_verified": 165
   },
@@ -448,20 +448,20 @@
             "nMissingScores": 0
           },
           "isomorph_all": {
-            "n": 227,
-            "passes": 89,
-            "passRate": 0.3920704845814978,
+            "n": 228,
+            "passes": 90,
+            "passRate": 0.39473684210526316,
             "chance": 0.25,
             "ci95": [
-              0.3303964757709251,
-              0.45374449339207046
+              0.32894736842105265,
+              0.45614035087719296
             ],
             "modalLetter": "C",
-            "modalFrequency": 0.28193832599118945,
+            "modalFrequency": 0.2807017543859649,
             "lowerCiAboveChance": true,
             "lowerCiAboveModal": true,
             "clearsBar": true,
-            "nRequested": 227,
+            "nRequested": 228,
             "nMissingScores": 0
           },
           "isomorph_verified": {
@@ -792,20 +792,20 @@
             "nMissingScores": 0
           },
           "isomorph_all": {
-            "n": 227,
-            "passes": 85,
-            "passRate": 0.3744493392070485,
+            "n": 228,
+            "passes": 86,
+            "passRate": 0.37719298245614036,
             "chance": 0.25,
             "ci95": [
-              0.30837004405286345,
-              0.43612334801762115
+              0.3201754385964912,
+              0.43859649122807015
             ],
             "modalLetter": "C",
-            "modalFrequency": 0.28193832599118945,
+            "modalFrequency": 0.2807017543859649,
             "lowerCiAboveChance": true,
             "lowerCiAboveModal": true,
             "clearsBar": true,
-            "nRequested": 227,
+            "nRequested": 228,
             "nMissingScores": 0
           },
           "isomorph_verified": {
@@ -1136,20 +1136,20 @@
             "nMissingScores": 0
           },
           "isomorph_all": {
-            "n": 227,
+            "n": 228,
             "passes": 80,
-            "passRate": 0.3524229074889868,
+            "passRate": 0.3508771929824561,
             "chance": 0.25,
             "ci95": [
-              0.2907488986784141,
-              0.41409691629955947
+              0.2894736842105263,
+              0.40789473684210525
             ],
             "modalLetter": "C",
-            "modalFrequency": 0.28193832599118945,
+            "modalFrequency": 0.2807017543859649,
             "lowerCiAboveChance": true,
             "lowerCiAboveModal": true,
             "clearsBar": true,
-            "nRequested": 227,
+            "nRequested": 228,
             "nMissingScores": 0
           },
           "isomorph_verified": {
@@ -1662,6 +1662,5 @@
       }
     }
   },
-  "perturbFailed": 5,
-  "writtenAt": "2026-09-17T07:45:54.477192+00:00"
+  "writtenAt": "2026-09-17T08:39:43.938956+00:00"
 }

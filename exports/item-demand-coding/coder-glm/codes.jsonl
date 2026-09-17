@@ -1,0 +1,358 @@
+{"id": "nyregents-algebra-i-2014-aug-q14", "code": "execution", "one_line_reason": "Compute average rate of change from table values.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2014-aug-q15", "code": "execution", "one_line_reason": "Factor perfect-square trinomial with these coefficients.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2014-aug-q19", "code": "recognition_or_interpretation", "one_line_reason": "Translate wording into a system form; match structure.", "confidence": "medium"}
+{"id": "nyregents-algebra-i-2014-aug-q2", "code": "recognition_or_interpretation", "one_line_reason": "Interpret parameters of y=40+90x without computing.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2014-aug-q23", "code": "mixed", "one_line_reason": "Need t>=0 recognition and root computation t=3.", "confidence": "medium"}
+{"id": "nyregents-algebra-i-2014-aug-q4", "code": "execution", "one_line_reason": "Compute median, mean, range from given data tables.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2014-aug-q6", "code": "execution", "one_line_reason": "Compute P(x)=R(x)-C(x) by subtracting polynomials.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2014-aug-q8", "code": "execution", "one_line_reason": "Find x-intercept by setting y=0 and solving 4x=40.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2014-aug-q9", "code": "recognition_or_interpretation", "one_line_reason": "Set up equation from consecutive-odd-integer wording.", "confidence": "medium"}
+{"id": "nyregents-algebra-i-2014-jun-q1", "code": "recognition_or_interpretation", "one_line_reason": "Identify which property justifies the algebraic step.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2014-jun-q12", "code": "execution", "one_line_reason": "Use zeros -6,5 to build factors by operating on numbers.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2014-jun-q14", "code": "execution", "one_line_reason": "Determine equivalent system by scaling these equations.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2014-jun-q16", "code": "recognition_or_interpretation", "one_line_reason": "Translate coin wording into an equation form.", "confidence": "medium"}
+{"id": "nyregents-algebra-i-2014-jun-q22", "code": "recognition_or_interpretation", "one_line_reason": "Write linear equation from fee+per-MB wording.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2014-jun-q7", "code": "recognition_or_interpretation", "one_line_reason": "Interpret what 5.25 represents in c(r)=5.25r+125.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2015-aug-q1", "code": "recognition_or_interpretation", "one_line_reason": "Recognize effect of increasing b (vertical shift up).", "confidence": "high"}
+{"id": "nyregents-algebra-i-2015-aug-q10", "code": "execution", "one_line_reason": "Solve system from candle-sales word problem numbers.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2015-aug-q14", "code": "recognition_or_interpretation", "one_line_reason": "Match recursive form to first term 10, diff 4.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2015-aug-q18", "code": "execution", "one_line_reason": "Compute and compare two payment sequences to crossover.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2015-aug-q19", "code": "execution", "one_line_reason": "Compute mean and std dev of two data sets.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2015-aug-q2", "code": "recognition_or_interpretation", "one_line_reason": "Compare slopes/positions from rates and intercepts.", "confidence": "medium"}
+{"id": "nyregents-algebra-i-2015-aug-q20", "code": "execution", "one_line_reason": "Complete the square to find a=6 from x^2-12x.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2015-aug-q21", "code": "execution", "one_line_reason": "Compare rates, intercepts, maxima, roots numerically.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2015-aug-q23", "code": "execution", "one_line_reason": "Solve (x+3)^2=7 by square-rooting.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2015-aug-q9", "code": "execution", "one_line_reason": "Factor 4x^2-4x-120 and match equivalent forms.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2015-jan-q10", "code": "execution", "one_line_reason": "Multiply (2x-6)(3x-5) to get area expression.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2015-jan-q11", "code": "execution", "one_line_reason": "Find line through two points; test option points.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2015-jan-q13", "code": "mixed", "one_line_reason": "Set up inequality from wording and solve for rides.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2015-jan-q17", "code": "execution", "one_line_reason": "Complete the square x^2+6x-7 to (x+3)^2-16.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2015-jan-q21", "code": "execution", "one_line_reason": "Compute average speed from d(5),d(10) via 0.8t^2.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2015-jan-q23", "code": "recognition_or_interpretation", "one_line_reason": "Match postage wording to piecewise form.", "confidence": "medium"}
+{"id": "nyregents-algebra-i-2015-jan-q3", "code": "execution", "one_line_reason": "Factor 2x^2+x-3 to match equivalent factored form.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2015-jan-q4", "code": "recognition_or_interpretation", "one_line_reason": "Recognize compound-growth form from wording.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2015-jan-q8", "code": "execution", "one_line_reason": "Compute v(2)-v(3) from 25000(0.86)^x numerically.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2015-jun-q1", "code": "recognition_or_interpretation", "one_line_reason": "Interpret parameters of C(n)=110n+900.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2015-jun-q10", "code": "execution", "one_line_reason": "Find zeros of x^2-13x-30 by factoring.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2015-jun-q11", "code": "execution", "one_line_reason": "Compute average rate of change from table values.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2015-jun-q21", "code": "execution", "one_line_reason": "Identify next step by operating on the quadratic equation.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2015-jun-q23", "code": "execution", "one_line_reason": "Solve x^2-8x=24 by completing the square.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2015-jun-q3", "code": "execution", "one_line_reason": "Factor difference of squares x^4-9y^2.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2015-jun-q6", "code": "execution", "one_line_reason": "Solve system from apple/peach word problem numbers.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2016-aug-q10", "code": "execution", "one_line_reason": "Find arithmetic sequence formula matching terms and f(6).", "confidence": "high"}
+{"id": "nyregents-algebra-i-2016-aug-q12", "code": "execution", "one_line_reason": "Multiply (2x+3)(4x^2-5x+6) and combine like terms.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2016-aug-q13", "code": "execution", "one_line_reason": "Interpret rocket table; check conclusions numerically.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2016-aug-q18", "code": "recognition_or_interpretation", "one_line_reason": "Identify which function type grows largest by form.", "confidence": "medium"}
+{"id": "nyregents-algebra-i-2016-aug-q2", "code": "recognition_or_interpretation", "one_line_reason": "Choose definition of a two-variable equation solution.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2016-aug-q20", "code": "recognition_or_interpretation", "one_line_reason": "Choose appropriate domain type (whole numbers).", "confidence": "high"}
+{"id": "nyregents-algebra-i-2016-aug-q21", "code": "execution", "one_line_reason": "Rewrite 3x^2+12x+11 in vertex form by completing square.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2016-aug-q4", "code": "execution", "one_line_reason": "Evaluate f(x)=-2x+6 at given x values to match chart.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2016-aug-q7", "code": "execution", "one_line_reason": "Solve linear inequality 2h+8>3h-6 for h.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2016-aug-q8", "code": "execution", "one_line_reason": "Factor difference of squares 36x^2-100.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2016-aug-q9", "code": "recognition_or_interpretation", "one_line_reason": "Choose appropriate rate unit (inches per month).", "confidence": "high"}
+{"id": "nyregents-algebra-i-2016-jan-q11", "code": "recognition_or_interpretation", "one_line_reason": "Set up area equation from patio wording; match form.", "confidence": "medium"}
+{"id": "nyregents-algebra-i-2016-jan-q12", "code": "execution", "one_line_reason": "Factor x^3-13x^2-30x completely.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2016-jan-q14", "code": "execution", "one_line_reason": "Complete the square on x^2-8x-7=0.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2016-jan-q18", "code": "execution", "one_line_reason": "Identify recursive rule generating 3,7,15,31 by testing.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2016-jan-q21", "code": "execution", "one_line_reason": "Determine which equivalent system is NOT valid.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2016-jan-q23", "code": "recognition_or_interpretation", "one_line_reason": "Identify situations with equal differences over intervals.", "confidence": "medium"}
+{"id": "nyregents-algebra-i-2016-jan-q3", "code": "execution", "one_line_reason": "Evaluate revenue function at weeks 3 and 5, subtract.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2016-jan-q7", "code": "execution", "one_line_reason": "Expand and complete square y-34=x(x-12).", "confidence": "high"}
+{"id": "nyregents-algebra-i-2016-jan-q8", "code": "recognition_or_interpretation", "one_line_reason": "Interpret 1.02 in A=1300(1.02)^7 as 2% growth.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2016-jan-q9", "code": "execution", "one_line_reason": "Find zeros of 2x^2-4x-6 by factoring.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2016-jun-q1", "code": "execution", "one_line_reason": "Factor difference of squares x^4-16.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2016-jun-q10", "code": "execution", "one_line_reason": "Simplify 3(x^2-1)-(x^2-7x+10) by distributing.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2016-jun-q11", "code": "execution", "one_line_reason": "Find range of x^2+2x-8 by completing the square.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2016-jun-q12", "code": "execution", "one_line_reason": "Find zeros of x^2-5x-6 by factoring.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2016-jun-q13", "code": "execution", "one_line_reason": "Compute fifth term of arithmetic sequence a1=4, d=3.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2016-jun-q15", "code": "execution", "one_line_reason": "Compute a percentage from a two-way table/figure.", "confidence": "medium"}
+{"id": "nyregents-algebra-i-2016-jun-q16", "code": "execution", "one_line_reason": "Complete the square to get vertex form and vertex.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2016-jun-q18", "code": "execution", "one_line_reason": "Find shared solution of line and table-defined line.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2016-jun-q19", "code": "execution", "one_line_reason": "Solve 2(x+2)^2-4=28 for x.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2016-jun-q2", "code": "recognition_or_interpretation", "one_line_reason": "Identify polynomial matching degree, leading coeff, constant.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2016-jun-q21", "code": "execution", "one_line_reason": "Compare 5x^4+... vs 3^x numerically for largest x.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2016-jun-q22", "code": "execution", "one_line_reason": "Solve f(x)=g(x) for |x-3|+1=2x+1 to check statements.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2016-jun-q4", "code": "recognition_or_interpretation", "one_line_reason": "Interpret correlation direction from described scatterplot.", "confidence": "medium"}
+{"id": "nyregents-algebra-i-2016-jun-q7", "code": "execution", "one_line_reason": "Compute third pH reading so average is in range.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2017-aug-q1", "code": "recognition_or_interpretation", "one_line_reason": "Identify property justifying the distribution step.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2017-aug-q10", "code": "recognition_or_interpretation", "one_line_reason": "State domain of a listed relation (read off x-values).", "confidence": "high"}
+{"id": "nyregents-algebra-i-2017-aug-q14", "code": "recognition_or_interpretation", "one_line_reason": "Match population-tripling wording to exponential form.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2017-aug-q17", "code": "recognition_or_interpretation", "one_line_reason": "Identify function type (linear) from fixed deduction.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2017-aug-q19", "code": "execution", "one_line_reason": "Find zeros of 2x^3+12x-10x^2 by factoring.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2017-aug-q22", "code": "recognition_or_interpretation", "one_line_reason": "Interpret r=-0.896 as strong negative correlation.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2017-aug-q23", "code": "recognition_or_interpretation", "one_line_reason": "Set up equation from consecutive-integer age wording.", "confidence": "medium"}
+{"id": "nyregents-algebra-i-2017-aug-q4", "code": "execution", "one_line_reason": "Evaluate f(8) for the given function by computing.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2017-aug-q9", "code": "recognition_or_interpretation", "one_line_reason": "Interpret parameters of c(t)=125t+95.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2017-jan-q1", "code": "execution", "one_line_reason": "Factor difference of squares 16x^2-36.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2017-jan-q15", "code": "execution", "one_line_reason": "Solve 13-36x^2=-12 for x by operating on equation.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2017-jan-q17", "code": "recognition_or_interpretation", "one_line_reason": "Interpret effect of multiplying x^2 by a>1.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2017-jan-q19", "code": "recognition_or_interpretation", "one_line_reason": "Choose appropriate domain set (whole numbers).", "confidence": "high"}
+{"id": "nyregents-algebra-i-2017-jan-q2", "code": "recognition_or_interpretation", "one_line_reason": "Solve (x-2)(x-a)=0 by zero-product form recognition.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2017-jan-q21", "code": "recognition_or_interpretation", "one_line_reason": "Interpret which statement a described graph supports.", "confidence": "medium"}
+{"id": "nyregents-algebra-i-2017-jan-q3", "code": "recognition_or_interpretation", "one_line_reason": "Interpret r=-0.524 as moderate negative correlation.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2017-jan-q5", "code": "execution", "one_line_reason": "Compute a percentage from a graph/table (figure).", "confidence": "medium"}
+{"id": "nyregents-algebra-i-2017-jan-q7", "code": "execution", "one_line_reason": "Simplify 2(3g-4)-(8g+3) by distributing.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2017-jan-q8", "code": "recognition_or_interpretation", "one_line_reason": "Match mailing-cost wording to recursive form.", "confidence": "medium"}
+{"id": "nyregents-algebra-i-2017-jun-q11", "code": "recognition_or_interpretation", "one_line_reason": "Translate wage/hours constraints into inequalities form.", "confidence": "medium"}
+{"id": "nyregents-algebra-i-2017-jun-q12", "code": "recognition_or_interpretation", "one_line_reason": "Match compound-interest wording to form A=1000(1+0.013)^2.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2017-jun-q13", "code": "execution", "one_line_reason": "Solve 47-4x<7 and test which value satisfies it.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2017-jun-q15", "code": "recognition_or_interpretation", "one_line_reason": "Interpret spread/outlier of a listed data set.", "confidence": "medium"}
+{"id": "nyregents-algebra-i-2017-jun-q17", "code": "execution", "one_line_reason": "Compare quadratic functions from table and formula numerically.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2017-jun-q21", "code": "recognition_or_interpretation", "one_line_reason": "Identify defining property of linear functions.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2017-jun-q23", "code": "execution", "one_line_reason": "Determine which rearranged formula is NOT derivable.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2017-jun-q24", "code": "mixed", "one_line_reason": "Find appropriate domain for projectile (root + t>=0).", "confidence": "medium"}
+{"id": "nyregents-algebra-i-2017-jun-q5", "code": "execution", "one_line_reason": "Evaluate f(3) for f(x)=-2x^2+32 to check students.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2017-jun-q6", "code": "execution", "one_line_reason": "Factor 16x^4-64 to match equivalent form.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2017-jun-q8", "code": "execution", "one_line_reason": "Solve the system y=2x+8 and 3(-2x+y)=12.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2018-aug-q1", "code": "mixed", "one_line_reason": "Apply power rule and compute 2^4=16 for equivalent form.", "confidence": "medium"}
+{"id": "nyregents-algebra-i-2018-aug-q10", "code": "recognition_or_interpretation", "one_line_reason": "Translate fair-ticket constraints into inequalities form.", "confidence": "medium"}
+{"id": "nyregents-algebra-i-2018-aug-q13", "code": "execution", "one_line_reason": "Compute 2(y+z) by substituting and simplifying polynomials.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2018-aug-q15", "code": "recognition_or_interpretation", "one_line_reason": "Interpret open/closed circles from piecewise function form.", "confidence": "medium"}
+{"id": "nyregents-algebra-i-2018-aug-q16", "code": "execution", "one_line_reason": "Determine zero-equation by factoring 2x^2+x-3.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2018-aug-q18", "code": "execution", "one_line_reason": "Test which point does not satisfy x^2-5x+17-3y=2.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2018-aug-q22", "code": "execution", "one_line_reason": "Determine equivalent system by operating on equations.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2018-aug-q23", "code": "mixed", "one_line_reason": "Identify exponential situations; options reference unseen list.", "confidence": "low"}
+{"id": "nyregents-algebra-i-2018-aug-q3", "code": "execution", "one_line_reason": "Factor m^2-12m-64 with these coefficients.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2018-aug-q4", "code": "execution", "one_line_reason": "Solve -2(1-4x)=3x+8 for x.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2018-aug-q6", "code": "execution", "one_line_reason": "Compute range of x^2 over domain {0,1,4,9}.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2018-aug-q7", "code": "execution", "one_line_reason": "Factor difference of squares 4x^2-25.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2018-aug-q8", "code": "recognition_or_interpretation", "one_line_reason": "Interpret translation (x-2)^2+3 from f(x)=x^2.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2018-jan-q1", "code": "recognition_or_interpretation", "one_line_reason": "Identify property justifying the distribution step.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2018-jan-q10", "code": "execution", "one_line_reason": "Find intersections of y=x^2-3 and y=3x-4 numerically.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2018-jan-q13", "code": "execution", "one_line_reason": "Compute twice the sum of two polynomials.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2018-jan-q14", "code": "recognition_or_interpretation", "one_line_reason": "Translate purchase wording into a system form.", "confidence": "medium"}
+{"id": "nyregents-algebra-i-2018-jan-q17", "code": "mixed", "one_line_reason": "Solve inequality over a restricted integer domain.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2018-jan-q19", "code": "recognition_or_interpretation", "one_line_reason": "Recognize left-shift form g(x)=2(x+3)^2-1.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2018-jan-q21", "code": "mixed", "one_line_reason": "Apply exponent rule (1.013)^(t+25) needs small computation.", "confidence": "medium"}
+{"id": "nyregents-algebra-i-2018-jan-q22", "code": "execution", "one_line_reason": "Solve fractional linear equation for x.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2018-jan-q5", "code": "recognition_or_interpretation", "one_line_reason": "Identify function type (linear) from constant deposit.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2018-jan-q7", "code": "mixed", "one_line_reason": "Interpret price change and adjust function coefficient.", "confidence": "medium"}
+{"id": "nyregents-algebra-i-2018-jan-q8", "code": "mixed", "one_line_reason": "Classify product of roots as rational/irrational (small check).", "confidence": "medium"}
+{"id": "nyregents-algebra-i-2018-jan-q9", "code": "execution", "one_line_reason": "Factor difference of squares y^4-100.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2018-jun-q1", "code": "execution", "one_line_reason": "Solve linear inequality 4p+2<2(p+5) for p.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2018-jun-q10", "code": "execution", "one_line_reason": "Recognize x^2-14x+49 as perfect square (x-7)^2.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2018-jun-q11", "code": "recognition_or_interpretation", "one_line_reason": "Apply definition of a function to choose valid ordered pair.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2018-jun-q16", "code": "recognition_or_interpretation", "one_line_reason": "Identify range of f(x)=x^2+2 by parabola form.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2018-jun-q19", "code": "recognition_or_interpretation", "one_line_reason": "Identify polynomials in standard form by exponent order.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2018-jun-q2", "code": "execution", "one_line_reason": "Evaluate k(9) for k(x)=2x^2-3sqrt(x) by computing.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2018-jun-q21", "code": "recognition_or_interpretation", "one_line_reason": "Choose appropriate domain type (integers >=0) for cones.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2018-jun-q22", "code": "execution", "one_line_reason": "Compute discriminant of 4x^2+2x+5 to count solutions.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2018-jun-q23", "code": "execution", "one_line_reason": "Check which perimeter-formula rearrangements are correct.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2018-jun-q3", "code": "execution", "one_line_reason": "Simplify 3(x^2+2x-3)-4(4x^2-7x+5) by distributing.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2018-jun-q5", "code": "recognition_or_interpretation", "one_line_reason": "Read third quartile off a described box plot.", "confidence": "medium"}
+{"id": "nyregents-algebra-i-2018-jun-q6", "code": "recognition_or_interpretation", "one_line_reason": "Translate berry-cost wording into an inequality form.", "confidence": "medium"}
+{"id": "nyregents-algebra-i-2018-jun-q7", "code": "execution", "one_line_reason": "Compute seats in row 20 from arithmetic sequence data.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2018-jun-q9", "code": "execution", "one_line_reason": "Compute a percentage from a graph/table (figure).", "confidence": "medium"}
+{"id": "nyregents-algebra-i-2019-aug-q1", "code": "recognition_or_interpretation", "one_line_reason": "Match jersey-cost wording to linear form 23x+250.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2019-aug-q11", "code": "execution", "one_line_reason": "Complete the square on x^2+24x-18.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2019-aug-q12", "code": "execution", "one_line_reason": "Expand x(x-5)(2x+3) and inspect polynomial properties.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2019-aug-q17", "code": "execution", "one_line_reason": "Compare minima of r(x) table and q(x) numerically.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2019-aug-q20", "code": "recognition_or_interpretation", "one_line_reason": "Translate length=width+7 into area function form.", "confidence": "medium"}
+{"id": "nyregents-algebra-i-2019-aug-q22", "code": "execution", "one_line_reason": "Determine equivalent system by operating on equations.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2019-aug-q23", "code": "execution", "one_line_reason": "Find range of h(x)=2x^2-2x-4 by completing the square.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2019-aug-q3", "code": "execution", "one_line_reason": "Simplify 2(x^2-1)+3x(x-4) by distributing.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2019-aug-q5", "code": "recognition_or_interpretation", "one_line_reason": "Interpret vertical shift between two vertex-form parabolas.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2019-aug-q6", "code": "execution", "one_line_reason": "Compute percentage of boys choosing Niagara Falls from table.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2019-aug-q8", "code": "execution", "one_line_reason": "Factor difference of squares 16x^2-81.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2019-aug-q9", "code": "recognition_or_interpretation", "one_line_reason": "Choose appropriate rate unit (hours per lawn).", "confidence": "high"}
+{"id": "nyregents-algebra-i-2019-jan-q10", "code": "recognition_or_interpretation", "one_line_reason": "Interpret (x-1)^3-2 as right 2 down shift of x^3.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2019-jan-q11", "code": "execution", "one_line_reason": "Compute C-2D by substituting and simplifying polynomials.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2019-jan-q12", "code": "mixed", "one_line_reason": "Identify exponential decay form from table (small check).", "confidence": "medium"}
+{"id": "nyregents-algebra-i-2019-jan-q14", "code": "execution", "one_line_reason": "Evaluate f(x) over integer domain to find range set.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2019-jan-q15", "code": "execution", "one_line_reason": "Complete the square on x^2+8x-33=0.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2019-jan-q18", "code": "execution", "one_line_reason": "Test which pair has (-1,2) as a solution by substituting.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2019-jan-q20", "code": "execution", "one_line_reason": "Rearrange P=I^2R to solve for I by algebra.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2019-jan-q21", "code": "execution", "one_line_reason": "Evaluate functions at x=4 to compare outputs (figure).", "confidence": "medium"}
+{"id": "nyregents-algebra-i-2019-jan-q23", "code": "execution", "one_line_reason": "Solve 1000(0.5)^2t = 1000(0.25)^t for t.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2019-jan-q4", "code": "execution", "one_line_reason": "Solve budget word problem with textbook/laptop numbers.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2019-jan-q5", "code": "execution", "one_line_reason": "Solve fractional linear equation for x.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2019-jan-q6", "code": "execution", "one_line_reason": "Factor 3x^2-10x-8 to match area expression.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2019-jan-q8", "code": "execution", "one_line_reason": "Identify properties justifying the given algebraic step.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2019-jun-q1", "code": "execution", "one_line_reason": "Factor difference of squares w^4-36.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2019-jun-q10", "code": "recognition_or_interpretation", "one_line_reason": "Translate height wording into a compound inequality form.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2019-jun-q12", "code": "execution", "one_line_reason": "Compute conditional percentage from two-way table.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2019-jun-q14", "code": "execution", "one_line_reason": "Compare three functions' features numerically (figure).", "confidence": "medium"}
+{"id": "nyregents-algebra-i-2019-jun-q16", "code": "mixed", "one_line_reason": "Identify exponential model params from table (small check).", "confidence": "medium"}
+{"id": "nyregents-algebra-i-2019-jun-q17", "code": "execution", "one_line_reason": "Factor 4w^2-11w-3 with these coefficients.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2019-jun-q18", "code": "execution", "one_line_reason": "Test which point does not satisfy y=3x^2-x+7.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2019-jun-q2", "code": "execution", "one_line_reason": "Evaluate f(-3) for f(x)=4x+5 by computing.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2019-jun-q21", "code": "execution", "one_line_reason": "Apply quadratic formula to x^2-5x-4=0.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2019-jun-q22", "code": "execution", "one_line_reason": "Compute population standard deviation of heights list.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2019-jun-q23", "code": "recognition_or_interpretation", "one_line_reason": "Interpret 0.98 in f(t)=1000(0.98)^t as 2% decay.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2019-jun-q4", "code": "recognition_or_interpretation", "one_line_reason": "Interpret horizontal shift of g(x) from f(x) form.", "confidence": "medium"}
+{"id": "nyregents-algebra-i-2019-jun-q5", "code": "recognition_or_interpretation", "one_line_reason": "Identify polynomial in standard form by exponent order.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2020-jan-q1", "code": "execution", "one_line_reason": "Evaluate f(2) for f(x)=2(3^x)+1 by computing.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2020-jan-q11", "code": "recognition_or_interpretation", "one_line_reason": "Choose definition of two-variable equation solutions.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2020-jan-q12", "code": "execution", "one_line_reason": "Factor x^2-10x+24 with these coefficients.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2020-jan-q14", "code": "recognition_or_interpretation", "one_line_reason": "Interpret parameters of V(t)=12000(0.75)^t.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2020-jan-q15", "code": "execution", "one_line_reason": "Solve (x+4)^2-2=7 by square-rooting.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2020-jan-q16", "code": "execution", "one_line_reason": "Test which expression is not equivalent by expanding.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2020-jan-q19", "code": "mixed", "one_line_reason": "Apply exponent rules and compute 3^2=9 for equivalence.", "confidence": "medium"}
+{"id": "nyregents-algebra-i-2020-jan-q2", "code": "recognition_or_interpretation", "one_line_reason": "Match halving wording to exponential decay form.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2020-jan-q20", "code": "execution", "one_line_reason": "Determine equivalent system by operating on equations.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2020-jan-q23", "code": "execution", "one_line_reason": "Compute a_4 from recursive rule by iterating.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2020-jan-q3", "code": "execution", "one_line_reason": "Solve 7x+2>=58 and test which number is excluded.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2020-jan-q6", "code": "execution", "one_line_reason": "Factor 18x^2-50 (difference of squares).", "confidence": "high"}
+{"id": "nyregents-algebra-i-2020-jan-q8", "code": "execution", "one_line_reason": "Find pattern formula for shaded blocks (figure).", "confidence": "medium"}
+{"id": "nyregents-algebra-i-2020-jan-q9", "code": "execution", "one_line_reason": "Find zeros of x^3-9x^2 by factoring.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2022-aug-q10", "code": "execution", "one_line_reason": "Find medians of three data representations (figure).", "confidence": "medium"}
+{"id": "nyregents-algebra-i-2022-aug-q11", "code": "recognition_or_interpretation", "one_line_reason": "Order parabolas by width from leading coefficients.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2022-aug-q15", "code": "execution", "one_line_reason": "Complete the square on x^2-10x-13=0.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2022-aug-q17", "code": "unreadable", "one_line_reason": "Options reference unseen equations I, II, III.", "confidence": "low"}
+{"id": "nyregents-algebra-i-2022-aug-q18", "code": "mixed", "one_line_reason": "Apply exponent rule and compute 2^3=8 for equivalence.", "confidence": "medium"}
+{"id": "nyregents-algebra-i-2022-aug-q19", "code": "unreadable", "one_line_reason": "Properties A/B/C/D reference unseen list.", "confidence": "low"}
+{"id": "nyregents-algebra-i-2022-aug-q21", "code": "mixed", "one_line_reason": "Choose unit-conversion factor chain by form and units.", "confidence": "medium"}
+{"id": "nyregents-algebra-i-2022-aug-q23", "code": "execution", "one_line_reason": "Compute correlation coefficient from data table.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2022-jun-q12", "code": "execution", "one_line_reason": "Find zeros of (2x-4)(3x+4) by zero-product.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2022-jun-q14", "code": "execution", "one_line_reason": "Compute mean, median, IQR of two score lists.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2022-jun-q18", "code": "recognition_or_interpretation", "one_line_reason": "Interpret what makes (3,-4) a solution by definition.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2022-jun-q2", "code": "execution", "one_line_reason": "Evaluate f(x)=3x-5 at option values to test.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2022-jun-q20", "code": "recognition_or_interpretation", "one_line_reason": "Identify polynomial matching degree, leading coeff, constant.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2022-jun-q21", "code": "recognition_or_interpretation", "one_line_reason": "Interpret growth/decay rate from base of exponent.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2022-jun-q3", "code": "recognition_or_interpretation", "one_line_reason": "Match salad-cost wording to linear form c=0.75s+5.75.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2022-jun-q4", "code": "execution", "one_line_reason": "Factor x^2+5x-6 with these coefficients.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2023-aug-q11", "code": "mixed", "one_line_reason": "Apply exponent rules and compute powers for equivalence.", "confidence": "medium"}
+{"id": "nyregents-algebra-i-2023-aug-q12", "code": "recognition_or_interpretation", "one_line_reason": "Interpret 0.05 in A=P(1+0.05)^t as 5% growth.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2023-aug-q13", "code": "execution", "one_line_reason": "Find zeros of x(x^2-16) by factoring.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2023-aug-q18", "code": "execution", "one_line_reason": "Evaluate f(1),f(-1),etc for x^2+3x to test equality.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2023-aug-q2", "code": "execution", "one_line_reason": "Simplify (3x^2+4x-8)+2(11-5x) by distributing.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2023-aug-q20", "code": "execution", "one_line_reason": "Complete the square on x^2-6x+4=0.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2023-aug-q21", "code": "execution", "one_line_reason": "Write line equation from point and slope by substituting.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2023-aug-q6", "code": "recognition_or_interpretation", "one_line_reason": "Translate TV-dimension wording into area equation form.", "confidence": "medium"}
+{"id": "nyregents-algebra-i-2023-aug-q7", "code": "recognition_or_interpretation", "one_line_reason": "Read third quartile off a described box plot.", "confidence": "medium"}
+{"id": "nyregents-algebra-i-2023-aug-q8", "code": "execution", "one_line_reason": "Multiply (2x+7)(x-3) and combine like terms.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2023-jan-q10", "code": "recognition_or_interpretation", "one_line_reason": "Interpret effect of multiplying a by -2 on parabola.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2023-jan-q11", "code": "recognition_or_interpretation", "one_line_reason": "Recognize depreciation form (1-0.20)^t from wording.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2023-jan-q14", "code": "execution", "one_line_reason": "Factor 2x^2+8x-10 with these coefficients.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2023-jan-q16", "code": "recognition_or_interpretation", "one_line_reason": "Identify function type (exponential) from halving table.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2023-jan-q21", "code": "execution", "one_line_reason": "Match recursive sequence to an explicit form by testing.", "confidence": "medium"}
+{"id": "nyregents-algebra-i-2023-jan-q22", "code": "execution", "one_line_reason": "Build function from zeros {-3,0,4} by operating on factors.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2023-jan-q6", "code": "recognition_or_interpretation", "one_line_reason": "Read third quartile off a described box plot.", "confidence": "medium"}
+{"id": "nyregents-algebra-i-2023-jan-q8", "code": "recognition_or_interpretation", "one_line_reason": "Classify which responses are linear from descriptions.", "confidence": "medium"}
+{"id": "nyregents-algebra-i-2023-jun-q11", "code": "execution", "one_line_reason": "Evaluate g(-4) for g(x)=-x^2-x+5 by computing.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2023-jun-q12", "code": "recognition_or_interpretation", "one_line_reason": "Translate box-volume wording into volume function form.", "confidence": "medium"}
+{"id": "nyregents-algebra-i-2023-jun-q14", "code": "recognition_or_interpretation", "one_line_reason": "Translate coin wording into an inequality form.", "confidence": "medium"}
+{"id": "nyregents-algebra-i-2023-jun-q20", "code": "recognition_or_interpretation", "one_line_reason": "Identify domain of a polynomial as all reals by form.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2023-jun-q3", "code": "execution", "one_line_reason": "Test which line passes through (-3,-8) by substituting.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2023-jun-q4", "code": "execution", "one_line_reason": "Simplify (5x^2-x+4)-3(x^2-x-2) by distributing.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2023-jun-q5", "code": "execution", "one_line_reason": "Compute 24th term of arithmetic sequence.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2023-jun-q6", "code": "execution", "one_line_reason": "Complete the square on x^2-18x+77=0.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2023-jun-q8", "code": "recognition_or_interpretation", "one_line_reason": "Interpret exponent in b=1300(2.65)^x as time periods.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2024-aug-q11", "code": "recognition_or_interpretation", "one_line_reason": "Recognize right 4, down 3 shift form (x-4)^2-3.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2024-aug-q12", "code": "recognition_or_interpretation", "one_line_reason": "Interpret y-intercept of p(h)=45+90h.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2024-aug-q13", "code": "execution", "one_line_reason": "Solve linear inequality 2m-4<=3(2m+4) for m.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2024-aug-q15", "code": "execution", "one_line_reason": "Simplify 2sqrt54+2sqrt6 by reducing radicals.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2024-aug-q16", "code": "execution", "one_line_reason": "Solve f(x)=g(x) for x^2-5x-14=x+2 by factoring.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2024-aug-q17", "code": "execution", "one_line_reason": "Multiply two polynomials in a and combine like terms.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2024-aug-q18", "code": "recognition_or_interpretation", "one_line_reason": "Match point-slope form from point (3,7) and slope 2.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2024-aug-q20", "code": "execution", "one_line_reason": "Solve 6-ax=ax-2 for x in terms of a.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2024-aug-q21", "code": "execution", "one_line_reason": "Build function from zeros -1,3,-4 by operating on factors.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2024-aug-q22", "code": "mixed", "one_line_reason": "Apply exponent rule (5^a)(2^b) needs form recognition only.", "confidence": "medium"}
+{"id": "nyregents-algebra-i-2024-aug-q3", "code": "execution", "one_line_reason": "Simplify 3(x^2-2x+3)-(4x^2+3x-1) by distributing.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2024-aug-q5", "code": "recognition_or_interpretation", "one_line_reason": "Identify trinomial matching degree, leading coeff, constant.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2024-aug-q6", "code": "recognition_or_interpretation", "one_line_reason": "Identify property justifying the addition step.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2024-jan-q10", "code": "execution", "one_line_reason": "Evaluate f(1) and g(3) and subtract.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2024-jan-q15", "code": "execution", "one_line_reason": "Multiply (x^2+3x+9)(x-3) and combine like terms.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2024-jan-q18", "code": "execution", "one_line_reason": "Solve linear inequality 2x-7>2.5x+3 for x.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2024-jan-q19", "code": "mixed", "one_line_reason": "Apply exponent rules and compute powers for equivalence.", "confidence": "medium"}
+{"id": "nyregents-algebra-i-2024-jan-q21", "code": "execution", "one_line_reason": "Factor -x^3+10x^2+24x completely.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2024-jan-q23", "code": "execution", "one_line_reason": "Build factors from zeros -2,4,0 by operating on factors.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2024-jan-q3", "code": "recognition_or_interpretation", "one_line_reason": "Interpret parameters of R(x)=30+40x.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2024-jan-q6", "code": "execution", "one_line_reason": "Simplify (-x^2+3x-7)-(4x^2+5x-2) by distributing.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2024-jan-q8", "code": "execution", "one_line_reason": "Rearrange kinematic equation to solve for a by algebra.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2024-jun-q1", "code": "execution", "one_line_reason": "Interpret ball-height table; check conclusions numerically.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2024-jun-q11", "code": "execution", "one_line_reason": "Evaluate four salary functions at year 8 and compare.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2024-jun-q13", "code": "execution", "one_line_reason": "Compute interquartile range from described box plot.", "confidence": "medium"}
+{"id": "nyregents-algebra-i-2024-jun-q15", "code": "recognition_or_interpretation", "one_line_reason": "Match arithmetic sequence to explicit formula form.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2024-jun-q16", "code": "execution", "one_line_reason": "Compute mean, median, mode from dot plot (figure).", "confidence": "medium"}
+{"id": "nyregents-algebra-i-2024-jun-q2", "code": "recognition_or_interpretation", "one_line_reason": "Translate bus-ticket constraints into inequalities form.", "confidence": "medium"}
+{"id": "nyregents-algebra-i-2024-jun-q20", "code": "execution", "one_line_reason": "Read intersection x-values off a graph (figure).", "confidence": "medium"}
+{"id": "nyregents-algebra-i-2024-jun-q21", "code": "recognition_or_interpretation", "one_line_reason": "Interpret constant term of C(h)=6h+5 as gas charge.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2024-jun-q4", "code": "execution", "one_line_reason": "Simplify -2(x^2-2x+1)+(3x^2+3x-5) by distributing.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2024-jun-q7", "code": "recognition_or_interpretation", "one_line_reason": "Identify function type (exponential growth) from doubling.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2024-jun-q9", "code": "execution", "one_line_reason": "Find zeros of x(x-5)(3x+6) by zero-product.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2025-aug-q10", "code": "execution", "one_line_reason": "Solve 3x^2=24x by factoring out x.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2025-aug-q12", "code": "execution", "one_line_reason": "Compute correlation coefficient from reading-time table.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2025-aug-q13", "code": "recognition_or_interpretation", "one_line_reason": "Recognize left-shift form (x+3)^2 of x^2.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2025-aug-q15", "code": "recognition_or_interpretation", "one_line_reason": "Identify range of |x+2|-5 by absolute-value form.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2025-aug-q19", "code": "execution", "one_line_reason": "Expand (x+7)^2 and (x-3)^2 and add them.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2025-aug-q2", "code": "recognition_or_interpretation", "one_line_reason": "Translate coin wording into a value equation form.", "confidence": "medium"}
+{"id": "nyregents-algebra-i-2025-aug-q20", "code": "execution", "one_line_reason": "Multiply 2sqrt10 and 3sqrt2 and simplify radical.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2025-aug-q21", "code": "execution", "one_line_reason": "Subtract 6x^3-2x+8 from 5x^3+3x-4 and combine.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2025-aug-q23", "code": "execution", "one_line_reason": "Identify correct substitution step for the system.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2025-aug-q3", "code": "execution", "one_line_reason": "Evaluate g(-3) for g(x)=-2x^2+16 by computing.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2025-aug-q4", "code": "execution", "one_line_reason": "Find zeros of x^2-8x-20 by factoring.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2025-aug-q6", "code": "execution", "one_line_reason": "Solve f(x)=g(x) for x^2=8x-15 by factoring.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2025-aug-q7", "code": "recognition_or_interpretation", "one_line_reason": "Identify trinomial in standard form with constant 5.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2025-jan-q1", "code": "execution", "one_line_reason": "Factor x^3-36x completely with these coefficients.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2025-jan-q10", "code": "execution", "one_line_reason": "Compute plain deep-dish percentage from pizza table.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2025-jan-q12", "code": "mixed", "one_line_reason": "Apply exponent rule x^a*x^a=x^2a with form recognition.", "confidence": "medium"}
+{"id": "nyregents-algebra-i-2025-jan-q13", "code": "recognition_or_interpretation", "one_line_reason": "Identify function type (exponential) from table pattern.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2025-jan-q14", "code": "recognition_or_interpretation", "one_line_reason": "Identify property justifying the addition step.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2025-jan-q18", "code": "execution", "one_line_reason": "Test which ordered pair satisfies y-1=2(x+1/4).", "confidence": "high"}
+{"id": "nyregents-algebra-i-2025-jan-q2", "code": "execution", "one_line_reason": "Find line equation through two given points.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2025-jan-q23", "code": "recognition_or_interpretation", "one_line_reason": "Translate fish/frog wording into an inequality form.", "confidence": "medium"}
+{"id": "nyregents-algebra-i-2025-jan-q4", "code": "recognition_or_interpretation", "one_line_reason": "Identify constant term of a polynomial by form.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2025-jan-q5", "code": "recognition_or_interpretation", "one_line_reason": "Interpret 55 in C(x)=55x+80 as hourly rate.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2025-jan-q6", "code": "execution", "one_line_reason": "Simplify (5x^2-2x+4)-(3x^2+3x-1) by distributing.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2025-jan-q8", "code": "execution", "one_line_reason": "Compute tenth term from arithmetic-sequence data.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2025-jun-q11", "code": "execution", "one_line_reason": "Complete the square on x^2-6x=27.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2025-jun-q13", "code": "recognition_or_interpretation", "one_line_reason": "Read domain off a described graph (figure).", "confidence": "medium"}
+{"id": "nyregents-algebra-i-2025-jun-q14", "code": "mixed", "one_line_reason": "Classify 3+sqrt5 as irrational (form + small reasoning).", "confidence": "medium"}
+{"id": "nyregents-algebra-i-2025-jun-q15", "code": "mixed", "one_line_reason": "Recognize a^8-b^6 as (a^4)^2-(b^3)^2 difference of squares.", "confidence": "medium"}
+{"id": "nyregents-algebra-i-2025-jun-q21", "code": "execution", "one_line_reason": "Solve fractional linear equation for x.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2025-jun-q4", "code": "execution", "one_line_reason": "Compute mean and std dev of two score lists.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2025-jun-q5", "code": "recognition_or_interpretation", "one_line_reason": "Identify polynomial with degree 3, leading coeff 2.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2025-jun-q7", "code": "execution", "one_line_reason": "Compute average rate of change from plant table.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2025-jun-q8", "code": "recognition_or_interpretation", "one_line_reason": "Identify property justifying the subtraction step.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2026-aug-q10", "code": "recognition_or_interpretation", "one_line_reason": "Identify polynomial in standard form by exponent order.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2026-aug-q11", "code": "execution", "one_line_reason": "Evaluate g(-4) for g(x)=x^2-x by computing.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2026-aug-q13", "code": "mixed", "one_line_reason": "Classify product of radicals as rational (small check).", "confidence": "medium"}
+{"id": "nyregents-algebra-i-2026-aug-q16", "code": "mixed", "one_line_reason": "Apply exponent rules and compute powers for equivalence.", "confidence": "medium"}
+{"id": "nyregents-algebra-i-2026-aug-q17", "code": "execution", "one_line_reason": "Complete the square on x^2+4x-11=0.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2026-aug-q19", "code": "recognition_or_interpretation", "one_line_reason": "Apply definition of a function to a described mapping.", "confidence": "medium"}
+{"id": "nyregents-algebra-i-2026-aug-q2", "code": "execution", "one_line_reason": "Solve 3x-4=2.6x+8.2 for x.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2026-aug-q20", "code": "recognition_or_interpretation", "one_line_reason": "Recognize right-2 shift form of absolute-value function.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2026-aug-q22", "code": "execution", "one_line_reason": "Test which point lies on y=x^2-7x-10 by substituting.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2026-aug-q23", "code": "execution", "one_line_reason": "Factor x^4-5x^3-36x^2 completely.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2026-aug-q3", "code": "execution", "one_line_reason": "Identify substitution step for the system (figure).", "confidence": "medium"}
+{"id": "nyregents-algebra-i-2026-aug-q5", "code": "recognition_or_interpretation", "one_line_reason": "Match depreciation wording to form V=29500(1-0.175)^t.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2026-aug-q6", "code": "execution", "one_line_reason": "Factor difference of squares 400-x^2.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2026-aug-q8", "code": "execution", "one_line_reason": "Find axis of symmetry of y=-x^2+6x by formula x=-b/2a.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2026-aug-q9", "code": "recognition_or_interpretation", "one_line_reason": "Identify property justifying the addition step.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2026-jan-q10", "code": "execution", "one_line_reason": "Identify correct substitution equation for the system.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2026-jan-q12", "code": "recognition_or_interpretation", "one_line_reason": "Identify property justifying the addition step.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2026-jan-q16", "code": "execution", "one_line_reason": "Find zeros of x(x^2-36) by factoring.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2026-jan-q17", "code": "execution", "one_line_reason": "Solve -x^2-x+6=-6 for x by operating on equation.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2026-jan-q20", "code": "mixed", "one_line_reason": "Apply power rule and compute (-2)^3=-8 for equivalence.", "confidence": "medium"}
+{"id": "nyregents-algebra-i-2026-jan-q22", "code": "execution", "one_line_reason": "Subtract 2x^2-3x+4 from x^2+2x-5 and combine.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2026-jan-q23", "code": "execution", "one_line_reason": "Complete the square on x^2-6x=24.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2026-jan-q9", "code": "execution", "one_line_reason": "Rearrange cylinder surface-area formula to solve for h.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2026-jun-q1", "code": "execution", "one_line_reason": "Compute 20th term of arithmetic sequence.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2026-jun-q13", "code": "execution", "one_line_reason": "Find line equation through two given points.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2026-jun-q14", "code": "execution", "one_line_reason": "Compute conditional percentage from two-way table.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2026-jun-q15", "code": "execution", "one_line_reason": "Complete the square on x^2-10x-24=0.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2026-jun-q17", "code": "recognition_or_interpretation", "one_line_reason": "Identify property justifying the addition step.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2026-jun-q18", "code": "execution", "one_line_reason": "Compute upper quartile of a listed data set.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2026-jun-q19", "code": "execution", "one_line_reason": "Subtract -3x^2+7x-1 from 2x^2-3x+10 and combine.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2026-jun-q2", "code": "execution", "one_line_reason": "Solve 0.5x-4=8-x for x.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2026-jun-q21", "code": "execution", "one_line_reason": "Convert rods to yards to inches by unit arithmetic.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2026-jun-q3", "code": "execution", "one_line_reason": "Factor difference of squares 4x^2-25.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2026-jun-q5", "code": "mixed", "one_line_reason": "Apply power rule and compute 4^3=64 for equivalence.", "confidence": "medium"}
+{"id": "nyregents-algebra-i-2026-jun-q6", "code": "recognition_or_interpretation", "one_line_reason": "Identify trinomial matching degree, leading coeff, constant.", "confidence": "high"}
+{"id": "nyregents-algebra-i-2026-jun-q7", "code": "mixed", "one_line_reason": "Identify geometric-sequence formula from terms (small check).", "confidence": "medium"}
+{"id": "nyregents-algebra-i-2026-jun-q9", "code": "recognition_or_interpretation", "one_line_reason": "Translate plant-purchase wording into an equation form.", "confidence": "medium"}
+{"id": "nyregents-algebra-i-unknown-unk-q1", "code": "recognition_or_interpretation", "one_line_reason": "Match kayak-tour wording to linear form C=35x+245.", "confidence": "high"}
+{"id": "nyregents-algebra-i-unknown-unk-q10", "code": "execution", "one_line_reason": "Factor 4x^2-3x-27 with these coefficients.", "confidence": "high"}
+{"id": "nyregents-algebra-i-unknown-unk-q13", "code": "recognition_or_interpretation", "one_line_reason": "Interpret (x-k)^2+5, k>0 as right k, up 5 shift.", "confidence": "high"}
+{"id": "nyregents-algebra-i-unknown-unk-q14", "code": "mixed", "one_line_reason": "Apply power rule and compute (-4)^3=-64 for equivalence.", "confidence": "medium"}
+{"id": "nyregents-algebra-i-unknown-unk-q18", "code": "recognition_or_interpretation", "one_line_reason": "Identify which variable n replaces in sequence formula.", "confidence": "high"}
+{"id": "nyregents-algebra-i-unknown-unk-q2", "code": "execution", "one_line_reason": "Simplify 3(x+4)-(2x+7) by distributing.", "confidence": "high"}
+{"id": "nyregents-algebra-i-unknown-unk-q22", "code": "recognition_or_interpretation", "one_line_reason": "Identify polynomial matching leading coeff, constant by form.", "confidence": "high"}
+{"id": "nyregents-algebra-i-unknown-unk-q23", "code": "mixed", "one_line_reason": "Choose unit-conversion chain by form and units.", "confidence": "medium"}
+{"id": "nyregents-algebra-i-unknown-unk-q24", "code": "execution", "one_line_reason": "Find which point breaks the line pattern by slope check.", "confidence": "high"}
+{"id": "nyregents-algebra-i-unknown-unk-q3", "code": "execution", "one_line_reason": "Evaluate K(-3) for K(x)=2x^2-5x+3 by computing.", "confidence": "high"}
+{"id": "nyregents-algebra-i-unknown-unk-q5", "code": "execution", "one_line_reason": "Compute average rate of change and identify time unit.", "confidence": "high"}
+{"id": "nyregents-algebra-i-unknown-unk-q6", "code": "execution", "one_line_reason": "Solve 3(x-8)+4x=8x+4 for x.", "confidence": "high"}
+{"id": "nyregents-algebra-i-unknown-unk-q8", "code": "execution", "one_line_reason": "Multiply (3+x)(2x-5) and write in standard form.", "confidence": "high"}
+{"id": "nyregents-algebra-i-unknown-unk-q9", "code": "mixed", "one_line_reason": "Determine which expression yields a rational number.", "confidence": "medium"}
