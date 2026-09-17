@@ -24,7 +24,7 @@ Full spec: `curriculum_claim_falsification_proposal.md`. Hackathon logistics: `C
 - `data/` frozen item JSONL plus (local) source PDFs; see `data/README.md`
 - `claims/`, `rules/`, `fixtures/`
 - `exports/` matrices, witnesses, addenda, human rater packet
-- `paper/` acmart preprint
+- `hackathon/` one-pager and FAQ for the Minds \& Machines Hackathon
 
 ## What git does not contain
 
@@ -208,10 +208,10 @@ Send `exports/human-masked-stem/rater-packet.txt`. Save replies as `exports/huma
 python scripts/score_human_masked_stem.py --rater <slug>
 ```
 
-## Paper
+## Hackathon one-pager and FAQ
 
 ```bash
-make -C paper
+make -C hackathon
 ```
 
-Needs `pdflatex` and `bibtex`. Mentor copy: `paper/mentor-packet/paper.pdf`. Email body: `paper/mentor-packet/cover.md`. Do not send `paper.md`.
+Needs `pdflatex`. The research paper lives on Overleaf and arXiv, not in this repository.
