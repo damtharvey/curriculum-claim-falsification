@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+  <style>
+    body { margin: 0; font-family: "Instrument Sans", system-ui, sans-serif; background: #F4F1EA; color: #1A1917; -webkit-font-smoothing: antialiased; }
+    a { color: #1A1917; text-decoration: none; } a:hover { color: #8A2F2A; }
+    .serif { font-family: "Fraunces", Georgia, serif; }
+    .mono { font-family: "JetBrains Mono", ui-monospace, monospace; }
+    .nav a { padding: 8px 12px; border-radius: 6px; font-size: 14px; font-weight: 500; color: #5A554C; }
+    .nav a.on { background: #1A1917; color: #F4F1EA; }
+    .nav a:hover { color: #1A1917; }
+    .nav a.on:hover { color: #F4F1EA; }
+    table { border-collapse: collapse; width: 100%; font-size: 14px; }
+    th { text-align: left; font-weight: 500; font-size: 12px; letter-spacing: 0.04em; text-transform: uppercase; color: #5A554C; padding: 10px 12px; border-bottom: 1px solid #D9D3C6; }
+    td { padding: 12px; border-bottom: 1px solid #E8E3D8; vertical-align: top; }
+    tr.sel td { background: #FBF9F4; }
+    .pill { display: inline-block; padding: 2px 9px; border-radius: 999px; font-size: 12px; font-weight: 500; line-height: 18px; }
+    .pill.wit { background: #8A2F2A; color: #FFFFFF; }
+    .pill.none { background: #E8E3D8; color: #5A554C; }
+    .pill.tag { background: #FFFFFF; color: #1A1917; border: 1px solid #D9D3C6; }
+    .pill.op { background: #E6EFEE; color: #1F514E; }
+    .pill.lack { background: #F5E4E2; color: #7A2823; }
+    .field label { display: block; font-size: 12px; font-weight: 600; letter-spacing: 0.03em; text-transform: uppercase; color: #5A554C; margin-bottom: 6px; }
+    .field input, .field select, .field textarea { box-sizing: border-box; width: 100%; font: inherit; font-size: 14px; color: #1A1917; background: #FFFFFF; border: 1px solid #C9C2B4; border-radius: 8px; padding: 10px 12px; min-height: 44px; }
+    .field textarea { min-height: 96px; resize: vertical; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; min-height: 44px; padding: 0 18px; border-radius: 8px; font: inherit; font-size: 14px; font-weight: 600; cursor: pointer; border: 1px solid #1A1917; background: #1A1917; color: #F4F1EA; }
+    .btn.ghost { background: transparent; color: #1A1917; }
+    .btn.danger { background: transparent; color: #8A2F2A; border-color: #C9C2B4; }
+    .check { display: flex; align-items: center; gap: 10px; min-height: 44px; font-size: 14px; }
+    .check input { width: 18px; height: 18px; margin: 0; accent-color: #1A1917; }
+    .side a { display: block; padding: 10px 12px; border-radius: 6px; font-size: 14px; font-weight: 500; color: #5A554C; }
+    .side a.on { background: #FFFFFF; color: #1A1917; border: 1px solid #D9D3C6; }
+  </style>
+</helmet>
+<div style="width: 1280px; height: 900px; box-sizing: border-box; display: flex; flex-direction: column; background: #F4F1EA; overflow: hidden;">
+<div style="display: flex; align-items: center; gap: 16px; height: 64px; padding: 0 40px; box-sizing: border-box; border-bottom: 1px solid #D9D3C6; background: #F4F1EA;">
+  <a href="Main.dc.html" class="serif" style="font-size: 22px; font-weight: 600; letter-spacing: -0.01em;">CCF</a>
+  <span style="font-size: 13px; color: #5A554C;">Does the assessment require the skill?</span>
+  <div class="nav" style="margin-left: auto; display: flex; gap: 4px;">
+    <a href="Main.dc.html">Items</a>
+    <a href="Admin-Rules.dc.html" class="on">Rules</a>
+    <a href="Admin-Claims.dc.html">Claims</a>
+    <a href="Admin-Data.dc.html">Data</a>
+  </div>
+</div>
+<div style="width: 1280px; height: 836px; box-sizing: border-box; padding: 32px 40px; display: flex; gap: 32px;">
+<nav class="side" style="width: 200px; flex-shrink: 0; display: flex; flex-direction: column; gap: 4px; padding-right: 24px; border-right: 1px solid #D9D3C6;">
+      <div style="font-size: 11px; letter-spacing: 0.06em; text-transform: uppercase; color: #5A554C; padding: 6px 12px 10px;">Configuration</div>
+      <a href="Admin-Rules.dc.html" class="on">Rules</a><a href="Admin-Claims.dc.html">Claims</a><a href="Admin-Data.dc.html">Data &amp; deploy</a>
+      <div style="margin-top: auto; padding: 12px; font-size: 12px; color: #5A554C; line-height: 1.5;">Changes write to <span class="mono">rules/</span>, <span class="mono">claims/</span> and the data bucket. The runner re-scores on next run.</div>
+    </nav>
+
+<div style="flex-grow: 1; display: flex; flex-direction: column; gap: 20px; min-width: 0;">
+  <div style="display: flex; align-items: flex-end; gap: 16px;">
+    <div><h1 class="serif" style="margin: 0; font-size: 32px; font-weight: 400;">Rules</h1><p style="margin: 6px 0 0; font-size: 13px; color: #5A554C;">A priori programs. No fitted parameters; scored on every applicable item. Each declares the operations it lacks.</p></div>
+    <button class="btn" style="margin-left: auto;">New rule</button>
+  </div>
+  <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; flex-grow: 1; min-height: 0;">
+    <div style="background: #FFFFFF; border: 1px solid #D9D3C6; border-radius: 12px; overflow: hidden; display: flex; flex-direction: column;">
+      <div style="display: flex; gap: 8px; padding: 12px; border-bottom: 1px solid #E8E3D8;">
+        <div class="field" style="flex-grow: 1;"><input type="search" placeholder="Filter rules" aria-label="Filter rules" style="min-height: 40px;"></div>
+        <div class="field" style="width: 150px;"><select aria-label="Channel" style="min-height: 40px;"><option>All channels</option><option>item-cues</option><option>partial-input</option><option>unbound-exec</option></select></div>
+      </div>
+      <table>
+        <thead><tr><th>Rule</th><th style="width: 110px;">Channel</th><th style="width: 70px;">Lacks</th><th style="width: 70px;">On</th></tr></thead>
+        <tbody>
+          <tr><td class="mono" style="font-size: 13px;">longest-option</td><td>item-cues</td><td>6</td><td><span class="pill op">on</span></td></tr>
+          <tr><td class="mono" style="font-size: 13px;">stem-option-overlap</td><td>partial-input</td><td>3</td><td><span class="pill op">on</span></td></tr>
+          <tr><td class="mono" style="font-size: 13px;">option-repeating-stem-numbers</td><td>partial-input</td><td>3</td><td><span class="pill op">on</span></td></tr>
+          <tr><td class="mono" style="font-size: 13px;">avoid-absolute-terms</td><td>item-cues</td><td>6</td><td><span class="pill op">on</span></td></tr>
+          <tr class="sel"><td class="mono" style="font-size: 13px;">middle-value-option</td><td>item-cues</td><td>6</td><td><span class="pill op">on</span></td></tr>
+          <tr><td class="mono" style="font-size: 13px;">invert-and-multiply</td><td>unbound-exec</td><td>2</td><td><span class="pill op">on</span></td></tr>
+          <tr><td class="mono" style="font-size: 13px;">coefficient-adjacent-to-x</td><td>unbound-exec</td><td>2</td><td><span class="pill op">on</span></td></tr>
+          <tr><td class="mono" style="font-size: 13px;">percent-of</td><td>unbound-exec</td><td>2</td><td><span class="pill op">on</span></td></tr>
+          <tr><td class="mono" style="font-size: 13px;">percent-change</td><td>unbound-exec</td><td>2</td><td><span class="pill op">on</span></td></tr>
+          <tr><td class="mono" style="font-size: 13px;">unit-rate</td><td>unbound-exec</td><td>2</td><td><span class="pill op">on</span></td></tr>
+          <tr><td class="mono" style="font-size: 13px;">y-equals-kx</td><td>unbound-exec</td><td>2</td><td><span class="pill op">on</span></td></tr>
+          <tr><td class="mono" style="font-size: 13px;">area-lw</td><td>unbound-exec</td><td>2</td><td><span class="pill op">on</span></td></tr>
+          <tr><td class="mono" style="font-size: 13px;">volume-lwh</td><td>unbound-exec</td><td>2</td><td><span class="pill op">on</span></td></tr>
+          <tr><td class="mono" style="font-size: 13px;">mean-of-listed-numbers</td><td>unbound-exec</td><td>2</td><td><span class="pill op">on</span></td></tr>
+          <tr><td class="mono" style="font-size: 13px;">position-c</td><td>item-cues</td><td>6</td><td><span class="pill none">off</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <form style="background: #FFFFFF; border: 1px solid #D9D3C6; border-radius: 12px; padding: 24px; box-sizing: border-box; display: flex; flex-direction: column; gap: 18px; overflow: auto;">
+      <div style="display: flex; align-items: center; gap: 12px;">
+        <h2 class="serif" style="margin: 0; font-size: 22px; font-weight: 400;">Edit rule</h2>
+        <span class="mono" style="font-size: 12px; color: #5A554C;">rules/apriori.json</span>
+        <span class="pill tag" style="margin-left: auto;">applies to 2,245 selected</span>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px;">
+        <div class="field"><label for="rid">Id</label><input id="rid" type="text" value="middle-value-option"></div>
+        <div class="field"><label for="rch">Channel</label><select id="rch"><option>item-cues</option><option>partial-input</option><option>unbound-exec</option></select></div>
+      </div>
+      <div class="field"><label for="rdesc">Description</label><textarea id="rdesc">Parse a leading signed number from each option. If at least three options parse, pick the option whose value is the median. Ties at the median: first in A-D order.</textarea></div>
+      <div class="field">
+        <label>Lacks (operations the program never performs)</label>
+        <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0 16px; padding: 4px 2px;"><label class="check"><input type="checkbox" checked> retrieve</label><label class="check"><input type="checkbox" checked> execute</label><label class="check"><input type="checkbox" checked> bind</label><label class="check"><input type="checkbox" checked> distinguish</label><label class="check"><input type="checkbox" checked> explain</label><label class="check"><input type="checkbox" checked> transfer</label></div>
+      </div>
+      <div class="field"><label for="rcite">Citation</label><input id="rcite" type="text" value="Millman, Bishop &amp; Ebel (1965); Haladyna, Downing &amp; Rodriguez (2002)"></div>
+      <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px;">
+        <div class="field"><label for="rresp">Response types</label><select id="rresp"><option>selected only</option><option>numeric only</option><option>selected and numeric</option></select></div>
+        <div class="field"><label for="ron">Status</label><select id="ron"><option>Enabled</option><option>Disabled (kept in log)</option></select></div>
+      </div>
+      <div style="display: flex; gap: 10px; margin-top: auto; padding-top: 8px; border-top: 1px solid #E8E3D8;">
+        <button class="btn" type="button">Save rule</button>
+        <button class="btn ghost" type="button">Dry-run on 20 items</button>
+        <button class="btn danger" type="button" style="margin-left: auto;">Disable</button>
+      </div>
+    </form>
+  </div>
+</div>
+</div>
+</div>
+</x-dc>
+<script data-dc-script data-props='{"accent":{"editor":"color","default":"#8A2F2A","options":["#8A2F2A","#1F514E","#3B3A8C"]},"$preview":{"width":1280,"height":900}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return { accent: this.props.accent ?? '#8A2F2A' };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+{
+  "name": "ccf-demo",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "cdk:synth": "cd infra && npx cdk synth",
+    "cdk:deploy": "cd infra && npx cdk deploy --all --require-approval never",
+    "cdk:destroy": "cd infra && npx cdk destroy --all --force",
+    "lambda:build": "cd lambda && npm run build",
+    "frontend:dev": "cd frontend && npm run dev",
+    "frontend:build": "cd frontend && npm run build",
+    "build": "npm run lambda:build && npm run frontend:build",
+    "deploy": "npm run build && npm run cdk:deploy",
+    "upload-data": "node scripts/upload-data.mjs"
+  }
+}

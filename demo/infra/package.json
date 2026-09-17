@@ -1,0 +1,22 @@
+{
+  "name": "ccf-demo-infra",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "build": "tsc",
+    "synth": "npx cdk synth",
+    "deploy": "npx cdk deploy --all --require-approval never",
+    "destroy": "npx cdk destroy --all --force"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "2.170.0",
+    "constructs": "10.4.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.3",
+    "aws-cdk": "2.170.0",
+    "source-map-support": "^0.5.21",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.2"
+  }
+}

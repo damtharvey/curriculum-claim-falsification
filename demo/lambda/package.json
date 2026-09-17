@@ -1,0 +1,20 @@
+{
+  "name": "ccf-lambda",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "esbuild src/handler.ts --bundle --platform=node --target=node20 --format=esm --outfile=dist/handler.mjs --external:@aws-sdk/*",
+    "typecheck": "tsc --noEmit",
+    "dev": "npm run build && node dev-server.mjs"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.700.0"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.145",
+    "@types/node": "^22.20.3",
+    "esbuild": "^0.24.0",
+    "typescript": "^5.8.2"
+  }
+}
