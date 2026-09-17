@@ -1,0 +1,84 @@
+Does the Assessment Require the Skill?
+A pass is read as evidence of its tag; a passing solver denied the tagged competency refutes that reading without students; Regents algebra has them.
+one-sided: never says students did not learn
+
+
+1. What's the big deal?
+Every item carries a tag: a standard code, a cognitive domain, a rubric line.
+A correct answer is read as evidence of the tagged competency. [Kane 2013]
+That reading assumes the pass requires the competency. [AERA, APA, NCME 2014]
+We can check that requirement with no students at all.
+[Accountability, procurement, and research all make this reading; nobody checks the assumption before the test is given.]
+
+
+2. What is new?
+The assessment bypass: a solver denied the tagged competency that still passes under the published scoring rule.
+Denied by operation (a program that cannot do the tagged step) or by information (the given quantities withheld).
+Never sees the key. Executable. Student-free.
+One-sided: a bypass refutes the requirement; finding none certifies nothing.
+Pre-registered bar: at least 10 items, lower 95% confidence bound above chance, programs hashed before scoring.
+
+
+3. What have others tried, and how is ours different?
+Validity theory states the argument; it does not execute it. [Messick 1995; Kane 1992; Kane 2013]
+Cognitive diagnosis and differential item functioning: need student responses. [Terzi and Sen 2019; Holland and Thayer 1986]
+Test-wiseness catalogs: list cues, score no pass rates. [Millman et al. 1965; Haladyna et al. 2002; Attali and Bar-Hillel 2003]
+Choices-only and contamination studies: models on untagged benchmarks. [Kaushik and Lipton 2018; Balepur et al. 2024; Sainz et al. 2023]
+Ours: a restricted solver scored against a tag on public items. Nobody had.
+
+
+4. How did we do it?
+2,405 public-release mathematics items, nine authorities, every tag quoted from its authority. [IEA 2009 TIMSS 2011 frameworks]
+Three solver families, each Holm-corrected on its own: item-writing cues, test-taking strategies, language models with every given quantity withheld.
+Items re-read from the printed page: released text layers often misstate the print.
+Isomorph control: change every option value, keep its form, ask if the rate survives. [Mirzadeh et al. 2025]
+[Public keys and scoring rules make the whole search executable; that is why mathematics went first.]
+
+
+5. What did we find?
+New York Regents Algebra I and II: two model families recover the key with every given quantity hidden.
+The recovery survives changing every option value.
+So a pass there does not require computing on the givens; the key does not carry the evidence it is read as.
+Small programs denied the tagged operation match keys on a few cells; one strategy discovery failed a powered replication.
+Trends in International Mathematics and Science Study (TIMSS) cognitive domains: no bypass at public sizes.
+[Algebra I rate 0.49 to 0.55, Algebra II 0.41 to 0.45, chance 0.25. Under a stricter page check across two transcription model families, Algebra I holds on all three scorers and Algebra II on the two Qwen scorers only; Phi-4 misses there at n = 57. Whether the tagged operation is required stays open.]
+
+
+6. So what?
+Procurement, accountability, and research outcome measures read the wrong quantity when a tag overstates.
+The check runs before any student sits the test.
+It needs only public tags, item text, keys, and an executable scoring rule.
+
+
+7. What does it imply for the education community?
+Publish items with keys and scoring rules in machine-checkable form.
+Treat a tag as a claim to be tested, not a label to be trusted. [AERA, APA, NCME 2014]
+Item writers can run bypass regression tests before release.
+The claim stays one-sided: about items and scoring rules, never about students.
+
+
+8. What did we not show?
+One subject: mathematics.
+Item demand coded by language models, not by human raters.
+Whether the tagged operation is required: left open.
+
+
+9. Closing
+A tag is a claim about what passing requires; where the inputs are public, it can be tested before anyone sits the test.
+
+
+References (each cited tag once; bib key in parentheses; all in paper/references.bib)
+[AERA, APA, NCME 2014] (aera2014standards) American Educational Research Association, American Psychological Association, and National Council on Measurement in Education. 2014. Standards for Educational and Psychological Testing. American Educational Research Association, Washington, DC.
+[Attali and Bar-Hillel 2003] (Attali_2003) Yigal Attali and Maya Bar-Hillel. 2003. Guess Where: The Position of Correct Answers in Multiple-Choice Test Items as a Psychometric Variable. Journal of Educational Measurement 40(2), 109-128.
+[Balepur et al. 2024] (balepur-etal-2024-artifacts) Nishant Balepur, Abhilasha Ravichander, and Rachel Rudinger. 2024. Artifacts or Abduction: How Do LLMs Answer Multiple-Choice Questions Without the Question? Proceedings of the 62nd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers), 10308-10330.
+[Haladyna et al. 2002] (Haladyna_2002) Thomas M. Haladyna, Steven M. Downing, and Michael C. Rodriguez. 2002. A Review of Multiple-Choice Item-Writing Guidelines for Classroom Assessment. Applied Measurement in Education 15(3), 309-333.
+[Holland and Thayer 1986] (Holland_Thayer_1986) Paul W. Holland and Dorothy T. Thayer. 1986. Differential Item Functioning and the Mantel-Haenszel Procedure. ETS Research Report Series 1986(2).
+[IEA 2009 TIMSS 2011 frameworks] (iea2009timss2011frameworks) International Association for the Evaluation of Educational Achievement. 2009. TIMSS 2011 Assessment Frameworks. TIMSS & PIRLS International Study Center, Boston College, Chestnut Hill, MA.
+[Kane 1992] (Kane_1992) Michael T. Kane. 1992. An argument-based approach to validity. Psychological Bulletin 112(3), 527-535.
+[Kane 2013] (Kane_2013) Michael T. Kane. 2013. Validating the Interpretations and Uses of Test Scores. Journal of Educational Measurement 50(1), 1-73.
+[Kaushik and Lipton 2018] (kaushik-lipton-2018-much) Divyansh Kaushik and Zachary C. Lipton. 2018. How Much Reading Does Reading Comprehension Require? A Critical Investigation of Popular Benchmarks. Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing, 5010-5015.
+[Messick 1995] (Messick_1995) Samuel Messick. 1995. Validity of psychological assessment: Validation of inferences from persons' responses and performances as scientific inquiry into score meaning. American Psychologist 50(9), 741-749.
+[Millman et al. 1965] (Millman_1965) Jason Millman, Carol H. Bishop, and Robert Ebel. 1965. An Analysis of Test-Wiseness. Educational and Psychological Measurement 25(3), 707-726.
+[Mirzadeh et al. 2025] (mirzadeh2025gsmsymbolic) Seyed Iman Mirzadeh, Keivan Alizadeh, Hooman Shahrokhi, Oncel Tuzel, Samy Bengio, and Mehrdad Farajtabar. 2025. GSM-Symbolic: Understanding the Limitations of Mathematical Reasoning in Large Language Models. The Thirteenth International Conference on Learning Representations (ICLR).
+[Sainz et al. 2023] (sainz-etal-2023-nlp) Oscar Sainz, Jon Campos, Iker García-Ferrero, Julen Etxaniz, Oier Lopez de Lacalle, and Eneko Agirre. 2023. NLP Evaluation in trouble: On the Need to Measure LLM Data Contamination for each Benchmark. Findings of the Association for Computational Linguistics: EMNLP 2023, 10776-10787.
+[Terzi and Sen 2019] (Terzi_Sen_2019) Ragip Terzi and Sedat Sen. 2019. A Nondiagnostic Assessment for Diagnostic Purposes: Q-Matrix Validation and Item-Based Model Fit Evaluation for the TIMSS 2011 Assessment. SAGE Open 9(1).

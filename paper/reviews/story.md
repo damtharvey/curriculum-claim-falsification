@@ -24,6 +24,21 @@ Limitations now hold ten weaknesses, each as one paragraph opening with the limi
 
 The page target is dropped (no venue chosen): 19 pages, 0 overfull. No number changed; the only numbers in the new Limitations and Conclusion are already in Results or the appendix.
 
+# Cross-family verification and the 14B floor cause (science pass after 9b1f54a)
+
+Two new pieces of evidence, each with one home. The story sentence is unchanged: the claim population is still repaired-verified, and "two model families" for Algebra II is still true there. What the stricter check adds is a robustness statement about one row, and it lives in Results 4.2, once.
+
+| Idea | Home | Elsewhere |
+|---|---|---|
+| A third transcription by a different VLM family (LLaVA-NeXT) is a stricter verification; cross-family verified is a sensitivity, not the claim population | Method 3.6 Repair paragraph, one sentence plus the population-role sentence | Table 1 caption (definition of the column); Appendix A.6 (procedure, hashes, counts) |
+| Cross-family counts (160 of 606; 153 already verified; 5 context overflows; 101 / 57 with a withheld quantity) | Results 4.1, second paragraph | Appendix A.6 repeats the counts with the overlap matrix and the both-checks subset; Limitations item 1 uses 160, 153, 446, and 5 as the residue |
+| Cross-family masked-stem rows: Algebra I holds on all three scorers; Algebra II on Qwen 7B and 14B; Phi-4 Algebra II misses at n = 57 and is not robust to the stricter verification | Results 4.2 masked-stem paragraph (the plain statement) and Table 1 (the column, dagger on the one miss) | Limitations item 1, one clause; Appendix A.6 both-checks sentence; not in the abstract, introduction, or conclusion, which speak of the claim population |
+| Isomorph rank-preserving clears on the cross-family set on all three scorers, both cells | Results 4.2 isomorph paragraph, one sentence | none |
+| Verb class on the cross-family set (small classes; Algebra I execution clears on 7B only, recognition on all three; Algebra II execution on none, recognition on Qwen) | Results 4.2 which-items paragraph, one sentence | none |
+| Cause of the Qwen 14B text-layer floor miss (torch 2.12.1 vs 2.14.0 logit shift; bit-identical re-runs; 6 exact ties; fp32 head recovers 4; arms stay below floor) | Appendix A.6 "Cause of the 14B floor miss" | Limitations item 4, two clauses; Table 15 caption, a pointer; the "cause undocumented" wording is gone |
+
+Page count 19 to 20, 0 overfull; `\dblfloatsep` tightened to 6pt so the trailing appendix tables pack onto two float pages instead of three.
+
 # Redundancy map (writing pass on fe7e282)
 
 Format: idea -> home -> removed from (or cut to a clause in).
