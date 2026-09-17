@@ -26,6 +26,7 @@ Thumbs.db
 
 # Raw PDFs, HTML scrape cache, extracted PDF text (redownload / re-extract)
 data/raw/
+temp/
 
 # Cue-control datasets (Hugging Face download, large)
 data/real-controls*.jsonl
