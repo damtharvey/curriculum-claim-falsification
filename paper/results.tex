@@ -26,10 +26,10 @@ On public cue sets, the same 1{,}847-program space, fit on a train split and sco
 
 \subsection{Power}
 
-A claim cannot clear the bar below $n=10$. For larger $n$, Table~\ref{tab:power} records two floors. The independent-items floor is the smallest observed pass rate whose item-level bootstrap interval excludes chance, at the cell's tagged-item count. The clustered floor is the bypass rate with 80\% power to clear that bar when administrations are resampled. Twenty-one cells in this census have $n\ge 10$. The smallest independent-items floor is $0.284$, on New York Regents Algebra~I ($n=598$); that cell's clustered floor is $0.303$. Public-release TIMSS items tagged knowing, applying, or reasoning pool the 2011 cycle with earlier released cycles at $n=81/68/86$. Independent-item floors are $0.358/0.353/0.372$. Clustered floors at those cell sizes, after applying the selected-response design effect (excess over chance scaled by $\sqrt{n_{\mathrm{selected}}/n_{\mathrm{items}}}$ from selected-response $n=65/54/68$), are $0.400/0.407/0.421$.
+A claim cannot clear the bar below $n=10$. For larger $n$, Table~\ref{tab:power} records two floors. The independent-items floor is the smallest observed pass rate whose item-level bootstrap interval excludes chance, at the cell's tagged-item count. The clustered floor is the bypass rate with 80\% power to clear that bar when administrations are resampled. Twenty-one cells in this census have $n\ge 10$. The smallest independent-items floor is $0.284$, on New York Regents Algebra~I ($n=598$); that cell's clustered floor is $0.303$. Public-release TIMSS items tagged knowing, applying, or reasoning pool the 2011 cycle with earlier released cycles at $n=81/68/86$ tagged items and $n=65/54/68$ selected-response items. Independent-item floors on the tagged counts are $0.358/0.353/0.372$. Clustered 80\% floors on the selected-response counts, from administration resampling in \texttt{exports/addendum/power-by-cell.json}, are $0.415/0.426/0.441$. Those TIMSS cells are a null at $n$ of about 50 to 80.
 
 \begin{table}[t]
-  \caption{Minimum detectable bypass rate at this cell's $n$ (every tagged item, not the subset a given rule scores). Independent is an item-level bootstrap. Clustered is 80\% power under administration resampling. TIMSS clustered entries apply the selected-response design effect to this $n$: excess over chance scaled by $\sqrt{n_{\mathrm{selected}}/n_{\mathrm{items}}}$ (knowing, applying, reasoning selected-response $n=65/54/68$). TIMSS rows pool 2011 and earlier public-release cycles.}
+  \caption{Minimum detectable bypass rate at this cell's $n$ (every tagged item, not the subset a given rule scores). Independent is an item-level bootstrap on that $n$. Clustered is 80\% power under administration resampling. TIMSS clustered entries are that resampling on selected-response items ($n=65/54/68$ for knowing, applying, reasoning), not a rescaling of the independent floors. TIMSS rows pool 2011 and earlier public-release cycles.}
   \label{tab:power}
   \centering
   \small
@@ -40,9 +40,9 @@ A claim cannot clear the bar below $n=10$. For larger $n$, Table~\ref{tab:power}
     NY Regents & Algebra I & 598 & $0.284$ & $0.303$ \\
     NY Regents & Algebra II & 442 & $0.290$ & $0.308$ \\
     NY Regents & geometry & 408 & $0.294$ & $0.309$ \\
-    TIMSS & applying & 68 & $0.353$ & $0.407$ \\
-    TIMSS & knowing & 81 & $0.358$ & $0.400$ \\
-    TIMSS & reasoning & 86 & $0.372$ & $0.421$ \\
+    TIMSS & applying & 68 & $0.353$ & $0.426$ \\
+    TIMSS & knowing & 81 & $0.358$ & $0.415$ \\
+    TIMSS & reasoning & 86 & $0.372$ & $0.441$ \\
     EQAO & grade 6 & 53 & $0.396$ & $0.415$ \\
     \bottomrule
   \end{tabular}
@@ -52,14 +52,14 @@ A claim cannot clear the bar below $n=10$. For larger $n$, Table~\ref{tab:power}
 
 We ran 350{,}535 local trials. Fitted stem $n$-gram and overlap programs, state to TIMSS and the reverse, do not beat chance on holdout (state to TIMSS applying and reasoning: $36/122 = 0.295$, interval $[0.213, 0.377]$, chance $0.254$). Unbound unit-rate, $y=kx$, and percent-of do not clear the bar on TIMSS, PISA, or NAPLAN numeric items.
 
-No searched or a priori program cleared the bar on TIMSS knowing, applying, or reasoning. Failure to find a witness at a clustered bar that can see a bypass of $0.400$ to $0.421$ on those cells (independent-item floors $0.353$ to $0.372$) does not certify those tags. It shows that this program space, on these public items, did not refute them.
+No searched or a priori program cleared the bar on TIMSS knowing, applying, or reasoning. Failure to find a witness on public selected-response $n$ of 65, 54, and 68 (clustered floors $0.415$, $0.426$, and $0.441$; independent-item floors $0.353$ to $0.372$) does not certify those tags. It shows that this program space, on these public items, did not refute them.
 
 Fifteen catalog rules were scored on every authority-by-claim cell. The a priori family is every (rule, cell) pair with $n$ scored at least 10 and a positive format chance: 105 tests. One PISA numeric unit-rate row with chance $0$ was excluded as degenerate. Five of those 105 tests clear the pre-registered per-cell bar. None of the five survives Holm or Bonferroni at $\alpha=0.05$ (Bonferroni cut $0.00048$). There is no family-wise a priori discovery. Two of the five remain witnesses at the per-cell bar and are candidates for replication, not family-wise discoveries (Table~\ref{tab:witnesses}). Both are the lower-central signed variant of the catalog numeric-central-value cue in Section~\ref{sec:method}. Their one-sided binomial $p$ values are $0.0038$ (geometry, $90/279$) and $0.00070$ (EQAO grade 6, $20/40$).
 
 The claimed $n$ is the number of items on which the rule fires (at least three parseable option numbers): 279 of 408 New York Regents geometry items and 40 of 53 EQAO grade~6 items. The remaining items in those cells are not scored by this rule.
 
 \begin{table*}[t]
-  \caption{Per-cell witnesses, candidates for replication. $n$ is items the rule fires on, not the cell size in Table~\ref{tab:power}. Item interval resamples items; clustered interval resamples administrations (year-session for Regents, year for EQAO). Neither row survives Holm over 105 a priori tests. The EQAO row is specific to the pre-registered lower-central index.}
+  \caption{Per-cell catalog existence rows, candidates for replication, not family-wise discoveries. $n$ is items the rule fires on, not the cell size in Table~\ref{tab:power}. Item interval resamples items; clustered interval resamples administrations (year-session for Regents, year for EQAO). Neither row survives Holm over 105 a priori tests. The EQAO row is specific to the pre-registered lower-central index; the existence claim is the item interval on $n=40$.}
   \label{tab:witnesses}
   \centering
   \small
@@ -224,7 +224,7 @@ D.\ $g(x)=x(x-3)(x+4)$
 Published key: C. Qwen 14B letter-argmax picks C. The visible cue is the three placeholders in the zero set, which match the three-factor option that includes an $x$. That is form recognition of $n$ factors from $n$ placeholders, not execution of the tagged computation on the given zeros.
 
 \begin{table*}[t]
-  \caption{Partial-input language-model channel on named cells, Qwen and Mistral, withheld-quantity population. Chance is mean $1/k$. Modal is the cell's modal key-letter frequency on that population. Bar: $n\ge 10$ and lower 95\% CI above chance and above that modal frequency. Algebra~I and Algebra~II on Qwen2.5-7B and 14B are claimed here; Phi-4 on Algebra~I and Algebra~II is in Table~\ref{tab:scorer} and in the scorer-dependence paragraph. Geometry remains as an unclaimed row: Phi-4 meets the cell bar but not the non-modal-key split ($0.229$, $n=118$, CI $[0.161, 0.305]$). TEKS grade~5 and grade~8 clear on Qwen 7B only and are not claimed. Mistral-7B-Instruct-v0.3 does not clear.}
+  \caption{Partial-input language-model channel on named cells, Qwen and Mistral, withheld-quantity population. Chance is mean $1/k$. Modal is the cell's modal key-letter frequency on that population. Bar: $n\ge 10$ and lower 95\% CI above chance and above that modal frequency. Claimed cells are Algebra~I and Algebra~II on Qwen2.5-7B and 14B; Phi-4 on those two cells is in Table~\ref{tab:scorer}. Geometry is an unlabeled row: Phi-4 meets the cell bar but not the non-modal-key split ($0.229$, $n=118$, CI $[0.161, 0.305]$) and is not claimed. TEKS grade~5 and grade~8 clear on Qwen 7B only and are not claimed. Mistral-7B-Instruct-v0.3 does not clear.}
   \label{tab:masked}
   \centering
   \scriptsize
@@ -278,6 +278,8 @@ The sorted numbers are $43.256$, $79.451$, $85.043$, $92.174$. The rule picks in
 
 The geometry row is the same program on 279 Part~I items, the multiple-choice session of the New York Regents geometry examination. Several of our text-layer stems are too messy to print; the rate is the result, not a single photographed page.
 
+A 20-item printed-page audit, 10 geometry lower-central hits and 10 Algebra~I masked-stem hits, compared each census row to the source exam PDF (no optical character recognition). Eight rows match stem, options, and key. Eight have footer, figure-label, or previous-item glue on an option or stem. Three are truncated. One Algebra~I row has the printed stem and a different option set (June 2023 item 3: printed lines $y=2x-2$ and three neighbors; census inequalities). No sampled PDF was missing. Glue on geometry option D is usually a footer after a correct leading number. The Algebra~I language-model claim is on $n=358$; one wrong option set in a 10-item Algebra~I sample does not remove that cell, and it is a construct caveat on the text layer.
+
 EQAO grade~6 and NY Regents geometry are exam or grade labels, not TIMSS reasoning. We do not rank Ontario, New York, or TIMSS.
 
 \subsection{What would refute these claims}
@@ -288,4 +290,4 @@ The STAAR grade~5 closure discovery would be false if the published keys on thos
 
 The Algebra~I and Algebra~II masked-stem claims would be false if a recomputed lower 95\% interval on the withheld-quantity items did not exceed both chance and the cell modal-letter frequency on that scorer, or if the masking left a computable given quantity in the stem. A Holm miss against chance in the 68-test family would remove the family-wise statement; it would not by itself remove the per-cell channel bar if the interval still cleared. Mistral failing the same bar does not refute the Qwen or Phi-4 rows. A with-stem ceiling at the masked-stem rate, as on Mistral, is a capability miss, not a missing-cue miss.
 
-A TIMSS knowing, applying, or reasoning witness would have been any catalog, strategy, or partial-input program that clears the bar stated for its channel, including the withheld-quantity language-model bar. No such row exists in this file. Bypass rates below the clustered floors in Table~\ref{tab:power} would not have been seen.
+A TIMSS knowing, applying, or reasoning witness would have been any catalog, strategy, or partial-input program that clears the bar stated for its channel, including the withheld-quantity language-model bar. No such row exists in this file. Public selected-response $n$ is 65, 54, and 68. Bypass rates below the clustered floors in Table~\ref{tab:power} would not have been seen at that $n$.

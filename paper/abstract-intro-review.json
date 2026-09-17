@@ -7,9 +7,9 @@
     "pass": true,
     "qualified_reviewer_can_follow_the_abstract": true,
     "about": "Whether a published tag on a released mathematics item is required to match the key, tested by programs that lack the tagged operation.",
-    "shown": "Three Holm families, never a mixed pool. Catalog 105: zero Holm, two per-cell witnesses (Regents geometry 0.323 n=279; EQAO grade 6 0.500 n=40). Strategy 67: STAAR grade-5 arithmetic closure 0.525 n=40 is the discovery Holm reject and failed powered replication (combined 0.328, CI covers chance). LM 68: Qwen 7B/14B and Phi-4 recover keys from type plus option form on withheld-quantity Algebra I/II; Phi-4 also clears geometry 0.404 n=166 vs chance and modal 0.289; Mistral is a weak solver. TIMSS knowing/applying/reasoning remain null at clustered floors 0.400 to 0.421.",
-    "what_is_new": "A three-family requirement census with an existential partial-input reader across two model families, including Phi-4 geometry, and a strategy discovery that does not replicate.",
-    "why_a_big_deal": "Accountability and research that treat a pass on those matched items as evidence of the tagged skill are reading the wrong quantity.",
+    "shown": "Three Holm families, never mixed. Catalog 105 tests, 0 Holm, two per-cell existence rows (Regents geometry 0.323 n=279; EQAO grade 6 0.500 n=40, index-specific). Strategy 67: STAAR grade-5 arithmetic closure 21/40 is the only Holm reject and failed powered replication (combined 21/64=0.328, CI covers chance). LM 68: withheld-quantity letter-argmax reader in Qwen2.5 and Phi-4 on Algebra I/II; Phi-4 geometry unclaimed (non-modal-key 0.229 n=118); Mistral does not clear; human 15/40 is an uninformative null. TIMSS knowing/applying/reasoning remain null at selected-response n about 50 to 80 (clustered floors 0.415/0.426/0.441).",
+    "what_is_new": "A three-family requirement census on tagged public mathematics: withheld-quantity increment on the choices-only construction, publisher tags, Holm within family, TIMSS cells, and a strategy discovery that does not replicate.",
+    "why_a_big_deal": "On catalog-matched items a pass does not require the tagged operation. On Algebra I and Algebra II masked-stem hits a pass does not require the givens. Public TIMSS items in this search did not yield either kind of program.",
     "unreadability": {
       "stacked_if_thens": {"present": false},
       "named_hypothesis_packing": {"present": false},

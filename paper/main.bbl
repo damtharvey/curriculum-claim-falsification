@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{15}
+\begin{thebibliography}{20}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -36,6 +36,33 @@
 \providecommand\natexlab[1]{#1}
 \providecommand\showeprint[2][]{arXiv:#2}
 
+\bibitem[{American Educational Research Association} et~al\mbox{.}(2014)]%
+        {aera2014standards}
+\bibfield{author}{\bibinfo{person}{{American Educational Research
+  Association}}, \bibinfo{person}{{American Psychological Association}}, {and}
+  \bibinfo{person}{{National Council on Measurement in Education}}.}
+  \bibinfo{year}{2014}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Standards for Educational and Psychological
+  Testing}}.
+\newblock \bibinfo{publisher}{American Educational Research Association},
+  \bibinfo{address}{Washington, {DC}}.
+\newblock
+\showISBNx{978-0-935302-35-6}
+
+
+\bibitem[Attali and Bar-Hillel(2003)]%
+        {Attali_2003}
+\bibfield{author}{\bibinfo{person}{Yigal Attali} {and} \bibinfo{person}{Maya
+  Bar-Hillel}.} \bibinfo{year}{2003}\natexlab{}.
+\newblock \showarticletitle{Guess Where: The Position of Correct Answers in
+  Multiple-Choice Test Items as a Psychometric Variable}.
+\newblock \bibinfo{journal}{\emph{Journal of Educational Measurement}}
+  \bibinfo{volume}{40}, \bibinfo{number}{2} (\bibinfo{year}{2003}),
+  \bibinfo{pages}{109--128}.
+\newblock
+\href{https://doi.org/10.1111/j.1745-3984.2003.tb01099.x}{doi:\nolinkurl{10.1111/j.1745-3984.2003.tb01099.x}}
+
+
 \bibitem[Balepur et~al\mbox{.}(2024)]%
         {balepur-etal-2024-artifacts}
 \bibfield{author}{\bibinfo{person}{Nishant Balepur}, \bibinfo{person}{Abhilasha
@@ -51,6 +78,41 @@
   \bibinfo{address}{Bangkok, Thailand}, \bibinfo{pages}{10308--10330}.
 \newblock
 \href{https://doi.org/10.18653/v1/2024.acl-long.555}{doi:\nolinkurl{10.18653/v1/2024.acl-long.555}}
+
+
+\bibitem[Balepur and Rudinger(2024)]%
+        {balepur-rudinger-2024-large}
+\bibfield{author}{\bibinfo{person}{Nishant Balepur} {and}
+  \bibinfo{person}{Rachel Rudinger}.} \bibinfo{year}{2024}\natexlab{}.
+\newblock \showarticletitle{Is Your Large Language Model Knowledgeable or a
+  Choices-Only Cheater?}. In \bibinfo{booktitle}{\emph{Proceedings of the 1st
+  Workshop on Towards Knowledgeable Language Models (KnowLLM 2024)}},
+  \bibfield{editor}{\bibinfo{person}{Sha Li}, \bibinfo{person}{Manling Li},
+  \bibinfo{person}{Michael~JQ Zhang}, \bibinfo{person}{Eunsol Choi},
+  \bibinfo{person}{Mor Geva}, \bibinfo{person}{Peter Hase}, {and}
+  \bibinfo{person}{Heng Ji}} (Eds.). \bibinfo{publisher}{Association for
+  Computational Linguistics}, \bibinfo{address}{Bangkok, Thailand},
+  \bibinfo{pages}{15--26}.
+\newblock
+\href{https://doi.org/10.18653/v1/2024.knowllm-1.2}{doi:\nolinkurl{10.18653/v1/2024.knowllm-1.2}}
+
+
+\bibitem[Balepur et~al\mbox{.}(2025)]%
+        {balepur-etal-2025-best}
+\bibfield{author}{\bibinfo{person}{Nishant Balepur}, \bibinfo{person}{Rachel
+  Rudinger}, {and} \bibinfo{person}{Jordan Boyd-Graber}.}
+  \bibinfo{year}{2025}\natexlab{}.
+\newblock \showarticletitle{Which of These Best Describes Multiple Choice
+  Evaluation with {LLM}s? A) Forced {B}) Flawed {C}) Fixable {D}) All of the
+  Above}. In \bibinfo{booktitle}{\emph{Proceedings of the 63rd Annual Meeting
+  of the Association for Computational Linguistics (Volume 1: Long Papers)}},
+  \bibfield{editor}{\bibinfo{person}{Wanxiang Che}, \bibinfo{person}{Joyce
+  Nabende}, \bibinfo{person}{Ekaterina Shutova}, {and}
+  \bibinfo{person}{Mohammad~Taher Pilehvar}} (Eds.).
+  \bibinfo{publisher}{Association for Computational Linguistics},
+  \bibinfo{address}{Vienna, Austria}, \bibinfo{pages}{3394--3418}.
+\newblock
+\href{https://doi.org/10.18653/v1/2025.acl-long.169}{doi:\nolinkurl{10.18653/v1/2025.acl-long.169}}
 
 
 \bibitem[Geirhos et~al\mbox{.}(2020)]%
@@ -256,6 +318,20 @@
 \newblock
 \showISSN{1745-3984}
 \href{https://doi.org/10.1111/j.1745-3984.1983.tb00212.x}{doi:\nolinkurl{10.1111/j.1745-3984.1983.tb00212.x}}
+
+
+\bibitem[Terzi and Sen(2019)]%
+        {Terzi_Sen_2019}
+\bibfield{author}{\bibinfo{person}{Ragip Terzi} {and} \bibinfo{person}{Sedat
+  Sen}.} \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{A Nondiagnostic Assessment for Diagnostic Purposes:
+  {Q}-Matrix Validation and Item-Based Model Fit Evaluation for the {TIMSS}
+  2011 Assessment}.
+\newblock \bibinfo{journal}{\emph{Sage Open}} \bibinfo{volume}{9},
+  \bibinfo{number}{1} (\bibinfo{year}{2019}),
+  \bibinfo{pages}{2158244019832684}.
+\newblock
+\href{https://doi.org/10.1177/2158244019832684}{doi:\nolinkurl{10.1177/2158244019832684}}
 
 
 \bibitem[Zellers et~al\mbox{.}(2018)]%
