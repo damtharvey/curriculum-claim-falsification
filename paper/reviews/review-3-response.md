@@ -54,9 +54,16 @@ Not changed in this pass: the Holm-family repetition across Section 2.2 paragrap
 
 Already the paper's stated position: a witness is a fact about a key and a program, not about students; the paper never says students do not learn. The framing paragraph in `method.tex` adds why the fact bears on score use anyway: the tag is read as evidence that the student computed on the givens, and a key that can be matched without them does not carry that evidence, whatever the student did.
 
+## Writing-correction pass (second commit)
+
+- `main.tex`: `\subtitle{...}` removed; title unchanged.
+- `abstract.tex`: first paragraph states the bypass phenomenon and the Requirement assumption before any channel is named ("a correct answer is read as evidence of that competency, a reading that assumes passing requires it. We test the requirement by searching for assessment bypasses: solver policies that lack the tagged competency, by an explicit restriction on their operations or information, yet pass under the published scoring rule"). The closing sentence on the item codings now says the bypasses are information-restricted and leaves the tagged-operation question open instead of calling the claim narrower. 242 words by a token count that includes numerals; no number added or changed.
+- `intro.tex`: lead sentence states the Requirement question in plain words ("this paper asks whether that claim holds at the level of requirement: whether a solver that lacks the tagged competency can still pass under the published scoring rule"); contribution bullet 1 is the bypass object with its two restriction kinds; bullet 4 says the language-model bypasses are information-restricted and leaves the operation question open.
+- `abstract-intro-review.json`: first-reader record for this pass.
+
 ## Note for Harvey: title
 
-Harvey removed the subtitle in this pass and kept the title *Does the Assessment Require the Skill?*. The question in the title is about the tagged skill. The strongest positive rows (masked-stem Algebra I and II) are witnesses that the pass does not require the given quantities, and the paper says explicitly that they are not witnesses against the relation the tag names; the operation-lacking witnesses (image backsolving 14 of 15, the two per-cell catalog rows) do address the skill directly but are small or uncorrected. Under the one-gap framing the title reads as the question the paper measures a part of, on each cell, rather than a question it answers with a yes. Whether that is the intended reading of the title is Harvey's decision; nothing in this pass changes it.
+The subtitle is removed and the title *Does the Assessment Require the Skill?* is kept, per Harvey. The title asks the Requirement question about the tagged skill. The strongest positive rows (masked-stem Algebra I and II) are information-restricted bypasses: they refute that the pass requires computing on the given quantities, and the paper says explicitly that they do not refute the relation the tag names. The capability-restricted bypasses (image backsolving 14 of 15, the two per-cell catalog rows) address the skill directly but are small or uncorrected. Under the bypass framing the title reads as the question the paper measures a part of on each cell, refuted for the givens on the algebra cells and for the operation on the small rows, rather than a question answered with one yes. That reading is consistent with the body; whether it is the intended reading of the title is Harvey's decision, and nothing in this pass changes the title.
 
 ## Still open
 
