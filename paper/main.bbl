@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{20}
+\begin{thebibliography}{31}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -35,6 +35,22 @@
 \providecommand\bibinfo[2]{#2}
 \providecommand\natexlab[1]{#1}
 \providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[Agrawal et~al\mbox{.}(2016)]%
+        {agrawal-etal-2016-analyzing}
+\bibfield{author}{\bibinfo{person}{Aishwarya Agrawal}, \bibinfo{person}{Dhruv
+  Batra}, {and} \bibinfo{person}{Devi Parikh}.}
+  \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{Analyzing the Behavior of Visual Question Answering
+  Models}. In \bibinfo{booktitle}{\emph{Proceedings of the 2016 Conference on
+  Empirical Methods in Natural Language Processing}},
+  \bibfield{editor}{\bibinfo{person}{Jian Su}, \bibinfo{person}{Kevin Duh},
+  {and} \bibinfo{person}{Xavier Carreras}} (Eds.).
+  \bibinfo{publisher}{Association for Computational Linguistics},
+  \bibinfo{address}{Austin, Texas}, \bibinfo{pages}{1955--1960}.
+\newblock
+\href{https://doi.org/10.18653/v1/D16-1203}{doi:\nolinkurl{10.18653/v1/D16-1203}}
+
 
 \bibitem[{American Educational Research Association} et~al\mbox{.}(2014)]%
         {aera2014standards}
@@ -115,6 +131,18 @@
 \href{https://doi.org/10.18653/v1/2025.acl-long.169}{doi:\nolinkurl{10.18653/v1/2025.acl-long.169}}
 
 
+\bibitem[de~la Torre and Chiu(2016)]%
+        {de_la_Torre_Chiu_2016}
+\bibfield{author}{\bibinfo{person}{Jimmy de~la Torre} {and}
+  \bibinfo{person}{Chia-Yi Chiu}.} \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{A General Method of Empirical {Q}-matrix
+  Validation}.
+\newblock \bibinfo{journal}{\emph{Psychometrika}} \bibinfo{volume}{81},
+  \bibinfo{number}{2} (\bibinfo{year}{2016}), \bibinfo{pages}{253--273}.
+\newblock
+\href{https://doi.org/10.1007/s11336-015-9467-8}{doi:\nolinkurl{10.1007/s11336-015-9467-8}}
+
+
 \bibitem[Geirhos et~al\mbox{.}(2020)]%
         {Geirhos_2020}
 \bibfield{author}{\bibinfo{person}{Robert Geirhos},
@@ -164,6 +192,28 @@
 \href{https://doi.org/10.1207/s15324818ame1503_5}{doi:\nolinkurl{10.1207/s15324818ame1503_5}}
 
 
+\bibitem[Haladyna and Rodriguez(2013)]%
+        {Haladyna_Rodriguez_2013}
+\bibfield{author}{\bibinfo{person}{Thomas~M. Haladyna} {and}
+  \bibinfo{person}{Michael~C. Rodriguez}.} \bibinfo{year}{2013}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Developing and Validating Test Items}}.
+\newblock \bibinfo{publisher}{Routledge}, \bibinfo{address}{New York}.
+\newblock
+\href{https://doi.org/10.4324/9780203850381}{doi:\nolinkurl{10.4324/9780203850381}}
+
+
+\bibitem[Holland and Thayer(1986)]%
+        {Holland_Thayer_1986}
+\bibfield{author}{\bibinfo{person}{Paul~W. Holland} {and}
+  \bibinfo{person}{Dorothy~T. Thayer}.} \bibinfo{year}{1986}\natexlab{}.
+\newblock \showarticletitle{Differential Item Functioning and the
+  {Mantel--Haenszel} Procedure}.
+\newblock \bibinfo{journal}{\emph{ETS Research Report Series}}
+  \bibinfo{volume}{1986}, \bibinfo{number}{2} (\bibinfo{year}{1986}).
+\newblock
+\href{https://doi.org/10.1002/j.2330-8516.1986.tb00186.x}{doi:\nolinkurl{10.1002/j.2330-8516.1986.tb00186.x}}
+
+
 \bibitem[{International Association for the Evaluation of Educational
   Achievement}(2009)]%
         {iea2009timss2011frameworks}
@@ -191,6 +241,50 @@
 \newblock
 \showISSN{0033-2909}
 \href{https://doi.org/10.1037/0033-2909.112.3.527}{doi:\nolinkurl{10.1037/0033-2909.112.3.527}}
+
+
+\bibitem[Kane(2013)]%
+        {Kane_2013}
+\bibfield{author}{\bibinfo{person}{Michael~T. Kane}.}
+  \bibinfo{year}{2013}\natexlab{}.
+\newblock \showarticletitle{Validating the Interpretations and Uses of Test
+  Scores}.
+\newblock \bibinfo{journal}{\emph{Journal of Educational Measurement}}
+  \bibinfo{volume}{50}, \bibinfo{number}{1} (\bibinfo{year}{2013}),
+  \bibinfo{pages}{1--73}.
+\newblock
+\href{https://doi.org/10.1111/jedm.12000}{doi:\nolinkurl{10.1111/jedm.12000}}
+
+
+\bibitem[Katz et~al\mbox{.}(2000)]%
+        {Katz_Bennett_Berger_2000}
+\bibfield{author}{\bibinfo{person}{Irvin~R. Katz},
+  \bibinfo{person}{Randy~Elliot Bennett}, {and} \bibinfo{person}{Aliza~E.
+  Berger}.} \bibinfo{year}{2000}\natexlab{}.
+\newblock \showarticletitle{Effects of Response Format on Difficulty of
+  {SAT}-Mathematics Items: It's Not the Strategy}.
+\newblock \bibinfo{journal}{\emph{Journal of Educational Measurement}}
+  \bibinfo{volume}{37}, \bibinfo{number}{1} (\bibinfo{year}{2000}),
+  \bibinfo{pages}{39--57}.
+\newblock
+\href{https://doi.org/10.1111/j.1745-3984.2000.tb01075.x}{doi:\nolinkurl{10.1111/j.1745-3984.2000.tb01075.x}}
+
+
+\bibitem[Kaushik and Lipton(2018)]%
+        {kaushik-lipton-2018-much}
+\bibfield{author}{\bibinfo{person}{Divyansh Kaushik} {and}
+  \bibinfo{person}{Zachary~C. Lipton}.} \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{How Much Reading Does Reading Comprehension
+  Require? A Critical Investigation of Popular Benchmarks}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 2018 Conference on Empirical
+  Methods in Natural Language Processing}},
+  \bibfield{editor}{\bibinfo{person}{Ellen Riloff}, \bibinfo{person}{David
+  Chiang}, \bibinfo{person}{Julia Hockenmaier}, {and}
+  \bibinfo{person}{Jun{'}ichi Tsujii}} (Eds.). \bibinfo{publisher}{Association
+  for Computational Linguistics}, \bibinfo{address}{Brussels, Belgium},
+  \bibinfo{pages}{5010--5015}.
+\newblock
+\href{https://doi.org/10.18653/v1/D18-1546}{doi:\nolinkurl{10.18653/v1/D18-1546}}
 
 
 \bibitem[Lai et~al\mbox{.}(2017)]%
@@ -223,6 +317,38 @@
 \url{https://arxiv.org/abs/2408.04226}
 \showURL{%
 \tempurl}
+
+
+\bibitem[Magar and Schwartz(2022)]%
+        {magar-schwartz-2022-data}
+\bibfield{author}{\bibinfo{person}{Inbal Magar} {and} \bibinfo{person}{Roy
+  Schwartz}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{Data Contamination: From Memorization to
+  Exploitation}. In \bibinfo{booktitle}{\emph{Proceedings of the 60th Annual
+  Meeting of the Association for Computational Linguistics (Volume 2: Short
+  Papers)}}, \bibfield{editor}{\bibinfo{person}{Smaranda Muresan},
+  \bibinfo{person}{Preslav Nakov}, {and} \bibinfo{person}{Aline Villavicencio}}
+  (Eds.). \bibinfo{publisher}{Association for Computational Linguistics},
+  \bibinfo{address}{Dublin, Ireland}, \bibinfo{pages}{157--165}.
+\newblock
+\href{https://doi.org/10.18653/v1/2022.acl-short.18}{doi:\nolinkurl{10.18653/v1/2022.acl-short.18}}
+
+
+\bibitem[McCoy et~al\mbox{.}(2019)]%
+        {mccoy-etal-2019-right}
+\bibfield{author}{\bibinfo{person}{R.~Thomas McCoy}, \bibinfo{person}{Ellie
+  Pavlick}, {and} \bibinfo{person}{Tal Linzen}.}
+  \bibinfo{year}{2019}\natexlab{}.
+\newblock \showarticletitle{Right for the Wrong Reasons: Diagnosing Syntactic
+  Heuristics in Natural Language Inference}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 57th Annual Meeting of the
+  Association for Computational Linguistics}},
+  \bibfield{editor}{\bibinfo{person}{Anna Korhonen}, \bibinfo{person}{David
+  Traum}, {and} \bibinfo{person}{Llu{\'i}s M{\`a}rquez}} (Eds.).
+  \bibinfo{publisher}{Association for Computational Linguistics},
+  \bibinfo{address}{Florence, Italy}, \bibinfo{pages}{3428--3448}.
+\newblock
+\href{https://doi.org/10.18653/v1/P19-1334}{doi:\nolinkurl{10.18653/v1/P19-1334}}
 
 
 \bibitem[Messick(1995)]%
@@ -289,6 +415,23 @@
 \href{https://doi.org/10.18653/v1/S18-2023}{doi:\nolinkurl{10.18653/v1/S18-2023}}
 
 
+\bibitem[Sainz et~al\mbox{.}(2023)]%
+        {sainz-etal-2023-nlp}
+\bibfield{author}{\bibinfo{person}{Oscar Sainz}, \bibinfo{person}{Jon Campos},
+  \bibinfo{person}{Iker Garc{\'i}a-Ferrero}, \bibinfo{person}{Julen Etxaniz},
+  \bibinfo{person}{Oier~Lopez de Lacalle}, {and} \bibinfo{person}{Eneko
+  Agirre}.} \bibinfo{year}{2023}\natexlab{}.
+\newblock \showarticletitle{{NLP} Evaluation in trouble: On the Need to Measure
+  {LLM} Data Contamination for each Benchmark}. In
+  \bibinfo{booktitle}{\emph{Findings of the Association for Computational
+  Linguistics: {EMNLP} 2023}}, \bibfield{editor}{\bibinfo{person}{Houda
+  Bouamor}, \bibinfo{person}{Juan Pino}, {and} \bibinfo{person}{Kalika Bali}}
+  (Eds.). \bibinfo{publisher}{Association for Computational Linguistics},
+  \bibinfo{address}{Singapore}, \bibinfo{pages}{10776--10787}.
+\newblock
+\href{https://doi.org/10.18653/v1/2023.findings-emnlp.722}{doi:\nolinkurl{10.18653/v1/2023.findings-emnlp.722}}
+
+
 \bibitem[Talmor et~al\mbox{.}(2019)]%
         {talmor-etal-2019-commonsenseqa}
 \bibfield{author}{\bibinfo{person}{Alon Talmor}, \bibinfo{person}{Jonathan
@@ -332,6 +475,19 @@
   \bibinfo{pages}{2158244019832684}.
 \newblock
 \href{https://doi.org/10.1177/2158244019832684}{doi:\nolinkurl{10.1177/2158244019832684}}
+
+
+\bibitem[White and Zammarelli(1981)]%
+        {White_Zammarelli_1981}
+\bibfield{author}{\bibinfo{person}{A.~P. White} {and} \bibinfo{person}{J.~E.
+  Zammarelli}.} \bibinfo{year}{1981}\natexlab{}.
+\newblock \showarticletitle{Convergence Principles: Information in the Answer
+  Sets of Some Multiple-Choice Intelligence Tests}.
+\newblock \bibinfo{journal}{\emph{Applied Psychological Measurement}}
+  \bibinfo{volume}{5}, \bibinfo{number}{1} (\bibinfo{year}{1981}),
+  \bibinfo{pages}{21--27}.
+\newblock
+\href{https://doi.org/10.1177/014662168100500103}{doi:\nolinkurl{10.1177/014662168100500103}}
 
 
 \bibitem[Zellers et~al\mbox{.}(2018)]%
