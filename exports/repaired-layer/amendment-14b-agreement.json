@@ -1,0 +1,80 @@
+{
+  "n": 606,
+  "nAgree": 592,
+  "agreement": 0.976897689768977,
+  "clearsFloor": false,
+  "label": "below_floor",
+  "disagreeingIds": [
+    {
+      "id": "nyregents-algebra-i-2020-jan-q12",
+      "rerun": "B",
+      "saved": "D"
+    },
+    {
+      "id": "nyregents-algebra-i-2019-jan-q21",
+      "rerun": "C",
+      "saved": "A"
+    },
+    {
+      "id": "nyregents-algebra-i-2026-jun-q6",
+      "rerun": "A",
+      "saved": "C"
+    },
+    {
+      "id": "nyregents-algebra-i-2025-aug-q6",
+      "rerun": "A",
+      "saved": "C"
+    },
+    {
+      "id": "nyregents-algebra-i-2015-jan-q8",
+      "rerun": "A",
+      "saved": "B"
+    },
+    {
+      "id": "nyregents-algebra-i-unknown-unk-q6",
+      "rerun": "C",
+      "saved": "A"
+    },
+    {
+      "id": "nyregents-algebra-i-2016-jan-q11",
+      "rerun": "A",
+      "saved": "B"
+    },
+    {
+      "id": "nyregents-algebra-ii-2023-jan-q5",
+      "rerun": "D",
+      "saved": "B"
+    },
+    {
+      "id": "nyregents-algebra-ii-2023-jan-q19",
+      "rerun": "B",
+      "saved": "C"
+    },
+    {
+      "id": "nyregents-algebra-ii-2018-jan-q18",
+      "rerun": "A",
+      "saved": "B"
+    },
+    {
+      "id": "nyregents-algebra-ii-2024-jun-q1",
+      "rerun": "B",
+      "saved": "D"
+    },
+    {
+      "id": "nyregents-algebra-ii-2024-jan-q8",
+      "rerun": "B",
+      "saved": "D"
+    },
+    {
+      "id": "nyregents-algebra-ii-2016-jun-q18",
+      "rerun": "D",
+      "saved": "A"
+    },
+    {
+      "id": "nyregents-algebra-ii-2020-jan-q4",
+      "rerun": "C",
+      "saved": "B"
+    }
+  ],
+  "savedPath": "exports/addendum-gpu/masked-stem-14b-items.jsonl"
+}

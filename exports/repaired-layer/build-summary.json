@@ -1,0 +1,70 @@
+{
+  "nPrimary": 606,
+  "nUnusableTranscription1": 15,
+  "nKeyMissing": 0,
+  "nBelowMinMaskedTokenCount": 17,
+  "nWithheldQuantity": 574,
+  "nPerturbFailed": 5,
+  "verification": {
+    "all": {
+      "n": 606,
+      "repaired_verified": 431,
+      "repaired_unverified": 175,
+      "transcription1_usable": 591,
+      "overlap": {
+        "faithful": {
+          "repaired_verified": 246,
+          "repaired_unverified": 53
+        },
+        "not_faithful": {
+          "repaired_verified": 185,
+          "repaired_unverified": 107
+        },
+        "unverified": {
+          "repaired_verified": 0,
+          "repaired_unverified": 15
+        }
+      }
+    },
+    "algebra-i": {
+      "n": 358,
+      "repaired_verified": 263,
+      "repaired_unverified": 95,
+      "transcription1_usable": 352,
+      "overlap": {
+        "faithful": {
+          "repaired_verified": 150,
+          "repaired_unverified": 34
+        },
+        "not_faithful": {
+          "repaired_verified": 113,
+          "repaired_unverified": 55
+        },
+        "unverified": {
+          "repaired_verified": 0,
+          "repaired_unverified": 6
+        }
+      }
+    },
+    "algebra-ii": {
+      "n": 248,
+      "repaired_verified": 168,
+      "repaired_unverified": 80,
+      "transcription1_usable": 239,
+      "overlap": {
+        "faithful": {
+          "repaired_verified": 96,
+          "repaired_unverified": 19
+        },
+        "not_faithful": {
+          "repaired_verified": 72,
+          "repaired_unverified": 52
+        },
+        "unverified": {
+          "repaired_verified": 0,
+          "repaired_unverified": 9
+        }
+      }
+    }
+  }
+}

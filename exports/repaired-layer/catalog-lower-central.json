@@ -1,0 +1,44 @@
+{
+  "geometry_lower_central": {
+    "skipped": false,
+    "cell": "nyregents::geometry::lower-central-fired",
+    "nOriginalFired": 279,
+    "nMissingTranscription1": 2,
+    "nWithRepairedOptions": 277,
+    "nRuleFires": 246,
+    "passes": 80,
+    "passRate": 0.3252032520325203,
+    "chance": 0.25,
+    "itemCi95": [
+      0.26422764227642276,
+      0.3821138211382114
+    ],
+    "clusterCi95": [
+      0.26394052044609667,
+      0.3868312757201646
+    ],
+    "clearsItemBar": true,
+    "nAdministrations": 27
+  },
+  "eqao_g6_lower_central": {
+    "skipped": false,
+    "cell": "eqao::g6::lower-central-fired",
+    "nOriginalFired": 40,
+    "nMissingTranscription1": 2,
+    "nWithRepairedOptions": 38,
+    "nRuleFires": 38,
+    "passes": 18,
+    "passRate": 0.47368421052631576,
+    "chance": 0.2495614035087719,
+    "itemCi95": [
+      0.3157894736842105,
+      0.631578947368421
+    ],
+    "clusterCi95": [
+      0.2727272727272727,
+      0.5882352941176471
+    ],
+    "clearsItemBar": true,
+    "nAdministrations": 3
+  }
+}
