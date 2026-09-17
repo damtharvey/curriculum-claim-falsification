@@ -3,37 +3,44 @@
   "pass_kind": "writing_correction",
   "skill": ".agents/skills/ml-paper-writing/references/first-reader-review.md",
   "overall_recommendation": 4,
-  "reviewed_at": "2026-09-17T13:40Z",
+  "reviewed_at": "2026-09-17T14:10Z",
   "paper_head_reviewed_after_science_commit": "d70ef8e",
   "structural_pass_commit": "7f3e3e2",
+  "previous_abstract_pass_commit": "f5fb3d4",
+  "this_pass": "framing: general tagged assessments, mathematics as the instantiation; Limitations rewritten to real weaknesses; Conclusion added",
   "story": "paper/reviews/story.md",
   "first_reader_check": {
     "pass": true,
     "qualified_reviewer_can_follow_the_abstract": true,
-    "about": "Whether passing a tagged released mathematics item requires the tagged competency, tested without student data by searching for assessment bypasses: solvers that lack the competency by an explicit restriction on their operations or their information, never see the key, and pass under the published scoring rule.",
-    "shown": "Under a pre-registered bar, language models of two families recover New York Regents Algebra I and Algebra II keys with every given quantity withheld, and the recovery survives a change of every option value with the form kept; on those items a pass does not require computing on the givens, and whether it requires the tagged operation is left open. Small programs denied the tagged operation match keys on a few cells. TIMSS cognitive-domain cells yield no bypass at their public sizes. Claimed rates are measured on items re-read from the printed page, which released text layers often misstate.",
-    "what_is_new": "The assessment bypass as a one-sided, student-free test of a tag, with two restriction kinds (capability and information) that are the same object; a pre-registered witness bar with hashed programs and Holm correction inside each solver family; a census of 2,405 tagged public-release items; and the measurement finding that the released text layer must be replaced by a page re-read before any rate is claimed.",
-    "why_a_big_deal": "Accountability, curriculum evaluation, and research read a tagged pass as evidence of the tagged competency. Where a solver denied the given quantities matches the key on both Regents algebra cells, on every scorer, and with every option value changed, the key does not carry the evidence it is read as on those items. The abstract states that consequence in one clause: so the key does not carry the evidence it is read as.",
-    "abstract_word_count": 227,
+    "about": "Whether a pass on a tagged assessment item (a standard code, a cognitive domain, a rubric criterion) requires the tagged competency, tested without student data by searching for assessment bypasses: solvers that lack the competency by an explicit restriction on their operations or their information, never see the key, and pass under the published scoring rule. The method is general; it is run on public-release mathematics items, where tags, keys, and scoring rules are public.",
+    "shown": "Under a pre-registered bar, language models of two families recover New York Regents Algebra I and II keys with every given quantity withheld, and the recovery survives a form-preserving change of every option value; on those items a pass does not require computing on the givens, so the key does not carry the evidence it is read as, and whether it requires the tagged operation is left open. Small programs denied the tagged operation match keys on a few cells. TIMSS cognitive-domain cells yield no bypass at public sizes. Rates are claimed on items re-read from the printed page, which released text layers often misstate.",
+    "what_is_new": "The assessment bypass as a one-sided, student-free, executable test of any tag, with two domain-neutral restriction kinds (capability and information); a pre-registered witness bar with hashed programs and Holm correction inside each solver family; the first instantiation on 2,405 tagged public-release mathematics items; and the measurement finding that the released text layer must be replaced by a page re-read before any rate is claimed.",
+    "why_a_big_deal": "Accountability, procurement, and research read a tagged pass as evidence of the tagged competency in every subject. The abstract says the reading assumes passing requires the competency, that the search refutes that requirement without students wherever tags, item text, keys, and an executable scoring rule are public, and that on the Regents algebra cells the key does not carry the evidence it is read as. The last sentence states the scope plainly: a method demonstration on one subject.",
+    "abstract_word_count": 242,
     "abstract_says": [
-      "first paragraph: the tag, the reading, the assumption the reading makes, the bypass as the test (glossed inline), one-sided in one sentence",
-      "second paragraph: pre-registered bar; Algebra I and II language-model bypass in two model families surviving the option-value change; the consequence for the key as evidence; the tagged-operation question left open; small programs on a few cells; TIMSS null at public sizes; claimed rates measured on the printed page",
-      "few numbers: none in the abstract beyond the two cell names and the two model families"
+      "first paragraph: tags in general (standard codes, cognitive domains, rubric criteria); the reading of a pass as evidence in accountability, procurement, and research; the assumption; the bypass as the test, glossed inline; one-sided in one sentence",
+      "second paragraph: instantiation on public-release mathematics items where tags, keys, and scoring rules are public, under a pre-registered bar; Algebra I and II language-model bypass in two model families surviving the form-preserving option-value change; the consequence for the key as evidence; the tagged-operation question left open; small programs on a few cells; TIMSS null at public sizes; rates claimed on the printed page; scope sentence: a method demonstration on one subject, and what the search needs elsewhere",
+      "few numbers: none beyond the two cell names and the two model families"
     ],
     "no_conjunction_contradicted_by_a_table": "The abstract conjoins Algebra I and II recovery with survival under the option-value change; Table tab:isomorph shows every scorer clearing on both cells under the rank-preserving arm on the repaired-verified population.",
-    "intro_lead": "A released mathematics item carries a published tag ... A correct answer is then read as evidence of the tagged competency ... That reading assumes that passing requires the competency. The second paragraph names the bypass, its one-sidedness, and where the requirement question sits relative to alignment tools and psychometrics; the third paragraph states what was found; four contribution bullets of one or two sentences follow. The formal notation (S, C, T, R) and the claim-ladder table are gone; the ladder is one sentence in words.",
+    "intro_lead": "Paragraph 1: an assessment item carries a tag that names the competency it is said to measure; a correct answer is read as evidence of that competency in accountability, procurement, and research; each use assumes passing requires the competency; testing standards and validity theory. Paragraph 2: the bypass, its two restriction kinds with one non-mathematics example each (lexical policy on a causal-inference item; passage-withheld reader on a reading-comprehension item, cited to partial-input baselines), one-sidedness, and where the requirement question sits relative to alignment tools and psychometrics. Paragraph 3: mathematics first, and why, in one sentence; then the findings. Contribution lead-in says the object and bar are general and the census and findings are the mathematics instantiation; bullet 3 opens with 'The first instantiation of the method'.",
+    "where_mathematics_first_enters": {
+      "abstract": "We instantiate the search on public-release mathematics items, where tags, keys, and scoring rules are public, under a pre-registered bar.",
+      "introduction": "paragraph 3, first sentence: We run the search first on public-release mathematics items, because several authorities publish standards, keys, scoring rules, and item text in machine-checkable form, ...",
+      "body": "Method 3.2, first sentence: This census instantiates the method on public-release mathematics items."
+    },
     "unreadability": {
       "stacked_if_thens": {"present": false},
       "named_hypothesis_packing": {"present": false},
-      "formula_in_words": {"present": false, "note": "no notation anywhere in the introduction or Method; the bypass is defined in words in Method 3.1"},
+      "formula_in_words": {"present": false, "note": "no notation in the introduction or Method 3.1; the bypass and its two restriction kinds are defined in words, domain-neutrally"},
       "contribution_list_abstract": {"present": false},
-      "circular_definition": {"present": false, "note": "assessment bypass is glossed inline in the abstract and in intro paragraph 2, and defined once in Method 3.1"},
-      "process_metadiscourse": {"present": false, "note": "the 'What would refute these claims' subsection, which argued with earlier drafts, is removed; its refutation conditions are the bar in Method 3.4"},
+      "circular_definition": {"present": false, "note": "assessment bypass is glossed inline in the abstract and intro paragraph 2, defined once in Method 3.1"},
+      "process_metadiscourse": {"present": false},
       "abstract_not_claim": {"present": false},
-      "negative_contribution_bullets": {"present": false, "note": "bullet 1 states the object as a result; no bullet's payload is a disclaimer"},
-      "repeated_disclaimer": {"present": false, "note": "one-sidedness is stated in the abstract (one sentence), intro paragraph 2 (story), and Limitations paragraph 1 (scope); removed from intro bullet 1, Method, Related Work, and five places in Results. Redundancy map in paper/reviews/story.md."}
+      "negative_contribution_bullets": {"present": false},
+      "repeated_disclaimer": {"present": false, "note": "one-sidedness is stated in the abstract (one sentence), intro paragraph 2, and the Conclusion close; the vulnerability-measure and matched-items-only statements moved from Limitations to Method 3.1; Limitations now contain only weaknesses of what was done, each with what it affects and what would fix it, and no design choice appears there"}
     },
-    "body_first_reader": "Method defines bypass, restriction kinds, items, families, bar and Holm families, controls, print fidelity, and the two codings once each in that order. Results run measurement layer, language-model bypass with isomorph and codings, capability-restricted rows, TIMSS null and controls. Related Work keeps the collective-advance paragraph and states the object in one clause. Limitations state each limitation once and no result twice."
+    "body_first_reader": "Method 3.1 defines bypass and both restriction kinds without a subject; Method 3.2 is where mathematics enters. Related Work's collective-advance paragraph states the object as general with the mathematics census as its first instantiation. Limitations list ten weaknesses (page instrument and unverified items; language-model coders; template memorization; 14B floor; one-rater sheet; small unreplicated catalog rows; STAAR replication forms and parse; instruction-only not run; constructed response; ingestion). The Conclusion carries what the method needs to run on another domain, once."
   },
   "reviewer_independence": {
     "authored_the_science_edit": false,
