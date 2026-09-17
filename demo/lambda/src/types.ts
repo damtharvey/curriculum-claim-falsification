@@ -54,6 +54,24 @@ export interface AprioriRule {
   appliesTo: ResponseType[];
 }
 
+export interface Claim {
+  authority: string;
+  code: string;
+  text: string;
+  operationalization: string;
+  operations: Operation[];
+  sourceUrl?: string;
+}
+
+/** One claims/<authority>.json file. */
+export interface ClaimFile {
+  authority: string;
+  note?: string;
+  claims: Claim[];
+  /** Repo path, e.g. claims/nyregents.json. */
+  file: string;
+}
+
 export interface SurfaceFeatures {
   optionLengths: Record<string, number>;
   longest: string[];
@@ -111,7 +129,11 @@ export interface RunRulesResponse {
 export interface DemoStats {
   totalItems: number;
   totalWitnesses: number;
+  witnessedItems: number;
+  ruleCount: number;
   corpora: string[];
   authorities: string[];
+  claims: { authority: string; claim: string; items: number }[];
+  channels: string[];
   responseTypes: Record<string, number>;
 }

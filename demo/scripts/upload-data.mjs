@@ -7,7 +7,7 @@
  */
 
 import { execSync } from "node:child_process";
-import { existsSync, readFileSync } from "node:fs";
+import { existsSync, readdirSync } from "node:fs";
 import { resolve, join } from "node:path";
 
 const ROOT = resolve(import.meta.dirname, "../..");
@@ -25,6 +25,11 @@ const DATA_FILES = [
   { local: "exports/method-controls.json", s3Key: "data/method-controls.json" },
   { local: "exports/channel-audit.json", s3Key: "data/channel-audit.json" },
 ];
+
+// Claims, one file per authority
+for (const f of readdirSync(join(ROOT, "claims"))) {
+  if (f.endsWith(".json")) DATA_FILES.push({ local: `claims/${f}`, s3Key: `data/claims/${f}` });
+}
 
 // Addendum GPU files
 const GPU_FILES = [

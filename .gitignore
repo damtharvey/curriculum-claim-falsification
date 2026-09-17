@@ -80,3 +80,7 @@ exports/standards-split/ccss-html/
 
 # CDK synth output
 cdk.out/
+
+# Local editor config
+.claude/
+*.tsbuildinfo

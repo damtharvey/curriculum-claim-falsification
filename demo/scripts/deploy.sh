@@ -27,7 +27,7 @@ cd "$DIR/infra"
 npx cdk bootstrap 2>/dev/null || true
 
 echo "=== CDK deploy ==="
-npx cdk deploy --all --require-approval never --outputs-file "$DIR/cdk-outputs.json"
+JSII_SILENCE_WARNING_UNTESTED_NODE_VERSION=1 npx cdk deploy --all --require-approval never --outputs-file "$DIR/cdk-outputs.json"
 
 echo "=== Extracting bucket name from CDK outputs ==="
 DATA_BUCKET=$(python3 -c "
