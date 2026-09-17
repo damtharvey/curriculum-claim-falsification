@@ -1,0 +1,3018 @@
+{
+  "counts": {
+    "nyregents::algebra-i::masked-stem-primary": 358,
+    "nyregents::algebra-ii::masked-stem-primary": 248,
+    "nyregents::geometry::masked-stem-primary": 166,
+    "nyregents::geometry::lower-central-fired": 279,
+    "eqao::g6::lower-central-fired": 40,
+    "union": 955
+  },
+  "sources": {
+    "algebraPrimary": "exports/addendum-gpu/masked-stem-algebra-primary-item-ids.json",
+    "geometryPhi4Primary": "exports/addendum-gpu/masked-stem-primary-item-ids.json (nyregents::geometry)",
+    "lowerCentralFired": "scripts/addendum_lib.py middle_value_option over nyregents geometry and eqao g6 selected-response items"
+  },
+  "items": {
+    "eqao-2023-g6-q1": [
+      "eqao::g6::lower-central-fired"
+    ],
+    "eqao-2023-g6-q11": [
+      "eqao::g6::lower-central-fired"
+    ],
+    "eqao-2023-g6-q12": [
+      "eqao::g6::lower-central-fired"
+    ],
+    "eqao-2023-g6-q14": [
+      "eqao::g6::lower-central-fired"
+    ],
+    "eqao-2023-g6-q16": [
+      "eqao::g6::lower-central-fired"
+    ],
+    "eqao-2023-g6-q17": [
+      "eqao::g6::lower-central-fired"
+    ],
+    "eqao-2023-g6-q20": [
+      "eqao::g6::lower-central-fired"
+    ],
+    "eqao-2023-g6-q21": [
+      "eqao::g6::lower-central-fired"
+    ],
+    "eqao-2023-g6-q23": [
+      "eqao::g6::lower-central-fired"
+    ],
+    "eqao-2023-g6-q24": [
+      "eqao::g6::lower-central-fired"
+    ],
+    "eqao-2023-g6-q25": [
+      "eqao::g6::lower-central-fired"
+    ],
+    "eqao-2023-g6-q26": [
+      "eqao::g6::lower-central-fired"
+    ],
+    "eqao-2023-g6-q3": [
+      "eqao::g6::lower-central-fired"
+    ],
+    "eqao-2023-g6-q4": [
+      "eqao::g6::lower-central-fired"
+    ],
+    "eqao-2023-g6-q6": [
+      "eqao::g6::lower-central-fired"
+    ],
+    "eqao-2023-g6-q7": [
+      "eqao::g6::lower-central-fired"
+    ],
+    "eqao-2023-g6-q9": [
+      "eqao::g6::lower-central-fired"
+    ],
+    "eqao-2024-g6-q1": [
+      "eqao::g6::lower-central-fired"
+    ],
+    "eqao-2024-g6-q10": [
+      "eqao::g6::lower-central-fired"
+    ],
+    "eqao-2024-g6-q12": [
+      "eqao::g6::lower-central-fired"
+    ],
+    "eqao-2024-g6-q13": [
+      "eqao::g6::lower-central-fired"
+    ],
+    "eqao-2024-g6-q16": [
+      "eqao::g6::lower-central-fired"
+    ],
+    "eqao-2024-g6-q19": [
+      "eqao::g6::lower-central-fired"
+    ],
+    "eqao-2024-g6-q20": [
+      "eqao::g6::lower-central-fired"
+    ],
+    "eqao-2024-g6-q21": [
+      "eqao::g6::lower-central-fired"
+    ],
+    "eqao-2024-g6-q4": [
+      "eqao::g6::lower-central-fired"
+    ],
+    "eqao-2024-g6-q5": [
+      "eqao::g6::lower-central-fired"
+    ],
+    "eqao-2024-g6-q7": [
+      "eqao::g6::lower-central-fired"
+    ],
+    "eqao-2024-g6-q8": [
+      "eqao::g6::lower-central-fired"
+    ],
+    "eqao-2025-g6-q1": [
+      "eqao::g6::lower-central-fired"
+    ],
+    "eqao-2025-g6-q13": [
+      "eqao::g6::lower-central-fired"
+    ],
+    "eqao-2025-g6-q16": [
+      "eqao::g6::lower-central-fired"
+    ],
+    "eqao-2025-g6-q17": [
+      "eqao::g6::lower-central-fired"
+    ],
+    "eqao-2025-g6-q2": [
+      "eqao::g6::lower-central-fired"
+    ],
+    "eqao-2025-g6-q3": [
+      "eqao::g6::lower-central-fired"
+    ],
+    "eqao-2025-g6-q4": [
+      "eqao::g6::lower-central-fired"
+    ],
+    "eqao-2025-g6-q5": [
+      "eqao::g6::lower-central-fired"
+    ],
+    "eqao-2025-g6-q6": [
+      "eqao::g6::lower-central-fired"
+    ],
+    "eqao-2025-g6-q7": [
+      "eqao::g6::lower-central-fired"
+    ],
+    "eqao-2025-g6-q9": [
+      "eqao::g6::lower-central-fired"
+    ],
+    "nyregents-algebra-i-2014-aug-q14": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2014-aug-q15": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2014-aug-q19": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2014-aug-q2": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2014-aug-q23": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2014-aug-q4": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2014-aug-q6": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2014-aug-q8": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2014-aug-q9": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2014-jun-q1": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2014-jun-q12": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2014-jun-q14": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2014-jun-q16": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2014-jun-q22": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2014-jun-q7": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2015-aug-q1": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2015-aug-q10": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2015-aug-q14": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2015-aug-q18": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2015-aug-q19": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2015-aug-q2": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2015-aug-q20": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2015-aug-q21": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2015-aug-q23": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2015-aug-q9": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2015-jan-q10": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2015-jan-q11": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2015-jan-q13": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2015-jan-q17": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2015-jan-q21": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2015-jan-q23": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2015-jan-q3": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2015-jan-q4": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2015-jan-q8": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2015-jun-q1": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2015-jun-q10": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2015-jun-q11": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2015-jun-q21": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2015-jun-q23": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2015-jun-q3": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2015-jun-q6": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2016-aug-q10": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2016-aug-q12": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2016-aug-q13": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2016-aug-q18": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2016-aug-q2": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2016-aug-q20": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2016-aug-q21": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2016-aug-q4": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2016-aug-q7": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2016-aug-q8": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2016-aug-q9": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2016-jan-q11": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2016-jan-q12": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2016-jan-q14": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2016-jan-q18": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2016-jan-q21": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2016-jan-q23": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2016-jan-q3": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2016-jan-q7": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2016-jan-q8": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2016-jan-q9": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2016-jun-q1": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2016-jun-q10": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2016-jun-q11": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2016-jun-q12": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2016-jun-q13": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2016-jun-q15": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2016-jun-q16": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2016-jun-q18": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2016-jun-q19": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2016-jun-q2": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2016-jun-q21": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2016-jun-q22": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2016-jun-q4": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2016-jun-q7": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2017-aug-q1": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2017-aug-q10": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2017-aug-q14": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2017-aug-q17": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2017-aug-q19": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2017-aug-q22": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2017-aug-q23": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2017-aug-q4": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2017-aug-q9": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2017-jan-q1": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2017-jan-q15": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2017-jan-q17": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2017-jan-q19": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2017-jan-q2": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2017-jan-q21": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2017-jan-q3": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2017-jan-q5": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2017-jan-q7": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2017-jan-q8": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2017-jun-q11": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2017-jun-q12": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2017-jun-q13": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2017-jun-q15": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2017-jun-q17": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2017-jun-q21": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2017-jun-q23": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2017-jun-q24": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2017-jun-q5": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2017-jun-q6": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2017-jun-q8": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2018-aug-q1": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2018-aug-q10": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2018-aug-q13": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2018-aug-q15": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2018-aug-q16": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2018-aug-q18": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2018-aug-q22": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2018-aug-q23": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2018-aug-q3": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2018-aug-q4": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2018-aug-q6": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2018-aug-q7": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2018-aug-q8": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2018-jan-q1": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2018-jan-q10": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2018-jan-q13": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2018-jan-q14": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2018-jan-q17": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2018-jan-q19": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2018-jan-q21": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2018-jan-q22": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2018-jan-q5": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2018-jan-q7": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2018-jan-q8": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2018-jan-q9": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2018-jun-q1": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2018-jun-q10": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2018-jun-q11": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2018-jun-q16": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2018-jun-q19": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2018-jun-q2": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2018-jun-q21": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2018-jun-q22": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2018-jun-q23": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2018-jun-q3": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2018-jun-q5": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2018-jun-q6": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2018-jun-q7": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2018-jun-q9": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2019-aug-q1": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2019-aug-q11": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2019-aug-q12": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2019-aug-q17": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2019-aug-q20": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2019-aug-q22": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2019-aug-q23": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2019-aug-q3": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2019-aug-q5": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2019-aug-q6": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2019-aug-q8": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2019-aug-q9": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2019-jan-q10": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2019-jan-q11": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2019-jan-q12": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2019-jan-q14": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2019-jan-q15": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2019-jan-q18": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2019-jan-q20": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2019-jan-q21": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2019-jan-q23": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2019-jan-q4": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2019-jan-q5": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2019-jan-q6": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2019-jan-q8": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2019-jun-q1": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2019-jun-q10": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2019-jun-q12": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2019-jun-q14": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2019-jun-q16": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2019-jun-q17": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2019-jun-q18": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2019-jun-q2": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2019-jun-q21": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2019-jun-q22": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2019-jun-q23": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2019-jun-q4": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2019-jun-q5": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2020-jan-q1": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2020-jan-q11": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2020-jan-q12": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2020-jan-q14": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2020-jan-q15": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2020-jan-q16": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2020-jan-q19": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2020-jan-q2": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2020-jan-q20": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2020-jan-q23": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2020-jan-q3": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2020-jan-q6": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2020-jan-q8": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2020-jan-q9": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2022-aug-q10": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2022-aug-q11": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2022-aug-q15": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2022-aug-q17": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2022-aug-q18": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2022-aug-q19": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2022-aug-q21": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2022-aug-q23": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2022-jun-q12": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2022-jun-q14": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2022-jun-q18": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2022-jun-q2": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2022-jun-q20": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2022-jun-q21": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2022-jun-q3": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2022-jun-q4": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2023-aug-q11": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2023-aug-q12": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2023-aug-q13": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2023-aug-q18": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2023-aug-q2": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2023-aug-q20": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2023-aug-q21": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2023-aug-q6": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2023-aug-q7": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2023-aug-q8": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2023-jan-q10": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2023-jan-q11": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2023-jan-q14": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2023-jan-q16": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2023-jan-q21": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2023-jan-q22": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2023-jan-q6": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2023-jan-q8": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2023-jun-q11": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2023-jun-q12": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2023-jun-q14": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2023-jun-q20": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2023-jun-q3": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2023-jun-q4": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2023-jun-q5": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2023-jun-q6": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2023-jun-q8": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2024-aug-q11": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2024-aug-q12": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2024-aug-q13": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2024-aug-q15": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2024-aug-q16": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2024-aug-q17": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2024-aug-q18": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2024-aug-q20": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2024-aug-q21": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2024-aug-q22": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2024-aug-q3": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2024-aug-q5": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2024-aug-q6": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2024-jan-q10": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2024-jan-q15": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2024-jan-q18": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2024-jan-q19": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2024-jan-q21": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2024-jan-q23": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2024-jan-q3": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2024-jan-q6": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2024-jan-q8": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2024-jun-q1": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2024-jun-q11": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2024-jun-q13": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2024-jun-q15": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2024-jun-q16": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2024-jun-q2": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2024-jun-q20": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2024-jun-q21": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2024-jun-q4": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2024-jun-q7": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2024-jun-q9": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2025-aug-q10": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2025-aug-q12": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2025-aug-q13": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2025-aug-q15": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2025-aug-q19": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2025-aug-q2": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2025-aug-q20": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2025-aug-q21": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2025-aug-q23": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2025-aug-q3": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2025-aug-q4": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2025-aug-q6": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2025-aug-q7": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2025-jan-q1": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2025-jan-q10": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2025-jan-q12": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2025-jan-q13": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2025-jan-q14": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2025-jan-q18": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2025-jan-q2": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2025-jan-q23": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2025-jan-q4": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2025-jan-q5": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2025-jan-q6": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2025-jan-q8": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2025-jun-q11": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2025-jun-q13": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2025-jun-q14": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2025-jun-q15": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2025-jun-q21": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2025-jun-q4": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2025-jun-q5": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2025-jun-q7": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2025-jun-q8": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2026-aug-q10": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2026-aug-q11": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2026-aug-q13": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2026-aug-q16": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2026-aug-q17": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2026-aug-q19": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2026-aug-q2": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2026-aug-q20": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2026-aug-q22": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2026-aug-q23": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2026-aug-q3": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2026-aug-q5": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2026-aug-q6": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2026-aug-q8": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2026-aug-q9": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2026-jan-q10": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2026-jan-q12": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2026-jan-q16": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2026-jan-q17": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2026-jan-q20": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2026-jan-q22": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2026-jan-q23": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2026-jan-q9": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2026-jun-q1": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2026-jun-q13": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2026-jun-q14": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2026-jun-q15": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2026-jun-q17": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2026-jun-q18": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2026-jun-q19": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2026-jun-q2": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2026-jun-q21": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2026-jun-q3": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2026-jun-q5": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2026-jun-q6": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2026-jun-q7": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-2026-jun-q9": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-unknown-unk-q1": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-unknown-unk-q10": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-unknown-unk-q13": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-unknown-unk-q14": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-unknown-unk-q18": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-unknown-unk-q2": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-unknown-unk-q22": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-unknown-unk-q23": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-unknown-unk-q24": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-unknown-unk-q3": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-unknown-unk-q5": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-unknown-unk-q6": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-unknown-unk-q8": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-i-unknown-unk-q9": [
+      "nyregents::algebra-i::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2016-aug-q1": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2016-aug-q10": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2016-aug-q15": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2016-aug-q18": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2016-aug-q20": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2016-aug-q21": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2016-aug-q3": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2016-aug-q4": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2016-aug-q6": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2016-jun-q10": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2016-jun-q11": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2016-jun-q16": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2016-jun-q18": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2016-jun-q19": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2016-jun-q20": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2016-jun-q22": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2016-jun-q23": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2016-jun-q6": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2016-jun-q7": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2016-jun-q9": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2017-aug-q10": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2017-aug-q12": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2017-aug-q19": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2017-aug-q20": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2017-aug-q24": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2017-aug-q3": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2017-aug-q8": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2017-aug-q9": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2017-jan-q1": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2017-jan-q11": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2017-jan-q12": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2017-jan-q14": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2017-jan-q15": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2017-jan-q18": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2017-jan-q19": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2017-jan-q2": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2017-jan-q21": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2017-jan-q23": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2017-jan-q24": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2017-jan-q4": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2017-jan-q8": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2017-jun-q11": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2017-jun-q13": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2017-jun-q14": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2017-jun-q15": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2017-jun-q16": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2017-jun-q17": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2017-jun-q18": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2017-jun-q20": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2017-jun-q22": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2017-jun-q24": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2017-jun-q4": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2017-jun-q5": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2018-aug-q1": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2018-aug-q10": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2018-aug-q11": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2018-aug-q14": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2018-aug-q15": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2018-aug-q19": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2018-aug-q21": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2018-aug-q23": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2018-aug-q4": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2018-aug-q8": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2018-jan-q1": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2018-jan-q10": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2018-jan-q14": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2018-jan-q17": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2018-jan-q18": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2018-jan-q2": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2018-jan-q22": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2018-jan-q3": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2018-jan-q4": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2018-jan-q8": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2018-jan-q9": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2018-jun-q1": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2018-jun-q11": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2018-jun-q13": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2018-jun-q14": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2018-jun-q18": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2018-jun-q19": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2018-jun-q2": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2018-jun-q21": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2018-jun-q23": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2018-jun-q5": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2018-jun-q7": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2019-aug-q1": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2019-aug-q10": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2019-aug-q13": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2019-aug-q14": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2019-aug-q16": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2019-aug-q17": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2019-aug-q19": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2019-aug-q2": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2019-aug-q22": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2019-aug-q23": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2019-aug-q3": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2019-aug-q6": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2019-aug-q7": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2019-aug-q9": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2019-jan-q1": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2019-jan-q10": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2019-jan-q17": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2019-jan-q18": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2019-jan-q2": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2019-jan-q20": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2019-jan-q23": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2019-jan-q4": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2019-jan-q6": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2019-jun-q15": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2019-jun-q17": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2019-jun-q18": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2019-jun-q2": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2019-jun-q22": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2019-jun-q7": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2020-jan-q1": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2020-jan-q11": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2020-jan-q12": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2020-jan-q13": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2020-jan-q14": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2020-jan-q21": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2020-jan-q22": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2020-jan-q23": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2020-jan-q4": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2020-jan-q7": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2020-jan-q9": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2022-aug-q1": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2022-aug-q11": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2022-aug-q13": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2022-aug-q14": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2022-aug-q15": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2022-aug-q17": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2022-aug-q18": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2022-aug-q19": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2022-aug-q23": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2022-aug-q8": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2023-aug-q11": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2023-aug-q13": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2023-aug-q14": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2023-aug-q16": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2023-aug-q2": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2023-aug-q20": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2023-aug-q21": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2023-aug-q22": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2023-aug-q3": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2023-aug-q7": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2023-aug-q9": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2023-jan-q1": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2023-jan-q16": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2023-jan-q17": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2023-jan-q19": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2023-jan-q2": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2023-jan-q21": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2023-jan-q22": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2023-jan-q5": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2023-jan-q6": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2023-jan-q9": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2023-jun-q1": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2023-jun-q10": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2023-jun-q11": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2023-jun-q12": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2023-jun-q14": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2023-jun-q15": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2023-jun-q17": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2023-jun-q20": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2023-jun-q23": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2023-jun-q4": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2023-jun-q6": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2024-aug-q11": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2024-aug-q13": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2024-aug-q15": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2024-aug-q16": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2024-aug-q18": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2024-aug-q2": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2024-aug-q23": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2024-aug-q7": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2024-aug-q8": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2024-aug-q9": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2024-jan-q10": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2024-jan-q12": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2024-jan-q14": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2024-jan-q16": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2024-jan-q18": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2024-jan-q6": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2024-jan-q8": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2024-jun-q1": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2024-jun-q12": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2024-jun-q14": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2024-jun-q16": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2024-jun-q18": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2024-jun-q19": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2024-jun-q21": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2024-jun-q23": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2024-jun-q4": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2024-jun-q6": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2025-aug-q11": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2025-aug-q13": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2025-aug-q16": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2025-aug-q18": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2025-aug-q19": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2025-aug-q2": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2025-aug-q22": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2025-aug-q4": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2025-aug-q5": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2025-aug-q6": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2025-aug-q7": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2025-aug-q8": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2025-jan-q1": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2025-jan-q10": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2025-jan-q11": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2025-jan-q5": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2025-jan-q7": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2025-jun-q10": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2025-jun-q12": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2025-jun-q13": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2025-jun-q18": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2025-jun-q19": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2025-jun-q21": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2025-jun-q4": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2025-jun-q5": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2025-jun-q7": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2025-jun-q8": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2026-aug-q12": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2026-aug-q14": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2026-aug-q15": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2026-aug-q17": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2026-aug-q23": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2026-aug-q3": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2026-aug-q4": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2026-aug-q5": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2026-aug-q7": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2026-aug-q9": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2026-jan-q10": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2026-jan-q11": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2026-jan-q15": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2026-jan-q20": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2026-jan-q23": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2026-jan-q3": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2026-jun-q10": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2026-jun-q14": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2026-jun-q16": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2026-jun-q17": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2026-jun-q20": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2026-jun-q22": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2026-jun-q23": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2026-jun-q3": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2026-jun-q4": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2026-jun-q7": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-algebra-ii-2026-jun-q8": [
+      "nyregents::algebra-ii::masked-stem-primary"
+    ],
+    "nyregents-geometry-2014-aug-q12": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2014-aug-q15": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2014-aug-q16": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2014-aug-q18": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2014-aug-q22": [
+      "nyregents::geometry::masked-stem-primary"
+    ],
+    "nyregents-geometry-2014-aug-q24": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2014-aug-q6": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2014-jun-q12": [
+      "nyregents::geometry::masked-stem-primary"
+    ],
+    "nyregents-geometry-2014-jun-q15": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2014-jun-q16": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2014-jun-q17": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2014-jun-q21": [
+      "nyregents::geometry::masked-stem-primary"
+    ],
+    "nyregents-geometry-2014-jun-q22": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2014-jun-q24": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2014-jun-q4": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2014-jun-q5": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2014-jun-q7": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2014-jun-q8": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2015-aug-q10": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2015-aug-q11": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2015-aug-q13": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2015-aug-q16": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2015-aug-q19": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2015-aug-q2": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2015-aug-q21": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2015-aug-q23": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2015-aug-q4": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2015-jan-q1": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2015-jan-q11": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2015-jan-q15": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2015-jan-q16": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2015-jan-q24": [
+      "nyregents::geometry::masked-stem-primary"
+    ],
+    "nyregents-geometry-2015-jun-q1": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2015-jun-q11": [
+      "nyregents::geometry::masked-stem-primary"
+    ],
+    "nyregents-geometry-2015-jun-q15": [
+      "nyregents::geometry::masked-stem-primary"
+    ],
+    "nyregents-geometry-2015-jun-q18": [
+      "nyregents::geometry::masked-stem-primary"
+    ],
+    "nyregents-geometry-2015-jun-q19": [
+      "nyregents::geometry::masked-stem-primary"
+    ],
+    "nyregents-geometry-2015-jun-q2": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2015-jun-q20": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2015-jun-q23": [
+      "nyregents::geometry::masked-stem-primary"
+    ],
+    "nyregents-geometry-2015-jun-q24": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2015-jun-q4": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2015-jun-q5": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2015-jun-q9": [
+      "nyregents::geometry::masked-stem-primary"
+    ],
+    "nyregents-geometry-2015-unk-q10": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2015-unk-q11": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2015-unk-q12": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2015-unk-q14": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2015-unk-q16": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2015-unk-q18": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2015-unk-q2": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2015-unk-q20": [
+      "nyregents::geometry::masked-stem-primary"
+    ],
+    "nyregents-geometry-2015-unk-q21": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2015-unk-q22": [
+      "nyregents::geometry::masked-stem-primary"
+    ],
+    "nyregents-geometry-2015-unk-q8": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2016-jan-q1": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2016-jan-q17": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2016-jan-q19": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2016-jan-q20": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2016-jan-q21": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2016-jan-q22": [
+      "nyregents::geometry::masked-stem-primary"
+    ],
+    "nyregents-geometry-2016-jan-q23": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2016-jan-q5": [
+      "nyregents::geometry::masked-stem-primary"
+    ],
+    "nyregents-geometry-2016-jan-q6": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2016-jan-q8": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2016-unk-q10": [
+      "nyregents::geometry::masked-stem-primary"
+    ],
+    "nyregents-geometry-2016-unk-q11": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2016-unk-q12": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2016-unk-q14": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2016-unk-q15": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2016-unk-q16": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2016-unk-q17": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2016-unk-q20": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2016-unk-q21": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2016-unk-q22": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2016-unk-q23": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2016-unk-q24": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2016-unk-q3": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2016-unk-q6": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2016-unk-q8": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2017-unk-q1": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2017-unk-q11": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2017-unk-q12": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2017-unk-q13": [
+      "nyregents::geometry::masked-stem-primary"
+    ],
+    "nyregents-geometry-2017-unk-q15": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2017-unk-q17": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2017-unk-q18": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2017-unk-q19": [
+      "nyregents::geometry::masked-stem-primary"
+    ],
+    "nyregents-geometry-2017-unk-q20": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2017-unk-q21": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2017-unk-q22": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2017-unk-q23": [
+      "nyregents::geometry::masked-stem-primary"
+    ],
+    "nyregents-geometry-2017-unk-q24": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2017-unk-q3": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2017-unk-q6": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2017-unk-q8": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2017-unk-q9": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2018-aug-q11": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2018-aug-q12": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2018-aug-q14": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2018-aug-q15": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2018-aug-q16": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2018-aug-q18": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2018-aug-q19": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2018-aug-q21": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2018-aug-q23": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2018-aug-q24": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2018-aug-q3": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2018-jan-q12": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2018-jan-q13": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2018-jan-q14": [
+      "nyregents::geometry::masked-stem-primary"
+    ],
+    "nyregents-geometry-2018-jan-q20": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2018-jan-q21": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2018-jan-q22": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2018-jan-q8": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2018-jan-q9": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2018-jun-q12": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2018-jun-q14": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2018-jun-q18": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2018-jun-q19": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2018-jun-q23": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2018-jun-q24": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2018-jun-q5": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2018-jun-q6": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2018-jun-q7": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2018-jun-q8": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2019-aug-q11": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2019-aug-q12": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2019-aug-q14": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2019-aug-q17": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2019-aug-q2": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2019-aug-q20": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2019-aug-q21": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2019-aug-q24": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2019-aug-q3": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2019-aug-q4": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2019-aug-q6": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2019-jan-q11": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2019-jan-q13": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2019-jan-q14": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2019-jan-q15": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2019-jan-q18": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2019-jan-q20": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2019-jan-q24": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2019-jan-q3": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2019-jan-q7": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2019-jun-q10": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2019-jun-q15": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2019-jun-q17": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2019-jun-q18": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2019-jun-q19": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2019-jun-q2": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2019-jun-q20": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2019-jun-q21": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2019-jun-q23": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2019-jun-q3": [
+      "nyregents::geometry::masked-stem-primary"
+    ],
+    "nyregents-geometry-2019-jun-q4": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2019-jun-q6": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2019-jun-q9": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2020-jan-q10": [
+      "nyregents::geometry::masked-stem-primary"
+    ],
+    "nyregents-geometry-2020-jan-q11": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2020-jan-q13": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2020-jan-q14": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2020-jan-q15": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2020-jan-q16": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2020-jan-q18": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2020-jan-q2": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2020-jan-q20": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2020-jan-q21": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2020-jan-q5": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2020-jan-q6": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2020-jan-q7": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2020-jan-q9": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2022-aug-q13": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2022-aug-q14": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2022-aug-q15": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2022-aug-q16": [
+      "nyregents::geometry::masked-stem-primary"
+    ],
+    "nyregents-geometry-2022-aug-q19": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2022-aug-q5": [
+      "nyregents::geometry::masked-stem-primary"
+    ],
+    "nyregents-geometry-2022-aug-q7": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2022-aug-q8": [
+      "nyregents::geometry::masked-stem-primary"
+    ],
+    "nyregents-geometry-2023-jan-q10": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2023-jan-q12": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2023-jan-q13": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2023-jan-q14": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2023-jan-q2": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2023-jan-q21": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2023-jan-q22": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2023-jan-q4": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2023-jan-q5": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2023-jan-q6": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2023-jan-q7": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2023-jan-q8": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2023-jun-q1": [
+      "nyregents::geometry::masked-stem-primary"
+    ],
+    "nyregents-geometry-2023-jun-q11": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2023-jun-q15": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2023-jun-q16": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2023-jun-q17": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2023-jun-q2": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2023-jun-q22": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2023-jun-q3": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2023-jun-q8": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2023-jun-q9": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2024-jan-q1": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2024-jan-q10": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2024-jan-q17": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2024-jan-q18": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2024-jan-q19": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2024-jan-q2": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2024-jan-q24": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2024-jan-q3": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2024-jan-q7": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2024-jun-q11": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2024-jun-q12": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2024-jun-q13": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2024-jun-q15": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2024-jun-q16": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2024-jun-q18": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2024-jun-q20": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2024-jun-q21": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2024-jun-q22": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2024-jun-q3": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2024-jun-q6": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2024-jun-q7": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2024-jun-q9": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2025-aug-q1": [
+      "nyregents::geometry::masked-stem-primary"
+    ],
+    "nyregents-geometry-2025-aug-q10": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2025-aug-q13": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2025-aug-q14": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2025-aug-q15": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2025-aug-q17": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2025-aug-q18": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2025-aug-q2": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2025-aug-q20": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2025-aug-q23": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2025-aug-q3": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2025-aug-q6": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2025-aug-q7": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2025-aug-q8": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2025-aug-q9": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2025-jan-q10": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2025-jan-q11": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2025-jan-q14": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2025-jan-q16": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2025-jan-q19": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2025-jan-q2": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2025-jan-q20": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2025-jan-q21": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2025-jan-q4": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2025-jan-q6": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2025-jan-q7": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2025-jun-q1": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2025-jun-q11": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2025-jun-q12": [
+      "nyregents::geometry::masked-stem-primary"
+    ],
+    "nyregents-geometry-2025-jun-q14": [
+      "nyregents::geometry::masked-stem-primary"
+    ],
+    "nyregents-geometry-2025-jun-q15": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2025-jun-q17": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2025-jun-q18": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2025-jun-q19": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2025-jun-q2": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2025-jun-q20": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2025-jun-q24": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2025-jun-q3": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2025-jun-q4": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2025-jun-q5": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2025-jun-q6": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2025-jun-q7": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2025-jun-q8": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2026-aug-q1": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2026-aug-q10": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2026-aug-q12": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2026-aug-q13": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2026-aug-q14": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2026-aug-q15": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2026-aug-q18": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2026-aug-q2": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2026-aug-q22": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2026-aug-q24": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2026-aug-q4": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2026-aug-q7": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2026-jan-q10": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2026-jan-q14": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2026-jan-q16": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2026-jan-q17": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2026-jan-q18": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2026-jan-q19": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2026-jan-q2": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2026-jan-q21": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2026-jan-q23": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2026-jan-q3": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2026-jan-q4": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2026-jan-q6": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2026-jan-q7": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2026-jun-q1": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2026-jun-q10": [
+      "nyregents::geometry::masked-stem-primary"
+    ],
+    "nyregents-geometry-2026-jun-q11": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2026-jun-q12": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2026-jun-q13": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2026-jun-q14": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2026-jun-q15": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2026-jun-q16": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2026-jun-q17": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2026-jun-q19": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2026-jun-q20": [
+      "nyregents::geometry::masked-stem-primary"
+    ],
+    "nyregents-geometry-2026-jun-q21": [
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2026-jun-q22": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2026-jun-q3": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2026-jun-q7": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ],
+    "nyregents-geometry-2026-jun-q9": [
+      "nyregents::geometry::masked-stem-primary",
+      "nyregents::geometry::lower-central-fired"
+    ]
+  }
+}

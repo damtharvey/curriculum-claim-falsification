@@ -1,0 +1,921 @@
+{
+  "preregistrationSha256": "0211585e9361d3771e04df5e118050ede761971da286f0b1333a7aac289737d6",
+  "audit": "exports/print-audit/audit.json",
+  "nAudited": 20,
+  "modelId": "Qwen/Qwen2-VL-7B-Instruct",
+  "modelRevision": "eed13092ef92e448dd6875b2a00151bd3f7db0ac",
+  "thresholds": {
+    "defaultThresholds": {
+      "stem": 0.8,
+      "option": 0.9
+    },
+    "defaultBinaryAgreement": 17,
+    "minAgreementToKeepDefault": 16,
+    "adjusted": false,
+    "grid": [
+      {
+        "stem": 0.7,
+        "option": 0.8,
+        "binaryAgreement": 16,
+        "categoryAgreement": 13
+      },
+      {
+        "stem": 0.7,
+        "option": 0.9,
+        "binaryAgreement": 17,
+        "categoryAgreement": 13
+      },
+      {
+        "stem": 0.8,
+        "option": 0.8,
+        "binaryAgreement": 16,
+        "categoryAgreement": 13
+      },
+      {
+        "stem": 0.8,
+        "option": 0.9,
+        "binaryAgreement": 17,
+        "categoryAgreement": 13
+      },
+      {
+        "stem": 0.9,
+        "option": 0.8,
+        "binaryAgreement": 16,
+        "categoryAgreement": 13
+      },
+      {
+        "stem": 0.9,
+        "option": 0.9,
+        "binaryAgreement": 17,
+        "categoryAgreement": 13
+      }
+    ],
+    "chosenThresholds": {
+      "stem": 0.8,
+      "option": 0.9
+    }
+  },
+  "confusionDefault": {
+    "n": 20,
+    "humanLabels": [
+      "match",
+      "ocr_glue",
+      "truncated",
+      "wrong_item"
+    ],
+    "machineCategories": [
+      "match",
+      "ocr_glue",
+      "truncated",
+      "wrong_item",
+      "option_mismatch",
+      "vlm_unparseable",
+      "vlm_no_options",
+      "vlm_no_stem"
+    ],
+    "matrix": {
+      "match": {
+        "match": 6,
+        "ocr_glue": 0,
+        "truncated": 0,
+        "wrong_item": 1,
+        "option_mismatch": 0,
+        "vlm_unparseable": 0,
+        "vlm_no_options": 1,
+        "vlm_no_stem": 0
+      },
+      "ocr_glue": {
+        "match": 0,
+        "ocr_glue": 6,
+        "truncated": 0,
+        "wrong_item": 2,
+        "option_mismatch": 0,
+        "vlm_unparseable": 0,
+        "vlm_no_options": 0,
+        "vlm_no_stem": 0
+      },
+      "truncated": {
+        "match": 1,
+        "ocr_glue": 1,
+        "truncated": 0,
+        "wrong_item": 1,
+        "option_mismatch": 0,
+        "vlm_unparseable": 0,
+        "vlm_no_options": 0,
+        "vlm_no_stem": 0
+      },
+      "wrong_item": {
+        "match": 0,
+        "ocr_glue": 0,
+        "truncated": 0,
+        "wrong_item": 1,
+        "option_mismatch": 0,
+        "vlm_unparseable": 0,
+        "vlm_no_options": 0,
+        "vlm_no_stem": 0
+      }
+    },
+    "binary": {
+      "human_match_machine_faithful": 6,
+      "human_match_machine_not": 1,
+      "human_dirty_machine_faithful": 1,
+      "human_dirty_machine_not": 11,
+      "machine_unverified": 1
+    },
+    "binaryAgreement": 17,
+    "binaryAgreementRate": 0.85,
+    "categoryAgreement": 13,
+    "categoryAgreementRate": 0.65,
+    "perItem": [
+      {
+        "id": "nyregents-algebra-i-2014-aug-q6",
+        "human": "match",
+        "machine": "match",
+        "verdict": "faithful",
+        "stem_f1": 1.0,
+        "option_match": {
+          "A": 0.9167,
+          "B": 0.9167,
+          "C": 0.9167,
+          "D": 0.9167
+        },
+        "flags": [
+          "option_glue"
+        ],
+        "humanNotes": "Printed P(x) options match the census row."
+      },
+      {
+        "id": "nyregents-algebra-i-2017-jan-q8",
+        "human": "match",
+        "machine": "match",
+        "verdict": "faithful",
+        "stem_f1": 1.0,
+        "option_match": {
+          "A": 1.0,
+          "B": 1.0,
+          "C": 1.0,
+          "D": 1.0
+        },
+        "flags": [],
+        "humanNotes": "Printed recursive-function options match the census row."
+      },
+      {
+        "id": "nyregents-algebra-i-2018-aug-q8",
+        "human": "match",
+        "machine": "match",
+        "verdict": "faithful",
+        "stem_f1": 1.0,
+        "option_match": {
+          "A": 1.0,
+          "B": 1.0,
+          "C": 1.0,
+          "D": 1.0
+        },
+        "flags": [],
+        "humanNotes": "Printed translation options match the census row."
+      },
+      {
+        "id": "nyregents-algebra-i-2018-jun-q22",
+        "human": "match",
+        "machine": "match",
+        "verdict": "faithful",
+        "stem_f1": 1.0,
+        "option_match": {
+          "A": 1.0,
+          "B": 1.0,
+          "C": 1.0,
+          "D": 1.0
+        },
+        "flags": [],
+        "humanNotes": "Printed solution-count options match the census row."
+      },
+      {
+        "id": "nyregents-algebra-i-2023-jan-q8",
+        "human": "truncated",
+        "machine": "match",
+        "verdict": "faithful",
+        "stem_f1": 0.9898,
+        "option_match": {
+          "A": 1.0,
+          "B": 1.0,
+          "C": 1.0,
+          "D": 1.0
+        },
+        "flags": [],
+        "humanNotes": "Printed stem is complete. Census stem cuts at 'none the t'. Options match."
+      },
+      {
+        "id": "nyregents-algebra-i-2023-jun-q3",
+        "human": "wrong_item",
+        "machine": "wrong_item",
+        "verdict": "not_faithful",
+        "stem_f1": 0.8462,
+        "option_match": {
+          "A": 0.3333,
+          "B": 0.3333,
+          "C": 0.4444,
+          "D": 0.4444
+        },
+        "flags": [
+          "option_low",
+          "wrong_option_set",
+          "option_glue",
+          "option_truncated"
+        ],
+        "humanNotes": "Printed q3 options are y=2x-2 and three other lines. Census options are inequalities x # 11 etc. Stem matches the printed linear-equation item."
+      },
+      {
+        "id": "nyregents-algebra-i-2024-jun-q15",
+        "human": "truncated",
+        "machine": "wrong_item",
+        "verdict": "not_faithful",
+        "stem_f1": 0.5833,
+        "option_match": {
+          "A": 0.7059,
+          "B": 0.7059,
+          "C": 0.75,
+          "D": 0.6667
+        },
+        "flags": [
+          "stem_low",
+          "stem_glue",
+          "stem_truncated",
+          "option_low",
+          "wrong_option_set",
+          "option_glue",
+          "option_truncated"
+        ],
+        "humanNotes": "Printed C and D are full a_n formulas. Census C is '(n 2 1)' and D is 'an 5 22 1'."
+      },
+      {
+        "id": "nyregents-algebra-i-2025-jan-q10",
+        "human": "match",
+        "machine": "vlm_no_options",
+        "verdict": "unverified",
+        "stem_f1": 0.0,
+        "option_match": {
+          "A": 0.0,
+          "B": 0.0,
+          "C": 0.0,
+          "D": 0.0
+        },
+        "flags": [
+          "vlm_no_options"
+        ],
+        "humanNotes": "Printed pizza-table percents match the census row."
+      },
+      {
+        "id": "nyregents-algebra-i-2025-jun-q13",
+        "human": "ocr_glue",
+        "machine": "ocr_glue",
+        "verdict": "not_faithful",
+        "stem_f1": 0.0741,
+        "option_match": {
+          "A": 1.0,
+          "B": 1.0,
+          "C": 1.0,
+          "D": 1.0
+        },
+        "flags": [
+          "stem_low",
+          "stem_glue",
+          "stem_truncated"
+        ],
+        "humanNotes": "Printed q13 is a graph-domain item whose options match the census. Census stem is axis ticks 14 15 plus the previous item's box-plot sentence."
+      },
+      {
+        "id": "nyregents-algebra-i-2026-aug-q20",
+        "human": "match",
+        "machine": "wrong_item",
+        "verdict": "not_faithful",
+        "stem_f1": 0.9434,
+        "option_match": {
+          "A": 0.7692,
+          "B": 0.7692,
+          "C": 0.7692,
+          "D": 0.7692
+        },
+        "flags": [
+          "option_low",
+          "wrong_option_set",
+          "option_glue"
+        ],
+        "humanNotes": "Printed absolute-value options match. Census uses 5 for equals. First-pass page finder had hit axis labels; this is the printed q20."
+      },
+      {
+        "id": "nyregents-geometry-2015-aug-q13",
+        "human": "ocr_glue",
+        "machine": "ocr_glue",
+        "verdict": "not_faithful",
+        "stem_f1": 0.9787,
+        "option_match": {
+          "A": 1.0,
+          "B": 1.0,
+          "C": 1.0,
+          "D": 0.8718
+        },
+        "flags": [
+          "option_low",
+          "option_glue"
+        ],
+        "humanNotes": "Printed D is the full contrapositive sentence. Census D appends control codes and the footer after that sentence."
+      },
+      {
+        "id": "nyregents-geometry-2016-unk-q15",
+        "human": "match",
+        "machine": "match",
+        "verdict": "faithful",
+        "stem_f1": 1.0,
+        "option_match": {
+          "A": 1.0,
+          "B": 1.0,
+          "C": 1.0,
+          "D": 1.0
+        },
+        "flags": [],
+        "humanNotes": "Printed radical options match the census row."
+      },
+      {
+        "id": "nyregents-geometry-2017-unk-q9",
+        "human": "ocr_glue",
+        "machine": "ocr_glue",
+        "verdict": "not_faithful",
+        "stem_f1": 0.9474,
+        "option_match": {
+          "A": 1.0,
+          "B": 1.0,
+          "C": 1.0,
+          "D": 0.1429
+        },
+        "flags": [
+          "option_low",
+          "option_glue"
+        ],
+        "humanNotes": "Printed D is 62.4. Census D appends diagram labels and the page footer. Stem omits the BD bar label."
+      },
+      {
+        "id": "nyregents-geometry-2019-jan-q13",
+        "human": "match",
+        "machine": "match",
+        "verdict": "faithful",
+        "stem_f1": 1.0,
+        "option_match": {
+          "A": 1.0,
+          "B": 1.0,
+          "C": 1.0,
+          "D": 1.0
+        },
+        "flags": [],
+        "humanNotes": "Printed options 543/555/1086/1110 match the census. Key B."
+      },
+      {
+        "id": "nyregents-geometry-2019-jan-q15",
+        "human": "truncated",
+        "machine": "ocr_glue",
+        "verdict": "not_faithful",
+        "stem_f1": 0.9811,
+        "option_match": {
+          "A": 1.0,
+          "B": 0.5,
+          "C": 1.0,
+          "D": 0.4615
+        },
+        "flags": [
+          "option_low",
+          "option_glue",
+          "option_truncated"
+        ],
+        "humanNotes": "Printed B is (5/3, 0) and D is (23/3, 8). Census B is '( ,0)' and D is '( ,8)' plus stacked-fraction debris and footer."
+      },
+      {
+        "id": "nyregents-geometry-2019-jun-q15",
+        "human": "ocr_glue",
+        "machine": "ocr_glue",
+        "verdict": "not_faithful",
+        "stem_f1": 0.878,
+        "option_match": {
+          "A": 1.0,
+          "B": 1.0,
+          "C": 1.0,
+          "D": 0.1176
+        },
+        "flags": [
+          "option_low",
+          "option_glue"
+        ],
+        "humanNotes": "Printed D is 8. Census D appends figure labels from q13 and the page footer. Leading numbers 5/6/7/8 match."
+      },
+      {
+        "id": "nyregents-geometry-2023-jan-q6",
+        "human": "ocr_glue",
+        "machine": "ocr_glue",
+        "verdict": "not_faithful",
+        "stem_f1": 1.0,
+        "option_match": {
+          "A": 1.0,
+          "B": 1.0,
+          "C": 1.0,
+          "D": 0.2667
+        },
+        "flags": [
+          "option_low",
+          "option_glue"
+        ],
+        "humanNotes": "Printed D is $205.08. Census D appends triangle labels from q5 and the footer. Dollar amounts match."
+      },
+      {
+        "id": "nyregents-geometry-2024-jan-q10",
+        "human": "ocr_glue",
+        "machine": "wrong_item",
+        "verdict": "not_faithful",
+        "stem_f1": 0.9143,
+        "option_match": {
+          "A": 0.8,
+          "B": 0.6667,
+          "C": 0.6667,
+          "D": 0.2
+        },
+        "flags": [
+          "option_low",
+          "wrong_option_set",
+          "option_glue",
+          "option_truncated"
+        ],
+        "humanNotes": "Printed options are (1,-1), (-5,-3), (-4,-2), (-1,1). Census encodes minus as 2 and glues the footer onto D."
+      },
+      {
+        "id": "nyregents-geometry-2024-jan-q18",
+        "human": "ocr_glue",
+        "machine": "wrong_item",
+        "verdict": "not_faithful",
+        "stem_f1": 0.84,
+        "option_match": {
+          "A": 0.8,
+          "B": 0.8,
+          "C": 0.8,
+          "D": 0.4615
+        },
+        "flags": [
+          "stem_glue",
+          "option_low",
+          "wrong_option_set",
+          "option_glue"
+        ],
+        "humanNotes": "Printed D is the last proportion. Census D appends the page footer. Stem and A-C match with minus/equals encoding."
+      },
+      {
+        "id": "nyregents-geometry-2025-jun-q7",
+        "human": "ocr_glue",
+        "machine": "ocr_glue",
+        "verdict": "not_faithful",
+        "stem_f1": 0.6538,
+        "option_match": {
+          "A": 1.0,
+          "B": 1.0,
+          "C": 1.0,
+          "D": 0.2857
+        },
+        "flags": [
+          "stem_low",
+          "stem_glue",
+          "stem_truncated",
+          "option_low",
+          "option_glue"
+        ],
+        "humanNotes": "Printed D is 37 degrees. Census D appends the page footer. Angle options match."
+      }
+    ]
+  },
+  "confusionChosen": {
+    "n": 20,
+    "humanLabels": [
+      "match",
+      "ocr_glue",
+      "truncated",
+      "wrong_item"
+    ],
+    "machineCategories": [
+      "match",
+      "ocr_glue",
+      "truncated",
+      "wrong_item",
+      "option_mismatch",
+      "vlm_unparseable",
+      "vlm_no_options",
+      "vlm_no_stem"
+    ],
+    "matrix": {
+      "match": {
+        "match": 6,
+        "ocr_glue": 0,
+        "truncated": 0,
+        "wrong_item": 1,
+        "option_mismatch": 0,
+        "vlm_unparseable": 0,
+        "vlm_no_options": 1,
+        "vlm_no_stem": 0
+      },
+      "ocr_glue": {
+        "match": 0,
+        "ocr_glue": 6,
+        "truncated": 0,
+        "wrong_item": 2,
+        "option_mismatch": 0,
+        "vlm_unparseable": 0,
+        "vlm_no_options": 0,
+        "vlm_no_stem": 0
+      },
+      "truncated": {
+        "match": 1,
+        "ocr_glue": 1,
+        "truncated": 0,
+        "wrong_item": 1,
+        "option_mismatch": 0,
+        "vlm_unparseable": 0,
+        "vlm_no_options": 0,
+        "vlm_no_stem": 0
+      },
+      "wrong_item": {
+        "match": 0,
+        "ocr_glue": 0,
+        "truncated": 0,
+        "wrong_item": 1,
+        "option_mismatch": 0,
+        "vlm_unparseable": 0,
+        "vlm_no_options": 0,
+        "vlm_no_stem": 0
+      }
+    },
+    "binary": {
+      "human_match_machine_faithful": 6,
+      "human_match_machine_not": 1,
+      "human_dirty_machine_faithful": 1,
+      "human_dirty_machine_not": 11,
+      "machine_unverified": 1
+    },
+    "binaryAgreement": 17,
+    "binaryAgreementRate": 0.85,
+    "categoryAgreement": 13,
+    "categoryAgreementRate": 0.65,
+    "perItem": [
+      {
+        "id": "nyregents-algebra-i-2014-aug-q6",
+        "human": "match",
+        "machine": "match",
+        "verdict": "faithful",
+        "stem_f1": 1.0,
+        "option_match": {
+          "A": 0.9167,
+          "B": 0.9167,
+          "C": 0.9167,
+          "D": 0.9167
+        },
+        "flags": [
+          "option_glue"
+        ],
+        "humanNotes": "Printed P(x) options match the census row."
+      },
+      {
+        "id": "nyregents-algebra-i-2017-jan-q8",
+        "human": "match",
+        "machine": "match",
+        "verdict": "faithful",
+        "stem_f1": 1.0,
+        "option_match": {
+          "A": 1.0,
+          "B": 1.0,
+          "C": 1.0,
+          "D": 1.0
+        },
+        "flags": [],
+        "humanNotes": "Printed recursive-function options match the census row."
+      },
+      {
+        "id": "nyregents-algebra-i-2018-aug-q8",
+        "human": "match",
+        "machine": "match",
+        "verdict": "faithful",
+        "stem_f1": 1.0,
+        "option_match": {
+          "A": 1.0,
+          "B": 1.0,
+          "C": 1.0,
+          "D": 1.0
+        },
+        "flags": [],
+        "humanNotes": "Printed translation options match the census row."
+      },
+      {
+        "id": "nyregents-algebra-i-2018-jun-q22",
+        "human": "match",
+        "machine": "match",
+        "verdict": "faithful",
+        "stem_f1": 1.0,
+        "option_match": {
+          "A": 1.0,
+          "B": 1.0,
+          "C": 1.0,
+          "D": 1.0
+        },
+        "flags": [],
+        "humanNotes": "Printed solution-count options match the census row."
+      },
+      {
+        "id": "nyregents-algebra-i-2023-jan-q8",
+        "human": "truncated",
+        "machine": "match",
+        "verdict": "faithful",
+        "stem_f1": 0.9898,
+        "option_match": {
+          "A": 1.0,
+          "B": 1.0,
+          "C": 1.0,
+          "D": 1.0
+        },
+        "flags": [],
+        "humanNotes": "Printed stem is complete. Census stem cuts at 'none the t'. Options match."
+      },
+      {
+        "id": "nyregents-algebra-i-2023-jun-q3",
+        "human": "wrong_item",
+        "machine": "wrong_item",
+        "verdict": "not_faithful",
+        "stem_f1": 0.8462,
+        "option_match": {
+          "A": 0.3333,
+          "B": 0.3333,
+          "C": 0.4444,
+          "D": 0.4444
+        },
+        "flags": [
+          "option_low",
+          "wrong_option_set",
+          "option_glue",
+          "option_truncated"
+        ],
+        "humanNotes": "Printed q3 options are y=2x-2 and three other lines. Census options are inequalities x # 11 etc. Stem matches the printed linear-equation item."
+      },
+      {
+        "id": "nyregents-algebra-i-2024-jun-q15",
+        "human": "truncated",
+        "machine": "wrong_item",
+        "verdict": "not_faithful",
+        "stem_f1": 0.5833,
+        "option_match": {
+          "A": 0.7059,
+          "B": 0.7059,
+          "C": 0.75,
+          "D": 0.6667
+        },
+        "flags": [
+          "stem_low",
+          "stem_glue",
+          "stem_truncated",
+          "option_low",
+          "wrong_option_set",
+          "option_glue",
+          "option_truncated"
+        ],
+        "humanNotes": "Printed C and D are full a_n formulas. Census C is '(n 2 1)' and D is 'an 5 22 1'."
+      },
+      {
+        "id": "nyregents-algebra-i-2025-jan-q10",
+        "human": "match",
+        "machine": "vlm_no_options",
+        "verdict": "unverified",
+        "stem_f1": 0.0,
+        "option_match": {
+          "A": 0.0,
+          "B": 0.0,
+          "C": 0.0,
+          "D": 0.0
+        },
+        "flags": [
+          "vlm_no_options"
+        ],
+        "humanNotes": "Printed pizza-table percents match the census row."
+      },
+      {
+        "id": "nyregents-algebra-i-2025-jun-q13",
+        "human": "ocr_glue",
+        "machine": "ocr_glue",
+        "verdict": "not_faithful",
+        "stem_f1": 0.0741,
+        "option_match": {
+          "A": 1.0,
+          "B": 1.0,
+          "C": 1.0,
+          "D": 1.0
+        },
+        "flags": [
+          "stem_low",
+          "stem_glue",
+          "stem_truncated"
+        ],
+        "humanNotes": "Printed q13 is a graph-domain item whose options match the census. Census stem is axis ticks 14 15 plus the previous item's box-plot sentence."
+      },
+      {
+        "id": "nyregents-algebra-i-2026-aug-q20",
+        "human": "match",
+        "machine": "wrong_item",
+        "verdict": "not_faithful",
+        "stem_f1": 0.9434,
+        "option_match": {
+          "A": 0.7692,
+          "B": 0.7692,
+          "C": 0.7692,
+          "D": 0.7692
+        },
+        "flags": [
+          "option_low",
+          "wrong_option_set",
+          "option_glue"
+        ],
+        "humanNotes": "Printed absolute-value options match. Census uses 5 for equals. First-pass page finder had hit axis labels; this is the printed q20."
+      },
+      {
+        "id": "nyregents-geometry-2015-aug-q13",
+        "human": "ocr_glue",
+        "machine": "ocr_glue",
+        "verdict": "not_faithful",
+        "stem_f1": 0.9787,
+        "option_match": {
+          "A": 1.0,
+          "B": 1.0,
+          "C": 1.0,
+          "D": 0.8718
+        },
+        "flags": [
+          "option_low",
+          "option_glue"
+        ],
+        "humanNotes": "Printed D is the full contrapositive sentence. Census D appends control codes and the footer after that sentence."
+      },
+      {
+        "id": "nyregents-geometry-2016-unk-q15",
+        "human": "match",
+        "machine": "match",
+        "verdict": "faithful",
+        "stem_f1": 1.0,
+        "option_match": {
+          "A": 1.0,
+          "B": 1.0,
+          "C": 1.0,
+          "D": 1.0
+        },
+        "flags": [],
+        "humanNotes": "Printed radical options match the census row."
+      },
+      {
+        "id": "nyregents-geometry-2017-unk-q9",
+        "human": "ocr_glue",
+        "machine": "ocr_glue",
+        "verdict": "not_faithful",
+        "stem_f1": 0.9474,
+        "option_match": {
+          "A": 1.0,
+          "B": 1.0,
+          "C": 1.0,
+          "D": 0.1429
+        },
+        "flags": [
+          "option_low",
+          "option_glue"
+        ],
+        "humanNotes": "Printed D is 62.4. Census D appends diagram labels and the page footer. Stem omits the BD bar label."
+      },
+      {
+        "id": "nyregents-geometry-2019-jan-q13",
+        "human": "match",
+        "machine": "match",
+        "verdict": "faithful",
+        "stem_f1": 1.0,
+        "option_match": {
+          "A": 1.0,
+          "B": 1.0,
+          "C": 1.0,
+          "D": 1.0
+        },
+        "flags": [],
+        "humanNotes": "Printed options 543/555/1086/1110 match the census. Key B."
+      },
+      {
+        "id": "nyregents-geometry-2019-jan-q15",
+        "human": "truncated",
+        "machine": "ocr_glue",
+        "verdict": "not_faithful",
+        "stem_f1": 0.9811,
+        "option_match": {
+          "A": 1.0,
+          "B": 0.5,
+          "C": 1.0,
+          "D": 0.4615
+        },
+        "flags": [
+          "option_low",
+          "option_glue",
+          "option_truncated"
+        ],
+        "humanNotes": "Printed B is (5/3, 0) and D is (23/3, 8). Census B is '( ,0)' and D is '( ,8)' plus stacked-fraction debris and footer."
+      },
+      {
+        "id": "nyregents-geometry-2019-jun-q15",
+        "human": "ocr_glue",
+        "machine": "ocr_glue",
+        "verdict": "not_faithful",
+        "stem_f1": 0.878,
+        "option_match": {
+          "A": 1.0,
+          "B": 1.0,
+          "C": 1.0,
+          "D": 0.1176
+        },
+        "flags": [
+          "option_low",
+          "option_glue"
+        ],
+        "humanNotes": "Printed D is 8. Census D appends figure labels from q13 and the page footer. Leading numbers 5/6/7/8 match."
+      },
+      {
+        "id": "nyregents-geometry-2023-jan-q6",
+        "human": "ocr_glue",
+        "machine": "ocr_glue",
+        "verdict": "not_faithful",
+        "stem_f1": 1.0,
+        "option_match": {
+          "A": 1.0,
+          "B": 1.0,
+          "C": 1.0,
+          "D": 0.2667
+        },
+        "flags": [
+          "option_low",
+          "option_glue"
+        ],
+        "humanNotes": "Printed D is $205.08. Census D appends triangle labels from q5 and the footer. Dollar amounts match."
+      },
+      {
+        "id": "nyregents-geometry-2024-jan-q10",
+        "human": "ocr_glue",
+        "machine": "wrong_item",
+        "verdict": "not_faithful",
+        "stem_f1": 0.9143,
+        "option_match": {
+          "A": 0.8,
+          "B": 0.6667,
+          "C": 0.6667,
+          "D": 0.2
+        },
+        "flags": [
+          "option_low",
+          "wrong_option_set",
+          "option_glue",
+          "option_truncated"
+        ],
+        "humanNotes": "Printed options are (1,-1), (-5,-3), (-4,-2), (-1,1). Census encodes minus as 2 and glues the footer onto D."
+      },
+      {
+        "id": "nyregents-geometry-2024-jan-q18",
+        "human": "ocr_glue",
+        "machine": "wrong_item",
+        "verdict": "not_faithful",
+        "stem_f1": 0.84,
+        "option_match": {
+          "A": 0.8,
+          "B": 0.8,
+          "C": 0.8,
+          "D": 0.4615
+        },
+        "flags": [
+          "stem_glue",
+          "option_low",
+          "wrong_option_set",
+          "option_glue"
+        ],
+        "humanNotes": "Printed D is the last proportion. Census D appends the page footer. Stem and A-C match with minus/equals encoding."
+      },
+      {
+        "id": "nyregents-geometry-2025-jun-q7",
+        "human": "ocr_glue",
+        "machine": "ocr_glue",
+        "verdict": "not_faithful",
+        "stem_f1": 0.6538,
+        "option_match": {
+          "A": 1.0,
+          "B": 1.0,
+          "C": 1.0,
+          "D": 0.2857
+        },
+        "flags": [
+          "stem_low",
+          "stem_glue",
+          "stem_truncated",
+          "option_low",
+          "option_glue"
+        ],
+        "humanNotes": "Printed D is 37 degrees. Census D appends the page footer. Angle options match."
+      }
+    ]
+  },
+  "calibratedAt": "2026-09-17T04:39:56Z"
+}
