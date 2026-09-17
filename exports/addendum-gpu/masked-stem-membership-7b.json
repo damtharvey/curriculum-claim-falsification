@@ -1,0 +1,23 @@
+{
+  "status": "complete",
+  "label": "exploratory",
+  "question": "Mean token log-probability and Min-20% token log-probability of the original unmasked stem plus options, scored with Qwen2.5-7B-Instruct on GPU.",
+  "modelId": "Qwen/Qwen2.5-7B-Instruct",
+  "modelRevision": "a09a35458c702b33eeacc393d103063234e8bc28",
+  "snapshotPath": "$HOME/.cache/huggingface/hub/models--Qwen--Qwen2.5-7B-Instruct/snapshots/a09a35458c702b33eeacc393d103063234e8bc28",
+  "n": 1487,
+  "kPercent": 20.0,
+  "text": "Original stem, blank line, then lettered options in original order. No chat template and no masking instruction. This is the text as it would appear in a released exam PDF.",
+  "scoring": "Causal next-token log-softmax over the tokenized online text. Mean is the average log-probability of tokens 1..n-1. Min-20% is the mean of the lowest ceil(0.20 * n) token log-probabilities.",
+  "itemsOut": "exports/addendum-gpu/masked-stem-membership-7b-items.jsonl",
+  "seed": 20260916,
+  "versions": {
+    "torch": "2.12.1+cu130",
+    "gpuName": "NVIDIA GeForce RTX 5090",
+    "cuda": "13.0",
+    "dtype": "bfloat16"
+  },
+  "modelLoadSeconds": 1.2144546508789062,
+  "wallTimeSeconds": 24.89961290359497,
+  "snapshotResolved": "$HOME/.cache/huggingface/hub/models--Qwen--Qwen2.5-7B-Instruct/snapshots/a09a35458c702b33eeacc393d103063234e8bc28"
+}

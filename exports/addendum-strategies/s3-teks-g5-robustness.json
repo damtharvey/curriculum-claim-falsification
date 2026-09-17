@@ -1,0 +1,2004 @@
+{
+  "channel": "s3-closure",
+  "cell": {
+    "authority": "teks",
+    "claim": "g5"
+  },
+  "version1Unchanged": {
+    "nFired": 40,
+    "nCorrect": 21,
+    "rate": 0.525,
+    "ci95": [
+      0.375,
+      0.675
+    ],
+    "binomialPGreater": 0.0001748540858045603,
+    "nSelected": 60
+  },
+  "tieBreakDecomposition": {
+    "nFired": 40,
+    "nDecidedByDepth": 13,
+    "nHitsDecidedByDepth": 6,
+    "rateAmongDepthDecided": 0.46153846153846156,
+    "nDecidedByTieBreak": 27,
+    "nHitsDecidedByTieBreak": 15,
+    "rateAmongTieBreakDecided": 0.5555555555555556,
+    "randomTieBreaks": {
+      "nDraws": 1000,
+      "seed": 11,
+      "expectedRate": 0.36666666666666664,
+      "drawMean": 0.3705,
+      "drawCi95": [
+        0.25,
+        0.475
+      ],
+      "drawMin": 0.2,
+      "drawMax": 0.55
+    },
+    "lowerCentralAloneOnSame40": {
+      "nFired": 40,
+      "nCorrect": 13,
+      "rate": 0.325,
+      "chance": 0.25,
+      "ci95": [
+        0.2,
+        0.475
+      ],
+      "binomialPGreater": 0.17913424234603817,
+      "clearsBar": false
+    },
+    "nPicksIdenticalToLowerCentral": 19,
+    "closureAddsOverLowerCentral": true,
+    "sentence": "Closure is not redundant with lower-central on these 40 items: 21 picks differ, and the unique depth-1 one-op items are exactly where S3 parts from lower-central."
+  },
+  "depthSensitivity": {
+    "depth1Only": {
+      "nFired": 30,
+      "nCorrect": 17,
+      "rate": 0.5666666666666667,
+      "chance": 0.25,
+      "ci95": [
+        0.4,
+        0.7333333333333333
+      ],
+      "binomialPGreater": 0.0002156938260950836,
+      "clearsBar": true,
+      "maxDepth": 1,
+      "includeGeometryExtras": true
+    },
+    "depth2Registered": {
+      "nFired": 40,
+      "nCorrect": 21,
+      "rate": 0.525,
+      "chance": 0.25,
+      "ci95": [
+        0.375,
+        0.675
+      ],
+      "binomialPGreater": 0.0001748540858045603,
+      "clearsBar": true,
+      "maxDepth": 2,
+      "includeGeometryExtras": true
+    },
+    "depth2WithoutGeometryExtras": {
+      "nFired": 40,
+      "nCorrect": 20,
+      "rate": 0.5,
+      "chance": 0.25,
+      "ci95": [
+        0.35,
+        0.65
+      ],
+      "binomialPGreater": 0.0005724311071761283,
+      "clearsBar": true,
+      "maxDepth": 2,
+      "includeGeometryExtras": false
+    }
+  },
+  "clusteredByAdministration": {
+    "clusterBootstrap": {
+      "nBoot": 2000,
+      "seed": 20260916,
+      "ci95": [
+        0.45454545454545453,
+        0.6153846153846154
+      ],
+      "clearsBar": true
+    },
+    "administrations": [
+      {
+        "administration": "staar:2019",
+        "n": 13,
+        "nCorrect": 8,
+        "rate": 0.6153846153846154
+      },
+      {
+        "administration": "staar:2021",
+        "n": 16,
+        "nCorrect": 8,
+        "rate": 0.5
+      },
+      {
+        "administration": "staar:2022",
+        "n": 11,
+        "nCorrect": 5,
+        "rate": 0.45454545454545453
+      }
+    ],
+    "signTest": {
+      "nAdministrations": 3,
+      "nRateAboveChance": 3,
+      "nRateBelowChance": 0,
+      "nEqualChance": 0,
+      "nUnequal": 3,
+      "oneSidedPGreater": 0.12500000000000003,
+      "null": "P(administration rate > 0.25) = 0.5, equals dropped"
+    }
+  },
+  "closureDensity": {
+    "meanOptionsInClosurePerFiredItem": 3.275,
+    "shareSelectedUniqueDepth1": 0.16666666666666666,
+    "nSelectedUniqueDepth1": 10,
+    "nSelectedUniqueDepth1IsKey": 6,
+    "shareFiredUniqueDepth1": 0.25,
+    "nFiredUniqueDepth1": 10,
+    "nFiredUniqueDepth1IsKey": 6,
+    "uniqueDepth1IsKeyRateAmongThoseItems": 0.6,
+    "note": "The cleanest version of the claim is unique depth-1: exactly one option in the depth-1 closure, and that option is the key."
+  },
+  "otherCellsSameRule": {
+    "source": "exports/addendum-strategies/strategy-cell-table.json",
+    "grade5IsOnlyClearingCell": true,
+    "clears": [
+      {
+        "channel": "s3-closure",
+        "authority": "teks",
+        "claim": "g5",
+        "n": 40,
+        "nCorrect": 21,
+        "rate": 0.525,
+        "chance": 0.25,
+        "ci95": [
+          0.375,
+          0.675
+        ],
+        "binomialPGreater": 0.0001748540858045603,
+        "clearsBar": true,
+        "randomP95": null,
+        "coverage": 0.6666666666666666,
+        "familyIndex": 43,
+        "holmReject05Family": true,
+        "bonferroniReject05Family": true,
+        "holmReject05PooledWith105": true,
+        "bonferroniReject05PooledWith105": true
+      }
+    ],
+    "rows": [
+      {
+        "channel": "s3-closure",
+        "authority": "nyregents",
+        "claim": "algebra-i",
+        "n": 402,
+        "nCorrect": 96,
+        "rate": 0.23880597014925373,
+        "chance": 0.25,
+        "ci95": [
+          0.19900497512437812,
+          0.2810945273631841
+        ],
+        "binomialPGreater": 0.7154549298008618,
+        "clearsBar": false,
+        "randomP95": null,
+        "coverage": 0.6722408026755853,
+        "familyIndex": 37,
+        "holmReject05Family": false,
+        "bonferroniReject05Family": false,
+        "holmReject05PooledWith105": false,
+        "bonferroniReject05PooledWith105": false
+      },
+      {
+        "channel": "s3-closure",
+        "authority": "nyregents",
+        "claim": "geometry",
+        "n": 224,
+        "nCorrect": 44,
+        "rate": 0.19642857142857142,
+        "chance": 0.25,
+        "ci95": [
+          0.14285714285714285,
+          0.25
+        ],
+        "binomialPGreater": 0.9755232173441315,
+        "clearsBar": false,
+        "randomP95": null,
+        "coverage": 0.5490196078431373,
+        "familyIndex": 39,
+        "holmReject05Family": false,
+        "bonferroniReject05Family": false,
+        "holmReject05PooledWith105": false,
+        "bonferroniReject05PooledWith105": false
+      },
+      {
+        "channel": "s3-closure",
+        "authority": "teks",
+        "claim": "alg1",
+        "n": 44,
+        "nCorrect": 13,
+        "rate": 0.29545454545454547,
+        "chance": 0.25,
+        "ci95": [
+          0.1590909090909091,
+          0.4318181818181818
+        ],
+        "binomialPGreater": 0.29362949181130554,
+        "clearsBar": false,
+        "randomP95": null,
+        "coverage": 0.6567164179104478,
+        "familyIndex": 40,
+        "holmReject05Family": false,
+        "bonferroniReject05Family": false,
+        "holmReject05PooledWith105": false,
+        "bonferroniReject05PooledWith105": false
+      },
+      {
+        "channel": "s3-closure",
+        "authority": "teks",
+        "claim": "g3",
+        "n": 27,
+        "nCorrect": 4,
+        "rate": 0.14814814814814814,
+        "chance": 0.25,
+        "ci95": [
+          0.037037037037037035,
+          0.2962962962962963
+        ],
+        "binomialPGreater": 0.933399903952405,
+        "clearsBar": false,
+        "randomP95": null,
+        "coverage": 0.6,
+        "familyIndex": 41,
+        "holmReject05Family": false,
+        "bonferroniReject05Family": false,
+        "holmReject05PooledWith105": false,
+        "bonferroniReject05PooledWith105": false
+      },
+      {
+        "channel": "s3-closure",
+        "authority": "teks",
+        "claim": "g4",
+        "n": 19,
+        "nCorrect": 4,
+        "rate": 0.21052631578947367,
+        "chance": 0.25,
+        "ci95": [
+          0.05263157894736842,
+          0.42105263157894735
+        ],
+        "binomialPGreater": 0.7369068613625176,
+        "clearsBar": false,
+        "randomP95": null,
+        "coverage": 0.3958333333333333,
+        "familyIndex": 42,
+        "holmReject05Family": false,
+        "bonferroniReject05Family": false,
+        "holmReject05PooledWith105": false,
+        "bonferroniReject05PooledWith105": false
+      },
+      {
+        "channel": "s3-closure",
+        "authority": "teks",
+        "claim": "g5",
+        "n": 40,
+        "nCorrect": 21,
+        "rate": 0.525,
+        "chance": 0.25,
+        "ci95": [
+          0.375,
+          0.675
+        ],
+        "binomialPGreater": 0.0001748540858045603,
+        "clearsBar": true,
+        "randomP95": null,
+        "coverage": 0.6666666666666666,
+        "familyIndex": 43,
+        "holmReject05Family": true,
+        "bonferroniReject05Family": true,
+        "holmReject05PooledWith105": true,
+        "bonferroniReject05PooledWith105": true
+      },
+      {
+        "channel": "s3-closure",
+        "authority": "teks",
+        "claim": "g6",
+        "n": 46,
+        "nCorrect": 10,
+        "rate": 0.21739130434782608,
+        "chance": 0.25,
+        "ci95": [
+          0.10869565217391304,
+          0.34782608695652173
+        ],
+        "binomialPGreater": 0.7468869681132104,
+        "clearsBar": false,
+        "randomP95": null,
+        "coverage": 0.7076923076923077,
+        "familyIndex": 44,
+        "holmReject05Family": false,
+        "bonferroniReject05Family": false,
+        "holmReject05PooledWith105": false,
+        "bonferroniReject05PooledWith105": false
+      },
+      {
+        "channel": "s3-closure",
+        "authority": "teks",
+        "claim": "g7",
+        "n": 32,
+        "nCorrect": 12,
+        "rate": 0.375,
+        "chance": 0.25,
+        "ci95": [
+          0.21875,
+          0.53125
+        ],
+        "binomialPGreater": 0.08043041372940024,
+        "clearsBar": false,
+        "randomP95": null,
+        "coverage": 0.6956521739130435,
+        "familyIndex": 45,
+        "holmReject05Family": false,
+        "bonferroniReject05Family": false,
+        "holmReject05PooledWith105": false,
+        "bonferroniReject05PooledWith105": false
+      },
+      {
+        "channel": "s3-closure",
+        "authority": "teks",
+        "claim": "g8",
+        "n": 28,
+        "nCorrect": 9,
+        "rate": 0.32142857142857145,
+        "chance": 0.25,
+        "ci95": [
+          0.14285714285714285,
+          0.5
+        ],
+        "binomialPGreater": 0.249859193605076,
+        "clearsBar": false,
+        "randomP95": null,
+        "coverage": 0.49122807017543857,
+        "familyIndex": 46,
+        "holmReject05Family": false,
+        "bonferroniReject05Family": false,
+        "holmReject05PooledWith105": false,
+        "bonferroniReject05PooledWith105": false
+      }
+    ]
+  },
+  "stemRead": {
+    "nRead": 40,
+    "counts": {
+      "one_operation": 9,
+      "coincidence": 18,
+      "parse_artifact": 13
+    },
+    "parseArtifactIsConstructProblem": true,
+    "artifactFree": {
+      "nFired": 27,
+      "nCorrect": 16,
+      "rate": 0.5925925925925926,
+      "chance": 0.25,
+      "ci95": [
+        0.37037037037037035,
+        0.7777777777777778
+      ],
+      "binomialPGreater": 0.00016191347713334766,
+      "clearsBar": true,
+      "nRemoved": 13,
+      "artifactHits": 5
+    },
+    "items": [
+      {
+        "id": "staar-2019-5-q2",
+        "key": "C",
+        "pick": "A",
+        "correct": false,
+        "kind": "coincidence",
+        "judgment": "Multi-step (8*16.95-7.50); all four dollar amounts sit at depth 2.",
+        "nInClosure": 4,
+        "decidedBy": "tie-break"
+      },
+      {
+        "id": "staar-2019-5-q3",
+        "key": "A",
+        "pick": "A",
+        "correct": true,
+        "kind": "parse_artifact",
+        "judgment": "Axis ticks 0-9 swept into the stem; every option coordinate is already a seed.",
+        "nInClosure": 4,
+        "decidedBy": "tie-break"
+      },
+      {
+        "id": "staar-2019-5-q7",
+        "key": "A",
+        "pick": "A",
+        "correct": true,
+        "kind": "one_operation",
+        "judgment": "428.5/5 = 85.7, unique at depth 1.",
+        "nInClosure": 1,
+        "decidedBy": "depth"
+      },
+      {
+        "id": "staar-2019-5-q10",
+        "key": "C",
+        "pick": "C",
+        "correct": true,
+        "kind": "coincidence",
+        "judgment": "PEMDAS wording; leading numbers in the options repeat the expression numerals.",
+        "nInClosure": 4,
+        "decidedBy": "tie-break"
+      },
+      {
+        "id": "staar-2019-5-q11",
+        "key": "B",
+        "pick": "A",
+        "correct": false,
+        "kind": "coincidence",
+        "judgment": "Equation-identification; all four choices lead with the seed 27.",
+        "nInClosure": 4,
+        "decidedBy": "tie-break"
+      },
+      {
+        "id": "staar-2019-5-q13",
+        "key": "B",
+        "pick": "B",
+        "correct": true,
+        "kind": "one_operation",
+        "judgment": "3.75*28 = 105, unique at depth 1.",
+        "nInClosure": 1,
+        "decidedBy": "depth"
+      },
+      {
+        "id": "staar-2019-5-q19",
+        "key": "C",
+        "pick": "A",
+        "correct": false,
+        "kind": "coincidence",
+        "judgment": "Remainder 2-0.475-0.35 is two operations; unique depth-1 hit is the sum, not the key.",
+        "nInClosure": 4,
+        "decidedBy": "depth"
+      },
+      {
+        "id": "staar-2019-5-q20",
+        "key": "B",
+        "pick": "B",
+        "correct": true,
+        "kind": "coincidence",
+        "judgment": "Plot thresholds 36 and 25; key 6 is not 36-25.",
+        "nInClosure": 4,
+        "decidedBy": "tie-break"
+      },
+      {
+        "id": "staar-2019-5-q21",
+        "key": "D",
+        "pick": "C",
+        "correct": false,
+        "kind": "coincidence",
+        "judgment": "Two-product shopping total 2*36.95+5*23.95 at depth 2.",
+        "nInClosure": 3,
+        "decidedBy": "tie-break"
+      },
+      {
+        "id": "staar-2019-5-q29",
+        "key": "C",
+        "pick": "C",
+        "correct": true,
+        "kind": "coincidence",
+        "judgment": "Given multi-op grocery expression; all four prices at depth 2.",
+        "nInClosure": 4,
+        "decidedBy": "tie-break"
+      },
+      {
+        "id": "staar-2019-5-q32",
+        "key": "A",
+        "pick": "A",
+        "correct": true,
+        "kind": "one_operation",
+        "judgment": "151.2/24 = 6.3, unique at depth 1.",
+        "nInClosure": 2,
+        "decidedBy": "depth"
+      },
+      {
+        "id": "staar-2019-5-q35",
+        "key": "C",
+        "pick": "A",
+        "correct": false,
+        "kind": "parse_artifact",
+        "judgment": "Bar-chart axis labels 45,55,65,75,85; bar counts are not in the stem.",
+        "nInClosure": 4,
+        "decidedBy": "depth"
+      },
+      {
+        "id": "staar-2019-5-q36",
+        "key": "D",
+        "pick": "D",
+        "correct": true,
+        "kind": "parse_artifact",
+        "judgment": "Previous-item options and layout 1 2 leaked; 1+2 puts key 3 at depth 1.",
+        "nInClosure": 4,
+        "decidedBy": "tie-break"
+      },
+      {
+        "id": "staar-2021-5-q1",
+        "key": "A",
+        "pick": "B",
+        "correct": false,
+        "kind": "one_operation",
+        "judgment": "6.75*14 = 94.50, tied at depth 1 with 6.75+14.",
+        "nInClosure": 2,
+        "decidedBy": "tie-break"
+      },
+      {
+        "id": "staar-2021-5-q3",
+        "key": "A",
+        "pick": "A",
+        "correct": true,
+        "kind": "coincidence",
+        "judgment": "Equation-identification; A and B both lead with the seed 90.",
+        "nInClosure": 3,
+        "decidedBy": "tie-break"
+      },
+      {
+        "id": "staar-2021-5-q5",
+        "key": "C",
+        "pick": "D",
+        "correct": false,
+        "kind": "parse_artifact",
+        "judgment": "1,012 split by a thousands comma into seeds 1 and 12.",
+        "nInClosure": 3,
+        "decidedBy": "tie-break"
+      },
+      {
+        "id": "staar-2021-5-q9",
+        "key": "B",
+        "pick": "C",
+        "correct": false,
+        "kind": "coincidence",
+        "judgment": "Comparison options contain the table times, all at depth 0.",
+        "nInClosure": 4,
+        "decidedBy": "tie-break"
+      },
+      {
+        "id": "staar-2021-5-q10",
+        "key": "D",
+        "pick": "B",
+        "correct": false,
+        "kind": "parse_artifact",
+        "judgment": "Broken fraction OCR dumps 1,2,3 into the stem; option D is empty.",
+        "nInClosure": 3,
+        "decidedBy": "depth"
+      },
+      {
+        "id": "staar-2021-5-q16",
+        "key": "B",
+        "pick": "B",
+        "correct": true,
+        "kind": "one_operation",
+        "judgment": "8.05/35 = 0.23, unique at depth 1.",
+        "nInClosure": 4,
+        "decidedBy": "depth"
+      },
+      {
+        "id": "staar-2021-5-q18",
+        "key": "C",
+        "pick": "C",
+        "correct": true,
+        "kind": "one_operation",
+        "judgment": "48*144 = 6912, unique at depth 1.",
+        "nInClosure": 2,
+        "decidedBy": "depth"
+      },
+      {
+        "id": "staar-2021-5-q21",
+        "key": "A",
+        "pick": "A",
+        "correct": true,
+        "kind": "coincidence",
+        "judgment": "(625-7*55)/8 is two operations; key 30 at depth 2.",
+        "nInClosure": 2,
+        "decidedBy": "tie-break"
+      },
+      {
+        "id": "staar-2021-5-q23",
+        "key": "C",
+        "pick": "B",
+        "correct": false,
+        "kind": "coincidence",
+        "judgment": "Prime-list item; 43 is not a one-op of the listed primes.",
+        "nInClosure": 4,
+        "decidedBy": "tie-break"
+      },
+      {
+        "id": "staar-2021-5-q24",
+        "key": "D",
+        "pick": "D",
+        "correct": true,
+        "kind": "one_operation",
+        "judgment": "6.48/9 = 0.72, unique at depth 1.",
+        "nInClosure": 3,
+        "decidedBy": "depth"
+      },
+      {
+        "id": "staar-2021-5-q25",
+        "key": "A",
+        "pick": "A",
+        "correct": true,
+        "kind": "parse_artifact",
+        "judgment": "Coordinate-grid axis 0-9 swept into seeds; options are grid points.",
+        "nInClosure": 4,
+        "decidedBy": "tie-break"
+      },
+      {
+        "id": "staar-2021-5-q31",
+        "key": "D",
+        "pick": "D",
+        "correct": true,
+        "kind": "parse_artifact",
+        "judgment": "$2,135 split by a thousands comma into 2 and 135.",
+        "nInClosure": 2,
+        "decidedBy": "tie-break"
+      },
+      {
+        "id": "staar-2021-5-q33",
+        "key": "A",
+        "pick": "C",
+        "correct": false,
+        "kind": "coincidence",
+        "judgment": "Target value 25 in the stem; unique depth-1 option C leads with 50=2*25.",
+        "nInClosure": 4,
+        "decidedBy": "depth"
+      },
+      {
+        "id": "staar-2021-5-q34",
+        "key": "B",
+        "pick": "D",
+        "correct": false,
+        "kind": "parse_artifact",
+        "judgment": "Missing fraction; D=3 is the only remaining stem number.",
+        "nInClosure": 4,
+        "decidedBy": "depth"
+      },
+      {
+        "id": "staar-2021-5-q35",
+        "key": "B",
+        "pick": "D",
+        "correct": false,
+        "kind": "parse_artifact",
+        "judgment": "Scatterplot axis ticks 0-90 become seeds; C=90 and D=80 are labels.",
+        "nInClosure": 4,
+        "decidedBy": "tie-break"
+      },
+      {
+        "id": "staar-2021-5-q36",
+        "key": "C",
+        "pick": "C",
+        "correct": true,
+        "kind": "one_operation",
+        "judgment": "10-6.275 = 3.725 from the story numbers.",
+        "nInClosure": 4,
+        "decidedBy": "tie-break"
+      },
+      {
+        "id": "staar-2022-5-q1",
+        "key": "A",
+        "pick": "A",
+        "correct": true,
+        "kind": "parse_artifact",
+        "judgment": "Stem-and-leaf digits 6 0 3 2 and 30 dumped as seeds; options are fractions.",
+        "nInClosure": 4,
+        "decidedBy": "tie-break"
+      },
+      {
+        "id": "staar-2022-5-q3",
+        "key": "D",
+        "pick": "A",
+        "correct": false,
+        "kind": "parse_artifact",
+        "judgment": "OCR 3 5 plus footer GRADE 5; every option leads with 5.",
+        "nInClosure": 4,
+        "decidedBy": "tie-break"
+      },
+      {
+        "id": "staar-2022-5-q10",
+        "key": "B",
+        "pick": "B",
+        "correct": true,
+        "kind": "one_operation",
+        "judgment": "6*0.93 = 5.58 at depth 1.",
+        "nInClosure": 3,
+        "decidedBy": "tie-break"
+      },
+      {
+        "id": "staar-2022-5-q15",
+        "key": "D",
+        "pick": "A",
+        "correct": false,
+        "kind": "parse_artifact",
+        "judgment": "Age-bin labels 10-14,... as seeds; visitor counts are missing from the stem.",
+        "nInClosure": 4,
+        "decidedBy": "depth"
+      },
+      {
+        "id": "staar-2022-5-q16",
+        "key": "A",
+        "pick": "B",
+        "correct": false,
+        "kind": "coincidence",
+        "judgment": "6*3+21*2+16 is three operations; unique depth-1 hit is the partial 48.",
+        "nInClosure": 4,
+        "decidedBy": "depth"
+      },
+      {
+        "id": "staar-2022-5-q17",
+        "key": "A",
+        "pick": "A",
+        "correct": true,
+        "kind": "coincidence",
+        "judgment": "Option text contains the table +5; A and D parse as 5 at depth 0.",
+        "nInClosure": 2,
+        "decidedBy": "tie-break"
+      },
+      {
+        "id": "staar-2022-5-q18",
+        "key": "D",
+        "pick": "A",
+        "correct": false,
+        "kind": "coincidence",
+        "judgment": "Figure not OCR'd; 10 and 1 do not one-op to the key 300.",
+        "nInClosure": 3,
+        "decidedBy": "tie-break"
+      },
+      {
+        "id": "staar-2022-5-q21",
+        "key": "A",
+        "pick": "D",
+        "correct": false,
+        "kind": "parse_artifact",
+        "judgment": "$4,554 split by a thousands comma into 4 and 554.",
+        "nInClosure": 2,
+        "decidedBy": "tie-break"
+      },
+      {
+        "id": "staar-2022-5-q23",
+        "key": "B",
+        "pick": "B",
+        "correct": true,
+        "kind": "coincidence",
+        "judgment": "3(25+19)+4*3 is a multi-op expression value at depth 2.",
+        "nInClosure": 2,
+        "decidedBy": "tie-break"
+      },
+      {
+        "id": "staar-2022-5-q26",
+        "key": "B",
+        "pick": "C",
+        "correct": false,
+        "kind": "coincidence",
+        "judgment": "Budget options parse as $10/$20 from the wording, not a one-op of the story.",
+        "nInClosure": 4,
+        "decidedBy": "tie-break"
+      },
+      {
+        "id": "staar-2022-5-q35",
+        "key": "B",
+        "pick": "B",
+        "correct": true,
+        "kind": "coincidence",
+        "judgment": "PEMDAS options contain the expression numbers 40,5,3,8,1.",
+        "nInClosure": 4,
+        "decidedBy": "tie-break"
+      }
+    ]
+  },
+  "holmVerification": {
+    "oneSidedBinomialP_21_of_40_vs_0.25": 0.0001748540858045603,
+    "family67": {
+      "familySize": 67,
+      "targetP": 0.0001748540858045603,
+      "holmRank0": 0,
+      "holmThreshold": 0.0007462686567164179,
+      "holmReject": true,
+      "bonferroniThreshold": 0.0007462686567164179,
+      "bonferroniReject": true,
+      "nReject": 1
+    },
+    "family172": {
+      "familySize": 172,
+      "targetP": 0.0001748540858045603,
+      "holmRank0": 0,
+      "holmThreshold": 0.00029069767441860465,
+      "holmReject": true,
+      "bonferroniThreshold": 0.00029069767441860465,
+      "bonferroniReject": true,
+      "nReject": 1
+    },
+    "matchesPublished": {
+      "family67Reject": true,
+      "family172Reject": true,
+      "publishedFamily67Rejects": 1,
+      "publishedFamily172Rejects": 1
+    }
+  },
+  "firedItems": [
+    {
+      "id": "staar-2019-5-q2",
+      "administration": "staar:2019",
+      "key": "C",
+      "pick": "A",
+      "correct": false,
+      "nInClosure": 4,
+      "minDepthByOption": {
+        "D": 2,
+        "A": 2,
+        "C": 2,
+        "B": 2
+      },
+      "minDepth": 2,
+      "nAtMinDepth": 4,
+      "decidedBy": "tie-break",
+      "lowerCentralAllOptions": "A",
+      "lowerCentralCorrect": false,
+      "uniqueDepth1": false,
+      "keyInClosure": true,
+      "judgmentKind": "coincidence",
+      "judgment": "Multi-step (8*16.95-7.50); all four dollar amounts sit at depth 2.",
+      "stem": "Rebecca bought air filters at a store. \u2022 She bought 8 air filters. \u2022 Each air filter cost $16.95. \u2022 Rebecca used a coupon for $7.50 off her total cost of the air filters. The total cost in dollars that Rebecca paid for these 8 air filters can be represented by this expression. (8 \u00d7 16.95) \u0010 7.50 How much did Rebecca pay for these 8 air filters?",
+      "choices": {
+        "A": "$80.70",
+        "B": "$143.10",
+        "C": "$128.10",
+        "D": "$75.60 2 7 6 8 9 0 2 6|2 means 62. 2 1"
+      }
+    },
+    {
+      "id": "staar-2019-5-q3",
+      "administration": "staar:2019",
+      "key": "A",
+      "pick": "A",
+      "correct": true,
+      "nInClosure": 4,
+      "minDepthByOption": {
+        "D": 0,
+        "A": 0,
+        "C": 0,
+        "B": 0
+      },
+      "minDepth": 0,
+      "nAtMinDepth": 4,
+      "decidedBy": "tie-break",
+      "lowerCentralAllOptions": "A",
+      "lowerCentralCorrect": true,
+      "uniqueDepth1": false,
+      "keyInClosure": true,
+      "judgmentKind": "parse_artifact",
+      "judgment": "Axis ticks 0-9 swept into the stem; every option coordinate is already a seed.",
+      "stem": "Jim plotted the following ordered pairs on a coordinate grid. (1, 3) (3, 6) (7, 6) (9, 3) 2 1 0 5 6 7 4 3 2 8 9 1 y x 4 5 6 7 8 9 3 Jim connected the points with line segments to form a polygon. Which point is located inside the polygon?",
+      "choices": {
+        "A": "(4, 5)",
+        "B": "(8, 6)",
+        "C": "(5, 7)",
+        "D": "(3, 1) + 4 3 + 7 3 \u00d7 4 3 \u00d7 7 7 9 2 0 3 6 3 2 1"
+      }
+    },
+    {
+      "id": "staar-2019-5-q7",
+      "administration": "staar:2019",
+      "key": "A",
+      "pick": "A",
+      "correct": true,
+      "nInClosure": 1,
+      "minDepthByOption": {
+        "A": 1
+      },
+      "minDepth": 1,
+      "nAtMinDepth": 1,
+      "decidedBy": "depth",
+      "lowerCentralAllOptions": "D",
+      "lowerCentralCorrect": false,
+      "uniqueDepth1": true,
+      "keyInClosure": true,
+      "judgmentKind": "one_operation",
+      "judgment": "428.5/5 = 85.7, unique at depth 1.",
+      "stem": "Ms. Jaffey had a total of 428.5 ounces of pretzels to put into 5 bowls for a party. She put an equal number of ounces of pretzels into each bowl. How many ounces of pretzels did Ms. Jaffey put into each bowl?",
+      "choices": {
+        "A": "85.7 oz",
+        "B": "97.7 oz",
+        "C": "80.0 oz",
+        "D": "85.3 oz in."
+      }
+    },
+    {
+      "id": "staar-2019-5-q10",
+      "administration": "staar:2019",
+      "key": "C",
+      "pick": "C",
+      "correct": true,
+      "nInClosure": 4,
+      "minDepthByOption": {
+        "B": 0,
+        "C": 0,
+        "D": 0,
+        "A": 1
+      },
+      "minDepth": 0,
+      "nAtMinDepth": 3,
+      "decidedBy": "tie-break",
+      "lowerCentralAllOptions": "C",
+      "lowerCentralCorrect": true,
+      "uniqueDepth1": false,
+      "keyInClosure": true,
+      "judgmentKind": "coincidence",
+      "judgment": "PEMDAS wording; leading numbers in the options repeat the expression numerals.",
+      "stem": "\u00f7 5 + 4(72 \u0010 6) What do these parentheses indicate in the expression?",
+      "choices": {
+        "A": "Divide 10 by 5 before adding 4",
+        "B": "Multiply 4 by 72 before subtracting 6",
+        "C": "Add 5 and 4 together before subtracting 6 from 72",
+        "D": "Subtract 6 from 72 before multiplying by 4 1 4 Cheyenne works 15 hours a week at the movie theater. She earns $8 an hour. Which statement about her weekly income is true? Her net income is more than $120. Her gross income is less than $120. Her net income is less than $120. Her gross income is more than $120. \u0010 \u0010"
+      }
+    },
+    {
+      "id": "staar-2019-5-q11",
+      "administration": "staar:2019",
+      "key": "B",
+      "pick": "A",
+      "correct": false,
+      "nInClosure": 4,
+      "minDepthByOption": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "minDepth": 0,
+      "nAtMinDepth": 4,
+      "decidedBy": "tie-break",
+      "lowerCentralAllOptions": "A",
+      "lowerCentralCorrect": false,
+      "uniqueDepth1": false,
+      "keyInClosure": true,
+      "judgmentKind": "coincidence",
+      "judgment": "Equation-identification; all four choices lead with the seed 27.",
+      "stem": "Three friends rode their bikes last week. \u2022 Christine rode her bike 27 kilometers. \u2022 Philip rode his bike 12 kilometers less than Christine. \u2022 Nathan rode his bike 3 times as far as Philip. Which equation represents n, the distance in kilometers Nathan rode his bike?",
+      "choices": {
+        "A": "(27 + 12) \u00f7 3 = n",
+        "B": "(27 \u0010 12) \u00d7 3 = n",
+        "C": "(27 \u0010 12) \u00f7 3 = n",
+        "D": "(27 + 12) \u00d7 3 = n Triangles Isosceles triangles Figure I Figure II Figure III Figure IV Figure V in."
+      }
+    },
+    {
+      "id": "staar-2019-5-q13",
+      "administration": "staar:2019",
+      "key": "B",
+      "pick": "B",
+      "correct": true,
+      "nInClosure": 1,
+      "minDepthByOption": {
+        "B": 1
+      },
+      "minDepth": 1,
+      "nAtMinDepth": 1,
+      "decidedBy": "depth",
+      "lowerCentralAllOptions": "D",
+      "lowerCentralCorrect": false,
+      "uniqueDepth1": true,
+      "keyInClosure": true,
+      "judgmentKind": "one_operation",
+      "judgment": "3.75*28 = 105, unique at depth 1.",
+      "stem": "Dion ran 3.75 kilometers each day to prepare for a race. What was the number of kilometers that Dion ran during 28 days?",
+      "choices": {
+        "A": "10.5 km",
+        "B": "105 km",
+        "C": "1,875 km",
+        "D": "18.75 km"
+      }
+    },
+    {
+      "id": "staar-2019-5-q19",
+      "administration": "staar:2019",
+      "key": "C",
+      "pick": "A",
+      "correct": false,
+      "nInClosure": 4,
+      "minDepthByOption": {
+        "B": 2,
+        "A": 1,
+        "C": 2,
+        "D": 2
+      },
+      "minDepth": 1,
+      "nAtMinDepth": 1,
+      "decidedBy": "depth",
+      "lowerCentralAllOptions": "A",
+      "lowerCentralCorrect": false,
+      "uniqueDepth1": true,
+      "keyInClosure": true,
+      "judgmentKind": "coincidence",
+      "judgment": "Remainder 2-0.475-0.35 is two operations; unique depth-1 hit is the sum, not the key.",
+      "stem": "Mr. Wilfred used a full 2-liter bottle of liquid soap to fill two soap containers. \u2022 He put 0.475 liter of soap in the first container. \u2022 He put 0.35 liter of soap in the second container. How many liters of liquid soap remained in the bottle?",
+      "choices": {
+        "A": "0.825 L",
+        "B": "0.625 L",
+        "C": "1.175 L",
+        "D": "1.49 L"
+      }
+    },
+    {
+      "id": "staar-2019-5-q20",
+      "administration": "staar:2019",
+      "key": "B",
+      "pick": "B",
+      "correct": true,
+      "nInClosure": 4,
+      "minDepthByOption": {
+        "D": 1,
+        "B": 1,
+        "A": 1,
+        "C": 2
+      },
+      "minDepth": 1,
+      "nAtMinDepth": 3,
+      "decidedBy": "tie-break",
+      "lowerCentralAllOptions": "B",
+      "lowerCentralCorrect": true,
+      "uniqueDepth1": false,
+      "keyInClosure": true,
+      "judgmentKind": "coincidence",
+      "judgment": "Plot thresholds 36 and 25; key 6 is not 36-25.",
+      "stem": "The stem and leaf plot shows the numbers of sit-ups a group of students did in P.E. Number of Sit-ups What is the difference between the number of students who did more than 36 sit-ups and the number of students who did fewer than 25 sit-ups?",
+      "choices": {
+        "A": "11",
+        "B": "6",
+        "C": "18",
+        "D": "1"
+      }
+    },
+    {
+      "id": "staar-2019-5-q21",
+      "administration": "staar:2019",
+      "key": "D",
+      "pick": "C",
+      "correct": false,
+      "nInClosure": 3,
+      "minDepthByOption": {
+        "D": 2,
+        "C": 2,
+        "B": 2
+      },
+      "minDepth": 2,
+      "nAtMinDepth": 3,
+      "decidedBy": "tie-break",
+      "lowerCentralAllOptions": "D",
+      "lowerCentralCorrect": true,
+      "uniqueDepth1": false,
+      "keyInClosure": true,
+      "judgmentKind": "coincidence",
+      "judgment": "Two-product shopping total 2*36.95+5*23.95 at depth 2.",
+      "stem": "in. Mr. Nolan paid $36.95 for each adult shirt and $23.95 for each youth shirt he bought. Mr. Nolan bought 2 adult shirts and 5 youth shirts. How much money did he spend on these shirts?",
+      "choices": {
+        "A": "$167.35",
+        "B": "$258.65",
+        "C": "$232.65",
+        "D": "$193.65"
+      }
+    },
+    {
+      "id": "staar-2019-5-q29",
+      "administration": "staar:2019",
+      "key": "C",
+      "pick": "C",
+      "correct": true,
+      "nInClosure": 4,
+      "minDepthByOption": {
+        "A": 2,
+        "C": 2,
+        "B": 2,
+        "D": 2
+      },
+      "minDepth": 2,
+      "nAtMinDepth": 4,
+      "decidedBy": "tie-break",
+      "lowerCentralAllOptions": "C",
+      "lowerCentralCorrect": true,
+      "uniqueDepth1": false,
+      "keyInClosure": true,
+      "judgmentKind": "coincidence",
+      "judgment": "Given multi-op grocery expression; all four prices at depth 2.",
+      "stem": "Nakita bought items at a grocery store. \u2022 She bought 2 boxes of crackers for $3.50 each. \u2022 She used a coupon for $0.80 off the price of each box of crackers. \u2022 She bought a jar of peanut butter for $4.85. \u2022 She bought a package of juice boxes for $2.40. \u2022 She used a coupon for $3.00 off the total price of the items she bought. This expression can be used to determine the price of the items Nakita bought. >2(3.50 \u0010 0.80) + 4.85 + 2.40@ \u0010 3.00 What is the price of the items Nakita bought?",
+      "choices": {
+        "A": "$6.95",
+        "B": "$10.45",
+        "C": "$9.65",
+        "D": "$12.65"
+      }
+    },
+    {
+      "id": "staar-2019-5-q32",
+      "administration": "staar:2019",
+      "key": "A",
+      "pick": "A",
+      "correct": true,
+      "nInClosure": 2,
+      "minDepthByOption": {
+        "C": 2,
+        "A": 1
+      },
+      "minDepth": 1,
+      "nAtMinDepth": 1,
+      "decidedBy": "depth",
+      "lowerCentralAllOptions": "C",
+      "lowerCentralCorrect": false,
+      "uniqueDepth1": true,
+      "keyInClosure": true,
+      "judgmentKind": "one_operation",
+      "judgment": "151.2/24 = 6.3, unique at depth 1.",
+      "stem": "Mr. Adams drove his delivery truck 151.2 miles during 24 days. He drove the same number of miles each day. How many miles did Mr. Adams drive each day?",
+      "choices": {
+        "A": "6.3 mi",
+        "B": "7.16 mi",
+        "C": "6.0 mi",
+        "D": "5.13 mi"
+      }
+    },
+    {
+      "id": "staar-2019-5-q35",
+      "administration": "staar:2019",
+      "key": "C",
+      "pick": "A",
+      "correct": false,
+      "nInClosure": 4,
+      "minDepthByOption": {
+        "A": 0,
+        "D": 2,
+        "B": 1,
+        "C": 2
+      },
+      "minDepth": 0,
+      "nAtMinDepth": 1,
+      "decidedBy": "depth",
+      "lowerCentralAllOptions": "D",
+      "lowerCentralCorrect": false,
+      "uniqueDepth1": false,
+      "keyInClosure": true,
+      "judgmentKind": "parse_artifact",
+      "judgment": "Bar-chart axis labels 45,55,65,75,85; bar counts are not in the stem.",
+      "stem": "45 55 65 75 85 Number of Students How many students did not pick strawberry as their favorite ice-cream flavor?",
+      "choices": {
+        "A": "55",
+        "B": "120",
+        "C": "125",
+        "D": "115 Akshar is making a mobile that lists quadrilaterals. Quadrilaterals Trapezoid ? Rectangle Rhombus Square What is the name of the subset of quadrilaterals missing from Akshar\u2019s mobile? A Hexagon B Polygon C Parallelogram D Triangle"
+      }
+    },
+    {
+      "id": "staar-2019-5-q36",
+      "administration": "staar:2019",
+      "key": "D",
+      "pick": "D",
+      "correct": true,
+      "nInClosure": 4,
+      "minDepthByOption": {
+        "D": 1,
+        "B": 1,
+        "C": 2,
+        "A": 2
+      },
+      "minDepth": 1,
+      "nAtMinDepth": 2,
+      "decidedBy": "tie-break",
+      "lowerCentralAllOptions": "B",
+      "lowerCentralCorrect": false,
+      "uniqueDepth1": false,
+      "keyInClosure": true,
+      "judgmentKind": "parse_artifact",
+      "judgment": "Previous-item options and layout 1 2 leaked; 1+2 puts key 3 at depth 1.",
+      "stem": "cubic feet B 288 cubic feet C 384 cubic feet D 1,296 cubic feet 1 2 Mr. Lorenzo gave his 2 sons $50 to buy a cooler. The total cost for the cooler is $44. Mr. Lorenzo told his sons that they could each have an equal share of the change they receive. The equation shown can be used to determine s, the amount of money each son should receive in dollars. s = (50 \u0010 44) \u00f7 2 What amount of money is represented by s?",
+      "choices": {
+        "A": "$28",
+        "B": "$6",
+        "C": "$19",
+        "D": "$3 BE SURE YOU HAVE RECORDED ALL OF YOUR ANSWERS ON THE ANSWER DOCUMENT. GRADE 5 April 2019"
+      }
+    },
+    {
+      "id": "staar-2021-5-q1",
+      "administration": "staar:2021",
+      "key": "A",
+      "pick": "B",
+      "correct": false,
+      "nInClosure": 2,
+      "minDepthByOption": {
+        "B": 1,
+        "A": 1
+      },
+      "minDepth": 1,
+      "nAtMinDepth": 2,
+      "decidedBy": "tie-break",
+      "lowerCentralAllOptions": "D",
+      "lowerCentralCorrect": false,
+      "uniqueDepth1": false,
+      "keyInClosure": true,
+      "judgmentKind": "one_operation",
+      "judgment": "6.75*14 = 94.50, tied at depth 1 with 6.75+14.",
+      "stem": "Kelsi spends $6.75 every Saturday for breakfast. What is the total amount of money Kelsi spends on breakfast for 14 Saturdays?",
+      "choices": {
+        "A": "$94.50",
+        "B": "$20.75",
+        "C": "$92.30",
+        "D": "$33.75 of a bag 2 H J"
+      }
+    },
+    {
+      "id": "staar-2021-5-q3",
+      "administration": "staar:2021",
+      "key": "A",
+      "pick": "A",
+      "correct": true,
+      "nInClosure": 3,
+      "minDepthByOption": {
+        "C": 2,
+        "A": 0,
+        "B": 0
+      },
+      "minDepth": 0,
+      "nAtMinDepth": 2,
+      "decidedBy": "tie-break",
+      "lowerCentralAllOptions": "D",
+      "lowerCentralCorrect": false,
+      "uniqueDepth1": false,
+      "keyInClosure": true,
+      "judgmentKind": "coincidence",
+      "judgment": "Equation-identification; A and B both lead with the seed 90.",
+      "stem": "An elementary school had 90 boxes of glue sticks. Each box had 36 glue sticks. Teachers put all of the glue sticks into bags to give to the students. They put 6 glue sticks into each bag. Which equation can be used to find b, the number of bags the teachers can fill with these glue sticks?",
+      "choices": {
+        "A": "90 \u00d7 36 \u00f7 6 = b",
+        "B": "90 \u00f7 6 + 36 = b",
+        "C": "+ (7 + 5) \u00f7 3 \uf05b \uf05d 14 34 50",
+        "D": "70 \u2212 r = \uf05b625 \u2212 (7 \u00d7 55)\uf05d \u00f7 8"
+      }
+    },
+    {
+      "id": "staar-2021-5-q5",
+      "administration": "staar:2021",
+      "key": "C",
+      "pick": "D",
+      "correct": false,
+      "nInClosure": 3,
+      "minDepthByOption": {
+        "C": 2,
+        "D": 2,
+        "A": 2
+      },
+      "minDepth": 2,
+      "nAtMinDepth": 3,
+      "decidedBy": "tie-break",
+      "lowerCentralAllOptions": "D",
+      "lowerCentralCorrect": false,
+      "uniqueDepth1": false,
+      "keyInClosure": true,
+      "judgmentKind": "parse_artifact",
+      "judgment": "1,012 split by a thousands comma into seeds 1 and 12.",
+      "stem": "Nicholas put 1,012 baseball cards into boxes. He put 22 cards in each box. How many boxes did Nicholas need for these baseball cards?",
+      "choices": {
+        "A": "55",
+        "B": "50",
+        "C": "46",
+        "D": "47"
+      }
+    },
+    {
+      "id": "staar-2021-5-q9",
+      "administration": "staar:2021",
+      "key": "B",
+      "pick": "C",
+      "correct": false,
+      "nInClosure": 4,
+      "minDepthByOption": {
+        "B": 0,
+        "C": 0,
+        "A": 0,
+        "D": 0
+      },
+      "minDepth": 0,
+      "nAtMinDepth": 4,
+      "decidedBy": "tie-break",
+      "lowerCentralAllOptions": "C",
+      "lowerCentralCorrect": false,
+      "uniqueDepth1": false,
+      "keyInClosure": true,
+      "judgmentKind": "coincidence",
+      "judgment": "Comparison options contain the table times, all at depth 0.",
+      "stem": "The table shows the times it took four runners to finish a race. Race Times Runner Time (minutes) W 20.3 X 19.795 Y 20.35 Z 19.8 Which comparison of these times is NOT correct?",
+      "choices": {
+        "A": "20.3 < 20.35",
+        "B": "19.795 > 19.8",
+        "C": "19.8 < 20.3",
+        "D": "20.35 > 19.795 1"
+      }
+    },
+    {
+      "id": "staar-2021-5-q10",
+      "administration": "staar:2021",
+      "key": "D",
+      "pick": "B",
+      "correct": false,
+      "nInClosure": 3,
+      "minDepthByOption": {
+        "B": 0,
+        "A": 1,
+        "C": 2
+      },
+      "minDepth": 0,
+      "nAtMinDepth": 1,
+      "decidedBy": "depth",
+      "lowerCentralAllOptions": "A",
+      "lowerCentralCorrect": false,
+      "uniqueDepth1": false,
+      "keyInClosure": false,
+      "judgmentKind": "parse_artifact",
+      "judgment": "Broken fraction OCR dumps 1,2,3 into the stem; option D is empty.",
+      "stem": "Ms. Fitzgerald had gallons of fruit punch. She served gallon of the fruit punch to her family at lunch. How many gallons of fruit punch did Ms. Fitzgerald have left after lunch? 1 2 gal 3",
+      "choices": {
+        "A": "6 1 gal 8",
+        "B": "1 1 gal 2",
+        "C": "7 1 gal 8",
+        "D": ""
+      }
+    },
+    {
+      "id": "staar-2021-5-q16",
+      "administration": "staar:2021",
+      "key": "B",
+      "pick": "B",
+      "correct": true,
+      "nInClosure": 4,
+      "minDepthByOption": {
+        "C": 2,
+        "B": 1,
+        "A": 2,
+        "D": 2
+      },
+      "minDepth": 1,
+      "nAtMinDepth": 1,
+      "decidedBy": "depth",
+      "lowerCentralAllOptions": "B",
+      "lowerCentralCorrect": true,
+      "uniqueDepth1": true,
+      "keyInClosure": true,
+      "judgmentKind": "one_operation",
+      "judgment": "8.05/35 = 0.23, unique at depth 1.",
+      "stem": "cups C 64 cups D A cafeteria worker used 8.05 kilograms of meat to make 35 lunches. Each lunch had the same amount of meat. What was the mass in kilograms of the meat in each lunch?",
+      "choices": {
+        "A": "2.03 kg",
+        "B": "0.23 kg",
+        "C": "0.023 kg",
+        "D": "2.3 kg 6.027 6.009 ft"
+      }
+    },
+    {
+      "id": "staar-2021-5-q18",
+      "administration": "staar:2021",
+      "key": "C",
+      "pick": "C",
+      "correct": true,
+      "nInClosure": 2,
+      "minDepthByOption": {
+        "B": 2,
+        "C": 1
+      },
+      "minDepth": 1,
+      "nAtMinDepth": 1,
+      "decidedBy": "depth",
+      "lowerCentralAllOptions": "D",
+      "lowerCentralCorrect": false,
+      "uniqueDepth1": true,
+      "keyInClosure": true,
+      "judgmentKind": "one_operation",
+      "judgment": "48*144 = 6912, unique at depth 1.",
+      "stem": "bags Last month a flower shop employee ordered 48 cases of roses. There were 144 roses in each case. How many roses did this employee order?",
+      "choices": {
+        "A": "5,482",
+        "B": "1,728",
+        "C": "6,912",
+        "D": "4,844"
+      }
+    },
+    {
+      "id": "staar-2021-5-q21",
+      "administration": "staar:2021",
+      "key": "A",
+      "pick": "A",
+      "correct": true,
+      "nInClosure": 2,
+      "minDepthByOption": {
+        "A": 2,
+        "B": 2
+      },
+      "minDepth": 2,
+      "nAtMinDepth": 2,
+      "decidedBy": "tie-break",
+      "lowerCentralAllOptions": "C",
+      "lowerCentralCorrect": false,
+      "uniqueDepth1": false,
+      "keyInClosure": true,
+      "judgmentKind": "coincidence",
+      "judgment": "(625-7*55)/8 is two operations; key 30 at depth 2.",
+      "stem": "Kendra earned a total of $625 selling jewelry. \u2022 She sold 7 necklaces for $55 each. \u2022 She sold 8 rings. \u2022 Each ring was sold for the same price. The equation shown can be used to find r, the amount of money in dollars she earned for each ring sold. What was the amount of money in dollars Kendra earned for each ring sold?",
+      "choices": {
+        "A": "$30",
+        "B": "$240",
+        "C": "$45",
+        "D": "None of these"
+      }
+    },
+    {
+      "id": "staar-2021-5-q23",
+      "administration": "staar:2021",
+      "key": "C",
+      "pick": "B",
+      "correct": false,
+      "nInClosure": 4,
+      "minDepthByOption": {
+        "D": 2,
+        "B": 2,
+        "C": 2,
+        "A": 2
+      },
+      "minDepth": 2,
+      "nAtMinDepth": 4,
+      "decidedBy": "tie-break",
+      "lowerCentralAllOptions": "B",
+      "lowerCentralCorrect": false,
+      "uniqueDepth1": false,
+      "keyInClosure": true,
+      "judgmentKind": "coincidence",
+      "judgment": "Prime-list item; 43 is not a one-op of the listed primes.",
+      "stem": "Jaylen was told to list all prime numbers between 30 and 50. Jaylen\u2019s list is shown. 31, 37, 41, 47 Which prime number is missing from Jaylen\u2019s list?",
+      "choices": {
+        "A": "49",
+        "B": "39",
+        "C": "43",
+        "D": "33"
+      }
+    },
+    {
+      "id": "staar-2021-5-q24",
+      "administration": "staar:2021",
+      "key": "D",
+      "pick": "D",
+      "correct": true,
+      "nInClosure": 3,
+      "minDepthByOption": {
+        "B": 2,
+        "D": 1,
+        "C": 2
+      },
+      "minDepth": 1,
+      "nAtMinDepth": 1,
+      "decidedBy": "depth",
+      "lowerCentralAllOptions": "D",
+      "lowerCentralCorrect": true,
+      "uniqueDepth1": true,
+      "keyInClosure": true,
+      "judgmentKind": "one_operation",
+      "judgment": "6.48/9 = 0.72, unique at depth 1.",
+      "stem": "Gwen had a board that was 6.48 meters long. She cut the board into 9 pieces of equal length. What was the length of each piece in meters?",
+      "choices": {
+        "A": "6.39 m",
+        "B": "0.61 m",
+        "C": "6.08 m",
+        "D": "0.72 m"
+      }
+    },
+    {
+      "id": "staar-2021-5-q25",
+      "administration": "staar:2021",
+      "key": "A",
+      "pick": "A",
+      "correct": true,
+      "nInClosure": 4,
+      "minDepthByOption": {
+        "D": 1,
+        "A": 1,
+        "C": 1,
+        "B": 2
+      },
+      "minDepth": 1,
+      "nAtMinDepth": 3,
+      "decidedBy": "tie-break",
+      "lowerCentralAllOptions": "A",
+      "lowerCentralCorrect": true,
+      "uniqueDepth1": false,
+      "keyInClosure": true,
+      "judgmentKind": "parse_artifact",
+      "judgment": "Coordinate-grid axis 0-9 swept into seeds; options are grid points.",
+      "stem": "There are two shapes drawn on the coordinate grid, as shown. y 9 8 7 6 5 4 3 2 1 x 0 1 2 3 4 5 6 7 8 9 Which ordered pair represents a point that is inside both shapes?",
+      "choices": {
+        "A": "(3.5, 5.5)",
+        "B": "(5.5, 3.5)",
+        "C": "(4.5, 2.5)",
+        "D": "(2.5, 4.5) Spencer\u2019s April Budget Income Expenses Allowance......................$40 Cell phone .....................$15 After-school job..............$30 Piano lessons .................$25 Entertainment................$30 Savings.........................$10"
+      }
+    },
+    {
+      "id": "staar-2021-5-q31",
+      "administration": "staar:2021",
+      "key": "D",
+      "pick": "D",
+      "correct": true,
+      "nInClosure": 2,
+      "minDepthByOption": {
+        "D": 2,
+        "B": 2
+      },
+      "minDepth": 2,
+      "nAtMinDepth": 2,
+      "decidedBy": "tie-break",
+      "lowerCentralAllOptions": "C",
+      "lowerCentralCorrect": false,
+      "uniqueDepth1": false,
+      "keyInClosure": true,
+      "judgmentKind": "parse_artifact",
+      "judgment": "$2,135 split by a thousands comma into 2 and 135.",
+      "stem": "Amelia made this list of her monthly expenses. Expenses Category Amount (dollars) Food 400 Rent 850 Savings 150 Other Amelia\u2019s net income for the month is $2,135. How much money does she have for other expenses?",
+      "choices": {
+        "A": "$3,535",
+        "B": "$1,400",
+        "C": "$885",
+        "D": "$735"
+      }
+    },
+    {
+      "id": "staar-2021-5-q33",
+      "administration": "staar:2021",
+      "key": "A",
+      "pick": "C",
+      "correct": false,
+      "nInClosure": 4,
+      "minDepthByOption": {
+        "A": 2,
+        "B": 2,
+        "D": 2,
+        "C": 1
+      },
+      "minDepth": 1,
+      "nAtMinDepth": 1,
+      "decidedBy": "depth",
+      "lowerCentralAllOptions": "B",
+      "lowerCentralCorrect": false,
+      "uniqueDepth1": true,
+      "keyInClosure": true,
+      "judgmentKind": "coincidence",
+      "judgment": "Target value 25 in the stem; unique depth-1 option C leads with 50=2*25.",
+      "stem": "Which expression has a value of 25?",
+      "choices": {
+        "A": "2(32 + 18) \u00f7 4",
+        "B": "(10 \u00d7 10) \u00f7 (2 \u00f7 2)",
+        "C": "(50 \u00d7 10) \u00f7 5",
+        "D": "(10 + 10) \u00f7 4 1 9"
+      }
+    },
+    {
+      "id": "staar-2021-5-q34",
+      "administration": "staar:2021",
+      "key": "B",
+      "pick": "D",
+      "correct": false,
+      "nInClosure": 4,
+      "minDepthByOption": {
+        "D": 0,
+        "C": 1,
+        "A": 2,
+        "B": 2
+      },
+      "minDepth": 0,
+      "nAtMinDepth": 1,
+      "decidedBy": "depth",
+      "lowerCentralAllOptions": "C",
+      "lowerCentralCorrect": false,
+      "uniqueDepth1": false,
+      "keyInClosure": true,
+      "judgmentKind": "parse_artifact",
+      "judgment": "Missing fraction; D=3 is the only remaining stem number.",
+      "stem": "Harriett baked 3 cakes. She cut each cake into equal-size pieces. Each piece was of the cake. What was the total number of pieces after Harriett cut these cakes?",
+      "choices": {
+        "A": "12",
+        "B": "27",
+        "C": "9",
+        "D": "3"
+      }
+    },
+    {
+      "id": "staar-2021-5-q35",
+      "administration": "staar:2021",
+      "key": "B",
+      "pick": "D",
+      "correct": false,
+      "nInClosure": 4,
+      "minDepthByOption": {
+        "D": 0,
+        "C": 0,
+        "B": 2,
+        "A": 2
+      },
+      "minDepth": 0,
+      "nAtMinDepth": 2,
+      "decidedBy": "tie-break",
+      "lowerCentralAllOptions": "C",
+      "lowerCentralCorrect": false,
+      "uniqueDepth1": false,
+      "keyInClosure": true,
+      "judgmentKind": "parse_artifact",
+      "judgment": "Scatterplot axis ticks 0-90 become seeds; C=90 and D=80 are labels.",
+      "stem": "The scatterplot shows the number of minutes each student in a book club read during a week and the number of years the student has participated in the book club. Book Club Reading y 90 80 70 60 50 40 30 20 10 0 1 2 3 4 5 Number of Years in the Book Club x Number of Minutes Read What is the total number of minutes read by the students who have participated in the book club for 4 or 5 years?",
+      "choices": {
+        "A": "450",
+        "B": "390",
+        "C": "90",
+        "D": "80"
+      }
+    },
+    {
+      "id": "staar-2021-5-q36",
+      "administration": "staar:2021",
+      "key": "C",
+      "pick": "C",
+      "correct": true,
+      "nInClosure": 4,
+      "minDepthByOption": {
+        "C": 1,
+        "B": 2,
+        "D": 2,
+        "A": 1
+      },
+      "minDepth": 1,
+      "nAtMinDepth": 2,
+      "decidedBy": "tie-break",
+      "lowerCentralAllOptions": "B",
+      "lowerCentralCorrect": false,
+      "uniqueDepth1": false,
+      "keyInClosure": true,
+      "judgmentKind": "one_operation",
+      "judgment": "10-6.275 = 3.725 from the story numbers.",
+      "stem": "\u00d7 90 + 6 = b D 36 \u00d7 6 \u00d7 90 = b Landon had one string that was 10 meters long. He used 6.275 meters of this string for a project. What was the length of string in meters that Landon had left?",
+      "choices": {
+        "A": "16.275 m",
+        "B": "4.275 m",
+        "C": "3.725 m",
+        "D": "6.265 m BE SURE YOU HAVE RECORDED ALL OF YOUR ANSWERS ON THE ANSWER DOCUMENT. 5 GRADE 5 May 2021"
+      }
+    },
+    {
+      "id": "staar-2022-5-q1",
+      "administration": "staar:2022",
+      "key": "A",
+      "pick": "A",
+      "correct": true,
+      "nInClosure": 4,
+      "minDepthByOption": {
+        "A": 1,
+        "D": 1,
+        "B": 1,
+        "C": 1
+      },
+      "minDepth": 1,
+      "nAtMinDepth": 4,
+      "decidedBy": "tie-break",
+      "lowerCentralAllOptions": "A",
+      "lowerCentralCorrect": true,
+      "uniqueDepth1": false,
+      "keyInClosure": true,
+      "judgmentKind": "parse_artifact",
+      "judgment": "Stem-and-leaf digits 6 0 3 2 and 30 dumped as seeds; options are fractions.",
+      "stem": "6 0 3 2 2 2 3 0 means 30. 3 What fraction of the teams raised this extra money?",
+      "choices": {
+        "A": "1 _ 4",
+        "B": "5 _ 12",
+        "C": "5 _ 7",
+        "D": "1 _ 3 31212_2"
+      }
+    },
+    {
+      "id": "staar-2022-5-q3",
+      "administration": "staar:2022",
+      "key": "D",
+      "pick": "A",
+      "correct": false,
+      "nInClosure": 4,
+      "minDepthByOption": {
+        "A": 0,
+        "B": 0,
+        "C": 0,
+        "D": 0
+      },
+      "minDepth": 0,
+      "nAtMinDepth": 4,
+      "decidedBy": "tie-break",
+      "lowerCentralAllOptions": "A",
+      "lowerCentralCorrect": false,
+      "uniqueDepth1": false,
+      "keyInClosure": true,
+      "judgmentKind": "parse_artifact",
+      "judgment": "OCR 3 5 plus footer GRADE 5; every option leads with 5.",
+      "stem": "3 5 of each day at work. The model is shaded to represent the amount of time Jacqueline spends at work each week. Which expression can be used to determine the number of days Jacqueline works each week?",
+      "choices": {
+        "A": "5 + 1 _ 2",
+        "B": "5 + 1 _ 3",
+        "C": "5 \u00d7 1 _ 2",
+        "D": "5 \u00d7 1 _ 3 BE SURE YOU HAVE RECORDED ALL OF YOUR ANSWERS ON THE ANSWER DOCUMENT. GRADE 5 May 2022 5 GRADE 5 May 2022"
+      }
+    },
+    {
+      "id": "staar-2022-5-q10",
+      "administration": "staar:2022",
+      "key": "B",
+      "pick": "B",
+      "correct": true,
+      "nInClosure": 3,
+      "minDepthByOption": {
+        "D": 2,
+        "B": 1,
+        "C": 1
+      },
+      "minDepth": 1,
+      "nAtMinDepth": 2,
+      "decidedBy": "tie-break",
+      "lowerCentralAllOptions": "D",
+      "lowerCentralCorrect": false,
+      "uniqueDepth1": false,
+      "keyInClosure": true,
+      "judgmentKind": "one_operation",
+      "judgment": "6*0.93 = 5.58 at depth 1.",
+      "stem": "A man bought 6 cans of tuna. Each can of tuna cost $0.93. What is the total amount of money the man spent on the cans of tuna?",
+      "choices": {
+        "A": "$4.98",
+        "B": "$5.58",
+        "C": "$6.93",
+        "D": "$5.48 30842_3"
+      }
+    },
+    {
+      "id": "staar-2022-5-q15",
+      "administration": "staar:2022",
+      "key": "D",
+      "pick": "A",
+      "correct": false,
+      "nInClosure": 4,
+      "minDepthByOption": {
+        "C": 2,
+        "D": 2,
+        "B": 2,
+        "A": 1
+      },
+      "minDepth": 1,
+      "nAtMinDepth": 1,
+      "decidedBy": "depth",
+      "lowerCentralAllOptions": "D",
+      "lowerCentralCorrect": true,
+      "uniqueDepth1": true,
+      "keyInClosure": true,
+      "judgmentKind": "parse_artifact",
+      "judgment": "Age-bin labels 10-14,... as seeds; visitor counts are missing from the stem.",
+      "stem": "The frequency table shows the numbers of visitors in different age ranges who visited a children\u2019s museum on Saturday. Age (years) Number of Visitors 10\u201314 15\u201319 20\u201324 25\u201329 30\u201334 35\u201340 0\u20134 5\u20139 Children\u2019s Museum Visitors What is the difference between the number of visitors who were younger than 20 and the number of visitors who were 20 and older?",
+      "choices": {
+        "A": "75",
+        "B": "52",
+        "C": "18",
+        "D": "23 31183_1"
+      }
+    },
+    {
+      "id": "staar-2022-5-q16",
+      "administration": "staar:2022",
+      "key": "A",
+      "pick": "B",
+      "correct": false,
+      "nInClosure": 4,
+      "minDepthByOption": {
+        "B": 1,
+        "D": 2,
+        "A": 2,
+        "C": 2
+      },
+      "minDepth": 1,
+      "nAtMinDepth": 1,
+      "decidedBy": "depth",
+      "lowerCentralAllOptions": "D",
+      "lowerCentralCorrect": false,
+      "uniqueDepth1": true,
+      "keyInClosure": true,
+      "judgmentKind": "coincidence",
+      "judgment": "6*3+21*2+16 is three operations; unique depth-1 hit is the partial 48.",
+      "stem": "A basketball team scored points by making baskets worth different numbers of points during a game. \u2022 The team made 6 baskets worth 3 points each. \u2022 The team made 21 baskets worth 2 points each. \u2022 The team scored 16 points by making baskets worth 1 point each. This equation can be used to find p, the total number of points the basketball team scored during the game. p = 6(3) + 21(2) + 16 What is the total number of points the basketball team scored during the game?",
+      "choices": {
+        "A": "76",
+        "B": "48",
+        "C": "94",
+        "D": "60 30492_1"
+      }
+    },
+    {
+      "id": "staar-2022-5-q17",
+      "administration": "staar:2022",
+      "key": "A",
+      "pick": "A",
+      "correct": true,
+      "nInClosure": 2,
+      "minDepthByOption": {
+        "A": 0,
+        "D": 0
+      },
+      "minDepth": 0,
+      "nAtMinDepth": 2,
+      "decidedBy": "tie-break",
+      "lowerCentralAllOptions": "A",
+      "lowerCentralCorrect": true,
+      "uniqueDepth1": false,
+      "keyInClosure": true,
+      "judgmentKind": "coincidence",
+      "judgment": "Option text contains the table +5; A and D parse as 5 at depth 0.",
+      "stem": "Elsa and a group of her friends always sit together at lunch. Every day students join them at the table where they sit. The table below shows the relationship between the number of students joining Elsa and her friends and the total number of students sitting at the table. Number of Students Joining Day Total Number of Students at the Table Monday Tuesday Wednesday Thursday 3 2 8 5 8 7 13 10 Students at the Lunch Table The type of relationship that exists between the number of students joining and the total number of students at the table is \u2014",
+      "choices": {
+        "A": "an additive relationship, because the pattern is to add 5 to the number of students joining in order to get the total number of students at the table",
+        "B": "a multiplicative relationship, because the total number of students at the table is greater than the number of students joining",
+        "C": "an additive relationship, because the number of students joining is less than the total number of students at the table",
+        "D": "a multiplicative relationship, because the pattern is to multiply the number of students joining by 5 in order to get the total number of students at the table 31274_4"
+      }
+    },
+    {
+      "id": "staar-2022-5-q18",
+      "administration": "staar:2022",
+      "key": "D",
+      "pick": "A",
+      "correct": false,
+      "nInClosure": 3,
+      "minDepthByOption": {
+        "B": 2,
+        "A": 2,
+        "C": 2
+      },
+      "minDepth": 2,
+      "nAtMinDepth": 3,
+      "decidedBy": "tie-break",
+      "lowerCentralAllOptions": "A",
+      "lowerCentralCorrect": false,
+      "uniqueDepth1": false,
+      "keyInClosure": false,
+      "judgmentKind": "coincidence",
+      "judgment": "Figure not OCR'd; 10 and 1 do not one-op to the key 300.",
+      "stem": "The figure shows the base layer of a rectangular prism that Sophie built using blocks. Base Layer \u2022 The prism was made by stacking 10 layers of the blocks. \u2022 Each layer was identical to the base layer. \u2022 Each block has a volume of 1 cubic unit. What is the volume of the rectangular prism that Sophie built?",
+      "choices": {
+        "A": "150 cubic units",
+        "B": "40 cubic units",
+        "C": "180 cubic units",
+        "D": "300 cubic units 30244_3"
+      }
+    },
+    {
+      "id": "staar-2022-5-q21",
+      "administration": "staar:2022",
+      "key": "A",
+      "pick": "D",
+      "correct": false,
+      "nInClosure": 2,
+      "minDepthByOption": {
+        "D": 2,
+        "C": 2
+      },
+      "minDepth": 2,
+      "nAtMinDepth": 2,
+      "decidedBy": "tie-break",
+      "lowerCentralAllOptions": "A",
+      "lowerCentralCorrect": true,
+      "uniqueDepth1": false,
+      "keyInClosure": false,
+      "judgmentKind": "parse_artifact",
+      "judgment": "$4,554 split by a thousands comma into 4 and 554.",
+      "stem": "Tickets for a school event were sold for $18 each. A total of $4,554 was collected from these ticket sales. How many tickets were sold for this event?",
+      "choices": {
+        "A": "253",
+        "B": "254",
+        "C": "268",
+        "D": "230 31930"
+      }
+    },
+    {
+      "id": "staar-2022-5-q23",
+      "administration": "staar:2022",
+      "key": "B",
+      "pick": "B",
+      "correct": true,
+      "nInClosure": 2,
+      "minDepthByOption": {
+        "B": 2,
+        "D": 2
+      },
+      "minDepth": 2,
+      "nAtMinDepth": 2,
+      "decidedBy": "tie-break",
+      "lowerCentralAllOptions": "D",
+      "lowerCentralCorrect": false,
+      "uniqueDepth1": false,
+      "keyInClosure": true,
+      "judgmentKind": "coincidence",
+      "judgment": "3(25+19)+4*3 is a multi-op expression value at depth 2.",
+      "stem": "An expression is given. 3(25 + 19) + 4(3) What is the value of this expression?",
+      "choices": {
+        "A": "294",
+        "B": "144",
+        "C": "408",
+        "D": "168 31262_3"
+      }
+    },
+    {
+      "id": "staar-2022-5-q26",
+      "administration": "staar:2022",
+      "key": "B",
+      "pick": "C",
+      "correct": false,
+      "nInClosure": 4,
+      "minDepthByOption": {
+        "C": 1,
+        "D": 1,
+        "A": 1,
+        "B": 1
+      },
+      "minDepth": 1,
+      "nAtMinDepth": 4,
+      "decidedBy": "tie-break",
+      "lowerCentralAllOptions": "C",
+      "lowerCentralCorrect": false,
+      "uniqueDepth1": false,
+      "keyInClosure": true,
+      "judgmentKind": "coincidence",
+      "judgment": "Budget options parse as $10/$20 from the wording, not a one-op of the story.",
+      "stem": "Penelope earns $450 each month. Penelope made a list of her expenses for the month of May. May Expenses Expense Amount Cell phone $50 Clothing $100 Entertainment $150 Food $120 Savings $50 Which change can Penelope make to balance her budget for the month of May?",
+      "choices": {
+        "A": "Increase her budgeted amount for savings by $20",
+        "B": "Decrease her budgeted amount for entertainment by $20",
+        "C": "Increase her budgeted amount for food by $10",
+        "D": "Decrease her budgeted amount for clothing by $10 31137_4"
+      }
+    },
+    {
+      "id": "staar-2022-5-q35",
+      "administration": "staar:2022",
+      "key": "B",
+      "pick": "B",
+      "correct": true,
+      "nInClosure": 4,
+      "minDepthByOption": {
+        "C": 0,
+        "B": 0,
+        "D": 0,
+        "A": 0
+      },
+      "minDepth": 0,
+      "nAtMinDepth": 4,
+      "decidedBy": "tie-break",
+      "lowerCentralAllOptions": "B",
+      "lowerCentralCorrect": true,
+      "uniqueDepth1": false,
+      "keyInClosure": true,
+      "judgmentKind": "coincidence",
+      "judgment": "PEMDAS options contain the expression numbers 40,5,3,8,1.",
+      "stem": "Which operation should be performed first when simplifying this expression? 40 \u00f7 (5 + 3) \u00d7 8 + 1",
+      "choices": {
+        "A": "40 \u00f7 5 , because it is the first operation when reading left to right",
+        "B": "5 + 3 , because the operation in the parentheses should be performed first",
+        "C": "3 \u00d7 8 , because multiplication should be performed before addition",
+        "D": "8 + 1 , because it is the first operation when reading right to left 31537_4"
+      }
+    }
+  ]
+}

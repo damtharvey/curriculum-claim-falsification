@@ -1,0 +1,260 @@
+{
+  "status": "complete",
+  "label": "exploratory",
+  "modelId": "microsoft/phi-4",
+  "modelRevision": "2db69c1c3e91a05d2c64a3185acfbaf36f744e25",
+  "snapshotPath": "$HOME/.cache/huggingface/hub/models--microsoft--phi-4/snapshots/2db69c1c3e91a05d2c64a3185acfbaf36f744e25",
+  "promptTemplate": {
+    "system": "You answer multiple-choice questions. Reply with only the letter of the correct option.",
+    "choicesOnlyUser": "Pick the letter of the correct answer. You see only the answer options. There is no question stem and no source or exam name.\n\n{options_block}",
+    "withStemUser": "Pick the letter of the correct answer.\n\nQuestion:\n{stem}\n\nOptions:\n{options_block}",
+    "maskedStemUser": "Pick the letter of the correct answer. Numeric quantities in the question have been replaced by [N].\n\nQuestion:\n{stem}\n\nOptions:\n{options_block}",
+    "maskedStemUserV2": "Pick the letter of the correct answer. Given quantities, named figure types, and variable bindings in the question have been replaced by [N].\n\nQuestion:\n{stem}\n\nOptions:\n{options_block}",
+    "scoring": "Apply the chat template with add_generation_prompt=True. Take next-token log-softmax. For each option letter, take the max log-probability of the bare letter token and the leading-space letter token. Greedy argmax over those letters. Ties keep the earlier option."
+  },
+  "promptMode": "with-stem",
+  "maskVersion": 1,
+  "minMaskedTokenCount": 0,
+  "permuteOptionsSeed": null,
+  "filter": {
+    "filter_source": "exports/addendum/choices-only-clean-filter.json",
+    "used_verbatim": true,
+    "kept_ids_source": "exports/addendum/choices-only-clean-item-ids.json",
+    "rules": {
+      "lengthGreaterThan": 120,
+      "countryOrJurisdictionFragment": "(?i)\\b(singapore|singapor|lithuania|lithuani|slovenia|sweden|norway|ukraine|turkey|israel|qatar|armenia|georgia|thailand|malaysia|kazakhstan|romania|croatia|poland|denmark|finland|portugal|serbia|malta|oman|ghana|bahrain|bahra|syria|tunisia|tunis|morocco|azerbaijan|azerbaija|belgium|netherlands|netherla|australia|austria|ireland|spain|slovak|chinese|taipei|hong\\s*kong|hong\\s*ko|new\\s*zeal|united\\s*a|united\\s*ar|russian\\s*f|england-?|internat|palestinian|palestin|northern\\s*ireland|czech\\s*r|iran,?\\s*is)\\b",
+      "examFooter": "(?i)(computations\\.|\\[over\\]|page\\s+\\d+|geometry\\s+[\u2013\u2014-]\\s+(jan|june|aug|august)\\.?|algebra(?:\\s*ii)?\\s+[\u2013\u2014-])",
+      "staarItemCode": "\\b\\d{5}_\\d\\b",
+      "nextItemBleed": "(?i)\\b(which (ordered pair|statement|number)|there are a total of)\\b",
+      "regentsCourseFooter": "(?i)(geometry|algebra i{0,2}|algebra 2)\\s+[\u2013\u2014'\u2032-]\\s+(jan|june|aug)"
+    },
+    "nSelected": 2245,
+    "nKeptBySiblingFilter": 1496,
+    "nDroppedBySiblingFilter": 749,
+    "reasonCounts": {
+      "country-or-jurisdiction-fragment": 147,
+      "timss-percent-correct-suffix": 2,
+      "length>120": 204,
+      "item-code-or-staar-id": 83,
+      "next-item-bleed": 14,
+      "exam-footer": 515
+    },
+    "byCorpus": {
+      "eqao": {
+        "n": 149,
+        "kept": 142
+      },
+      "mcas": {
+        "n": 8,
+        "kept": 8
+      },
+      "naplan": {
+        "n": 16,
+        "kept": 16
+      },
+      "nyregents": {
+        "n": 1448,
+        "kept": 919
+      },
+      "nysed": {
+        "n": 27,
+        "kept": 22
+      },
+      "pisa": {
+        "n": 22,
+        "kept": 21
+      },
+      "staar": {
+        "n": 388,
+        "kept": 246
+      },
+      "timss1995": {
+        "n": 79,
+        "kept": 78
+      },
+      "timss1999": {
+        "n": 25,
+        "kept": 25
+      },
+      "timss2003": {
+        "n": 2,
+        "kept": 2
+      },
+      "timss2011": {
+        "n": 81,
+        "kept": 17
+      }
+    },
+    "note": "Sibling E3 mechanical filter existed on disk. Rules and keep list used verbatim. Items that cannot be scored as a single letter versus key are skipped at score time, not by changing the filter."
+  },
+  "nCleanKeepList": 1496,
+  "nScorable": 606,
+  "nSkippedUnscorableKey": 9,
+  "skippedUnscorableIds": [
+    "timss2011-4-M031071",
+    "pisa2012-PM00AQ01",
+    "eqao-2023-g3-q2",
+    "eqao-2023-g3-q11",
+    "eqao-2023-g6-q3",
+    "eqao-2024-g6-q22",
+    "eqao-2023-g9-q31",
+    "eqao-2025-g9-q1",
+    "eqao-2025-g9-q22"
+  ],
+  "nDroppedUnmaskable": 0,
+  "droppedUnmaskableIds": [],
+  "nBelowMinMaskedTokenCount": 0,
+  "belowMinMaskedTokenCountIds": [],
+  "itemIdsFile": "$REPO_ROOT/exports/addendum-gpu/masked-stem-algebra-primary-item-ids.json",
+  "restrictCells": null,
+  "seed": 20260916,
+  "batchSize": 1,
+  "deviceMap": "cuda",
+  "versions": {
+    "torch": "2.12.1+cu130",
+    "transformers": "4.57.6",
+    "python": "3.12.12",
+    "gpuName": "NVIDIA GeForce RTX 5090",
+    "cuda": "13.0",
+    "dtype": "bfloat16",
+    "attnImplementation": "sdpa",
+    "env": "repository .venv"
+  },
+  "modelLoadSeconds": 1.6642844676971436,
+  "preregistration": "exports/addendum-gpu/masked-stem-preregistration.md",
+  "preregistrationSha256": "af473bb6cd9d46dc74e034f4460d56a808273fe83ffaf457cd7d122c40ae80e8",
+  "withStemSanityPartial": {
+    "n": 606,
+    "passRate": 0.46864686468646866,
+    "ci95": [
+      0.429042904290429,
+      0.5082508250825083
+    ],
+    "chance": 0.25,
+    "meanOneOverK": 0.25,
+    "ciExcludesChance": true,
+    "witnessBarEligible": true
+  },
+  "withStemSanity": {
+    "skipped": true,
+    "reason": "with-stem is the scored channel; no separate 200-item sanity sample"
+  },
+  "overall": {
+    "n": 606,
+    "passRate": 0.46864686468646866,
+    "ci95": [
+      0.429042904290429,
+      0.5082508250825083
+    ],
+    "chance": 0.25,
+    "meanOneOverK": 0.25,
+    "ciExcludesChance": true,
+    "witnessBarEligible": true
+  },
+  "perSource": {
+    "nyregents": {
+      "n": 606,
+      "passRate": 0.46864686468646866,
+      "ci95": [
+        0.429042904290429,
+        0.5082508250825083
+      ],
+      "chance": 0.25,
+      "meanOneOverK": 0.25,
+      "ciExcludesChance": true,
+      "witnessBarEligible": true
+    }
+  },
+  "perCell": {
+    "nyregents::algebra-i": {
+      "n": 358,
+      "passRate": 0.4972067039106145,
+      "ci95": [
+        0.44692737430167595,
+        0.553072625698324
+      ],
+      "chance": 0.25,
+      "meanOneOverK": 0.25,
+      "ciExcludesChance": true,
+      "witnessBarEligible": true
+    },
+    "nyregents::algebra-ii": {
+      "n": 248,
+      "passRate": 0.4274193548387097,
+      "ci95": [
+        0.36693548387096775,
+        0.4879032258064516
+      ],
+      "chance": 0.25,
+      "meanOneOverK": 0.25,
+      "ciExcludesChance": true,
+      "witnessBarEligible": true
+    }
+  },
+  "positionBaseline": {
+    "letter": "C",
+    "rate": 0.2722772277227723,
+    "n": 606,
+    "counts": {
+      "A": 136,
+      "B": 162,
+      "D": 143,
+      "C": 165
+    },
+    "note": "Always pick the most common key letter among scored items."
+  },
+  "cellsLowerCiAboveChance": [
+    {
+      "cell": "nyregents::algebra-i",
+      "n": 358,
+      "passRate": 0.4972067039106145,
+      "ci95": [
+        0.44692737430167595,
+        0.553072625698324
+      ],
+      "chance": 0.25,
+      "meanOneOverK": 0.25,
+      "ciExcludesChance": true,
+      "witnessBarEligible": true
+    },
+    {
+      "cell": "nyregents::algebra-ii",
+      "n": 248,
+      "passRate": 0.4274193548387097,
+      "ci95": [
+        0.36693548387096775,
+        0.4879032258064516
+      ],
+      "chance": 0.25,
+      "meanOneOverK": 0.25,
+      "ciExcludesChance": true,
+      "witnessBarEligible": true
+    }
+  ],
+  "subagentAgreement": {
+    "available": true,
+    "nSubagentScoredOnDisk": 2242,
+    "nOverlap": 606,
+    "note": "User brief mentioned 488 previously scored items; disk now has 2242 per-item subagent rows in scored.jsonl. Agreement uses that full on-disk set. Subagent letters were shuffled; letter agreement maps them back to original option letters.",
+    "agreementOnCorrectness": 0.5544554455445545,
+    "agreementOnOriginalLetter": 0.33828382838283827,
+    "nLetterCompared": 606,
+    "bothCorrectRate": 0.19141914191419143,
+    "localRateOnOverlap": 0.46864686468646866,
+    "subagentRateOnOverlap": 0.35973597359735976
+  },
+  "chosenLetterCounts": {
+    "B": 192,
+    "D": 137,
+    "A": 141,
+    "C": 136
+  },
+  "keyLetterCounts": {
+    "A": 136,
+    "B": 162,
+    "D": 143,
+    "C": 165
+  },
+  "wallTimeSeconds": 54.095057010650635,
+  "scoringSeconds": 52.43077254295349
+}

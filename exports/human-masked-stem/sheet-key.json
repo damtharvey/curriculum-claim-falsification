@@ -1,0 +1,311 @@
+{
+  "writtenAt": "2026-09-16T21:38:25.667470+00:00",
+  "seed": 202609161535,
+  "preregistrationSha256": "ce1352840d7681812957043b7c5a3a86fa649e66bcf633ce5bdaf135ada0662f",
+  "population": "nyregents::algebra-i masked_token_count>=1",
+  "nPopulation": 358,
+  "nSample": 40,
+  "quotas": {
+    "A": 9,
+    "B": 11,
+    "C": 11,
+    "D": 9
+  },
+  "nDrawsUntilAccept": 1,
+  "rejectedDraws": 0,
+  "letterCounts": {
+    "C": 11,
+    "B": 11,
+    "D": 9,
+    "A": 9
+  },
+  "lowerCentralCount": 9,
+  "modalLetterCount": 11,
+  "maskedTokenCountMin": 1,
+  "maskedTokenCountMax": 21,
+  "pick14bRateAll40": 0.425,
+  "chance": 0.25,
+  "modalFrequencyPopulation": 0.2709497206703911,
+  "items": {
+    "1": {
+      "id": "nyregents-algebra-i-2018-aug-q3",
+      "key": "C",
+      "modalLetter": false,
+      "lowerCentral": false,
+      "pick14b": "B"
+    },
+    "2": {
+      "id": "nyregents-algebra-i-2022-jun-q3",
+      "key": "B",
+      "modalLetter": true,
+      "lowerCentral": true,
+      "pick14b": "B"
+    },
+    "3": {
+      "id": "nyregents-algebra-i-unknown-unk-q23",
+      "key": "B",
+      "modalLetter": true,
+      "lowerCentral": true,
+      "pick14b": "B"
+    },
+    "4": {
+      "id": "nyregents-algebra-i-2017-aug-q1",
+      "key": "D",
+      "modalLetter": false,
+      "lowerCentral": false,
+      "pick14b": "D"
+    },
+    "5": {
+      "id": "nyregents-algebra-i-2026-jun-q9",
+      "key": "B",
+      "modalLetter": true,
+      "lowerCentral": false,
+      "pick14b": "D"
+    },
+    "6": {
+      "id": "nyregents-algebra-i-2026-jan-q16",
+      "key": "D",
+      "modalLetter": false,
+      "lowerCentral": false,
+      "pick14b": "D"
+    },
+    "7": {
+      "id": "nyregents-algebra-i-2018-jun-q3",
+      "key": "B",
+      "modalLetter": true,
+      "lowerCentral": false,
+      "pick14b": "B"
+    },
+    "8": {
+      "id": "nyregents-algebra-i-2026-jan-q10",
+      "key": "C",
+      "modalLetter": false,
+      "lowerCentral": false,
+      "pick14b": "C"
+    },
+    "9": {
+      "id": "nyregents-algebra-i-2019-jun-q4",
+      "key": "B",
+      "modalLetter": true,
+      "lowerCentral": false,
+      "pick14b": "C"
+    },
+    "10": {
+      "id": "nyregents-algebra-i-2016-jun-q7",
+      "key": "B",
+      "modalLetter": true,
+      "lowerCentral": true,
+      "pick14b": "B"
+    },
+    "11": {
+      "id": "nyregents-algebra-i-2025-jun-q4",
+      "key": "C",
+      "modalLetter": false,
+      "lowerCentral": false,
+      "pick14b": "D"
+    },
+    "12": {
+      "id": "nyregents-algebra-i-2017-jan-q19",
+      "key": "D",
+      "modalLetter": false,
+      "lowerCentral": false,
+      "pick14b": "A"
+    },
+    "13": {
+      "id": "nyregents-algebra-i-2023-jun-q5",
+      "key": "B",
+      "modalLetter": true,
+      "lowerCentral": false,
+      "pick14b": "C"
+    },
+    "14": {
+      "id": "nyregents-algebra-i-2019-aug-q5",
+      "key": "A",
+      "modalLetter": false,
+      "lowerCentral": true,
+      "pick14b": "B"
+    },
+    "15": {
+      "id": "nyregents-algebra-i-unknown-unk-q22",
+      "key": "D",
+      "modalLetter": false,
+      "lowerCentral": false,
+      "pick14b": "D"
+    },
+    "16": {
+      "id": "nyregents-algebra-i-2017-jan-q21",
+      "key": "A",
+      "modalLetter": false,
+      "lowerCentral": false,
+      "pick14b": "A"
+    },
+    "17": {
+      "id": "nyregents-algebra-i-2019-aug-q22",
+      "key": "A",
+      "modalLetter": false,
+      "lowerCentral": true,
+      "pick14b": "C"
+    },
+    "18": {
+      "id": "nyregents-algebra-i-2015-jan-q4",
+      "key": "A",
+      "modalLetter": false,
+      "lowerCentral": true,
+      "pick14b": "C"
+    },
+    "19": {
+      "id": "nyregents-algebra-i-2026-jan-q23",
+      "key": "C",
+      "modalLetter": false,
+      "lowerCentral": false,
+      "pick14b": "C"
+    },
+    "20": {
+      "id": "nyregents-algebra-i-2017-jun-q17",
+      "key": "C",
+      "modalLetter": false,
+      "lowerCentral": false,
+      "pick14b": "C"
+    },
+    "21": {
+      "id": "nyregents-algebra-i-2025-jan-q12",
+      "key": "C",
+      "modalLetter": false,
+      "lowerCentral": false,
+      "pick14b": "C"
+    },
+    "22": {
+      "id": "nyregents-algebra-i-2018-jan-q14",
+      "key": "A",
+      "modalLetter": false,
+      "lowerCentral": false,
+      "pick14b": "C"
+    },
+    "23": {
+      "id": "nyregents-algebra-i-unknown-unk-q1",
+      "key": "B",
+      "modalLetter": true,
+      "lowerCentral": false,
+      "pick14b": "B"
+    },
+    "24": {
+      "id": "nyregents-algebra-i-2016-jan-q11",
+      "key": "B",
+      "modalLetter": true,
+      "lowerCentral": false,
+      "pick14b": "B"
+    },
+    "25": {
+      "id": "nyregents-algebra-i-2018-aug-q13",
+      "key": "A",
+      "modalLetter": false,
+      "lowerCentral": true,
+      "pick14b": "B"
+    },
+    "26": {
+      "id": "nyregents-algebra-i-2018-jun-q23",
+      "key": "D",
+      "modalLetter": false,
+      "lowerCentral": false,
+      "pick14b": "B"
+    },
+    "27": {
+      "id": "nyregents-algebra-i-2026-jun-q14",
+      "key": "D",
+      "modalLetter": false,
+      "lowerCentral": false,
+      "pick14b": "C"
+    },
+    "28": {
+      "id": "nyregents-algebra-i-2017-aug-q4",
+      "key": "C",
+      "modalLetter": false,
+      "lowerCentral": false,
+      "pick14b": "B"
+    },
+    "29": {
+      "id": "nyregents-algebra-i-2016-jan-q3",
+      "key": "C",
+      "modalLetter": false,
+      "lowerCentral": true,
+      "pick14b": "B"
+    },
+    "30": {
+      "id": "nyregents-algebra-i-2026-aug-q17",
+      "key": "C",
+      "modalLetter": false,
+      "lowerCentral": false,
+      "pick14b": "D"
+    },
+    "31": {
+      "id": "nyregents-algebra-i-2023-jun-q11",
+      "key": "B",
+      "modalLetter": true,
+      "lowerCentral": false,
+      "pick14b": "B"
+    },
+    "32": {
+      "id": "nyregents-algebra-i-2019-jan-q15",
+      "key": "A",
+      "modalLetter": false,
+      "lowerCentral": true,
+      "pick14b": "B"
+    },
+    "33": {
+      "id": "nyregents-algebra-i-2022-aug-q19",
+      "key": "D",
+      "modalLetter": false,
+      "lowerCentral": false,
+      "pick14b": "A"
+    },
+    "34": {
+      "id": "nyregents-algebra-i-2016-jan-q23",
+      "key": "A",
+      "modalLetter": false,
+      "lowerCentral": false,
+      "pick14b": "A"
+    },
+    "35": {
+      "id": "nyregents-algebra-i-2014-aug-q8",
+      "key": "A",
+      "modalLetter": false,
+      "lowerCentral": false,
+      "pick14b": "C"
+    },
+    "36": {
+      "id": "nyregents-algebra-i-2018-aug-q22",
+      "key": "C",
+      "modalLetter": false,
+      "lowerCentral": false,
+      "pick14b": "C"
+    },
+    "37": {
+      "id": "nyregents-algebra-i-2017-aug-q9",
+      "key": "D",
+      "modalLetter": false,
+      "lowerCentral": false,
+      "pick14b": "C"
+    },
+    "38": {
+      "id": "nyregents-algebra-i-2015-jun-q10",
+      "key": "D",
+      "modalLetter": false,
+      "lowerCentral": false,
+      "pick14b": "B"
+    },
+    "39": {
+      "id": "nyregents-algebra-i-2015-jun-q6",
+      "key": "C",
+      "modalLetter": false,
+      "lowerCentral": false,
+      "pick14b": "B"
+    },
+    "40": {
+      "id": "nyregents-algebra-i-2019-jun-q21",
+      "key": "B",
+      "modalLetter": true,
+      "lowerCentral": false,
+      "pick14b": "C"
+    }
+  }
+}

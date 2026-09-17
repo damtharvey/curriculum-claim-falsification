@@ -1,0 +1,765 @@
+{
+  "writtenAt": "2026-09-16T22:00:39Z",
+  "formId": "staar-2016-4-english",
+  "repairVersion": 2,
+  "nSelected": 21,
+  "nScored": 17,
+  "nHits": 10,
+  "rate": 0.5882352941176471,
+  "chance": 0.25,
+  "ci95": [
+    0.35294117647058826,
+    0.8235294117647058
+  ],
+  "clearsBar": true,
+  "allTenHitsSurviveRepair": true,
+  "repairDidNotChangeLeadingNumbersOnHits": true,
+  "parseArtifactHitIds": [
+    "staar-2016-4-q10",
+    "staar-2016-4-q15",
+    "staar-2016-4-q16",
+    "staar-2016-4-q17",
+    "staar-2016-4-q21"
+  ],
+  "cleanHitIds": [
+    "staar-2016-4-q8",
+    "staar-2016-4-q25",
+    "staar-2016-4-q30",
+    "staar-2016-4-q35",
+    "staar-2016-4-q48"
+  ],
+  "cleanSubset": {
+    "definition": "Scored items whose leading parsed number is the option's numeric answer, not a comma split, sentence digit, identical-leading equation, expanded-form head, or ordered-list head.",
+    "n": 9,
+    "nHits": 5,
+    "rate": 0.5555555555555556,
+    "ci95": [
+      0.2222222222222222,
+      0.8888888888888888
+    ],
+    "clearsBar": false,
+    "itemIds": [
+      "staar-2016-4-q3",
+      "staar-2016-4-q8",
+      "staar-2016-4-q23",
+      "staar-2016-4-q25",
+      "staar-2016-4-q30",
+      "staar-2016-4-q32",
+      "staar-2016-4-q35",
+      "staar-2016-4-q45",
+      "staar-2016-4-q48"
+    ]
+  },
+  "reading": "All 10 version-1 hits remain hits after the version-2 last-option repair (leading numbers on those items did not change). Five of the 10 hits are parse artifacts (q10 and q21 identical leading 400/2; q15 thousands comma 1,346\u21921; q16 first digit in a sentence; q17 thousands comma 2,250\u21922). On the 9 clean scored items the rate is 5/9 = 0.556, CI [0.222, 0.889], which does not clear. The full repaired 10/17 = 0.588, CI [0.353, 0.824], still clears, but that clear is mixed with artifacts. Because the clean subset does not clear, this is not reported as an unregistered observation on the negative control and is not a witness.",
+  "items": [
+    {
+      "id": "staar-2016-4-q3",
+      "question": 3,
+      "choices": {
+        "A": "82\u00b0",
+        "B": "49\u00b0",
+        "C": "180\u00b0",
+        "D": "131\u00b0"
+      },
+      "parsedLeadingNumbers": [
+        {
+          "letter": "B",
+          "value": 49.0
+        },
+        {
+          "letter": "A",
+          "value": 82.0
+        },
+        {
+          "letter": "D",
+          "value": 131.0
+        },
+        {
+          "letter": "C",
+          "value": 180.0
+        }
+      ],
+      "nNumericOptions": 4,
+      "scored": true,
+      "lowerCentralPick": "A",
+      "key": "D",
+      "hit": false,
+      "parseArtifact": false,
+      "artifactKind": null,
+      "repairLastOption": true,
+      "stemPreview": "Angle MLN has a measure of 41\u00b0. Angle NLP is a right angle. N P M L What is the measure of angle MLP?"
+    },
+    {
+      "id": "staar-2016-4-q8",
+      "question": 8,
+      "choices": {
+        "A": "18",
+        "B": "20",
+        "C": "19",
+        "D": "21"
+      },
+      "parsedLeadingNumbers": [
+        {
+          "letter": "A",
+          "value": 18.0
+        },
+        {
+          "letter": "C",
+          "value": 19.0
+        },
+        {
+          "letter": "B",
+          "value": 20.0
+        },
+        {
+          "letter": "D",
+          "value": 21.0
+        }
+      ],
+      "nNumericOptions": 4,
+      "scored": true,
+      "lowerCentralPick": "C",
+      "key": "C",
+      "hit": true,
+      "parseArtifact": false,
+      "artifactKind": null,
+      "repairLastOption": true,
+      "stemPreview": "action figures. How many cases does Eric need to hold all his action figures?"
+    },
+    {
+      "id": "staar-2016-4-q9",
+      "question": 9,
+      "choices": {
+        "A": "France, Brazil, Japan, Italy, South Africa",
+        "B": "South Africa, Italy, Japan, Brazil, France",
+        "C": "France, South Africa, Italy, Japan, Brazil",
+        "D": "South Africa, Italy, Japan, France, Brazil"
+      },
+      "parsedLeadingNumbers": [],
+      "nNumericOptions": 0,
+      "scored": false,
+      "lowerCentralPick": null,
+      "key": "B",
+      "hit": null,
+      "parseArtifact": false,
+      "artifactKind": null,
+      "repairLastOption": false,
+      "stemPreview": "The table below shows the length of the railway network in each of five countries. Which list shows these countries in order from shortest to longest railway network?"
+    },
+    {
+      "id": "staar-2016-4-q10",
+      "question": 10,
+      "choices": {
+        "A": "x = 400 + 400 + 125",
+        "B": "x = 400 + 125",
+        "C": "x = 400 + 400 \u0010 125",
+        "D": "x = 400 \u0010 125"
+      },
+      "parsedLeadingNumbers": [
+        {
+          "letter": "A",
+          "value": 400.0
+        },
+        {
+          "letter": "B",
+          "value": 400.0
+        },
+        {
+          "letter": "C",
+          "value": 400.0
+        },
+        {
+          "letter": "D",
+          "value": 400.0
+        }
+      ],
+      "nNumericOptions": 4,
+      "scored": true,
+      "lowerCentralPick": "A",
+      "key": "A",
+      "hit": true,
+      "parseArtifact": true,
+      "artifactKind": "identical_leading_equation",
+      "repairLastOption": false,
+      "stemPreview": "A factory makes 400 refrigerators every day. The factory makes 125 more stoves per day than refrigerators. Which equation can be used to find x, the total number of refrigerators and stoves the factory makes in one day?"
+    },
+    {
+      "id": "staar-2016-4-q15",
+      "question": 15,
+      "choices": {
+        "A": "654",
+        "B": "1,346",
+        "C": "874",
+        "D": "764"
+      },
+      "parsedLeadingNumbers": [
+        {
+          "letter": "B",
+          "value": 1.0
+        },
+        {
+          "letter": "A",
+          "value": 654.0
+        },
+        {
+          "letter": "D",
+          "value": 764.0
+        },
+        {
+          "letter": "C",
+          "value": 874.0
+        }
+      ],
+      "nNumericOptions": 4,
+      "scored": true,
+      "lowerCentralPick": "A",
+      "key": "A",
+      "hit": true,
+      "parseArtifact": true,
+      "artifactKind": "thousands_comma_leading",
+      "repairLastOption": false,
+      "stemPreview": "The list shows the number of trees Isaiah planted in three years. \u2022 He planted 521 trees in the first year. \u2022 He planted 387 trees in the second year. \u2022 He planted 438 trees in the third year. Isaiah wants to plant a tot"
+    },
+    {
+      "id": "staar-2016-4-q16",
+      "question": 16,
+      "choices": {
+        "A": "The digit 9 has a value of (9 \u00d7 100).",
+        "B": "The digit 4 has a value of (4 \u00d7 100).",
+        "C": "The digit 8 has a value of (8 \u00d7 0.1).",
+        "D": "The digit 2 has a value of (2 \u00d7 10)."
+      },
+      "parsedLeadingNumbers": [
+        {
+          "letter": "D",
+          "value": 2.0
+        },
+        {
+          "letter": "B",
+          "value": 4.0
+        },
+        {
+          "letter": "C",
+          "value": 8.0
+        },
+        {
+          "letter": "A",
+          "value": 9.0
+        }
+      ],
+      "nNumericOptions": 4,
+      "scored": true,
+      "lowerCentralPick": "B",
+      "key": "B",
+      "hit": true,
+      "parseArtifact": true,
+      "artifactKind": "sentence_first_digit",
+      "repairLastOption": false,
+      "stemPreview": "Which statement about the number 726,483.19 is true?"
+    },
+    {
+      "id": "staar-2016-4-q17",
+      "question": 17,
+      "choices": {
+        "A": "4,500 square millimeters",
+        "B": "9,000 square millimeters",
+        "C": "2,250 square millimeters",
+        "D": "1,125 square millimeters"
+      },
+      "parsedLeadingNumbers": [
+        {
+          "letter": "D",
+          "value": 1.0
+        },
+        {
+          "letter": "C",
+          "value": 2.0
+        },
+        {
+          "letter": "A",
+          "value": 4.0
+        },
+        {
+          "letter": "B",
+          "value": 9.0
+        }
+      ],
+      "nNumericOptions": 4,
+      "scored": true,
+      "lowerCentralPick": "C",
+      "key": "C",
+      "hit": true,
+      "parseArtifact": true,
+      "artifactKind": "thousands_comma_leading",
+      "repairLastOption": true,
+      "stemPreview": "Sebastian had a rectangular piece of paper that was 90 mm long and 50 mm wide. He cut the paper in half. What is the area of each half of the paper in square millimeters?"
+    },
+    {
+      "id": "staar-2016-4-q21",
+      "question": 21,
+      "choices": {
+        "A": "2 \u00d7 45 + 5 = f",
+        "B": "2 \u00d7 45 \u0010 5 = f",
+        "C": "2 + 45 \u00d7 5 = f",
+        "D": "2 + 45 + 5 = f"
+      },
+      "parsedLeadingNumbers": [
+        {
+          "letter": "A",
+          "value": 2.0
+        },
+        {
+          "letter": "B",
+          "value": 2.0
+        },
+        {
+          "letter": "C",
+          "value": 2.0
+        },
+        {
+          "letter": "D",
+          "value": 2.0
+        }
+      ],
+      "nNumericOptions": 4,
+      "scored": true,
+      "lowerCentralPick": "A",
+      "key": "A",
+      "hit": true,
+      "parseArtifact": true,
+      "artifactKind": "identical_leading_equation",
+      "repairLastOption": true,
+      "stemPreview": "Mark had 45 football cards. Josh had twice as many football cards as Mark. Josh then bought 5 more football cards. Which equation can be used to find f, the number of football cards Josh has now?"
+    },
+    {
+      "id": "staar-2016-4-q23",
+      "question": 23,
+      "choices": {
+        "A": "180\u00b0",
+        "B": "109\u00b0",
+        "C": "91\u00b0",
+        "D": "89\u00b0"
+      },
+      "parsedLeadingNumbers": [
+        {
+          "letter": "D",
+          "value": 89.0
+        },
+        {
+          "letter": "C",
+          "value": 91.0
+        },
+        {
+          "letter": "B",
+          "value": 109.0
+        },
+        {
+          "letter": "A",
+          "value": 180.0
+        }
+      ],
+      "nNumericOptions": 4,
+      "scored": true,
+      "lowerCentralPick": "C",
+      "key": "D",
+      "hit": false,
+      "parseArtifact": false,
+      "artifactKind": null,
+      "repairLastOption": false,
+      "stemPreview": "What is the measure of angle XYZ to the nearest degree?"
+    },
+    {
+      "id": "staar-2016-4-q25",
+      "question": 25,
+      "choices": {
+        "A": "$27.50",
+        "B": "$50.00",
+        "C": "$22.50",
+        "D": "$40.00"
+      },
+      "parsedLeadingNumbers": [
+        {
+          "letter": "C",
+          "value": 22.5
+        },
+        {
+          "letter": "A",
+          "value": 27.5
+        },
+        {
+          "letter": "D",
+          "value": 40.0
+        },
+        {
+          "letter": "B",
+          "value": 50.0
+        }
+      ],
+      "nNumericOptions": 4,
+      "scored": true,
+      "lowerCentralPick": "A",
+      "key": "A",
+      "hit": true,
+      "parseArtifact": false,
+      "artifactKind": null,
+      "repairLastOption": false,
+      "stemPreview": "Gwen bought an old table. She repaired it and painted it so that it looked new. Then she sold the table. Gwen made this list about what she did. \u2022 Price paid for old table: $10.00 \u2022 Cost to repair: $5.00 \u2022 Cost to paint:"
+    },
+    {
+      "id": "staar-2016-4-q27",
+      "question": 27,
+      "choices": {
+        "A": "1.46 m",
+        "B": "1.63 m 1.46 m 1.5 m 1.4 m",
+        "C": "1.4 m 1.46 m 1.5 m 1.63 m",
+        "D": "1.63 m 1.5 m 1.46 m 1.4 m"
+      },
+      "parsedLeadingNumbers": [
+        {
+          "letter": "C",
+          "value": 1.4
+        },
+        {
+          "letter": "A",
+          "value": 1.46
+        },
+        {
+          "letter": "B",
+          "value": 1.63
+        },
+        {
+          "letter": "D",
+          "value": 1.63
+        }
+      ],
+      "nNumericOptions": 4,
+      "scored": true,
+      "lowerCentralPick": "A",
+      "key": "D",
+      "hit": false,
+      "parseArtifact": true,
+      "artifactKind": "ordered_list_leading",
+      "repairLastOption": false,
+      "stemPreview": "The distances in meters that four students jumped are modeled below. Which list shows these distances in order from greatest to least?"
+    },
+    {
+      "id": "staar-2016-4-q29",
+      "question": 29,
+      "choices": {
+        "A": "Variable expenses, because the amount usually changes every month",
+        "B": "Variable expenses, because the payment is not due every month",
+        "C": "Fixed expenses, because the amount is usually the same every month",
+        "D": "Fixed expenses, because the car is usually paid for after one month"
+      },
+      "parsedLeadingNumbers": [],
+      "nNumericOptions": 0,
+      "scored": false,
+      "lowerCentralPick": null,
+      "key": "C",
+      "hit": null,
+      "parseArtifact": false,
+      "artifactKind": null,
+      "repairLastOption": false,
+      "stemPreview": "Some people borrow money to buy cars. They have to make car payments to pay back the money they borrowed. What kind of expenses are most car payments?"
+    },
+    {
+      "id": "staar-2016-4-q30",
+      "question": 30,
+      "choices": {
+        "A": "273",
+        "B": "223",
+        "C": "373",
+        "D": "348"
+      },
+      "parsedLeadingNumbers": [
+        {
+          "letter": "B",
+          "value": 223.0
+        },
+        {
+          "letter": "A",
+          "value": 273.0
+        },
+        {
+          "letter": "D",
+          "value": 348.0
+        },
+        {
+          "letter": "C",
+          "value": 373.0
+        }
+      ],
+      "nNumericOptions": 4,
+      "scored": true,
+      "lowerCentralPick": "A",
+      "key": "A",
+      "hit": true,
+      "parseArtifact": false,
+      "artifactKind": null,
+      "repairLastOption": true,
+      "stemPreview": "There are 1,092 people who work in an office building. The building has 4 floors, and the same number of people work on each floor. How many people work on each floor?"
+    },
+    {
+      "id": "staar-2016-4-q32",
+      "question": 32,
+      "choices": {
+        "A": "60",
+        "B": "40",
+        "C": "20",
+        "D": "30"
+      },
+      "parsedLeadingNumbers": [
+        {
+          "letter": "C",
+          "value": 20.0
+        },
+        {
+          "letter": "D",
+          "value": 30.0
+        },
+        {
+          "letter": "B",
+          "value": 40.0
+        },
+        {
+          "letter": "A",
+          "value": 60.0
+        }
+      ],
+      "nNumericOptions": 4,
+      "scored": true,
+      "lowerCentralPick": "D",
+      "key": "A",
+      "hit": false,
+      "parseArtifact": false,
+      "artifactKind": null,
+      "repairLastOption": false,
+      "stemPreview": "Jorge swam a total of 173 minutes during 3 days. He swam the same number of minutes each day. Which of the following is the best estimate of the number of minutes Jorge swam each day?"
+    },
+    {
+      "id": "staar-2016-4-q35",
+      "question": 35,
+      "choices": {
+        "A": "3.075",
+        "B": "3.75",
+        "C": "0.375",
+        "D": "300.75"
+      },
+      "parsedLeadingNumbers": [
+        {
+          "letter": "C",
+          "value": 0.375
+        },
+        {
+          "letter": "A",
+          "value": 3.075
+        },
+        {
+          "letter": "B",
+          "value": 3.75
+        },
+        {
+          "letter": "D",
+          "value": 300.75
+        }
+      ],
+      "nNumericOptions": 4,
+      "scored": true,
+      "lowerCentralPick": "A",
+      "key": "A",
+      "hit": true,
+      "parseArtifact": false,
+      "artifactKind": null,
+      "repairLastOption": true,
+      "stemPreview": "Garrett has a baseball and a bat like the ones shown in the picture. Bat Baseball Which measurement best describes the length of the bat? A 35 in. B 35 m C 35 ft D 35 mm 36 is equivalent to this number?"
+    },
+    {
+      "id": "staar-2016-4-q38",
+      "question": 38,
+      "choices": {
+        "A": "4 kg",
+        "B": "4,000 kg",
+        "C": "9 kg",
+        "D": "9,000 kg"
+      },
+      "parsedLeadingNumbers": [
+        {
+          "letter": "A",
+          "value": 4.0
+        },
+        {
+          "letter": "B",
+          "value": 4.0
+        },
+        {
+          "letter": "C",
+          "value": 9.0
+        },
+        {
+          "letter": "D",
+          "value": 9.0
+        }
+      ],
+      "nNumericOptions": 4,
+      "scored": true,
+      "lowerCentralPick": "A",
+      "key": "C",
+      "hit": false,
+      "parseArtifact": true,
+      "artifactKind": "thousands_comma_leading",
+      "repairLastOption": true,
+      "stemPreview": "Tyra opened a new bag of birdseed and filled 3 bird feeders. She put 2,500 grams of birdseed into each feeder. There were 1,500 grams of birdseed left in the bag. What was the mass of the bag of birdseed in kilograms bef"
+    },
+    {
+      "id": "staar-2016-4-q42",
+      "question": 42,
+      "choices": {
+        "A": "100,000,000 + 40,000,000 + 5,000,000 + 700,000 + 80,000",
+        "B": "100,000,000 + 40,000,000 + 500,000 + 70,000 + 8,000",
+        "C": "10,000,000 + 4,000,000 + 500,000 + 70,000 + 8,000",
+        "D": "100,000,000 + 40,000,000 + 500 + 70 + 8"
+      },
+      "parsedLeadingNumbers": [
+        {
+          "letter": "C",
+          "value": 10.0
+        },
+        {
+          "letter": "A",
+          "value": 100.0
+        },
+        {
+          "letter": "B",
+          "value": 100.0
+        },
+        {
+          "letter": "D",
+          "value": 100.0
+        }
+      ],
+      "nNumericOptions": 4,
+      "scored": true,
+      "lowerCentralPick": "A",
+      "key": "B",
+      "hit": false,
+      "parseArtifact": true,
+      "artifactKind": "expanded_form_first_addend",
+      "repairLastOption": false,
+      "stemPreview": "In 2008 the total number of cell phone users in Indonesia was about 140,578,000. Which expression has the same value as 140,578,000?"
+    },
+    {
+      "id": "staar-2016-4-q43",
+      "question": 43,
+      "choices": {
+        "A": "Figures Q and S",
+        "B": "Figures R and S",
+        "C": "Figures P and R",
+        "D": "Figures P and Q"
+      },
+      "parsedLeadingNumbers": [],
+      "nNumericOptions": 0,
+      "scored": false,
+      "lowerCentralPick": null,
+      "key": "C",
+      "hit": null,
+      "parseArtifact": false,
+      "artifactKind": null,
+      "repairLastOption": true,
+      "stemPreview": "Four figures are shown. Which figures appear to be rectangles?"
+    },
+    {
+      "id": "staar-2016-4-q44",
+      "question": 44,
+      "choices": {
+        "A": "Sergio completed more, because >",
+        "B": "Julius completed more, because >",
+        "C": "Sergio completed more, because >",
+        "D": "Julius completed more, because >"
+      },
+      "parsedLeadingNumbers": [],
+      "nNumericOptions": 0,
+      "scored": false,
+      "lowerCentralPick": null,
+      "key": "A",
+      "hit": null,
+      "parseArtifact": false,
+      "artifactKind": null,
+      "repairLastOption": false,
+      "stemPreview": "Sergio completed of a project. Julius completed of an identical project. Each student shaded a model to represent the fraction of the project he completed. Which student completed more of his project?"
+    },
+    {
+      "id": "staar-2016-4-q45",
+      "question": 45,
+      "choices": {
+        "A": "864",
+        "B": "192",
+        "C": "354",
+        "D": "144"
+      },
+      "parsedLeadingNumbers": [
+        {
+          "letter": "D",
+          "value": 144.0
+        },
+        {
+          "letter": "B",
+          "value": 192.0
+        },
+        {
+          "letter": "C",
+          "value": 354.0
+        },
+        {
+          "letter": "A",
+          "value": 864.0
+        }
+      ],
+      "nNumericOptions": 4,
+      "scored": true,
+      "lowerCentralPick": "B",
+      "key": "D",
+      "hit": false,
+      "parseArtifact": false,
+      "artifactKind": null,
+      "repairLastOption": false,
+      "stemPreview": "Mr. Conrad makes chess pieces. A chess club ordered a set of chess pieces for each of its members. \u2022 Each set has 32 chess pieces. \u2022 There are 27 members of the chess club. \u2022 Mr. Conrad put these chess pieces in 6 boxes "
+    },
+    {
+      "id": "staar-2016-4-q48",
+      "question": 48,
+      "choices": {
+        "A": "16.12 cm",
+        "B": "17.2 cm",
+        "C": "18.8 cm",
+        "D": "17.8 cm"
+      },
+      "parsedLeadingNumbers": [
+        {
+          "letter": "A",
+          "value": 16.12
+        },
+        {
+          "letter": "B",
+          "value": 17.2
+        },
+        {
+          "letter": "D",
+          "value": 17.8
+        },
+        {
+          "letter": "C",
+          "value": 18.8
+        }
+      ],
+      "nNumericOptions": 4,
+      "scored": true,
+      "lowerCentralPick": "B",
+      "key": "B",
+      "hit": true,
+      "parseArtifact": false,
+      "artifactKind": null,
+      "repairLastOption": false,
+      "stemPreview": "Point X on the number line below represents the height of a puppy in centimeters. 19 X 16 15 What measurement does point X represent on the number line?"
+    }
+  ]
+}

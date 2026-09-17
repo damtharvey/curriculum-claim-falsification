@@ -1,0 +1,5520 @@
+{
+  "experiment": "E2",
+  "question": "Do classic mechanical test-wiseness cues that were missing from the a priori catalog clear the witness bar on frozen items?",
+  "existingCatalogAlreadyPresent": [
+    "longest-option",
+    "stem-option-overlap",
+    "avoid-absolute-terms",
+    "middle-value-option",
+    "position-c"
+  ],
+  "newPrograms": [
+    "most-qualified-hedged-option",
+    "convergence-option",
+    "grammatical-fit-option",
+    "mean-of-other-options"
+  ],
+  "citations": {
+    "most-qualified-hedged-option": "Millman, Bishop, and Ebel (1965) specific determiners / qualified language; Haladyna, Downing, and Rodriguez (2002) guideline against absolute wording and on similar-specificity options. Mechanical: unique maximum hedge-token count.",
+    "convergence-option": "Millman, Bishop, and Ebel (1965) convergence strategy: choose the option that shares the most elements with the other options. Applied to word tokens and, for numeric options, the parsed number and digit string.",
+    "grammatical-fit-option": "Millman, Bishop, and Ebel (1965) grammatical cue; Haladyna, Downing, and Rodriguez (2002) stem-option grammatical consistency. Applies only when the stem ends in a/an and exactly one option uniquely fits.",
+    "mean-of-other-options": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers."
+  },
+  "existingFamilyTests": 105,
+  "nNewFamilyTests": 22,
+  "nFamilyTestsCombined": 127,
+  "nClearsPerCellBar": 1,
+  "nHolmRejectNewFamily": 0,
+  "nBonferroniRejectNewFamily": 0,
+  "bonferroniThresholdNewFamily": 0.002272727272727273,
+  "bonferroniThresholdCombinedFamily": 0.00039370078740157485,
+  "clears": [
+    {
+      "programId": "mean-of-other-options",
+      "authority": "nyregents",
+      "claim": "geometry",
+      "nScored": 156,
+      "nCorrect": 51,
+      "passRate": 0.3269230769230769,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.2564102564102564,
+        0.40384615384615385
+      ],
+      "clusterBootstrapCi95": [
+        0.2708333333333333,
+        0.38
+      ],
+      "nAdministrations": 27,
+      "binomialPGreater": 0.01875945996468392,
+      "clearsBar": true,
+      "inFamily": true,
+      "citation": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers.",
+      "holmReject05NewFamily": false,
+      "bonferroniReject05NewFamily": false,
+      "bonferroniReject05CombinedFamily": false
+    }
+  ],
+  "familyRows": [
+    {
+      "programId": "convergence-option",
+      "authority": "eqao",
+      "claim": "g9",
+      "nScored": 14,
+      "nCorrect": 3,
+      "passRate": 0.21428571428571427,
+      "chanceRate": 0.255952380952381,
+      "ci95": [
+        0.0,
+        0.42857142857142855
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.3333333333333333
+      ],
+      "nAdministrations": 3,
+      "binomialPGreater": 0.735689381597407,
+      "clearsBar": false,
+      "inFamily": true,
+      "citation": "Millman, Bishop, and Ebel (1965) convergence strategy: choose the option that shares the most elements with the other options. Applied to word tokens and, for numeric options, the parsed number and digit string.",
+      "holmReject05NewFamily": false,
+      "bonferroniReject05NewFamily": false,
+      "bonferroniReject05CombinedFamily": false
+    },
+    {
+      "programId": "convergence-option",
+      "authority": "nyregents",
+      "claim": "algebra-i",
+      "nScored": 81,
+      "nCorrect": 21,
+      "passRate": 0.25925925925925924,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.16049382716049382,
+        0.35802469135802467
+      ],
+      "clusterBootstrapCi95": [
+        0.18518518518518517,
+        0.3372093023255814
+      ],
+      "nAdministrations": 31,
+      "binomialPGreater": 0.46592932018703437,
+      "clearsBar": false,
+      "inFamily": true,
+      "citation": "Millman, Bishop, and Ebel (1965) convergence strategy: choose the option that shares the most elements with the other options. Applied to word tokens and, for numeric options, the parsed number and digit string.",
+      "holmReject05NewFamily": false,
+      "bonferroniReject05NewFamily": false,
+      "bonferroniReject05CombinedFamily": false
+    },
+    {
+      "programId": "convergence-option",
+      "authority": "nyregents",
+      "claim": "algebra-ii",
+      "nScored": 70,
+      "nCorrect": 21,
+      "passRate": 0.3,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.2,
+        0.4142857142857143
+      ],
+      "clusterBootstrapCi95": [
+        0.20588235294117646,
+        0.39473684210526316
+      ],
+      "nAdministrations": 25,
+      "binomialPGreater": 0.20174054258531238,
+      "clearsBar": false,
+      "inFamily": true,
+      "citation": "Millman, Bishop, and Ebel (1965) convergence strategy: choose the option that shares the most elements with the other options. Applied to word tokens and, for numeric options, the parsed number and digit string.",
+      "holmReject05NewFamily": false,
+      "bonferroniReject05NewFamily": false,
+      "bonferroniReject05CombinedFamily": false
+    },
+    {
+      "programId": "convergence-option",
+      "authority": "nyregents",
+      "claim": "geometry",
+      "nScored": 32,
+      "nCorrect": 12,
+      "passRate": 0.375,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.21875,
+        0.5625
+      ],
+      "clusterBootstrapCi95": [
+        0.1935483870967742,
+        0.5757575757575758
+      ],
+      "nAdministrations": 18,
+      "binomialPGreater": 0.08043041372940024,
+      "clearsBar": false,
+      "inFamily": true,
+      "citation": "Millman, Bishop, and Ebel (1965) convergence strategy: choose the option that shares the most elements with the other options. Applied to word tokens and, for numeric options, the parsed number and digit string.",
+      "holmReject05NewFamily": false,
+      "bonferroniReject05NewFamily": false,
+      "bonferroniReject05CombinedFamily": false
+    },
+    {
+      "programId": "convergence-option",
+      "authority": "timss",
+      "claim": "reasoning",
+      "nScored": 16,
+      "nCorrect": 8,
+      "passRate": 0.5,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.25,
+        0.75
+      ],
+      "clusterBootstrapCi95": [
+        0.25,
+        0.8333333333333334
+      ],
+      "nAdministrations": 4,
+      "binomialPGreater": 0.027129956288263254,
+      "clearsBar": false,
+      "inFamily": true,
+      "citation": "Millman, Bishop, and Ebel (1965) convergence strategy: choose the option that shares the most elements with the other options. Applied to word tokens and, for numeric options, the parsed number and digit string.",
+      "holmReject05NewFamily": false,
+      "bonferroniReject05NewFamily": false,
+      "bonferroniReject05CombinedFamily": false
+    },
+    {
+      "programId": "mean-of-other-options",
+      "authority": "acara",
+      "claim": "y7-numeracy",
+      "nScored": 11,
+      "nCorrect": 4,
+      "passRate": 0.36363636363636365,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.09090909090909091,
+        0.7272727272727273
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.4444444444444444
+      ],
+      "nAdministrations": 2,
+      "binomialPGreater": 0.2866954803466799,
+      "clearsBar": false,
+      "inFamily": true,
+      "citation": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers.",
+      "holmReject05NewFamily": false,
+      "bonferroniReject05NewFamily": false,
+      "bonferroniReject05CombinedFamily": false
+    },
+    {
+      "programId": "mean-of-other-options",
+      "authority": "eqao",
+      "claim": "g3",
+      "nScored": 22,
+      "nCorrect": 6,
+      "passRate": 0.2727272727272727,
+      "chanceRate": 0.2537878787878788,
+      "ci95": [
+        0.09090909090909091,
+        0.45454545454545453
+      ],
+      "clusterBootstrapCi95": [
+        0.25,
+        0.3333333333333333
+      ],
+      "nAdministrations": 3,
+      "binomialPGreater": 0.49975393440559385,
+      "clearsBar": false,
+      "inFamily": true,
+      "citation": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers.",
+      "holmReject05NewFamily": false,
+      "bonferroniReject05NewFamily": false,
+      "bonferroniReject05CombinedFamily": false
+    },
+    {
+      "programId": "mean-of-other-options",
+      "authority": "eqao",
+      "claim": "g6",
+      "nScored": 29,
+      "nCorrect": 6,
+      "passRate": 0.20689655172413793,
+      "chanceRate": 0.25517241379310346,
+      "ci95": [
+        0.06896551724137931,
+        0.3793103448275862
+      ],
+      "clusterBootstrapCi95": [
+        0.1,
+        0.3
+      ],
+      "nAdministrations": 3,
+      "binomialPGreater": 0.7870395068599002,
+      "clearsBar": false,
+      "inFamily": true,
+      "citation": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers.",
+      "holmReject05NewFamily": false,
+      "bonferroniReject05NewFamily": false,
+      "bonferroniReject05CombinedFamily": false
+    },
+    {
+      "programId": "mean-of-other-options",
+      "authority": "eqao",
+      "claim": "g9",
+      "nScored": 17,
+      "nCorrect": 8,
+      "passRate": 0.47058823529411764,
+      "chanceRate": 0.25980392156862747,
+      "ci95": [
+        0.23529411764705882,
+        0.7058823529411765
+      ],
+      "clusterBootstrapCi95": [
+        0.25,
+        0.5555555555555556
+      ],
+      "nAdministrations": 3,
+      "binomialPGreater": 0.04967746845933141,
+      "clearsBar": false,
+      "inFamily": true,
+      "citation": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers.",
+      "holmReject05NewFamily": false,
+      "bonferroniReject05NewFamily": false,
+      "bonferroniReject05CombinedFamily": false
+    },
+    {
+      "programId": "mean-of-other-options",
+      "authority": "nyregents",
+      "claim": "algebra-i",
+      "nScored": 152,
+      "nCorrect": 39,
+      "passRate": 0.2565789473684211,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.18421052631578946,
+        0.32894736842105265
+      ],
+      "clusterBootstrapCi95": [
+        0.19161676646706588,
+        0.32919254658385094
+      ],
+      "nAdministrations": 32,
+      "binomialPGreater": 0.456553943561518,
+      "clearsBar": false,
+      "inFamily": true,
+      "citation": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers.",
+      "holmReject05NewFamily": false,
+      "bonferroniReject05NewFamily": false,
+      "bonferroniReject05CombinedFamily": false
+    },
+    {
+      "programId": "mean-of-other-options",
+      "authority": "nyregents",
+      "claim": "algebra-ii",
+      "nScored": 135,
+      "nCorrect": 37,
+      "passRate": 0.2740740740740741,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.2074074074074074,
+        0.34074074074074073
+      ],
+      "clusterBootstrapCi95": [
+        0.1889763779527559,
+        0.3700787401574803
+      ],
+      "nAdministrations": 25,
+      "binomialPGreater": 0.288420911137924,
+      "clearsBar": false,
+      "inFamily": true,
+      "citation": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers.",
+      "holmReject05NewFamily": false,
+      "bonferroniReject05NewFamily": false,
+      "bonferroniReject05CombinedFamily": false
+    },
+    {
+      "programId": "mean-of-other-options",
+      "authority": "nyregents",
+      "claim": "geometry",
+      "nScored": 156,
+      "nCorrect": 51,
+      "passRate": 0.3269230769230769,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.2564102564102564,
+        0.40384615384615385
+      ],
+      "clusterBootstrapCi95": [
+        0.2708333333333333,
+        0.38
+      ],
+      "nAdministrations": 27,
+      "binomialPGreater": 0.01875945996468392,
+      "clearsBar": true,
+      "inFamily": true,
+      "citation": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers.",
+      "holmReject05NewFamily": false,
+      "bonferroniReject05NewFamily": false,
+      "bonferroniReject05CombinedFamily": false
+    },
+    {
+      "programId": "mean-of-other-options",
+      "authority": "teks",
+      "claim": "alg1",
+      "nScored": 22,
+      "nCorrect": 6,
+      "passRate": 0.2727272727272727,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.09090909090909091,
+        0.45454545454545453
+      ],
+      "clusterBootstrapCi95": [
+        0.16666666666666666,
+        0.3333333333333333
+      ],
+      "nAdministrations": 3,
+      "binomialPGreater": 0.4832025654794165,
+      "clearsBar": false,
+      "inFamily": true,
+      "citation": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers.",
+      "holmReject05NewFamily": false,
+      "bonferroniReject05NewFamily": false,
+      "bonferroniReject05CombinedFamily": false
+    },
+    {
+      "programId": "mean-of-other-options",
+      "authority": "teks",
+      "claim": "g3",
+      "nScored": 22,
+      "nCorrect": 1,
+      "passRate": 0.045454545454545456,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.0,
+        0.13636363636363635
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.125
+      ],
+      "nAdministrations": 3,
+      "binomialPGreater": 0.9982161932843465,
+      "clearsBar": false,
+      "inFamily": true,
+      "citation": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers.",
+      "holmReject05NewFamily": false,
+      "bonferroniReject05NewFamily": false,
+      "bonferroniReject05CombinedFamily": false
+    },
+    {
+      "programId": "mean-of-other-options",
+      "authority": "teks",
+      "claim": "g4",
+      "nScored": 29,
+      "nCorrect": 9,
+      "passRate": 0.3103448275862069,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.13793103448275862,
+        0.4827586206896552
+      ],
+      "clusterBootstrapCi95": [
+        0.25,
+        0.375
+      ],
+      "nAdministrations": 3,
+      "binomialPGreater": 0.2874586034083155,
+      "clearsBar": false,
+      "inFamily": true,
+      "citation": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers.",
+      "holmReject05NewFamily": false,
+      "bonferroniReject05NewFamily": false,
+      "bonferroniReject05CombinedFamily": false
+    },
+    {
+      "programId": "mean-of-other-options",
+      "authority": "teks",
+      "claim": "g5",
+      "nScored": 39,
+      "nCorrect": 11,
+      "passRate": 0.28205128205128205,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.15384615384615385,
+        0.4358974358974359
+      ],
+      "clusterBootstrapCi95": [
+        0.1875,
+        0.35714285714285715
+      ],
+      "nAdministrations": 3,
+      "binomialPGreater": 0.3800048353821498,
+      "clearsBar": false,
+      "inFamily": true,
+      "citation": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers.",
+      "holmReject05NewFamily": false,
+      "bonferroniReject05NewFamily": false,
+      "bonferroniReject05CombinedFamily": false
+    },
+    {
+      "programId": "mean-of-other-options",
+      "authority": "teks",
+      "claim": "g6",
+      "nScored": 28,
+      "nCorrect": 8,
+      "passRate": 0.2857142857142857,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.14285714285714285,
+        0.4642857142857143
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.46153846153846156
+      ],
+      "nAdministrations": 3,
+      "binomialPGreater": 0.40025683281803426,
+      "clearsBar": false,
+      "inFamily": true,
+      "citation": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers.",
+      "holmReject05NewFamily": false,
+      "bonferroniReject05NewFamily": false,
+      "bonferroniReject05CombinedFamily": false
+    },
+    {
+      "programId": "mean-of-other-options",
+      "authority": "teks",
+      "claim": "g7",
+      "nScored": 27,
+      "nCorrect": 8,
+      "passRate": 0.2962962962962963,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.1111111111111111,
+        0.4444444444444444
+      ],
+      "clusterBootstrapCi95": [
+        0.08333333333333333,
+        0.5
+      ],
+      "nAdministrations": 3,
+      "binomialPGreater": 0.35728607875719465,
+      "clearsBar": false,
+      "inFamily": true,
+      "citation": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers.",
+      "holmReject05NewFamily": false,
+      "bonferroniReject05NewFamily": false,
+      "bonferroniReject05CombinedFamily": false
+    },
+    {
+      "programId": "mean-of-other-options",
+      "authority": "teks",
+      "claim": "g8",
+      "nScored": 27,
+      "nCorrect": 11,
+      "passRate": 0.4074074074074074,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.2222222222222222,
+        0.5925925925925926
+      ],
+      "clusterBootstrapCi95": [
+        0.3333333333333333,
+        0.5
+      ],
+      "nAdministrations": 3,
+      "binomialPGreater": 0.05277727837539979,
+      "clearsBar": false,
+      "inFamily": true,
+      "citation": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers.",
+      "holmReject05NewFamily": false,
+      "bonferroniReject05NewFamily": false,
+      "bonferroniReject05CombinedFamily": false
+    },
+    {
+      "programId": "mean-of-other-options",
+      "authority": "timss",
+      "claim": "applying",
+      "nScored": 28,
+      "nCorrect": 2,
+      "passRate": 0.07142857142857142,
+      "chanceRate": 0.24821428571428572,
+      "ci95": [
+        0.0,
+        0.17857142857142858
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.21052631578947367
+      ],
+      "nAdministrations": 5,
+      "binomialPGreater": 0.9965235876064009,
+      "clearsBar": false,
+      "inFamily": true,
+      "citation": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers.",
+      "holmReject05NewFamily": false,
+      "bonferroniReject05NewFamily": false,
+      "bonferroniReject05CombinedFamily": false
+    },
+    {
+      "programId": "mean-of-other-options",
+      "authority": "timss",
+      "claim": "knowing",
+      "nScored": 17,
+      "nCorrect": 6,
+      "passRate": 0.35294117647058826,
+      "chanceRate": 0.24705882352941178,
+      "ci95": [
+        0.17647058823529413,
+        0.5882352941176471
+      ],
+      "clusterBootstrapCi95": [
+        0.08333333333333333,
+        0.56
+      ],
+      "nAdministrations": 5,
+      "binomialPGreater": 0.22575798903618527,
+      "clearsBar": false,
+      "inFamily": true,
+      "citation": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers.",
+      "holmReject05NewFamily": false,
+      "bonferroniReject05NewFamily": false,
+      "bonferroniReject05CombinedFamily": false
+    },
+    {
+      "programId": "mean-of-other-options",
+      "authority": "timss",
+      "claim": "reasoning",
+      "nScored": 37,
+      "nCorrect": 7,
+      "passRate": 0.1891891891891892,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.05405405405405406,
+        0.32432432432432434
+      ],
+      "clusterBootstrapCi95": [
+        0.05263157894736842,
+        0.375
+      ],
+      "nAdministrations": 5,
+      "binomialPGreater": 0.8528419050267224,
+      "clearsBar": false,
+      "inFamily": true,
+      "citation": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers.",
+      "holmReject05NewFamily": false,
+      "bonferroniReject05NewFamily": false,
+      "bonferroniReject05CombinedFamily": false
+    }
+  ],
+  "allRows": [
+    {
+      "programId": "most-qualified-hedged-option",
+      "authority": "acara",
+      "claim": "y7-numeracy",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) specific determiners / qualified language; Haladyna, Downing, and Rodriguez (2002) guideline against absolute wording and on similar-specificity options. Mechanical: unique maximum hedge-token count."
+    },
+    {
+      "programId": "most-qualified-hedged-option",
+      "authority": "ccss",
+      "claim": "3.MD.B.3",
+      "nScored": 1,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 1,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) specific determiners / qualified language; Haladyna, Downing, and Rodriguez (2002) guideline against absolute wording and on similar-specificity options. Mechanical: unique maximum hedge-token count."
+    },
+    {
+      "programId": "most-qualified-hedged-option",
+      "authority": "ccss",
+      "claim": "3.NBT.A.1",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) specific determiners / qualified language; Haladyna, Downing, and Rodriguez (2002) guideline against absolute wording and on similar-specificity options. Mechanical: unique maximum hedge-token count."
+    },
+    {
+      "programId": "most-qualified-hedged-option",
+      "authority": "ccss",
+      "claim": "3.NF.A.2.a",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) specific determiners / qualified language; Haladyna, Downing, and Rodriguez (2002) guideline against absolute wording and on similar-specificity options. Mechanical: unique maximum hedge-token count."
+    },
+    {
+      "programId": "most-qualified-hedged-option",
+      "authority": "ccss",
+      "claim": "3.OA.A.2",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) specific determiners / qualified language; Haladyna, Downing, and Rodriguez (2002) guideline against absolute wording and on similar-specificity options. Mechanical: unique maximum hedge-token count."
+    },
+    {
+      "programId": "most-qualified-hedged-option",
+      "authority": "ccss",
+      "claim": "3.OA.B.5",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) specific determiners / qualified language; Haladyna, Downing, and Rodriguez (2002) guideline against absolute wording and on similar-specificity options. Mechanical: unique maximum hedge-token count."
+    },
+    {
+      "programId": "most-qualified-hedged-option",
+      "authority": "ccss",
+      "claim": "3.OA.D.8",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) specific determiners / qualified language; Haladyna, Downing, and Rodriguez (2002) guideline against absolute wording and on similar-specificity options. Mechanical: unique maximum hedge-token count."
+    },
+    {
+      "programId": "most-qualified-hedged-option",
+      "authority": "ccss",
+      "claim": "6.G.A.1",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) specific determiners / qualified language; Haladyna, Downing, and Rodriguez (2002) guideline against absolute wording and on similar-specificity options. Mechanical: unique maximum hedge-token count."
+    },
+    {
+      "programId": "most-qualified-hedged-option",
+      "authority": "ccss",
+      "claim": "6.NS.B.4",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) specific determiners / qualified language; Haladyna, Downing, and Rodriguez (2002) guideline against absolute wording and on similar-specificity options. Mechanical: unique maximum hedge-token count."
+    },
+    {
+      "programId": "most-qualified-hedged-option",
+      "authority": "ccss",
+      "claim": "6.RP.A.1",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) specific determiners / qualified language; Haladyna, Downing, and Rodriguez (2002) guideline against absolute wording and on similar-specificity options. Mechanical: unique maximum hedge-token count."
+    },
+    {
+      "programId": "most-qualified-hedged-option",
+      "authority": "ccss",
+      "claim": "6.RP.A.3.c",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) specific determiners / qualified language; Haladyna, Downing, and Rodriguez (2002) guideline against absolute wording and on similar-specificity options. Mechanical: unique maximum hedge-token count."
+    },
+    {
+      "programId": "most-qualified-hedged-option",
+      "authority": "ccss",
+      "claim": "6.SP.B.5.c",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) specific determiners / qualified language; Haladyna, Downing, and Rodriguez (2002) guideline against absolute wording and on similar-specificity options. Mechanical: unique maximum hedge-token count."
+    },
+    {
+      "programId": "most-qualified-hedged-option",
+      "authority": "ccss",
+      "claim": "7.EE.A.2",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) specific determiners / qualified language; Haladyna, Downing, and Rodriguez (2002) guideline against absolute wording and on similar-specificity options. Mechanical: unique maximum hedge-token count."
+    },
+    {
+      "programId": "most-qualified-hedged-option",
+      "authority": "ccss",
+      "claim": "7.EE.B.3",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) specific determiners / qualified language; Haladyna, Downing, and Rodriguez (2002) guideline against absolute wording and on similar-specificity options. Mechanical: unique maximum hedge-token count."
+    },
+    {
+      "programId": "most-qualified-hedged-option",
+      "authority": "ccss",
+      "claim": "7.EE.B.4.a",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) specific determiners / qualified language; Haladyna, Downing, and Rodriguez (2002) guideline against absolute wording and on similar-specificity options. Mechanical: unique maximum hedge-token count."
+    },
+    {
+      "programId": "most-qualified-hedged-option",
+      "authority": "ccss",
+      "claim": "7.G.A.1",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) specific determiners / qualified language; Haladyna, Downing, and Rodriguez (2002) guideline against absolute wording and on similar-specificity options. Mechanical: unique maximum hedge-token count."
+    },
+    {
+      "programId": "most-qualified-hedged-option",
+      "authority": "ccss",
+      "claim": "7.G.A.3",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) specific determiners / qualified language; Haladyna, Downing, and Rodriguez (2002) guideline against absolute wording and on similar-specificity options. Mechanical: unique maximum hedge-token count."
+    },
+    {
+      "programId": "most-qualified-hedged-option",
+      "authority": "ccss",
+      "claim": "7.NS.A.1.a",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) specific determiners / qualified language; Haladyna, Downing, and Rodriguez (2002) guideline against absolute wording and on similar-specificity options. Mechanical: unique maximum hedge-token count."
+    },
+    {
+      "programId": "most-qualified-hedged-option",
+      "authority": "ccss",
+      "claim": "7.NS.A.2",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) specific determiners / qualified language; Haladyna, Downing, and Rodriguez (2002) guideline against absolute wording and on similar-specificity options. Mechanical: unique maximum hedge-token count."
+    },
+    {
+      "programId": "most-qualified-hedged-option",
+      "authority": "ccss",
+      "claim": "7.NS.A.3",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) specific determiners / qualified language; Haladyna, Downing, and Rodriguez (2002) guideline against absolute wording and on similar-specificity options. Mechanical: unique maximum hedge-token count."
+    },
+    {
+      "programId": "most-qualified-hedged-option",
+      "authority": "ccss",
+      "claim": "7.RP.A.1",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) specific determiners / qualified language; Haladyna, Downing, and Rodriguez (2002) guideline against absolute wording and on similar-specificity options. Mechanical: unique maximum hedge-token count."
+    },
+    {
+      "programId": "most-qualified-hedged-option",
+      "authority": "ccss",
+      "claim": "7.SP.A.1",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) specific determiners / qualified language; Haladyna, Downing, and Rodriguez (2002) guideline against absolute wording and on similar-specificity options. Mechanical: unique maximum hedge-token count."
+    },
+    {
+      "programId": "most-qualified-hedged-option",
+      "authority": "ccss",
+      "claim": "7.SP.A.2",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) specific determiners / qualified language; Haladyna, Downing, and Rodriguez (2002) guideline against absolute wording and on similar-specificity options. Mechanical: unique maximum hedge-token count."
+    },
+    {
+      "programId": "most-qualified-hedged-option",
+      "authority": "ccss",
+      "claim": "7.SP.C.6",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) specific determiners / qualified language; Haladyna, Downing, and Rodriguez (2002) guideline against absolute wording and on similar-specificity options. Mechanical: unique maximum hedge-token count."
+    },
+    {
+      "programId": "most-qualified-hedged-option",
+      "authority": "ccss",
+      "claim": "8.F.A.2",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) specific determiners / qualified language; Haladyna, Downing, and Rodriguez (2002) guideline against absolute wording and on similar-specificity options. Mechanical: unique maximum hedge-token count."
+    },
+    {
+      "programId": "most-qualified-hedged-option",
+      "authority": "ccss",
+      "claim": "8.F.B.4",
+      "nScored": 1,
+      "nCorrect": 1,
+      "passRate": 1.0,
+      "chanceRate": 0.25,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "clusterBootstrapCi95": [
+        1.0,
+        1.0
+      ],
+      "nAdministrations": 1,
+      "binomialPGreater": 0.25,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) specific determiners / qualified language; Haladyna, Downing, and Rodriguez (2002) guideline against absolute wording and on similar-specificity options. Mechanical: unique maximum hedge-token count."
+    },
+    {
+      "programId": "most-qualified-hedged-option",
+      "authority": "ccss",
+      "claim": "8.F.B.5",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) specific determiners / qualified language; Haladyna, Downing, and Rodriguez (2002) guideline against absolute wording and on similar-specificity options. Mechanical: unique maximum hedge-token count."
+    },
+    {
+      "programId": "most-qualified-hedged-option",
+      "authority": "ccss",
+      "claim": "8.G.A.2",
+      "nScored": 1,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 1,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) specific determiners / qualified language; Haladyna, Downing, and Rodriguez (2002) guideline against absolute wording and on similar-specificity options. Mechanical: unique maximum hedge-token count."
+    },
+    {
+      "programId": "most-qualified-hedged-option",
+      "authority": "ccss",
+      "claim": "8.G.A.3",
+      "nScored": 1,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 1,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) specific determiners / qualified language; Haladyna, Downing, and Rodriguez (2002) guideline against absolute wording and on similar-specificity options. Mechanical: unique maximum hedge-token count."
+    },
+    {
+      "programId": "most-qualified-hedged-option",
+      "authority": "ccss",
+      "claim": "8.G.A.5",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) specific determiners / qualified language; Haladyna, Downing, and Rodriguez (2002) guideline against absolute wording and on similar-specificity options. Mechanical: unique maximum hedge-token count."
+    },
+    {
+      "programId": "most-qualified-hedged-option",
+      "authority": "ccss",
+      "claim": "8.G.C.9",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) specific determiners / qualified language; Haladyna, Downing, and Rodriguez (2002) guideline against absolute wording and on similar-specificity options. Mechanical: unique maximum hedge-token count."
+    },
+    {
+      "programId": "most-qualified-hedged-option",
+      "authority": "ccss",
+      "claim": "8.SP.A.1",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) specific determiners / qualified language; Haladyna, Downing, and Rodriguez (2002) guideline against absolute wording and on similar-specificity options. Mechanical: unique maximum hedge-token count."
+    },
+    {
+      "programId": "most-qualified-hedged-option",
+      "authority": "ccss",
+      "claim": "8.SP.A.2",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) specific determiners / qualified language; Haladyna, Downing, and Rodriguez (2002) guideline against absolute wording and on similar-specificity options. Mechanical: unique maximum hedge-token count."
+    },
+    {
+      "programId": "most-qualified-hedged-option",
+      "authority": "eqao",
+      "claim": "g3",
+      "nScored": 2,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 2,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) specific determiners / qualified language; Haladyna, Downing, and Rodriguez (2002) guideline against absolute wording and on similar-specificity options. Mechanical: unique maximum hedge-token count."
+    },
+    {
+      "programId": "most-qualified-hedged-option",
+      "authority": "eqao",
+      "claim": "g6",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) specific determiners / qualified language; Haladyna, Downing, and Rodriguez (2002) guideline against absolute wording and on similar-specificity options. Mechanical: unique maximum hedge-token count."
+    },
+    {
+      "programId": "most-qualified-hedged-option",
+      "authority": "eqao",
+      "claim": "g9",
+      "nScored": 1,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 1,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) specific determiners / qualified language; Haladyna, Downing, and Rodriguez (2002) guideline against absolute wording and on similar-specificity options. Mechanical: unique maximum hedge-token count."
+    },
+    {
+      "programId": "most-qualified-hedged-option",
+      "authority": "nyregents",
+      "claim": "algebra-i",
+      "nScored": 3,
+      "nCorrect": 1,
+      "passRate": 0.3333333333333333,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.0,
+        1.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        1.0
+      ],
+      "nAdministrations": 3,
+      "binomialPGreater": 0.5781250000000004,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) specific determiners / qualified language; Haladyna, Downing, and Rodriguez (2002) guideline against absolute wording and on similar-specificity options. Mechanical: unique maximum hedge-token count."
+    },
+    {
+      "programId": "most-qualified-hedged-option",
+      "authority": "nyregents",
+      "claim": "algebra-ii",
+      "nScored": 5,
+      "nCorrect": 1,
+      "passRate": 0.2,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.0,
+        0.6
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.6
+      ],
+      "nAdministrations": 5,
+      "binomialPGreater": 0.7626953125000011,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) specific determiners / qualified language; Haladyna, Downing, and Rodriguez (2002) guideline against absolute wording and on similar-specificity options. Mechanical: unique maximum hedge-token count."
+    },
+    {
+      "programId": "most-qualified-hedged-option",
+      "authority": "nyregents",
+      "claim": "geometry",
+      "nScored": 8,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 7,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) specific determiners / qualified language; Haladyna, Downing, and Rodriguez (2002) guideline against absolute wording and on similar-specificity options. Mechanical: unique maximum hedge-token count."
+    },
+    {
+      "programId": "most-qualified-hedged-option",
+      "authority": "pisa",
+      "claim": "connections",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) specific determiners / qualified language; Haladyna, Downing, and Rodriguez (2002) guideline against absolute wording and on similar-specificity options. Mechanical: unique maximum hedge-token count."
+    },
+    {
+      "programId": "most-qualified-hedged-option",
+      "authority": "pisa",
+      "claim": "employ",
+      "nScored": 1,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 1,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) specific determiners / qualified language; Haladyna, Downing, and Rodriguez (2002) guideline against absolute wording and on similar-specificity options. Mechanical: unique maximum hedge-token count."
+    },
+    {
+      "programId": "most-qualified-hedged-option",
+      "authority": "pisa",
+      "claim": "formulate",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) specific determiners / qualified language; Haladyna, Downing, and Rodriguez (2002) guideline against absolute wording and on similar-specificity options. Mechanical: unique maximum hedge-token count."
+    },
+    {
+      "programId": "most-qualified-hedged-option",
+      "authority": "pisa",
+      "claim": "interpret",
+      "nScored": 1,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 1,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) specific determiners / qualified language; Haladyna, Downing, and Rodriguez (2002) guideline against absolute wording and on similar-specificity options. Mechanical: unique maximum hedge-token count."
+    },
+    {
+      "programId": "most-qualified-hedged-option",
+      "authority": "pisa",
+      "claim": "reflection",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) specific determiners / qualified language; Haladyna, Downing, and Rodriguez (2002) guideline against absolute wording and on similar-specificity options. Mechanical: unique maximum hedge-token count."
+    },
+    {
+      "programId": "most-qualified-hedged-option",
+      "authority": "pisa",
+      "claim": "reproduction",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) specific determiners / qualified language; Haladyna, Downing, and Rodriguez (2002) guideline against absolute wording and on similar-specificity options. Mechanical: unique maximum hedge-token count."
+    },
+    {
+      "programId": "most-qualified-hedged-option",
+      "authority": "teks",
+      "claim": "alg1",
+      "nScored": 2,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 2,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) specific determiners / qualified language; Haladyna, Downing, and Rodriguez (2002) guideline against absolute wording and on similar-specificity options. Mechanical: unique maximum hedge-token count."
+    },
+    {
+      "programId": "most-qualified-hedged-option",
+      "authority": "teks",
+      "claim": "g3",
+      "nScored": 4,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 3,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) specific determiners / qualified language; Haladyna, Downing, and Rodriguez (2002) guideline against absolute wording and on similar-specificity options. Mechanical: unique maximum hedge-token count."
+    },
+    {
+      "programId": "most-qualified-hedged-option",
+      "authority": "teks",
+      "claim": "g4",
+      "nScored": 6,
+      "nCorrect": 1,
+      "passRate": 0.16666666666666666,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.0,
+        0.5
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.3333333333333333
+      ],
+      "nAdministrations": 3,
+      "binomialPGreater": 0.8220214843750006,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) specific determiners / qualified language; Haladyna, Downing, and Rodriguez (2002) guideline against absolute wording and on similar-specificity options. Mechanical: unique maximum hedge-token count."
+    },
+    {
+      "programId": "most-qualified-hedged-option",
+      "authority": "teks",
+      "claim": "g5",
+      "nScored": 4,
+      "nCorrect": 2,
+      "passRate": 0.5,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.0,
+        1.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        1.0
+      ],
+      "nAdministrations": 3,
+      "binomialPGreater": 0.26171875000000006,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) specific determiners / qualified language; Haladyna, Downing, and Rodriguez (2002) guideline against absolute wording and on similar-specificity options. Mechanical: unique maximum hedge-token count."
+    },
+    {
+      "programId": "most-qualified-hedged-option",
+      "authority": "teks",
+      "claim": "g6",
+      "nScored": 4,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 3,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) specific determiners / qualified language; Haladyna, Downing, and Rodriguez (2002) guideline against absolute wording and on similar-specificity options. Mechanical: unique maximum hedge-token count."
+    },
+    {
+      "programId": "most-qualified-hedged-option",
+      "authority": "teks",
+      "claim": "g7",
+      "nScored": 4,
+      "nCorrect": 1,
+      "passRate": 0.25,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.0,
+        0.75
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.3333333333333333
+      ],
+      "nAdministrations": 2,
+      "binomialPGreater": 0.6835937499999993,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) specific determiners / qualified language; Haladyna, Downing, and Rodriguez (2002) guideline against absolute wording and on similar-specificity options. Mechanical: unique maximum hedge-token count."
+    },
+    {
+      "programId": "most-qualified-hedged-option",
+      "authority": "teks",
+      "claim": "g8",
+      "nScored": 1,
+      "nCorrect": 1,
+      "passRate": 1.0,
+      "chanceRate": 0.25,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "clusterBootstrapCi95": [
+        1.0,
+        1.0
+      ],
+      "nAdministrations": 1,
+      "binomialPGreater": 0.25,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) specific determiners / qualified language; Haladyna, Downing, and Rodriguez (2002) guideline against absolute wording and on similar-specificity options. Mechanical: unique maximum hedge-token count."
+    },
+    {
+      "programId": "most-qualified-hedged-option",
+      "authority": "timss",
+      "claim": "applying",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) specific determiners / qualified language; Haladyna, Downing, and Rodriguez (2002) guideline against absolute wording and on similar-specificity options. Mechanical: unique maximum hedge-token count."
+    },
+    {
+      "programId": "most-qualified-hedged-option",
+      "authority": "timss",
+      "claim": "knowing",
+      "nScored": 1,
+      "nCorrect": 1,
+      "passRate": 1.0,
+      "chanceRate": 0.25,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "clusterBootstrapCi95": [
+        1.0,
+        1.0
+      ],
+      "nAdministrations": 1,
+      "binomialPGreater": 0.25,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) specific determiners / qualified language; Haladyna, Downing, and Rodriguez (2002) guideline against absolute wording and on similar-specificity options. Mechanical: unique maximum hedge-token count."
+    },
+    {
+      "programId": "most-qualified-hedged-option",
+      "authority": "timss",
+      "claim": "reasoning",
+      "nScored": 1,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 1,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) specific determiners / qualified language; Haladyna, Downing, and Rodriguez (2002) guideline against absolute wording and on similar-specificity options. Mechanical: unique maximum hedge-token count."
+    },
+    {
+      "programId": "convergence-option",
+      "authority": "acara",
+      "claim": "y7-numeracy",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) convergence strategy: choose the option that shares the most elements with the other options. Applied to word tokens and, for numeric options, the parsed number and digit string."
+    },
+    {
+      "programId": "convergence-option",
+      "authority": "ccss",
+      "claim": "3.MD.B.3",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) convergence strategy: choose the option that shares the most elements with the other options. Applied to word tokens and, for numeric options, the parsed number and digit string."
+    },
+    {
+      "programId": "convergence-option",
+      "authority": "ccss",
+      "claim": "3.NBT.A.1",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) convergence strategy: choose the option that shares the most elements with the other options. Applied to word tokens and, for numeric options, the parsed number and digit string."
+    },
+    {
+      "programId": "convergence-option",
+      "authority": "ccss",
+      "claim": "3.NF.A.2.a",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) convergence strategy: choose the option that shares the most elements with the other options. Applied to word tokens and, for numeric options, the parsed number and digit string."
+    },
+    {
+      "programId": "convergence-option",
+      "authority": "ccss",
+      "claim": "3.OA.A.2",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) convergence strategy: choose the option that shares the most elements with the other options. Applied to word tokens and, for numeric options, the parsed number and digit string."
+    },
+    {
+      "programId": "convergence-option",
+      "authority": "ccss",
+      "claim": "3.OA.B.5",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) convergence strategy: choose the option that shares the most elements with the other options. Applied to word tokens and, for numeric options, the parsed number and digit string."
+    },
+    {
+      "programId": "convergence-option",
+      "authority": "ccss",
+      "claim": "3.OA.D.8",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) convergence strategy: choose the option that shares the most elements with the other options. Applied to word tokens and, for numeric options, the parsed number and digit string."
+    },
+    {
+      "programId": "convergence-option",
+      "authority": "ccss",
+      "claim": "6.G.A.1",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) convergence strategy: choose the option that shares the most elements with the other options. Applied to word tokens and, for numeric options, the parsed number and digit string."
+    },
+    {
+      "programId": "convergence-option",
+      "authority": "ccss",
+      "claim": "6.NS.B.4",
+      "nScored": 1,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 1,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) convergence strategy: choose the option that shares the most elements with the other options. Applied to word tokens and, for numeric options, the parsed number and digit string."
+    },
+    {
+      "programId": "convergence-option",
+      "authority": "ccss",
+      "claim": "6.RP.A.1",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) convergence strategy: choose the option that shares the most elements with the other options. Applied to word tokens and, for numeric options, the parsed number and digit string."
+    },
+    {
+      "programId": "convergence-option",
+      "authority": "ccss",
+      "claim": "6.RP.A.3.c",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) convergence strategy: choose the option that shares the most elements with the other options. Applied to word tokens and, for numeric options, the parsed number and digit string."
+    },
+    {
+      "programId": "convergence-option",
+      "authority": "ccss",
+      "claim": "6.SP.B.5.c",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) convergence strategy: choose the option that shares the most elements with the other options. Applied to word tokens and, for numeric options, the parsed number and digit string."
+    },
+    {
+      "programId": "convergence-option",
+      "authority": "ccss",
+      "claim": "7.EE.A.2",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) convergence strategy: choose the option that shares the most elements with the other options. Applied to word tokens and, for numeric options, the parsed number and digit string."
+    },
+    {
+      "programId": "convergence-option",
+      "authority": "ccss",
+      "claim": "7.EE.B.3",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) convergence strategy: choose the option that shares the most elements with the other options. Applied to word tokens and, for numeric options, the parsed number and digit string."
+    },
+    {
+      "programId": "convergence-option",
+      "authority": "ccss",
+      "claim": "7.EE.B.4.a",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) convergence strategy: choose the option that shares the most elements with the other options. Applied to word tokens and, for numeric options, the parsed number and digit string."
+    },
+    {
+      "programId": "convergence-option",
+      "authority": "ccss",
+      "claim": "7.G.A.1",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) convergence strategy: choose the option that shares the most elements with the other options. Applied to word tokens and, for numeric options, the parsed number and digit string."
+    },
+    {
+      "programId": "convergence-option",
+      "authority": "ccss",
+      "claim": "7.G.A.3",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) convergence strategy: choose the option that shares the most elements with the other options. Applied to word tokens and, for numeric options, the parsed number and digit string."
+    },
+    {
+      "programId": "convergence-option",
+      "authority": "ccss",
+      "claim": "7.NS.A.1.a",
+      "nScored": 1,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 1,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) convergence strategy: choose the option that shares the most elements with the other options. Applied to word tokens and, for numeric options, the parsed number and digit string."
+    },
+    {
+      "programId": "convergence-option",
+      "authority": "ccss",
+      "claim": "7.NS.A.2",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) convergence strategy: choose the option that shares the most elements with the other options. Applied to word tokens and, for numeric options, the parsed number and digit string."
+    },
+    {
+      "programId": "convergence-option",
+      "authority": "ccss",
+      "claim": "7.NS.A.3",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) convergence strategy: choose the option that shares the most elements with the other options. Applied to word tokens and, for numeric options, the parsed number and digit string."
+    },
+    {
+      "programId": "convergence-option",
+      "authority": "ccss",
+      "claim": "7.RP.A.1",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) convergence strategy: choose the option that shares the most elements with the other options. Applied to word tokens and, for numeric options, the parsed number and digit string."
+    },
+    {
+      "programId": "convergence-option",
+      "authority": "ccss",
+      "claim": "7.SP.A.1",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) convergence strategy: choose the option that shares the most elements with the other options. Applied to word tokens and, for numeric options, the parsed number and digit string."
+    },
+    {
+      "programId": "convergence-option",
+      "authority": "ccss",
+      "claim": "7.SP.A.2",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) convergence strategy: choose the option that shares the most elements with the other options. Applied to word tokens and, for numeric options, the parsed number and digit string."
+    },
+    {
+      "programId": "convergence-option",
+      "authority": "ccss",
+      "claim": "7.SP.C.6",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) convergence strategy: choose the option that shares the most elements with the other options. Applied to word tokens and, for numeric options, the parsed number and digit string."
+    },
+    {
+      "programId": "convergence-option",
+      "authority": "ccss",
+      "claim": "8.F.A.2",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) convergence strategy: choose the option that shares the most elements with the other options. Applied to word tokens and, for numeric options, the parsed number and digit string."
+    },
+    {
+      "programId": "convergence-option",
+      "authority": "ccss",
+      "claim": "8.F.B.4",
+      "nScored": 1,
+      "nCorrect": 1,
+      "passRate": 1.0,
+      "chanceRate": 0.25,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "clusterBootstrapCi95": [
+        1.0,
+        1.0
+      ],
+      "nAdministrations": 1,
+      "binomialPGreater": 0.25,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) convergence strategy: choose the option that shares the most elements with the other options. Applied to word tokens and, for numeric options, the parsed number and digit string."
+    },
+    {
+      "programId": "convergence-option",
+      "authority": "ccss",
+      "claim": "8.F.B.5",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) convergence strategy: choose the option that shares the most elements with the other options. Applied to word tokens and, for numeric options, the parsed number and digit string."
+    },
+    {
+      "programId": "convergence-option",
+      "authority": "ccss",
+      "claim": "8.G.A.2",
+      "nScored": 1,
+      "nCorrect": 1,
+      "passRate": 1.0,
+      "chanceRate": 0.25,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "clusterBootstrapCi95": [
+        1.0,
+        1.0
+      ],
+      "nAdministrations": 1,
+      "binomialPGreater": 0.25,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) convergence strategy: choose the option that shares the most elements with the other options. Applied to word tokens and, for numeric options, the parsed number and digit string."
+    },
+    {
+      "programId": "convergence-option",
+      "authority": "ccss",
+      "claim": "8.G.A.3",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) convergence strategy: choose the option that shares the most elements with the other options. Applied to word tokens and, for numeric options, the parsed number and digit string."
+    },
+    {
+      "programId": "convergence-option",
+      "authority": "ccss",
+      "claim": "8.G.A.5",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) convergence strategy: choose the option that shares the most elements with the other options. Applied to word tokens and, for numeric options, the parsed number and digit string."
+    },
+    {
+      "programId": "convergence-option",
+      "authority": "ccss",
+      "claim": "8.G.C.9",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) convergence strategy: choose the option that shares the most elements with the other options. Applied to word tokens and, for numeric options, the parsed number and digit string."
+    },
+    {
+      "programId": "convergence-option",
+      "authority": "ccss",
+      "claim": "8.SP.A.1",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) convergence strategy: choose the option that shares the most elements with the other options. Applied to word tokens and, for numeric options, the parsed number and digit string."
+    },
+    {
+      "programId": "convergence-option",
+      "authority": "ccss",
+      "claim": "8.SP.A.2",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) convergence strategy: choose the option that shares the most elements with the other options. Applied to word tokens and, for numeric options, the parsed number and digit string."
+    },
+    {
+      "programId": "convergence-option",
+      "authority": "eqao",
+      "claim": "g3",
+      "nScored": 8,
+      "nCorrect": 3,
+      "passRate": 0.375,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.125,
+        0.75
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.5
+      ],
+      "nAdministrations": 3,
+      "binomialPGreater": 0.3214569091796873,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) convergence strategy: choose the option that shares the most elements with the other options. Applied to word tokens and, for numeric options, the parsed number and digit string."
+    },
+    {
+      "programId": "convergence-option",
+      "authority": "eqao",
+      "claim": "g6",
+      "nScored": 1,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 1,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) convergence strategy: choose the option that shares the most elements with the other options. Applied to word tokens and, for numeric options, the parsed number and digit string."
+    },
+    {
+      "programId": "convergence-option",
+      "authority": "eqao",
+      "claim": "g9",
+      "nScored": 14,
+      "nCorrect": 3,
+      "passRate": 0.21428571428571427,
+      "chanceRate": 0.255952380952381,
+      "ci95": [
+        0.0,
+        0.42857142857142855
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.3333333333333333
+      ],
+      "nAdministrations": 3,
+      "binomialPGreater": 0.735689381597407,
+      "clearsBar": false,
+      "inFamily": true,
+      "citation": "Millman, Bishop, and Ebel (1965) convergence strategy: choose the option that shares the most elements with the other options. Applied to word tokens and, for numeric options, the parsed number and digit string.",
+      "holmReject05NewFamily": false,
+      "bonferroniReject05NewFamily": false,
+      "bonferroniReject05CombinedFamily": false
+    },
+    {
+      "programId": "convergence-option",
+      "authority": "nyregents",
+      "claim": "algebra-i",
+      "nScored": 81,
+      "nCorrect": 21,
+      "passRate": 0.25925925925925924,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.16049382716049382,
+        0.35802469135802467
+      ],
+      "clusterBootstrapCi95": [
+        0.18518518518518517,
+        0.3372093023255814
+      ],
+      "nAdministrations": 31,
+      "binomialPGreater": 0.46592932018703437,
+      "clearsBar": false,
+      "inFamily": true,
+      "citation": "Millman, Bishop, and Ebel (1965) convergence strategy: choose the option that shares the most elements with the other options. Applied to word tokens and, for numeric options, the parsed number and digit string.",
+      "holmReject05NewFamily": false,
+      "bonferroniReject05NewFamily": false,
+      "bonferroniReject05CombinedFamily": false
+    },
+    {
+      "programId": "convergence-option",
+      "authority": "nyregents",
+      "claim": "algebra-ii",
+      "nScored": 70,
+      "nCorrect": 21,
+      "passRate": 0.3,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.2,
+        0.4142857142857143
+      ],
+      "clusterBootstrapCi95": [
+        0.20588235294117646,
+        0.39473684210526316
+      ],
+      "nAdministrations": 25,
+      "binomialPGreater": 0.20174054258531238,
+      "clearsBar": false,
+      "inFamily": true,
+      "citation": "Millman, Bishop, and Ebel (1965) convergence strategy: choose the option that shares the most elements with the other options. Applied to word tokens and, for numeric options, the parsed number and digit string.",
+      "holmReject05NewFamily": false,
+      "bonferroniReject05NewFamily": false,
+      "bonferroniReject05CombinedFamily": false
+    },
+    {
+      "programId": "convergence-option",
+      "authority": "nyregents",
+      "claim": "geometry",
+      "nScored": 32,
+      "nCorrect": 12,
+      "passRate": 0.375,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.21875,
+        0.5625
+      ],
+      "clusterBootstrapCi95": [
+        0.1935483870967742,
+        0.5757575757575758
+      ],
+      "nAdministrations": 18,
+      "binomialPGreater": 0.08043041372940024,
+      "clearsBar": false,
+      "inFamily": true,
+      "citation": "Millman, Bishop, and Ebel (1965) convergence strategy: choose the option that shares the most elements with the other options. Applied to word tokens and, for numeric options, the parsed number and digit string.",
+      "holmReject05NewFamily": false,
+      "bonferroniReject05NewFamily": false,
+      "bonferroniReject05CombinedFamily": false
+    },
+    {
+      "programId": "convergence-option",
+      "authority": "pisa",
+      "claim": "connections",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) convergence strategy: choose the option that shares the most elements with the other options. Applied to word tokens and, for numeric options, the parsed number and digit string."
+    },
+    {
+      "programId": "convergence-option",
+      "authority": "pisa",
+      "claim": "employ",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) convergence strategy: choose the option that shares the most elements with the other options. Applied to word tokens and, for numeric options, the parsed number and digit string."
+    },
+    {
+      "programId": "convergence-option",
+      "authority": "pisa",
+      "claim": "formulate",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) convergence strategy: choose the option that shares the most elements with the other options. Applied to word tokens and, for numeric options, the parsed number and digit string."
+    },
+    {
+      "programId": "convergence-option",
+      "authority": "pisa",
+      "claim": "interpret",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) convergence strategy: choose the option that shares the most elements with the other options. Applied to word tokens and, for numeric options, the parsed number and digit string."
+    },
+    {
+      "programId": "convergence-option",
+      "authority": "pisa",
+      "claim": "reflection",
+      "nScored": 1,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 1,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) convergence strategy: choose the option that shares the most elements with the other options. Applied to word tokens and, for numeric options, the parsed number and digit string."
+    },
+    {
+      "programId": "convergence-option",
+      "authority": "pisa",
+      "claim": "reproduction",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) convergence strategy: choose the option that shares the most elements with the other options. Applied to word tokens and, for numeric options, the parsed number and digit string."
+    },
+    {
+      "programId": "convergence-option",
+      "authority": "teks",
+      "claim": "alg1",
+      "nScored": 8,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 3,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) convergence strategy: choose the option that shares the most elements with the other options. Applied to word tokens and, for numeric options, the parsed number and digit string."
+    },
+    {
+      "programId": "convergence-option",
+      "authority": "teks",
+      "claim": "g3",
+      "nScored": 6,
+      "nCorrect": 3,
+      "passRate": 0.5,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.16666666666666666,
+        0.8333333333333334
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.6666666666666666
+      ],
+      "nAdministrations": 3,
+      "binomialPGreater": 0.1694335937500001,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) convergence strategy: choose the option that shares the most elements with the other options. Applied to word tokens and, for numeric options, the parsed number and digit string."
+    },
+    {
+      "programId": "convergence-option",
+      "authority": "teks",
+      "claim": "g4",
+      "nScored": 3,
+      "nCorrect": 2,
+      "passRate": 0.6666666666666666,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.0,
+        1.0
+      ],
+      "clusterBootstrapCi95": [
+        0.6666666666666666,
+        0.6666666666666666
+      ],
+      "nAdministrations": 1,
+      "binomialPGreater": 0.15625000000000017,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) convergence strategy: choose the option that shares the most elements with the other options. Applied to word tokens and, for numeric options, the parsed number and digit string."
+    },
+    {
+      "programId": "convergence-option",
+      "authority": "teks",
+      "claim": "g5",
+      "nScored": 2,
+      "nCorrect": 1,
+      "passRate": 0.5,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.0,
+        1.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        1.0
+      ],
+      "nAdministrations": 2,
+      "binomialPGreater": 0.4374999999999999,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) convergence strategy: choose the option that shares the most elements with the other options. Applied to word tokens and, for numeric options, the parsed number and digit string."
+    },
+    {
+      "programId": "convergence-option",
+      "authority": "teks",
+      "claim": "g6",
+      "nScored": 7,
+      "nCorrect": 1,
+      "passRate": 0.14285714285714285,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.0,
+        0.42857142857142855
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.25
+      ],
+      "nAdministrations": 3,
+      "binomialPGreater": 0.8665161132812496,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) convergence strategy: choose the option that shares the most elements with the other options. Applied to word tokens and, for numeric options, the parsed number and digit string."
+    },
+    {
+      "programId": "convergence-option",
+      "authority": "teks",
+      "claim": "g7",
+      "nScored": 5,
+      "nCorrect": 2,
+      "passRate": 0.4,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.0,
+        0.8
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        1.0
+      ],
+      "nAdministrations": 3,
+      "binomialPGreater": 0.36718750000000006,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) convergence strategy: choose the option that shares the most elements with the other options. Applied to word tokens and, for numeric options, the parsed number and digit string."
+    },
+    {
+      "programId": "convergence-option",
+      "authority": "teks",
+      "claim": "g8",
+      "nScored": 7,
+      "nCorrect": 1,
+      "passRate": 0.14285714285714285,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.0,
+        0.42857142857142855
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.3333333333333333
+      ],
+      "nAdministrations": 2,
+      "binomialPGreater": 0.8665161132812496,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) convergence strategy: choose the option that shares the most elements with the other options. Applied to word tokens and, for numeric options, the parsed number and digit string."
+    },
+    {
+      "programId": "convergence-option",
+      "authority": "timss",
+      "claim": "applying",
+      "nScored": 4,
+      "nCorrect": 1,
+      "passRate": 0.25,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.0,
+        0.75
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        1.0
+      ],
+      "nAdministrations": 3,
+      "binomialPGreater": 0.6835937499999993,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) convergence strategy: choose the option that shares the most elements with the other options. Applied to word tokens and, for numeric options, the parsed number and digit string."
+    },
+    {
+      "programId": "convergence-option",
+      "authority": "timss",
+      "claim": "knowing",
+      "nScored": 8,
+      "nCorrect": 1,
+      "passRate": 0.125,
+      "chanceRate": 0.24375,
+      "ci95": [
+        0.0,
+        0.375
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.16666666666666666
+      ],
+      "nAdministrations": 3,
+      "binomialPGreater": 0.8930149482014289,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) convergence strategy: choose the option that shares the most elements with the other options. Applied to word tokens and, for numeric options, the parsed number and digit string."
+    },
+    {
+      "programId": "convergence-option",
+      "authority": "timss",
+      "claim": "reasoning",
+      "nScored": 16,
+      "nCorrect": 8,
+      "passRate": 0.5,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.25,
+        0.75
+      ],
+      "clusterBootstrapCi95": [
+        0.25,
+        0.8333333333333334
+      ],
+      "nAdministrations": 4,
+      "binomialPGreater": 0.027129956288263254,
+      "clearsBar": false,
+      "inFamily": true,
+      "citation": "Millman, Bishop, and Ebel (1965) convergence strategy: choose the option that shares the most elements with the other options. Applied to word tokens and, for numeric options, the parsed number and digit string.",
+      "holmReject05NewFamily": false,
+      "bonferroniReject05NewFamily": false,
+      "bonferroniReject05CombinedFamily": false
+    },
+    {
+      "programId": "grammatical-fit-option",
+      "authority": "acara",
+      "claim": "y7-numeracy",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) grammatical cue; Haladyna, Downing, and Rodriguez (2002) stem-option grammatical consistency. Applies only when the stem ends in a/an and exactly one option uniquely fits."
+    },
+    {
+      "programId": "grammatical-fit-option",
+      "authority": "ccss",
+      "claim": "3.MD.B.3",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) grammatical cue; Haladyna, Downing, and Rodriguez (2002) stem-option grammatical consistency. Applies only when the stem ends in a/an and exactly one option uniquely fits."
+    },
+    {
+      "programId": "grammatical-fit-option",
+      "authority": "ccss",
+      "claim": "3.NBT.A.1",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) grammatical cue; Haladyna, Downing, and Rodriguez (2002) stem-option grammatical consistency. Applies only when the stem ends in a/an and exactly one option uniquely fits."
+    },
+    {
+      "programId": "grammatical-fit-option",
+      "authority": "ccss",
+      "claim": "3.NF.A.2.a",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) grammatical cue; Haladyna, Downing, and Rodriguez (2002) stem-option grammatical consistency. Applies only when the stem ends in a/an and exactly one option uniquely fits."
+    },
+    {
+      "programId": "grammatical-fit-option",
+      "authority": "ccss",
+      "claim": "3.OA.A.2",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) grammatical cue; Haladyna, Downing, and Rodriguez (2002) stem-option grammatical consistency. Applies only when the stem ends in a/an and exactly one option uniquely fits."
+    },
+    {
+      "programId": "grammatical-fit-option",
+      "authority": "ccss",
+      "claim": "3.OA.B.5",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) grammatical cue; Haladyna, Downing, and Rodriguez (2002) stem-option grammatical consistency. Applies only when the stem ends in a/an and exactly one option uniquely fits."
+    },
+    {
+      "programId": "grammatical-fit-option",
+      "authority": "ccss",
+      "claim": "3.OA.D.8",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) grammatical cue; Haladyna, Downing, and Rodriguez (2002) stem-option grammatical consistency. Applies only when the stem ends in a/an and exactly one option uniquely fits."
+    },
+    {
+      "programId": "grammatical-fit-option",
+      "authority": "ccss",
+      "claim": "6.G.A.1",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) grammatical cue; Haladyna, Downing, and Rodriguez (2002) stem-option grammatical consistency. Applies only when the stem ends in a/an and exactly one option uniquely fits."
+    },
+    {
+      "programId": "grammatical-fit-option",
+      "authority": "ccss",
+      "claim": "6.NS.B.4",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) grammatical cue; Haladyna, Downing, and Rodriguez (2002) stem-option grammatical consistency. Applies only when the stem ends in a/an and exactly one option uniquely fits."
+    },
+    {
+      "programId": "grammatical-fit-option",
+      "authority": "ccss",
+      "claim": "6.RP.A.1",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) grammatical cue; Haladyna, Downing, and Rodriguez (2002) stem-option grammatical consistency. Applies only when the stem ends in a/an and exactly one option uniquely fits."
+    },
+    {
+      "programId": "grammatical-fit-option",
+      "authority": "ccss",
+      "claim": "6.RP.A.3.c",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) grammatical cue; Haladyna, Downing, and Rodriguez (2002) stem-option grammatical consistency. Applies only when the stem ends in a/an and exactly one option uniquely fits."
+    },
+    {
+      "programId": "grammatical-fit-option",
+      "authority": "ccss",
+      "claim": "6.SP.B.5.c",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) grammatical cue; Haladyna, Downing, and Rodriguez (2002) stem-option grammatical consistency. Applies only when the stem ends in a/an and exactly one option uniquely fits."
+    },
+    {
+      "programId": "grammatical-fit-option",
+      "authority": "ccss",
+      "claim": "7.EE.A.2",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) grammatical cue; Haladyna, Downing, and Rodriguez (2002) stem-option grammatical consistency. Applies only when the stem ends in a/an and exactly one option uniquely fits."
+    },
+    {
+      "programId": "grammatical-fit-option",
+      "authority": "ccss",
+      "claim": "7.EE.B.3",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) grammatical cue; Haladyna, Downing, and Rodriguez (2002) stem-option grammatical consistency. Applies only when the stem ends in a/an and exactly one option uniquely fits."
+    },
+    {
+      "programId": "grammatical-fit-option",
+      "authority": "ccss",
+      "claim": "7.EE.B.4.a",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) grammatical cue; Haladyna, Downing, and Rodriguez (2002) stem-option grammatical consistency. Applies only when the stem ends in a/an and exactly one option uniquely fits."
+    },
+    {
+      "programId": "grammatical-fit-option",
+      "authority": "ccss",
+      "claim": "7.G.A.1",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) grammatical cue; Haladyna, Downing, and Rodriguez (2002) stem-option grammatical consistency. Applies only when the stem ends in a/an and exactly one option uniquely fits."
+    },
+    {
+      "programId": "grammatical-fit-option",
+      "authority": "ccss",
+      "claim": "7.G.A.3",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) grammatical cue; Haladyna, Downing, and Rodriguez (2002) stem-option grammatical consistency. Applies only when the stem ends in a/an and exactly one option uniquely fits."
+    },
+    {
+      "programId": "grammatical-fit-option",
+      "authority": "ccss",
+      "claim": "7.NS.A.1.a",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) grammatical cue; Haladyna, Downing, and Rodriguez (2002) stem-option grammatical consistency. Applies only when the stem ends in a/an and exactly one option uniquely fits."
+    },
+    {
+      "programId": "grammatical-fit-option",
+      "authority": "ccss",
+      "claim": "7.NS.A.2",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) grammatical cue; Haladyna, Downing, and Rodriguez (2002) stem-option grammatical consistency. Applies only when the stem ends in a/an and exactly one option uniquely fits."
+    },
+    {
+      "programId": "grammatical-fit-option",
+      "authority": "ccss",
+      "claim": "7.NS.A.3",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) grammatical cue; Haladyna, Downing, and Rodriguez (2002) stem-option grammatical consistency. Applies only when the stem ends in a/an and exactly one option uniquely fits."
+    },
+    {
+      "programId": "grammatical-fit-option",
+      "authority": "ccss",
+      "claim": "7.RP.A.1",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) grammatical cue; Haladyna, Downing, and Rodriguez (2002) stem-option grammatical consistency. Applies only when the stem ends in a/an and exactly one option uniquely fits."
+    },
+    {
+      "programId": "grammatical-fit-option",
+      "authority": "ccss",
+      "claim": "7.SP.A.1",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) grammatical cue; Haladyna, Downing, and Rodriguez (2002) stem-option grammatical consistency. Applies only when the stem ends in a/an and exactly one option uniquely fits."
+    },
+    {
+      "programId": "grammatical-fit-option",
+      "authority": "ccss",
+      "claim": "7.SP.A.2",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) grammatical cue; Haladyna, Downing, and Rodriguez (2002) stem-option grammatical consistency. Applies only when the stem ends in a/an and exactly one option uniquely fits."
+    },
+    {
+      "programId": "grammatical-fit-option",
+      "authority": "ccss",
+      "claim": "7.SP.C.6",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) grammatical cue; Haladyna, Downing, and Rodriguez (2002) stem-option grammatical consistency. Applies only when the stem ends in a/an and exactly one option uniquely fits."
+    },
+    {
+      "programId": "grammatical-fit-option",
+      "authority": "ccss",
+      "claim": "8.F.A.2",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) grammatical cue; Haladyna, Downing, and Rodriguez (2002) stem-option grammatical consistency. Applies only when the stem ends in a/an and exactly one option uniquely fits."
+    },
+    {
+      "programId": "grammatical-fit-option",
+      "authority": "ccss",
+      "claim": "8.F.B.4",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) grammatical cue; Haladyna, Downing, and Rodriguez (2002) stem-option grammatical consistency. Applies only when the stem ends in a/an and exactly one option uniquely fits."
+    },
+    {
+      "programId": "grammatical-fit-option",
+      "authority": "ccss",
+      "claim": "8.F.B.5",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) grammatical cue; Haladyna, Downing, and Rodriguez (2002) stem-option grammatical consistency. Applies only when the stem ends in a/an and exactly one option uniquely fits."
+    },
+    {
+      "programId": "grammatical-fit-option",
+      "authority": "ccss",
+      "claim": "8.G.A.2",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) grammatical cue; Haladyna, Downing, and Rodriguez (2002) stem-option grammatical consistency. Applies only when the stem ends in a/an and exactly one option uniquely fits."
+    },
+    {
+      "programId": "grammatical-fit-option",
+      "authority": "ccss",
+      "claim": "8.G.A.3",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) grammatical cue; Haladyna, Downing, and Rodriguez (2002) stem-option grammatical consistency. Applies only when the stem ends in a/an and exactly one option uniquely fits."
+    },
+    {
+      "programId": "grammatical-fit-option",
+      "authority": "ccss",
+      "claim": "8.G.A.5",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) grammatical cue; Haladyna, Downing, and Rodriguez (2002) stem-option grammatical consistency. Applies only when the stem ends in a/an and exactly one option uniquely fits."
+    },
+    {
+      "programId": "grammatical-fit-option",
+      "authority": "ccss",
+      "claim": "8.G.C.9",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) grammatical cue; Haladyna, Downing, and Rodriguez (2002) stem-option grammatical consistency. Applies only when the stem ends in a/an and exactly one option uniquely fits."
+    },
+    {
+      "programId": "grammatical-fit-option",
+      "authority": "ccss",
+      "claim": "8.SP.A.1",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) grammatical cue; Haladyna, Downing, and Rodriguez (2002) stem-option grammatical consistency. Applies only when the stem ends in a/an and exactly one option uniquely fits."
+    },
+    {
+      "programId": "grammatical-fit-option",
+      "authority": "ccss",
+      "claim": "8.SP.A.2",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) grammatical cue; Haladyna, Downing, and Rodriguez (2002) stem-option grammatical consistency. Applies only when the stem ends in a/an and exactly one option uniquely fits."
+    },
+    {
+      "programId": "grammatical-fit-option",
+      "authority": "eqao",
+      "claim": "g3",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) grammatical cue; Haladyna, Downing, and Rodriguez (2002) stem-option grammatical consistency. Applies only when the stem ends in a/an and exactly one option uniquely fits."
+    },
+    {
+      "programId": "grammatical-fit-option",
+      "authority": "eqao",
+      "claim": "g6",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) grammatical cue; Haladyna, Downing, and Rodriguez (2002) stem-option grammatical consistency. Applies only when the stem ends in a/an and exactly one option uniquely fits."
+    },
+    {
+      "programId": "grammatical-fit-option",
+      "authority": "eqao",
+      "claim": "g9",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) grammatical cue; Haladyna, Downing, and Rodriguez (2002) stem-option grammatical consistency. Applies only when the stem ends in a/an and exactly one option uniquely fits."
+    },
+    {
+      "programId": "grammatical-fit-option",
+      "authority": "nyregents",
+      "claim": "algebra-i",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) grammatical cue; Haladyna, Downing, and Rodriguez (2002) stem-option grammatical consistency. Applies only when the stem ends in a/an and exactly one option uniquely fits."
+    },
+    {
+      "programId": "grammatical-fit-option",
+      "authority": "nyregents",
+      "claim": "algebra-ii",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) grammatical cue; Haladyna, Downing, and Rodriguez (2002) stem-option grammatical consistency. Applies only when the stem ends in a/an and exactly one option uniquely fits."
+    },
+    {
+      "programId": "grammatical-fit-option",
+      "authority": "nyregents",
+      "claim": "geometry",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) grammatical cue; Haladyna, Downing, and Rodriguez (2002) stem-option grammatical consistency. Applies only when the stem ends in a/an and exactly one option uniquely fits."
+    },
+    {
+      "programId": "grammatical-fit-option",
+      "authority": "pisa",
+      "claim": "connections",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) grammatical cue; Haladyna, Downing, and Rodriguez (2002) stem-option grammatical consistency. Applies only when the stem ends in a/an and exactly one option uniquely fits."
+    },
+    {
+      "programId": "grammatical-fit-option",
+      "authority": "pisa",
+      "claim": "employ",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) grammatical cue; Haladyna, Downing, and Rodriguez (2002) stem-option grammatical consistency. Applies only when the stem ends in a/an and exactly one option uniquely fits."
+    },
+    {
+      "programId": "grammatical-fit-option",
+      "authority": "pisa",
+      "claim": "formulate",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) grammatical cue; Haladyna, Downing, and Rodriguez (2002) stem-option grammatical consistency. Applies only when the stem ends in a/an and exactly one option uniquely fits."
+    },
+    {
+      "programId": "grammatical-fit-option",
+      "authority": "pisa",
+      "claim": "interpret",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) grammatical cue; Haladyna, Downing, and Rodriguez (2002) stem-option grammatical consistency. Applies only when the stem ends in a/an and exactly one option uniquely fits."
+    },
+    {
+      "programId": "grammatical-fit-option",
+      "authority": "pisa",
+      "claim": "reflection",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) grammatical cue; Haladyna, Downing, and Rodriguez (2002) stem-option grammatical consistency. Applies only when the stem ends in a/an and exactly one option uniquely fits."
+    },
+    {
+      "programId": "grammatical-fit-option",
+      "authority": "pisa",
+      "claim": "reproduction",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) grammatical cue; Haladyna, Downing, and Rodriguez (2002) stem-option grammatical consistency. Applies only when the stem ends in a/an and exactly one option uniquely fits."
+    },
+    {
+      "programId": "grammatical-fit-option",
+      "authority": "teks",
+      "claim": "alg1",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) grammatical cue; Haladyna, Downing, and Rodriguez (2002) stem-option grammatical consistency. Applies only when the stem ends in a/an and exactly one option uniquely fits."
+    },
+    {
+      "programId": "grammatical-fit-option",
+      "authority": "teks",
+      "claim": "g3",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) grammatical cue; Haladyna, Downing, and Rodriguez (2002) stem-option grammatical consistency. Applies only when the stem ends in a/an and exactly one option uniquely fits."
+    },
+    {
+      "programId": "grammatical-fit-option",
+      "authority": "teks",
+      "claim": "g4",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) grammatical cue; Haladyna, Downing, and Rodriguez (2002) stem-option grammatical consistency. Applies only when the stem ends in a/an and exactly one option uniquely fits."
+    },
+    {
+      "programId": "grammatical-fit-option",
+      "authority": "teks",
+      "claim": "g5",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) grammatical cue; Haladyna, Downing, and Rodriguez (2002) stem-option grammatical consistency. Applies only when the stem ends in a/an and exactly one option uniquely fits."
+    },
+    {
+      "programId": "grammatical-fit-option",
+      "authority": "teks",
+      "claim": "g6",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) grammatical cue; Haladyna, Downing, and Rodriguez (2002) stem-option grammatical consistency. Applies only when the stem ends in a/an and exactly one option uniquely fits."
+    },
+    {
+      "programId": "grammatical-fit-option",
+      "authority": "teks",
+      "claim": "g7",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) grammatical cue; Haladyna, Downing, and Rodriguez (2002) stem-option grammatical consistency. Applies only when the stem ends in a/an and exactly one option uniquely fits."
+    },
+    {
+      "programId": "grammatical-fit-option",
+      "authority": "teks",
+      "claim": "g8",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) grammatical cue; Haladyna, Downing, and Rodriguez (2002) stem-option grammatical consistency. Applies only when the stem ends in a/an and exactly one option uniquely fits."
+    },
+    {
+      "programId": "grammatical-fit-option",
+      "authority": "timss",
+      "claim": "applying",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) grammatical cue; Haladyna, Downing, and Rodriguez (2002) stem-option grammatical consistency. Applies only when the stem ends in a/an and exactly one option uniquely fits."
+    },
+    {
+      "programId": "grammatical-fit-option",
+      "authority": "timss",
+      "claim": "knowing",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) grammatical cue; Haladyna, Downing, and Rodriguez (2002) stem-option grammatical consistency. Applies only when the stem ends in a/an and exactly one option uniquely fits."
+    },
+    {
+      "programId": "grammatical-fit-option",
+      "authority": "timss",
+      "claim": "reasoning",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Millman, Bishop, and Ebel (1965) grammatical cue; Haladyna, Downing, and Rodriguez (2002) stem-option grammatical consistency. Applies only when the stem ends in a/an and exactly one option uniquely fits."
+    },
+    {
+      "programId": "mean-of-other-options",
+      "authority": "acara",
+      "claim": "y7-numeracy",
+      "nScored": 11,
+      "nCorrect": 4,
+      "passRate": 0.36363636363636365,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.09090909090909091,
+        0.7272727272727273
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.4444444444444444
+      ],
+      "nAdministrations": 2,
+      "binomialPGreater": 0.2866954803466799,
+      "clearsBar": false,
+      "inFamily": true,
+      "citation": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers.",
+      "holmReject05NewFamily": false,
+      "bonferroniReject05NewFamily": false,
+      "bonferroniReject05CombinedFamily": false
+    },
+    {
+      "programId": "mean-of-other-options",
+      "authority": "ccss",
+      "claim": "3.MD.B.3",
+      "nScored": 1,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 1,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers."
+    },
+    {
+      "programId": "mean-of-other-options",
+      "authority": "ccss",
+      "claim": "3.NBT.A.1",
+      "nScored": 1,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 1,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers."
+    },
+    {
+      "programId": "mean-of-other-options",
+      "authority": "ccss",
+      "claim": "3.NF.A.2.a",
+      "nScored": 1,
+      "nCorrect": 1,
+      "passRate": 1.0,
+      "chanceRate": 0.25,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "clusterBootstrapCi95": [
+        1.0,
+        1.0
+      ],
+      "nAdministrations": 1,
+      "binomialPGreater": 0.25,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers."
+    },
+    {
+      "programId": "mean-of-other-options",
+      "authority": "ccss",
+      "claim": "3.OA.A.2",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers."
+    },
+    {
+      "programId": "mean-of-other-options",
+      "authority": "ccss",
+      "claim": "3.OA.B.5",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers."
+    },
+    {
+      "programId": "mean-of-other-options",
+      "authority": "ccss",
+      "claim": "3.OA.D.8",
+      "nScored": 1,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 1,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers."
+    },
+    {
+      "programId": "mean-of-other-options",
+      "authority": "ccss",
+      "claim": "6.G.A.1",
+      "nScored": 1,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 1,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers."
+    },
+    {
+      "programId": "mean-of-other-options",
+      "authority": "ccss",
+      "claim": "6.NS.B.4",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers."
+    },
+    {
+      "programId": "mean-of-other-options",
+      "authority": "ccss",
+      "claim": "6.RP.A.1",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers."
+    },
+    {
+      "programId": "mean-of-other-options",
+      "authority": "ccss",
+      "claim": "6.RP.A.3.c",
+      "nScored": 1,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 1,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers."
+    },
+    {
+      "programId": "mean-of-other-options",
+      "authority": "ccss",
+      "claim": "6.SP.B.5.c",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers."
+    },
+    {
+      "programId": "mean-of-other-options",
+      "authority": "ccss",
+      "claim": "7.EE.A.2",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers."
+    },
+    {
+      "programId": "mean-of-other-options",
+      "authority": "ccss",
+      "claim": "7.EE.B.3",
+      "nScored": 1,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 1,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers."
+    },
+    {
+      "programId": "mean-of-other-options",
+      "authority": "ccss",
+      "claim": "7.EE.B.4.a",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers."
+    },
+    {
+      "programId": "mean-of-other-options",
+      "authority": "ccss",
+      "claim": "7.G.A.1",
+      "nScored": 1,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 1,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers."
+    },
+    {
+      "programId": "mean-of-other-options",
+      "authority": "ccss",
+      "claim": "7.G.A.3",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers."
+    },
+    {
+      "programId": "mean-of-other-options",
+      "authority": "ccss",
+      "claim": "7.NS.A.1.a",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers."
+    },
+    {
+      "programId": "mean-of-other-options",
+      "authority": "ccss",
+      "claim": "7.NS.A.2",
+      "nScored": 1,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 1,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers."
+    },
+    {
+      "programId": "mean-of-other-options",
+      "authority": "ccss",
+      "claim": "7.NS.A.3",
+      "nScored": 1,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 1,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers."
+    },
+    {
+      "programId": "mean-of-other-options",
+      "authority": "ccss",
+      "claim": "7.RP.A.1",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers."
+    },
+    {
+      "programId": "mean-of-other-options",
+      "authority": "ccss",
+      "claim": "7.SP.A.1",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers."
+    },
+    {
+      "programId": "mean-of-other-options",
+      "authority": "ccss",
+      "claim": "7.SP.A.2",
+      "nScored": 1,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 1,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers."
+    },
+    {
+      "programId": "mean-of-other-options",
+      "authority": "ccss",
+      "claim": "7.SP.C.6",
+      "nScored": 1,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 1,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers."
+    },
+    {
+      "programId": "mean-of-other-options",
+      "authority": "ccss",
+      "claim": "8.F.A.2",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers."
+    },
+    {
+      "programId": "mean-of-other-options",
+      "authority": "ccss",
+      "claim": "8.F.B.4",
+      "nScored": 1,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 1,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers."
+    },
+    {
+      "programId": "mean-of-other-options",
+      "authority": "ccss",
+      "claim": "8.F.B.5",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers."
+    },
+    {
+      "programId": "mean-of-other-options",
+      "authority": "ccss",
+      "claim": "8.G.A.2",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers."
+    },
+    {
+      "programId": "mean-of-other-options",
+      "authority": "ccss",
+      "claim": "8.G.A.3",
+      "nScored": 1,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 1,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers."
+    },
+    {
+      "programId": "mean-of-other-options",
+      "authority": "ccss",
+      "claim": "8.G.A.5",
+      "nScored": 1,
+      "nCorrect": 1,
+      "passRate": 1.0,
+      "chanceRate": 0.25,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "clusterBootstrapCi95": [
+        1.0,
+        1.0
+      ],
+      "nAdministrations": 1,
+      "binomialPGreater": 0.25,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers."
+    },
+    {
+      "programId": "mean-of-other-options",
+      "authority": "ccss",
+      "claim": "8.G.C.9",
+      "nScored": 1,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 1,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers."
+    },
+    {
+      "programId": "mean-of-other-options",
+      "authority": "ccss",
+      "claim": "8.SP.A.1",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers."
+    },
+    {
+      "programId": "mean-of-other-options",
+      "authority": "ccss",
+      "claim": "8.SP.A.2",
+      "nScored": 0,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 0,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers."
+    },
+    {
+      "programId": "mean-of-other-options",
+      "authority": "eqao",
+      "claim": "g3",
+      "nScored": 22,
+      "nCorrect": 6,
+      "passRate": 0.2727272727272727,
+      "chanceRate": 0.2537878787878788,
+      "ci95": [
+        0.09090909090909091,
+        0.45454545454545453
+      ],
+      "clusterBootstrapCi95": [
+        0.25,
+        0.3333333333333333
+      ],
+      "nAdministrations": 3,
+      "binomialPGreater": 0.49975393440559385,
+      "clearsBar": false,
+      "inFamily": true,
+      "citation": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers.",
+      "holmReject05NewFamily": false,
+      "bonferroniReject05NewFamily": false,
+      "bonferroniReject05CombinedFamily": false
+    },
+    {
+      "programId": "mean-of-other-options",
+      "authority": "eqao",
+      "claim": "g6",
+      "nScored": 29,
+      "nCorrect": 6,
+      "passRate": 0.20689655172413793,
+      "chanceRate": 0.25517241379310346,
+      "ci95": [
+        0.06896551724137931,
+        0.3793103448275862
+      ],
+      "clusterBootstrapCi95": [
+        0.1,
+        0.3
+      ],
+      "nAdministrations": 3,
+      "binomialPGreater": 0.7870395068599002,
+      "clearsBar": false,
+      "inFamily": true,
+      "citation": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers.",
+      "holmReject05NewFamily": false,
+      "bonferroniReject05NewFamily": false,
+      "bonferroniReject05CombinedFamily": false
+    },
+    {
+      "programId": "mean-of-other-options",
+      "authority": "eqao",
+      "claim": "g9",
+      "nScored": 17,
+      "nCorrect": 8,
+      "passRate": 0.47058823529411764,
+      "chanceRate": 0.25980392156862747,
+      "ci95": [
+        0.23529411764705882,
+        0.7058823529411765
+      ],
+      "clusterBootstrapCi95": [
+        0.25,
+        0.5555555555555556
+      ],
+      "nAdministrations": 3,
+      "binomialPGreater": 0.04967746845933141,
+      "clearsBar": false,
+      "inFamily": true,
+      "citation": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers.",
+      "holmReject05NewFamily": false,
+      "bonferroniReject05NewFamily": false,
+      "bonferroniReject05CombinedFamily": false
+    },
+    {
+      "programId": "mean-of-other-options",
+      "authority": "nyregents",
+      "claim": "algebra-i",
+      "nScored": 152,
+      "nCorrect": 39,
+      "passRate": 0.2565789473684211,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.18421052631578946,
+        0.32894736842105265
+      ],
+      "clusterBootstrapCi95": [
+        0.19161676646706588,
+        0.32919254658385094
+      ],
+      "nAdministrations": 32,
+      "binomialPGreater": 0.456553943561518,
+      "clearsBar": false,
+      "inFamily": true,
+      "citation": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers.",
+      "holmReject05NewFamily": false,
+      "bonferroniReject05NewFamily": false,
+      "bonferroniReject05CombinedFamily": false
+    },
+    {
+      "programId": "mean-of-other-options",
+      "authority": "nyregents",
+      "claim": "algebra-ii",
+      "nScored": 135,
+      "nCorrect": 37,
+      "passRate": 0.2740740740740741,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.2074074074074074,
+        0.34074074074074073
+      ],
+      "clusterBootstrapCi95": [
+        0.1889763779527559,
+        0.3700787401574803
+      ],
+      "nAdministrations": 25,
+      "binomialPGreater": 0.288420911137924,
+      "clearsBar": false,
+      "inFamily": true,
+      "citation": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers.",
+      "holmReject05NewFamily": false,
+      "bonferroniReject05NewFamily": false,
+      "bonferroniReject05CombinedFamily": false
+    },
+    {
+      "programId": "mean-of-other-options",
+      "authority": "nyregents",
+      "claim": "geometry",
+      "nScored": 156,
+      "nCorrect": 51,
+      "passRate": 0.3269230769230769,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.2564102564102564,
+        0.40384615384615385
+      ],
+      "clusterBootstrapCi95": [
+        0.2708333333333333,
+        0.38
+      ],
+      "nAdministrations": 27,
+      "binomialPGreater": 0.01875945996468392,
+      "clearsBar": true,
+      "inFamily": true,
+      "citation": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers.",
+      "holmReject05NewFamily": false,
+      "bonferroniReject05NewFamily": false,
+      "bonferroniReject05CombinedFamily": false
+    },
+    {
+      "programId": "mean-of-other-options",
+      "authority": "pisa",
+      "claim": "connections",
+      "nScored": 2,
+      "nCorrect": 1,
+      "passRate": 0.5,
+      "chanceRate": 0.225,
+      "ci95": [
+        0.0,
+        1.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        1.0
+      ],
+      "nAdministrations": 2,
+      "binomialPGreater": 0.39937499999999987,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers."
+    },
+    {
+      "programId": "mean-of-other-options",
+      "authority": "pisa",
+      "claim": "employ",
+      "nScored": 5,
+      "nCorrect": 3,
+      "passRate": 0.6,
+      "chanceRate": 0.24,
+      "ci95": [
+        0.2,
+        1.0
+      ],
+      "clusterBootstrapCi95": [
+        0.25,
+        1.0
+      ],
+      "nAdministrations": 4,
+      "binomialPGreater": 0.09325117440000001,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers."
+    },
+    {
+      "programId": "mean-of-other-options",
+      "authority": "pisa",
+      "claim": "formulate",
+      "nScored": 2,
+      "nCorrect": 1,
+      "passRate": 0.5,
+      "chanceRate": 0.225,
+      "ci95": [
+        0.0,
+        1.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        1.0
+      ],
+      "nAdministrations": 2,
+      "binomialPGreater": 0.39937499999999987,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers."
+    },
+    {
+      "programId": "mean-of-other-options",
+      "authority": "pisa",
+      "claim": "interpret",
+      "nScored": 2,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 2,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers."
+    },
+    {
+      "programId": "mean-of-other-options",
+      "authority": "pisa",
+      "claim": "reflection",
+      "nScored": 1,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 1,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers."
+    },
+    {
+      "programId": "mean-of-other-options",
+      "authority": "pisa",
+      "claim": "reproduction",
+      "nScored": 1,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.0
+      ],
+      "nAdministrations": 1,
+      "binomialPGreater": 1.0,
+      "clearsBar": false,
+      "inFamily": false,
+      "citation": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers."
+    },
+    {
+      "programId": "mean-of-other-options",
+      "authority": "teks",
+      "claim": "alg1",
+      "nScored": 22,
+      "nCorrect": 6,
+      "passRate": 0.2727272727272727,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.09090909090909091,
+        0.45454545454545453
+      ],
+      "clusterBootstrapCi95": [
+        0.16666666666666666,
+        0.3333333333333333
+      ],
+      "nAdministrations": 3,
+      "binomialPGreater": 0.4832025654794165,
+      "clearsBar": false,
+      "inFamily": true,
+      "citation": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers.",
+      "holmReject05NewFamily": false,
+      "bonferroniReject05NewFamily": false,
+      "bonferroniReject05CombinedFamily": false
+    },
+    {
+      "programId": "mean-of-other-options",
+      "authority": "teks",
+      "claim": "g3",
+      "nScored": 22,
+      "nCorrect": 1,
+      "passRate": 0.045454545454545456,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.0,
+        0.13636363636363635
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.125
+      ],
+      "nAdministrations": 3,
+      "binomialPGreater": 0.9982161932843465,
+      "clearsBar": false,
+      "inFamily": true,
+      "citation": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers.",
+      "holmReject05NewFamily": false,
+      "bonferroniReject05NewFamily": false,
+      "bonferroniReject05CombinedFamily": false
+    },
+    {
+      "programId": "mean-of-other-options",
+      "authority": "teks",
+      "claim": "g4",
+      "nScored": 29,
+      "nCorrect": 9,
+      "passRate": 0.3103448275862069,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.13793103448275862,
+        0.4827586206896552
+      ],
+      "clusterBootstrapCi95": [
+        0.25,
+        0.375
+      ],
+      "nAdministrations": 3,
+      "binomialPGreater": 0.2874586034083155,
+      "clearsBar": false,
+      "inFamily": true,
+      "citation": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers.",
+      "holmReject05NewFamily": false,
+      "bonferroniReject05NewFamily": false,
+      "bonferroniReject05CombinedFamily": false
+    },
+    {
+      "programId": "mean-of-other-options",
+      "authority": "teks",
+      "claim": "g5",
+      "nScored": 39,
+      "nCorrect": 11,
+      "passRate": 0.28205128205128205,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.15384615384615385,
+        0.4358974358974359
+      ],
+      "clusterBootstrapCi95": [
+        0.1875,
+        0.35714285714285715
+      ],
+      "nAdministrations": 3,
+      "binomialPGreater": 0.3800048353821498,
+      "clearsBar": false,
+      "inFamily": true,
+      "citation": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers.",
+      "holmReject05NewFamily": false,
+      "bonferroniReject05NewFamily": false,
+      "bonferroniReject05CombinedFamily": false
+    },
+    {
+      "programId": "mean-of-other-options",
+      "authority": "teks",
+      "claim": "g6",
+      "nScored": 28,
+      "nCorrect": 8,
+      "passRate": 0.2857142857142857,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.14285714285714285,
+        0.4642857142857143
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.46153846153846156
+      ],
+      "nAdministrations": 3,
+      "binomialPGreater": 0.40025683281803426,
+      "clearsBar": false,
+      "inFamily": true,
+      "citation": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers.",
+      "holmReject05NewFamily": false,
+      "bonferroniReject05NewFamily": false,
+      "bonferroniReject05CombinedFamily": false
+    },
+    {
+      "programId": "mean-of-other-options",
+      "authority": "teks",
+      "claim": "g7",
+      "nScored": 27,
+      "nCorrect": 8,
+      "passRate": 0.2962962962962963,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.1111111111111111,
+        0.4444444444444444
+      ],
+      "clusterBootstrapCi95": [
+        0.08333333333333333,
+        0.5
+      ],
+      "nAdministrations": 3,
+      "binomialPGreater": 0.35728607875719465,
+      "clearsBar": false,
+      "inFamily": true,
+      "citation": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers.",
+      "holmReject05NewFamily": false,
+      "bonferroniReject05NewFamily": false,
+      "bonferroniReject05CombinedFamily": false
+    },
+    {
+      "programId": "mean-of-other-options",
+      "authority": "teks",
+      "claim": "g8",
+      "nScored": 27,
+      "nCorrect": 11,
+      "passRate": 0.4074074074074074,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.2222222222222222,
+        0.5925925925925926
+      ],
+      "clusterBootstrapCi95": [
+        0.3333333333333333,
+        0.5
+      ],
+      "nAdministrations": 3,
+      "binomialPGreater": 0.05277727837539979,
+      "clearsBar": false,
+      "inFamily": true,
+      "citation": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers.",
+      "holmReject05NewFamily": false,
+      "bonferroniReject05NewFamily": false,
+      "bonferroniReject05CombinedFamily": false
+    },
+    {
+      "programId": "mean-of-other-options",
+      "authority": "timss",
+      "claim": "applying",
+      "nScored": 28,
+      "nCorrect": 2,
+      "passRate": 0.07142857142857142,
+      "chanceRate": 0.24821428571428572,
+      "ci95": [
+        0.0,
+        0.17857142857142858
+      ],
+      "clusterBootstrapCi95": [
+        0.0,
+        0.21052631578947367
+      ],
+      "nAdministrations": 5,
+      "binomialPGreater": 0.9965235876064009,
+      "clearsBar": false,
+      "inFamily": true,
+      "citation": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers.",
+      "holmReject05NewFamily": false,
+      "bonferroniReject05NewFamily": false,
+      "bonferroniReject05CombinedFamily": false
+    },
+    {
+      "programId": "mean-of-other-options",
+      "authority": "timss",
+      "claim": "knowing",
+      "nScored": 17,
+      "nCorrect": 6,
+      "passRate": 0.35294117647058826,
+      "chanceRate": 0.24705882352941178,
+      "ci95": [
+        0.17647058823529413,
+        0.5882352941176471
+      ],
+      "clusterBootstrapCi95": [
+        0.08333333333333333,
+        0.56
+      ],
+      "nAdministrations": 5,
+      "binomialPGreater": 0.22575798903618527,
+      "clearsBar": false,
+      "inFamily": true,
+      "citation": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers.",
+      "holmReject05NewFamily": false,
+      "bonferroniReject05NewFamily": false,
+      "bonferroniReject05CombinedFamily": false
+    },
+    {
+      "programId": "mean-of-other-options",
+      "authority": "timss",
+      "claim": "reasoning",
+      "nScored": 37,
+      "nCorrect": 7,
+      "passRate": 0.1891891891891892,
+      "chanceRate": 0.25,
+      "ci95": [
+        0.05405405405405406,
+        0.32432432432432434
+      ],
+      "clusterBootstrapCi95": [
+        0.05263157894736842,
+        0.375
+      ],
+      "nAdministrations": 5,
+      "binomialPGreater": 0.8528419050267224,
+      "clearsBar": false,
+      "inFamily": true,
+      "citation": "Numeric companion to central-tendency test-wiseness (Millman et al. 1965; Haladyna et al. 2002 ordered numeric options). Pick the unique option closest to the mean of the remaining parsed option values; abstain on ties or fewer than three parsed numbers.",
+      "holmReject05NewFamily": false,
+      "bonferroniReject05NewFamily": false,
+      "bonferroniReject05CombinedFamily": false
+    }
+  ],
+  "cite": "exports/addendum/apriori-cues-extended.json",
+  "holmNote": "Paper Holm/Bonferroni should be recomputed on nFamilyTestsCombined, not on the new-family-only counts."
+}

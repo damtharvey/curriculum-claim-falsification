@@ -1,0 +1,3785 @@
+{
+  "generatedFrom": {
+    "ruleChance": "exports/rule-chance.json",
+    "comparisons": "exports/comparisons.json",
+    "methodControls": "exports/method-controls.json",
+    "items": "data/items.jsonl",
+    "comparisonsGeneratedAt": "2026-09-16T18:59:03.708Z",
+    "nItemsComparisons": 2405,
+    "nTrials": 350535,
+    "nWitnessesClaimedItemLevelDoNotCite": 516
+  },
+  "familyDefinition": "Every a priori catalog rule on every authority x claim cell with nScored >= 10 and chanceRate > 0. One PISA unit-rate numeric row with chanceRate 0 was excluded as a degenerate test. Pre-registered witness bar is lower 95% bootstrap CI above recorded chanceRate and n >= 10. Family-wise tests are one-sided binomial p-values H1: rate > chanceRate, Holm and Bonferroni at alpha=0.05.",
+  "nFamilyTests": 105,
+  "alpha": 0.05,
+  "bonferroniThreshold": 0.0004761904761904762,
+  "nClearsPerCellBar": 5,
+  "nHolmReject": 0,
+  "nBonferroniReject": 0,
+  "claimedWitnessesSurviveHolm": false,
+  "claimedWitnessesSurviveBonferroni": false,
+  "claimedWitnesses": [
+    {
+      "programId": "middle-value-option",
+      "authority": "eqao",
+      "claim": "g6",
+      "nScored": 40,
+      "nCorrect": 20,
+      "passRate": 0.5,
+      "passRate3": 0.5,
+      "chanceRate": 0.25375,
+      "chanceRate3": 0.254,
+      "ci95": [
+        0.35,
+        0.65
+      ],
+      "ci95_3": [
+        0.35,
+        0.65
+      ],
+      "beatsChance": true,
+      "clearsPerCellBar": true,
+      "binomialPGreater": 0.0007033416604762618,
+      "claimedWitness": true,
+      "note": "CI excludes chance, n>=10; witness-eligible",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762,
+      "middleValueFamilyHolmReject05": true,
+      "middleValueFamilyBonferroniReject05": true
+    },
+    {
+      "programId": "middle-value-option",
+      "authority": "nyregents",
+      "claim": "geometry",
+      "nScored": 279,
+      "nCorrect": 90,
+      "passRate": 0.3225806451612903,
+      "passRate3": 0.323,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.26523297491039427,
+        0.37992831541218636
+      ],
+      "ci95_3": [
+        0.265,
+        0.38
+      ],
+      "beatsChance": true,
+      "clearsPerCellBar": true,
+      "binomialPGreater": 0.0038331369338577993,
+      "claimedWitness": true,
+      "note": "CI excludes chance, n>=10; witness-eligible",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762,
+      "middleValueFamilyHolmReject05": false,
+      "middleValueFamilyBonferroniReject05": false
+    }
+  ],
+  "middleValueFamilyN": 17,
+  "middleValueBonferroniThreshold": 0.0029411764705882353,
+  "claimedSurviveMiddleValueHolm": false,
+  "middleValueFamily": [
+    {
+      "programId": "middle-value-option",
+      "authority": "acara",
+      "claim": "y7-numeracy",
+      "nScored": 14,
+      "nCorrect": 3,
+      "passRate": 0.21428571428571427,
+      "passRate3": 0.214,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.0,
+        0.42857142857142855
+      ],
+      "ci95_3": [
+        0.0,
+        0.429
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.718872375786306,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762,
+      "middleValueFamilyHolmReject05": false,
+      "middleValueFamilyBonferroniReject05": false
+    },
+    {
+      "programId": "middle-value-option",
+      "authority": "eqao",
+      "claim": "g3",
+      "nScored": 33,
+      "nCorrect": 8,
+      "passRate": 0.24242424242424243,
+      "passRate3": 0.242,
+      "chanceRate": 0.2525252525252525,
+      "chanceRate3": 0.253,
+      "ci95": [
+        0.09090909090909091,
+        0.3939393939393939
+      ],
+      "ci95_3": [
+        0.091,
+        0.394
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.618973735192094,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762,
+      "middleValueFamilyHolmReject05": false,
+      "middleValueFamilyBonferroniReject05": false
+    },
+    {
+      "programId": "middle-value-option",
+      "authority": "eqao",
+      "claim": "g6",
+      "nScored": 40,
+      "nCorrect": 20,
+      "passRate": 0.5,
+      "passRate3": 0.5,
+      "chanceRate": 0.25375,
+      "chanceRate3": 0.254,
+      "ci95": [
+        0.35,
+        0.65
+      ],
+      "ci95_3": [
+        0.35,
+        0.65
+      ],
+      "beatsChance": true,
+      "clearsPerCellBar": true,
+      "binomialPGreater": 0.0007033416604762618,
+      "claimedWitness": true,
+      "note": "CI excludes chance, n>=10; witness-eligible",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762,
+      "middleValueFamilyHolmReject05": true,
+      "middleValueFamilyBonferroniReject05": true
+    },
+    {
+      "programId": "middle-value-option",
+      "authority": "eqao",
+      "claim": "g9",
+      "nScored": 38,
+      "nCorrect": 8,
+      "passRate": 0.21052631578947367,
+      "passRate3": 0.211,
+      "chanceRate": 0.2565789473684211,
+      "chanceRate3": 0.257,
+      "ci95": [
+        0.07894736842105263,
+        0.34210526315789475
+      ],
+      "ci95_3": [
+        0.079,
+        0.342
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.7956225669669269,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762,
+      "middleValueFamilyHolmReject05": false,
+      "middleValueFamilyBonferroniReject05": false
+    },
+    {
+      "programId": "middle-value-option",
+      "authority": "nyregents",
+      "claim": "algebra-i",
+      "nScored": 458,
+      "nCorrect": 119,
+      "passRate": 0.259825327510917,
+      "passRate3": 0.26,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.22270742358078602,
+        0.30131004366812225
+      ],
+      "ci95_3": [
+        0.223,
+        0.301
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.3303700850433998,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762,
+      "middleValueFamilyHolmReject05": false,
+      "middleValueFamilyBonferroniReject05": false
+    },
+    {
+      "programId": "middle-value-option",
+      "authority": "nyregents",
+      "claim": "algebra-ii",
+      "nScored": 372,
+      "nCorrect": 111,
+      "passRate": 0.29838709677419356,
+      "passRate3": 0.298,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.25268817204301075,
+        0.34408602150537637
+      ],
+      "ci95_3": [
+        0.253,
+        0.344
+      ],
+      "beatsChance": true,
+      "clearsPerCellBar": true,
+      "binomialPGreater": 0.019465923280412727,
+      "claimedWitness": false,
+      "note": "CI excludes chance, n>=10; witness-eligible",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762,
+      "middleValueFamilyHolmReject05": false,
+      "middleValueFamilyBonferroniReject05": false
+    },
+    {
+      "programId": "middle-value-option",
+      "authority": "nyregents",
+      "claim": "geometry",
+      "nScored": 279,
+      "nCorrect": 90,
+      "passRate": 0.3225806451612903,
+      "passRate3": 0.323,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.26523297491039427,
+        0.37992831541218636
+      ],
+      "ci95_3": [
+        0.265,
+        0.38
+      ],
+      "beatsChance": true,
+      "clearsPerCellBar": true,
+      "binomialPGreater": 0.0038331369338577993,
+      "claimedWitness": true,
+      "note": "CI excludes chance, n>=10; witness-eligible",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762,
+      "middleValueFamilyHolmReject05": false,
+      "middleValueFamilyBonferroniReject05": false
+    },
+    {
+      "programId": "middle-value-option",
+      "authority": "teks",
+      "claim": "alg1",
+      "nScored": 61,
+      "nCorrect": 13,
+      "passRate": 0.21311475409836064,
+      "passRate3": 0.213,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.11475409836065574,
+        0.32786885245901637
+      ],
+      "ci95_3": [
+        0.115,
+        0.328
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.7894361081692044,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762,
+      "middleValueFamilyHolmReject05": false,
+      "middleValueFamilyBonferroniReject05": false
+    },
+    {
+      "programId": "middle-value-option",
+      "authority": "teks",
+      "claim": "g3",
+      "nScored": 36,
+      "nCorrect": 10,
+      "passRate": 0.2777777777777778,
+      "passRate3": 0.278,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.1388888888888889,
+        0.4444444444444444
+      ],
+      "ci95_3": [
+        0.139,
+        0.444
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.4116815274781572,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762,
+      "middleValueFamilyHolmReject05": false,
+      "middleValueFamilyBonferroniReject05": false
+    },
+    {
+      "programId": "middle-value-option",
+      "authority": "teks",
+      "claim": "g4",
+      "nScored": 35,
+      "nCorrect": 11,
+      "passRate": 0.3142857142857143,
+      "passRate3": 0.314,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.17142857142857143,
+        0.4857142857142857
+      ],
+      "ci95_3": [
+        0.171,
+        0.486
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.2419247715499574,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762,
+      "middleValueFamilyHolmReject05": false,
+      "middleValueFamilyBonferroniReject05": false
+    },
+    {
+      "programId": "middle-value-option",
+      "authority": "teks",
+      "claim": "g5",
+      "nScored": 49,
+      "nCorrect": 17,
+      "passRate": 0.3469387755102041,
+      "passRate3": 0.347,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.22448979591836735,
+        0.4897959183673469
+      ],
+      "ci95_3": [
+        0.224,
+        0.49
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.0836247768717364,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762,
+      "middleValueFamilyHolmReject05": false,
+      "middleValueFamilyBonferroniReject05": false
+    },
+    {
+      "programId": "middle-value-option",
+      "authority": "teks",
+      "claim": "g6",
+      "nScored": 52,
+      "nCorrect": 17,
+      "passRate": 0.3269230769230769,
+      "passRate3": 0.327,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.19230769230769232,
+        0.46153846153846156
+      ],
+      "ci95_3": [
+        0.192,
+        0.462
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.13219902545751705,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762,
+      "middleValueFamilyHolmReject05": false,
+      "middleValueFamilyBonferroniReject05": false
+    },
+    {
+      "programId": "middle-value-option",
+      "authority": "teks",
+      "claim": "g7",
+      "nScored": 41,
+      "nCorrect": 13,
+      "passRate": 0.3170731707317073,
+      "passRate3": 0.317,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.17073170731707318,
+        0.4634146341463415
+      ],
+      "ci95_3": [
+        0.171,
+        0.463
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.20556458353500356,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762,
+      "middleValueFamilyHolmReject05": false,
+      "middleValueFamilyBonferroniReject05": false
+    },
+    {
+      "programId": "middle-value-option",
+      "authority": "teks",
+      "claim": "g8",
+      "nScored": 45,
+      "nCorrect": 12,
+      "passRate": 0.26666666666666666,
+      "passRate3": 0.267,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.15555555555555556,
+        0.4
+      ],
+      "ci95_3": [
+        0.156,
+        0.4
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.45434823192840607,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762,
+      "middleValueFamilyHolmReject05": false,
+      "middleValueFamilyBonferroniReject05": false
+    },
+    {
+      "programId": "middle-value-option",
+      "authority": "timss",
+      "claim": "applying",
+      "nScored": 50,
+      "nCorrect": 12,
+      "passRate": 0.24,
+      "passRate3": 0.24,
+      "chanceRate": 0.249,
+      "chanceRate3": 0.249,
+      "ci95": [
+        0.12,
+        0.36
+      ],
+      "ci95_3": [
+        0.12,
+        0.36
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.6121512988546793,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762,
+      "middleValueFamilyHolmReject05": false,
+      "middleValueFamilyBonferroniReject05": false
+    },
+    {
+      "programId": "middle-value-option",
+      "authority": "timss",
+      "claim": "knowing",
+      "nScored": 41,
+      "nCorrect": 12,
+      "passRate": 0.2926829268292683,
+      "passRate3": 0.293,
+      "chanceRate": 0.2475609756097561,
+      "chanceRate3": 0.248,
+      "ci95": [
+        0.14634146341463414,
+        0.43902439024390244
+      ],
+      "ci95_3": [
+        0.146,
+        0.439
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.30462958665269446,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762,
+      "middleValueFamilyHolmReject05": false,
+      "middleValueFamilyBonferroniReject05": false
+    },
+    {
+      "programId": "middle-value-option",
+      "authority": "timss",
+      "claim": "reasoning",
+      "nScored": 57,
+      "nCorrect": 21,
+      "passRate": 0.3684210526315789,
+      "passRate3": 0.368,
+      "chanceRate": 0.24912280701754386,
+      "chanceRate3": 0.249,
+      "ci95": [
+        0.24561403508771928,
+        0.49122807017543857
+      ],
+      "ci95_3": [
+        0.246,
+        0.491
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.030435220413620793,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762,
+      "middleValueFamilyHolmReject05": false,
+      "middleValueFamilyBonferroniReject05": false
+    }
+  ],
+  "clearsPerCellBar": [
+    {
+      "programId": "middle-value-option",
+      "authority": "eqao",
+      "claim": "g6",
+      "nScored": 40,
+      "nCorrect": 20,
+      "passRate": 0.5,
+      "passRate3": 0.5,
+      "chanceRate": 0.25375,
+      "chanceRate3": 0.254,
+      "ci95": [
+        0.35,
+        0.65
+      ],
+      "ci95_3": [
+        0.35,
+        0.65
+      ],
+      "beatsChance": true,
+      "clearsPerCellBar": true,
+      "binomialPGreater": 0.0007033416604762618,
+      "claimedWitness": true,
+      "note": "CI excludes chance, n>=10; witness-eligible",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762,
+      "middleValueFamilyHolmReject05": true,
+      "middleValueFamilyBonferroniReject05": true
+    },
+    {
+      "programId": "middle-value-option",
+      "authority": "nyregents",
+      "claim": "algebra-ii",
+      "nScored": 372,
+      "nCorrect": 111,
+      "passRate": 0.29838709677419356,
+      "passRate3": 0.298,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.25268817204301075,
+        0.34408602150537637
+      ],
+      "ci95_3": [
+        0.253,
+        0.344
+      ],
+      "beatsChance": true,
+      "clearsPerCellBar": true,
+      "binomialPGreater": 0.019465923280412727,
+      "claimedWitness": false,
+      "note": "CI excludes chance, n>=10; witness-eligible",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762,
+      "middleValueFamilyHolmReject05": false,
+      "middleValueFamilyBonferroniReject05": false
+    },
+    {
+      "programId": "middle-value-option",
+      "authority": "nyregents",
+      "claim": "geometry",
+      "nScored": 279,
+      "nCorrect": 90,
+      "passRate": 0.3225806451612903,
+      "passRate3": 0.323,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.26523297491039427,
+        0.37992831541218636
+      ],
+      "ci95_3": [
+        0.265,
+        0.38
+      ],
+      "beatsChance": true,
+      "clearsPerCellBar": true,
+      "binomialPGreater": 0.0038331369338577993,
+      "claimedWitness": true,
+      "note": "CI excludes chance, n>=10; witness-eligible",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762,
+      "middleValueFamilyHolmReject05": false,
+      "middleValueFamilyBonferroniReject05": false
+    },
+    {
+      "programId": "option-repeating-stem-numbers",
+      "authority": "teks",
+      "claim": "alg1",
+      "nScored": 43,
+      "nCorrect": 17,
+      "passRate": 0.3953488372093023,
+      "passRate3": 0.395,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.2558139534883721,
+        0.5348837209302325
+      ],
+      "ci95_3": [
+        0.256,
+        0.535
+      ],
+      "beatsChance": true,
+      "clearsPerCellBar": true,
+      "binomialPGreater": 0.02521774342055006,
+      "claimedWitness": false,
+      "note": "CI excludes chance, n>=10; witness-eligible",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "unit-rate",
+      "authority": "teks",
+      "claim": "g5",
+      "nScored": 12,
+      "nCorrect": 5,
+      "passRate": 0.4166666666666667,
+      "passRate3": 0.417,
+      "chanceRate": 0.14583333333333334,
+      "chanceRate3": 0.146,
+      "ci95": [
+        0.16666666666666666,
+        0.75
+      ],
+      "ci95_3": [
+        0.167,
+        0.75
+      ],
+      "beatsChance": true,
+      "clearsPerCellBar": true,
+      "binomialPGreater": 0.021345719355932373,
+      "claimedWitness": false,
+      "note": "CI excludes chance, n>=10; witness-eligible",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    }
+  ],
+  "holmRejects": [],
+  "bonferroniRejects": [],
+  "family": [
+    {
+      "programId": "longest-option",
+      "authority": "acara",
+      "claim": "y7-numeracy",
+      "nScored": 16,
+      "nCorrect": 2,
+      "passRate": 0.125,
+      "passRate3": 0.125,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.0,
+        0.3125
+      ],
+      "ci95_3": [
+        0.0,
+        0.312
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.9365235602017484,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "middle-value-option",
+      "authority": "acara",
+      "claim": "y7-numeracy",
+      "nScored": 14,
+      "nCorrect": 3,
+      "passRate": 0.21428571428571427,
+      "passRate3": 0.214,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.0,
+        0.42857142857142855
+      ],
+      "ci95_3": [
+        0.0,
+        0.429
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.718872375786306,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762,
+      "middleValueFamilyHolmReject05": false,
+      "middleValueFamilyBonferroniReject05": false
+    },
+    {
+      "programId": "position-c",
+      "authority": "acara",
+      "claim": "y7-numeracy",
+      "nScored": 16,
+      "nCorrect": 4,
+      "passRate": 0.25,
+      "passRate3": 0.25,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.0625,
+        0.5
+      ],
+      "ci95_3": [
+        0.062,
+        0.5
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.5950128899421551,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "longest-option",
+      "authority": "eqao",
+      "claim": "g3",
+      "nScored": 44,
+      "nCorrect": 8,
+      "passRate": 0.18181818181818182,
+      "passRate3": 0.182,
+      "chanceRate": 0.2518939393939394,
+      "chanceRate3": 0.252,
+      "ci95": [
+        0.06818181818181818,
+        0.3181818181818182
+      ],
+      "ci95_3": [
+        0.068,
+        0.318
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.8970468008185873,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "middle-value-option",
+      "authority": "eqao",
+      "claim": "g3",
+      "nScored": 33,
+      "nCorrect": 8,
+      "passRate": 0.24242424242424243,
+      "passRate3": 0.242,
+      "chanceRate": 0.2525252525252525,
+      "chanceRate3": 0.253,
+      "ci95": [
+        0.09090909090909091,
+        0.3939393939393939
+      ],
+      "ci95_3": [
+        0.091,
+        0.394
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.618973735192094,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762,
+      "middleValueFamilyHolmReject05": false,
+      "middleValueFamilyBonferroniReject05": false
+    },
+    {
+      "programId": "option-repeating-stem-numbers",
+      "authority": "eqao",
+      "claim": "g3",
+      "nScored": 16,
+      "nCorrect": 2,
+      "passRate": 0.125,
+      "passRate3": 0.125,
+      "chanceRate": 0.2552083333333333,
+      "chanceRate3": 0.255,
+      "ci95": [
+        0.0,
+        0.3125
+      ],
+      "ci95_3": [
+        0.0,
+        0.312
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.9418833413796701,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "position-c",
+      "authority": "eqao",
+      "claim": "g3",
+      "nScored": 44,
+      "nCorrect": 14,
+      "passRate": 0.3181818181818182,
+      "passRate3": 0.318,
+      "chanceRate": 0.2518939393939394,
+      "chanceRate3": 0.252,
+      "ci95": [
+        0.18181818181818182,
+        0.45454545454545453
+      ],
+      "ci95_3": [
+        0.182,
+        0.455
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.19821869578916365,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "stem-option-overlap",
+      "authority": "eqao",
+      "claim": "g3",
+      "nScored": 15,
+      "nCorrect": 2,
+      "passRate": 0.13333333333333333,
+      "passRate3": 0.133,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.0,
+        0.3333333333333333
+      ],
+      "ci95_3": [
+        0.0,
+        0.333
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.9198192339390542,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "longest-option",
+      "authority": "eqao",
+      "claim": "g6",
+      "nScored": 53,
+      "nCorrect": 9,
+      "passRate": 0.16981132075471697,
+      "passRate3": 0.17,
+      "chanceRate": 0.2528301886792453,
+      "chanceRate3": 0.253,
+      "ci95": [
+        0.07547169811320754,
+        0.2830188679245283
+      ],
+      "ci95_3": [
+        0.075,
+        0.283
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.944705716056166,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "middle-value-option",
+      "authority": "eqao",
+      "claim": "g6",
+      "nScored": 40,
+      "nCorrect": 20,
+      "passRate": 0.5,
+      "passRate3": 0.5,
+      "chanceRate": 0.25375,
+      "chanceRate3": 0.254,
+      "ci95": [
+        0.35,
+        0.65
+      ],
+      "ci95_3": [
+        0.35,
+        0.65
+      ],
+      "beatsChance": true,
+      "clearsPerCellBar": true,
+      "binomialPGreater": 0.0007033416604762618,
+      "claimedWitness": true,
+      "note": "CI excludes chance, n>=10; witness-eligible",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762,
+      "middleValueFamilyHolmReject05": true,
+      "middleValueFamilyBonferroniReject05": true
+    },
+    {
+      "programId": "option-repeating-stem-numbers",
+      "authority": "eqao",
+      "claim": "g6",
+      "nScored": 26,
+      "nCorrect": 6,
+      "passRate": 0.23076923076923078,
+      "passRate3": 0.231,
+      "chanceRate": 0.2596153846153846,
+      "chanceRate3": 0.26,
+      "ci95": [
+        0.07692307692307693,
+        0.38461538461538464
+      ],
+      "ci95_3": [
+        0.077,
+        0.385
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.7026306611863665,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "position-c",
+      "authority": "eqao",
+      "claim": "g6",
+      "nScored": 53,
+      "nCorrect": 12,
+      "passRate": 0.22641509433962265,
+      "passRate3": 0.226,
+      "chanceRate": 0.2528301886792453,
+      "chanceRate3": 0.253,
+      "ci95": [
+        0.11320754716981132,
+        0.33962264150943394
+      ],
+      "ci95_3": [
+        0.113,
+        0.34
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.7199832800276459,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "stem-option-overlap",
+      "authority": "eqao",
+      "claim": "g6",
+      "nScored": 13,
+      "nCorrect": 5,
+      "passRate": 0.38461538461538464,
+      "passRate3": 0.385,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.15384615384615385,
+        0.6153846153846154
+      ],
+      "ci95_3": [
+        0.154,
+        0.615
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.2060381025075906,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "longest-option",
+      "authority": "eqao",
+      "claim": "g9",
+      "nScored": 52,
+      "nCorrect": 7,
+      "passRate": 0.1346153846153846,
+      "passRate3": 0.135,
+      "chanceRate": 0.2548076923076923,
+      "chanceRate3": 0.255,
+      "ci95": [
+        0.057692307692307696,
+        0.23076923076923078
+      ],
+      "ci95_3": [
+        0.058,
+        0.231
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.9887257464370324,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "middle-value-option",
+      "authority": "eqao",
+      "claim": "g9",
+      "nScored": 38,
+      "nCorrect": 8,
+      "passRate": 0.21052631578947367,
+      "passRate3": 0.211,
+      "chanceRate": 0.2565789473684211,
+      "chanceRate3": 0.257,
+      "ci95": [
+        0.07894736842105263,
+        0.34210526315789475
+      ],
+      "ci95_3": [
+        0.079,
+        0.342
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.7956225669669269,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762,
+      "middleValueFamilyHolmReject05": false,
+      "middleValueFamilyBonferroniReject05": false
+    },
+    {
+      "programId": "option-repeating-stem-numbers",
+      "authority": "eqao",
+      "claim": "g9",
+      "nScored": 23,
+      "nCorrect": 3,
+      "passRate": 0.13043478260869565,
+      "passRate3": 0.13,
+      "chanceRate": 0.25362318840579706,
+      "chanceRate3": 0.254,
+      "ci95": [
+        0.0,
+        0.30434782608695654
+      ],
+      "ci95_3": [
+        0.0,
+        0.304
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.9544853324456631,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "position-c",
+      "authority": "eqao",
+      "claim": "g9",
+      "nScored": 52,
+      "nCorrect": 13,
+      "passRate": 0.25,
+      "passRate3": 0.25,
+      "chanceRate": 0.2548076923076923,
+      "chanceRate3": 0.255,
+      "ci95": [
+        0.1346153846153846,
+        0.36538461538461536
+      ],
+      "ci95_3": [
+        0.135,
+        0.365
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.5844613042804627,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "stem-option-overlap",
+      "authority": "eqao",
+      "claim": "g9",
+      "nScored": 25,
+      "nCorrect": 5,
+      "passRate": 0.2,
+      "passRate3": 0.2,
+      "chanceRate": 0.2533333333333333,
+      "chanceRate3": 0.253,
+      "ci95": [
+        0.04,
+        0.36
+      ],
+      "ci95_3": [
+        0.04,
+        0.36
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.7970335703820308,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "avoid-absolute-terms",
+      "authority": "nyregents",
+      "claim": "algebra-i",
+      "nScored": 19,
+      "nCorrect": 7,
+      "passRate": 0.3684210526315789,
+      "passRate3": 0.368,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.15789473684210525,
+        0.5789473684210527
+      ],
+      "ci95_3": [
+        0.158,
+        0.579
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.17487588398216805,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "coefficient-adjacent-to-x",
+      "authority": "nyregents",
+      "claim": "algebra-i",
+      "nScored": 38,
+      "nCorrect": 7,
+      "passRate": 0.18421052631578946,
+      "passRate3": 0.184,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.07894736842105263,
+        0.3157894736842105
+      ],
+      "ci95_3": [
+        0.079,
+        0.316
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.8718466407100404,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "longest-option",
+      "authority": "nyregents",
+      "claim": "algebra-i",
+      "nScored": 598,
+      "nCorrect": 169,
+      "passRate": 0.2826086956521739,
+      "passRate3": 0.283,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.2491638795986622,
+        0.31605351170568563
+      ],
+      "ci95_3": [
+        0.249,
+        0.316
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.037692281298050835,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "middle-value-option",
+      "authority": "nyregents",
+      "claim": "algebra-i",
+      "nScored": 458,
+      "nCorrect": 119,
+      "passRate": 0.259825327510917,
+      "passRate3": 0.26,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.22270742358078602,
+        0.30131004366812225
+      ],
+      "ci95_3": [
+        0.223,
+        0.301
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.3303700850433998,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762,
+      "middleValueFamilyHolmReject05": false,
+      "middleValueFamilyBonferroniReject05": false
+    },
+    {
+      "programId": "option-repeating-stem-numbers",
+      "authority": "nyregents",
+      "claim": "algebra-i",
+      "nScored": 390,
+      "nCorrect": 83,
+      "passRate": 0.2128205128205128,
+      "passRate3": 0.213,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.1717948717948718,
+        0.2512820512820513
+      ],
+      "ci95_3": [
+        0.172,
+        0.251
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.9621677602441164,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "position-c",
+      "authority": "nyregents",
+      "claim": "algebra-i",
+      "nScored": 598,
+      "nCorrect": 154,
+      "passRate": 0.25752508361204013,
+      "passRate3": 0.258,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.22073578595317725,
+        0.2976588628762542
+      ],
+      "ci95_3": [
+        0.221,
+        0.298
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.3503230260307872,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "stem-option-overlap",
+      "authority": "nyregents",
+      "claim": "algebra-i",
+      "nScored": 83,
+      "nCorrect": 28,
+      "passRate": 0.3373493975903614,
+      "passRate3": 0.337,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.24096385542168675,
+        0.4457831325301205
+      ],
+      "ci95_3": [
+        0.241,
+        0.446
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.046741567267146664,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "unit-rate",
+      "authority": "nyregents",
+      "claim": "algebra-i",
+      "nScored": 53,
+      "nCorrect": 14,
+      "passRate": 0.2641509433962264,
+      "passRate3": 0.264,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.1509433962264151,
+        0.37735849056603776
+      ],
+      "ci95_3": [
+        0.151,
+        0.377
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.4579158433916924,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "y-equals-kx",
+      "authority": "nyregents",
+      "claim": "algebra-i",
+      "nScored": 27,
+      "nCorrect": 7,
+      "passRate": 0.25925925925925924,
+      "passRate3": 0.259,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.1111111111111111,
+        0.4444444444444444
+      ],
+      "ci95_3": [
+        0.111,
+        0.444
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.5291690950005771,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "coefficient-adjacent-to-x",
+      "authority": "nyregents",
+      "claim": "algebra-ii",
+      "nScored": 16,
+      "nCorrect": 3,
+      "passRate": 0.1875,
+      "passRate3": 0.188,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.0,
+        0.375
+      ],
+      "ci95_3": [
+        0.0,
+        0.375
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.8028889501001703,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "longest-option",
+      "authority": "nyregents",
+      "claim": "algebra-ii",
+      "nScored": 442,
+      "nCorrect": 119,
+      "passRate": 0.2692307692307692,
+      "passRate3": 0.269,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.22850678733031674,
+        0.31221719457013575
+      ],
+      "ci95_3": [
+        0.229,
+        0.312
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.1891863250276724,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "middle-value-option",
+      "authority": "nyregents",
+      "claim": "algebra-ii",
+      "nScored": 372,
+      "nCorrect": 111,
+      "passRate": 0.29838709677419356,
+      "passRate3": 0.298,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.25268817204301075,
+        0.34408602150537637
+      ],
+      "ci95_3": [
+        0.253,
+        0.344
+      ],
+      "beatsChance": true,
+      "clearsPerCellBar": true,
+      "binomialPGreater": 0.019465923280412727,
+      "claimedWitness": false,
+      "note": "CI excludes chance, n>=10; witness-eligible",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762,
+      "middleValueFamilyHolmReject05": false,
+      "middleValueFamilyBonferroniReject05": false
+    },
+    {
+      "programId": "option-repeating-stem-numbers",
+      "authority": "nyregents",
+      "claim": "algebra-ii",
+      "nScored": 303,
+      "nCorrect": 71,
+      "passRate": 0.23432343234323433,
+      "passRate3": 0.234,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.19141914191419143,
+        0.2838283828382838
+      ],
+      "ci95_3": [
+        0.191,
+        0.284
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.7551321229385114,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "position-c",
+      "authority": "nyregents",
+      "claim": "algebra-ii",
+      "nScored": 442,
+      "nCorrect": 117,
+      "passRate": 0.2647058823529412,
+      "passRate3": 0.265,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.22171945701357465,
+        0.3076923076923077
+      ],
+      "ci95_3": [
+        0.222,
+        0.308
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.2532793582813263,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "stem-option-overlap",
+      "authority": "nyregents",
+      "claim": "algebra-ii",
+      "nScored": 61,
+      "nCorrect": 14,
+      "passRate": 0.22950819672131148,
+      "passRate3": 0.23,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.13114754098360656,
+        0.3442622950819672
+      ],
+      "ci95_3": [
+        0.131,
+        0.344
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.6909270117620685,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "unit-rate",
+      "authority": "nyregents",
+      "claim": "algebra-ii",
+      "nScored": 51,
+      "nCorrect": 14,
+      "passRate": 0.27450980392156865,
+      "passRate3": 0.275,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.1568627450980392,
+        0.39215686274509803
+      ],
+      "ci95_3": [
+        0.157,
+        0.392
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.3944759582034119,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "y-equals-kx",
+      "authority": "nyregents",
+      "claim": "algebra-ii",
+      "nScored": 29,
+      "nCorrect": 6,
+      "passRate": 0.20689655172413793,
+      "passRate3": 0.207,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.06896551724137931,
+        0.3793103448275862
+      ],
+      "ci95_3": [
+        0.069,
+        0.379
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.768310682817438,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "longest-option",
+      "authority": "nyregents",
+      "claim": "geometry",
+      "nScored": 408,
+      "nCorrect": 94,
+      "passRate": 0.23039215686274508,
+      "passRate3": 0.23,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.18627450980392157,
+        0.27205882352941174
+      ],
+      "ci95_3": [
+        0.186,
+        0.272
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.8343250455128703,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "middle-value-option",
+      "authority": "nyregents",
+      "claim": "geometry",
+      "nScored": 279,
+      "nCorrect": 90,
+      "passRate": 0.3225806451612903,
+      "passRate3": 0.323,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.26523297491039427,
+        0.37992831541218636
+      ],
+      "ci95_3": [
+        0.265,
+        0.38
+      ],
+      "beatsChance": true,
+      "clearsPerCellBar": true,
+      "binomialPGreater": 0.0038331369338577993,
+      "claimedWitness": true,
+      "note": "CI excludes chance, n>=10; witness-eligible",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762,
+      "middleValueFamilyHolmReject05": false,
+      "middleValueFamilyBonferroniReject05": false
+    },
+    {
+      "programId": "option-repeating-stem-numbers",
+      "authority": "nyregents",
+      "claim": "geometry",
+      "nScored": 170,
+      "nCorrect": 31,
+      "passRate": 0.18235294117647058,
+      "passRate3": 0.182,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.12941176470588237,
+        0.2411764705882353
+      ],
+      "ci95_3": [
+        0.129,
+        0.241
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.9856420781504145,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "position-c",
+      "authority": "nyregents",
+      "claim": "geometry",
+      "nScored": 408,
+      "nCorrect": 112,
+      "passRate": 0.27450980392156865,
+      "passRate3": 0.275,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.23284313725490197,
+        0.32107843137254904
+      ],
+      "ci95_3": [
+        0.233,
+        0.321
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.13903309994294524,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "stem-option-overlap",
+      "authority": "nyregents",
+      "claim": "geometry",
+      "nScored": 55,
+      "nCorrect": 20,
+      "passRate": 0.36363636363636365,
+      "passRate3": 0.364,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.23636363636363636,
+        0.4909090909090909
+      ],
+      "ci95_3": [
+        0.236,
+        0.491
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.040476604580561855,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "unit-rate",
+      "authority": "nyregents",
+      "claim": "geometry",
+      "nScored": 18,
+      "nCorrect": 8,
+      "passRate": 0.4444444444444444,
+      "passRate3": 0.444,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.2222222222222222,
+        0.6666666666666666
+      ],
+      "ci95_3": [
+        0.222,
+        0.667
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.056947980658151334,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "y-equals-kx",
+      "authority": "nyregents",
+      "claim": "geometry",
+      "nScored": 14,
+      "nCorrect": 3,
+      "passRate": 0.21428571428571427,
+      "passRate3": 0.214,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.0,
+        0.42857142857142855
+      ],
+      "ci95_3": [
+        0.0,
+        0.429
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.718872375786306,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "unit-rate",
+      "authority": "pisa",
+      "claim": "employ",
+      "nScored": 14,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "passRate3": 0.0,
+      "chanceRate": 0.03214285714285715,
+      "chanceRate3": 0.032,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "ci95_3": [
+        0.0,
+        0.0
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 1.0,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "coefficient-adjacent-to-x",
+      "authority": "teks",
+      "claim": "alg1",
+      "nScored": 10,
+      "nCorrect": 2,
+      "passRate": 0.2,
+      "passRate3": 0.2,
+      "chanceRate": 0.125,
+      "chanceRate3": 0.125,
+      "ci95": [
+        0.0,
+        0.5
+      ],
+      "ci95_3": [
+        0.0,
+        0.5
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.3611021721735597,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "longest-option",
+      "authority": "teks",
+      "claim": "alg1",
+      "nScored": 67,
+      "nCorrect": 17,
+      "passRate": 0.2537313432835821,
+      "passRate3": 0.254,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.14925373134328357,
+        0.3582089552238806
+      ],
+      "ci95_3": [
+        0.149,
+        0.358
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.5186627633082121,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "middle-value-option",
+      "authority": "teks",
+      "claim": "alg1",
+      "nScored": 61,
+      "nCorrect": 13,
+      "passRate": 0.21311475409836064,
+      "passRate3": 0.213,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.11475409836065574,
+        0.32786885245901637
+      ],
+      "ci95_3": [
+        0.115,
+        0.328
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.7894361081692044,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762,
+      "middleValueFamilyHolmReject05": false,
+      "middleValueFamilyBonferroniReject05": false
+    },
+    {
+      "programId": "option-repeating-stem-numbers",
+      "authority": "teks",
+      "claim": "alg1",
+      "nScored": 43,
+      "nCorrect": 17,
+      "passRate": 0.3953488372093023,
+      "passRate3": 0.395,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.2558139534883721,
+        0.5348837209302325
+      ],
+      "ci95_3": [
+        0.256,
+        0.535
+      ],
+      "beatsChance": true,
+      "clearsPerCellBar": true,
+      "binomialPGreater": 0.02521774342055006,
+      "claimedWitness": false,
+      "note": "CI excludes chance, n>=10; witness-eligible",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "position-c",
+      "authority": "teks",
+      "claim": "alg1",
+      "nScored": 67,
+      "nCorrect": 13,
+      "passRate": 0.19402985074626866,
+      "passRate3": 0.194,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.1044776119402985,
+        0.29850746268656714
+      ],
+      "ci95_3": [
+        0.104,
+        0.299
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.8872293020209769,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "stem-option-overlap",
+      "authority": "teks",
+      "claim": "alg1",
+      "nScored": 11,
+      "nCorrect": 4,
+      "passRate": 0.36363636363636365,
+      "passRate3": 0.364,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.09090909090909091,
+        0.6363636363636364
+      ],
+      "ci95_3": [
+        0.091,
+        0.636
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.2866954803466799,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "unit-rate",
+      "authority": "teks",
+      "claim": "alg1",
+      "nScored": 16,
+      "nCorrect": 1,
+      "passRate": 0.0625,
+      "passRate3": 0.062,
+      "chanceRate": 0.109375,
+      "chanceRate3": 0.109,
+      "ci95": [
+        0.0,
+        0.1875
+      ],
+      "ci95_3": [
+        0.0,
+        0.188
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.8432822791711787,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "y-equals-kx",
+      "authority": "teks",
+      "claim": "alg1",
+      "nScored": 10,
+      "nCorrect": 2,
+      "passRate": 0.2,
+      "passRate3": 0.2,
+      "chanceRate": 0.05,
+      "chanceRate3": 0.05,
+      "ci95": [
+        0.0,
+        0.5
+      ],
+      "ci95_3": [
+        0.0,
+        0.5
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.08613835589931637,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "longest-option",
+      "authority": "teks",
+      "claim": "g3",
+      "nScored": 45,
+      "nCorrect": 9,
+      "passRate": 0.2,
+      "passRate3": 0.2,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.08888888888888889,
+        0.3111111111111111
+      ],
+      "ci95_3": [
+        0.089,
+        0.311
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.8274694246582557,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "middle-value-option",
+      "authority": "teks",
+      "claim": "g3",
+      "nScored": 36,
+      "nCorrect": 10,
+      "passRate": 0.2777777777777778,
+      "passRate3": 0.278,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.1388888888888889,
+        0.4444444444444444
+      ],
+      "ci95_3": [
+        0.139,
+        0.444
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.4116815274781572,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762,
+      "middleValueFamilyHolmReject05": false,
+      "middleValueFamilyBonferroniReject05": false
+    },
+    {
+      "programId": "option-repeating-stem-numbers",
+      "authority": "teks",
+      "claim": "g3",
+      "nScored": 20,
+      "nCorrect": 4,
+      "passRate": 0.2,
+      "passRate3": 0.2,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.05,
+        0.35
+      ],
+      "ci95_3": [
+        0.05,
+        0.35
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.7748439523356905,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "position-c",
+      "authority": "teks",
+      "claim": "g3",
+      "nScored": 45,
+      "nCorrect": 11,
+      "passRate": 0.24444444444444444,
+      "passRate3": 0.244,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.13333333333333333,
+        0.37777777777777777
+      ],
+      "ci95_3": [
+        0.133,
+        0.378
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.5910942187927467,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "stem-option-overlap",
+      "authority": "teks",
+      "claim": "g3",
+      "nScored": 20,
+      "nCorrect": 5,
+      "passRate": 0.25,
+      "passRate3": 0.25,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.1,
+        0.45
+      ],
+      "ci95_3": [
+        0.1,
+        0.45
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.5851584974698214,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "unit-rate",
+      "authority": "teks",
+      "claim": "g3",
+      "nScored": 12,
+      "nCorrect": 4,
+      "passRate": 0.3333333333333333,
+      "passRate3": 0.333,
+      "chanceRate": 0.125,
+      "chanceRate3": 0.125,
+      "ci95": [
+        0.08333333333333333,
+        0.5833333333333334
+      ],
+      "ci95_3": [
+        0.083,
+        0.583
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.052810481356573326,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "y-equals-kx",
+      "authority": "teks",
+      "claim": "g3",
+      "nScored": 10,
+      "nCorrect": 1,
+      "passRate": 0.1,
+      "passRate3": 0.1,
+      "chanceRate": 0.1,
+      "chanceRate3": 0.1,
+      "ci95": [
+        0.0,
+        0.3
+      ],
+      "ci95_3": [
+        0.0,
+        0.3
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.6513215599000008,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "longest-option",
+      "authority": "teks",
+      "claim": "g4",
+      "nScored": 48,
+      "nCorrect": 11,
+      "passRate": 0.22916666666666666,
+      "passRate3": 0.229,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.10416666666666667,
+        0.3541666666666667
+      ],
+      "ci95_3": [
+        0.104,
+        0.354
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.683646074007049,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "middle-value-option",
+      "authority": "teks",
+      "claim": "g4",
+      "nScored": 35,
+      "nCorrect": 11,
+      "passRate": 0.3142857142857143,
+      "passRate3": 0.314,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.17142857142857143,
+        0.4857142857142857
+      ],
+      "ci95_3": [
+        0.171,
+        0.486
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.2419247715499574,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762,
+      "middleValueFamilyHolmReject05": false,
+      "middleValueFamilyBonferroniReject05": false
+    },
+    {
+      "programId": "option-repeating-stem-numbers",
+      "authority": "teks",
+      "claim": "g4",
+      "nScored": 22,
+      "nCorrect": 3,
+      "passRate": 0.13636363636363635,
+      "passRate3": 0.136,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.0,
+        0.2727272727272727
+      ],
+      "ci95_3": [
+        0.0,
+        0.273
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.939350571667885,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "position-c",
+      "authority": "teks",
+      "claim": "g4",
+      "nScored": 48,
+      "nCorrect": 12,
+      "passRate": 0.25,
+      "passRate3": 0.25,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.125,
+        0.375
+      ],
+      "ci95_3": [
+        0.125,
+        0.375
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.5552289208986356,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "stem-option-overlap",
+      "authority": "teks",
+      "claim": "g4",
+      "nScored": 14,
+      "nCorrect": 2,
+      "passRate": 0.14285714285714285,
+      "passRate3": 0.143,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.0,
+        0.35714285714285715
+      ],
+      "ci95_3": [
+        0.0,
+        0.357
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.8990316279232548,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "longest-option",
+      "authority": "teks",
+      "claim": "g5",
+      "nScored": 60,
+      "nCorrect": 9,
+      "passRate": 0.15,
+      "passRate3": 0.15,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.06666666666666667,
+        0.25
+      ],
+      "ci95_3": [
+        0.067,
+        0.25
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.9787850422304517,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "middle-value-option",
+      "authority": "teks",
+      "claim": "g5",
+      "nScored": 49,
+      "nCorrect": 17,
+      "passRate": 0.3469387755102041,
+      "passRate3": 0.347,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.22448979591836735,
+        0.4897959183673469
+      ],
+      "ci95_3": [
+        0.224,
+        0.49
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.0836247768717364,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762,
+      "middleValueFamilyHolmReject05": false,
+      "middleValueFamilyBonferroniReject05": false
+    },
+    {
+      "programId": "option-repeating-stem-numbers",
+      "authority": "teks",
+      "claim": "g5",
+      "nScored": 32,
+      "nCorrect": 7,
+      "passRate": 0.21875,
+      "passRate3": 0.219,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.09375,
+        0.375
+      ],
+      "ci95_3": [
+        0.094,
+        0.375
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.7221283346177928,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "position-c",
+      "authority": "teks",
+      "claim": "g5",
+      "nScored": 60,
+      "nCorrect": 14,
+      "passRate": 0.23333333333333334,
+      "passRate3": 0.233,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.13333333333333333,
+        0.35
+      ],
+      "ci95_3": [
+        0.133,
+        0.35
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.6650885602454478,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "stem-option-overlap",
+      "authority": "teks",
+      "claim": "g5",
+      "nScored": 13,
+      "nCorrect": 6,
+      "passRate": 0.46153846153846156,
+      "passRate3": 0.462,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.23076923076923078,
+        0.7692307692307693
+      ],
+      "ci95_3": [
+        0.231,
+        0.769
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.080212593078613,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "unit-rate",
+      "authority": "teks",
+      "claim": "g5",
+      "nScored": 12,
+      "nCorrect": 5,
+      "passRate": 0.4166666666666667,
+      "passRate3": 0.417,
+      "chanceRate": 0.14583333333333334,
+      "chanceRate3": 0.146,
+      "ci95": [
+        0.16666666666666666,
+        0.75
+      ],
+      "ci95_3": [
+        0.167,
+        0.75
+      ],
+      "beatsChance": true,
+      "clearsPerCellBar": true,
+      "binomialPGreater": 0.021345719355932373,
+      "claimedWitness": false,
+      "note": "CI excludes chance, n>=10; witness-eligible",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "longest-option",
+      "authority": "teks",
+      "claim": "g6",
+      "nScored": 65,
+      "nCorrect": 18,
+      "passRate": 0.27692307692307694,
+      "passRate3": 0.277,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.16923076923076924,
+        0.38461538461538464
+      ],
+      "ci95_3": [
+        0.169,
+        0.385
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.3525167054413029,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "middle-value-option",
+      "authority": "teks",
+      "claim": "g6",
+      "nScored": 52,
+      "nCorrect": 17,
+      "passRate": 0.3269230769230769,
+      "passRate3": 0.327,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.19230769230769232,
+        0.46153846153846156
+      ],
+      "ci95_3": [
+        0.192,
+        0.462
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.13219902545751705,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762,
+      "middleValueFamilyHolmReject05": false,
+      "middleValueFamilyBonferroniReject05": false
+    },
+    {
+      "programId": "option-repeating-stem-numbers",
+      "authority": "teks",
+      "claim": "g6",
+      "nScored": 39,
+      "nCorrect": 10,
+      "passRate": 0.2564102564102564,
+      "passRate3": 0.256,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.1282051282051282,
+        0.41025641025641024
+      ],
+      "ci95_3": [
+        0.128,
+        0.41
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.5243691817384128,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "position-c",
+      "authority": "teks",
+      "claim": "g6",
+      "nScored": 65,
+      "nCorrect": 18,
+      "passRate": 0.27692307692307694,
+      "passRate3": 0.277,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.16923076923076924,
+        0.4
+      ],
+      "ci95_3": [
+        0.169,
+        0.4
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.3525167054413029,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "stem-option-overlap",
+      "authority": "teks",
+      "claim": "g6",
+      "nScored": 27,
+      "nCorrect": 8,
+      "passRate": 0.2962962962962963,
+      "passRate3": 0.296,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.14814814814814814,
+        0.48148148148148145
+      ],
+      "ci95_3": [
+        0.148,
+        0.481
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.35728607875719465,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "unit-rate",
+      "authority": "teks",
+      "claim": "g6",
+      "nScored": 15,
+      "nCorrect": 5,
+      "passRate": 0.3333333333333333,
+      "passRate3": 0.333,
+      "chanceRate": 0.16666666666666666,
+      "chanceRate3": 0.167,
+      "ci95": [
+        0.13333333333333333,
+        0.6
+      ],
+      "ci95_3": [
+        0.133,
+        0.6
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.08976566741930461,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "longest-option",
+      "authority": "teks",
+      "claim": "g7",
+      "nScored": 46,
+      "nCorrect": 8,
+      "passRate": 0.17391304347826086,
+      "passRate3": 0.174,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.06521739130434782,
+        0.2826086956521739
+      ],
+      "ci95_3": [
+        0.065,
+        0.283
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.9182536431272339,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "middle-value-option",
+      "authority": "teks",
+      "claim": "g7",
+      "nScored": 41,
+      "nCorrect": 13,
+      "passRate": 0.3170731707317073,
+      "passRate3": 0.317,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.17073170731707318,
+        0.4634146341463415
+      ],
+      "ci95_3": [
+        0.171,
+        0.463
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.20556458353500356,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762,
+      "middleValueFamilyHolmReject05": false,
+      "middleValueFamilyBonferroniReject05": false
+    },
+    {
+      "programId": "option-repeating-stem-numbers",
+      "authority": "teks",
+      "claim": "g7",
+      "nScored": 30,
+      "nCorrect": 10,
+      "passRate": 0.3333333333333333,
+      "passRate3": 0.333,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.16666666666666666,
+        0.5
+      ],
+      "ci95_3": [
+        0.167,
+        0.5
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.1965933630504911,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "position-c",
+      "authority": "teks",
+      "claim": "g7",
+      "nScored": 46,
+      "nCorrect": 12,
+      "passRate": 0.2608695652173913,
+      "passRate3": 0.261,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.13043478260869565,
+        0.391304347826087
+      ],
+      "ci95_3": [
+        0.13,
+        0.391
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.48853472864449454,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "stem-option-overlap",
+      "authority": "teks",
+      "claim": "g7",
+      "nScored": 15,
+      "nCorrect": 3,
+      "passRate": 0.2,
+      "passRate3": 0.2,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.0,
+        0.4
+      ],
+      "ci95_3": [
+        0.0,
+        0.4
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.763912188820542,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "longest-option",
+      "authority": "teks",
+      "claim": "g8",
+      "nScored": 57,
+      "nCorrect": 17,
+      "passRate": 0.2982456140350877,
+      "passRate3": 0.298,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.19298245614035087,
+        0.42105263157894735
+      ],
+      "ci95_3": [
+        0.193,
+        0.421
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.24152082848835504,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "middle-value-option",
+      "authority": "teks",
+      "claim": "g8",
+      "nScored": 45,
+      "nCorrect": 12,
+      "passRate": 0.26666666666666666,
+      "passRate3": 0.267,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.15555555555555556,
+        0.4
+      ],
+      "ci95_3": [
+        0.156,
+        0.4
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.45434823192840607,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762,
+      "middleValueFamilyHolmReject05": false,
+      "middleValueFamilyBonferroniReject05": false
+    },
+    {
+      "programId": "option-repeating-stem-numbers",
+      "authority": "teks",
+      "claim": "g8",
+      "nScored": 26,
+      "nCorrect": 4,
+      "passRate": 0.15384615384615385,
+      "passRate3": 0.154,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.038461538461538464,
+        0.3076923076923077
+      ],
+      "ci95_3": [
+        0.038,
+        0.308
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.919812313735543,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "position-c",
+      "authority": "teks",
+      "claim": "g8",
+      "nScored": 57,
+      "nCorrect": 11,
+      "passRate": 0.19298245614035087,
+      "passRate3": 0.193,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.10526315789473684,
+        0.2982456140350877
+      ],
+      "ci95_3": [
+        0.105,
+        0.298
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.876456456503554,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "stem-option-overlap",
+      "authority": "teks",
+      "claim": "g8",
+      "nScored": 24,
+      "nCorrect": 5,
+      "passRate": 0.20833333333333334,
+      "passRate3": 0.208,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.08333333333333333,
+        0.375
+      ],
+      "ci95_3": [
+        0.083,
+        0.375
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.7533515589214275,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "longest-option",
+      "authority": "timss",
+      "claim": "applying",
+      "nScored": 54,
+      "nCorrect": 14,
+      "passRate": 0.25925925925925924,
+      "passRate3": 0.259,
+      "chanceRate": 0.24907407407407406,
+      "chanceRate3": 0.249,
+      "ci95": [
+        0.14814814814814814,
+        0.37037037037037035
+      ],
+      "ci95_3": [
+        0.148,
+        0.37
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.4831295565479021,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "middle-value-option",
+      "authority": "timss",
+      "claim": "applying",
+      "nScored": 50,
+      "nCorrect": 12,
+      "passRate": 0.24,
+      "passRate3": 0.24,
+      "chanceRate": 0.249,
+      "chanceRate3": 0.249,
+      "ci95": [
+        0.12,
+        0.36
+      ],
+      "ci95_3": [
+        0.12,
+        0.36
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.6121512988546793,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762,
+      "middleValueFamilyHolmReject05": false,
+      "middleValueFamilyBonferroniReject05": false
+    },
+    {
+      "programId": "option-repeating-stem-numbers",
+      "authority": "timss",
+      "claim": "applying",
+      "nScored": 30,
+      "nCorrect": 4,
+      "passRate": 0.13333333333333333,
+      "passRate3": 0.133,
+      "chanceRate": 0.24833333333333335,
+      "chanceRate3": 0.248,
+      "ci95": [
+        0.03333333333333333,
+        0.26666666666666666
+      ],
+      "ci95_3": [
+        0.033,
+        0.267
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.9609087185552372,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "position-c",
+      "authority": "timss",
+      "claim": "applying",
+      "nScored": 54,
+      "nCorrect": 17,
+      "passRate": 0.3148148148148148,
+      "passRate3": 0.315,
+      "chanceRate": 0.24907407407407406,
+      "chanceRate3": 0.249,
+      "ci95": [
+        0.2037037037037037,
+        0.4444444444444444
+      ],
+      "ci95_3": [
+        0.204,
+        0.444
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.1678775891150609,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "unit-rate",
+      "authority": "timss",
+      "claim": "applying",
+      "nScored": 19,
+      "nCorrect": 0,
+      "passRate": 0.0,
+      "passRate3": 0.0,
+      "chanceRate": 0.06315789473684211,
+      "chanceRate3": 0.063,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "ci95_3": [
+        0.0,
+        0.0
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 1.0,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "y-equals-kx",
+      "authority": "timss",
+      "claim": "applying",
+      "nScored": 16,
+      "nCorrect": 1,
+      "passRate": 0.0625,
+      "passRate3": 0.062,
+      "chanceRate": 0.03125,
+      "chanceRate3": 0.031,
+      "ci95": [
+        0.0,
+        0.1875
+      ],
+      "ci95_3": [
+        0.0,
+        0.188
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.3982896965679277,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "longest-option",
+      "authority": "timss",
+      "claim": "knowing",
+      "nScored": 65,
+      "nCorrect": 15,
+      "passRate": 0.23076923076923078,
+      "passRate3": 0.231,
+      "chanceRate": 0.2712820512820513,
+      "chanceRate3": 0.271,
+      "ci95": [
+        0.13846153846153847,
+        0.3230769230769231
+      ],
+      "ci95_3": [
+        0.138,
+        0.323
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.8075724931282939,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "middle-value-option",
+      "authority": "timss",
+      "claim": "knowing",
+      "nScored": 41,
+      "nCorrect": 12,
+      "passRate": 0.2926829268292683,
+      "passRate3": 0.293,
+      "chanceRate": 0.2475609756097561,
+      "chanceRate3": 0.248,
+      "ci95": [
+        0.14634146341463414,
+        0.43902439024390244
+      ],
+      "ci95_3": [
+        0.146,
+        0.439
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.30462958665269446,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762,
+      "middleValueFamilyHolmReject05": false,
+      "middleValueFamilyBonferroniReject05": false
+    },
+    {
+      "programId": "option-repeating-stem-numbers",
+      "authority": "timss",
+      "claim": "knowing",
+      "nScored": 23,
+      "nCorrect": 7,
+      "passRate": 0.30434782608695654,
+      "passRate3": 0.304,
+      "chanceRate": 0.26231884057971017,
+      "chanceRate3": 0.262,
+      "ci95": [
+        0.13043478260869565,
+        0.4782608695652174
+      ],
+      "ci95_3": [
+        0.13,
+        0.478
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.3986975589647991,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "position-c",
+      "authority": "timss",
+      "claim": "knowing",
+      "nScored": 65,
+      "nCorrect": 13,
+      "passRate": 0.2,
+      "passRate3": 0.2,
+      "chanceRate": 0.2712820512820513,
+      "chanceRate3": 0.271,
+      "ci95": [
+        0.1076923076923077,
+        0.2923076923076923
+      ],
+      "ci95_3": [
+        0.108,
+        0.292
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.9278106050139326,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "stem-option-overlap",
+      "authority": "timss",
+      "claim": "knowing",
+      "nScored": 10,
+      "nCorrect": 3,
+      "passRate": 0.3,
+      "passRate3": 0.3,
+      "chanceRate": 0.24500000000000002,
+      "chanceRate3": 0.245,
+      "ci95": [
+        0.0,
+        0.6
+      ],
+      "ci95_3": [
+        0.0,
+        0.6
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.45934290306827075,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "unit-rate",
+      "authority": "timss",
+      "claim": "knowing",
+      "nScored": 18,
+      "nCorrect": 4,
+      "passRate": 0.2222222222222222,
+      "passRate3": 0.222,
+      "chanceRate": 0.09722222222222222,
+      "chanceRate3": 0.097,
+      "ci95": [
+        0.05555555555555555,
+        0.4444444444444444
+      ],
+      "ci95_3": [
+        0.056,
+        0.444
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.09057582743104416,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "y-equals-kx",
+      "authority": "timss",
+      "claim": "knowing",
+      "nScored": 13,
+      "nCorrect": 2,
+      "passRate": 0.15384615384615385,
+      "passRate3": 0.154,
+      "chanceRate": 0.038461538461538464,
+      "chanceRate3": 0.038,
+      "ci95": [
+        0.0,
+        0.38461538461538464
+      ],
+      "ci95_3": [
+        0.0,
+        0.385
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.0871273890752888,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "longest-option",
+      "authority": "timss",
+      "claim": "reasoning",
+      "nScored": 68,
+      "nCorrect": 15,
+      "passRate": 0.22058823529411764,
+      "passRate3": 0.221,
+      "chanceRate": 0.257843137254902,
+      "chanceRate3": 0.258,
+      "ci95": [
+        0.11764705882352941,
+        0.3235294117647059
+      ],
+      "ci95_3": [
+        0.118,
+        0.324
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.7979024575926272,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "middle-value-option",
+      "authority": "timss",
+      "claim": "reasoning",
+      "nScored": 57,
+      "nCorrect": 21,
+      "passRate": 0.3684210526315789,
+      "passRate3": 0.368,
+      "chanceRate": 0.24912280701754386,
+      "chanceRate3": 0.249,
+      "ci95": [
+        0.24561403508771928,
+        0.49122807017543857
+      ],
+      "ci95_3": [
+        0.246,
+        0.491
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.030435220413620793,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762,
+      "middleValueFamilyHolmReject05": false,
+      "middleValueFamilyBonferroniReject05": false
+    },
+    {
+      "programId": "option-repeating-stem-numbers",
+      "authority": "timss",
+      "claim": "reasoning",
+      "nScored": 26,
+      "nCorrect": 5,
+      "passRate": 0.19230769230769232,
+      "passRate3": 0.192,
+      "chanceRate": 0.27051282051282055,
+      "chanceRate3": 0.271,
+      "ci95": [
+        0.038461538461538464,
+        0.38461538461538464
+      ],
+      "ci95_3": [
+        0.038,
+        0.385
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.8708416809375437,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "position-c",
+      "authority": "timss",
+      "claim": "reasoning",
+      "nScored": 68,
+      "nCorrect": 14,
+      "passRate": 0.20588235294117646,
+      "passRate3": 0.206,
+      "chanceRate": 0.257843137254902,
+      "chanceRate3": 0.258,
+      "ci95": [
+        0.11764705882352941,
+        0.3088235294117647
+      ],
+      "ci95_3": [
+        0.118,
+        0.309
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.8697609039731752,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "stem-option-overlap",
+      "authority": "timss",
+      "claim": "reasoning",
+      "nScored": 15,
+      "nCorrect": 5,
+      "passRate": 0.3333333333333333,
+      "passRate3": 0.333,
+      "chanceRate": 0.25,
+      "chanceRate3": 0.25,
+      "ci95": [
+        0.13333333333333333,
+        0.6
+      ],
+      "ci95_3": [
+        0.133,
+        0.6
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.31351405847817704,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "unit-rate",
+      "authority": "timss",
+      "claim": "reasoning",
+      "nScored": 13,
+      "nCorrect": 1,
+      "passRate": 0.07692307692307693,
+      "passRate3": 0.077,
+      "chanceRate": 0.057692307692307696,
+      "chanceRate3": 0.058,
+      "ci95": [
+        0.0,
+        0.23076923076923078
+      ],
+      "ci95_3": [
+        0.0,
+        0.231
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.5381450813530058,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    },
+    {
+      "programId": "y-equals-kx",
+      "authority": "timss",
+      "claim": "reasoning",
+      "nScored": 13,
+      "nCorrect": 1,
+      "passRate": 0.07692307692307693,
+      "passRate3": 0.077,
+      "chanceRate": 0.057692307692307696,
+      "chanceRate3": 0.058,
+      "ci95": [
+        0.0,
+        0.23076923076923078
+      ],
+      "ci95_3": [
+        0.0,
+        0.231
+      ],
+      "beatsChance": false,
+      "clearsPerCellBar": false,
+      "binomialPGreater": 0.5381450813530058,
+      "claimedWitness": false,
+      "note": "does not beat chance; passes marked non-witness, trials kept",
+      "holmReject05": false,
+      "bonferroniReject05": false,
+      "bonferroniThreshold": 0.0004761904761904762
+    }
+  ],
+  "searchedEligibleNotClaimed": [
+    {
+      "programId": "search/w:positionC-1,numericMed+1,distinctive-1/timss-to-state",
+      "authority": "teks",
+      "claim": "g6",
+      "nScored": 11,
+      "passRate": 0.6363636363636364,
+      "ci95": [
+        0.36363636363636365,
+        0.9090909090909091
+      ],
+      "chanceRate": 0.25,
+      "note": "CI excludes chance, n>=10, pass>0.369 random p95; witness-eligible"
+    },
+    {
+      "programId": "search/w:overlap+1,numericMin-1,specificity-1/timss-to-state",
+      "authority": "nyregents",
+      "claim": "algebra-i",
+      "nScored": 13,
+      "passRate": 0.5384615384615384,
+      "ci95": [
+        0.3076923076923077,
+        0.8461538461538461
+      ],
+      "chanceRate": 0.25,
+      "note": "CI excludes chance, n>=10, pass>0.268 random p95; witness-eligible"
+    },
+    {
+      "programId": "search/w:longest-1,overlap+1,numericMax-1/timss-to-state",
+      "authority": "nyregents",
+      "claim": "algebra-i",
+      "nScored": 19,
+      "passRate": 0.47368421052631576,
+      "ci95": [
+        0.2631578947368421,
+        0.6842105263157895
+      ],
+      "chanceRate": 0.25,
+      "note": "CI excludes chance, n>=10, pass>0.268 random p95; witness-eligible"
+    },
+    {
+      "programId": "search/w:overlap+1,numericMin-1,distinctive-1/timss-to-state",
+      "authority": "nyregents",
+      "claim": "geometry",
+      "nScored": 20,
+      "passRate": 0.5,
+      "ci95": [
+        0.3,
+        0.7
+      ],
+      "chanceRate": 0.25,
+      "note": "CI excludes chance, n>=10, pass>0.292 random p95; witness-eligible"
+    }
+  ],
+  "itemCounts": {
+    "nItems": 2405,
+    "nSelected": 2245,
+    "nNumeric": 160,
+    "byCorpus": {
+      "timss2011": 129,
+      "timss1995": 79,
+      "timss1999": 25,
+      "timss2003": 2,
+      "pisa": 70,
+      "staar": 445,
+      "nysed": 27,
+      "mcas": 10,
+      "naplan": 21,
+      "nyregents": 1448,
+      "eqao": 149
+    },
+    "byCell": {
+      "timss|applying": 68,
+      "timss|knowing": 81,
+      "timss|reasoning": 86,
+      "pisa|interpret": 5,
+      "pisa|employ": 20,
+      "pisa|formulate": 12,
+      "pisa|reproduction": 16,
+      "pisa|connections": 13,
+      "pisa|reflection": 4,
+      "teks|g8": 65,
+      "teks|g6": 73,
+      "teks|g7": 52,
+      "teks|g5": 68,
+      "teks|g3": 53,
+      "teks|g4": 56,
+      "teks|alg1": 78,
+      "ccss|3.NF.A.2.a": 1,
+      "ccss|3.MD.B.3": 1,
+      "ccss|3.OA.A.2": 1,
+      "ccss|3.OA.B.5": 1,
+      "ccss|3.NBT.A.1": 1,
+      "ccss|3.OA.D.8": 1,
+      "ccss|8.G.A.3": 1,
+      "ccss|6.G.A.1": 1,
+      "ccss|6.NS.B.4": 1,
+      "ccss|6.RP.A.1": 1,
+      "ccss|6.RP.A.3.c": 1,
+      "ccss|7.RP.A.1": 2,
+      "ccss|7.EE.A.2": 2,
+      "ccss|7.G.A.1": 1,
+      "ccss|7.SP.A.1": 2,
+      "ccss|7.SP.C.6": 1,
+      "ccss|7.NS.A.1.a": 1,
+      "ccss|6.SP.B.5.c": 1,
+      "ccss|7.EE.B.4.a": 1,
+      "ccss|8.F.B.4": 1,
+      "ccss|8.G.C.9": 1,
+      "ccss|8.G.A.2": 1,
+      "ccss|8.SP.A.2": 1,
+      "ccss|8.F.A.2": 1,
+      "ccss|8.SP.A.1": 1,
+      "ccss|8.G.A.5": 1,
+      "ccss|8.F.B.5": 1,
+      "ccss|7.NS.A.2": 2,
+      "ccss|7.SP.A.2": 1,
+      "ccss|7.NS.A.3": 1,
+      "ccss|7.G.A.3": 1,
+      "ccss|7.EE.B.3": 1,
+      "ccss|7.NS.A.1": 1,
+      "acara|y7-numeracy": 21,
+      "nyregents|algebra-i": 598,
+      "nyregents|geometry": 408,
+      "nyregents|algebra-ii": 442,
+      "eqao|g3": 44,
+      "eqao|g6": 53,
+      "eqao|g9": 52
+    },
+    "byResponse": {
+      "numeric": 160,
+      "selected": 2245
+    }
+  },
+  "methodControlsPointers": {
+    "nItemsSynthetic": 1200,
+    "plantedTypeHits": 6,
+    "plantedTypeN": 6,
+    "falsePositiveOnClean": false,
+    "programSpaceSize": 1847,
+    "openbookqa": {
+      "programId": "search/atom:longest",
+      "n": 329,
+      "passRate": 0.44984802431610943,
+      "ci95": [
+        0.3951367781155015,
+        0.5075987841945289
+      ],
+      "chance": 0.25,
+      "randomP95": 0.265,
+      "witnessEligible": true
+    },
+    "swag": {
+      "programId": "search/w:longest-1,overlap+1,noAbsolute-1",
+      "n": 62,
+      "passRate": 0.5645161290322581,
+      "ci95": [
+        0.43548387096774194,
+        0.6935483870967742
+      ],
+      "chance": 0.25,
+      "randomP95": 0.37,
+      "witnessEligible": true
+    },
+    "race": {
+      "programId": "search/atom:numericMed",
+      "n": 8,
+      "passRate": 0.375,
+      "ci95": [
+        0.125,
+        0.75
+      ],
+      "chance": 0.25,
+      "randomP95": 0.27,
+      "witnessEligible": false
+    },
+    "commonsenseqa": {
+      "programId": "search/w:longest-1,positionC+1,distinctive-1",
+      "n": 22,
+      "passRate": 0.22727272727272727,
+      "ci95": [
+        0.045454545454545456,
+        0.4090909090909091
+      ],
+      "chance": 0.2,
+      "randomP95": 0.21,
+      "witnessEligible": false
+    },
+    "plantedHoldoutN": 50
+  }
+}

@@ -304,12 +304,30 @@ def run_eqao() -> None:
     fetch_list(eqao_templates(), "eqao")
 
 
+def run_mcas() -> None:
+    append_log("\n## MCAS")
+    dest = RAW / "mcas-2019-g7.pdf"
+    urls = [
+        "https://www.doe.mass.edu/mcas/2019/release/gr7-math.pdf",
+        "https://web.archive.org/web/2020/https://www.doe.mass.edu/mcas/2019/release/gr7-math.pdf",
+    ]
+    for url in urls:
+        rec = download_url(url, dest)
+        if rec["outcome"] in {"ok", "exists"}:
+            return
+        rec = download_url(archive_url(url), dest)
+        if rec["outcome"] in {"ok", "exists"}:
+            rec["via"] = "archive.org"
+            return
+    append_log("- FAIL MCAS 2019 grade 7 PDF")
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument(
         "--corpus",
         default="all",
-        choices=["all", "staar", "regents", "nysed", "naplan", "timss", "pisa", "eqao"],
+        choices=["all", "staar", "regents", "nysed", "naplan", "timss", "pisa", "eqao", "mcas"],
     )
     args = parser.parse_args()
     HTML_DIR.mkdir(parents=True, exist_ok=True)
@@ -322,6 +340,7 @@ def main() -> None:
         "timss": run_timss,
         "pisa": run_pisa,
         "eqao": run_eqao,
+        "mcas": run_mcas,
     }
     if args.corpus == "all":
         for fn in runners.values():

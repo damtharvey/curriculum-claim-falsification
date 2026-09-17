@@ -1,0 +1,746 @@
+{
+  "experiment": "E3-score",
+  "label": "exploratory",
+  "protocol": "Reuse existing composer-2.5-fast choices-only predictions from exports/choices-only/scored.jsonl on items that pass the mechanical clean-option filter. No new LM calls. Predictions were collected with opaque ids, shuffled options, and a transcript tool_use audit.",
+  "nCleanSelected": 1496,
+  "nCleanAlreadyScored": 1493,
+  "nExistingScored": 2242,
+  "overall": {
+    "n": 1493,
+    "passRate": 0.35900870730073675,
+    "ci95": [
+      0.3342263898191561,
+      0.38379102478231747
+    ],
+    "chance": 0.25,
+    "ciExcludesChance": true,
+    "witnessBarEligible": true,
+    "exploratory": true
+  },
+  "perCorpus": {
+    "eqao": {
+      "n": 142,
+      "passRate": 0.352112676056338,
+      "ci95": [
+        0.2746478873239437,
+        0.4295774647887324
+      ],
+      "chance": 0.25,
+      "ciExcludesChance": true,
+      "witnessBarEligible": true,
+      "exploratory": true
+    },
+    "mcas": {
+      "n": 8,
+      "passRate": 0.25,
+      "ci95": [
+        0.0,
+        0.625
+      ],
+      "chance": 0.25,
+      "ciExcludesChance": false,
+      "witnessBarEligible": false,
+      "exploratory": true
+    },
+    "naplan": {
+      "n": 16,
+      "passRate": 0.1875,
+      "ci95": [
+        0.0,
+        0.375
+      ],
+      "chance": 0.25,
+      "ciExcludesChance": false,
+      "witnessBarEligible": false,
+      "exploratory": true
+    },
+    "nyregents": {
+      "n": 918,
+      "passRate": 0.35294117647058826,
+      "ci95": [
+        0.3224400871459695,
+        0.38562091503267976
+      ],
+      "chance": 0.25,
+      "ciExcludesChance": true,
+      "witnessBarEligible": true,
+      "exploratory": true
+    },
+    "nysed": {
+      "n": 22,
+      "passRate": 0.22727272727272727,
+      "ci95": [
+        0.045454545454545456,
+        0.4090909090909091
+      ],
+      "chance": 0.25,
+      "ciExcludesChance": false,
+      "witnessBarEligible": false,
+      "exploratory": true
+    },
+    "pisa": {
+      "n": 21,
+      "passRate": 0.38095238095238093,
+      "ci95": [
+        0.19047619047619047,
+        0.5714285714285714
+      ],
+      "chance": 0.25,
+      "ciExcludesChance": false,
+      "witnessBarEligible": false,
+      "exploratory": true
+    },
+    "staar": {
+      "n": 244,
+      "passRate": 0.3770491803278688,
+      "ci95": [
+        0.3155737704918033,
+        0.4385245901639344
+      ],
+      "chance": 0.25,
+      "ciExcludesChance": true,
+      "witnessBarEligible": true,
+      "exploratory": true
+    },
+    "timss1995": {
+      "n": 78,
+      "passRate": 0.4230769230769231,
+      "ci95": [
+        0.3076923076923077,
+        0.5384615384615384
+      ],
+      "chance": 0.25,
+      "ciExcludesChance": true,
+      "witnessBarEligible": true,
+      "exploratory": true
+    },
+    "timss1999": {
+      "n": 25,
+      "passRate": 0.36,
+      "ci95": [
+        0.2,
+        0.56
+      ],
+      "chance": 0.25,
+      "ciExcludesChance": false,
+      "witnessBarEligible": false,
+      "exploratory": true
+    },
+    "timss2003": {
+      "n": 2,
+      "passRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "chance": 0.25,
+      "ciExcludesChance": false,
+      "witnessBarEligible": false,
+      "exploratory": true
+    },
+    "timss2011": {
+      "n": 17,
+      "passRate": 0.5882352941176471,
+      "ci95": [
+        0.35294117647058826,
+        0.8235294117647058
+      ],
+      "chance": 0.25,
+      "ciExcludesChance": true,
+      "witnessBarEligible": true,
+      "exploratory": true
+    }
+  },
+  "perClaim": {
+    "acara::y7-numeracy": {
+      "n": 16,
+      "passRate": 0.1875,
+      "ci95": [
+        0.0,
+        0.375
+      ],
+      "chance": 0.25,
+      "ciExcludesChance": false,
+      "witnessBarEligible": false,
+      "exploratory": true
+    },
+    "ccss::3.NBT.A.1": {
+      "n": 1,
+      "passRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "chance": 0.25,
+      "ciExcludesChance": false,
+      "witnessBarEligible": false,
+      "exploratory": true
+    },
+    "ccss::3.NF.A.2.a": {
+      "n": 1,
+      "passRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "chance": 0.25,
+      "ciExcludesChance": false,
+      "witnessBarEligible": false,
+      "exploratory": true
+    },
+    "ccss::3.OA.A.2": {
+      "n": 1,
+      "passRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "chance": 0.25,
+      "ciExcludesChance": false,
+      "witnessBarEligible": false,
+      "exploratory": true
+    },
+    "ccss::3.OA.B.5": {
+      "n": 1,
+      "passRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "chance": 0.25,
+      "ciExcludesChance": false,
+      "witnessBarEligible": false,
+      "exploratory": true
+    },
+    "ccss::3.OA.D.8": {
+      "n": 1,
+      "passRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "chance": 0.25,
+      "ciExcludesChance": false,
+      "witnessBarEligible": false,
+      "exploratory": true
+    },
+    "ccss::6.G.A.1": {
+      "n": 1,
+      "passRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "chance": 0.25,
+      "ciExcludesChance": false,
+      "witnessBarEligible": false,
+      "exploratory": true
+    },
+    "ccss::6.NS.B.4": {
+      "n": 1,
+      "passRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "chance": 0.25,
+      "ciExcludesChance": false,
+      "witnessBarEligible": false,
+      "exploratory": true
+    },
+    "ccss::6.RP.A.1": {
+      "n": 1,
+      "passRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "chance": 0.25,
+      "ciExcludesChance": false,
+      "witnessBarEligible": false,
+      "exploratory": true
+    },
+    "ccss::6.RP.A.3.c": {
+      "n": 1,
+      "passRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "chance": 0.25,
+      "ciExcludesChance": false,
+      "witnessBarEligible": false,
+      "exploratory": true
+    },
+    "ccss::6.SP.B.5.c": {
+      "n": 1,
+      "passRate": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "chance": 0.25,
+      "ciExcludesChance": false,
+      "witnessBarEligible": false,
+      "exploratory": true
+    },
+    "ccss::7.EE.A.2": {
+      "n": 2,
+      "passRate": 0.5,
+      "ci95": [
+        0.0,
+        1.0
+      ],
+      "chance": 0.25,
+      "ciExcludesChance": false,
+      "witnessBarEligible": false,
+      "exploratory": true
+    },
+    "ccss::7.EE.B.3": {
+      "n": 1,
+      "passRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "chance": 0.25,
+      "ciExcludesChance": false,
+      "witnessBarEligible": false,
+      "exploratory": true
+    },
+    "ccss::7.EE.B.4.a": {
+      "n": 1,
+      "passRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "chance": 0.25,
+      "ciExcludesChance": false,
+      "witnessBarEligible": false,
+      "exploratory": true
+    },
+    "ccss::7.G.A.1": {
+      "n": 1,
+      "passRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "chance": 0.25,
+      "ciExcludesChance": false,
+      "witnessBarEligible": false,
+      "exploratory": true
+    },
+    "ccss::7.G.A.3": {
+      "n": 1,
+      "passRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "chance": 0.25,
+      "ciExcludesChance": false,
+      "witnessBarEligible": false,
+      "exploratory": true
+    },
+    "ccss::7.NS.A.2": {
+      "n": 1,
+      "passRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "chance": 0.25,
+      "ciExcludesChance": false,
+      "witnessBarEligible": false,
+      "exploratory": true
+    },
+    "ccss::7.NS.A.3": {
+      "n": 1,
+      "passRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "chance": 0.25,
+      "ciExcludesChance": false,
+      "witnessBarEligible": false,
+      "exploratory": true
+    },
+    "ccss::7.RP.A.1": {
+      "n": 2,
+      "passRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "chance": 0.25,
+      "ciExcludesChance": false,
+      "witnessBarEligible": false,
+      "exploratory": true
+    },
+    "ccss::7.SP.A.1": {
+      "n": 2,
+      "passRate": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "chance": 0.25,
+      "ciExcludesChance": false,
+      "witnessBarEligible": false,
+      "exploratory": true
+    },
+    "ccss::7.SP.A.2": {
+      "n": 1,
+      "passRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "chance": 0.25,
+      "ciExcludesChance": false,
+      "witnessBarEligible": false,
+      "exploratory": true
+    },
+    "ccss::8.F.A.2": {
+      "n": 1,
+      "passRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "chance": 0.25,
+      "ciExcludesChance": false,
+      "witnessBarEligible": false,
+      "exploratory": true
+    },
+    "ccss::8.F.B.5": {
+      "n": 1,
+      "passRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "chance": 0.25,
+      "ciExcludesChance": false,
+      "witnessBarEligible": false,
+      "exploratory": true
+    },
+    "ccss::8.G.A.2": {
+      "n": 1,
+      "passRate": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "chance": 0.25,
+      "ciExcludesChance": false,
+      "witnessBarEligible": false,
+      "exploratory": true
+    },
+    "ccss::8.G.A.5": {
+      "n": 1,
+      "passRate": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "chance": 0.25,
+      "ciExcludesChance": false,
+      "witnessBarEligible": false,
+      "exploratory": true
+    },
+    "ccss::8.G.C.9": {
+      "n": 1,
+      "passRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "chance": 0.25,
+      "ciExcludesChance": false,
+      "witnessBarEligible": false,
+      "exploratory": true
+    },
+    "ccss::8.SP.A.1": {
+      "n": 1,
+      "passRate": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "chance": 0.25,
+      "ciExcludesChance": false,
+      "witnessBarEligible": false,
+      "exploratory": true
+    },
+    "ccss::8.SP.A.2": {
+      "n": 1,
+      "passRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "chance": 0.25,
+      "ciExcludesChance": false,
+      "witnessBarEligible": false,
+      "exploratory": true
+    },
+    "eqao::g3": {
+      "n": 43,
+      "passRate": 0.3023255813953488,
+      "ci95": [
+        0.16279069767441862,
+        0.4418604651162791
+      ],
+      "chance": 0.25,
+      "ciExcludesChance": false,
+      "witnessBarEligible": false,
+      "exploratory": true
+    },
+    "eqao::g6": {
+      "n": 52,
+      "passRate": 0.34615384615384615,
+      "ci95": [
+        0.23076923076923078,
+        0.4807692307692308
+      ],
+      "chance": 0.25,
+      "ciExcludesChance": false,
+      "witnessBarEligible": false,
+      "exploratory": true
+    },
+    "eqao::g9": {
+      "n": 47,
+      "passRate": 0.40425531914893614,
+      "ci95": [
+        0.2765957446808511,
+        0.5531914893617021
+      ],
+      "chance": 0.25,
+      "ciExcludesChance": true,
+      "witnessBarEligible": true,
+      "exploratory": true
+    },
+    "nyregents::algebra-i": {
+      "n": 408,
+      "passRate": 0.3872549019607843,
+      "ci95": [
+        0.3382352941176471,
+        0.4338235294117647
+      ],
+      "chance": 0.25,
+      "ciExcludesChance": true,
+      "witnessBarEligible": true,
+      "exploratory": true
+    },
+    "nyregents::algebra-ii": {
+      "n": 279,
+      "passRate": 0.3225806451612903,
+      "ci95": [
+        0.26881720430107525,
+        0.3763440860215054
+      ],
+      "chance": 0.25,
+      "ciExcludesChance": true,
+      "witnessBarEligible": true,
+      "exploratory": true
+    },
+    "nyregents::geometry": {
+      "n": 231,
+      "passRate": 0.329004329004329,
+      "ci95": [
+        0.2683982683982684,
+        0.3939393939393939
+      ],
+      "chance": 0.25,
+      "ciExcludesChance": true,
+      "witnessBarEligible": true,
+      "exploratory": true
+    },
+    "pisa::connections": {
+      "n": 2,
+      "passRate": 1.0,
+      "ci95": [
+        1.0,
+        1.0
+      ],
+      "chance": 0.25,
+      "ciExcludesChance": false,
+      "witnessBarEligible": false,
+      "exploratory": true
+    },
+    "pisa::employ": {
+      "n": 8,
+      "passRate": 0.25,
+      "ci95": [
+        0.0,
+        0.625
+      ],
+      "chance": 0.25,
+      "ciExcludesChance": false,
+      "witnessBarEligible": false,
+      "exploratory": true
+    },
+    "pisa::formulate": {
+      "n": 4,
+      "passRate": 0.0,
+      "ci95": [
+        0.0,
+        0.0
+      ],
+      "chance": 0.25,
+      "ciExcludesChance": false,
+      "witnessBarEligible": false,
+      "exploratory": true
+    },
+    "pisa::interpret": {
+      "n": 4,
+      "passRate": 0.75,
+      "ci95": [
+        0.25,
+        1.0
+      ],
+      "chance": 0.25,
+      "ciExcludesChance": false,
+      "witnessBarEligible": false,
+      "exploratory": true
+    },
+    "pisa::reproduction": {
+      "n": 3,
+      "passRate": 0.3333333333333333,
+      "ci95": [
+        0.0,
+        1.0
+      ],
+      "chance": 0.25,
+      "ciExcludesChance": false,
+      "witnessBarEligible": false,
+      "exploratory": true
+    },
+    "teks::alg1": {
+      "n": 54,
+      "passRate": 0.2962962962962963,
+      "ci95": [
+        0.18518518518518517,
+        0.4074074074074074
+      ],
+      "chance": 0.25,
+      "ciExcludesChance": false,
+      "witnessBarEligible": false,
+      "exploratory": true
+    },
+    "teks::g3": {
+      "n": 27,
+      "passRate": 0.5185185185185185,
+      "ci95": [
+        0.3333333333333333,
+        0.7037037037037037
+      ],
+      "chance": 0.25,
+      "ciExcludesChance": true,
+      "witnessBarEligible": true,
+      "exploratory": true
+    },
+    "teks::g4": {
+      "n": 27,
+      "passRate": 0.2962962962962963,
+      "ci95": [
+        0.14814814814814814,
+        0.48148148148148145
+      ],
+      "chance": 0.25,
+      "ciExcludesChance": false,
+      "witnessBarEligible": false,
+      "exploratory": true
+    },
+    "teks::g5": {
+      "n": 44,
+      "passRate": 0.4772727272727273,
+      "ci95": [
+        0.3409090909090909,
+        0.6136363636363636
+      ],
+      "chance": 0.25,
+      "ciExcludesChance": true,
+      "witnessBarEligible": true,
+      "exploratory": true
+    },
+    "teks::g6": {
+      "n": 49,
+      "passRate": 0.3673469387755102,
+      "ci95": [
+        0.22448979591836735,
+        0.4897959183673469
+      ],
+      "chance": 0.25,
+      "ciExcludesChance": false,
+      "witnessBarEligible": false,
+      "exploratory": true
+    },
+    "teks::g7": {
+      "n": 18,
+      "passRate": 0.5,
+      "ci95": [
+        0.2777777777777778,
+        0.7222222222222222
+      ],
+      "chance": 0.25,
+      "ciExcludesChance": true,
+      "witnessBarEligible": true,
+      "exploratory": true
+    },
+    "teks::g8": {
+      "n": 25,
+      "passRate": 0.24,
+      "ci95": [
+        0.08,
+        0.4
+      ],
+      "chance": 0.25,
+      "ciExcludesChance": false,
+      "witnessBarEligible": false,
+      "exploratory": true
+    },
+    "timss::applying": {
+      "n": 28,
+      "passRate": 0.5,
+      "ci95": [
+        0.32142857142857145,
+        0.6785714285714286
+      ],
+      "chance": 0.25,
+      "ciExcludesChance": true,
+      "witnessBarEligible": true,
+      "exploratory": true
+    },
+    "timss::knowing": {
+      "n": 36,
+      "passRate": 0.4166666666666667,
+      "ci95": [
+        0.25,
+        0.5833333333333334
+      ],
+      "chance": 0.25,
+      "ciExcludesChance": false,
+      "witnessBarEligible": false,
+      "exploratory": true
+    },
+    "timss::reasoning": {
+      "n": 58,
+      "passRate": 0.39655172413793105,
+      "ci95": [
+        0.27586206896551724,
+        0.5172413793103449
+      ],
+      "chance": 0.25,
+      "ciExcludesChance": true,
+      "witnessBarEligible": true,
+      "exploratory": true
+    }
+  },
+  "cite": "exports/addendum/choices-only-clean-score.json",
+  "claimStatus": "not claimed; option-clean subset of a contaminated-channel run"
+}

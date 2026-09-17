@@ -3,6 +3,7 @@
 
 from __future__ import annotations
 
+import argparse
 import json
 import subprocess
 import time
@@ -141,7 +142,21 @@ def scorer_argv(
     return argv
 
 
+def parse_args() -> argparse.Namespace:
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument(
+        "--respect-hackathon-deadline",
+        action="store_true",
+        help=(
+            "Skip jobs that would have missed the 2026-09-16 talk cutoff. "
+            "Off by default so later GPU reruns finish."
+        ),
+    )
+    return parser.parse_args()
+
+
 def main() -> None:
+    args = parse_args()
     if not PYTHON.exists():
         raise RuntimeError(f"expected venv python at {PYTHON}")
     started = time.time()
@@ -225,7 +240,7 @@ def main() -> None:
                 items_out=OUT_DIR / "with-stem-algebra-mistral-items.jsonl",
                 batch_size=8,
                 device_map="to",
-                allow_download=False,
+                allow_download=True,
             ),
             180.0,
         ),
@@ -301,20 +316,21 @@ def main() -> None:
 
     failed: list[str] = []
     for name, argv, estimated_seconds in jobs:
-        remaining = seconds_until_deadline()
-        if remaining < estimated_seconds:
-            status["cut"].append(
-                {
-                    "job": name,
-                    "reason": (
-                        f"deadline 2026-09-16T22:28:00Z; remaining {remaining:.0f}s "
-                        f"below estimate {estimated_seconds:.0f}s"
-                    ),
-                }
-            )
-            dump_status(status)
-            print(f"=== cutting {name} remaining_s={remaining:.0f} ===", flush=True)
-            continue
+        if args.respect_hackathon_deadline:
+            remaining = seconds_until_deadline()
+            if remaining < estimated_seconds:
+                status["cut"].append(
+                    {
+                        "job": name,
+                        "reason": (
+                            f"deadline 2026-09-16T22:28:00Z; remaining {remaining:.0f}s "
+                            f"below estimate {estimated_seconds:.0f}s"
+                        ),
+                    }
+                )
+                dump_status(status)
+                print(f"=== cutting {name} remaining_s={remaining:.0f} ===", flush=True)
+                continue
         code = run_job(name, argv, status)
         if code != 0:
             if name.startswith("gemma"):

@@ -1,0 +1,279 @@
+{
+  "status": "complete",
+  "label": "exploratory",
+  "writtenAt": "2026-09-16T21:25:09.918422+00:00",
+  "modelId": "Qwen/Qwen2.5-14B-Instruct",
+  "cell": "nyregents::algebra-i",
+  "population": "masked_token_count_ge_1",
+  "selection": {
+    "correct": "14B masked-stem correct; key is not the Algebra I primary modal letter and is not the lower-central numeric option.",
+    "wrong": "14B masked-stem incorrect; highest letter-logprob margin."
+  },
+  "nCorrectPool": 89,
+  "nWrongPool": 209,
+  "correctExamples": [
+    {
+      "id": "nyregents-algebra-i-2015-jun-q1",
+      "originalStem": "The cost of airing a commercial on television is modeled by the function C(n) \u0002 110n \u0003 900, where n is the number of times the commercial is aired. Based on this model, which statement is true?",
+      "maskedStem": "The cost of airing a commercial on television is modeled by the function C(n) \u0002 [N]n \u0003 [N], where n is the number of times the commercial is aired. Based on this model, which statement is true?",
+      "options": {
+        "A": "The commercial costs $0 to produce and $110 per airing up to $900.",
+        "B": "The commercial costs $110 to produce and $900 each time it is aired.",
+        "C": "The commercial costs $900 to produce and $110 each time it is aired.",
+        "D": "The commercial costs $1010 to produce and can air an unlimited number of times."
+      },
+      "key": "C",
+      "chosenLetter": "C",
+      "correct": true,
+      "logprobs": {
+        "A": -23.625,
+        "B": -21.375,
+        "C": 0.0,
+        "D": -22.625
+      },
+      "margin": 21.375,
+      "optionType": "text",
+      "keyIsModalLetter": false,
+      "keyIsLowerCentral": false,
+      "keyIsHub": true,
+      "keyIsLongest": false,
+      "hubLetter": "C",
+      "longestLetter": "D",
+      "visibleCue": "Numbers 110 and 900 remain in the options; the leftover C(n)=[N]n+[N] story maps the larger dollar amount to production and the smaller to per airing."
+    },
+    {
+      "id": "nyregents-algebra-i-2023-jun-q8",
+      "originalStem": "Mike uses the equation b 5 1300(2.65)x to determine the growth of bacteria in a laboratory setting. The exponent represents",
+      "maskedStem": "Mike uses the equation b [N] [N]([N])x to determine the growth of bacteria in a laboratory setting. The exponent represents",
+      "options": {
+        "A": "the total number of bacteria currently present",
+        "B": "the percent at which the bacteria are growing",
+        "C": "the initial amount of bacteria",
+        "D": "the number of time periods"
+      },
+      "key": "D",
+      "chosenLetter": "D",
+      "correct": true,
+      "logprobs": {
+        "A": -35.375,
+        "B": -26.75,
+        "C": -31.25,
+        "D": 0.0
+      },
+      "margin": 26.75,
+      "optionType": "text",
+      "keyIsModalLetter": false,
+      "keyIsLowerCentral": false,
+      "keyIsHub": false,
+      "keyIsLongest": false,
+      "hubLetter": null,
+      "longestLetter": "A",
+      "visibleCue": "Growth model b=[N]([N])^x is still named; among verbal roles, the exponent is the number of time periods."
+    },
+    {
+      "id": "nyregents-algebra-i-2017-aug-q17",
+      "originalStem": "The highest possible grade for a book report is 100. The teacher deducts 10 points for each day the report is late. Which kind of function describes this situation?",
+      "maskedStem": "The highest possible grade for a book report is [N]. The teacher deducts [N] points for each day the report is late. Which kind of function describes this situation?",
+      "options": {
+        "A": "linear",
+        "C": "exponential growth",
+        "B": "quadratic",
+        "D": "exponential decay"
+      },
+      "key": "A",
+      "chosenLetter": "A",
+      "correct": true,
+      "logprobs": {
+        "A": 0.0,
+        "C": -33.375,
+        "B": -22.75,
+        "D": -30.0
+      },
+      "margin": 22.75,
+      "optionType": "text",
+      "keyIsModalLetter": false,
+      "keyIsLowerCentral": false,
+      "keyIsHub": false,
+      "keyIsLongest": false,
+      "hubLetter": null,
+      "longestLetter": "C",
+      "visibleCue": "Highest grade with a constant deduction each late day is still a linear story after the 100 and 10 are hidden."
+    },
+    {
+      "id": "nyregents-algebra-i-2017-aug-q22",
+      "originalStem": "The results of a linear regression are shown below. y \u0003 ax \u0004 b a \u0003 \u00021.15785 b \u0003 139.3171772 r \u0003 \u00020.896557832 r2 \u0003 0.8038159461 Which phrase best describes the relationship between x and y?",
+      "maskedStem": "The results of a linear regression are shown below. y \u0003 ax \u0004 b a \u0003 \u0002[N] b \u0003 [N] r \u0003 \u0002[N] r[N] \u0003 [N] Which phrase best describes the relationship between x and y?",
+      "options": {
+        "A": "strong negative correlation",
+        "B": "strong positive correlation",
+        "C": "weak negative correlation",
+        "D": "weak positive correlation"
+      },
+      "key": "A",
+      "chosenLetter": "A",
+      "correct": true,
+      "logprobs": {
+        "A": -8.344646857949556e-07,
+        "B": -20.0,
+        "C": -16.25,
+        "D": -18.75
+      },
+      "margin": 16.249999165535314,
+      "optionType": "text",
+      "keyIsModalLetter": false,
+      "keyIsLowerCentral": false,
+      "keyIsHub": false,
+      "keyIsLongest": false,
+      "hubLetter": null,
+      "longestLetter": null,
+      "visibleCue": "The sign on r is still visible as a minus; the leftover asks for the relationship, so strong negative rather than positive or weak."
+    },
+    {
+      "id": "nyregents-algebra-i-2023-jan-q22",
+      "originalStem": "If the zeros of the function g(x) are {\u00023,0,4}, which function could represent g(x)?",
+      "maskedStem": "If the zeros of the function g(x) are {\u0002[N],[N],[N]}, which function could represent g(x)?",
+      "options": {
+        "A": "g(x) \u0004 (x \u0003 3)(x \u0002 4)",
+        "C": "g(x) \u0004 x(x \u0003 3)(x \u0002 4)",
+        "B": "g(x) \u0004 (x \u0002 3)(x \u0003 4)",
+        "D": "g(x) \u0004 x(x \u0002 3)(x \u0003 4)"
+      },
+      "key": "C",
+      "chosenLetter": "C",
+      "correct": true,
+      "logprobs": {
+        "A": -22.186967849731445,
+        "C": -0.06196761503815651,
+        "B": -20.686967849731445,
+        "D": -2.811967611312866
+      },
+      "margin": 2.7499999962747097,
+      "optionType": "text",
+      "keyIsModalLetter": false,
+      "keyIsLowerCentral": false,
+      "keyIsHub": false,
+      "keyIsLongest": false,
+      "hubLetter": "A",
+      "longestLetter": null,
+      "visibleCue": "The zero set is listed as three placeholders, so the matching polynomial is the three-factor option that includes an x."
+    },
+    {
+      "id": "nyregents-algebra-i-2014-jun-q22",
+      "originalStem": "A cell phone company charges $60.00 a month for up to 1 gigabyte of data. The cost of additional data is $0.05 per megabyte. If d represents the number of additional megabytes used and c represents the total charges at the end of the month, which linear equation can be used to determine a user\u2019s monthly bill?",
+      "maskedStem": "A cell phone company charges $[N] a month for up to [N] gigabyte of data. The cost of additional data is $[N] per megabyte. If d represents the number of additional megabytes used and c represents the total charges at the end of the month, which linear equation can be used to determine a user\u2019s monthly bill?",
+      "options": {
+        "A": "c \u0004 60 \u0003 0.05d",
+        "C": "c \u0004 60d \u0003 0.05",
+        "B": "c \u0004 60.05d",
+        "D": "c \u0004 60 \u0002 0.05d"
+      },
+      "key": "D",
+      "chosenLetter": "D",
+      "correct": true,
+      "logprobs": {
+        "A": -13.750000953674316,
+        "C": -31.500001907348633,
+        "B": -26.875001907348633,
+        "D": -1.0728830375228426e-06
+      },
+      "margin": 13.749999880791279,
+      "optionType": "algebraic_expression",
+      "keyIsModalLetter": false,
+      "keyIsLowerCentral": false,
+      "keyIsHub": false,
+      "keyIsLongest": false,
+      "hubLetter": null,
+      "longestLetter": null,
+      "visibleCue": "60 and 0.05 are repeated in the option formulas; the leftover base-plus-per-megabyte story selects c=60+0.05d, not 60d."
+    }
+  ],
+  "wrongHighConfidenceExamples": [
+    {
+      "id": "nyregents-algebra-i-2026-jun-q17",
+      "originalStem": "Hana was asked to solve a quadratic equation. Her first step is shown below. x2 2 8x 5 3 Step 1: x2 2 8x 1 16 5 3 1 16 The property that Hana used is the",
+      "maskedStem": "Hana was asked to solve a quadratic equation. Her first step is shown below. x[N] [N] [N]x [N] [N] Step [N]: x[N] [N] [N]x [N] [N] [N] [N] [N] [N] The property that Hana used is the",
+      "options": {
+        "A": "distributive property",
+        "C": "additive inverse property",
+        "B": "commutative property",
+        "D": "addition property of equality"
+      },
+      "key": "D",
+      "chosenLetter": "A",
+      "correct": false,
+      "logprobs": {
+        "A": 0.0,
+        "C": -31.75,
+        "B": -25.25,
+        "D": -27.0
+      },
+      "margin": 25.25,
+      "optionType": "text",
+      "keyIsModalLetter": false,
+      "keyIsLowerCentral": false,
+      "keyIsHub": false,
+      "keyIsLongest": true,
+      "hubLetter": null,
+      "longestLetter": "D",
+      "visibleCue": "Completing the square by adding 16 to both sides; the model assigned probability 1 to distributive property instead of addition property of equality."
+    },
+    {
+      "id": "nyregents-algebra-i-2023-jan-q11",
+      "originalStem": "Sunny purchases a new car for $29,873. The car depreciates 20% annually. Which expression can be used to determine the value of the car after t years?",
+      "maskedStem": "Sunny purchases a new car for $[N]. The car depreciates [N]% annually. Which expression can be used to determine the value of the car after t years?",
+      "options": {
+        "A": "29,873(.20)t",
+        "C": "29,873(1 \u0002 .20)t",
+        "B": "29,873(20)t",
+        "D": "29,873(1 \u0003 .20)t"
+      },
+      "key": "C",
+      "chosenLetter": "D",
+      "correct": false,
+      "logprobs": {
+        "A": -29.0,
+        "C": -24.25,
+        "B": -32.875,
+        "D": 0.0
+      },
+      "margin": 24.25,
+      "optionType": "text",
+      "keyIsModalLetter": false,
+      "keyIsLowerCentral": false,
+      "keyIsHub": false,
+      "keyIsLongest": false,
+      "hubLetter": "A",
+      "longestLetter": null,
+      "visibleCue": "Depreciation of [N]% per year; the model took (1+.20)^t (growth) over (1-.20)^t (decay) at margin 24.3."
+    },
+    {
+      "id": "nyregents-algebra-i-2024-aug-q6",
+      "originalStem": "When solving the equation 4x2 2 16 5 0, Laura wrote 4x2 5 16 as her first step. Which property justifies Laura\u2019s first step?",
+      "maskedStem": "When solving the equation [N]x[N] [N] [N] [N] [N], Laura wrote [N]x[N] [N] [N] as her first step. Which property justifies Laura\u2019s first step?",
+      "options": {
+        "A": "distributive property of multiplication over addition",
+        "B": "multiplication property of equality",
+        "C": "commutative property of addition",
+        "D": "addition property of equality"
+      },
+      "key": "D",
+      "chosenLetter": "A",
+      "correct": false,
+      "logprobs": {
+        "A": 0.0,
+        "B": -24.25,
+        "C": -28.5,
+        "D": -26.5
+      },
+      "margin": 24.25,
+      "optionType": "text",
+      "keyIsModalLetter": false,
+      "keyIsLowerCentral": false,
+      "keyIsHub": false,
+      "keyIsLongest": false,
+      "hubLetter": null,
+      "longestLetter": "A",
+      "visibleCue": "Moving a term by adding to both sides; again assigned probability 1 to distributive property instead of addition property of equality."
+    }
+  ]
+}

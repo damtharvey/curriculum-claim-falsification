@@ -1,0 +1,2160 @@
+{
+  "status": "complete",
+  "label": "exploratory",
+  "writtenAt": "2026-09-16T21:50:52.745554+00:00",
+  "population": "masked_token_count_ge_1",
+  "nPrimary": 1215,
+  "nAlgebraI": 358,
+  "nAlgebraII": 248,
+  "chance": 0.25,
+  "algebraIModalLetterBar": 0.271,
+  "algebraIIModalLetterBar": 0.278,
+  "hypothesis": "The masked-stem plus options Algebra I / II effect needs a capable scorer, not a Qwen scorer.",
+  "residualDefinition": "Algebra I primary items where none of lower-central numeric, population modal letter, S1 hub, or unique-longest option points at the key.",
+  "residualItemIds": [
+    "nyregents-algebra-i-2014-aug-q19",
+    "nyregents-algebra-i-2014-aug-q4",
+    "nyregents-algebra-i-2014-aug-q8",
+    "nyregents-algebra-i-2014-aug-q9",
+    "nyregents-algebra-i-2014-jun-q1",
+    "nyregents-algebra-i-2014-jun-q12",
+    "nyregents-algebra-i-2014-jun-q22",
+    "nyregents-algebra-i-2014-jun-q7",
+    "nyregents-algebra-i-2015-aug-q18",
+    "nyregents-algebra-i-2015-aug-q19",
+    "nyregents-algebra-i-2015-aug-q2",
+    "nyregents-algebra-i-2015-aug-q23",
+    "nyregents-algebra-i-2015-aug-q9",
+    "nyregents-algebra-i-2015-jan-q11",
+    "nyregents-algebra-i-2015-jan-q13",
+    "nyregents-algebra-i-2015-jan-q17",
+    "nyregents-algebra-i-2015-jan-q21",
+    "nyregents-algebra-i-2015-jan-q23",
+    "nyregents-algebra-i-2015-jan-q3",
+    "nyregents-algebra-i-2015-jan-q8",
+    "nyregents-algebra-i-2015-jun-q6",
+    "nyregents-algebra-i-2016-aug-q12",
+    "nyregents-algebra-i-2016-aug-q2",
+    "nyregents-algebra-i-2016-aug-q21",
+    "nyregents-algebra-i-2016-aug-q4",
+    "nyregents-algebra-i-2016-jan-q18",
+    "nyregents-algebra-i-2016-jan-q23",
+    "nyregents-algebra-i-2016-jan-q7",
+    "nyregents-algebra-i-2016-jan-q8",
+    "nyregents-algebra-i-2016-jun-q1",
+    "nyregents-algebra-i-2016-jun-q13",
+    "nyregents-algebra-i-2016-jun-q15",
+    "nyregents-algebra-i-2016-jun-q16",
+    "nyregents-algebra-i-2016-jun-q19",
+    "nyregents-algebra-i-2016-jun-q21",
+    "nyregents-algebra-i-2017-aug-q10",
+    "nyregents-algebra-i-2017-aug-q17",
+    "nyregents-algebra-i-2017-aug-q22",
+    "nyregents-algebra-i-2017-aug-q23",
+    "nyregents-algebra-i-2017-aug-q4",
+    "nyregents-algebra-i-2017-aug-q9",
+    "nyregents-algebra-i-2017-jan-q19",
+    "nyregents-algebra-i-2017-jan-q21",
+    "nyregents-algebra-i-2017-jan-q3",
+    "nyregents-algebra-i-2017-jun-q21",
+    "nyregents-algebra-i-2017-jun-q23",
+    "nyregents-algebra-i-2017-jun-q5",
+    "nyregents-algebra-i-2017-jun-q6",
+    "nyregents-algebra-i-2017-jun-q8",
+    "nyregents-algebra-i-2018-aug-q15",
+    "nyregents-algebra-i-2018-aug-q22",
+    "nyregents-algebra-i-2018-aug-q3",
+    "nyregents-algebra-i-2018-aug-q8",
+    "nyregents-algebra-i-2018-jan-q10",
+    "nyregents-algebra-i-2018-jan-q13",
+    "nyregents-algebra-i-2018-jan-q14",
+    "nyregents-algebra-i-2018-jan-q21",
+    "nyregents-algebra-i-2018-jan-q22",
+    "nyregents-algebra-i-2018-jan-q5",
+    "nyregents-algebra-i-2018-jan-q7",
+    "nyregents-algebra-i-2018-jan-q8",
+    "nyregents-algebra-i-2018-jan-q9",
+    "nyregents-algebra-i-2018-jun-q1",
+    "nyregents-algebra-i-2018-jun-q10",
+    "nyregents-algebra-i-2018-jun-q16",
+    "nyregents-algebra-i-2018-jun-q19",
+    "nyregents-algebra-i-2018-jun-q2",
+    "nyregents-algebra-i-2018-jun-q22",
+    "nyregents-algebra-i-2018-jun-q23",
+    "nyregents-algebra-i-2018-jun-q7",
+    "nyregents-algebra-i-2018-jun-q9",
+    "nyregents-algebra-i-2019-aug-q1",
+    "nyregents-algebra-i-2019-aug-q23",
+    "nyregents-algebra-i-2019-aug-q3",
+    "nyregents-algebra-i-2019-aug-q9",
+    "nyregents-algebra-i-2019-jan-q23",
+    "nyregents-algebra-i-2019-jan-q8",
+    "nyregents-algebra-i-2019-jun-q1",
+    "nyregents-algebra-i-2019-jun-q14",
+    "nyregents-algebra-i-2019-jun-q17",
+    "nyregents-algebra-i-2019-jun-q22",
+    "nyregents-algebra-i-2019-jun-q5",
+    "nyregents-algebra-i-2020-jan-q11",
+    "nyregents-algebra-i-2020-jan-q12",
+    "nyregents-algebra-i-2020-jan-q19",
+    "nyregents-algebra-i-2020-jan-q23",
+    "nyregents-algebra-i-2020-jan-q6",
+    "nyregents-algebra-i-2022-aug-q10",
+    "nyregents-algebra-i-2022-aug-q11",
+    "nyregents-algebra-i-2022-aug-q18",
+    "nyregents-algebra-i-2022-aug-q19",
+    "nyregents-algebra-i-2022-aug-q23",
+    "nyregents-algebra-i-2022-jun-q12",
+    "nyregents-algebra-i-2022-jun-q14",
+    "nyregents-algebra-i-2022-jun-q4",
+    "nyregents-algebra-i-2023-aug-q11",
+    "nyregents-algebra-i-2023-aug-q12",
+    "nyregents-algebra-i-2023-aug-q13",
+    "nyregents-algebra-i-2023-aug-q2",
+    "nyregents-algebra-i-2023-aug-q7",
+    "nyregents-algebra-i-2023-jan-q11",
+    "nyregents-algebra-i-2023-jan-q22",
+    "nyregents-algebra-i-2023-jan-q6",
+    "nyregents-algebra-i-2023-jan-q8",
+    "nyregents-algebra-i-2023-jun-q8",
+    "nyregents-algebra-i-2024-aug-q11",
+    "nyregents-algebra-i-2024-aug-q13",
+    "nyregents-algebra-i-2024-aug-q15",
+    "nyregents-algebra-i-2024-aug-q17",
+    "nyregents-algebra-i-2024-aug-q18",
+    "nyregents-algebra-i-2024-aug-q21",
+    "nyregents-algebra-i-2024-aug-q3",
+    "nyregents-algebra-i-2024-aug-q6",
+    "nyregents-algebra-i-2024-jan-q18",
+    "nyregents-algebra-i-2024-jan-q19",
+    "nyregents-algebra-i-2024-jan-q21",
+    "nyregents-algebra-i-2024-jan-q23",
+    "nyregents-algebra-i-2024-jun-q1",
+    "nyregents-algebra-i-2024-jun-q11",
+    "nyregents-algebra-i-2024-jun-q21",
+    "nyregents-algebra-i-2024-jun-q4",
+    "nyregents-algebra-i-2025-aug-q13",
+    "nyregents-algebra-i-2025-aug-q15",
+    "nyregents-algebra-i-2025-aug-q19",
+    "nyregents-algebra-i-2025-aug-q2",
+    "nyregents-algebra-i-2025-aug-q6",
+    "nyregents-algebra-i-2025-jan-q1",
+    "nyregents-algebra-i-2025-jan-q12",
+    "nyregents-algebra-i-2025-jan-q13",
+    "nyregents-algebra-i-2025-jan-q4",
+    "nyregents-algebra-i-2025-jan-q8",
+    "nyregents-algebra-i-2025-jun-q13",
+    "nyregents-algebra-i-2025-jun-q15",
+    "nyregents-algebra-i-2025-jun-q21",
+    "nyregents-algebra-i-2025-jun-q4",
+    "nyregents-algebra-i-2025-jun-q5",
+    "nyregents-algebra-i-2025-jun-q7",
+    "nyregents-algebra-i-2026-aug-q13",
+    "nyregents-algebra-i-2026-aug-q17",
+    "nyregents-algebra-i-2026-aug-q19",
+    "nyregents-algebra-i-2026-aug-q2",
+    "nyregents-algebra-i-2026-aug-q23",
+    "nyregents-algebra-i-2026-aug-q5",
+    "nyregents-algebra-i-2026-aug-q8",
+    "nyregents-algebra-i-2026-jan-q10",
+    "nyregents-algebra-i-2026-jan-q12",
+    "nyregents-algebra-i-2026-jan-q16",
+    "nyregents-algebra-i-2026-jan-q20",
+    "nyregents-algebra-i-2026-jan-q23",
+    "nyregents-algebra-i-2026-jun-q1",
+    "nyregents-algebra-i-2026-jun-q14",
+    "nyregents-algebra-i-2026-jun-q15",
+    "nyregents-algebra-i-2026-jun-q18",
+    "nyregents-algebra-i-2026-jun-q21",
+    "nyregents-algebra-i-2026-jun-q3",
+    "nyregents-algebra-i-2026-jun-q5",
+    "nyregents-algebra-i-2026-jun-q6",
+    "nyregents-algebra-i-unknown-unk-q10",
+    "nyregents-algebra-i-unknown-unk-q13",
+    "nyregents-algebra-i-unknown-unk-q14",
+    "nyregents-algebra-i-unknown-unk-q18",
+    "nyregents-algebra-i-unknown-unk-q24",
+    "nyregents-algebra-i-unknown-unk-q6"
+  ],
+  "optionTypeRule": "Item-level: all options share a type, else majority if it is at least half, else mixed. Types: numeric, algebraic_expression, ordered_pair, text.",
+  "scorers": {
+    "mistral-7b-instruct-v0.3": {
+      "scorerKey": "mistral-7b-instruct-v0.3",
+      "display": "Mistral 7B",
+      "modelId": "mistralai/Mistral-7B-Instruct-v0.3",
+      "modelRevision": "c170c708c41dac9275d15a8fff4eca08d52bab71",
+      "family": "mistral",
+      "complete": {
+        "maskedStem": true,
+        "optionsOnly": true,
+        "withStemAlgebra": true
+      },
+      "nMaskedStem": 1215,
+      "nOptionsOnly": 1215,
+      "nWithStem": 606,
+      "pooledMaskedStem": {
+        "n": 1215,
+        "passRate": 0.2773662551440329,
+        "ci95": [
+          0.24938271604938272,
+          0.3037037037037037
+        ],
+        "chance": 0.2505349794238683,
+        "meanOneOverK": 0.2505349794238683,
+        "ciExcludesChance": false,
+        "witnessBarEligible": false,
+        "lowerCiAboveChance": false
+      },
+      "vsAlwaysB": {
+        "statedBaseline": 0.275,
+        "passRate": 0.2773662551440329,
+        "ci95": [
+          0.24938271604938272,
+          0.3037037037037037
+        ],
+        "lowerCiAboveStatedAlwaysB": false,
+        "recomputedAlwaysB": {
+          "letter": "B",
+          "rate": 0.27901234567901234,
+          "n": 1215,
+          "counts": {
+            "A": 275,
+            "B": 339,
+            "C": 324,
+            "D": 276,
+            "E": 1
+          },
+          "note": "Always pick the most common key letter among items in this population."
+        },
+        "lowerCiAboveRecomputedAlwaysB": false
+      },
+      "algebraI": {
+        "n": 358,
+        "passRate": 0.3016759776536313,
+        "ci95": [
+          0.2569832402234637,
+          0.34916201117318435
+        ],
+        "chance": 0.25,
+        "meanOneOverK": 0.25,
+        "ciExcludesChance": true,
+        "witnessBarEligible": true,
+        "lowerCiAboveChance": true,
+        "modalLetterOnPopulation": "B",
+        "modalCountOnPopulation": 97,
+        "modalFrequencyOnPopulation": 0.2709497206703911,
+        "modalLetterFull1487": "B",
+        "modalFrequencyFull1487": 0.27205882352941174,
+        "lowerCiAboveModalOnPopulation": false,
+        "lowerCiAboveModalFull1487": false,
+        "clearsWitnessBarOnPopulation": false,
+        "clearsWitnessBarVsFull1487Modal": false,
+        "nonModalKey": {
+          "n": 261,
+          "passRate": 0.31800766283524906,
+          "ci95": [
+            0.2681992337164751,
+            0.37547892720306514
+          ],
+          "chance": 0.25,
+          "meanOneOverK": 0.25,
+          "ciExcludesChance": true,
+          "witnessBarEligible": true,
+          "lowerCiAboveChance": true
+        },
+        "verdict": "chance only",
+        "statedChance": 0.25,
+        "statedModalLetterBar": 0.271,
+        "vsOptionsOnly": {
+          "nOverlap": 358,
+          "nMissingFromOptionsOnly": 0,
+          "maskedCorrectOptionsWrong": 51,
+          "optionsCorrectMaskedWrong": 27,
+          "bothCorrect": 57,
+          "bothWrong": 223,
+          "shareMaskedOnly": 0.1424581005586592,
+          "shareOptionsOnly": 0.07541899441340782,
+          "mcnemarN01": 51,
+          "mcnemarN10": 27,
+          "mcnemarChiSquareNoContinuity": 7.384615384615385,
+          "note": "n01 = masked-stem correct and options-only incorrect; n10 = options-only correct and masked-stem incorrect."
+        }
+      },
+      "algebraII": {
+        "n": 248,
+        "passRate": 0.2620967741935484,
+        "ci95": [
+          0.20967741935483872,
+          0.3185483870967742
+        ],
+        "chance": 0.25,
+        "meanOneOverK": 0.25,
+        "ciExcludesChance": false,
+        "witnessBarEligible": false,
+        "lowerCiAboveChance": false,
+        "modalLetterOnPopulation": "C",
+        "modalCountOnPopulation": 69,
+        "modalFrequencyOnPopulation": 0.2782258064516129,
+        "modalLetterFull1487": "C",
+        "modalFrequencyFull1487": 0.275,
+        "lowerCiAboveModalOnPopulation": false,
+        "lowerCiAboveModalFull1487": false,
+        "clearsWitnessBarOnPopulation": false,
+        "clearsWitnessBarVsFull1487Modal": false,
+        "nonModalKey": {
+          "n": 179,
+          "passRate": 0.26256983240223464,
+          "ci95": [
+            0.2011173184357542,
+            0.3240223463687151
+          ],
+          "chance": 0.25,
+          "meanOneOverK": 0.25,
+          "ciExcludesChance": false,
+          "witnessBarEligible": false,
+          "lowerCiAboveChance": false
+        },
+        "verdict": "neither",
+        "statedChance": 0.25,
+        "statedModalLetterBar": 0.278,
+        "vsOptionsOnly": {
+          "nOverlap": 248,
+          "nMissingFromOptionsOnly": 0,
+          "maskedCorrectOptionsWrong": 32,
+          "optionsCorrectMaskedWrong": 23,
+          "bothCorrect": 33,
+          "bothWrong": 160,
+          "shareMaskedOnly": 0.12903225806451613,
+          "shareOptionsOnly": 0.09274193548387097,
+          "mcnemarN01": 32,
+          "mcnemarN10": 23,
+          "mcnemarChiSquareNoContinuity": 1.4727272727272727,
+          "note": "n01 = masked-stem correct and options-only incorrect; n10 = options-only correct and masked-stem incorrect."
+        }
+      },
+      "vsOptionsOnly": {
+        "nOverlap": 1215,
+        "nMissingFromOptionsOnly": 0,
+        "maskedCorrectOptionsWrong": 174,
+        "optionsCorrectMaskedWrong": 140,
+        "bothCorrect": 163,
+        "bothWrong": 738,
+        "shareMaskedOnly": 0.14320987654320988,
+        "shareOptionsOnly": 0.11522633744855967,
+        "mcnemarN01": 174,
+        "mcnemarN10": 140,
+        "mcnemarChiSquareNoContinuity": 3.6815286624203822,
+        "note": "n01 = masked-stem correct and options-only incorrect; n10 = options-only correct and masked-stem incorrect."
+      },
+      "algebraIOptionTypes": {
+        "algebraic_expression": {
+          "n": 65,
+          "passRate": 0.2923076923076923,
+          "ci95": [
+            0.18461538461538463,
+            0.4
+          ],
+          "chance": 0.25,
+          "meanOneOverK": 0.25,
+          "ciExcludesChance": false,
+          "witnessBarEligible": false,
+          "lowerCiAboveChance": false
+        },
+        "text": {
+          "n": 188,
+          "passRate": 0.32978723404255317,
+          "ci95": [
+            0.26595744680851063,
+            0.39361702127659576
+          ],
+          "chance": 0.25,
+          "meanOneOverK": 0.25,
+          "ciExcludesChance": true,
+          "witnessBarEligible": true,
+          "lowerCiAboveChance": true
+        },
+        "numeric": {
+          "n": 71,
+          "passRate": 0.23943661971830985,
+          "ci95": [
+            0.14084507042253522,
+            0.3380281690140845
+          ],
+          "chance": 0.25,
+          "meanOneOverK": 0.25,
+          "ciExcludesChance": false,
+          "witnessBarEligible": false,
+          "lowerCiAboveChance": false
+        },
+        "mixed": {
+          "n": 26,
+          "passRate": 0.2692307692307692,
+          "ci95": [
+            0.11538461538461539,
+            0.46153846153846156
+          ],
+          "chance": 0.25,
+          "meanOneOverK": 0.25,
+          "ciExcludesChance": false,
+          "witnessBarEligible": false,
+          "lowerCiAboveChance": false
+        },
+        "ordered_pair": {
+          "n": 8,
+          "passRate": 0.375,
+          "ci95": [
+            0.0,
+            0.75
+          ],
+          "chance": 0.25,
+          "meanOneOverK": 0.25,
+          "ciExcludesChance": false,
+          "witnessBarEligible": false,
+          "lowerCiAboveChance": false
+        }
+      },
+      "algebraIResidualNoCatalogCue": {
+        "nExpected": 163,
+        "n": 163,
+        "stats": {
+          "n": 163,
+          "passRate": 0.26993865030674846,
+          "ci95": [
+            0.20245398773006135,
+            0.3374233128834356
+          ],
+          "chance": 0.25,
+          "meanOneOverK": 0.25,
+          "ciExcludesChance": false,
+          "witnessBarEligible": false,
+          "lowerCiAboveChance": false
+        }
+      },
+      "pooledOptionsOnly": {
+        "n": 1215,
+        "passRate": 0.24938271604938272,
+        "ci95": [
+          0.22386831275720165,
+          0.27242798353909464
+        ],
+        "chance": 0.2505349794238683,
+        "meanOneOverK": 0.2505349794238683,
+        "ciExcludesChance": false,
+        "witnessBarEligible": false,
+        "lowerCiAboveChance": false
+      },
+      "optionsOnlyAlgebraI": {
+        "n": 358,
+        "passRate": 0.2346368715083799,
+        "ci95": [
+          0.19553072625698323,
+          0.27932960893854747
+        ],
+        "chance": 0.25,
+        "meanOneOverK": 0.25,
+        "ciExcludesChance": false,
+        "witnessBarEligible": false,
+        "lowerCiAboveChance": false,
+        "modalLetterOnPopulation": "B",
+        "modalCountOnPopulation": 97,
+        "modalFrequencyOnPopulation": 0.2709497206703911,
+        "modalLetterFull1487": "B",
+        "modalFrequencyFull1487": 0.27205882352941174,
+        "lowerCiAboveModalOnPopulation": false,
+        "lowerCiAboveModalFull1487": false,
+        "clearsWitnessBarOnPopulation": false,
+        "clearsWitnessBarVsFull1487Modal": false,
+        "nonModalKey": {
+          "n": 261,
+          "passRate": 0.2988505747126437,
+          "ci95": [
+            0.24521072796934865,
+            0.3563218390804598
+          ],
+          "chance": 0.25,
+          "meanOneOverK": 0.25,
+          "ciExcludesChance": false,
+          "witnessBarEligible": false,
+          "lowerCiAboveChance": false
+        }
+      },
+      "optionsOnlyAlgebraII": {
+        "n": 248,
+        "passRate": 0.22580645161290322,
+        "ci95": [
+          0.17338709677419356,
+          0.27419354838709675
+        ],
+        "chance": 0.25,
+        "meanOneOverK": 0.25,
+        "ciExcludesChance": false,
+        "witnessBarEligible": false,
+        "lowerCiAboveChance": false,
+        "modalLetterOnPopulation": "C",
+        "modalCountOnPopulation": 69,
+        "modalFrequencyOnPopulation": 0.2782258064516129,
+        "modalLetterFull1487": "C",
+        "modalFrequencyFull1487": 0.275,
+        "lowerCiAboveModalOnPopulation": false,
+        "lowerCiAboveModalFull1487": false,
+        "clearsWitnessBarOnPopulation": false,
+        "clearsWitnessBarVsFull1487Modal": false,
+        "nonModalKey": {
+          "n": 179,
+          "passRate": 0.2569832402234637,
+          "ci95": [
+            0.19553072625698323,
+            0.3240223463687151
+          ],
+          "chance": 0.25,
+          "meanOneOverK": 0.25,
+          "ciExcludesChance": false,
+          "witnessBarEligible": false,
+          "lowerCiAboveChance": false
+        }
+      },
+      "withStemAlgebraI": {
+        "n": 358,
+        "passRate": 0.30446927374301674,
+        "ci95": [
+          0.2569832402234637,
+          0.35195530726256985
+        ],
+        "chance": 0.25,
+        "meanOneOverK": 0.25,
+        "ciExcludesChance": true,
+        "witnessBarEligible": true,
+        "lowerCiAboveChance": true,
+        "modalLetterOnPopulation": "B",
+        "modalCountOnPopulation": 97,
+        "modalFrequencyOnPopulation": 0.2709497206703911,
+        "modalLetterFull1487": "B",
+        "modalFrequencyFull1487": 0.27205882352941174,
+        "lowerCiAboveModalOnPopulation": false,
+        "lowerCiAboveModalFull1487": false,
+        "clearsWitnessBarOnPopulation": false,
+        "clearsWitnessBarVsFull1487Modal": false,
+        "nonModalKey": {
+          "n": 261,
+          "passRate": 0.3524904214559387,
+          "ci95": [
+            0.2950191570881226,
+            0.4099616858237548
+          ],
+          "chance": 0.25,
+          "meanOneOverK": 0.25,
+          "ciExcludesChance": true,
+          "witnessBarEligible": true,
+          "lowerCiAboveChance": true
+        }
+      },
+      "withStemAlgebraII": {
+        "n": 248,
+        "passRate": 0.2903225806451613,
+        "ci95": [
+          0.22983870967741934,
+          0.3467741935483871
+        ],
+        "chance": 0.25,
+        "meanOneOverK": 0.25,
+        "ciExcludesChance": false,
+        "witnessBarEligible": false,
+        "lowerCiAboveChance": false,
+        "modalLetterOnPopulation": "C",
+        "modalCountOnPopulation": 69,
+        "modalFrequencyOnPopulation": 0.2782258064516129,
+        "modalLetterFull1487": "C",
+        "modalFrequencyFull1487": 0.275,
+        "lowerCiAboveModalOnPopulation": false,
+        "lowerCiAboveModalFull1487": false,
+        "clearsWitnessBarOnPopulation": false,
+        "clearsWitnessBarVsFull1487Modal": false,
+        "nonModalKey": {
+          "n": 179,
+          "passRate": 0.2681564245810056,
+          "ci95": [
+            0.20670391061452514,
+            0.33519553072625696
+          ],
+          "chance": 0.25,
+          "meanOneOverK": 0.25,
+          "ciExcludesChance": false,
+          "witnessBarEligible": false,
+          "lowerCiAboveChance": false
+        }
+      },
+      "withStemCeiling": {
+        "algebraI": {
+          "n": 358,
+          "passRate": 0.30446927374301674,
+          "ci95": [
+            0.2569832402234637,
+            0.35195530726256985
+          ],
+          "chance": 0.25,
+          "meanOneOverK": 0.25,
+          "ciExcludesChance": true,
+          "witnessBarEligible": true,
+          "lowerCiAboveChance": true
+        },
+        "algebraII": {
+          "n": 248,
+          "passRate": 0.2903225806451613,
+          "ci95": [
+            0.22983870967741934,
+            0.3467741935483871
+          ],
+          "chance": 0.25,
+          "meanOneOverK": 0.25,
+          "ciExcludesChance": false,
+          "witnessBarEligible": false,
+          "lowerCiAboveChance": false
+        }
+      }
+    },
+    "qwen2.5-7b-instruct": {
+      "scorerKey": "qwen2.5-7b-instruct",
+      "display": "Qwen 7B",
+      "modelId": "Qwen/Qwen2.5-7B-Instruct",
+      "modelRevision": "a09a35458c702b33eeacc393d103063234e8bc28",
+      "family": "qwen",
+      "complete": {
+        "maskedStem": true,
+        "optionsOnly": true,
+        "withStemAlgebra": true
+      },
+      "nMaskedStem": 1215,
+      "nOptionsOnly": 1215,
+      "nWithStem": 606,
+      "pooledMaskedStem": {
+        "n": 1215,
+        "passRate": 0.37613168724279833,
+        "ci95": [
+          0.3506172839506173,
+          0.4024691358024691
+        ],
+        "chance": 0.2505349794238683,
+        "meanOneOverK": 0.2505349794238683,
+        "ciExcludesChance": true,
+        "witnessBarEligible": true,
+        "lowerCiAboveChance": true
+      },
+      "vsAlwaysB": {
+        "statedBaseline": 0.275,
+        "passRate": 0.37613168724279833,
+        "ci95": [
+          0.3506172839506173,
+          0.4024691358024691
+        ],
+        "lowerCiAboveStatedAlwaysB": true,
+        "recomputedAlwaysB": {
+          "letter": "B",
+          "rate": 0.27901234567901234,
+          "n": 1215,
+          "counts": {
+            "A": 275,
+            "B": 339,
+            "C": 324,
+            "D": 276,
+            "E": 1
+          },
+          "note": "Always pick the most common key letter among items in this population."
+        },
+        "lowerCiAboveRecomputedAlwaysB": true
+      },
+      "algebraI": {
+        "n": 358,
+        "passRate": 0.388268156424581,
+        "ci95": [
+          0.3407821229050279,
+          0.43854748603351956
+        ],
+        "chance": 0.25,
+        "meanOneOverK": 0.25,
+        "ciExcludesChance": true,
+        "witnessBarEligible": true,
+        "lowerCiAboveChance": true,
+        "modalLetterOnPopulation": "B",
+        "modalCountOnPopulation": 97,
+        "modalFrequencyOnPopulation": 0.2709497206703911,
+        "modalLetterFull1487": "B",
+        "modalFrequencyFull1487": 0.27205882352941174,
+        "lowerCiAboveModalOnPopulation": true,
+        "lowerCiAboveModalFull1487": true,
+        "clearsWitnessBarOnPopulation": true,
+        "clearsWitnessBarVsFull1487Modal": true,
+        "nonModalKey": {
+          "n": 261,
+          "passRate": 0.3524904214559387,
+          "ci95": [
+            0.2988505747126437,
+            0.4099616858237548
+          ],
+          "chance": 0.25,
+          "meanOneOverK": 0.25,
+          "ciExcludesChance": true,
+          "witnessBarEligible": true,
+          "lowerCiAboveChance": true
+        },
+        "verdict": "clears both",
+        "statedChance": 0.25,
+        "statedModalLetterBar": 0.271,
+        "vsOptionsOnly": {
+          "nOverlap": 358,
+          "nMissingFromOptionsOnly": 0,
+          "maskedCorrectOptionsWrong": 77,
+          "optionsCorrectMaskedWrong": 50,
+          "bothCorrect": 62,
+          "bothWrong": 169,
+          "shareMaskedOnly": 0.21508379888268156,
+          "shareOptionsOnly": 0.13966480446927373,
+          "mcnemarN01": 77,
+          "mcnemarN10": 50,
+          "mcnemarChiSquareNoContinuity": 5.74015748031496,
+          "note": "n01 = masked-stem correct and options-only incorrect; n10 = options-only correct and masked-stem incorrect."
+        }
+      },
+      "algebraII": {
+        "n": 248,
+        "passRate": 0.36693548387096775,
+        "ci95": [
+          0.3064516129032258,
+          0.42338709677419356
+        ],
+        "chance": 0.25,
+        "meanOneOverK": 0.25,
+        "ciExcludesChance": true,
+        "witnessBarEligible": true,
+        "lowerCiAboveChance": true,
+        "modalLetterOnPopulation": "C",
+        "modalCountOnPopulation": 69,
+        "modalFrequencyOnPopulation": 0.2782258064516129,
+        "modalLetterFull1487": "C",
+        "modalFrequencyFull1487": 0.275,
+        "lowerCiAboveModalOnPopulation": true,
+        "lowerCiAboveModalFull1487": true,
+        "clearsWitnessBarOnPopulation": true,
+        "clearsWitnessBarVsFull1487Modal": true,
+        "nonModalKey": {
+          "n": 179,
+          "passRate": 0.329608938547486,
+          "ci95": [
+            0.26256983240223464,
+            0.39664804469273746
+          ],
+          "chance": 0.25,
+          "meanOneOverK": 0.25,
+          "ciExcludesChance": true,
+          "witnessBarEligible": true,
+          "lowerCiAboveChance": true
+        },
+        "verdict": "clears both",
+        "statedChance": 0.25,
+        "statedModalLetterBar": 0.278,
+        "vsOptionsOnly": {
+          "nOverlap": 248,
+          "nMissingFromOptionsOnly": 0,
+          "maskedCorrectOptionsWrong": 50,
+          "optionsCorrectMaskedWrong": 27,
+          "bothCorrect": 41,
+          "bothWrong": 130,
+          "shareMaskedOnly": 0.20161290322580644,
+          "shareOptionsOnly": 0.10887096774193548,
+          "mcnemarN01": 50,
+          "mcnemarN10": 27,
+          "mcnemarChiSquareNoContinuity": 6.87012987012987,
+          "note": "n01 = masked-stem correct and options-only incorrect; n10 = options-only correct and masked-stem incorrect."
+        }
+      },
+      "vsOptionsOnly": {
+        "nOverlap": 1215,
+        "nMissingFromOptionsOnly": 0,
+        "maskedCorrectOptionsWrong": 259,
+        "optionsCorrectMaskedWrong": 172,
+        "bothCorrect": 198,
+        "bothWrong": 586,
+        "shareMaskedOnly": 0.21316872427983538,
+        "shareOptionsOnly": 0.14156378600823044,
+        "mcnemarN01": 259,
+        "mcnemarN10": 172,
+        "mcnemarChiSquareNoContinuity": 17.561484918793504,
+        "note": "n01 = masked-stem correct and options-only incorrect; n10 = options-only correct and masked-stem incorrect."
+      },
+      "algebraIOptionTypes": {
+        "algebraic_expression": {
+          "n": 65,
+          "passRate": 0.4153846153846154,
+          "ci95": [
+            0.2923076923076923,
+            0.5384615384615384
+          ],
+          "chance": 0.25,
+          "meanOneOverK": 0.25,
+          "ciExcludesChance": true,
+          "witnessBarEligible": true,
+          "lowerCiAboveChance": true
+        },
+        "text": {
+          "n": 188,
+          "passRate": 0.425531914893617,
+          "ci95": [
+            0.35638297872340424,
+            0.5
+          ],
+          "chance": 0.25,
+          "meanOneOverK": 0.25,
+          "ciExcludesChance": true,
+          "witnessBarEligible": true,
+          "lowerCiAboveChance": true
+        },
+        "numeric": {
+          "n": 71,
+          "passRate": 0.2535211267605634,
+          "ci95": [
+            0.15492957746478872,
+            0.352112676056338
+          ],
+          "chance": 0.25,
+          "meanOneOverK": 0.25,
+          "ciExcludesChance": false,
+          "witnessBarEligible": false,
+          "lowerCiAboveChance": false
+        },
+        "mixed": {
+          "n": 26,
+          "passRate": 0.46153846153846156,
+          "ci95": [
+            0.2692307692307692,
+            0.6538461538461539
+          ],
+          "chance": 0.25,
+          "meanOneOverK": 0.25,
+          "ciExcludesChance": true,
+          "witnessBarEligible": true,
+          "lowerCiAboveChance": true
+        },
+        "ordered_pair": {
+          "n": 8,
+          "passRate": 0.25,
+          "ci95": [
+            0.0,
+            0.625
+          ],
+          "chance": 0.25,
+          "meanOneOverK": 0.25,
+          "ciExcludesChance": false,
+          "witnessBarEligible": false,
+          "lowerCiAboveChance": false
+        }
+      },
+      "algebraIResidualNoCatalogCue": {
+        "nExpected": 163,
+        "n": 163,
+        "stats": {
+          "n": 163,
+          "passRate": 0.3619631901840491,
+          "ci95": [
+            0.2883435582822086,
+            0.43558282208588955
+          ],
+          "chance": 0.25,
+          "meanOneOverK": 0.25,
+          "ciExcludesChance": true,
+          "witnessBarEligible": true,
+          "lowerCiAboveChance": true
+        }
+      },
+      "pooledOptionsOnly": {
+        "n": 1215,
+        "passRate": 0.3045267489711934,
+        "ci95": [
+          0.2781893004115226,
+          0.3292181069958848
+        ],
+        "chance": 0.2505349794238683,
+        "meanOneOverK": 0.2505349794238683,
+        "ciExcludesChance": true,
+        "witnessBarEligible": true,
+        "lowerCiAboveChance": true
+      },
+      "optionsOnlyAlgebraI": {
+        "n": 358,
+        "passRate": 0.3128491620111732,
+        "ci95": [
+          0.2681564245810056,
+          0.36033519553072624
+        ],
+        "chance": 0.25,
+        "meanOneOverK": 0.25,
+        "ciExcludesChance": true,
+        "witnessBarEligible": true,
+        "lowerCiAboveChance": true,
+        "modalLetterOnPopulation": "B",
+        "modalCountOnPopulation": 97,
+        "modalFrequencyOnPopulation": 0.2709497206703911,
+        "modalLetterFull1487": "B",
+        "modalFrequencyFull1487": 0.27205882352941174,
+        "lowerCiAboveModalOnPopulation": false,
+        "lowerCiAboveModalFull1487": false,
+        "clearsWitnessBarOnPopulation": false,
+        "clearsWitnessBarVsFull1487Modal": false,
+        "nonModalKey": {
+          "n": 261,
+          "passRate": 0.3563218390804598,
+          "ci95": [
+            0.2988505747126437,
+            0.41762452107279696
+          ],
+          "chance": 0.25,
+          "meanOneOverK": 0.25,
+          "ciExcludesChance": true,
+          "witnessBarEligible": true,
+          "lowerCiAboveChance": true
+        }
+      },
+      "optionsOnlyAlgebraII": {
+        "n": 248,
+        "passRate": 0.27419354838709675,
+        "ci95": [
+          0.21774193548387097,
+          0.3346774193548387
+        ],
+        "chance": 0.25,
+        "meanOneOverK": 0.25,
+        "ciExcludesChance": false,
+        "witnessBarEligible": false,
+        "lowerCiAboveChance": false,
+        "modalLetterOnPopulation": "C",
+        "modalCountOnPopulation": 69,
+        "modalFrequencyOnPopulation": 0.2782258064516129,
+        "modalLetterFull1487": "C",
+        "modalFrequencyFull1487": 0.275,
+        "lowerCiAboveModalOnPopulation": false,
+        "lowerCiAboveModalFull1487": false,
+        "clearsWitnessBarOnPopulation": false,
+        "clearsWitnessBarVsFull1487Modal": false,
+        "nonModalKey": {
+          "n": 179,
+          "passRate": 0.2346368715083799,
+          "ci95": [
+            0.17318435754189945,
+            0.29608938547486036
+          ],
+          "chance": 0.25,
+          "meanOneOverK": 0.25,
+          "ciExcludesChance": false,
+          "witnessBarEligible": false,
+          "lowerCiAboveChance": false
+        }
+      },
+      "withStemAlgebraI": {
+        "n": 358,
+        "passRate": 0.5083798882681564,
+        "ci95": [
+          0.46089385474860334,
+          0.5586592178770949
+        ],
+        "chance": 0.25,
+        "meanOneOverK": 0.25,
+        "ciExcludesChance": true,
+        "witnessBarEligible": true,
+        "lowerCiAboveChance": true,
+        "modalLetterOnPopulation": "B",
+        "modalCountOnPopulation": 97,
+        "modalFrequencyOnPopulation": 0.2709497206703911,
+        "modalLetterFull1487": "B",
+        "modalFrequencyFull1487": 0.27205882352941174,
+        "lowerCiAboveModalOnPopulation": true,
+        "lowerCiAboveModalFull1487": true,
+        "clearsWitnessBarOnPopulation": true,
+        "clearsWitnessBarVsFull1487Modal": true,
+        "nonModalKey": {
+          "n": 261,
+          "passRate": 0.4789272030651341,
+          "ci95": [
+            0.41379310344827586,
+            0.5402298850574713
+          ],
+          "chance": 0.25,
+          "meanOneOverK": 0.25,
+          "ciExcludesChance": true,
+          "witnessBarEligible": true,
+          "lowerCiAboveChance": true
+        }
+      },
+      "withStemAlgebraII": {
+        "n": 248,
+        "passRate": 0.4032258064516129,
+        "ci95": [
+          0.3387096774193548,
+          0.4637096774193548
+        ],
+        "chance": 0.25,
+        "meanOneOverK": 0.25,
+        "ciExcludesChance": true,
+        "witnessBarEligible": true,
+        "lowerCiAboveChance": true,
+        "modalLetterOnPopulation": "C",
+        "modalCountOnPopulation": 69,
+        "modalFrequencyOnPopulation": 0.2782258064516129,
+        "modalLetterFull1487": "C",
+        "modalFrequencyFull1487": 0.275,
+        "lowerCiAboveModalOnPopulation": true,
+        "lowerCiAboveModalFull1487": true,
+        "clearsWitnessBarOnPopulation": true,
+        "clearsWitnessBarVsFull1487Modal": true,
+        "nonModalKey": {
+          "n": 179,
+          "passRate": 0.3854748603351955,
+          "ci95": [
+            0.31843575418994413,
+            0.4581005586592179
+          ],
+          "chance": 0.25,
+          "meanOneOverK": 0.25,
+          "ciExcludesChance": true,
+          "witnessBarEligible": true,
+          "lowerCiAboveChance": true
+        }
+      },
+      "withStemCeiling": {
+        "algebraI": {
+          "n": 358,
+          "passRate": 0.5083798882681564,
+          "ci95": [
+            0.46089385474860334,
+            0.5586592178770949
+          ],
+          "chance": 0.25,
+          "meanOneOverK": 0.25,
+          "ciExcludesChance": true,
+          "witnessBarEligible": true,
+          "lowerCiAboveChance": true
+        },
+        "algebraII": {
+          "n": 248,
+          "passRate": 0.4032258064516129,
+          "ci95": [
+            0.3387096774193548,
+            0.4637096774193548
+          ],
+          "chance": 0.25,
+          "meanOneOverK": 0.25,
+          "ciExcludesChance": true,
+          "witnessBarEligible": true,
+          "lowerCiAboveChance": true
+        }
+      }
+    },
+    "qwen2.5-14b-instruct": {
+      "scorerKey": "qwen2.5-14b-instruct",
+      "display": "Qwen 14B",
+      "modelId": "Qwen/Qwen2.5-14B-Instruct",
+      "modelRevision": "cf98f3b3bbb457ad9e2bb7baf9a0125b6b88caa8",
+      "family": "qwen",
+      "complete": {
+        "maskedStem": true,
+        "optionsOnly": true,
+        "withStemAlgebra": true
+      },
+      "nMaskedStem": 1215,
+      "nOptionsOnly": 1215,
+      "nWithStem": 606,
+      "pooledMaskedStem": {
+        "n": 1215,
+        "passRate": 0.388477366255144,
+        "ci95": [
+          0.36049382716049383,
+          0.41646090534979424
+        ],
+        "chance": 0.2505349794238683,
+        "meanOneOverK": 0.2505349794238683,
+        "ciExcludesChance": true,
+        "witnessBarEligible": true,
+        "lowerCiAboveChance": true
+      },
+      "vsAlwaysB": {
+        "statedBaseline": 0.275,
+        "passRate": 0.388477366255144,
+        "ci95": [
+          0.36049382716049383,
+          0.41646090534979424
+        ],
+        "lowerCiAboveStatedAlwaysB": true,
+        "recomputedAlwaysB": {
+          "letter": "B",
+          "rate": 0.27901234567901234,
+          "n": 1215,
+          "counts": {
+            "A": 275,
+            "B": 339,
+            "C": 324,
+            "D": 276,
+            "E": 1
+          },
+          "note": "Always pick the most common key letter among items in this population."
+        },
+        "lowerCiAboveRecomputedAlwaysB": true
+      },
+      "algebraI": {
+        "n": 358,
+        "passRate": 0.41620111731843573,
+        "ci95": [
+          0.36312849162011174,
+          0.4692737430167598
+        ],
+        "chance": 0.25,
+        "meanOneOverK": 0.25,
+        "ciExcludesChance": true,
+        "witnessBarEligible": true,
+        "lowerCiAboveChance": true,
+        "modalLetterOnPopulation": "B",
+        "modalCountOnPopulation": 97,
+        "modalFrequencyOnPopulation": 0.2709497206703911,
+        "modalLetterFull1487": "B",
+        "modalFrequencyFull1487": 0.27205882352941174,
+        "lowerCiAboveModalOnPopulation": true,
+        "lowerCiAboveModalFull1487": true,
+        "clearsWitnessBarOnPopulation": true,
+        "clearsWitnessBarVsFull1487Modal": true,
+        "nonModalKey": {
+          "n": 261,
+          "passRate": 0.40229885057471265,
+          "ci95": [
+            0.34099616858237547,
+            0.46360153256704983
+          ],
+          "chance": 0.25,
+          "meanOneOverK": 0.25,
+          "ciExcludesChance": true,
+          "witnessBarEligible": true,
+          "lowerCiAboveChance": true
+        },
+        "verdict": "clears both",
+        "statedChance": 0.25,
+        "statedModalLetterBar": 0.271,
+        "vsOptionsOnly": {
+          "nOverlap": 358,
+          "nMissingFromOptionsOnly": 0,
+          "maskedCorrectOptionsWrong": 75,
+          "optionsCorrectMaskedWrong": 45,
+          "bothCorrect": 74,
+          "bothWrong": 164,
+          "shareMaskedOnly": 0.20949720670391062,
+          "shareOptionsOnly": 0.12569832402234637,
+          "mcnemarN01": 75,
+          "mcnemarN10": 45,
+          "mcnemarChiSquareNoContinuity": 7.5,
+          "note": "n01 = masked-stem correct and options-only incorrect; n10 = options-only correct and masked-stem incorrect."
+        }
+      },
+      "algebraII": {
+        "n": 248,
+        "passRate": 0.3588709677419355,
+        "ci95": [
+          0.29838709677419356,
+          0.4153225806451613
+        ],
+        "chance": 0.25,
+        "meanOneOverK": 0.25,
+        "ciExcludesChance": true,
+        "witnessBarEligible": true,
+        "lowerCiAboveChance": true,
+        "modalLetterOnPopulation": "C",
+        "modalCountOnPopulation": 69,
+        "modalFrequencyOnPopulation": 0.2782258064516129,
+        "modalLetterFull1487": "C",
+        "modalFrequencyFull1487": 0.275,
+        "lowerCiAboveModalOnPopulation": true,
+        "lowerCiAboveModalFull1487": true,
+        "clearsWitnessBarOnPopulation": true,
+        "clearsWitnessBarVsFull1487Modal": true,
+        "nonModalKey": {
+          "n": 179,
+          "passRate": 0.3016759776536313,
+          "ci95": [
+            0.2346368715083799,
+            0.3687150837988827
+          ],
+          "chance": 0.25,
+          "meanOneOverK": 0.25,
+          "ciExcludesChance": false,
+          "witnessBarEligible": false,
+          "lowerCiAboveChance": false
+        },
+        "verdict": "clears both",
+        "statedChance": 0.25,
+        "statedModalLetterBar": 0.278,
+        "vsOptionsOnly": {
+          "nOverlap": 248,
+          "nMissingFromOptionsOnly": 0,
+          "maskedCorrectOptionsWrong": 46,
+          "optionsCorrectMaskedWrong": 28,
+          "bothCorrect": 43,
+          "bothWrong": 131,
+          "shareMaskedOnly": 0.18548387096774194,
+          "shareOptionsOnly": 0.11290322580645161,
+          "mcnemarN01": 46,
+          "mcnemarN10": 28,
+          "mcnemarChiSquareNoContinuity": 4.378378378378378,
+          "note": "n01 = masked-stem correct and options-only incorrect; n10 = options-only correct and masked-stem incorrect."
+        }
+      },
+      "vsOptionsOnly": {
+        "nOverlap": 1215,
+        "nMissingFromOptionsOnly": 0,
+        "maskedCorrectOptionsWrong": 243,
+        "optionsCorrectMaskedWrong": 149,
+        "bothCorrect": 229,
+        "bothWrong": 594,
+        "shareMaskedOnly": 0.2,
+        "shareOptionsOnly": 0.12263374485596708,
+        "mcnemarN01": 243,
+        "mcnemarN10": 149,
+        "mcnemarChiSquareNoContinuity": 22.540816326530614,
+        "note": "n01 = masked-stem correct and options-only incorrect; n10 = options-only correct and masked-stem incorrect."
+      },
+      "algebraIOptionTypes": {
+        "algebraic_expression": {
+          "n": 65,
+          "passRate": 0.46153846153846156,
+          "ci95": [
+            0.35384615384615387,
+            0.5846153846153846
+          ],
+          "chance": 0.25,
+          "meanOneOverK": 0.25,
+          "ciExcludesChance": true,
+          "witnessBarEligible": true,
+          "lowerCiAboveChance": true
+        },
+        "text": {
+          "n": 188,
+          "passRate": 0.4521276595744681,
+          "ci95": [
+            0.3776595744680851,
+            0.5212765957446809
+          ],
+          "chance": 0.25,
+          "meanOneOverK": 0.25,
+          "ciExcludesChance": true,
+          "witnessBarEligible": true,
+          "lowerCiAboveChance": true
+        },
+        "numeric": {
+          "n": 71,
+          "passRate": 0.30985915492957744,
+          "ci95": [
+            0.2112676056338028,
+            0.4225352112676056
+          ],
+          "chance": 0.25,
+          "meanOneOverK": 0.25,
+          "ciExcludesChance": false,
+          "witnessBarEligible": false,
+          "lowerCiAboveChance": false
+        },
+        "mixed": {
+          "n": 26,
+          "passRate": 0.38461538461538464,
+          "ci95": [
+            0.19230769230769232,
+            0.5769230769230769
+          ],
+          "chance": 0.25,
+          "meanOneOverK": 0.25,
+          "ciExcludesChance": false,
+          "witnessBarEligible": false,
+          "lowerCiAboveChance": false
+        },
+        "ordered_pair": {
+          "n": 8,
+          "passRate": 0.25,
+          "ci95": [
+            0.0,
+            0.625
+          ],
+          "chance": 0.25,
+          "meanOneOverK": 0.25,
+          "ciExcludesChance": false,
+          "witnessBarEligible": false,
+          "lowerCiAboveChance": false
+        }
+      },
+      "algebraIResidualNoCatalogCue": {
+        "nExpected": 163,
+        "n": 163,
+        "stats": {
+          "n": 163,
+          "passRate": 0.44171779141104295,
+          "ci95": [
+            0.36809815950920244,
+            0.5214723926380368
+          ],
+          "chance": 0.25,
+          "meanOneOverK": 0.25,
+          "ciExcludesChance": true,
+          "witnessBarEligible": true,
+          "lowerCiAboveChance": true
+        }
+      },
+      "pooledOptionsOnly": {
+        "n": 1215,
+        "passRate": 0.3111111111111111,
+        "ci95": [
+          0.2872427983539095,
+          0.3366255144032922
+        ],
+        "chance": 0.2505349794238683,
+        "meanOneOverK": 0.2505349794238683,
+        "ciExcludesChance": true,
+        "witnessBarEligible": true,
+        "lowerCiAboveChance": true
+      },
+      "optionsOnlyAlgebraI": {
+        "n": 358,
+        "passRate": 0.3324022346368715,
+        "ci95": [
+          0.2849162011173184,
+          0.37988826815642457
+        ],
+        "chance": 0.25,
+        "meanOneOverK": 0.25,
+        "ciExcludesChance": true,
+        "witnessBarEligible": true,
+        "lowerCiAboveChance": true,
+        "modalLetterOnPopulation": "B",
+        "modalCountOnPopulation": 97,
+        "modalFrequencyOnPopulation": 0.2709497206703911,
+        "modalLetterFull1487": "B",
+        "modalFrequencyFull1487": 0.27205882352941174,
+        "lowerCiAboveModalOnPopulation": true,
+        "lowerCiAboveModalFull1487": true,
+        "clearsWitnessBarOnPopulation": true,
+        "clearsWitnessBarVsFull1487Modal": true,
+        "nonModalKey": {
+          "n": 261,
+          "passRate": 0.3333333333333333,
+          "ci95": [
+            0.2796934865900383,
+            0.3946360153256705
+          ],
+          "chance": 0.25,
+          "meanOneOverK": 0.25,
+          "ciExcludesChance": true,
+          "witnessBarEligible": true,
+          "lowerCiAboveChance": true
+        }
+      },
+      "optionsOnlyAlgebraII": {
+        "n": 248,
+        "passRate": 0.2862903225806452,
+        "ci95": [
+          0.23387096774193547,
+          0.34274193548387094
+        ],
+        "chance": 0.25,
+        "meanOneOverK": 0.25,
+        "ciExcludesChance": false,
+        "witnessBarEligible": false,
+        "lowerCiAboveChance": false,
+        "modalLetterOnPopulation": "C",
+        "modalCountOnPopulation": 69,
+        "modalFrequencyOnPopulation": 0.2782258064516129,
+        "modalLetterFull1487": "C",
+        "modalFrequencyFull1487": 0.275,
+        "lowerCiAboveModalOnPopulation": false,
+        "lowerCiAboveModalFull1487": false,
+        "clearsWitnessBarOnPopulation": false,
+        "clearsWitnessBarVsFull1487Modal": false,
+        "nonModalKey": {
+          "n": 179,
+          "passRate": 0.2011173184357542,
+          "ci95": [
+            0.1452513966480447,
+            0.2569832402234637
+          ],
+          "chance": 0.25,
+          "meanOneOverK": 0.25,
+          "ciExcludesChance": false,
+          "witnessBarEligible": false,
+          "lowerCiAboveChance": false
+        }
+      },
+      "withStemAlgebraI": {
+        "n": 358,
+        "passRate": 0.5754189944134078,
+        "ci95": [
+          0.5251396648044693,
+          0.6256983240223464
+        ],
+        "chance": 0.25,
+        "meanOneOverK": 0.25,
+        "ciExcludesChance": true,
+        "witnessBarEligible": true,
+        "lowerCiAboveChance": true,
+        "modalLetterOnPopulation": "B",
+        "modalCountOnPopulation": 97,
+        "modalFrequencyOnPopulation": 0.2709497206703911,
+        "modalLetterFull1487": "B",
+        "modalFrequencyFull1487": 0.27205882352941174,
+        "lowerCiAboveModalOnPopulation": true,
+        "lowerCiAboveModalFull1487": true,
+        "clearsWitnessBarOnPopulation": true,
+        "clearsWitnessBarVsFull1487Modal": true,
+        "nonModalKey": {
+          "n": 261,
+          "passRate": 0.5363984674329502,
+          "ci95": [
+            0.47509578544061304,
+            0.5977011494252874
+          ],
+          "chance": 0.25,
+          "meanOneOverK": 0.25,
+          "ciExcludesChance": true,
+          "witnessBarEligible": true,
+          "lowerCiAboveChance": true
+        }
+      },
+      "withStemAlgebraII": {
+        "n": 248,
+        "passRate": 0.43951612903225806,
+        "ci95": [
+          0.3790322580645161,
+          0.5
+        ],
+        "chance": 0.25,
+        "meanOneOverK": 0.25,
+        "ciExcludesChance": true,
+        "witnessBarEligible": true,
+        "lowerCiAboveChance": true,
+        "modalLetterOnPopulation": "C",
+        "modalCountOnPopulation": 69,
+        "modalFrequencyOnPopulation": 0.2782258064516129,
+        "modalLetterFull1487": "C",
+        "modalFrequencyFull1487": 0.275,
+        "lowerCiAboveModalOnPopulation": true,
+        "lowerCiAboveModalFull1487": true,
+        "clearsWitnessBarOnPopulation": true,
+        "clearsWitnessBarVsFull1487Modal": true,
+        "nonModalKey": {
+          "n": 179,
+          "passRate": 0.41899441340782123,
+          "ci95": [
+            0.3463687150837989,
+            0.49162011173184356
+          ],
+          "chance": 0.25,
+          "meanOneOverK": 0.25,
+          "ciExcludesChance": true,
+          "witnessBarEligible": true,
+          "lowerCiAboveChance": true
+        }
+      },
+      "withStemCeiling": {
+        "algebraI": {
+          "n": 358,
+          "passRate": 0.5754189944134078,
+          "ci95": [
+            0.5251396648044693,
+            0.6256983240223464
+          ],
+          "chance": 0.25,
+          "meanOneOverK": 0.25,
+          "ciExcludesChance": true,
+          "witnessBarEligible": true,
+          "lowerCiAboveChance": true
+        },
+        "algebraII": {
+          "n": 248,
+          "passRate": 0.43951612903225806,
+          "ci95": [
+            0.3790322580645161,
+            0.5
+          ],
+          "chance": 0.25,
+          "meanOneOverK": 0.25,
+          "ciExcludesChance": true,
+          "witnessBarEligible": true,
+          "lowerCiAboveChance": true
+        }
+      }
+    },
+    "phi-4": {
+      "scorerKey": "phi-4",
+      "display": "Phi-4",
+      "modelId": "microsoft/phi-4",
+      "modelRevision": "2db69c1c3e91a05d2c64a3185acfbaf36f744e25",
+      "family": "phi",
+      "complete": {
+        "maskedStem": true,
+        "optionsOnly": true,
+        "withStemAlgebra": true
+      },
+      "nMaskedStem": 1215,
+      "nOptionsOnly": 1215,
+      "nWithStem": 606,
+      "pooledMaskedStem": {
+        "n": 1215,
+        "passRate": 0.4008230452674897,
+        "ci95": [
+          0.3736625514403292,
+          0.42551440329218104
+        ],
+        "chance": 0.2505349794238683,
+        "meanOneOverK": 0.2505349794238683,
+        "ciExcludesChance": true,
+        "witnessBarEligible": true,
+        "lowerCiAboveChance": true
+      },
+      "vsAlwaysB": {
+        "statedBaseline": 0.275,
+        "passRate": 0.4008230452674897,
+        "ci95": [
+          0.3736625514403292,
+          0.42551440329218104
+        ],
+        "lowerCiAboveStatedAlwaysB": true,
+        "recomputedAlwaysB": {
+          "letter": "B",
+          "rate": 0.27901234567901234,
+          "n": 1215,
+          "counts": {
+            "A": 275,
+            "B": 339,
+            "C": 324,
+            "D": 276,
+            "E": 1
+          },
+          "note": "Always pick the most common key letter among items in this population."
+        },
+        "lowerCiAboveRecomputedAlwaysB": true
+      },
+      "algebraI": {
+        "n": 358,
+        "passRate": 0.42178770949720673,
+        "ci95": [
+          0.3743016759776536,
+          0.4720670391061452
+        ],
+        "chance": 0.25,
+        "meanOneOverK": 0.25,
+        "ciExcludesChance": true,
+        "witnessBarEligible": true,
+        "lowerCiAboveChance": true,
+        "modalLetterOnPopulation": "B",
+        "modalCountOnPopulation": 97,
+        "modalFrequencyOnPopulation": 0.2709497206703911,
+        "modalLetterFull1487": "B",
+        "modalFrequencyFull1487": 0.27205882352941174,
+        "lowerCiAboveModalOnPopulation": true,
+        "lowerCiAboveModalFull1487": true,
+        "clearsWitnessBarOnPopulation": true,
+        "clearsWitnessBarVsFull1487Modal": true,
+        "nonModalKey": {
+          "n": 261,
+          "passRate": 0.38697318007662834,
+          "ci95": [
+            0.32567049808429116,
+            0.44061302681992337
+          ],
+          "chance": 0.25,
+          "meanOneOverK": 0.25,
+          "ciExcludesChance": true,
+          "witnessBarEligible": true,
+          "lowerCiAboveChance": true
+        },
+        "verdict": "clears both",
+        "statedChance": 0.25,
+        "statedModalLetterBar": 0.271,
+        "vsOptionsOnly": {
+          "nOverlap": 358,
+          "nMissingFromOptionsOnly": 0,
+          "maskedCorrectOptionsWrong": 75,
+          "optionsCorrectMaskedWrong": 40,
+          "bothCorrect": 76,
+          "bothWrong": 167,
+          "shareMaskedOnly": 0.20949720670391062,
+          "shareOptionsOnly": 0.11173184357541899,
+          "mcnemarN01": 75,
+          "mcnemarN10": 40,
+          "mcnemarChiSquareNoContinuity": 10.652173913043478,
+          "note": "n01 = masked-stem correct and options-only incorrect; n10 = options-only correct and masked-stem incorrect."
+        }
+      },
+      "algebraII": {
+        "n": 248,
+        "passRate": 0.3467741935483871,
+        "ci95": [
+          0.2862903225806452,
+          0.40725806451612906
+        ],
+        "chance": 0.25,
+        "meanOneOverK": 0.25,
+        "ciExcludesChance": true,
+        "witnessBarEligible": true,
+        "lowerCiAboveChance": true,
+        "modalLetterOnPopulation": "C",
+        "modalCountOnPopulation": 69,
+        "modalFrequencyOnPopulation": 0.2782258064516129,
+        "modalLetterFull1487": "C",
+        "modalFrequencyFull1487": 0.275,
+        "lowerCiAboveModalOnPopulation": true,
+        "lowerCiAboveModalFull1487": true,
+        "clearsWitnessBarOnPopulation": true,
+        "clearsWitnessBarVsFull1487Modal": true,
+        "nonModalKey": {
+          "n": 179,
+          "passRate": 0.37988826815642457,
+          "ci95": [
+            0.3128491620111732,
+            0.4581005586592179
+          ],
+          "chance": 0.25,
+          "meanOneOverK": 0.25,
+          "ciExcludesChance": true,
+          "witnessBarEligible": true,
+          "lowerCiAboveChance": true
+        },
+        "verdict": "clears both",
+        "statedChance": 0.25,
+        "statedModalLetterBar": 0.278,
+        "vsOptionsOnly": {
+          "nOverlap": 248,
+          "nMissingFromOptionsOnly": 0,
+          "maskedCorrectOptionsWrong": 53,
+          "optionsCorrectMaskedWrong": 34,
+          "bothCorrect": 33,
+          "bothWrong": 128,
+          "shareMaskedOnly": 0.21370967741935484,
+          "shareOptionsOnly": 0.13709677419354838,
+          "mcnemarN01": 53,
+          "mcnemarN10": 34,
+          "mcnemarChiSquareNoContinuity": 4.149425287356322,
+          "note": "n01 = masked-stem correct and options-only incorrect; n10 = options-only correct and masked-stem incorrect."
+        }
+      },
+      "vsOptionsOnly": {
+        "nOverlap": 1215,
+        "nMissingFromOptionsOnly": 0,
+        "maskedCorrectOptionsWrong": 277,
+        "optionsCorrectMaskedWrong": 143,
+        "bothCorrect": 210,
+        "bothWrong": 585,
+        "shareMaskedOnly": 0.22798353909465022,
+        "shareOptionsOnly": 0.1176954732510288,
+        "mcnemarN01": 277,
+        "mcnemarN10": 143,
+        "mcnemarChiSquareNoContinuity": 42.75238095238095,
+        "note": "n01 = masked-stem correct and options-only incorrect; n10 = options-only correct and masked-stem incorrect."
+      },
+      "algebraIOptionTypes": {
+        "algebraic_expression": {
+          "n": 65,
+          "passRate": 0.36923076923076925,
+          "ci95": [
+            0.26153846153846155,
+            0.47692307692307695
+          ],
+          "chance": 0.25,
+          "meanOneOverK": 0.25,
+          "ciExcludesChance": true,
+          "witnessBarEligible": true,
+          "lowerCiAboveChance": true
+        },
+        "text": {
+          "n": 188,
+          "passRate": 0.4734042553191489,
+          "ci95": [
+            0.40425531914893614,
+            0.5425531914893617
+          ],
+          "chance": 0.25,
+          "meanOneOverK": 0.25,
+          "ciExcludesChance": true,
+          "witnessBarEligible": true,
+          "lowerCiAboveChance": true
+        },
+        "numeric": {
+          "n": 71,
+          "passRate": 0.36619718309859156,
+          "ci95": [
+            0.2535211267605634,
+            0.4788732394366197
+          ],
+          "chance": 0.25,
+          "meanOneOverK": 0.25,
+          "ciExcludesChance": true,
+          "witnessBarEligible": true,
+          "lowerCiAboveChance": true
+        },
+        "mixed": {
+          "n": 26,
+          "passRate": 0.3076923076923077,
+          "ci95": [
+            0.11538461538461539,
+            0.5
+          ],
+          "chance": 0.25,
+          "meanOneOverK": 0.25,
+          "ciExcludesChance": false,
+          "witnessBarEligible": false,
+          "lowerCiAboveChance": false
+        },
+        "ordered_pair": {
+          "n": 8,
+          "passRate": 0.5,
+          "ci95": [
+            0.125,
+            0.875
+          ],
+          "chance": 0.25,
+          "meanOneOverK": 0.25,
+          "ciExcludesChance": false,
+          "witnessBarEligible": false,
+          "lowerCiAboveChance": false
+        }
+      },
+      "algebraIResidualNoCatalogCue": {
+        "nExpected": 163,
+        "n": 163,
+        "stats": {
+          "n": 163,
+          "passRate": 0.3803680981595092,
+          "ci95": [
+            0.3067484662576687,
+            0.4601226993865031
+          ],
+          "chance": 0.25,
+          "meanOneOverK": 0.25,
+          "ciExcludesChance": true,
+          "witnessBarEligible": true,
+          "lowerCiAboveChance": true
+        }
+      },
+      "pooledOptionsOnly": {
+        "n": 1215,
+        "passRate": 0.2905349794238683,
+        "ci95": [
+          0.26584362139917694,
+          0.3160493827160494
+        ],
+        "chance": 0.2505349794238683,
+        "meanOneOverK": 0.2505349794238683,
+        "ciExcludesChance": true,
+        "witnessBarEligible": true,
+        "lowerCiAboveChance": true
+      },
+      "optionsOnlyAlgebraI": {
+        "n": 358,
+        "passRate": 0.3240223463687151,
+        "ci95": [
+          0.276536312849162,
+          0.3715083798882682
+        ],
+        "chance": 0.25,
+        "meanOneOverK": 0.25,
+        "ciExcludesChance": true,
+        "witnessBarEligible": true,
+        "lowerCiAboveChance": true,
+        "modalLetterOnPopulation": "B",
+        "modalCountOnPopulation": 97,
+        "modalFrequencyOnPopulation": 0.2709497206703911,
+        "modalLetterFull1487": "B",
+        "modalFrequencyFull1487": 0.27205882352941174,
+        "lowerCiAboveModalOnPopulation": true,
+        "lowerCiAboveModalFull1487": true,
+        "clearsWitnessBarOnPopulation": true,
+        "clearsWitnessBarVsFull1487Modal": true,
+        "nonModalKey": {
+          "n": 261,
+          "passRate": 0.3218390804597701,
+          "ci95": [
+            0.26436781609195403,
+            0.3793103448275862
+          ],
+          "chance": 0.25,
+          "meanOneOverK": 0.25,
+          "ciExcludesChance": true,
+          "witnessBarEligible": true,
+          "lowerCiAboveChance": true
+        }
+      },
+      "optionsOnlyAlgebraII": {
+        "n": 248,
+        "passRate": 0.2701612903225806,
+        "ci95": [
+          0.21774193548387097,
+          0.32661290322580644
+        ],
+        "chance": 0.25,
+        "meanOneOverK": 0.25,
+        "ciExcludesChance": false,
+        "witnessBarEligible": false,
+        "lowerCiAboveChance": false,
+        "modalLetterOnPopulation": "C",
+        "modalCountOnPopulation": 69,
+        "modalFrequencyOnPopulation": 0.2782258064516129,
+        "modalLetterFull1487": "C",
+        "modalFrequencyFull1487": 0.275,
+        "lowerCiAboveModalOnPopulation": false,
+        "lowerCiAboveModalFull1487": false,
+        "clearsWitnessBarOnPopulation": false,
+        "clearsWitnessBarVsFull1487Modal": false,
+        "nonModalKey": {
+          "n": 179,
+          "passRate": 0.24022346368715083,
+          "ci95": [
+            0.1787709497206704,
+            0.30726256983240224
+          ],
+          "chance": 0.25,
+          "meanOneOverK": 0.25,
+          "ciExcludesChance": false,
+          "witnessBarEligible": false,
+          "lowerCiAboveChance": false
+        }
+      },
+      "withStemAlgebraI": {
+        "n": 358,
+        "passRate": 0.4972067039106145,
+        "ci95": [
+          0.44692737430167595,
+          0.553072625698324
+        ],
+        "chance": 0.25,
+        "meanOneOverK": 0.25,
+        "ciExcludesChance": true,
+        "witnessBarEligible": true,
+        "lowerCiAboveChance": true,
+        "modalLetterOnPopulation": "B",
+        "modalCountOnPopulation": 97,
+        "modalFrequencyOnPopulation": 0.2709497206703911,
+        "modalLetterFull1487": "B",
+        "modalFrequencyFull1487": 0.27205882352941174,
+        "lowerCiAboveModalOnPopulation": true,
+        "lowerCiAboveModalFull1487": true,
+        "clearsWitnessBarOnPopulation": true,
+        "clearsWitnessBarVsFull1487Modal": true,
+        "nonModalKey": {
+          "n": 261,
+          "passRate": 0.4942528735632184,
+          "ci95": [
+            0.4329501915708812,
+            0.5517241379310345
+          ],
+          "chance": 0.25,
+          "meanOneOverK": 0.25,
+          "ciExcludesChance": true,
+          "witnessBarEligible": true,
+          "lowerCiAboveChance": true
+        }
+      },
+      "withStemAlgebraII": {
+        "n": 248,
+        "passRate": 0.4274193548387097,
+        "ci95": [
+          0.36693548387096775,
+          0.4879032258064516
+        ],
+        "chance": 0.25,
+        "meanOneOverK": 0.25,
+        "ciExcludesChance": true,
+        "witnessBarEligible": true,
+        "lowerCiAboveChance": true,
+        "modalLetterOnPopulation": "C",
+        "modalCountOnPopulation": 69,
+        "modalFrequencyOnPopulation": 0.2782258064516129,
+        "modalLetterFull1487": "C",
+        "modalFrequencyFull1487": 0.275,
+        "lowerCiAboveModalOnPopulation": true,
+        "lowerCiAboveModalFull1487": true,
+        "clearsWitnessBarOnPopulation": true,
+        "clearsWitnessBarVsFull1487Modal": true,
+        "nonModalKey": {
+          "n": 179,
+          "passRate": 0.46368715083798884,
+          "ci95": [
+            0.39106145251396646,
+            0.5363128491620112
+          ],
+          "chance": 0.25,
+          "meanOneOverK": 0.25,
+          "ciExcludesChance": true,
+          "witnessBarEligible": true,
+          "lowerCiAboveChance": true
+        }
+      },
+      "withStemCeiling": {
+        "algebraI": {
+          "n": 358,
+          "passRate": 0.4972067039106145,
+          "ci95": [
+            0.44692737430167595,
+            0.553072625698324
+          ],
+          "chance": 0.25,
+          "meanOneOverK": 0.25,
+          "ciExcludesChance": true,
+          "witnessBarEligible": true,
+          "lowerCiAboveChance": true
+        },
+        "algebraII": {
+          "n": 248,
+          "passRate": 0.4274193548387097,
+          "ci95": [
+            0.36693548387096775,
+            0.4879032258064516
+          ],
+          "chance": 0.25,
+          "meanOneOverK": 0.25,
+          "ciExcludesChance": true,
+          "witnessBarEligible": true,
+          "lowerCiAboveChance": true
+        }
+      }
+    },
+    "gemma-2-9b-it": {
+      "scorerKey": "gemma-2-9b-it",
+      "display": "Gemma 2 9B",
+      "modelId": "google/gemma-2-9b-it",
+      "modelRevision": "11c9b309abf73637e4b6f9a3fa1e92e615547819",
+      "family": "gemma",
+      "complete": {
+        "maskedStem": false,
+        "optionsOnly": false,
+        "withStemAlgebra": false
+      },
+      "nMaskedStem": 0,
+      "nOptionsOnly": 0,
+      "nWithStem": 0
+    }
+  },
+  "scorerTable": [
+    {
+      "display": "Mistral 7B",
+      "modelId": "mistralai/Mistral-7B-Instruct-v0.3",
+      "modelRevision": "c170c708c41dac9275d15a8fff4eca08d52bab71",
+      "family": "mistral",
+      "complete": {
+        "maskedStem": true,
+        "optionsOnly": true,
+        "withStemAlgebra": true
+      },
+      "algebraI": {
+        "withStemCeiling": 0.30446927374301674,
+        "withStemCi95": [
+          0.2569832402234637,
+          0.35195530726256985
+        ],
+        "withStemVerdict": "chance only",
+        "maskedStem": 0.3016759776536313,
+        "maskedStemCi95": [
+          0.2569832402234637,
+          0.34916201117318435
+        ],
+        "maskedStemVerdict": "chance only",
+        "n": 358
+      },
+      "algebraII": {
+        "withStemCeiling": 0.2903225806451613,
+        "withStemCi95": [
+          0.22983870967741934,
+          0.3467741935483871
+        ],
+        "withStemVerdict": "neither",
+        "maskedStem": 0.2620967741935484,
+        "maskedStemCi95": [
+          0.20967741935483872,
+          0.3185483870967742
+        ],
+        "maskedStemVerdict": "neither",
+        "n": 248
+      },
+      "pooledMaskedStem": 0.2773662551440329,
+      "pooledMaskedStemCi95": [
+        0.24938271604938272,
+        0.3037037037037037
+      ]
+    },
+    {
+      "display": "Qwen 7B",
+      "modelId": "Qwen/Qwen2.5-7B-Instruct",
+      "modelRevision": "a09a35458c702b33eeacc393d103063234e8bc28",
+      "family": "qwen",
+      "complete": {
+        "maskedStem": true,
+        "optionsOnly": true,
+        "withStemAlgebra": true
+      },
+      "algebraI": {
+        "withStemCeiling": 0.5083798882681564,
+        "withStemCi95": [
+          0.46089385474860334,
+          0.5586592178770949
+        ],
+        "withStemVerdict": "clears both",
+        "maskedStem": 0.388268156424581,
+        "maskedStemCi95": [
+          0.3407821229050279,
+          0.43854748603351956
+        ],
+        "maskedStemVerdict": "clears both",
+        "n": 358
+      },
+      "algebraII": {
+        "withStemCeiling": 0.4032258064516129,
+        "withStemCi95": [
+          0.3387096774193548,
+          0.4637096774193548
+        ],
+        "withStemVerdict": "clears both",
+        "maskedStem": 0.36693548387096775,
+        "maskedStemCi95": [
+          0.3064516129032258,
+          0.42338709677419356
+        ],
+        "maskedStemVerdict": "clears both",
+        "n": 248
+      },
+      "pooledMaskedStem": 0.37613168724279833,
+      "pooledMaskedStemCi95": [
+        0.3506172839506173,
+        0.4024691358024691
+      ]
+    },
+    {
+      "display": "Qwen 14B",
+      "modelId": "Qwen/Qwen2.5-14B-Instruct",
+      "modelRevision": "cf98f3b3bbb457ad9e2bb7baf9a0125b6b88caa8",
+      "family": "qwen",
+      "complete": {
+        "maskedStem": true,
+        "optionsOnly": true,
+        "withStemAlgebra": true
+      },
+      "algebraI": {
+        "withStemCeiling": 0.5754189944134078,
+        "withStemCi95": [
+          0.5251396648044693,
+          0.6256983240223464
+        ],
+        "withStemVerdict": "clears both",
+        "maskedStem": 0.41620111731843573,
+        "maskedStemCi95": [
+          0.36312849162011174,
+          0.4692737430167598
+        ],
+        "maskedStemVerdict": "clears both",
+        "n": 358
+      },
+      "algebraII": {
+        "withStemCeiling": 0.43951612903225806,
+        "withStemCi95": [
+          0.3790322580645161,
+          0.5
+        ],
+        "withStemVerdict": "clears both",
+        "maskedStem": 0.3588709677419355,
+        "maskedStemCi95": [
+          0.29838709677419356,
+          0.4153225806451613
+        ],
+        "maskedStemVerdict": "clears both",
+        "n": 248
+      },
+      "pooledMaskedStem": 0.388477366255144,
+      "pooledMaskedStemCi95": [
+        0.36049382716049383,
+        0.41646090534979424
+      ]
+    },
+    {
+      "display": "Phi-4",
+      "modelId": "microsoft/phi-4",
+      "modelRevision": "2db69c1c3e91a05d2c64a3185acfbaf36f744e25",
+      "family": "phi",
+      "complete": {
+        "maskedStem": true,
+        "optionsOnly": true,
+        "withStemAlgebra": true
+      },
+      "algebraI": {
+        "withStemCeiling": 0.4972067039106145,
+        "withStemCi95": [
+          0.44692737430167595,
+          0.553072625698324
+        ],
+        "withStemVerdict": "clears both",
+        "maskedStem": 0.42178770949720673,
+        "maskedStemCi95": [
+          0.3743016759776536,
+          0.4720670391061452
+        ],
+        "maskedStemVerdict": "clears both",
+        "n": 358
+      },
+      "algebraII": {
+        "withStemCeiling": 0.4274193548387097,
+        "withStemCi95": [
+          0.36693548387096775,
+          0.4879032258064516
+        ],
+        "withStemVerdict": "clears both",
+        "maskedStem": 0.3467741935483871,
+        "maskedStemCi95": [
+          0.2862903225806452,
+          0.40725806451612906
+        ],
+        "maskedStemVerdict": "clears both",
+        "n": 248
+      },
+      "pooledMaskedStem": 0.4008230452674897,
+      "pooledMaskedStemCi95": [
+        0.3736625514403292,
+        0.42551440329218104
+      ]
+    },
+    {
+      "display": "Gemma 2 9B",
+      "modelId": "google/gemma-2-9b-it",
+      "modelRevision": "11c9b309abf73637e4b6f9a3fa1e92e615547819",
+      "family": "gemma",
+      "complete": {
+        "maskedStem": false,
+        "optionsOnly": false,
+        "withStemAlgebra": false
+      },
+      "algebraI": {
+        "withStemCeiling": null,
+        "withStemCi95": null,
+        "withStemVerdict": "missing",
+        "maskedStem": null,
+        "maskedStemCi95": null,
+        "maskedStemVerdict": null,
+        "n": null
+      },
+      "algebraII": {
+        "withStemCeiling": null,
+        "withStemCi95": null,
+        "withStemVerdict": "missing",
+        "maskedStem": null,
+        "maskedStemCi95": null,
+        "maskedStemVerdict": null,
+        "n": null
+      },
+      "pooledMaskedStem": null,
+      "pooledMaskedStemCi95": null
+    }
+  ],
+  "reading": "Masked-stem tracks capability rather than Qwen: Mistral 7B ceiling 0.304 (chance only) masked-stem 0.302 (chance only); capable non-Qwen and Qwen scorers clear both (Qwen 7B ceiling 0.508 (clears both) masked-stem 0.388 (clears both); Qwen 14B ceiling 0.575 (clears both) masked-stem 0.416 (clears both); Phi-4 ceiling 0.497 (clears both) masked-stem 0.422 (clears both)).",
+  "gemmaSkip": {
+    "cached": true,
+    "scored": false,
+    "revision": "11c9b309abf73637e4b6f9a3fa1e92e615547819",
+    "reason": "Weights were already cached, but google/gemma-2-9b-it apply_chat_template raises TemplateError: System role not supported. The shared scorer always sends a system message, so this family was not scored."
+  },
+  "requiredJobsComplete": true,
+  "runnerStatusPath": "exports/addendum-gpu/scorer-capability-status.json",
+  "doNotDeposit": true
+}

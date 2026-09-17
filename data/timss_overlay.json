@@ -1,0 +1,71 @@
+[
+  {
+    "id": "timss2011-8-M032295",
+    "corpus": "timss2011",
+    "authority": "timss",
+    "claim": "knowing",
+    "stem": "There were m boys and n girls in a parade. Each person carried 2 balloons. Which of these expressions represents the total number of balloons that were carried in the parade?",
+    "choices": {"A": "2(m + n)", "B": "2 + (m + n)", "C": "2m + n", "D": "m + 2n"},
+    "key": "A",
+    "responseType": "selected",
+    "percentCorrect": 73,
+    "contentDomain": "Algebra",
+    "grade": "8",
+    "role": "target",
+    "sourceUrl": "https://nces.ed.gov/timss/pdf/TIMSS2011_G8_Math.pdf",
+    "licenseNote": "SOURCE: TIMSS 2011 Assessment. Copyright © 2013 IEA. Public-release item M032295."
+  },
+  {
+    "id": "timss2011-8-M032047",
+    "corpus": "timss2011",
+    "authority": "timss",
+    "claim": "applying",
+    "stem": "What is the sum of the three consecutive whole numbers with 2n as the middle number?",
+    "choices": {"A": "6n + 3", "B": "6n", "C": "6n − 1", "D": "6n − 3"},
+    "key": "B",
+    "responseType": "selected",
+    "percentCorrect": 52,
+    "contentDomain": "Algebra",
+    "grade": "8",
+    "role": "target",
+    "sourceUrl": "https://nces.ed.gov/timss/pdf/TIMSS2011_G8_Math.pdf",
+    "licenseNote": "SOURCE: TIMSS 2011 Assessment. Copyright © 2013 IEA. Public-release item M032047."
+  },
+  {
+    "id": "timss2011-8-M052216",
+    "corpus": "timss2011",
+    "authority": "timss",
+    "claim": "knowing",
+    "stem": "Which number is equal to 3/5?",
+    "choices": {"A": "0.8", "B": "0.6", "C": "0.53", "D": "0.35"},
+    "key": "B",
+    "responseType": "selected",
+    "percentCorrect": 68,
+    "contentDomain": "Number",
+    "grade": "8",
+    "role": "target",
+    "sourceUrl": "https://nces.ed.gov/timss/pdf/TIMSS2011_G8_Math.pdf",
+    "licenseNote": "SOURCE: TIMSS 2011 Assessment. Copyright © 2013 IEA. Public-release item M052216."
+  },
+  {
+    "id": "timss2011-8-M032419",
+    "corpus": "timss2011",
+    "authority": "timss",
+    "claim": "knowing",
+    "stem": "Which of these could represent the expression 2x + 3x?",
+    "choices": {
+      "A": "The length of a segment labeled x and 5",
+      "B": "The length of a segment labeled 2, 3, and x",
+      "C": "The area of a rectangle with sides x and 5",
+      "D": "The area of a figure made of two x by x regions"
+    },
+    "key": "C",
+    "responseType": "selected",
+    "percentCorrect": 44,
+    "figure": {"kind": "diagram", "transcription": "option C is a rectangle x by 5; 2x+3x=5x is its area"},
+    "grade": "8",
+    "role": "target",
+    "sourceUrl": "https://nces.ed.gov/timss/pdf/TIMSS2011_G8_Math.pdf",
+    "licenseNote": "SOURCE: TIMSS 2011 Assessment. Copyright © 2013 IEA. Public-release item M032419. Diagram options transcribed."
+  }
+]

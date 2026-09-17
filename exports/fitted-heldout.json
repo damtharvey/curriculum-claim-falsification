@@ -1,0 +1,146 @@
+[
+  {
+    "programId": "fitted-stem-ngram/state-to-timss",
+    "trainSlice": "nysed+staar+mcas selected n=2020",
+    "evalSlice": "timss applying+reasoning selected",
+    "nTrain": 2020,
+    "nScored": 122,
+    "nCorrect": 36,
+    "passRate": 0.29508196721311475,
+    "chanceRate": 0.25396174863387977,
+    "randomBaseline": 0.22131147540983606,
+    "ci95": [
+      0.21311475409836064,
+      0.3770491803278688
+    ],
+    "beatsChance": false,
+    "witnessEligible": false,
+    "note": "held-out does not beat chance"
+  },
+  {
+    "programId": "fitted-stem-ngram/state-to-timss",
+    "trainSlice": "nysed+staar+mcas selected n=2020",
+    "evalSlice": "timss all selected",
+    "nTrain": 2020,
+    "nScored": 225,
+    "nCorrect": 63,
+    "passRate": 0.28,
+    "chanceRate": 0.25874074074074077,
+    "randomBaseline": 0.2311111111111111,
+    "ci95": [
+      0.2222222222222222,
+      0.3422222222222222
+    ],
+    "beatsChance": false,
+    "witnessEligible": false,
+    "note": "held-out does not beat chance"
+  },
+  {
+    "programId": "fitted-stem-overlap/state-to-timss",
+    "trainSlice": "nysed+staar+mcas selected n=2020",
+    "evalSlice": "timss applying+reasoning selected",
+    "nTrain": 2020,
+    "nScored": 0,
+    "nCorrect": 0,
+    "passRate": 0,
+    "chanceRate": 0,
+    "randomBaseline": 0.22131147540983606,
+    "ci95": [
+      0,
+      0
+    ],
+    "beatsChance": false,
+    "witnessEligible": false,
+    "note": "abstained on all 122 held-out items (122 skipped); not a witness"
+  },
+  {
+    "programId": "random-ngram-weights/state-to-timss",
+    "trainSlice": "unfitted random weights; same features as n-gram",
+    "evalSlice": "timss applying+reasoning selected",
+    "nTrain": 0,
+    "nScored": 122,
+    "nCorrect": 27,
+    "passRate": 0.22131147540983606,
+    "chanceRate": 0.25396174863387977,
+    "randomBaseline": 0.25396174863387977,
+    "ci95": [
+      0.1557377049180328,
+      0.29508196721311475
+    ],
+    "beatsChance": false,
+    "witnessEligible": false,
+    "note": "held-out does not beat chance"
+  },
+  {
+    "programId": "fitted-stem-ngram/timss-to-state",
+    "trainSlice": "timss selected n=225",
+    "evalSlice": "nysed+staar+mcas selected",
+    "nTrain": 225,
+    "nScored": 2020,
+    "nCorrect": 515,
+    "passRate": 0.25495049504950495,
+    "chanceRate": 0.25023927392739265,
+    "randomBaseline": 0.24356435643564356,
+    "ci95": [
+      0.23663366336633662,
+      0.2732673267326733
+    ],
+    "beatsChance": false,
+    "witnessEligible": false,
+    "note": "held-out does not beat chance"
+  },
+  {
+    "programId": "fitted-stem-overlap/timss-to-state",
+    "trainSlice": "timss selected n=225",
+    "evalSlice": "nysed+staar+mcas selected",
+    "nTrain": 225,
+    "nScored": 0,
+    "nCorrect": 0,
+    "passRate": 0,
+    "chanceRate": 0,
+    "randomBaseline": 0.24356435643564356,
+    "ci95": [
+      0,
+      0
+    ],
+    "beatsChance": false,
+    "witnessEligible": false,
+    "note": "abstained on all 2020 held-out items (2020 skipped); not a witness"
+  },
+  {
+    "programId": "fitted-numeric-formula/state-to-timss",
+    "trainSlice": "state numeric n=59 best=sub-abs",
+    "evalSlice": "timss numeric",
+    "nTrain": 59,
+    "nScored": 82,
+    "nCorrect": 3,
+    "passRate": 0.036585365853658534,
+    "chanceRate": 0,
+    "randomBaseline": 0,
+    "ci95": [
+      0,
+      0.08536585365853659
+    ],
+    "beatsChance": false,
+    "witnessEligible": false,
+    "note": "held-out does not beat chance"
+  },
+  {
+    "programId": "fitted-numeric-formula/timss-to-other",
+    "trainSlice": "timss numeric n=101 best=div-b-a",
+    "evalSlice": "non-TIMSS numeric (PISA+MCAS+NAPLAN)",
+    "nTrain": 101,
+    "nScored": 43,
+    "nCorrect": 0,
+    "passRate": 0,
+    "chanceRate": 0,
+    "randomBaseline": 0,
+    "ci95": [
+      0,
+      0
+    ],
+    "beatsChance": false,
+    "witnessEligible": false,
+    "note": "held-out does not beat chance"
+  }
+]

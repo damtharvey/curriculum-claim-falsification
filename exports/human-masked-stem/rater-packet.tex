@@ -1,0 +1,96 @@
+\documentclass[10pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{dejavu}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[margin=0.48in,top=0.42in,bottom=0.52in]{geometry}
+\usepackage{amssymb}
+\usepackage[hidelinks]{hyperref}
+
+\hypersetup{
+  pdftitle={Research rating sheet},
+  pdfauthor={},
+  pdfsubject={Research rating sheet},
+  pdfcreator={},
+  pdfproducer={}
+}
+\pdfinfoomitdate=1
+\pdfsuppressptexinfo=-1
+
+\pagestyle{plain}
+\raggedright
+\sloppy
+\frenchspacing
+\setlength{\parskip}{0pt}
+\setlength{\parindent}{0pt}
+\linespread{0.97}\selectfont
+
+% Stand-ins for non-printable extraction bytes so option differences stay visible.
+\newcommand{\opA}{\ensuremath{\square}}
+\newcommand{\opB}{\ensuremath{\blacksquare}}
+\newcommand{\opC}{\ensuremath{\blacklozenge}}
+\newcommand{\opD}{\ensuremath{\bullet}}
+\newcommand{\opE}{\ensuremath{\blacktriangle}}
+
+\newcommand{\Q}[6]{%
+  \par\vspace{0.38em}%
+  \noindent\textbf{#1.}\enspace #2\hfill
+  Letter \underline{\hspace{1.05em}}\enspace Cue \underline{\hspace{1.8em}}\par
+  \nobreak
+  {\small\noindent A)\ #3\quad B)\ #4\quad C)\ #5\quad D)\ #6\par}%
+}
+
+\begin{document}
+
+{\large\bfseries Research rating sheet}
+
+\vspace{0.28em}
+\noindent Work alone. Do not search or ask anyone.\\
+Each question has numbers replaced by [N]. Pick A, B, C, or D. Write R if you recognize the item from memory and skip it.\\
+Optional: one word for the cue you used.\\
+About 15 minutes.\\
+Return this filled sheet, or a list of 40 letters, to the person who sent it.
+
+\vspace{0.12em}
+\Q{1}{David correctly factored the expression m[N] \opB{} [N]m \opB{} [N]. Which expression did he write?}{(m \opB{} 8)(m \opB{} 8)}{(m \opB{} 8)(m \opC{} 8)}{(m \opB{} 16)(m \opC{} 4)}{(m \opC{} 16)(m \opB{} 4) teaspoons}
+\Q{2}{At Benny's Caf\'e, a mixed-greens salad costs \$[N]. Additional toppings can be added for \$[N] each. Which function could be used to determine the cost, c(s), in dollars, of a salad with s additional toppings?}{c(s) \opA{} 5.75s \opC{} 0.75}{c(s) \opA{} 0.75s \opC{} 5.75}{c(s) \opA{} 5.00s \opC{} 0.75}{c(s) \opA{} 0.75s \opC{} 5.00}
+\Q{3}{Sarah travels on her bicycle at a speed of [N] miles per hour. What is Sarah's approximate speed, in kilometers per minute?}{0.2}{0.6}{36.5}{36.6}
+\Q{4}{A part of Jennifer's work to solve the equation [N]([N]x[N] \opA{} [N]) \opB{} [N]x[N] \opA{} x is shown below. Given: [N]([N]x[N] \opA{} [N]) \opB{} [N]x[N] \opA{} x Step [N]: [N]x[N] \opA{} [N] \opB{} [N]x[N] \opA{} x Which property justifi es her fi rst step?}{identity property of multiplication}{multiplication property of equality}{commutative property of multiplication}{distributive property of multiplication over subtraction}
+\Q{5}{A garden club plans to plant [N] flowering plants this year. They will only purchase daffodils that cost \$[N] per plant and tulips that cost \$[N] per plant. All prices include tax. The club has \$[N] to spend on plants. Which equation could be used to find the number of daffodil plants, d, the club purchases?}{4d 1 5(170 2 d) 5 40}{4d 1 5(40 2 d) 5 170}{5d 1 4(170 2 d) 5 40}{5d 1 4(40 2 d) 5 170}
+\Q{6}{What are the zeros of f(x) [N] x(x[N] [N] [N])?}{0, only}{6, only}{6 and 26, only}{0, 6, and 26}
+\Q{7}{The expression [N](x[N] + [N]x - [N]) - [N]([N]x[N] - [N]x + [N]) is equivalent to}{-13x - 22x + 11}{-13x2 + 34x - 29}{19x2 - 22x + 11}{19x2 + 34x \- 29}
+\Q{8}{When solving the following system of equations algebraically, Mason used the substitution method. [N]x [N] y [N] [N] [N]x [N] [N]y [N] [N] Which equation could he have used?}{2(3x 2 10) 1 5x 5 1}{2(23x 1 10) 1 5x 5 1}{2x 1 5(3x 2 10) 5 1}{2x 1 5(23x 1 10) 5 1}
+\Q{9}{Given: f(x) \opC{} (x \opA{} [N])[N] \opB{} [N] g(x) \opC{} (x \opA{} [N])[N] \opB{} [N] When compared to the graph of f(x), the graph of g(x) is}{shifted 3 units to the left}{shifted 3 units to the right}{shifted 5 units to the left}{shifted 5 units to the right}
+\Q{10}{The acidity in a swimming pool is considered normal if the average of [N] pH readings, p, is defined such that [N] \opD{} p \opD{} [N]. If the first [N] readings are [N] and [N], which value for the third reading will result in an overall rating of normal?}{6.2}{7.3}{8.6}{8.8}
+\Q{11}{The geometry test scores for Andrea and Joe are shown in the table below. Andrea Joe [N] [N] [N] [N] [N] [N] [N] [N] Which statement about their test scores is correct?}{Both the mean and standard deviation of Andrea's test scores are higher than Joe's.}{Both the mean and standard deviation of Joe's test scores are higher than Andrea's.}{The mean of Andrea's test scores is higher than Joe's, but Joe's standard deviation is higher than Andrea's.}{The mean of Joe's test scores is higher than Andrea's, but Andrea's standard deviation is higher than Joe's.}
+\Q{12}{The daily cost of production in a factory is calculated using c(x) \opC{} [N] \opB{} [N]x, where x is the number of complete products manufactured. Which set of numbers best defi nes the domain of c(x)?}{integers}{positive real numbers}{positive rational numbers}{whole numbers}
+\Q{13}{The [N]th term of the sequence [N], [N], [N], [N], \ldots{} is}{2149}{2143}{133}{139 x \$ 1}
+\Q{14}{Josh graphed the function f(x) \opC{} \opB{}[N](x \opB{} [N])[N] \opA{} [N]. He then graphed the function g(x) \opC{} \opB{}[N](x \opB{} [N])[N] \opB{} [N] on the same coordinate plane. The vertex of g(x) is}{7 units below the vertex of f(x)}{7 units above the vertex of f(x)}{7 units to the right of the vertex of f(x)}{7 units to the left of the vertex of f(x)}
+\Q{15}{Students were asked to write an expression which had a leading coefficient of [N] and a constant term of \opC{}[N]. Which response is correct?}{3 \opC{} 2x3 \opC{} 4x}{7x3 \opC{} 3x5 \opC{} 4}{4 \opC{} 7x \opB{} 3x3}{\opC{}4x2 \opB{} 3x4 \opC{} 4}
+\Q{16}{A graph of average resting heart rates is shown below. The average resting heart rate for adults is [N] beats per minute, but doctors consider resting rates from [N]-[N] beats per minute within normal range. [N] [N] [N] [N] [N] [N] [N] [N] [N] [N] [N] [N] [N] y x Heart Rate (beats/min) Average Resting Heart Rate by Age Age (years) ([N]) ([N],[N]) ([N],[N]) Which statement about average resting heart rates is not supported by the graph?}{A 10-year-old has the same average resting heart rate as a 20-year-old.}{A 20-year-old has the same average resting heart rate as a 30-year-old.}{A 40-year-old may have the same average resting heart rate for ten years.}{The average resting heart rate for teenagers steadily decreases.}
+\Q{17}{Which system of linear equations has the same solution as the [N] shown below? x \opB{} [N]y \opC{} \opB{}[N] x \opA{} y \opC{} [N]}{5x \opC{} 10}{\opB{}5y \opC{} \opB{}5}{\opB{}3x \opC{} \opB{}30 x \opA{} y \opC{} 5 x \opA{} y \opC{} 5}{\opB{}5y \opC{} \opB{}5 x \opA{} y \opC{} 5 x \opB{} 4y \opC{} \opB{}10}
+\Q{18}{Krystal was given \$[N] when she turned [N] years old. Her parents invested it at a [N]\% interest rate compounded annually. No deposits or withdrawals were made. Which expression can be used to determine how much money Krystal had in the account when she turned [N]?}{3000(1 \opC{} 0.02)16}{3000(1 \opB{} 0.02)16}{3000(1 \opC{} 0.02)18}{3000(1 \opB{} 0.02)18}
+\Q{19}{Which equation has the same solution as x[N] [N] [N]x [N] [N]?}{(x 2 3)2 5 24}{(x 2 6)2 5 24}{(x 2 3)2 5 33}{(x 2 6)2 5 60}
+\Q{20}{Which statement is true about the quadratic functions g(x), shown in the table below, and f(x) \opA{} (x \opC{} [N])[N] \opB{} [N]? x g(x) [N] [N] [N] --[N] [N] --[N] [N] --[N] [N] --[N] [N] --[N] [N] [N]}{They have the same vertex.}{They have the same zeros.}{They have the same axis of symmetry.}{They intersect at two points.}
+\Q{21}{The expression x[N]a [N] b is equivalent to}{x2a 1 x b}{xa 1 x a 1 b}{xa \textbullet{} x a 1 b}{x a 1 b \textbullet{} x a 1 b}
+\Q{22}{items and spent \$[N]. Which system of equations could be used to determine how many of each item Alicia purchased?}{1 and 7}{21 and 27}{4 6 24}{24 6 24}
+\Q{23}{A high school club is researching a tour package offered by the Island Kayak Company. The company charges \$[N] per person and \$[N] for the tour guide. Which function represents the total cost, C(x), of this kayak tour package for x club members?}{C(x) \opA{} 35x}{C(x) \opA{} 35x \opB{} 245}{C(x) \opA{} 35(x \opB{} 245)}{C(x) \opA{} 35 \opB{} (x \opB{} 245)}
+\Q{24}{Joe has a rectangular patio that measures [N] feet by [N] feet. He wants to increase the area by [N]\% and plans to increase each dimension by equal lengths, x. Which equation could be used to determine x?}{(10 \opC{} x)(12 \opC{} x) \opA{} 120}{(10 \opC{} x)(12 \opC{} x) \opA{} 180}{(15 \opC{} x)(18 \opC{} x) \opA{} 180}{(15)(18) \opA{} 120 \opC{} x2}
+\Q{25}{If y \opA{} [N]x[N] \opC{} x[N] \opB{} [N] and z \opA{} x[N] \opB{} [N], which polynomial is equivalent to [N](y \opC{} z)?}{6x3 \opC{} 4x2 \opB{} 34}{6x3 \opC{} 3x2 \opB{} 17}{6x3 \opC{} 3x2 \opB{} 22}{6x3 \opC{} 2x2 \opB{} 17}
+\Q{26}{Students were asked to write a formula for the length of a rectangle by using the formula for its perimeter, p = [N] + [N]w. [N] of their responses are shown below. [N] I. = [N] p - w II. = [N] (p - [N]w) [N] p \opE{} [N]w III. = [N] Which responses are correct?}{I and II, only}{II and III, only}{I and III, only}{I, II, and III}
+\Q{27}{At a local high school, students were asked to name the sport they like to watch the most. The results are summarized in the table below. Football Basketball Baseball Male [N] [N] [N] Female [N] [N] [N] Approximately what percentage of female high school students preferred to watch basketball?}{35}{40}{53}{57}
+\Q{28}{If f(x) \opB{} [N]\_\_ x \opC{} [N]), what is the value of f ([N])?}{11}{17}{27}{33}
+\Q{29}{For a recently released movie, the function y \opA{} [N]([N])x models the revenue earned, y, in millions of dollars each week, x, for several weeks after its release. Based on the equation, how much more money, in millions of dollars, was earned in revenue for week [N] than for week [N]?}{37.27}{27.16}{17.06}{10.11}
+\Q{30}{When using the method of completing the square to solve x[N] [N] [N]x [N] [N] [N] [N], which equation is a correct step in the process?}{(x 1 2)2 5 27}{(x 2 2)2 5 27}{(x 1 2)2 5 15}{(x 2 2)2 5 15}
+\Q{31}{If g(x) [N] [N]x[N] [N] x [N] [N], then g([N]) is equal to}{215}{27}{17}{25}
+\Q{32}{Which equation has the same solution as x[N] [N] [N]x [N] [N] [N] [N]?}{(x 1 4)2 5 49}{(x 2 4)2 5 49}{(x 1 4)2 5 17}{(x 2 4)2 5 17}
+\Q{33}{In the process of solving the equation [N]x[N] \opC{} [N]x \opC{} [N]x \opA{} [N], George wrote [N]([N]x[N] \opC{} [N]x) \opA{} [N]}{A and C}{A and B}{D and C}{D and B}
+\Q{34}{Grisham is considering the [N] situations below. I. For the first [N] days, a sunflower grows at a rate of [N] cm per day. II. The value of a car depreciates at a rate of [N]\% per year after it is purchased. III. The amount of bacteria in a culture triples every [N] days during an experiment. Which of the statements describes a situation with an equal difference over an equal interval?}{I, only}{II, only}{I and III}{II and III}
+\Q{35}{The value of the x-intercept for the graph of [N]x \opC{} [N]y \opA{} [N] is}{10}{4\_\_ 5}{\opC{} 4\_\_ 5}{\opC{}8}
+\Q{36}{Which system of equations will yield the same solution as the system below? x \opB{} y \opA{} [N] [N]x \opB{} [N]y \opA{} \opB{}[N]}{\opB{}2x \opB{} 2y \opA{} \opB{}6}{\opB{}2x \opC{} 2y \opA{} 3}{2x \opB{} 2y \opA{} 6 2x \opB{} 3y \opA{} \opB{}1 2x \opB{} 3y \opA{} \opB{}1}{3x \opC{} 3y \opA{} 9 2x \opB{} 3y \opA{} \opB{}1 2x \opB{} 3y \opA{} \opB{}1}
+\Q{37}{A plumber has a set fee for a house call and charges by the hour for repairs. The total cost of her services can be modeled by c(t) \opB{} [N]t \opC{} [N]. Which statements about this function are true? I. A house call fee costs \$[N]. II. The plumber charges \$[N] per hour. III. The number of hours the job takes is represented by t.}{x \ensuremath{\leq} \opA{}18 \_\_ 5}{x \ensuremath{\geq} \opA{}18 \_\_ 5}{x \ensuremath{\leq} 54 \_\_ 5}{x \ensuremath{\geq} 54 \_\_ 5}
+\Q{38}{What are the zeros of the function f(x) \opA{} x[N] \opC{} [N]x \opC{} [N]?}{\opC{}10 and 3}{10 and \opC{}3}{\opC{}15 and 2}{15 and \opC{}2 f x x ( ) \opA{} \opB{} 4 f(x) x}
+\Q{39}{Mo's farm stand sold a total of [N] pounds of apples and peaches. She sold apples for \$[N] per pound and peaches for \$[N] per pound. If she made \$[N], how many pounds of peaches did she sell?}{11}{18}{65}{100}
+\Q{40}{The roots of x[N] \opA{} [N]x \opA{} [N] \opC{} [N] are}{1 and 4}{5 41 2}{--1 and --4}{5 41 2 \opA{}}
+
+\end{document}

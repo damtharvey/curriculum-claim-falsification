@@ -1,0 +1,340 @@
+{
+  "selectionRule": "selected-response items on which S4 v2 fired, sorted by id; first 30",
+  "nFiredCensus": 7,
+  "nSample": 7,
+  "items": [
+    {
+      "id": "nyregents-algebra-i-2018-jun-q12",
+      "authority": "nyregents",
+      "claim": "algebra-i",
+      "stem": "The quadratic equation x2 - 6x = 12 is rewritten in the form (x + p)2 = q, where q is a constant. What is the value of p?",
+      "extractedEquation": {
+        "left": "x2 - 6x",
+        "rel": "=",
+        "right": "12",
+        "variable": "x",
+        "kind": "scalar"
+      },
+      "allExtracted": [
+        {
+          "left": "x2 - 6x",
+          "rel": "=",
+          "right": "12",
+          "variable": "x",
+          "variables": [
+            "x"
+          ]
+        }
+      ],
+      "choices": {
+        "A": "-12",
+        "C": "-3",
+        "B": "-9",
+        "D": "9 Algebra I \u2013 June \u201918"
+      },
+      "satisfier": "C",
+      "hits": [
+        "C"
+      ],
+      "key": "C",
+      "keyNumeric": -3.0,
+      "correct": true,
+      "keySatisfies": true,
+      "judgment": "wrong",
+      "notes": "Extracted x2-6x=12 as an equation in x. OCR x2 is x^2, and the asked unknown is p in (x+p)^2=q. Implicit multiplication made x2 into 2x, whose unique solution is -3, which happens to be p."
+    },
+    {
+      "id": "nyregents-algebra-i-2018-jun-q8",
+      "authority": "nyregents",
+      "claim": "algebra-i",
+      "stem": "Which ordered pair below is not a solution to f(x) = x2 - 3x + 4?",
+      "extractedEquation": {
+        "equations": [
+          {
+            "left": "f(x)",
+            "rel": "=",
+            "right": "x2 - 3x + 4",
+            "variable": "x"
+          }
+        ],
+        "variables": [
+          "f",
+          "x"
+        ],
+        "kind": "pair"
+      },
+      "allExtracted": [
+        {
+          "left": "f(x)",
+          "rel": "=",
+          "right": "x2 - 3x + 4",
+          "variable": "x",
+          "variables": [
+            "f",
+            "x"
+          ]
+        }
+      ],
+      "choices": {
+        "A": "(0,4)",
+        "C": "(5,14)",
+        "B": "(1.5,1.75)",
+        "D": "(-1,6) Algebra I \u2013 June \u201918 [OVER] computations."
+      },
+      "satisfier": "A",
+      "hits": [
+        "A"
+      ],
+      "key": "D",
+      "keyNumeric": -16.0,
+      "correct": false,
+      "keySatisfies": false,
+      "judgment": "wrong",
+      "notes": "Function notation f(x)=x^2-3x+4 was treated as a two-variable pair equation. The item asks which pair is NOT a solution, so unique-satisfier picks a pair that does satisfy. Key D does not satisfy; this is the one key-does-not-satisfy fire."
+    },
+    {
+      "id": "staar-2019-alg1-q3",
+      "authority": "teks",
+      "claim": "alg1",
+      "stem": "Which value of x makes the equation 1.25(4x \u2212 10) = 7.5 true?",
+      "extractedEquation": {
+        "left": "1.25(4x - 10)",
+        "rel": "=",
+        "right": "7.5",
+        "variable": "x",
+        "kind": "scalar"
+      },
+      "allExtracted": [
+        {
+          "left": "1.25(4x - 10)",
+          "rel": "=",
+          "right": "7.5",
+          "variable": "x",
+          "variables": [
+            "x"
+          ]
+        }
+      ],
+      "choices": {
+        "A": "3.5",
+        "B": "\u22121",
+        "C": "\u22120.5",
+        "D": "4 \u2212 g x = x + 15x ( ) 2 \u2212 54 \u2212"
+      },
+      "satisfier": "D",
+      "hits": [
+        "D"
+      ],
+      "key": "D",
+      "keyNumeric": 4.0,
+      "correct": true,
+      "keySatisfies": true,
+      "judgment": "correct",
+      "notes": "Genuine backsolve: 1.25(4x-10)=7.5 with numeric options. Unique satisfier D=4 is the key."
+    },
+    {
+      "id": "staar-2021-alg1-q5",
+      "authority": "teks",
+      "claim": "alg1",
+      "stem": "Which ordered pair is in the solution set of 8x + 16y > 32?",
+      "extractedEquation": {
+        "equations": [
+          {
+            "left": "8x + 16y",
+            "rel": ">",
+            "right": "32",
+            "variable": "x"
+          }
+        ],
+        "variables": [
+          "x",
+          "y"
+        ],
+        "kind": "pair"
+      },
+      "allExtracted": [
+        {
+          "left": "8x + 16y",
+          "rel": ">",
+          "right": "32",
+          "variable": "x",
+          "variables": [
+            "x",
+            "y"
+          ]
+        }
+      ],
+      "choices": {
+        "A": "(0, 2)",
+        "B": "( 3, 5) \u2212",
+        "C": "( 1, 1) \u2212",
+        "D": "(4, 0)"
+      },
+      "satisfier": "B",
+      "hits": [
+        "B"
+      ],
+      "key": "B",
+      "keyNumeric": 3.0,
+      "correct": true,
+      "keySatisfies": true,
+      "judgment": "correct",
+      "notes": "Stem 8x+16y>32 is parsed correctly. Options include OCR minuses after the pair; B as (3,5) uniquely satisfies among the parsed pairs and is the published key."
+    },
+    {
+      "id": "staar-2022-5-q16",
+      "authority": "teks",
+      "claim": "g5",
+      "stem": "A basketball team scored points by making baskets worth different numbers of points during a game. \u2022 The team made 6 baskets worth 3 points each. \u2022 The team made 21 baskets worth 2 points each. \u2022 The team scored 16 points by making baskets worth 1 point each. This equation can be used to find p, the total number of points the basketball team scored during the game. p = 6(3) + 21(2) + 16 What is the total number of points the basketball team scored during the game?",
+      "extractedEquation": {
+        "left": "p",
+        "rel": "=",
+        "right": "6(3) + 21(2) + 16",
+        "variable": "p",
+        "kind": "scalar"
+      },
+      "allExtracted": [
+        {
+          "left": "p",
+          "rel": "=",
+          "right": "6(3) + 21(2) + 16",
+          "variable": "p",
+          "variables": [
+            "p"
+          ]
+        }
+      ],
+      "choices": {
+        "A": "76",
+        "B": "48",
+        "C": "94",
+        "D": "60 30492_1"
+      },
+      "satisfier": "A",
+      "hits": [
+        "A"
+      ],
+      "key": "A",
+      "keyNumeric": 76.0,
+      "correct": true,
+      "keySatisfies": true,
+      "judgment": "ambiguous",
+      "notes": "Extracted p=6(3)+21(2)+16, a fully numeric right-hand side. Unique option equals that value. That is evaluating a displayed expression, not substituting a candidate unknown."
+    },
+    {
+      "id": "staar-2022-alg1-q51",
+      "authority": "teks",
+      "claim": "alg1",
+      "stem": "What is the solution to this equation? 2(40 \u2212 5y) = 10y + 5(1 \u2212 y)",
+      "extractedEquation": {
+        "left": "2(40 - 5y)",
+        "rel": "=",
+        "right": "10y + 5(1 - y)",
+        "variable": "y",
+        "kind": "scalar"
+      },
+      "allExtracted": [
+        {
+          "left": "2(40 - 5y)",
+          "rel": "=",
+          "right": "10y + 5(1 - y)",
+          "variable": "y",
+          "variables": [
+            "y"
+          ]
+        }
+      ],
+      "choices": {
+        "A": "7.5",
+        "B": "15",
+        "C": "5",
+        "D": "Not here 10001 Form 01"
+      },
+      "satisfier": "C",
+      "hits": [
+        "C"
+      ],
+      "key": "C",
+      "keyNumeric": 5.0,
+      "correct": true,
+      "keySatisfies": true,
+      "judgment": "correct",
+      "notes": "Genuine backsolve: 2(40-5y)=10y+5(1-y). Unique satisfier C=5 is the key."
+    },
+    {
+      "id": "timss2011-8-M042235",
+      "authority": "timss",
+      "claim": "knowing",
+      "stem": "Equations/ Formulas and Functions What is the value of x and y x + y = 12 and 2x + 5y = 36. What are the values of x and y?",
+      "extractedEquation": {
+        "equations": [
+          {
+            "left": "x + y",
+            "rel": "=",
+            "right": "12",
+            "variable": "x"
+          },
+          {
+            "left": "2x + 5y",
+            "rel": "=",
+            "right": "36",
+            "variable": "x"
+          }
+        ],
+        "variables": [
+          "x",
+          "y"
+        ],
+        "kind": "system"
+      },
+      "allExtracted": [
+        {
+          "left": "x + y",
+          "rel": "=",
+          "right": "12",
+          "variable": "x",
+          "variables": [
+            "x",
+            "y"
+          ]
+        },
+        {
+          "left": "2x + 5y",
+          "rel": "=",
+          "right": "36",
+          "variable": "x",
+          "variables": [
+            "x",
+            "y"
+          ]
+        }
+      ],
+      "choices": {
+        "A": "x = 2, y = 10",
+        "B": "x = 4, y = 8",
+        "C": "x = 6, y = 6",
+        "D": "x = 8, y = 4 England-"
+      },
+      "satisfier": "D",
+      "hits": [
+        "D"
+      ],
+      "key": "D",
+      "keyNumeric": 8.0,
+      "correct": true,
+      "keySatisfies": true,
+      "judgment": "correct",
+      "notes": "Two-equation system x+y=12 and 2x+5y=36. Ordered-pair options; unique pair D=(8,4) is the key."
+    }
+  ],
+  "s4v2Summary": {
+    "n": 7,
+    "nFiredCensus": 7,
+    "parseCorrect": 4,
+    "parseWrong": 2,
+    "parseAmbiguous": 1,
+    "keyDoesNotSatisfy": 1,
+    "keyDoesNotSatisfyId": "nyregents-algebra-i-2018-jun-q8",
+    "note": "Census fired on 7 items, so the sample is all fired items rather than 30. Two genuine numeric backsolves (STAAR Algebra I 2019 q3 and 2022 q51) and one TIMSS system parse correctly. The original 2020-jan-q3 inequality now parses but has two satisfying options, so unique-satisfier abstains; the item asks which value is not in the solution set."
+  }
+}
