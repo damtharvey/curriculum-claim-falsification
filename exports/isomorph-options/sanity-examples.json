@@ -1,0 +1,269 @@
+{
+  "preregistrationSha256": "997242b9fb7437ffc2e86e2759e1373ba8ad98e231b0836ef8798a2266523e9b",
+  "seed": 20260916,
+  "noNumeral": {
+    "algebra-i": {
+      "n": 61,
+      "ids": [
+        "nyregents-algebra-i-2023-jun-q8",
+        "nyregents-algebra-i-2024-jan-q3",
+        "nyregents-algebra-i-2024-jan-q19",
+        "nyregents-algebra-i-2023-jan-q8",
+        "nyregents-algebra-i-2023-jan-q10",
+        "nyregents-algebra-i-2023-jan-q16",
+        "nyregents-algebra-i-2026-jan-q12",
+        "nyregents-algebra-i-2017-aug-q1",
+        "nyregents-algebra-i-2017-aug-q17",
+        "nyregents-algebra-i-2017-aug-q22",
+        "nyregents-algebra-i-2014-jun-q1",
+        "nyregents-algebra-i-2014-jun-q7",
+        "nyregents-algebra-i-2024-jun-q7",
+        "nyregents-algebra-i-2024-jun-q11",
+        "nyregents-algebra-i-2024-jun-q21",
+        "nyregents-algebra-i-2018-jun-q10",
+        "nyregents-algebra-i-2018-jun-q19",
+        "nyregents-algebra-i-2018-jun-q22",
+        "nyregents-algebra-i-2018-jun-q23",
+        "nyregents-algebra-i-2020-jan-q19",
+        "nyregents-algebra-i-2022-aug-q10",
+        "nyregents-algebra-i-2022-aug-q11",
+        "nyregents-algebra-i-2022-aug-q17",
+        "nyregents-algebra-i-2022-aug-q19",
+        "nyregents-algebra-i-2025-jan-q5",
+        "nyregents-algebra-i-2025-jan-q13",
+        "nyregents-algebra-i-2025-jan-q14",
+        "nyregents-algebra-i-2024-aug-q6",
+        "nyregents-algebra-i-2016-jun-q4",
+        "nyregents-algebra-i-2022-jun-q18",
+        "nyregents-algebra-i-2018-jan-q1",
+        "nyregents-algebra-i-2018-jan-q5",
+        "nyregents-algebra-i-2018-jan-q8",
+        "nyregents-algebra-i-2019-jun-q5",
+        "nyregents-algebra-i-2019-jun-q14",
+        "nyregents-algebra-i-2019-jun-q16",
+        "nyregents-algebra-i-2019-jan-q8",
+        "nyregents-algebra-i-2019-jan-q21",
+        "nyregents-algebra-i-2017-jun-q17",
+        "nyregents-algebra-i-2017-jun-q21",
+        "nyregents-algebra-i-2016-aug-q9",
+        "nyregents-algebra-i-2016-aug-q20",
+        "nyregents-algebra-i-2019-aug-q9",
+        "nyregents-algebra-i-2023-aug-q11",
+        "nyregents-algebra-i-2017-jan-q3",
+        "nyregents-algebra-i-2017-jan-q17",
+        "nyregents-algebra-i-2017-jan-q19",
+        "nyregents-algebra-i-2018-aug-q23",
+        "nyregents-algebra-i-2015-aug-q1",
+        "nyregents-algebra-i-2015-aug-q9",
+        "nyregents-algebra-i-2015-aug-q19",
+        "nyregents-algebra-i-2026-jun-q17",
+        "nyregents-algebra-i-2026-aug-q9",
+        "nyregents-algebra-i-2026-aug-q16",
+        "nyregents-algebra-i-2026-aug-q19",
+        "nyregents-algebra-i-2025-jun-q4",
+        "nyregents-algebra-i-2025-jun-q8",
+        "nyregents-algebra-i-2025-jun-q14",
+        "nyregents-algebra-i-unknown-unk-q9",
+        "nyregents-algebra-i-unknown-unk-q10",
+        "nyregents-algebra-i-2016-jan-q23"
+      ]
+    },
+    "algebra-ii": {
+      "n": 21,
+      "ids": [
+        "nyregents-algebra-ii-2016-aug-q20",
+        "nyregents-algebra-ii-2017-jun-q16",
+        "nyregents-algebra-ii-2017-jun-q18",
+        "nyregents-algebra-ii-2019-aug-q3",
+        "nyregents-algebra-ii-2019-aug-q6",
+        "nyregents-algebra-ii-2024-jun-q14",
+        "nyregents-algebra-ii-2019-jan-q1",
+        "nyregents-algebra-ii-2019-jan-q10",
+        "nyregents-algebra-ii-2017-jan-q15",
+        "nyregents-algebra-ii-2025-jan-q1",
+        "nyregents-algebra-ii-2026-jun-q14",
+        "nyregents-algebra-ii-2017-aug-q12",
+        "nyregents-algebra-ii-2017-aug-q19",
+        "nyregents-algebra-ii-2023-aug-q14",
+        "nyregents-algebra-ii-2023-jun-q20",
+        "nyregents-algebra-ii-2026-jan-q10",
+        "nyregents-algebra-ii-2026-jan-q11",
+        "nyregents-algebra-ii-2019-jun-q2",
+        "nyregents-algebra-ii-2025-jun-q21",
+        "nyregents-algebra-ii-2016-jun-q20",
+        "nyregents-algebra-ii-2020-jan-q4"
+      ]
+    }
+  },
+  "examples": [
+    {
+      "id": "nyregents-algebra-i-2018-jun-q1",
+      "claim": "algebra-i",
+      "original": {
+        "A": "p > -6",
+        "C": "p > 4",
+        "B": "p < -6",
+        "D": "p < 4"
+      },
+      "rankPreserving": {
+        "A": "p > -2",
+        "C": "p > 6",
+        "B": "p < -2",
+        "D": "p < 6"
+      },
+      "substitutionMap": {
+        "-6": "-2",
+        "4": "6"
+      },
+      "noNumeral": false,
+      "rankScrambled": {
+        "A": "p > -9",
+        "C": "p > 0",
+        "B": "p < -9",
+        "D": "p < 0"
+      },
+      "scrambledSubstitutionMap": {
+        "-6": "-9",
+        "4": "0"
+      }
+    },
+    {
+      "id": "nyregents-algebra-i-2018-jun-q6",
+      "claim": "algebra-i",
+      "original": {
+        "A": "1.60x + 1.75y < 10",
+        "C": "1.75x + 1.60y < 10",
+        "B": "1.60x + 1.75y > 10",
+        "D": "1.75x + 1.60y > 10"
+      },
+      "rankPreserving": {
+        "A": "2.27x + 3.35y < 44",
+        "C": "3.35x + 2.27y < 44",
+        "B": "2.27x + 3.35y > 44",
+        "D": "3.35x + 2.27y > 44"
+      },
+      "substitutionMap": {
+        "1.60": "2.27",
+        "1.75": "3.35",
+        "10": "44"
+      },
+      "noNumeral": false,
+      "rankScrambled": {
+        "A": "4.52x + 5.64y < 45",
+        "C": "5.64x + 4.52y < 45",
+        "B": "4.52x + 5.64y > 45",
+        "D": "5.64x + 4.52y > 45"
+      },
+      "scrambledSubstitutionMap": {
+        "1.60": "4.52",
+        "1.75": "5.64",
+        "10": "45"
+      }
+    },
+    {
+      "id": "nyregents-algebra-i-2016-jun-q7",
+      "claim": "algebra-i",
+      "original": {
+        "A": "6.2",
+        "C": "8.6",
+        "B": "7.3",
+        "D": "8.8"
+      },
+      "rankPreserving": {
+        "A": "7.4",
+        "C": "9.7",
+        "B": "9.6",
+        "D": "9.8"
+      },
+      "substitutionMap": {
+        "6.2": "7.4",
+        "7.3": "9.6",
+        "8.6": "9.7",
+        "8.8": "9.8"
+      },
+      "noNumeral": false,
+      "rankScrambled": {
+        "A": "8.2",
+        "C": "4.2",
+        "B": "4.9",
+        "D": "2.7"
+      },
+      "scrambledSubstitutionMap": {
+        "6.2": "8.2",
+        "7.3": "4.9",
+        "8.6": "4.2",
+        "8.8": "2.7"
+      }
+    },
+    {
+      "id": "nyregents-algebra-i-2017-jan-q8",
+      "claim": "algebra-i",
+      "original": {
+        "A": "a1 \u0004 49; an \u0004 an \u0002 1 \u0003 21",
+        "B": "a1 \u0004 0; an \u0004 49an \u0002 1 \u0003 21",
+        "C": "a1 \u0004 21; an \u0004 an \u0002 1 \u0003 49",
+        "D": "a1 \u0004 0; an \u0004 21an \u0002 1 \u0003 49"
+      },
+      "rankPreserving": {
+        "A": "a9 \u0004 68; an \u0004 an \u0002 9 \u0003 42",
+        "B": "a9 \u0004 2; an \u0004 68an \u0002 9 \u0003 42",
+        "C": "a9 \u0004 42; an \u0004 an \u0002 9 \u0003 68",
+        "D": "a9 \u0004 2; an \u0004 42an \u0002 9 \u0003 68"
+      },
+      "substitutionMap": {
+        "1": "9",
+        "0": "2",
+        "21": "42",
+        "49": "68"
+      },
+      "noNumeral": false,
+      "rankScrambled": {
+        "A": "a8 \u0004 48; an \u0004 an \u0002 8 \u0003 57",
+        "B": "a8 \u0004 2; an \u0004 48an \u0002 8 \u0003 57",
+        "C": "a8 \u0004 57; an \u0004 an \u0002 8 \u0003 48",
+        "D": "a8 \u0004 2; an \u0004 57an \u0002 8 \u0003 48"
+      },
+      "scrambledSubstitutionMap": {
+        "0": "2",
+        "1": "8",
+        "21": "57",
+        "49": "48"
+      }
+    },
+    {
+      "id": "nyregents-algebra-i-2015-jan-q8",
+      "claim": "algebra-i",
+      "original": {
+        "A": "2589",
+        "C": "15,901",
+        "B": "6510",
+        "D": "18,490"
+      },
+      "rankPreserving": {
+        "A": "8756",
+        "C": "64,488",
+        "B": "9195",
+        "D": "98,488"
+      },
+      "substitutionMap": {
+        "2589": "8756",
+        "6510": "9195",
+        "15,901": "64,488",
+        "18,490": "98,488"
+      },
+      "noNumeral": false,
+      "rankScrambled": {
+        "A": "9786",
+        "C": "96,942",
+        "B": "2934",
+        "D": "16,110"
+      },
+      "scrambledSubstitutionMap": {
+        "15,901": "96,942",
+        "18,490": "16,110",
+        "2589": "9786",
+        "6510": "2934"
+      }
+    }
+  ]
+}
