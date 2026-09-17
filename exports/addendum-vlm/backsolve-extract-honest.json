@@ -1,0 +1,140 @@
+{
+  "channel": "backsolve-extract-honest",
+  "derivedFrom": "exports/addendum-vlm/backsolve-extract.json",
+  "items": "exports/addendum-vlm/backsolve-extract-items.jsonl",
+  "handCheck": "exports/addendum-vlm/hand-check.json",
+  "auditNote": "exports/addendum-vlm/audit-note.md",
+  "originalUnchanged": true,
+  "modelId": "Qwen/Qwen2-VL-7B-Instruct",
+  "modelRevision": "eed13092ef92e448dd6875b2a00151bd3f7db0ac",
+  "preregistrationSha256": "d6ee8cafd35d04bba7bfd4d4d364ee6f274d715e9b6b7020c454dbdfbd994732",
+  "protocol": {
+    "inventedEquation": "abstain",
+    "parseWrong": "abstain",
+    "parseCorrectKeyDoesNotSatisfy": "error",
+    "holmFamilyMember": false,
+    "billing": "existence row measured after the catalog; n fired, coverage, one-sided; not folded into the 67 strategy Holm tests"
+  },
+  "algebraIOriginal": {
+    "nEligible": 598,
+    "nFiredUnique": 17,
+    "hits": 14,
+    "rate": 0.8235294117647058,
+    "chance": 0.25,
+    "ci95": [
+      0.6470588235294118,
+      1.0
+    ],
+    "coverage": 0.028428093645484948,
+    "rateWithAbstentionAsChance": 0.266304347826087,
+    "binomialPGreater": 1.1429656296968473e-06,
+    "clearsBar": true,
+    "note": "unique-satisfier fires including invent-and-solve and parse_wrong; do not use as the paper claim"
+  },
+  "algebraIHonest": {
+    "nEligible": 598,
+    "nFiredUnique": 15,
+    "hits": 14,
+    "rate": 0.9333333333333333,
+    "chance": 0.25,
+    "ci95": [
+      0.8,
+      1.0
+    ],
+    "coverage": 0.02508361204013378,
+    "rateWithAbstentionAsChance": 0.26714046822742477,
+    "binomialPGreater": 4.284083843231197e-08,
+    "clearsBar": true,
+    "honestIds": [
+      "nyregents-algebra-i-2014-aug-q5",
+      "nyregents-algebra-i-2016-jun-q18",
+      "nyregents-algebra-i-2017-jan-q15",
+      "nyregents-algebra-i-2017-jun-q13",
+      "nyregents-algebra-i-2018-aug-q4",
+      "nyregents-algebra-i-2018-jan-q22",
+      "nyregents-algebra-i-2019-aug-q4",
+      "nyregents-algebra-i-2019-jan-q5",
+      "nyregents-algebra-i-2023-aug-q3",
+      "nyregents-algebra-i-2023-jan-q7",
+      "nyregents-algebra-i-2025-jan-q18",
+      "nyregents-algebra-i-2026-aug-q2",
+      "nyregents-algebra-i-2026-aug-q22",
+      "nyregents-algebra-i-2026-jun-q2",
+      "nyregents-algebra-i-unknown-unk-q6"
+    ],
+    "hitIds": [
+      "nyregents-algebra-i-2016-jun-q18",
+      "nyregents-algebra-i-2017-jan-q15",
+      "nyregents-algebra-i-2017-jun-q13",
+      "nyregents-algebra-i-2018-aug-q4",
+      "nyregents-algebra-i-2018-jan-q22",
+      "nyregents-algebra-i-2019-aug-q4",
+      "nyregents-algebra-i-2019-jan-q5",
+      "nyregents-algebra-i-2023-aug-q3",
+      "nyregents-algebra-i-2023-jan-q7",
+      "nyregents-algebra-i-2025-jan-q18",
+      "nyregents-algebra-i-2026-aug-q2",
+      "nyregents-algebra-i-2026-aug-q22",
+      "nyregents-algebra-i-2026-jun-q2",
+      "nyregents-algebra-i-unknown-unk-q6"
+    ],
+    "missIds": [
+      "nyregents-algebra-i-2014-aug-q5"
+    ]
+  },
+  "dropped": [
+    {
+      "id": "nyregents-algebra-i-2018-jan-q10",
+      "recodedAs": "abstain",
+      "reasonCode": "parse_wrong",
+      "reason": "Page shows two graphs y=x^2-3 and y=3x-4. Extract kept only the first. Incomplete extract of a displayed system is parse_wrong; recoded as abstain, not an error of substitution.",
+      "originalFired": true,
+      "originalCorrect": false,
+      "judgment": "parse_wrong",
+      "keyDoesNotSatisfy": true,
+      "extractedAscii": "y = x**2 - 3",
+      "satisfierLetter": "A",
+      "key": "C",
+      "notes": "Page shows two graphs y=x^2-3 and y=3x-4. Extracted only the first. Option C is a pair of points and did not strict-parse."
+    },
+    {
+      "id": "nyregents-algebra-i-2024-jan-q2",
+      "recodedAs": "abstain",
+      "reasonCode": "invented_equation",
+      "reason": "No displayed equation on the page. Item is a function/relation question. The model invented x=2 from an option (invent-and-solve). Prompt forbids solving. Construct violation recoded as abstain, not a hit or a miss.",
+      "originalFired": true,
+      "originalCorrect": false,
+      "judgment": "parse_wrong",
+      "keyDoesNotSatisfy": true,
+      "extractedAscii": "x = 2",
+      "satisfierLetter": "B",
+      "key": "C",
+      "notes": "No displayed equation. Item is a function/relation question. Model invented x=2 from an option."
+    }
+  ],
+  "keptAsError": [
+    {
+      "id": "nyregents-algebra-i-2014-aug-q5",
+      "recodedAs": "error",
+      "reasonCode": "key_does_not_satisfy",
+      "reason": "Displayed equation matches the page (parse_correct). Unique satisfier is not the published key. Kept as a miss, not an abstain.",
+      "originalFired": true,
+      "originalCorrect": false,
+      "judgment": "parse_correct",
+      "keyDoesNotSatisfy": true,
+      "extractedAscii": "y = x**2 + 3*x - 6",
+      "satisfierLetter": "B",
+      "key": "D",
+      "notes": "Equation y=x^2+3x-6 matches. Item asks which point is NOT on the graph; unique satisfier therefore misses the key."
+    }
+  ],
+  "witnessBar": {
+    "rule": "n fired >= 10 and lower 95% item bootstrap CI (mulberry32 seed 11, 1000) strictly above chance (mean 1/k)",
+    "honestNFired": 15,
+    "honestLowerCI": 0.8,
+    "chance": 0.25,
+    "clears": true
+  },
+  "notAHolmFamilyMember": true,
+  "coverageIsLoadBearing": true
+}
